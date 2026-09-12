@@ -1,16 +1,13 @@
 name: Bug Bounty Source Code Monitor
 
-# ─── Triggers ──────────────────────────────────────────────────────────────────
 on:
   schedule:
-    - cron: '*/30 * * * *'   # Every 30 minutes, 24x7 (free on GitHub Actions)
-  workflow_dispatch:           # Manual trigger anytime from the Actions tab
+    - cron: '*/30 * * * *'   # Every 30 minutes, 24x7
+  workflow_dispatch:           # Manual trigger from Actions tab
 
-# ─── Permissions ───────────────────────────────────────────────────────────────
 permissions:
   contents: write              # Needed to commit state.json back to repo
 
-# ─── Job ───────────────────────────────────────────────────────────────────────
 jobs:
   monitor:
     name: Run Monitor
@@ -19,37 +16,33 @@ jobs:
 
     steps:
 
-      # 1. Checkout repo (includes state.json from last run)
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2. Python setup
-      - name: Set up Python 3.11
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
-      # 3. Install only what we need
       - name: Install dependencies
         run: pip install requests
 
-      # 4. Run the monitor — Telegram secrets injected here
       - name: Run monitor
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
         run: python monitor.py
 
-      # 5. Commit updated state.json so next run knows what changed
       - name: Commit updated state
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"
+          # state.json is always created by the script (even on first run)
           git add state.json
-          # Only commit when something actually changed (avoid empty commits)
-          git diff --staged --quiet || (
-            git commit -m "chore: update state [skip ci]" &&
+          # Only push if there's actually a diff — avoids empty commits
+          if git diff --staged --quiet; then
+            echo "No state changes, skipping commit."
+          else
+            git commit -m "chore: update state [skip ci]"
             git push
-          )
+          fi
