@@ -1,22 +1,22 @@
-name: Bug Bounty Source Code Monitor
+name: Telegram Bot
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: monitor
+  group: telegram-bot
   cancel-in-progress: false
 
 jobs:
-  monitor:
-    name: Run Monitor
+  bot:
+    name: Poll Telegram commands
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 8
 
     steps:
 
@@ -31,21 +31,22 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run monitor
+      - name: Run bot
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: python monitor.py
+          GH_PAT:           ${{ secrets.GH_PAT }}
+        run: python bot.py
 
-      - name: Commit updated state
+      - name: Commit updated offset
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"
-          git add state.json changes_log.json
+          git add bot_offset.json
           if git diff --staged --quiet; then
-            echo "No state changes, skipping commit."
+            echo "No offset changes, skipping commit."
           else
-            git commit -m "chore: update state [skip ci]"
+            git commit -m "chore: bot offset [skip ci]"
             git pull --rebase origin main
             git push
           fi
