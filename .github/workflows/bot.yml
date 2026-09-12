@@ -28,6 +28,9 @@ concurrency:
 jobs:
   bot:
     name: Resident bot (long-poll)
+    # a skipped Keepalive means the previous bot run was cancelled on purpose —
+    # don't resurrect the chain (manual "Run workflow" restarts it)
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'skipped'
     runs-on: ubuntu-latest
     timeout-minutes: 350
 
