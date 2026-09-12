@@ -82,6 +82,30 @@ def uptime() -> str:
     h, m = s // 3600, (s % 3600) // 60
     return f"{h}h {m}m" if h else f"{m}m"
 
+def fmt_bounty(v) -> str:
+    """None/0-safe money format: 15000 → '15,000'."""
+    try:
+        v = int(v or 0)
+        return f"{v:,}" if v else ""
+    except Exception:
+        return ""
+
+def bounty_line(v: dict) -> str:
+    """'💰 Bounty: ✅ $500 – $15,000' / 'up to $7,500' / 'yes (see program page)' / '❌'."""
+    if not v.get("bounty"):
+        return "💰 Bounty: ❌ no monetary rewards"
+    ccy = (v.get("bounty_ccy") or "").replace("USD", "$").replace("EUR", "€").replace("GBP", "£")
+    if not ccy:
+        ccy = "$" if not v.get("bounty_ccy") else v.get("bounty_ccy") + " "
+    lo, hi = fmt_bounty(v.get("bounty_min")), fmt_bounty(v.get("bounty_max"))
+    if lo and hi:
+        return f"💰 Bounty: ✅ {ccy}{lo} – {ccy}{hi}"
+    if hi:
+        return f"💰 Bounty: ✅ up to {ccy}{hi}"
+    if lo:
+        return f"💰 Bounty: ✅ from {ccy}{lo}"
+    return "💰 Bounty: ✅ yes (range on program page)"
+
 # ── Command handlers (pure: return reply text) ────────────────────────────────
 
 def cmd_start(args, state, changes) -> str:
@@ -238,7 +262,10 @@ def cmd_search(args, state, changes) -> str:
     shown = 0
     for v in name_hits[:10]:
         plat = v.get("platform","?")
-        lines.append(f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>")
+        hi = fmt_bounty(v.get("bounty_max"))
+        c = (v.get("bounty_ccy") or "").replace("USD","$").replace("EUR","€").replace("GBP","£") or "$"
+        extra = f"  💸 up to {c}{hi}" if hi else ""
+        lines.append(f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>{extra}")
         lines.append(f"   {esc(v.get('url',''))}")
         shown += 1
     for v, t in repo_hits[:max(0, 10 - shown)]:
@@ -362,7 +389,7 @@ def cmd_scope(args, state, changes) -> str:
     lines = [
         f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b> — {plat}", "",
         f"🔗 {esc(v.get('url',''))}",
-        f"💰 Bounty: {'✅' if v.get('bounty') else '❌'}", "",
+        bounty_line(v), "",
         f"📁 <b>Source-code targets ({len(sc)}):</b>",
     ]
     for t in sc:

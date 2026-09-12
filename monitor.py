@@ -23,7 +23,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
-SCHEMA_VERSION   = 3  # bump to force a silent re-baseline on format changes
+SCHEMA_VERSION   = 4  # bump to force a silent re-baseline on format changes
 
 PLATFORM_URLS: Dict[str, str] = {
     "hackerone": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/hackerone_data.json",
@@ -61,35 +61,47 @@ def _norm_scope(items, id_key, type_key, desc_key=""):
     return out
 
 def _normalize(prog: dict, platform: str) -> Optional[dict]:
+    """Returns program dict with has_bounty + bounty_min/max/ccy (0/'' = unknown)."""
     try:
         s = prog.get("targets", {}).get("in_scope", [])
+        bmin = bmax = 0
+        ccy = ""
         if platform == "hackerone":
             h = prog.get("handle","")
             return {"handle":h,"name":prog.get("name",h),"url":f"https://hackerone.com/{h}",
                     "platform":platform,"has_bounty":bool(prog.get("offers_bounties",False)),
+                    "bounty_min":0,"bounty_max":0,"bounty_ccy":"",
                     "in_scope":_norm_scope(s,"asset_identifier","asset_type","instruction")}
         if platform == "bugcrowd":
             n = prog.get("name",""); pay = prog.get("max_payout") or 0
             return {"handle":n,"name":n,"url":prog.get("url",""),"platform":platform,
                     "has_bounty":int(pay)>0,
+                    "bounty_min":0,"bounty_max":int(pay),"bounty_ccy":"USD" if pay else "",
                     "in_scope":_norm_scope(s,"target","type","name")}
         if platform == "intigriti":
-            h = prog.get("handle",""); mb = prog.get("min_bounty") or {}
-            bv = mb.get("value",0) if isinstance(mb,dict) else 0
+            h = prog.get("handle","")
+            mn = prog.get("min_bounty") or {}; mx = prog.get("max_bounty") or {}
+            bmin = int(mn.get("value",0) or 0) if isinstance(mn,dict) else 0
+            bmax = int(mx.get("value",0) or 0) if isinstance(mx,dict) else 0
+            ccy  = str(mx.get("currency","") or "") if isinstance(mx,dict) else ""
             return {"handle":h,"name":prog.get("name",h),
                     "url":prog.get("url",f"https://app.intigriti.com/programs/{h}"),
-                    "platform":platform,"has_bounty":(bv or 0)>0,
+                    "platform":platform,"has_bounty":(bmin or bmax)>0,
+                    "bounty_min":bmin,"bounty_max":bmax,"bounty_ccy":ccy,
                     "in_scope":_norm_scope(s,"endpoint","type","description")}
         if platform == "yeswehack":
             n = prog.get("name",""); mb = prog.get("min_bounty") or 0
+            mx = prog.get("max_bounty") or 0
             slug = n.lower().replace(" ","-")
             return {"handle":slug,"name":n,"url":f"https://yeswehack.com/programs/{slug}",
-                    "platform":platform,"has_bounty":(mb or 0)>0,
+                    "platform":platform,"has_bounty":(mb or mx)>0,
+                    "bounty_min":int(mb),"bounty_max":int(mx),"bounty_ccy":"EUR" if (mb or mx) else "",
                     "in_scope":_norm_scope(s,"target","type")}
         if platform == "federacy":
             n = prog.get("name","")
             return {"handle":n,"name":n,"url":prog.get("url",""),"platform":platform,
                     "has_bounty":bool(prog.get("offers_awards",False)),
+                    "bounty_min":0,"bounty_max":0,"bounty_ccy":"",
                     "in_scope":_norm_scope(s,"target","type")}
     except Exception as e:
         print(f"    [{platform}] normalize error: {e}")
@@ -255,6 +267,9 @@ def main():
             new_state[key] = {
                 "hash": h, "bounty": hb, "source": hs,
                 "name": prog["name"], "url": prog["url"], "platform": platform,
+                "bounty_min": prog.get("bounty_min", 0),
+                "bounty_max": prog.get("bounty_max", 0),
+                "bounty_ccy": prog.get("bounty_ccy", ""),
                 "sc_targets": sc[:10],
             }
 
@@ -287,7 +302,8 @@ def main():
             new_state[key] = {
                 "hash": "", "bounty": True, "source": False,
                 "name": prog["name"], "url": prog["url"], "platform": "chaos",
-                "origin": prog["origin"], "sc_targets": [],
+                "origin": prog["origin"], "bounty_min": 0, "bounty_max": 0, "bounty_ccy": "",
+                "sc_targets": [],
             }
             if first_run or prev.get(key): continue
             events.append((prog, "chaos", "new_external"))
