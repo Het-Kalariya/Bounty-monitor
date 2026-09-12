@@ -509,20 +509,26 @@ def run_monitor_cycle():
     depend on GitHub's (delayed) cron schedules."""
     print("  [/auto] monitor cycle starting …")
     try:
-        r = subprocess.run([sys.executable, "monitor.py"], timeout=300)
+        r = subprocess.run([sys.executable, "-u", "monitor.py"], timeout=300)
     except Exception as e:
         print(f"  [/auto] monitor crashed: {e}")
         return
     if r.returncode != 0:
         print("  [/auto] monitor exited non-zero — keeping old state")
         return
-    subprocess.run("git add state.json changes_log.json", shell=True)
-    subprocess.run(
+    # commit state + offset (persisting offset here shrinks restart-replay to ~zero)
+    for cmd in [
+        "git add state.json changes_log.json bot_offset.json",
         'git -c user.name="BountyBot[bot]" -c user.email=bountybot@users.noreply.github.com '
-        'commit -m "chore: auto state [skip ci]"', shell=True)
+        'commit -m "chore: auto state [skip ci]"',
+    ]:
+        subprocess.run(cmd, shell=True)
+    # safe push: rebase local commit on remote; NEVER reset --hard (would rewind
+    # local state/offset files); on any failure just skip — next cycle catches up
     subprocess.run(
-        "git push || (git pull --rebase origin main && git push) || "
-        "(git fetch origin && git reset --hard origin/main)",
+        "git pull --rebase --autostash origin main"
+        " && git push"
+        " || git rebase --abort",
         shell=True)
     print("  [/auto] monitor cycle done")
 
@@ -604,24 +610,38 @@ def main():
         state = load_json(STATE_FILE, {})
         changes = load_json(CHANGES_FILE, [])
 
+        # collect this batch's owner commands (offset advances for ALL updates
+        # regardless, so nothing is ever reprocessed)
+        batch = []
         for u in updates:
-            try:
-                offset = u["update_id"] + 1
-                msg = u.get("message") or u.get("edited_message") or {}
-                chat_id = (msg.get("chat") or {}).get("id")
-                text = msg.get("text", "")
-                if not chat_id or not text:
-                    continue
-                # security: only talk to the configured owner chat
-                if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
-                    print(f"  ⛔ ignored chat {chat_id}")
-                    continue
-                print(f"  ← {text[:60]}")
-                send_reply(chat_id, handle_text(text, state, changes))
-            except Exception:
-                print(f"  ⚠ skipping poison update {u.get('update_id')}")
-                traceback.print_exc()
+            offset = u["update_id"] + 1
+            msg = u.get("message") or u.get("edited_message") or {}
+            chat_id = (msg.get("chat") or {}).get("id")
+            text = msg.get("text", "")
+            if not chat_id or not text:
                 continue
+            if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
+                print(f"  ⛔ ignored chat {chat_id}")
+                continue
+            batch.append((chat_id, text))
+
+        if len(batch) > 3:
+            # backlog burst (bot was offline while user kept sending) —
+            # answer only the LAST command plus a summary, not N duplicates
+            chat_id, last_text = batch[-1]
+            print(f"  ← backlog burst: {len(batch)} queued commands — replying once")
+            send_reply(chat_id,
+                f"✅ Processed {len(batch)} queued commands (backlog flush — "
+                f"bot was restarting)\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n"
+                + handle_text(last_text, state, changes))
+        else:
+            for chat_id, text in batch:
+                try:
+                    print(f"  ← {text[:60]}")
+                    send_reply(chat_id, handle_text(text, state, changes))
+                except Exception:
+                    print(f"  ⚠ failed to handle: {text[:40]}")
+                    traceback.print_exc()
 
         save_json(OFFSET_FILE, {"last_update_id": offset - 1, "last_announce": last_announce})
         # confirm processed updates server-side (shrinks crash-replay window)
