@@ -144,7 +144,8 @@ def cmd_help(args, state, changes) -> str:
         "  /platform — Counts per platform\n"
         "  /platform &lt;name&gt; — hackerone | bugcrowd | intigriti | yeswehack | federacy | other\n"
         "  /source — Programs with SOURCE_CODE scope assets\n"
-        "  /github — Programs with GitHub repos in scope\n\n"
+        "  /github — Programs with GitHub repos in scope\n"
+        "  /top — 🏆 Least-crowded programs to hunt\n\n"
         "⚙️ <b>Control</b>\n"
         "  /refresh — Force a data refresh now\n\n"
         "💡 Data auto-refreshes every 30 min · I reply instantly"
@@ -418,6 +419,47 @@ def cmd_refresh(args, state, changes) -> str:
             f"📦 Total programs  : {meta.get('total','?')}\n\n"
             f"🕒 {fmt_ts(meta.get('updated_at',''))} — /latest for new changes")
 
+def cmd_top(args, state, changes) -> str:
+    """Rank bounty+source programs by opportunity: big attack surface
+    (fewer researchers per asset), strong triage, fast bounties."""
+    programs = get_programs(state)
+    qual = [v for v in qualifying(programs).values()
+            if (v.get("domains") or 0) > 0 or v.get("resp_eff")]
+    if not qual:
+        return ("🏆 No competition signals available yet — data refreshes every 30 min.\n"
+                "Try /refresh then /top again.")
+    def score(v):
+        d  = v.get("domains") or 0
+        ef = v.get("resp_eff") or 0
+        bd = v.get("bounty_days")
+        speed = max(0.0, 100.0 - min(bd, 100)) if isinstance(bd, (int, float)) else 0.0
+        return d * 2 + ef + speed   # surface dominates, triage breaks ties
+    ranked = sorted(qual, key=score, reverse=True)
+    lines = [
+        "🏆 <b>Top opportunities</b> — least crowded per asset", "",
+        "<i>No platform publishes researcher counts — ranked by real "
+        "proxies: in-scope surface, triage efficiency, payout speed.</i>", "",
+    ]
+    for i, v in enumerate(ranked[:10], 1):
+        plat = v.get("platform","?")
+        parts = []
+        if v.get("domains"):
+            parts.append(f"🌐 {v['domains']:,} domains")
+        if v.get("resp_eff"):
+            parts.append(f"⚡ {int(v['resp_eff'])}% triage")
+        if isinstance(v.get("bounty_days"), (int, float)):
+            parts.append(f"💸 bounty ~{int(v['bounty_days'])}d")
+        hi = fmt_bounty(v.get("bounty_max"))
+        if hi:
+            c = (v.get("bounty_ccy") or "").replace("USD","$").replace("EUR","€") or "$"
+            parts.append(f"{c}{hi} max")
+        lines.append(f"{i}. {PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>")
+        lines.append(f"   {' · '.join(parts)}")
+        lines.append(f"   {esc(v.get('url',''))}")
+        lines.append("")
+    lines.append("💡 /scope &lt;name&gt; for full details")
+    return "\n".join(lines).rstrip()
+
 COMMANDS = {
     "start":   cmd_start,
     "help":    cmd_help,
@@ -432,6 +474,7 @@ COMMANDS = {
     "source":  cmd_source,
     "github":  cmd_github,
     "scope":   cmd_scope,
+    "top":     cmd_top,
     "refresh": cmd_refresh,
 }
 
@@ -449,6 +492,7 @@ BOT_MENU = [
     ("source", "Programs with SOURCE_CODE assets"),
     ("github", "Programs with GitHub repos"),
     ("scope", "Program scope — /scope github"),
+    ("top", "Least-crowded programs to hunt"),
     ("refresh", "Force data refresh now"),
 ]
 

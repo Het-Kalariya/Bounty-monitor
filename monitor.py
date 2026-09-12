@@ -23,7 +23,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
-SCHEMA_VERSION   = 4  # bump to force a silent re-baseline on format changes
+SCHEMA_VERSION   = 5  # bump to force a silent re-baseline on format changes
 
 PLATFORM_URLS: Dict[str, str] = {
     "hackerone": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/hackerone_data.json",
@@ -71,6 +71,8 @@ def _normalize(prog: dict, platform: str) -> Optional[dict]:
             return {"handle":h,"name":prog.get("name",h),"url":f"https://hackerone.com/{h}",
                     "platform":platform,"has_bounty":bool(prog.get("offers_bounties",False)),
                     "bounty_min":0,"bounty_max":0,"bounty_ccy":"",
+                    "resp_eff":prog.get("response_efficiency_percentage"),
+                    "bounty_days":prog.get("average_time_to_bounty_awarded"),
                     "in_scope":_norm_scope(s,"asset_identifier","asset_type","instruction")}
         if platform == "bugcrowd":
             n = prog.get("name",""); pay = prog.get("max_payout") or 0
@@ -120,6 +122,7 @@ def _normalize_chaos(e: dict) -> Optional[dict]:
             "platform":"chaos",
             "origin":  platform,               # hackenproof / bugbountych / direct / ...
             "has_bounty": bool(e.get("bounty", False)),
+            "domains":  int(e.get("count", 0) or 0),   # in-scope domain count
             "in_scope": [],
         }
     except Exception:
@@ -248,6 +251,17 @@ def main():
     events: List[Tuple[dict,str,str]] = []
 
     if first_run: print("📌 FIRST RUN / SCHEMA UPGRADE — building baseline\n")
+    print("Fetching worldwide index (domain counts)…")
+    chaos = fetch_chaos()
+    # name → in-scope domain count (competition proxy: surface per researcher)
+    chaos_domains = {}
+    if chaos is None:
+        pass  # fetched later; carry-over handled below
+    else:
+        for prog in chaos:
+            chaos_domains[prog["name"].lower()] = max(
+                chaos_domains.get(prog["name"].lower(), 0), prog.get("domains", 0))
+
     print("Fetching platforms…")
 
     # ── Big platforms: full scope analysis ──
@@ -270,6 +284,9 @@ def main():
                 "bounty_min": prog.get("bounty_min", 0),
                 "bounty_max": prog.get("bounty_max", 0),
                 "bounty_ccy": prog.get("bounty_ccy", ""),
+                "domains": chaos_domains.get(prog["name"].lower(), 0),
+                "resp_eff": prog.get("resp_eff"),
+                "bounty_days": prog.get("bounty_days"),
                 "sc_targets": sc[:10],
             }
 
@@ -287,8 +304,6 @@ def main():
     known_names = {v.get("name","").lower() for k, v in new_state.items()}
 
     # ── Worldwide index: program-level watch ──
-    print("Fetching worldwide index…")
-    chaos = fetch_chaos()
     if chaos is None:
         n = carry_over(prev, new_state, "chaos:")
         print(f"  ↻ chaos unavailable — carried over {n} stale entries (no events)")
@@ -303,6 +318,7 @@ def main():
                 "hash": "", "bounty": True, "source": False,
                 "name": prog["name"], "url": prog["url"], "platform": "chaos",
                 "origin": prog["origin"], "bounty_min": 0, "bounty_max": 0, "bounty_ccy": "",
+                "domains": prog.get("domains", 0), "resp_eff": None, "bounty_days": None,
                 "sc_targets": [],
             }
             if first_run or prev.get(key): continue
