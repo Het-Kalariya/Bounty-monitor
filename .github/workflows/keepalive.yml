@@ -1,22 +1,17 @@
-name: Telegram Bot
+name: Bot Keepalive
 
-# Resident bot: one long-running job long-polls Telegram (instant replies).
-# When this run completes, "Bot Keepalive" auto-restarts it via workflow_run —
-# the two workflows ping-pong forever, no cron schedules needed.
+# Auto-restarts the resident bot whenever a "Telegram Bot" run completes.
+# The two workflows ping-pong each other via workflow_run — the bot stays
+# alive 24/7 without depending on cron schedules.
 # Stop everything: disable BOTH workflows + cancel the active run.
 
 on:
-  workflow_dispatch:
-    inputs:
-      quick_test:
-        description: 'Quick 5-min smoke test (auto-boots the resident chain after)'
-        type: boolean
-        default: false
   workflow_run:
-    workflows: ["Bot Keepalive"]
+    workflows: ["Telegram Bot"]
     types: [completed]
+  workflow_dispatch:
   schedule:
-    - cron: '0 3 * * *'   # dead-man: reboot the chain daily if it ever breaks
+    - cron: '17 3 * * *'   # dead-man restart if the chain ever breaks
 
 permissions:
   contents: write
@@ -26,8 +21,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  bot:
-    name: Resident bot (long-poll)
+  keepalive:
+    name: Resident bot (keepalive)
+    # a cancelled predecessor means someone stopped the bot on purpose —
+    # don't restart the chain in that case
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled'
     runs-on: ubuntu-latest
     timeout-minutes: 350
 
@@ -48,7 +46,7 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BOT_MAX_MINUTES:  ${{ inputs.quick_test && '5' || '330' }}
+          BOT_MAX_MINUTES:  '330'
         run: python bot.py
 
       - name: Commit updated offset
