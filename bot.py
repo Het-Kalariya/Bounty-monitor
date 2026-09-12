@@ -513,14 +513,25 @@ def main():
 
     offset_data = load_json(OFFSET_FILE, {"last_update_id": 0})
     offset = int(offset_data.get("last_update_id", 0)) + 1
-    save_json(OFFSET_FILE, {"last_update_id": max(0, offset - 1)})
+    last_announce = float(offset_data.get("last_announce", 0) or 0)
+    save_json(OFFSET_FILE, {"last_update_id": max(0, offset - 1), "last_announce": last_announce})
 
     set_menu()
 
-    if ANNOUNCE:
-        send_reply(int(TELEGRAM_CHAT_ID) if TELEGRAM_CHAT_ID.lstrip("-").isdigit() else TELEGRAM_CHAT_ID,
-            "🤖 <b>Bot online</b> — resident mode, replying instantly 24/7.\n"
-            "📖 /help for commands · 📊 /status for health")
+    # Announce ONLY on manual dispatch, at most once per hour, and only after
+    # verifying polling actually works. Prevents ping storms from crash-loops
+    # or queued manual runs executing back-to-back.
+    if ANNOUNCE and (time.time() - last_announce) > 3600:
+        probe = get_updates(offset, long_poll=False)
+        if probe is not None:
+            cid = int(TELEGRAM_CHAT_ID) if TELEGRAM_CHAT_ID.lstrip("-").isdigit() else TELEGRAM_CHAT_ID
+            send_reply(cid,
+                "🤖 <b>Bot online</b> — resident mode, replying instantly 24/7.\n"
+                "📖 /help for commands · 📊 /status for health")
+            last_announce = time.time()
+            save_json(OFFSET_FILE, {"last_update_id": offset - 1, "last_announce": last_announce})
+        else:
+            print("  ⚠ poll check failed — NOT announcing (bot would be lying)")
 
     last_heartbeat = 0.0
     api_fail_streak = 0
@@ -537,13 +548,19 @@ def main():
                   f"uptime {uptime()} · offset {offset-1}")
             last_heartbeat = time.time()
 
-        updates = get_updates(offset, long_poll=True)
+        try:
+            updates = get_updates(offset, long_poll=True)
+        except SystemExit:
+            raise  # invalid token — die loudly, do not loop
+        except Exception:
+            traceback.print_exc()
+            updates = None
+
         if updates is None:
             api_fail_streak += 1
-            if api_fail_streak >= 10:
-                print("  ✗✗✗ 10 consecutive API failures — restarting process")
-                raise SystemExit(1)  # workflow restarts us via schedule re-arm
-            time.sleep(15)
+            backoff = min(300, 15 * api_fail_streak)
+            print(f"  ⚠ API failure #{api_fail_streak} — retrying in {backoff}s (staying alive)")
+            time.sleep(backoff)
             continue
         api_fail_streak = 0
 
@@ -554,20 +571,25 @@ def main():
         changes = load_json(CHANGES_FILE, [])
 
         for u in updates:
-            offset = u["update_id"] + 1
-            msg = u.get("message") or u.get("edited_message") or {}
-            chat_id = (msg.get("chat") or {}).get("id")
-            text = msg.get("text", "")
-            if not chat_id or not text:
+            try:
+                offset = u["update_id"] + 1
+                msg = u.get("message") or u.get("edited_message") or {}
+                chat_id = (msg.get("chat") or {}).get("id")
+                text = msg.get("text", "")
+                if not chat_id or not text:
+                    continue
+                # security: only talk to the configured owner chat
+                if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
+                    print(f"  ⛔ ignored chat {chat_id}")
+                    continue
+                print(f"  ← {text[:60]}")
+                send_reply(chat_id, handle_text(text, state, changes))
+            except Exception:
+                print(f"  ⚠ skipping poison update {u.get('update_id')}")
+                traceback.print_exc()
                 continue
-            # security: only talk to the configured owner chat
-            if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
-                print(f"  ⛔ ignored chat {chat_id}")
-                continue
-            print(f"  ← {text[:60]}")
-            send_reply(chat_id, handle_text(text, state, changes))
 
-        save_json(OFFSET_FILE, {"last_update_id": offset - 1})
+        save_json(OFFSET_FILE, {"last_update_id": offset - 1, "last_announce": last_announce})
         # confirm processed updates server-side (shrinks crash-replay window)
         get_updates(offset, long_poll=False)
 
