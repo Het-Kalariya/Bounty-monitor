@@ -2,11 +2,11 @@ name: Bug Bounty Source Code Monitor
 
 on:
   schedule:
-    - cron: '*/30 * * * *'   # Every 30 minutes, 24x7
-  workflow_dispatch:           # Manual trigger from Actions tab
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write              # Needed to commit state.json back to repo
+  contents: write
 
 jobs:
   monitor:
@@ -37,12 +37,11 @@ jobs:
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"
-          # state.json is always created by the script (even on first run)
           git add state.json
-          # Only push if there's actually a diff — avoids empty commits
           if git diff --staged --quiet; then
             echo "No state changes, skipping commit."
           else
             git commit -m "chore: update state [skip ci]"
+            git pull --rebase origin main
             git push
           fi
