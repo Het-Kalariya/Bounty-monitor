@@ -459,7 +459,8 @@ def tg_call(method: str, payload: dict, http_timeout: int = 15, retries: int = 2
 def send_reply(chat_id: int, text: str) -> bool:
     ok_all = True
     # Telegram hard limit is 4096 chars — split on line boundaries
-    while text:
+    chunks_sent = 0
+    while text and chunks_sent < 10:
         chunk, rest = text[:3800], text[3800:]
         if rest:
             cut = chunk.rfind("\n")
@@ -470,6 +471,8 @@ def send_reply(chat_id: int, text: str) -> bool:
             "parse_mode": "HTML", "disable_web_page_preview": True})
         ok = bool(r and r.ok)
         ok_all = ok_all and ok
+        text = rest                    # advance — never resend the same chunk
+        chunks_sent += 1
         if ok:
             time.sleep(0.6)  # stay under 1 msg/sec per chat
     return ok_all
