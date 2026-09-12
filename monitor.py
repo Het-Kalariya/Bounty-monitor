@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 """
-Bug Bounty Source Code Monitor
-Monitors HackerOne, Bugcrowd, Intigriti, YesWeHack for:
-  - Real monetary bounties
-  - Source code (GitHub/GitLab) in scope
-Enriches state.json with full program details for the Telegram bot.
+Bug Bounty Source Code Monitor — v3 (worldwide)
+Big platforms (full scope analysis):
+  HackerOne, Bugcrowd, Intigriti, YesWeHack, Federacy
+Worldwide index (program-level watch, catches HackenProof, BugBountyCH,
+direct/self-hosted programs):
+  ProjectDiscovery Chaos — 800+ programs
+Notifies on:
+  - new program with bounty + source code in scope
+  - source code added to an existing program
+  - program starts paying bounties
+  - new bounty program discovered outside major platforms
 """
 
 import hashlib, json, os, time
@@ -17,31 +23,36 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
-SCHEMA_VERSION   = 2  # bump to force a silent re-baseline on format changes
+SCHEMA_VERSION   = 3  # bump to force a silent re-baseline on format changes
 
 PLATFORM_URLS: Dict[str, str] = {
     "hackerone": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/hackerone_data.json",
     "bugcrowd":  "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/bugcrowd_data.json",
     "intigriti": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/intigriti_data.json",
     "yeswehack": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/yeswehack_data.json",
+    "federacy":  "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/federacy_data.json",
 }
+CHAOS_URL = "https://chaos-data.projectdiscovery.io/index.json"
+MAJOR_PLATFORMS = set(PLATFORM_URLS)
 
 SOURCE_CODE_ASSET_TYPES = {"SOURCE_CODE", "GITHUB", "GITLAB", "BITBUCKET"}
 SOURCE_CODE_SUBSTRINGS  = ["github.com/", "gitlab.com/", "bitbucket.org/",
                             "source code", "open-source", "open source"]
-PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡"}
+PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡",
+                   "federacy":"🟣","chaos":"🌍"}
 EVENT_LABELS   = {
     "new_program":    ("🆕","New program — source code in scope + bounty"),
     "scope_added":    ("📦","Source code ADDED to in-scope"),
     "scope_updated":  ("🔄","Scope updated — still has source code"),
     "bounty_enabled": ("💰","Now paying bounties (has source code scope)"),
+    "new_external":   ("🌍","New bounty program — outside major platforms"),
 }
 
 # ── Normalizers ────────────────────────────────────────────────────────────────
 
 def _norm_scope(items, id_key, type_key, desc_key=""):
     out = []
-    for t in items:
+    for t in items or []:
         out.append({
             "asset_type":  str(t.get(type_key, "") or ""),
             "identifier":  str(t.get(id_key,   "") or ""),
@@ -75,9 +86,32 @@ def _normalize(prog: dict, platform: str) -> Optional[dict]:
             return {"handle":slug,"name":n,"url":f"https://yeswehack.com/programs/{slug}",
                     "platform":platform,"has_bounty":(mb or 0)>0,
                     "in_scope":_norm_scope(s,"target","type")}
+        if platform == "federacy":
+            n = prog.get("name","")
+            return {"handle":n,"name":n,"url":prog.get("url",""),"platform":platform,
+                    "has_bounty":bool(prog.get("offers_awards",False)),
+                    "in_scope":_norm_scope(s,"target","type")}
     except Exception as e:
         print(f"    [{platform}] normalize error: {e}")
     return None
+
+def _normalize_chaos(e: dict) -> Optional[dict]:
+    """Chaos index entry → external program record."""
+    try:
+        name = str(e.get("name","") or "").strip()
+        if not name: return None
+        platform = str(e.get("platform","") or "").strip() or "direct"
+        return {
+            "handle":  name.lower().replace(" ","-"),
+            "name":    name,
+            "url":     str(e.get("program_url") or e.get("URL") or ""),
+            "platform":"chaos",
+            "origin":  platform,               # hackenproof / bugbountych / direct / ...
+            "has_bounty": bool(e.get("bounty", False)),
+            "in_scope": [],
+        }
+    except Exception:
+        return None
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
@@ -115,7 +149,17 @@ def tg_send(text: str, retries=3) -> bool:
 
 def build_message(prog: dict, platform: str, event: str) -> str:
     emoji,title = EVENT_LABELS.get(event,("🔔","Update"))
-    sc = sc_targets(prog); ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    if event == "new_external":
+        return "\n".join([
+            f"{emoji} <b>{title}</b>","",
+            f"📋 <b>Program:</b>   {prog['name']}",
+            f"🌐 <b>Found via:</b>  {prog.get('origin','direct')} (worldwide index)",
+            f"🔗 <b>URL:</b>       {prog['url']}","",
+            "ℹ️ No scope detail in the index — check the program page",
+            f"\n⏰ {ts}",
+        ])
+    sc = sc_targets(prog)
     lines = [f"{emoji} <b>{title}</b>","",
              f"{PLATFORM_EMOJI.get(platform,'⚪')} <b>Platform:</b>  {platform.capitalize()}",
              f"📋 <b>Program:</b>   {prog['name']}",f"🔗 <b>URL:</b>       {prog['url']}","",
@@ -155,19 +199,35 @@ def save_changes(changes: list):
 
 # ── Fetch ──────────────────────────────────────────────────────────────────────
 
-def fetch(platform: str, url: str) -> List[dict]:
+def fetch(platform: str, url: str) -> Optional[List[dict]]:
+    """None = fetch failed (caller must carry over previous state)."""
     try:
         r = requests.get(url, timeout=45); r.raise_for_status()
         raw = r.json()
         out = [n for item in raw if (n := _normalize(item, platform))]
         print(f"  ✓ {platform:12s} → {len(out):4d} programs"); return out
     except Exception as e:
-        print(f"  ✗ {platform:12s} → ERROR: {e}"); return []
+        print(f"  ✗ {platform:12s} → ERROR: {e}"); return None
+
+def fetch_chaos() -> Optional[List[dict]]:
+    try:
+        r = requests.get(CHAOS_URL, timeout=45); r.raise_for_status()
+        raw = r.json()
+        out = [n for e in raw if (n := _normalize_chaos(e)) and n["has_bounty"]]
+        print(f"  ✓ {'chaos':12s} → {len(out):4d} bounty programs (worldwide)")
+        return out
+    except Exception as e:
+        print(f"  ✗ {'chaos':12s} → ERROR: {e}"); return None
+
+def carry_over(prev: dict, new_state: dict, prefix: str) -> int:
+    stale = {k: v for k, v in prev.items() if k.startswith(prefix)}
+    new_state.update(stale)
+    return len(stale)
 
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor\n  {datetime.now(timezone.utc).isoformat()}\n{'─'*58}\n")
+    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor v3 (worldwide)\n  {datetime.now(timezone.utc).isoformat()}\n{'─'*58}\n")
     prev = load_state()
     # Old/incompatible state format → silent re-baseline (prevents notification floods)
     first_run = (not prev) or prev.get("_meta", {}).get("schema") != SCHEMA_VERSION
@@ -178,13 +238,19 @@ def main():
     if first_run: print("📌 FIRST RUN / SCHEMA UPGRADE — building baseline\n")
     print("Fetching platforms…")
 
+    # ── Big platforms: full scope analysis ──
     for platform, url in PLATFORM_URLS.items():
-        for prog in fetch(platform, url):
+        progs = fetch(platform, url)
+        if progs is None:
+            n = carry_over(prev, new_state, f"{platform}:")
+            print(f"  ↻ {platform} unavailable — carried over {n} stale entries (no events)")
+            continue
+        for prog in progs:
             key = f"{platform}:{prog['handle']}"
             h   = scope_hash(prog)
             hb  = prog["has_bounty"]
-            hs  = has_source(prog)
             sc  = sc_targets(prog)
+            hs  = bool(sc)
 
             new_state[key] = {
                 "hash": h, "bounty": hb, "source": hs,
@@ -196,28 +262,53 @@ def main():
             p = prev.get(key)
             if p is None:
                 events.append((prog, platform, "new_program"))
-            elif p["hash"] != h:
+            elif p.get("hash") != h:
                 was = p.get("source", False)
                 events.append((prog, platform, "scope_added" if (hs and not was) else "scope_updated"))
             elif not p.get("bounty") and hb:
                 events.append((prog, platform, "bounty_enabled"))
 
-    total = len(new_state)
-    qualifying = sum(1 for v in new_state.values() if v["bounty"] and v["source"])
+    # Names already covered by big platforms (avoid duplicate chaos entries)
+    known_names = {v.get("name","").lower() for k, v in new_state.items()}
+
+    # ── Worldwide index: program-level watch ──
+    print("Fetching worldwide index…")
+    chaos = fetch_chaos()
+    if chaos is None:
+        n = carry_over(prev, new_state, "chaos:")
+        print(f"  ↻ chaos unavailable — carried over {n} stale entries (no events)")
+    else:
+        seen = set()
+        for prog in chaos:
+            if prog["name"].lower() in known_names: continue
+            key = f"chaos:{prog['handle']}"
+            if key in seen: continue
+            seen.add(key)
+            new_state[key] = {
+                "hash": "", "bounty": True, "source": False,
+                "name": prog["name"], "url": prog["url"], "platform": "chaos",
+                "origin": prog["origin"], "sc_targets": [],
+            }
+            if first_run or prev.get(key): continue
+            events.append((prog, "chaos", "new_external"))
+
+    total = sum(1 for k in new_state if k != "_meta")
+    qualifying = sum(1 for k, v in new_state.items() if k != "_meta" and v.get("bounty") and v.get("source"))
+    external = sum(1 for k in new_state if k.startswith("chaos:"))
     new_state["_meta"] = {
         "schema": SCHEMA_VERSION,
         "updated_at": datetime.now(timezone.utc).isoformat(),
-        "total": total,
-        "qualifying": qualifying,
+        "total": total, "qualifying": qualifying, "external": external,
     }
     save_state(new_state)
-    print(f"\n📊 {qualifying} programs match (bounty + source) out of {total} total\n")
+    print(f"\n📊 {qualifying} bounty+source · {external} worldwide programs · {total} total\n")
 
     if first_run:
-        tg_send(f"✅ <b>Bug Bounty Monitor is LIVE!</b>\n\n"
+        tg_send(f"✅ <b>Bug Bounty Monitor v3 is LIVE! (worldwide)</b>\n\n"
                 f"📊 <b>Baseline snapshot:</b>\n"
-                f"  • Total programs tracked : {total}\n"
-                f"  • Bounty + source code   : {qualifying}\n\n"
+                f"  • Bounty + source code      : {qualifying}\n"
+                f"  • Worldwide (outside big-5) : {external}\n"
+                f"  • Total programs tracked    : {total}\n\n"
                 f"🔔 Notifying on new programs, scope changes, bounty changes\n"
                 f"🤖 Bot ready — type /help in Telegram\n"
                 f"🔁 Checks every 30 min\n"

@@ -1,30 +1,35 @@
 #!/usr/bin/env python3
 """
-Telegram Bot — Bug Bounty Source Code Monitor
-Runs on GitHub Actions every 5 min, processes queued messages via getUpdates.
-Data source: state.json + changes_log.json written by monitor.py.
+Telegram Bot — Bug Bounty Source Code Monitor (resident mode)
+Runs as a long-polling process 24/7: replies are instant.
+Data: state.json + changes_log.json written by monitor.py.
+/refresh runs monitor.py inline — no PAT needed.
 """
 
-import html, json, os, time
+import html, json, os, subprocess, sys, time, traceback
 from datetime import datetime, timezone
 from typing import List, Optional
 import requests
 
 TELEGRAM_TOKEN   = os.environ.get("TELEGRAM_TOKEN", "")
 TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
-GH_PAT           = os.environ.get("GH_PAT", "")  # personal access token (repo + actions scope) for /refresh
-REPO             = os.environ.get("GITHUB_REPOSITORY", "Het-Kalariya/Bounty-monitor")
+ANNOUNCE         = os.environ.get("ANNOUNCE", "") == "1"
+BOT_MAX_MINUTES  = int(os.environ.get("BOT_MAX_MINUTES", "330"))  # graceful exit before job timeout
 
-OFFSET_FILE = "bot_offset.json"
-STATE_FILE  = "state.json"
+OFFSET_FILE  = "bot_offset.json"
+STATE_FILE   = "state.json"
 CHANGES_FILE = "changes_log.json"
 API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
+BOT_STARTED_AT = time.time()
+
 SOURCE_CODE_ASSET_TYPES = {"SOURCE_CODE", "GITHUB", "GITLAB", "BITBUCKET"}
-PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡"}
+PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡",
+                  "federacy":"🟣","chaos":"🌍"}
+PLATFORMS = ["hackerone", "bugcrowd", "intigriti", "yeswehack", "federacy", "other"]
 EVENT_EMOJI = {
     "new_program":"🆕", "scope_added":"📦",
-    "scope_updated":"🔄", "bounty_enabled":"💰",
+    "scope_updated":"🔄", "bounty_enabled":"💰", "new_external":"🌍",
 }
 
 # ── Utils ──────────────────────────────────────────────────────────────────────
@@ -42,11 +47,14 @@ def save_json(path, data):
     json.dump(data, open(path, "w"), indent=2)
 
 def get_programs(state: dict) -> dict:
-    """All program entries (skip the _meta key)."""
     return {k: v for k, v in state.items() if k != "_meta"}
 
 def qualifying(programs: dict) -> dict:
-    return {k: v for k, v in programs.items() if v.get("bounty") and v.get("source")}
+    return {k: v for k, v in programs.items()
+            if k.split(":",1)[0] != "chaos" and v.get("bounty") and v.get("source")}
+
+def externals(programs: dict) -> dict:
+    return {k: v for k, v in programs.items() if k.split(":",1)[0] == "chaos"}
 
 def fmt_ts(iso: str) -> str:
     try:
@@ -56,25 +64,37 @@ def fmt_ts(iso: str) -> str:
 
 def fmt_when(iso: str) -> str:
     try:
-        dt = datetime.fromisoformat(iso).replace(tzinfo=None)
-        secs = (datetime.utcnow() - dt).total_seconds()
-        if secs < 60:       return "just now"
-        if secs < 3600:     return f"{int(secs//60)}m ago"
-        if secs < 86400:    return f"{int(secs//3600)}h ago"
+        dt = datetime.fromisoformat(iso)
+        now = datetime.now(timezone.utc) if dt.tzinfo else datetime.utcnow()
+        secs = (now - dt).total_seconds()
+        if secs < 0: secs = 0
+        if secs < 60:    return "just now"
+        if secs < 3600:  return f"{int(secs//60)}m ago"
+        if secs < 86400: return f"{int(secs//3600)}h ago"
         return f"{int(secs//86400)}d ago"
     except Exception:
         return "?"
+
+def uptime() -> str:
+    s = int(time.time() - BOT_STARTED_AT)
+    h, m = s // 3600, (s % 3600) // 60
+    return f"{h}h {m}m" if h else f"{m}m"
+
 # ── Command handlers (pure: return reply text) ────────────────────────────────
 
 def cmd_start(args, state, changes) -> str:
     return (
         "👋 <b>Bug Bounty Monitor Bot</b>\n\n"
-        "I watch HackerOne, Bugcrowd, Intigriti &amp; YesWeHack for programs that "
-        "<b>pay bounties</b> and have <b>source code in scope</b>.\n\n"
+        "I watch <b>the whole bug bounty world</b> for programs that "
+        "<b>pay bounties</b> and have <b>source code in scope</b>:\n"
+        "  🟢 HackerOne · 🔴 Bugcrowd · 🔵 Intigriti\n"
+        "  🟡 YesWeHack · 🟣 Federacy (full scope analysis)\n"
+        "  🌍 Worldwide index — HackenProof, BugBountyCH, direct &amp; self-hosted programs\n\n"
         "🔔 You get a ping automatically when:\n"
         "  • A new matching program launches\n"
         "  • A program adds source code to scope\n"
-        "  • A program starts paying bounties\n\n"
+        "  • A program starts paying bounties\n"
+        "  • A new bounty program appears outside major platforms\n\n"
         "📖 Type /help to see everything I can do."
     )
 
@@ -83,7 +103,8 @@ def cmd_help(args, state, changes) -> str:
         "🤖 <b>Commands</b>\n\n"
         "📊 <b>Info</b>\n"
         "  /status — Monitor health &amp; last run\n"
-        "  /stats — Program statistics\n\n"
+        "  /stats — Program statistics\n"
+        "  /sources — Data sources I watch\n\n"
         "🔔 <b>Activity</b>\n"
         "  /latest — Last 5 changes\n"
         "  /new — Recently added programs\n"
@@ -92,48 +113,50 @@ def cmd_help(args, state, changes) -> str:
         "  /search &lt;query&gt; — Search programs &amp; repos\n"
         "     e.g. /search wordpress · /search svg\n"
         "  /scope &lt;program&gt; — Show a program's source-code scope\n"
-        "     e.g. /scope github\n\n"
+        "     e.g. /scope automattic\n\n"
         "🗂 <b>Browse</b>\n"
         "  /platform — Counts per platform\n"
-        "  /platform &lt;name&gt; — hackerone | bugcrowd | intigriti | yeswehack\n"
+        "  /platform &lt;name&gt; — hackerone | bugcrowd | intigriti | yeswehack | federacy | other\n"
         "  /source — Programs with SOURCE_CODE scope assets\n"
         "  /github — Programs with GitHub repos in scope\n\n"
         "⚙️ <b>Control</b>\n"
-        "  /refresh — Force a monitor run now\n\n"
-        "💡 Data refreshes every 30 min · replies within ~5 min"
+        "  /refresh — Force a data refresh now\n\n"
+        "💡 Data auto-refreshes every 30 min · I reply instantly"
     )
 
 def cmd_status(args, state, changes) -> str:
     meta = state.get("_meta", {})
     programs = get_programs(state)
     if not programs and not meta:
-        return "⚠️ No data yet — the monitor hasn't run. Wait for the next cycle or use /refresh."
+        return "⚠️ No data yet — the monitor hasn't run. Send /refresh to force it now."
     lines = [
         "🟢 <b>Monitor Status</b>", "",
-        f"🐍 State schema   : v{meta.get('schema','?')}",
-        f"🕒 Last run       : {fmt_when(meta.get('updated_at',''))} ({fmt_ts(meta.get('updated_at',''))})",
-        f"📦 Total programs : {meta.get('total', len(programs))}",
-        f"💰 Bounty + SC    : {meta.get('qualifying', len(qualifying(programs)))}",
-        f"📜 Changes logged : {len(changes)}",
-        f"🤖 Bot polled     : {datetime.now(timezone.utc).strftime('%d %b %H:%M UTC')}",
-        "", "🔁 Monitor schedule: every 30 min · Bot poll: every 5 min",
+        f"🕒 Last data refresh : {fmt_when(meta.get('updated_at',''))} ({fmt_ts(meta.get('updated_at',''))})",
+        f"📦 Total programs    : {meta.get('total', len(programs))}",
+        f"💰 Bounty + source   : {meta.get('qualifying', len(qualifying(programs)))}",
+        f"🌍 Worldwide watch   : {meta.get('external', len(externals(programs)))}",
+        f"📜 Changes logged    : {len(changes)}",
+        f"🤖 Bot uptime        : {uptime()}",
+        "", "🔁 Monitor schedule: every 30 min · Bot: 24/7 resident",
     ]
     return "\n".join(lines)
 
 def cmd_stats(args, state, changes) -> str:
     programs = get_programs(state)
     if not programs:
-        return "⚠️ No data yet — wait for the next monitor cycle."
+        return "⚠️ No data yet — send /refresh to force the first run."
     qual = qualifying(programs)
+    ext = externals(programs)
     lines = ["📊 <b>Statistics</b>", "",
              f"📦 Total programs   : {len(programs)}",
-             f"💰 Bounty + source  : {len(qual)}", "",
+             f"💰 Bounty + source  : {len(qual)}",
+             f"🌍 Worldwide        : {len(ext)}", "",
              "<b>Per platform</b>  <i>(bounty+SC / total)</i>"]
-    for p in ["hackerone", "bugcrowd", "intigriti", "yeswehack"]:
-        tot = sum(1 for v in programs.values() if v.get("platform") == p)
-        q   = sum(1 for v in qual.values()      if v.get("platform") == p)
+    for p in PLATFORMS[:-1]:
+        tot = sum(1 for k, v in programs.items() if v.get("platform") == p)
+        q   = sum(1 for k, v in qual.items()      if v.get("platform") == p)
         lines.append(f"{PLATFORM_EMOJI.get(p,'⚪')} {p:12s} {q:3d} / {tot}")
-    # top source-code hosts
+    lines.append(f"🌍 {'other':12s} {len(ext):3d}   / {len(ext)}")
     hosts = {"github.com": 0, "gitlab.com": 0, "bitbucket.org": 0}
     for v in qual.values():
         for t in v.get("sc_targets", []):
@@ -147,6 +170,21 @@ def cmd_stats(args, state, changes) -> str:
               f"  GitLab    : {hosts['gitlab.com']}",
               f"  Bitbucket : {hosts['bitbucket.org']}"]
     return "\n".join(lines)
+
+def cmd_sources(args, state, changes) -> str:
+    return (
+        "📡 <b>Data Sources</b>\n\n"
+        "<b>Full scope analysis</b> (every 30 min)\n"
+        "  arkadiyt/bounty-targets-data:\n"
+        "  🟢 HackerOne · 🔴 Bugcrowd · 🔵 Intigriti\n"
+        "  🟡 YesWeHack · 🟣 Federacy\n"
+        "  → per-target scope: bounty flag, source-code detection\n\n"
+        "<b>Worldwide index</b> (program-level watch)\n"
+        "  🌍 ProjectDiscovery Chaos — 800+ programs:\n"
+        "  HackenProof, BugBountyCH, direct &amp; self-hosted\n"
+        "  → new bounty programs outside major platforms\n\n"
+        "💡 Combo = every public bug bounty program with known scope data, worldwide."
+    )
 
 def _changes_list(changes: list, n: int, event_filter: Optional[str] = None) -> str:
     items = [c for c in changes if event_filter is None or c.get("event") == event_filter]
@@ -169,7 +207,7 @@ def cmd_changes(args, state, changes) -> str:
     return _changes_list(changes, 15)
 
 def cmd_new(args, state, changes) -> str:
-    items = [c for c in changes if c.get("event") == "new_program"]
+    items = [c for c in changes if c.get("event") in ("new_program", "new_external")]
     if not items:
         return "🌿 No new programs yet. I'll ping you the moment one launches."
     out = _changes_list(items, 10)
@@ -180,19 +218,20 @@ def cmd_search(args, state, changes) -> str:
         return "🔎 Usage: <code>/search &lt;query&gt;</code>\ne.g. <code>/search wordpress</code>"
     q = args.lower()
     programs = get_programs(state)
-    name_hits, repo_hits = [], []
+    name_hits, repo_hits, ext_hits = [], [], []
     for k, v in programs.items():
-        if not (v.get("bounty") and v.get("source")):
-            continue
+        is_ext = k.split(":", 1)[0] == "chaos"
         if q in (v.get("name","").lower()) or q in (k.split(":",1)[-1].lower()):
-            name_hits.append(v)
+            (ext_hits if is_ext else name_hits).append(v)
             continue
+        if is_ext: continue
+        if not (v.get("bounty") and v.get("source")): continue
         for t in v.get("sc_targets", []):
             if q in (t.get("identifier","").lower()) or q in (t.get("description","").lower()):
                 repo_hits.append((v, t)); break
-    total = len(name_hits) + len(repo_hits)
+    total = len(name_hits) + len(repo_hits) + len(ext_hits)
     if total == 0:
-        return f"🔍 No matches for <b>{esc(args)}</b> among bounty+source programs.\nTry /platform to browse, or /source &amp; /github."
+        return f"🔍 No matches for <b>{esc(args)}</b>.\nTry /platform to browse, or /source &amp; /github."
     lines = [f"🔎 <b>Results for \"{esc(args)}\"</b> — {total} match(es)", ""]
     shown = 0
     for v in name_hits[:10]:
@@ -204,11 +243,15 @@ def cmd_search(args, state, changes) -> str:
         plat = v.get("platform","?")
         lines.append(f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>")
         lines.append(f"   📁 <code>{esc(t.get('identifier'))}</code>")
+        shown += 1
+    for v in ext_hits[:max(0, 10 - shown)]:
+        lines.append(f"🌍 <b>{esc(v.get('name'))}</b> <i>({esc(v.get('origin','direct'))} — no scope data)</i>")
+        lines.append(f"   {esc(v.get('url',''))}")
     if total > 10:
         lines.append(f"\n… and {total - 10} more — refine your query")
-    hint_prog = name_hits[0] if name_hits else (repo_hits[0][0] if repo_hits else None)
-    if hint_prog:
-        first_word = (hint_prog.get("name","") or "?").split()[0]
+    hint = (name_hits or ([repo_hits[0][0]] if repo_hits else ([ext_hits[0]] if ext_hits else [])))
+    if hint:
+        first_word = (hint[0].get("name","") or "?").split()[0]
         lines.append(f"\n💡 Full scope: /scope {esc(first_word)}")
     return "\n".join(lines)
 
@@ -217,17 +260,30 @@ def cmd_platform(args, state, changes) -> str:
     qual = qualifying(programs)
     if not args:
         lines = ["🗂 <b>Programs per platform</b>  <i>(bounty+SC / total)</i>", ""]
-        for p in ["hackerone", "bugcrowd", "intigriti", "yeswehack"]:
+        for p in PLATFORMS[:-1]:
             tot = sum(1 for v in programs.values() if v.get("platform") == p)
-            q   = sum(1 for v in qual.values()      if v.get("platform") == p)
+            q   = sum(1 for k, v in qual.items() if v.get("platform") == p)
             lines.append(f"{PLATFORM_EMOJI.get(p,'⚪')} <b>{p}</b> — {q} / {tot}")
+        lines.append(f"🌍 <b>other (worldwide)</b> — {len(externals(programs))}")
         lines.append("\nUsage: <code>/platform hackerone</code>")
         return "\n".join(lines)
     p = args.lower().strip()
+    if p in ("other", "worldwide", "direct", "external"):
+        ext = sorted(externals(programs).values(), key=lambda v: (v.get("origin",""), v.get("name","").lower()))
+        if not ext:
+            return "🌍 No worldwide programs tracked yet."
+        lines = [f"🌍 <b>Worldwide programs</b> — {len(ext)}  <i>(HackenProof, BugBountyCH, direct…)</i>", ""]
+        for v in ext[:20]:
+            lines.append(f"• <b>{esc(v.get('name'))}</b> — {esc(v.get('origin','direct'))}\n  {esc(v.get('url',''))}")
+        if len(ext) > 20:
+            lines.append(f"\n… and {len(ext)-20} more — use /search to narrow down")
+        return "\n".join(lines)
     if p not in PLATFORM_EMOJI:
         return (f"⚠️ Unknown platform \"{esc(args)}\"\n"
-                f"Choose: hackerone · bugcrowd · intigriti · yeswehack")
-    entries = sorted((v for v in qual.values() if v.get("platform") == p),
+                f"Choose: {' · '.join(PLATFORMS)}")
+    entries = sorted((v for k, v in programs.items()
+                      if v.get("platform") == p and k.split(":",1)[0] != "chaos"
+                      and v.get("bounty") and v.get("source")),
                      key=lambda v: v.get("name","").lower())
     if not entries:
         return f"{PLATFORM_EMOJI[p]} No bounty+source programs on {p} right now."
@@ -241,7 +297,7 @@ def cmd_platform(args, state, changes) -> str:
 def cmd_source(args, state, changes) -> str:
     programs = get_programs(state)
     hits = []
-    for v in qualifying(programs).values():
+    for k, v in qualifying(programs).items():
         assets = [t for t in v.get("sc_targets", [])
                   if (t.get("asset_type") or "").upper() in SOURCE_CODE_ASSET_TYPES]
         if assets:
@@ -289,53 +345,56 @@ def cmd_scope(args, state, changes) -> str:
                if q in (v.get("name","").lower()) or q in (k.split(":",1)[-1].lower())]
     if not matches:
         return f"🔍 No program found matching \"{esc(args)}\".\nTry /search {esc(args)}"
-    if len(matches) == 1 or all(m.get("name") == matches[0].get("name") for m in matches[:2]):
-        v = matches[0]
-        plat = v.get("platform","?")
-        sc = v.get("sc_targets", [])
-        lines = [
-            f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b> — {plat}", "",
-            f"🔗 {esc(v.get('url',''))}",
-            f"💰 Bounty: {'✅' if v.get('bounty') else '❌'}", "",
-            f"📁 <b>Source-code targets ({len(sc)}):</b>",
-        ]
-        for t in sc:
-            lines.append(f"  • <code>{esc(t.get('identifier'))}</code>  [{esc(t.get('asset_type'))}]")
-        if not sc:
-            lines.append("  (none detected)")
-        return "\n".join(lines)
-    names = sorted({m.get("name","") for m in matches})[:10]
-    more = f"\n… and {len(matches)-10} more" if len(matches) > 10 else ""
-    return ("🔍 Multiple matches — be more specific:\n\n"
-            + "\n".join(f"• {esc(n)}" for n in names) + more)
+    v = matches[0]
+    if v.get("platform") == "chaos":
+        return (f"🌍 <b>{esc(v.get('name'))}</b> — worldwide ({esc(v.get('origin','direct'))})\n\n"
+                f"🔗 {esc(v.get('url',''))}\n\n"
+                f"ℹ️ No scope detail in the worldwide index — check the program page.")
+    if len(matches) > 1 and not all(m.get("name") == v.get("name") for m in matches[:5]):
+        names = sorted({m.get("name","") for m in matches})[:10]
+        more = f"\n… and {len(matches)-10} more" if len(matches) > 10 else ""
+        return ("🔍 Multiple matches — be more specific:\n\n"
+                + "\n".join(f"• {esc(n)}" for n in names) + more)
+    plat = v.get("platform","?")
+    sc = v.get("sc_targets", [])
+    lines = [
+        f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b> — {plat}", "",
+        f"🔗 {esc(v.get('url',''))}",
+        f"💰 Bounty: {'✅' if v.get('bounty') else '❌'}", "",
+        f"📁 <b>Source-code targets ({len(sc)}):</b>",
+    ]
+    for t in sc:
+        lines.append(f"  • <code>{esc(t.get('identifier'))}</code>  [{esc(t.get('asset_type'))}]")
+    if not sc:
+        lines.append("  (none detected)")
+    return "\n".join(lines)
 
 def cmd_refresh(args, state, changes) -> str:
-    if not GH_PAT:
-        return ("⚠️ /refresh needs a <b>GH_PAT</b> secret.\n\n"
-                "Setup:\n"
-                "1. github.com → Settings → Developer settings → "
-                "Personal access tokens → <b>Generate new token</b>\n"
-                "2. Scopes: <code>repo</code> + <code>workflow</code>\n"
-                "3. Repo → Settings → Secrets → Actions → add <code>GH_PAT</code>\n\n"
-                "Until then, data auto-refreshes every 30 min anyway.")
+    """Runs monitor.py inline — no PAT needed."""
+    print("  [/refresh] running monitor.py …")
     try:
-        r = requests.post(
-            f"https://api.github.com/repos/{REPO}/actions/workflows/monitor.yml/dispatches",
-            headers={"Authorization": f"Bearer {GH_PAT}",
-                     "Accept": "application/vnd.github+json"},
-            json={"ref": "main"}, timeout=15)
-        if r.status_code == 204:
-            return ("🔄 Monitor triggered!\n"
-                    "📊 Fresh data in ~1 min — /status /stats /latest after that.")
-        return f"⚠️ GitHub API error {r.status_code}: {esc(r.text[:200])}"
+        r = subprocess.run([sys.executable, "monitor.py"],
+                           capture_output=True, text=True, timeout=300)
     except Exception as e:
-        return f"⚠️ Refresh failed: {esc(e)}"
+        return f"⚠️ Refresh failed to start: {esc(e)}"
+    if r.returncode != 0:
+        tail = (r.stdout or "") + (r.stderr or "")
+        return f"⚠️ Monitor exited with error:\n<code>{esc(tail[-400:])}</code>"
+    # monitor already sent any change notifications itself
+    meta = load_json(STATE_FILE, {}).get("_meta", {})
+    ext_q = meta.get("external", "?")
+    return ("🔄 <b>Data refreshed!</b>\n\n"
+            f"💰 Bounty + source : {meta.get('qualifying','?')}\n"
+            f"🌍 Worldwide       : {ext_q}\n"
+            f"📦 Total programs  : {meta.get('total','?')}\n\n"
+            f"🕒 {fmt_ts(meta.get('updated_at',''))} — /latest for new changes")
 
 COMMANDS = {
     "start":   cmd_start,
     "help":    cmd_help,
     "status":  cmd_status,
     "stats":   cmd_stats,
+    "sources": cmd_sources,
     "latest":  cmd_latest,
     "new":     cmd_new,
     "changes": cmd_changes,
@@ -352,6 +411,7 @@ BOT_MENU = [
     ("help", "All commands"),
     ("status", "Monitor health & last run"),
     ("stats", "Program statistics"),
+    ("sources", "Data sources I watch"),
     ("latest", "Last 5 changes"),
     ("new", "Recently added programs"),
     ("changes", "Last 15 changes"),
@@ -360,7 +420,7 @@ BOT_MENU = [
     ("source", "Programs with SOURCE_CODE assets"),
     ("github", "Programs with GitHub repos"),
     ("scope", "Program scope — /scope github"),
-    ("refresh", "Force monitor run now"),
+    ("refresh", "Force data refresh now"),
 ]
 
 def handle_text(text: str, state: dict, changes: list) -> str:
@@ -372,6 +432,7 @@ def handle_text(text: str, state: dict, changes: list) -> str:
         try:
             return handler(args, state, changes)
         except Exception as e:
+            print(f"  ✗ /{cmd} error:\n{traceback.format_exc()}")
             return f"💥 Error handling /{esc(cmd)}: {esc(e)}"
     if cmd.isalpha() and text.startswith("/"):
         return f"🤔 Unknown command /{esc(cmd)} — try /help"
@@ -379,10 +440,10 @@ def handle_text(text: str, state: dict, changes: list) -> str:
 
 # ── Telegram I/O ───────────────────────────────────────────────────────────────
 
-def tg_post(method: str, payload: dict, retries: int = 2):
+def tg_call(method: str, payload: dict, http_timeout: int = 15, retries: int = 2):
     for i in range(retries + 1):
         try:
-            r = requests.post(f"{API}/{method}", json=payload, timeout=15)
+            r = requests.post(f"{API}/{method}", json=payload, timeout=http_timeout)
             if r.status_code == 429:
                 time.sleep(r.json().get("parameters", {}).get("retry_after", 15)); continue
             return r
@@ -394,56 +455,104 @@ def tg_post(method: str, payload: dict, retries: int = 2):
     return None
 
 def send_reply(chat_id: int, text: str) -> bool:
+    ok_all = True
     # Telegram hard limit is 4096 chars — split on line boundaries
     while text:
-        chunk, text = text[:3800], text[3800:]
-        if text:
+        chunk, rest = text[:3800], text[3800:]
+        if rest:
             cut = chunk.rfind("\n")
             if cut > 500:
-                chunk, text = chunk[:cut], chunk[cut:] + text
-        r = tg_post("sendMessage", {
+                chunk, rest = chunk[:cut], chunk[cut:] + rest
+        r = tg_call("sendMessage", {
             "chat_id": chat_id, "text": chunk,
             "parse_mode": "HTML", "disable_web_page_preview": True})
         ok = bool(r and r.ok)
+        ok_all = ok_all and ok
         if ok:
             time.sleep(0.6)  # stay under 1 msg/sec per chat
-    return ok
+    return ok_all
 
 def set_menu():
-    r = tg_post("setMyCommands", {"commands": [
+    r = tg_call("setMyCommands", {"commands": [
         {"command": c, "description": d} for c, d in BOT_MENU]})
     if r and r.ok:
         print("  ✓ command menu registered")
 
-def get_updates(offset: int) -> List[dict]:
-    r = tg_post("getUpdates", {"offset": offset, "limit": 100, "timeout": 0}, retries=1)
-    if r and r.ok:
+def get_updates(offset: int, long_poll: bool = True) -> Optional[List[dict]]:
+    """None = API error (handled by caller); [] = no updates."""
+    poll_secs = 25 if long_poll else 0
+    r = tg_call("getUpdates", {"offset": offset, "limit": 100, "timeout": poll_secs},
+                http_timeout=poll_secs + 15, retries=1)
+    if r is None:
+        return None
+    if r.ok:
         return r.json().get("result", [])
-    return []
+    code = r.status_code
+    body = r.text[:200]
+    if code == 409:  # webhook conflict — heal and retry
+        print(f"  ⚠ 409 conflict — deleting webhook: {body}")
+        tg_call("deleteWebhook", {"drop_pending_updates": False})
+        r2 = tg_call("getUpdates", {"offset": offset, "limit": 100, "timeout": 0},
+                     http_timeout=15, retries=1)
+        return r2.json().get("result", []) if (r2 and r2.ok) else None
+    if code == 401:
+        print(f"  ✗✗✗ TELEGRAM_TOKEN INVALID (401) — check the repo secret!"); raise SystemExit(1)
+    print(f"  ✗ getUpdates HTTP {code}: {body}")
+    return None
 
-# ── Main loop ─────────────────────────────────────────────────────────────────
+# ── Main loop (resident long-poll) ────────────────────────────────────────────
 
 def main():
-    print(f"\n{'─'*50}\n  Telegram Bot — {datetime.now(timezone.utc).isoformat()}\n{'─'*50}")
+    print(f"\n{'─'*58}")
+    print(f"  Telegram Bot — resident mode")
+    print(f"  started {datetime.now(timezone.utc).isoformat()}")
+    print(f"  max runtime: {BOT_MAX_MINUTES} min")
+    print(f"{'─'*58}\n")
     if not TELEGRAM_TOKEN:
-        print("✗ TELEGRAM_TOKEN missing — aborting."); raise SystemExit(1)
+        print("✗✗✗ TELEGRAM_TOKEN missing — aborting."); raise SystemExit(1)
 
     offset_data = load_json(OFFSET_FILE, {"last_update_id": 0})
     offset = int(offset_data.get("last_update_id", 0)) + 1
-    save_json(OFFSET_FILE, {"last_update_id": max(0, offset - 1)})  # ensure file exists
+    save_json(OFFSET_FILE, {"last_update_id": max(0, offset - 1)})
 
     set_menu()
 
-    state = load_json(STATE_FILE, {})
-    changes = load_json(CHANGES_FILE, [])
-    if not state:
-        print("  ⚠ no state.json yet — monitor must run first")
+    if ANNOUNCE:
+        send_reply(int(TELEGRAM_CHAT_ID) if TELEGRAM_CHAT_ID.lstrip("-").isdigit() else TELEGRAM_CHAT_ID,
+            "🤖 <b>Bot online</b> — resident mode, replying instantly 24/7.\n"
+            "📖 /help for commands · 📊 /status for health")
 
-    processed = 0
+    last_heartbeat = 0.0
+    api_fail_streak = 0
+
     while True:
-        updates = get_updates(offset)
-        if not updates:
+        ran_out = (time.time() - BOT_STARTED_AT) / 60 >= BOT_MAX_MINUTES
+        if ran_out:
+            print(f"\n⏱ runtime limit reached ({BOT_MAX_MINUTES} min) — exiting gracefully")
+            print(f"  uptime: {uptime()} · offset: {offset-1}")
             break
+
+        if time.time() - last_heartbeat > 600:
+            print(f"  ♥ {datetime.now(timezone.utc).strftime('%H:%M:%S')} alive · "
+                  f"uptime {uptime()} · offset {offset-1}")
+            last_heartbeat = time.time()
+
+        updates = get_updates(offset, long_poll=True)
+        if updates is None:
+            api_fail_streak += 1
+            if api_fail_streak >= 10:
+                print("  ✗✗✗ 10 consecutive API failures — restarting process")
+                raise SystemExit(1)  # workflow restarts us via schedule re-arm
+            time.sleep(15)
+            continue
+        api_fail_streak = 0
+
+        if not updates:
+            continue
+
+        state = load_json(STATE_FILE, {})
+        changes = load_json(CHANGES_FILE, [])
+
         for u in updates:
             offset = u["update_id"] + 1
             msg = u.get("message") or u.get("edited_message") or {}
@@ -457,18 +566,17 @@ def main():
                 continue
             print(f"  ← {text[:60]}")
             send_reply(chat_id, handle_text(text, state, changes))
-            processed += 1
-        save_json(OFFSET_FILE, {"last_update_id": offset - 1})
-        if len(updates) < 100:
-            break
 
-    print(f"  ✓ processed {processed} message(s), offset={offset-1}")
+        save_json(OFFSET_FILE, {"last_update_id": offset - 1})
+        # confirm processed updates server-side (shrinks crash-replay window)
+        get_updates(offset, long_poll=False)
 
 if __name__ == "__main__":
     try:
         main()
     except SystemExit:
         raise
+    except KeyboardInterrupt:
+        print("\nbye"); raise SystemExit(0)
     except Exception as e:
-        import traceback
         print(f"\n💥 Fatal: {e}"); traceback.print_exc(); raise

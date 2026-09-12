@@ -1,8 +1,13 @@
 name: Telegram Bot
 
+# Resident bot: one long-running job long-polls Telegram (instant replies).
+# The */15 schedule re-arms the next run (queued behind the active one via the
+# shared concurrency group), so the bot restarts automatically if it ever dies.
+# Manual "Run workflow" also sends a "Bot online" ping so you can verify liveness.
+
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -14,9 +19,9 @@ concurrency:
 
 jobs:
   bot:
-    name: Poll Telegram commands
+    name: Resident bot (long-poll)
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 350
 
     steps:
 
@@ -35,10 +40,12 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          GH_PAT:           ${{ secrets.GH_PAT }}
+          ANNOUNCE:         ${{ github.event_name == 'workflow_dispatch' && '1' || '0' }}
+          BOT_MAX_MINUTES:  '330'
         run: python bot.py
 
       - name: Commit updated offset
+        if: always()
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"
