@@ -22,6 +22,8 @@ CHANGES_FILE = "changes_log.json"
 API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 BOT_STARTED_AT = time.time()
+MONITOR_INTERVAL = 30 * 60          # run monitor.py inline every 30 min
+LAST_MONITOR_AT  = time.time() - (MONITOR_INTERVAL - 120)  # first cycle ~2 min after boot
 
 SOURCE_CODE_ASSET_TYPES = {"SOURCE_CODE", "GITHUB", "GITLAB", "BITBUCKET"}
 PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡",
@@ -137,7 +139,7 @@ def cmd_status(args, state, changes) -> str:
         f"🌍 Worldwide watch   : {meta.get('external', len(externals(programs)))}",
         f"📜 Changes logged    : {len(changes)}",
         f"🤖 Bot uptime        : {uptime()}",
-        "", "🔁 Monitor schedule: every 30 min · Bot: 24/7 resident",
+        "", "🔁 Monitor: every 30 min (inline + cron backup) · Bot: 24/7 resident",
     ]
     return "\n".join(lines)
 
@@ -500,13 +502,40 @@ def get_updates(offset: int, long_poll: bool = True) -> Optional[List[dict]]:
     print(f"  ✗ getUpdates HTTP {code}: {body}")
     return None
 
+# ── Inline monitor (schedule-independent) ─────────────────────────────────────
+
+def run_monitor_cycle():
+    """Run monitor.py inline and commit its state — notifications no longer
+    depend on GitHub's (delayed) cron schedules."""
+    print("  [/auto] monitor cycle starting …")
+    try:
+        r = subprocess.run([sys.executable, "monitor.py"], timeout=300)
+    except Exception as e:
+        print(f"  [/auto] monitor crashed: {e}")
+        return
+    if r.returncode != 0:
+        print("  [/auto] monitor exited non-zero — keeping old state")
+        return
+    subprocess.run("git add state.json changes_log.json", shell=True)
+    subprocess.run(
+        'git -c user.name="BountyBot[bot]" -c user.email=bountybot@users.noreply.github.com '
+        'commit -m "chore: auto state [skip ci]"', shell=True)
+    subprocess.run(
+        "git push || (git pull --rebase origin main && git push) || "
+        "(git fetch origin && git reset --hard origin/main)",
+        shell=True)
+    print("  [/auto] monitor cycle done")
+
 # ── Main loop (resident long-poll) ────────────────────────────────────────────
 
 def main():
+    global LAST_MONITOR_AT
     print(f"\n{'─'*58}")
     print(f"  Telegram Bot — resident mode")
     print(f"  started {datetime.now(timezone.utc).isoformat()}")
     print(f"  max runtime: {BOT_MAX_MINUTES} min")
+    print(f"  diagnostics: token={'present' if TELEGRAM_TOKEN else 'MISSING'}"
+          f" ({len(TELEGRAM_TOKEN)} chars) · chat_id={TELEGRAM_CHAT_ID!r}")
     print(f"{'─'*58}\n")
     if not TELEGRAM_TOKEN:
         print("✗✗✗ TELEGRAM_TOKEN missing — aborting."); raise SystemExit(1)
@@ -547,6 +576,11 @@ def main():
             print(f"  ♥ {datetime.now(timezone.utc).strftime('%H:%M:%S')} alive · "
                   f"uptime {uptime()} · offset {offset-1}")
             last_heartbeat = time.time()
+
+        # inline monitor cycle — every 30 min, independent of cron schedules
+        if time.time() - LAST_MONITOR_AT >= MONITOR_INTERVAL:
+            LAST_MONITOR_AT = time.time()
+            run_monitor_cycle()
 
         try:
             updates = get_updates(offset, long_poll=True)
