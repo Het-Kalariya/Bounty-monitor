@@ -23,7 +23,7 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
-SCHEMA_VERSION   = 5  # bump to force a silent re-baseline on format changes
+SCHEMA_VERSION   = 6  # bump to force a silent re-baseline on format changes
 
 PLATFORM_URLS: Dict[str, str] = {
     "hackerone": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/hackerone_data.json",
@@ -46,6 +46,7 @@ EVENT_LABELS   = {
     "scope_updated":  ("🔄","Scope updated — still has source code"),
     "bounty_enabled": ("💰","Now paying bounties (has source code scope)"),
     "new_external":   ("🌍","New bounty program — outside major platforms"),
+    "new_repo":       ("🐙","New GitHub repo in scope"),
 }
 
 # ── Normalizers ────────────────────────────────────────────────────────────────
@@ -145,6 +146,28 @@ def scope_hash(prog: dict) -> str:
     s = json.dumps(sorted(json.dumps(t,sort_keys=True) for t in prog["in_scope"]))
     return hashlib.sha1(s.encode()).hexdigest()
 
+def norm_id(identifier: str) -> str:
+    """Canonical form for diffing: lowercase, strip trailing slash/whitespace."""
+    return (identifier or "").strip().rstrip("/").lower()
+
+def sc_ids_list(prog: dict) -> List[str]:
+    """Full sorted normalized ids of source-code targets (not truncated)."""
+    return sorted({norm_id(t.get("identifier","")) for t in sc_targets(prog) if norm_id(t.get("identifier",""))})
+
+def github_repos_list(prog: dict) -> List[str]:
+    """Extract github.com/org/repo from source-code target identifiers."""
+    repos = set()
+    for t in sc_targets(prog):
+        ident = (t.get("identifier") or "").lower()
+        m = ident.find("github.com/")
+        if m == -1:
+            continue
+        rest = ident[m + len("github.com/"):].strip().strip("/")
+        parts = [p for p in rest.split("/") if p]
+        if len(parts) >= 2:
+            repos.add(f"{parts[0]}/{parts[1]}")
+    return sorted(repos)
+
 # ── Telegram ───────────────────────────────────────────────────────────────────
 
 def tg_send(text: str, retries=3) -> bool:
@@ -171,17 +194,49 @@ def build_message(prog: dict, platform: str, event: str) -> str:
             f"📋 <b>Program:</b>   {prog['name']}",
             f"🌐 <b>Found via:</b>  {prog.get('origin','direct')} (worldwide index)",
             f"🔗 <b>URL:</b>       {prog['url']}","",
-            "ℹ️ No scope detail in the index — check the program page",
+            "ℹ️ No scope detail in the worldwide index — check the program page",
             f"\n⏰ {ts}",
         ])
     sc = sc_targets(prog)
     lines = [f"{emoji} <b>{title}</b>","",
              f"{PLATFORM_EMOJI.get(platform,'⚪')} <b>Platform:</b>  {platform.capitalize()}",
-             f"📋 <b>Program:</b>   {prog['name']}",f"🔗 <b>URL:</b>       {prog['url']}","",
-             f"📁 <b>Source Code Targets ({len(sc)}):</b>"]
-    for t in sc[:6]:
-        lines.append(f"  • <code>{t['identifier']}</code>  [{t['asset_type']}]")
-    if len(sc)>6: lines.append(f"  … and {len(sc)-6} more")
+             f"📋 <b>Program:</b>   {prog['name']}",f"🔗 <b>URL:</b>       {prog['url']}",""]
+    if event == "new_repo":
+        gh_new = prog.get("_github_new", []) or []
+        if gh_new:
+            lines.append(f"🐙 <b>New repos ({len(gh_new)}):</b>")
+            for r in gh_new[:6]:
+                lines.append(f"  • <code>github.com/{r}</code>")
+            if len(gh_new) > 6: lines.append(f"  … and {len(gh_new)-6} more")
+        else:
+            lines.append(f"📁 <b>Source Code Targets ({len(sc)}):</b>")
+            for t in sc[:6]:
+                lines.append(f"  • <code>{t['identifier']}</code>  [{t['asset_type']}]")
+    elif event in ("scope_added", "scope_updated"):
+        added = prog.get("_added", []) or []
+        removed = prog.get("_removed", []) or []
+        if added:
+            lines.append(f"➕ <b>Added ({len(added)}):</b>")
+            for a in added[:6]:
+                lines.append(f"  • <code>{a}</code>")
+            if len(added) > 6: lines.append(f"  … and {len(added)-6} more")
+            lines.append("")
+        if removed:
+            lines.append(f"➖ <b>Removed ({len(removed)}):</b>")
+            for r in removed[:4]:
+                lines.append(f"  • <code>{r}</code>")
+            if len(removed) > 4: lines.append(f"  … and {len(removed)-4} more")
+            lines.append("")
+        if not added and not removed:
+            lines.append(f"📁 <b>Source Code Targets ({len(sc)}):</b>")
+            for t in sc[:6]:
+                lines.append(f"  • <code>{t['identifier']}</code>  [{t['asset_type']}]")
+            if len(sc)>6: lines.append(f"  … and {len(sc)-6} more")
+    else:
+        lines.append(f"📁 <b>Source Code Targets ({len(sc)}):</b>")
+        for t in sc[:6]:
+            lines.append(f"  • <code>{t['identifier']}</code>  [{t['asset_type']}]")
+        if len(sc)>6: lines.append(f"  … and {len(sc)-6} more")
     lines.append(f"\n⏰ {ts}")
     return "\n".join(lines)
 
@@ -205,6 +260,9 @@ def append_change(changes: list, prog: dict, platform: str, event: str):
         "name":      prog["name"],
         "url":       prog["url"],
         "sc_targets": sc_targets(prog)[:8],
+        "added":     list(prog.get("_added", []) or [])[:20],
+        "removed":   list(prog.get("_removed", []) or [])[:20],
+        "github_repos": list(prog.get("_github_new", []) or [])[:20],
     })
     if len(changes) > MAX_CHANGES:
         changes[:] = changes[-MAX_CHANGES:]
@@ -277,6 +335,8 @@ def main():
             hb  = prog["has_bounty"]
             sc  = sc_targets(prog)
             hs  = bool(sc)
+            ids = sc_ids_list(prog)
+            gh  = github_repos_list(prog)
 
             new_state[key] = {
                 "hash": h, "bounty": hb, "source": hs,
@@ -288,6 +348,8 @@ def main():
                 "resp_eff": prog.get("resp_eff"),
                 "bounty_days": prog.get("bounty_days"),
                 "sc_targets": sc[:10],
+                "sc_ids": ids,
+                "github_repos": gh,
             }
 
             if first_run or not (hb and hs): continue
@@ -295,10 +357,34 @@ def main():
             if p is None:
                 events.append((prog, platform, "new_program"))
             elif p.get("hash") != h:
+                old_ids = set(p.get("sc_ids") or [])
+                new_ids = set(ids)
+                added = sorted(new_ids - old_ids)[:20]
+                removed = sorted(old_ids - new_ids)[:20]
+                # fallback for pre-v6 states without sc_ids: diff display targets
+                if not old_ids and not added:
+                    added = [norm_id(t.get("identifier","")) for t in sc[:20]
+                             if norm_id(t.get("identifier",""))]
+                old_gh = set(p.get("github_repos") or [])
+                gh_new = sorted(set(gh) - old_gh)[:20]
+                prog["_added"] = added
+                prog["_removed"] = removed
+                prog["_github_new"] = gh_new
                 was = p.get("source", False)
                 events.append((prog, platform, "scope_added" if (hs and not was) else "scope_updated"))
+                if gh_new:
+                    events.append((prog, platform, "new_repo"))
             elif not p.get("bounty") and hb:
                 events.append((prog, platform, "bounty_enabled"))
+            else:
+                # hash unchanged but v6 adds repo tracking: catch repos missed pre-v6
+                old_gh = set((p.get("github_repos") or []))
+                gh_new = sorted(set(gh) - old_gh)[:20]
+                if gh_new and p.get("sc_ids") is None:
+                    prog["_added"] = []
+                    prog["_removed"] = []
+                    prog["_github_new"] = gh_new
+                    events.append((prog, platform, "new_repo"))
 
     # Names already covered by big platforms (avoid duplicate chaos entries)
     known_names = {v.get("name","").lower() for k, v in new_state.items()}
