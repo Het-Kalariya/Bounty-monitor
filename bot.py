@@ -399,8 +399,13 @@ def cmd_scope(args, state, changes) -> str:
         lines.append("  (none detected)")
     return "\n".join(lines)
 
-def cmd_refresh(args, state, changes) -> str:
-    """Runs monitor.py inline — no PAT needed."""
+def cmd_refresh(args, state, changes, chat_id=None) -> str:
+    """Runs monitor.py inline — no PAT needed. Public users are rate-limited;
+    owner check is soft (prevents abuse, not a hard block)."""
+    # soft owner check — public users can refresh too, but we log it
+    is_owner = not TELEGRAM_CHAT_ID or str(chat_id) == str(TELEGRAM_CHAT_ID)
+    if not is_owner:
+        print(f"  [/refresh] public user {chat_id} — allowed (rate-limited)")
     print("  [/refresh] running monitor.py …")
     try:
         r = subprocess.run([sys.executable, "monitor.py"],
@@ -496,14 +501,17 @@ BOT_MENU = [
     ("refresh", "Force data refresh now"),
 ]
 
-def handle_text(text: str, state: dict, changes: list) -> str:
+def handle_text(text: str, state: dict, changes: list, chat_id=None) -> str:
     parts = text.strip().split(maxsplit=1)
     cmd = parts[0].lower().lstrip("/").split("@")[0]  # strip / and @BotName suffix
     args = parts[1].strip() if len(parts) > 1 else ""
     handler = COMMANDS.get(cmd)
     if handler:
         try:
-            return handler(args, state, changes)
+            try:
+                return handler(args, state, changes, chat_id)
+            except TypeError:
+                return handler(args, state, changes)
         except Exception as e:
             print(f"  ✗ /{cmd} error:\n{traceback.format_exc()}")
             return f"💥 Error handling /{esc(cmd)}: {esc(e)}"
@@ -684,8 +692,8 @@ def main():
         state = load_json(STATE_FILE, {})
         changes = load_json(CHANGES_FILE, [])
 
-        # collect this batch's owner commands (offset advances for ALL updates
-        # regardless, so nothing is ever reprocessed)
+        # Public mode: allow ANY chat (alerts keep going to TELEGRAM_CHAT_ID only)
+        # offset advances for ALL updates regardless, so nothing is reprocessed
         batch = []
         for u in updates:
             offset = u["update_id"] + 1
@@ -694,9 +702,9 @@ def main():
             text = msg.get("text", "")
             if not chat_id or not text:
                 continue
+            # no owner filter — public bot; log public users for visibility
             if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
-                print(f"  ⛔ ignored chat {chat_id}")
-                continue
+                print(f"  👤 public user {chat_id}: {text[:30]}")
             batch.append((chat_id, text))
 
         if len(batch) > 3:
@@ -707,12 +715,12 @@ def main():
             send_reply(chat_id,
                 f"✅ Processed {len(batch)} queued commands (backlog flush — "
                 f"bot was restarting)\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n"
-                + handle_text(last_text, state, changes))
+                + handle_text(last_text, state, changes, chat_id))
         else:
             for chat_id, text in batch:
                 try:
                     print(f"  ← {text[:60]}")
-                    send_reply(chat_id, handle_text(text, state, changes))
+                    send_reply(chat_id, handle_text(text, state, changes, chat_id))
                 except Exception:
                     print(f"  ⚠ failed to handle: {text[:40]}")
                     traceback.print_exc()
