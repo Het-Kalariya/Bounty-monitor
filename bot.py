@@ -1069,6 +1069,36 @@ def get_updates(offset: int, long_poll: bool = True) -> Optional[List[dict]]:
 
 # ── Inline monitor (schedule-independent) ─────────────────────────────────────
 
+def git_sync(commit_msg: str, add_files: list):
+    """Commit + push with auto-resolve. Never raises. Freshest snapshot wins
+    on state.json conflicts (bot just re-fetched upstream APIs)."""
+    try:
+        for f in add_files:
+            subprocess.run(f"git add {f} 2>/dev/null || true", shell=True)
+        subprocess.run(
+            f'git -c user.name="BountyBot[bot]" '
+            f'-c user.email=bountybot@users.noreply.github.com '
+            f'commit -m "{commit_msg}" || true',
+            shell=True)
+        subprocess.run("git fetch origin main || true", shell=True)
+        subprocess.run(
+            "git pull --rebase --autostash -X theirs origin main"
+            " || git rebase --abort || true",
+            shell=True)
+        r = subprocess.run("git push", shell=True)
+        if r.returncode != 0:
+            print("  [git] push needed retry…")
+            subprocess.run("git fetch origin main || true", shell=True)
+            subprocess.run(
+                "git pull --rebase --autostash -X theirs origin main"
+                " || git rebase --abort || true",
+                shell=True)
+            subprocess.run("git push || echo 'push failed — next cycle will retry'",
+                           shell=True)
+    except Exception as e:
+        print(f"  [git] sync error (non-fatal): {e}")
+
+
 def run_monitor_cycle():
     """Run monitor.py inline and commit its state — notifications no longer
     depend on GitHub's (delayed) cron schedules."""
@@ -1082,19 +1112,8 @@ def run_monitor_cycle():
         print("  [/auto] monitor exited non-zero — keeping old state")
         return
     # commit state + offset (persisting offset here shrinks restart-replay to ~zero)
-    for cmd in [
-        "git add state.json changes_log.json bot_offset.json",
-        'git -c user.name="BountyBot[bot]" -c user.email=bountybot@users.noreply.github.com '
-        'commit -m "chore: auto state [skip ci]"',
-    ]:
-        subprocess.run(cmd, shell=True)
-    # safe push: rebase local commit on remote; NEVER reset --hard (would rewind
-    # local state/offset files); on any failure just skip — next cycle catches up
-    subprocess.run(
-        "git pull --rebase --autostash origin main"
-        " && git push"
-        " || git rebase --abort",
-        shell=True)
+    git_sync("chore: auto state [skip ci]",
+             ["state.json", "changes_log.json", "bot_offset.json"])
     print("  [/auto] monitor cycle done")
 
 # ── Main loop (resident long-poll) ────────────────────────────────────────────
@@ -1156,15 +1175,7 @@ def main():
         # digest sender — due daily/weekly summaries per user prefs
         try:
             if check_and_send_digests():
-                subprocess.run("git add prefs.json", shell=True)
-                subprocess.run(
-                    'git -c user.name="BountyBot[bot]" -c user.email=bountybot@users.noreply.github.com '
-                    'commit -m "chore: digest prefs [skip ci]"', shell=True)
-                subprocess.run(
-                    "git pull --rebase --autostash origin main"
-                    " && git push"
-                    " || git rebase --abort",
-                    shell=True)
+                git_sync("chore: digest prefs [skip ci]", ["prefs.json"])
         except Exception as e:
             print(f"  [digest] sender error: {e}")
 

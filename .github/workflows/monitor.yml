@@ -41,11 +41,12 @@ jobs:
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"
-          git add state.json changes_log.json
+          git add state.json changes_log.json || true
           if git diff --staged --quiet; then
             echo "No state changes, skipping commit."
           else
-            git commit -m "chore: update state [skip ci]"
-            git pull --rebase origin main
-            git push || (git pull --rebase origin main && git push) || echo "push failed — next run will retry"
+            git commit -m "chore: update state [skip ci]" || true
+            git fetch origin main || true
+            git pull --rebase --autostash -X theirs origin main || git rebase --abort || true
+            git push || (git fetch origin main || true; git pull --rebase --autostash -X theirs origin main || git rebase --abort || true; git push || echo "push failed — next run will retry")
           fi
