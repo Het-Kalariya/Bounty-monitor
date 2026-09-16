@@ -180,5 +180,51 @@
     "added": [],
     "removed": [],
     "github_repos": []
+  },
+  {
+    "timestamp": "2026-09-16T05:23:44.780873+00:00",
+    "event": "new_program",
+    "platform": "hackerone",
+    "handle": "arc-bbp",
+    "name": "Arc BBP",
+    "url": "https://hackerone.com/arc-bbp",
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/circlefin/arc-node",
+        "description": ""
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/circlefin/arc-remote-signer",
+        "description": ""
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/circlefin/malachite",
+        "description": "The repository containing the source-code for Malachite.    Malachite is a Byzantine-fault tolerant (BFT) consensus engine implemented in Rust.\n \n==Partial scope only:==\nin scope is code/crates minus the starknet and test folders; everything outside code/crates is out of scope."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-09-16T05:23:46.851641+00:00",
+    "event": "scope_updated",
+    "platform": "intigriti",
+    "handle": "cmcom",
+    "name": "CM.com",
+    "url": "https://www.intigriti.com/programs/cmcom/cmcom/detail",
+    "sc_targets": [
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/cmdotcom",
+        "description": "Our public code repositories are being used by our customers. In scope for this domain is issues with the public code we host (vulnerabilities, libraries that have known security concerns, keys accidentally pushed to the public GitHub etc.). \n**Testing the GitHub itself is out-of-scope**, they have their own bug bounty program if you are interested :)"
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
   }
 ]
