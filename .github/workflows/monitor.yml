@@ -15,9 +15,9 @@ concurrency:
 jobs:
   monitor:
     name: Run Monitor
-    # no token (e.g. on a fork) → skip instead of running a mute monitor
-    # that pollutes the branch with tokenless state commits
-    if: secrets.TELEGRAM_TOKEN != ''
+    # forks don't inherit secrets — run the monitor only in the home repo;
+    # everywhere else skip (no mute monitor committing tokenless state)
+    if: github.repository_owner == 'Het-Kalariya'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 

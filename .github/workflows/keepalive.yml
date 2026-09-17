@@ -25,10 +25,10 @@ jobs:
     name: Resident bot (keepalive)
     # a cancelled predecessor means someone stopped the bot on purpose —
     # don't restart the chain in that case.
-    # missing TELEGRAM_TOKEN (e.g. on a fork) → job skips → chain halts
-    # quietly instead of crashing in a red-X loop forever
+    # forks don't inherit secrets — run the resident bot only in the home
+    # repo; everywhere else the job skips and the chain halts quietly
     if: >-
-      secrets.TELEGRAM_TOKEN != '' &&
+      github.repository_owner == 'Het-Kalariya' &&
       (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled')
     runs-on: ubuntu-latest
     timeout-minutes: 350
