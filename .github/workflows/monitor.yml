@@ -15,16 +15,19 @@ concurrency:
 jobs:
   monitor:
     name: Run Monitor
+    # no token (e.g. on a fork) → skip instead of running a mute monitor
+    # that pollutes the branch with tokenless state commits
+    if: secrets.TELEGRAM_TOKEN != ''
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
     steps:
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.11'
 
