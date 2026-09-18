@@ -55,7 +55,13 @@ CANTINA_BOUNTY_URL     = "https://cantina.xyz/bounties/{uid}"
 SHERLOCK_SITEMAP_URL   = "https://audits.sherlock.xyz/sitemap.xml"
 SHERLOCK_BOUNTY_URL    = "https://audits.sherlock.xyz/bug-bounties/{bid}"
 BLOCKCHAIN_PLATFORMS   = {"hackenproof", "immunefi", "cantina", "sherlock"}
-UA_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; BountyMonitor/1.0)"}
+# Plain browser UA: datacenter IPs already score badly with bot-mitigation;
+# no need to additionally self-identify as a bot in every request.
+UA_HEADERS = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                            "AppleWebKit/537.36 (KHTML, like Gecko) "
+                            "Chrome/126.0.0.0 Safari/537.36",
+              "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+              "Accept-Language": "en-US,en;q=0.9"}
 
 # Smart-contract scope counts as source ONLY on blockchain feeds. Big-5 keeps
 # the strict check (explicit SC type or repo-host URL) to avoid false
@@ -619,12 +625,14 @@ def _parse_hackenproof_program(slug: str, html: str) -> Optional[dict]:
         print(f"    [hackenproof:{slug}] parse error: {e}")
     return None
 
-def _fetch_text(url: str, timeout: int = 20) -> Optional[str]:
+def _fetch_text(url: str, timeout: int = 20, errors: Optional[list] = None) -> Optional[str]:
     try:
         r = requests.get(url, timeout=timeout, headers=UA_HEADERS)
         r.raise_for_status()
         return r.text
-    except Exception:
+    except Exception as e:
+        if errors is not None:
+            errors.append(type(e).__name__)
         return None
 
 def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
@@ -642,10 +650,12 @@ def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
     print(f"  … hackenproof sitemap → {len(slugs)} slugs; fetching details…")
     out, failed = [], []
     reasons: Dict[str, int] = {}
+    fetch_errors: List[str] = []
 
     def _one(slug: str):
         try:
-            html = _fetch_text(HACKENPROOF_PROGRAM_URL.format(slug=slug))
+            html = _fetch_text(HACKENPROOF_PROGRAM_URL.format(slug=slug),
+                               timeout=30, errors=fetch_errors)
             if not html:
                 return (slug, None, "fetch")
             norm = _parse_hackenproof_program(slug, html)
@@ -656,7 +666,7 @@ def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
 
     def _pass(work: List[str]):
         res = []
-        with ThreadPoolExecutor(max_workers=4) as ex:
+        with ThreadPoolExecutor(max_workers=3) as ex:
             res = list(ex.map(_one, work))
         return res
 
@@ -672,10 +682,13 @@ def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
         failed = []
         if todo and attempt == 1:
             print(f"  … hackenproof retrying {len(todo)} failed details…")
-            time.sleep(2)
+            time.sleep(3)
     failed = todo
     if reasons:
         print(f"  … hackenproof detail failures: {dict(sorted(reasons.items()))}")
+    if fetch_errors:
+        from collections import Counter as _Counter
+        print(f"  … hackenproof fetch errors: {dict(_Counter(fetch_errors).most_common(5))}")
     print(f"  ✓ {'hackenproof':12s} → {len(out):4d} programs"
           + (f" ({len(failed)} detail fails → stale)" if failed else ""))
     return (out, failed, slugs)
