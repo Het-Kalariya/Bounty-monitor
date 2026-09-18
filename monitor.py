@@ -670,20 +670,16 @@ def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
             res = list(ex.map(_one, work))
         return res
 
+    # Single pass on purpose: datacenter IPs get blanket 403s from
+    # HackenProof's bot mitigation — hammering retries changes nothing.
+    # Coverage accrues across cycles via silent backfill of lucky hits.
     todo = slugs
-    for attempt in (1, 2):
-        for slug, norm, reason in _pass(todo):
-            if norm:
-                out.append(norm)
-            else:
-                reasons[reason] = reasons.get(reason, 0) + 1
-                failed.append(slug)
-        todo = failed
-        failed = []
-        if todo and attempt == 1:
-            print(f"  … hackenproof retrying {len(todo)} failed details…")
-            time.sleep(3)
-    failed = todo
+    for slug, norm, reason in _pass(todo):
+        if norm:
+            out.append(norm)
+        else:
+            reasons[reason] = reasons.get(reason, 0) + 1
+            failed.append(slug)
     if reasons:
         print(f"  … hackenproof detail failures: {dict(sorted(reasons.items()))}")
     if fetch_errors:
