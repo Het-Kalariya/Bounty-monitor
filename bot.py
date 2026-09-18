@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 """
 Telegram Bot — Bug Bounty Source Code Monitor (resident mode)
-Runs as a long-polling process 24/7: replies are instant.
+Best-effort long-polling: restarts ~every 5.5h via GitHub Actions, gaps happen.
+Replies are fast when alive, NOT guaranteed 24/7 single-process instant.
 Data: state.json + changes_log.json written by monitor.py.
 /refresh runs monitor.py inline — no PAT needed.
+Blunt rules: timestamps = detection time; H1 amounts unknown; Chaos = no scope.
 """
 
 import html, json, os, subprocess, sys, time, traceback
@@ -22,13 +24,16 @@ CHANGES_FILE = "changes_log.json"
 API = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}"
 
 BOT_STARTED_AT = time.time()
-MONITOR_INTERVAL = 30 * 60          # run monitor.py inline every 30 min
+MONITOR_INTERVAL = 30 * 60          # best-effort ~30 min; cron delays + restarts happen
 LAST_MONITOR_AT  = time.time() - (MONITOR_INTERVAL - 120)  # first cycle ~2 min after boot
 
 SOURCE_CODE_ASSET_TYPES = {"SOURCE_CODE", "GITHUB", "GITLAB", "BITBUCKET"}
 PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡",
-                  "federacy":"🟣","chaos":"🌍"}
-PLATFORMS = ["hackerone", "bugcrowd", "intigriti", "yeswehack", "federacy", "other"]
+                   "federacy":"🟣","chaos":"🌍",
+                   "hackenproof":"🟠","immunefi":"💠","cantina":"🍷","sherlock":"🔍"}
+PLATFORMS = ["hackerone", "bugcrowd", "intigriti", "yeswehack", "federacy",
+             "hackenproof", "immunefi", "cantina", "sherlock", "other"]
+BLOCKCHAIN_PLATFORMS = {"hackenproof", "immunefi", "cantina", "sherlock"}
 EVENT_EMOJI = {
     "new_program":"🆕", "scope_added":"📦",
     "scope_updated":"🔄", "bounty_enabled":"💰", "new_external":"🌍",
@@ -71,6 +76,10 @@ def qualifying(programs: dict) -> dict:
 
 def externals(programs: dict) -> dict:
     return {k: v for k, v in programs.items() if k.split(":",1)[0] == "chaos"}
+
+def blockchains(programs: dict) -> dict:
+    return {k: v for k, v in programs.items()
+            if v.get("platform") in BLOCKCHAIN_PLATFORMS}
 
 def fmt_ts(iso: str) -> str:
     try:
@@ -129,7 +138,7 @@ def check_refresh_rate(chat_id) -> Optional[str]:
     if not is_owner(chat_id):
         if now - LAST_REFRESH_AT < REFRESH_GLOBAL_COOLDOWN:
             wait = int((REFRESH_GLOBAL_COOLDOWN - (now - LAST_REFRESH_AT)) // 60) + 1
-            return (f"⏳ Refresh cooldown — data auto-updates every 30 min anyway. "
+            return (f"⏳ Refresh cooldown — auto-refresh is best-effort ~30 min (often delayed). "
                     f"Try again in ~{wait}m. Owner can force it anytime.")
         uhits = _prune(REFRESH_HITS.get(str(chat_id), []), REFRESH_USER_COOLDOWN)
         if uhits:
@@ -158,9 +167,9 @@ def fmt_bounty(v) -> str:
         return ""
 
 def bounty_line(v: dict) -> str:
-    """'💰 Bounty: ✅ $500 – $15,000' / 'up to $7,500' / 'yes (see program page)' / '❌'."""
+    """Blunt: HackerOne feed has NO amounts — never imply a range we don't have."""
     if not v.get("bounty"):
-        return "💰 Bounty: ❌ no monetary rewards"
+        return "💰 Bounty: ❌ no monetary rewards (per feed)"
     ccy = (v.get("bounty_ccy") or "").replace("USD", "$").replace("EUR", "€").replace("GBP", "£")
     if not ccy:
         ccy = "$" if not v.get("bounty_ccy") else v.get("bounty_ccy") + " "
@@ -171,26 +180,34 @@ def bounty_line(v: dict) -> str:
         return f"💰 Bounty: ✅ up to {ccy}{hi}"
     if lo:
         return f"💰 Bounty: ✅ from {ccy}{lo}"
-    return "💰 Bounty: ✅ yes (range on program page)"
+    if (v.get("platform") == "hackerone"):
+        return "💰 Bounty: ✅ yes (HackerOne feed publishes NO amounts — check program page)"
+    return "💰 Bounty: ✅ yes (amount not in feed — check program page)"
 
 # ── Command handlers (pure: return reply text) ────────────────────────────────
 
 def cmd_start(args, state, changes) -> str:
     return (
         "👋 <b>Bug Bounty Monitor Bot</b>\n\n"
-        "I watch <b>the whole bug bounty world</b> for programs that "
-        "<b>pay bounties</b> and have <b>source code in scope</b>:\n"
+        "Blunt scope — I watch <b>9 feeds + 1 index, nothing else</b>:\n"
         "  🟢 HackerOne · 🔴 Bugcrowd · 🔵 Intigriti\n"
-        "  🟡 YesWeHack · 🟣 Federacy (full scope analysis)\n"
-        "  🌍 Worldwide index — HackenProof, BugBountyCH, direct &amp; self-hosted programs\n\n"
-        "🔔 You get a ping automatically when:\n"
-        "  • A new matching program launches\n"
-        "  • A program adds source code to scope\n"
-        "  • A program starts paying bounties\n"
-        "  • A new bounty program appears outside major platforms\n"
-        "  • A new GitHub repo enters scope\n\n"
-        "📰 Prefer summaries? /digest daily · 🔄 /diff for scope changes · 📤 /export for recon files\n\n"
-        "📖 Type /help to see everything I can do."
+        "  🟡 YesWeHack · 🟣 Federacy (scope text analysis)\n"
+        "  ⛓️ Blockchain: 🟠 HackenProof · 💠 Immunefi · 🍷 Cantina · 🔍 Sherlock\n"
+        "  🌍 Chaos index — program names/URLs only, NO scope detail\n\n"
+        "What counts as “source code”: explicit SC asset type OR a\n"
+        "github/gitlab/bitbucket URL in the target. On blockchain feeds,\n"
+        "smart-contract scope counts too. Description mentions\n"
+        "alone do NOT count.\n\n"
+        "🔔 Instant alerts go to the <b>owner channel only</b>. You get:\n"
+        "  • /latest /changes — what I detected + when I detected it\n"
+        "  • /blockchain — ⛓️ blockchain bounties only (ranked by max payout)\n"
+        "  • /digest daily|weekly — rolling 24h / 7d summaries (not fixed clock)\n"
+        "  • /diff /scope /export — scope detail for tracked programs\n\n"
+        "⚠️ Timestamps are <b>detection time, not launch time</b>. "
+        "Best-effort ~30 min; GitHub cron + restarts delay it. "
+        "HackerOne amounts are NOT in the feed (yes/no only). "
+        "Full source removal is NOT alerted — program just drops out.\n\n"
+        "📰 /digest daily for summaries · 📖 /help for everything"
     )
 
 def cmd_help(args, state, changes) -> str:
@@ -211,20 +228,23 @@ def cmd_help(args, state, changes) -> str:
         "     e.g. /scope automattic\n\n"
         "🗂 <b>Browse</b>\n"
         "  /platform — Counts per platform\n"
-        "  /platform &lt;name&gt; — hackerone | bugcrowd | intigriti | yeswehack | federacy | other\n"
+        "  /platform &lt;name&gt; — hackerone | bugcrowd | intigriti | yeswehack | federacy\n"
+        "     hackenproof | immunefi | cantina | sherlock | other\n"
+        "  /blockchain — ⛓️ Blockchain bounties only (/blockchain uniswap)\n"
         "  /source — Programs with SOURCE_CODE scope assets\n"
         "  /github — Programs with GitHub repos in scope\n"
-        "  /top — 🏆 Least-crowded programs to hunt\n"
-        "  /fresh — 🆕 New programs (last 7d, /fresh 30)\n"
+        "  /top — 🏆 Rough ranking (H1-biased, read caveats)\n"
+        "  /fresh — 🆕 Detected last 7d (/fresh 30)\n"
         "  /repos — 🐙 GitHub repos in scope\n\n"
         "🔄 <b>Intel</b>\n"
         "  /diff &lt;program&gt; — Added/removed scope targets\n"
-        "  /export &lt;program&gt; — Recon .txt file\n\n"
+        "  /export &lt;program&gt; — Recon .txt file (classic + blockchain)\n\n"
         "⚙️ <b>Control</b>\n"
         "  /refresh — Force a data refresh now\n"
-        "  /digest daily|weekly|off — Summary mode\n"
+        "  /digest daily|weekly|off — Summary mode (rolling 24h/7d)\n"
         "  /settings — Your settings\n\n"
-        "💡 Data auto-refreshes every 30 min · I reply instantly"
+        "⚠️ Best-effort ~30 min refresh; GitHub cron + restarts delay it.\n"
+        "⚠️ Times are DETECTION time, not launch time. Instant alerts → owner channel only."
     )
 
 def cmd_status(args, state, changes) -> str:
@@ -232,16 +252,25 @@ def cmd_status(args, state, changes) -> str:
     programs = get_programs(state)
     if not programs and not meta:
         return "⚠️ No data yet — the monitor hasn't run. Send /refresh to force it now."
+    stale = meta.get("stale", []) or []
+    fetch_ok = meta.get("fetch_ok", {}) or {}
+    health = "🟢 fresh" if not stale else f"🟡 STALE: {', '.join(stale)} (carried over, no events that cycle)"
     lines = [
         "🟢 <b>Monitor Status</b>", "",
-        f"🕒 Last data refresh : {fmt_when(meta.get('updated_at',''))} ({fmt_ts(meta.get('updated_at',''))})",
+        f"🕒 Last write        : {fmt_when(meta.get('updated_at',''))} ({fmt_ts(meta.get('updated_at',''))})",
         f"📦 Total programs    : {meta.get('total', len(programs))}",
         f"💰 Bounty + source   : {meta.get('qualifying', len(qualifying(programs)))}",
+        f"⛓️ Blockchain bounty : {meta.get('blockchain', sum(1 for v in blockchains(programs).values() if v.get('bounty') and v.get('source')))}",
         f"🌍 Worldwide watch   : {meta.get('external', len(externals(programs)))}",
         f"📜 Changes logged    : {len(changes)}",
-        f"🤖 Bot uptime        : {uptime()}",
-        "", "🔁 Monitor: every 30 min (inline + cron backup) · Bot: 24/7 resident",
+        f"🤖 Bot uptime        : {uptime()} (resets every ~5.5h restart — not 24/7 single process)",
+        f"📡 Feed health       : {health}",
+        "", "⚠️ 'Last write' = file write, not proof all feeds succeeded. See feed health.",
+        "⚠️ Refreshes best-effort ~30 min (cron delays + restarts happen).",
     ]
+    if fetch_ok:
+        detail = ", ".join(f"{p}:{'ok' if ok else 'STALE'}" for p, ok in sorted(fetch_ok.items()))
+        lines.append(f"   {detail}")
     return "\n".join(lines)
 
 def cmd_stats(args, state, changes) -> str:
@@ -259,6 +288,8 @@ def cmd_stats(args, state, changes) -> str:
         tot = sum(1 for k, v in programs.items() if v.get("platform") == p)
         q   = sum(1 for k, v in qual.items()      if v.get("platform") == p)
         lines.append(f"{PLATFORM_EMOJI.get(p,'⚪')} {p:12s} {q:3d} / {tot}")
+    bc = sum(1 for v in qual.values() if v.get("platform") in BLOCKCHAIN_PLATFORMS)
+    lines.append(f"⛓️ {'blockchain':12s} {bc:3d}     (🟠💠🍷🔍 subtotal — see /blockchain)")
     lines.append(f"🌍 {'other':12s} {len(ext):3d}   / {len(ext)}")
     hosts = {"github.com": 0, "gitlab.com": 0, "bitbucket.org": 0}
     for v in qual.values():
@@ -276,29 +307,44 @@ def cmd_stats(args, state, changes) -> str:
 
 def cmd_sources(args, state, changes) -> str:
     return (
-        "📡 <b>Data Sources</b>\n\n"
-        "<b>Full scope analysis</b> (every 30 min)\n"
+        "📡 <b>Data Sources — blunt version</b>\n\n"
+        "<b>Classic scope feeds</b> (best-effort ~30 min)\n"
         "  arkadiyt/bounty-targets-data:\n"
         "  🟢 HackerOne · 🔴 Bugcrowd · 🔵 Intigriti\n"
         "  🟡 YesWeHack · 🟣 Federacy\n"
-        "  → per-target scope: bounty flag, source-code detection\n\n"
-        "<b>Worldwide index</b> (program-level watch)\n"
-        "  🌍 ProjectDiscovery Chaos — 800+ programs:\n"
-        "  HackenProof, BugBountyCH, direct &amp; self-hosted\n"
-        "  → new bounty programs outside major platforms\n\n"
-        "💡 Combo = every public bug bounty program with known scope data, worldwide."
+        "  → per-target scope: bounty flag + strict SC check\n"
+        "  (SC asset type OR github/gitlab/bitbucket URL — nothing else)\n\n"
+        "<b>⛓️ Blockchain feeds</b> (best-effort, slower — detail pages)\n"
+        "  🟠 HackenProof — sitemap + program pages\n"
+        "    (smart-contract scope, USD max, LIVE/PAUSED/ENDED)\n"
+        "  💠 Immunefi — public-api/bounties.json\n"
+        "    (per-asset scope incl. chain, max bounty + token)\n"
+        "  🍷 Cantina — sitemap + bounty pages\n"
+        "    (GitHub scope refs, USDC reward pot, live/ended)\n"
+        "  🔍 Sherlock — sitemap + bug-bounty pages\n"
+        "    (Max Rewards USDC, in-scope contract names)\n"
+        "  → smart-contract scope counts as source here\n"
+        "  → /blockchain for the blockchain-only view\n\n"
+        "<b>Worldwide index</b> (program-level ONLY)\n"
+        "  🌍 ProjectDiscovery Chaos index:\n"
+        "  → names + URLs + bounty flag. NO scope detail.\n"
+        "  → origin field (hackenproof/direct/…) is whatever Chaos says\n\n"
+        "⚠️ NOT covered: private programs, Synack/Cobalt, anything\n"
+        "outside these 10 feeds. HackerOne amounts are NOT in the feed.\n"
+        "⚠️ Times are detection time, not launch time."
     )
 
 def _changes_list(changes: list, n: int, event_filter: Optional[str] = None) -> str:
     items = [c for c in changes if event_filter is None or c.get("event") == event_filter]
     if not items:
         return "🌿 No changes logged yet — baseline only. New activity will appear here."
-    lines = [f"📜 <b>Last {min(n, len(items))} change(s)</b> — {len(items)} total", ""]
+    lines = [f"📜 <b>Last {min(n, len(items))} detected change(s)</b> — {len(items)} total",
+             "<i>Times = when I detected it, NOT when it launched</i>", ""]
     for c in reversed(items[-n:]):
         e = EVENT_EMOJI.get(c.get("event"), "🔔")
         plat = c.get("platform", "?")
         lines.append(f"{e} <b>{esc(c.get('name'))}</b>")
-        lines.append(f"   {PLATFORM_EMOJI.get(plat,'⚪')} {plat} · {fmt_when(c.get('timestamp',''))}")
+        lines.append(f"   {PLATFORM_EMOJI.get(plat,'⚪')} {plat} · detected {fmt_when(c.get('timestamp',''))} ({fmt_ts(c.get('timestamp',''))})")
         added = c.get("added", []) or []
         removed = c.get("removed", []) or []
         if added:
@@ -318,7 +364,7 @@ def cmd_changes(args, state, changes) -> str:
 def cmd_new(args, state, changes) -> str:
     items = [c for c in changes if c.get("event") in ("new_program", "new_external")]
     if not items:
-        return "🌿 No new programs yet. I'll ping you the moment one launches."
+        return "🌿 No new programs detected yet. Detection runs best-effort ~30 min."
     out = _changes_list(items, 10)
     return out.replace("change(s)", "new program(s)")
 
@@ -341,13 +387,19 @@ def cmd_search(args, state, changes) -> str:
     total = len(name_hits) + len(repo_hits) + len(ext_hits)
     if total == 0:
         return f"🔍 No matches for <b>{esc(args)}</b>.\nTry /platform to browse, or /source &amp; /github."
-    lines = [f"🔎 <b>Results for \"{esc(args)}\"</b> — {total} match(es)", ""]
+    lines = [f"🔎 <b>Results for \"{esc(args)}\"</b> — {total} match(es)",
+             "<i>Bounty+source filter applies to repo hits; name hits show all</i>", ""]
     shown = 0
     for v in name_hits[:10]:
         plat = v.get("platform","?")
         hi = fmt_bounty(v.get("bounty_max"))
         c = (v.get("bounty_ccy") or "").replace("USD","$").replace("EUR","€").replace("GBP","£") or "$"
-        extra = f"  💸 up to {c}{hi}" if hi else ""
+        if hi:
+            extra = f"  💸 up to {c}{hi}"
+        elif v.get("bounty"):
+            extra = "  💸 bounty yes (amount not in feed)"
+        else:
+            extra = "  💸 no bounty"
         lines.append(f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>{extra}")
         lines.append(f"   {esc(v.get('url',''))}")
         shown += 1
@@ -384,7 +436,7 @@ def cmd_platform(args, state, changes) -> str:
         ext = sorted(externals(programs).values(), key=lambda v: (v.get("origin",""), v.get("name","").lower()))
         if not ext:
             return "🌍 No worldwide programs tracked yet."
-        lines = [f"🌍 <b>Worldwide programs</b> — {len(ext)}  <i>(HackenProof, BugBountyCH, direct…)</i>", ""]
+        lines = [f"🌍 <b>Worldwide programs (Chaos index, program-level only)</b> — {len(ext)}", "<i>No scope detail — check program page. Origin = whatever Chaos says.</i>", ""]
         for v in ext[:20]:
             lines.append(f"• <b>{esc(v.get('name'))}</b> — {esc(v.get('origin','direct'))}\n  {esc(v.get('url',''))}")
         if len(ext) > 20:
@@ -469,16 +521,23 @@ def cmd_scope(args, state, changes) -> str:
                 + "\n".join(f"• {esc(n)}" for n in names) + more)
     plat = v.get("platform","?")
     sc = v.get("sc_targets", [])
+    sc_total = v.get("sc_total", len(sc))
     lines = [
         f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b> — {plat}", "",
         f"🔗 {esc(v.get('url',''))}",
-        bounty_line(v), "",
-        f"📁 <b>Source-code targets ({len(sc)}):</b>",
+        bounty_line(v),
     ]
+    if plat in BLOCKCHAIN_PLATFORMS and v.get("live_status"):
+        lines.append(f"⛓️ Status: {esc(v.get('live_status'))} (blockchain feed — pause/end flips alert like bounty)")
+    lines += ["", f"📁 <b>Source-code targets ({sc_total} total, showing {len(sc)}):</b>"]
     for t in sc:
         lines.append(f"  • <code>{esc(t.get('identifier'))}</code>  [{esc(t.get('asset_type'))}]")
     if not sc:
-        lines.append("  (none detected)")
+        lines.append("  (none detected — strict check: SC asset type or repo-host URL only)")
+    if sc_total > len(sc):
+        lines.append(f"  <i>… truncated: showing {len(sc)} of {sc_total}. /export for full sc_ids list.</i>")
+        for sid in (v.get("sc_ids", []) or [])[len(sc):][:10]:
+            lines.append(f"  • <code>{esc(sid)}</code>  [id-only]")
     return "\n".join(lines)
 
 def cmd_refresh(args, state, changes, chat_id=None) -> str:
@@ -501,20 +560,21 @@ def cmd_refresh(args, state, changes, chat_id=None) -> str:
     # monitor already sent any change notifications itself
     meta = load_json(STATE_FILE, {}).get("_meta", {})
     ext_q = meta.get("external", "?")
-    return ("🔄 <b>Data refreshed!</b>\n\n"
+    stale = meta.get("stale", []) or []
+    stale_note = "" if not stale else f"\n⚠️ STALE this cycle: {', '.join(stale)} (carried over)"
+    return ("🔄 <b>Refresh attempted (best-effort)</b>\n\n"
             f"💰 Bounty + source : {meta.get('qualifying','?')}\n"
+            f"⛓️ Blockchain      : {meta.get('blockchain','?')}\n"
             f"🌍 Worldwide       : {ext_q}\n"
-            f"📦 Total programs  : {meta.get('total','?')}\n\n"
-            f"🕒 {fmt_ts(meta.get('updated_at',''))} — /latest for new changes")
+            f"📦 Total programs  : {meta.get('total','?')}{stale_note}\n\n"
+            f"🕒 Wrote {fmt_ts(meta.get('updated_at',''))} — /latest shows DETECTED changes")
 
 def cmd_top(args, state, changes) -> str:
-    """Rank bounty+source programs by opportunity: big attack surface
-    (fewer researchers per asset), strong triage, fast bounties."""
+    """Blunt ranking: signals are HackerOne-heavy. No researcher counts exist."""
     programs = get_programs(state)
-    qual = [v for v in qualifying(programs).values()
-            if (v.get("domains") or 0) > 0 or v.get("resp_eff")]
+    qual = list(qualifying(programs).values())
     if not qual:
-        return ("🏆 No competition signals available yet — data refreshes every 30 min.\n"
+        return ("🏆 Nothing qualifying right now.\n"
                 "Try /refresh then /top again.")
     def score(v):
         d  = v.get("domains") or 0
@@ -523,29 +583,42 @@ def cmd_top(args, state, changes) -> str:
         speed = max(0.0, 100.0 - min(bd, 100)) if isinstance(bd, (int, float)) else 0.0
         return d * 2 + ef + speed   # surface dominates, triage breaks ties
     ranked = sorted(qual, key=score, reverse=True)
+    h1_count = sum(1 for v in ranked[:10] if v.get("platform") == "hackerone")
     lines = [
-        "🏆 <b>Top opportunities</b> — least crowded per asset", "",
-        "<i>No platform publishes researcher counts — ranked by real "
-        "proxies: in-scope surface, triage efficiency, payout speed.</i>", "",
+        "🏆 <b>Top opportunities (rough proxy, NOT crowding data)</b>", "",
+        "<i>Blunt: no platform publishes researcher counts. Ranked by: "
+        "Chaos domain count + HackerOne triage% + payout speed. "
+        "Only HackerOne has triage/speed — other platforms almost always "
+        "score lower through no fault of their own.</i>", "",
     ]
+    if h1_count >= 8:
+        lines.append(f"<i>Heads-up: {h1_count}/10 below are HackerOne for that reason.</i>")
+        lines.append("")
     for i, v in enumerate(ranked[:10], 1):
         plat = v.get("platform","?")
         parts = []
         if v.get("domains"):
-            parts.append(f"🌐 {v['domains']:,} domains")
+            parts.append(f"🌐 {v['domains']:,} domains (Chaos name-match, may be 0/mismatched)")
+        else:
+            parts.append("🌐 domains unknown")
         if v.get("resp_eff"):
-            parts.append(f"⚡ {int(v['resp_eff'])}% triage")
+            parts.append(f"⚡ {int(v['resp_eff'])}% triage (H1 only)")
+        else:
+            parts.append("⚡ triage n/a (non-H1)")
         if isinstance(v.get("bounty_days"), (int, float)):
-            parts.append(f"💸 bounty ~{int(v['bounty_days'])}d")
+            parts.append(f"💸 bounty ~{int(v['bounty_days'])}d (H1 only)")
         hi = fmt_bounty(v.get("bounty_max"))
         if hi:
             c = (v.get("bounty_ccy") or "").replace("USD","$").replace("EUR","€") or "$"
             parts.append(f"{c}{hi} max")
+        else:
+            parts.append("bounty amount not in feed" if v.get("bounty") else "no bounty")
         lines.append(f"{i}. {PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>")
         lines.append(f"   {' · '.join(parts)}")
         lines.append(f"   {esc(v.get('url',''))}")
         lines.append("")
-    lines.append("💡 /scope &lt;name&gt; for full details")
+    lines.append("💡 /scope &lt;name&gt; for scope detail (truncated, see note there)")
+    lines.append("💡 Blockchain bounties rank by max payout under /blockchain, not here")
     return "\n".join(lines).rstrip()
 
 def send_document(chat_id: int, filename: str, content: str, caption: str = "") -> bool:
@@ -596,19 +669,19 @@ def cmd_diff(args, state, changes) -> str:
                 "e.g. <code>/diff netflix</code> — shows added/removed scope targets")
     if v.get("platform") == "chaos":
         return (f"🌍 <b>{esc(v.get('name'))}</b> — worldwide index has no scope detail.\n"
-                "Diffs only work for HackerOne/Bugcrowd/Intigriti/YesWeHack/Federacy programs.")
+                "Diffs work for classic + blockchain programs (not Chaos).")
     name = v.get("name", "")
     related = [c for c in changes
                if (c.get("name", "").lower() == name.lower())
                and c.get("event") in ("scope_added", "scope_updated", "new_program", "new_repo")]
     if not related:
         return (f"🌿 No recorded scope changes for <b>{esc(name)}</b> yet.\n"
-                "I log diffs from now on — check back after the next refresh. "
+                "I log SC diffs from now on (strict check; non-SC reshuffles are ignored). "
                 f"Current scope: /scope {esc(name.split()[0])}")
-    lines = [f"🔄 <b>Scope diffs — {esc(name)}</b>", ""]
+    lines = [f"🔄 <b>Scope diffs — {esc(name)}</b> (detection times)", ""]
     for c in reversed(related[-3:]):
         e = EVENT_EMOJI.get(c.get("event"), "🔔")
-        lines.append(f"{e} {fmt_when(c.get('timestamp', ''))} ({fmt_ts(c.get('timestamp', ''))})")
+        lines.append(f"{e} detected {fmt_when(c.get('timestamp', ''))} ({fmt_ts(c.get('timestamp', ''))})")
         added = c.get("added", []) or []
         removed = c.get("removed", []) or []
         gh = c.get("github_repos", []) or []
@@ -663,24 +736,32 @@ def cmd_fresh(args, state, changes) -> str:
             continue
         hits.append(v)
     if not hits:
-        return (f"🌿 Nothing brand-new in the last {days}d.\n"
-                "New bounty+source programs will appear here the moment they launch. "
+        return (f"🌿 Nothing detected as brand-new in the last {days}d.\n"
+                "“Fresh” = first DETECTED in that window, not launched. "
                 "Try <code>/fresh 30</code> for a wider window.")
     def _fresh_score(v):
         hi = v.get("bounty_max") or 0
         return (hi, v.get("domains") or 0)
     hits.sort(key=_fresh_score, reverse=True)
-    lines = [f"🆕 <b>Fresh programs — last {days}d</b> — {len(hits)}", ""]
+    lines = [f"🆕 <b>Freshly detected — last {days}d</b> — {len(hits)}",
+             "<i>Detection time, not launch time. Amounts missing = not in feed.</i>", ""]
     for v in hits[:10]:
         plat = v.get("platform", "?")
         hi = fmt_bounty(v.get("bounty_max"))
         c = (v.get("bounty_ccy") or "").replace("USD", "$").replace("EUR", "€") or "$"
-        extra = f"  💸 up to {c}{hi}" if hi else ""
+        if hi:
+            extra = f"  💸 up to {c}{hi}"
+        elif plat == "chaos":
+            extra = "  💸 bounty yes (no amounts in Chaos index)"
+        elif v.get("bounty"):
+            extra = "  💸 bounty yes (amount not in feed)"
+        else:
+            extra = ""
         lines.append(f"{PLATFORM_EMOJI.get(plat, '⚪')} <b>{esc(v.get('name'))}</b>{extra}")
         lines.append(f"   {esc(v.get('url', ''))}")
     if len(hits) > 10:
         lines.append(f"\n… and {len(hits) - 10} more")
-    lines.append("\n💡 Fresh = least competition. /scope &lt;name&gt; for details")
+    lines.append("\n💡 Fresh ≠ least competition proof. /scope &lt;name&gt; for detail")
     return "\n".join(lines)
 
 def cmd_repos(args, state, changes) -> str:
@@ -717,26 +798,100 @@ def cmd_repos(args, state, changes) -> str:
         lines.append(f"\n… and {len(repos) - 20} more — /export {esc(v.get('name', '').split()[0])} for the full list")
     return "\n".join(lines)
 
+def cmd_blockchain(args, state, changes) -> str:
+    """Blockchain-only view: HackenProof / Immunefi / Cantina / Sherlock.
+    No args → per-feed counts + top 10 by max payout.
+    With args → search name/scope within blockchain programs only."""
+    programs = get_programs(state)
+    bcs = blockchains(programs)
+    if not bcs:
+        return ("⛓️ No blockchain programs tracked yet.\n"
+                "The monitor hasn't built its baseline — send /refresh, then try again.")
+    live = {k: v for k, v in bcs.items() if v.get("bounty") and v.get("source")}
+
+    def _money(v) -> str:
+        hi = fmt_bounty(v.get("bounty_max"))
+        if not hi:
+            return "amount not in feed" if v.get("bounty") else "no bounty"
+        ccy = (v.get("bounty_ccy") or "USD")
+        return f"up to {ccy} {hi}"
+
+    q = (args or "").strip().lower()
+    if q:
+        hits = []
+        for v in bcs.values():
+            if q in (v.get("name", "").lower()):
+                hits.append(v)
+                continue
+            if not (v.get("bounty") and v.get("source")):
+                continue
+            for t in v.get("sc_targets", []):
+                if q in (t.get("identifier", "").lower()) or q in (t.get("description", "").lower()):
+                    hits.append(v)
+                    break
+        if not hits:
+            return (f"⛓️ No blockchain matches for <b>{esc(args)}</b>.\n"
+                    "Try /blockchain for the top list, or /search for everything.")
+        hits.sort(key=lambda v: (v.get("bounty_max") or 0), reverse=True)
+        lines = [f"⛓️ <b>Blockchain results for \"{esc(args)}\"</b> — {len(hits)} match(es)", ""]
+        for v in hits[:10]:
+            plat = v.get("platform", "?")
+            st = v.get("live_status") or "?"
+            lines.append(f"{PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b>")
+            lines.append(f"   💰 {_money(v)} · ⛓️ {esc(st)}")
+            lines.append(f"   {esc(v.get('url',''))}")
+            lines.append("")
+        if len(hits) > 10:
+            lines.append(f"… and {len(hits) - 10} more — refine your query")
+        return "\n".join(lines).rstrip()
+
+    if not live:
+        return ("⛓️ Blockchain feeds tracked, but nothing bounty+source right now.\n"
+                "Paused/ended/web-only programs are tracked silently. Try /refresh later.")
+    lines = [f"⛓️ <b>Blockchain bounties</b> — {len(live)} bounty+source across 4 feeds",
+             "<i>Smart-contract scope. Ranked by max payout (not competition).</i>", ""]
+    for p in ["hackenproof", "immunefi", "cantina", "sherlock"]:
+        tot = sum(1 for v in bcs.values() if v.get("platform") == p)
+        qn = sum(1 for v in live.values() if v.get("platform") == p)
+        lines.append(f"{PLATFORM_EMOJI.get(p,'⚪')} <b>{p}</b> — {qn} live / {tot} tracked")
+    lines.append("")
+    ranked = sorted(live.values(), key=lambda v: (v.get("bounty_max") or 0), reverse=True)
+    lines.append("<b>Top by max payout</b>")
+    for i, v in enumerate(ranked[:10], 1):
+        plat = v.get("platform", "?")
+        st = v.get("live_status") or "?"
+        lines.append(f"{i}. {PLATFORM_EMOJI.get(plat,'⚪')} <b>{esc(v.get('name'))}</b> — 💰 {_money(v)} · ⛓️ {esc(st)}")
+        lines.append(f"   {esc(v.get('url',''))}")
+    if len(ranked) > 10:
+        lines.append(f"\n… and {len(ranked) - 10} more — /blockchain &lt;query&gt; to search")
+    lines.append("\n💡 /scope &lt;name&gt; for scope · /diff &lt;name&gt; for scope changes")
+    return "\n".join(lines)
+
 def cmd_export(args, state, changes, chat_id=None):
     """Build a recon file for a program. Returns (filename, content, caption)."""
     programs = get_programs(state)
     v, matches = _find_program(args, programs)
     if not v:
         return ("📤 Usage: <code>/export &lt;program&gt;</code>\n"
-                "e.g. <code>/export netflix</code> — I send the scope as a .txt file for recon")
+                "e.g. <code>/export netflix</code> — source-code scope as .txt (classic + blockchain)")
     if v.get("platform") == "chaos":
         return (f"🌍 <b>{esc(v.get('name'))}</b> — worldwide index has no scope detail to export.\n"
-                "Exports work for HackerOne/Bugcrowd/Intigriti/YesWeHack/Federacy programs.")
+                "Exports work for classic + blockchain programs.")
     sc = v.get("sc_targets", []) or []
-    if not sc:
+    sc_ids = v.get("sc_ids", []) or []
+    sc_total = v.get("sc_total", len(sc))
+    if not sc and not sc_ids:
         return (f"📤 <b>{esc(v.get('name'))}</b> has no source-code targets to export.\n"
-                "Scope may still include web/API assets — see /scope for detail.")
+                "Strict check only: SC asset type or repo-host URL. "
+                "Web/API scope is NOT in this file — see program page.")
     name = v.get("name", "program")
     handle = "".join(c if (c.isalnum() or c in "-_") else "-" for c in name.lower().replace(" ", "-"))[:40]
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    header = [f"# {name} — source-code scope export",
+    header = [f"# {name} — source-code scope export (STRICT: SC type or repo-host URL only)",
               f"# platform: {v.get('platform')}  |  exported: {ts}",
-              f"# url: {v.get('url')}", ""]
+              f"# url: {v.get('url')}",
+              f"# blunt: detail rows truncated in state to {len(sc)} of {sc_total}; sc_ids below are the FULL normalized set",
+              ""]
     idents, repos = [], []
     for t in sc:
         ident = (t.get("identifier") or "").strip()
@@ -745,12 +900,16 @@ def cmd_export(args, state, changes, chat_id=None):
         idents.append(ident)
         if "github.com/" in ident.lower():
             repos.append(ident)
-    body = ["## all source-code targets:"] + idents
+    # FULL normalized IDs (not truncated) — best recon source in this file
+    full_ids = sorted(set(sc_ids)) if sc_ids else sorted(set(i.lower() for i in idents))
+    body = ["## full normalized sc ids (COMPLETE, use these):"] + full_ids
+    body += ["", "## detail rows (TRUNCATED in state, first "
+             f"{len(idents)} of {sc_total}):"] + idents
     if repos:
-        body += ["", "## github repos:"] + sorted(set(repos))
+        body += ["", "## github repos (from detail rows):"] + sorted(set(repos))
     filename = f"{handle}-scope.txt"
-    caption = (f"📤 <b>{esc(name)}</b> — {len(idents)} target(s)"
-               + (f" ({len(set(repos))} GitHub repos)" if repos else ""))
+    caption = (f"📤 <b>{esc(name)}</b> — {len(full_ids)} SC id(s) total "
+               f"(detail rows {len(idents)}/{sc_total})")
     return (filename, "\n".join(header + body) + "\n", caption)
 
 def cmd_digest(args, state, changes, chat_id=None) -> str:
@@ -763,10 +922,11 @@ def cmd_digest(args, state, changes, chat_id=None) -> str:
     if not mode:
         cur = entry.get("digest", "off")
         return (f"📰 Digest is currently <b>{esc(cur)}</b>.\n\n"
+                "Blunt: rolling intervals from when you subscribe, NOT fixed clock.\n"
                 "Usage:\n"
-                "  <code>/digest daily</code> — one summary per day (09:00 UTC)\n"
-                "  <code>/digest weekly</code> — one summary per week (Monday)\n"
-                "  <code>/digest off</code> — instant alerts only")
+                "  <code>/digest daily</code> — ~every 24h from now\n"
+                "  <code>/digest weekly</code> — ~every 7d from now\n"
+                "  <code>/digest off</code> — no summaries (and no instant alerts either — those go to owner channel only)")
     if mode not in ("daily", "weekly", "off"):
         return "⚠️ Choose: <code>/digest daily</code> · <code>/digest weekly</code> · <code>/digest off</code>"
     entry["digest"] = mode
@@ -776,10 +936,11 @@ def cmd_digest(args, state, changes, chat_id=None) -> str:
     save_prefs(prefs)
     print(f"  [digest] {chat_id} → {mode}")
     if mode == "off":
-        return "📰 Digest <b>off</b> — you'll only get instant alerts."
-    return (f"📰 Digest set to <b>{mode}</b>.\n"
-            "You'll get one summary of new programs + scope changes. "
-            "Instant critical alerts still arrive in real time.")
+        return "📰 Digest <b>off</b> — no summaries. Note: instant alerts go to the owner channel only, not to you."
+    return (f"📰 Digest set to <b>{mode}</b> (rolling "
+            f"{'24h' if mode == 'daily' else '7d'} from now, best-effort).\n"
+            "You'll get detected changes since last send. "
+            "No instant DMs — owner channel gets those.")
 
 def cmd_settings(args, state, changes, chat_id=None) -> str:
     if chat_id is None:
@@ -876,16 +1037,17 @@ def build_digest(changes: list, since_iso: str) -> Optional[str]:
     for c in items:
         counts[c.get("event", "?")] = counts.get(c.get("event", "?"), 0) + 1
     summary = " · ".join(f"{EVENT_EMOJI.get(e, '🔔')} {n}" for e, n in sorted(counts.items()))
-    lines = ["📰 <b>Your bounty digest</b>", "",
-             f"{len(items)} change(s): {summary}", ""]
+    lines = ["📰 <b>Your bounty digest (detected changes)</b>", "",
+             f"{len(items)} detected change(s): {summary}",
+             "<i>Times = detection, not launch. Best-effort coverage.</i>", ""]
     for c in items[-12:]:
         e = EVENT_EMOJI.get(c.get("event"), "🔔")
-        lines.append(f"{e} <b>{esc(c.get('name'))}</b> <i>({esc(c.get('platform', '?'))})</i>")
+        lines.append(f"{e} <b>{esc(c.get('name'))}</b> <i>({esc(c.get('platform', '?'))} · detected {fmt_when(c.get('timestamp',''))})</i>")
         added = c.get("added", []) or []
         if added:
             lines.append(f"   ➕ {esc(added[0])}" + (f" <i>+{len(added) - 1} more</i>" if len(added) > 1 else ""))
         lines.append(f"   {esc(c.get('url', ''))}")
-    lines.append("\n💡 /diff &lt;name&gt; for full scope diffs · /digest off to stop")
+    lines.append("\n💡 /diff &lt;name&gt; for scope diffs · /digest off to stop")
     return "\n".join(lines)
 
 def check_and_send_digests() -> bool:
@@ -910,8 +1072,8 @@ def check_and_send_digests() -> bool:
         msg = build_digest(changes, entry.get("last_sent", ""))
         if msg is None:
             msg = ("📰 <b>Your bounty digest</b>\n\n"
-                   "🌿 No new programs or scope changes in this period.\n"
-                   "The hunt continues — I'll ping you when something lands.")
+                   "🌿 No detected changes in this rolling period.\n"
+                   "Coverage is 5 feeds + Chaos only; gaps happen.")
         try:
             target = int(cid) if str(cid).lstrip("-").isdigit() else cid
             if send_reply(target, msg):
@@ -939,6 +1101,7 @@ COMMANDS = {
     "source":  cmd_source,
     "github":  cmd_github,
     "scope":   cmd_scope,
+    "blockchain": cmd_blockchain,
     "diff":    cmd_diff,
     "fresh":   cmd_fresh,
     "repos":   cmd_repos,
@@ -956,24 +1119,25 @@ COMMANDS = {
 BOT_MENU = [
     ("start", "Welcome & quick start"),
     ("help", "All commands"),
-    ("status", "Monitor health & last run"),
+    ("status", "Monitor health & last write (blunt)"),
     ("stats", "Program statistics"),
-    ("sources", "Data sources I watch"),
-    ("latest", "Last 5 changes"),
-    ("new", "Recently added programs"),
-    ("changes", "Last 15 changes"),
+    ("sources", "Data sources + limits"),
+    ("latest", "Last 5 detected changes"),
+    ("new", "Recently detected programs"),
+    ("changes", "Last 15 detected changes"),
     ("search", "Search programs — /search wordpress"),
     ("platform", "Filter by platform — /platform hackerone"),
     ("source", "Programs with SOURCE_CODE assets"),
     ("github", "Programs with GitHub repos"),
     ("scope", "Program scope — /scope github"),
+    ("blockchain", "Blockchain bounties — /blockchain uniswap"),
     ("diff", "What changed in scope — /diff netflix"),
-    ("fresh", "New programs last 7d — /fresh 30"),
+    ("fresh", "Freshly detected last 7d — /fresh 30"),
     ("repos", "GitHub repos in scope"),
-    ("export", "Recon file for a program"),
-    ("digest", "Daily/weekly summary"),
+    ("export", "SC scope file (truncated detail + full ids)"),
+    ("digest", "Rolling daily/weekly summary"),
     ("settings", "Your settings"),
-    ("top", "Least-crowded programs to hunt"),
+    ("top", "Rough ranking (H1-biased, read caveats)"),
     ("refresh", "Force data refresh now"),
 ]
 
@@ -1145,8 +1309,9 @@ def main():
         if probe is not None:
             cid = int(TELEGRAM_CHAT_ID) if TELEGRAM_CHAT_ID.lstrip("-").isdigit() else TELEGRAM_CHAT_ID
             send_reply(cid,
-                "🤖 <b>Bot online</b> — resident mode, replying instantly 24/7.\n"
-                "📖 /help for commands · 📊 /status for health")
+                "🤖 <b>Bot online</b> — best-effort resident (restarts ~5.5h, gaps happen).\n"
+                "⚠️ Times are detection time. Instant alerts → this channel only.\n"
+                "📖 /help for commands · 📊 /status for blunt health")
             last_announce = time.time()
             save_json(OFFSET_FILE, {"last_update_id": offset - 1, "last_announce": last_announce})
         else:
@@ -1167,7 +1332,7 @@ def main():
                   f"uptime {uptime()} · offset {offset-1}")
             last_heartbeat = time.time()
 
-        # inline monitor cycle — every 30 min, independent of cron schedules
+        # inline monitor cycle — best-effort ~30 min, independent of cron schedules
         if time.time() - LAST_MONITOR_AT >= MONITOR_INTERVAL:
             LAST_MONITOR_AT = time.time()
             run_monitor_cycle()

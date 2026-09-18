@@ -1,19 +1,28 @@
 #!/usr/bin/env python3
 """
-Bug Bounty Source Code Monitor — v3 (worldwide)
-Big platforms (full scope analysis):
+Bug Bounty Source Code Monitor — blunt edition
+Big-5 public feeds (scope text analysis, best-effort ~30 min):
   HackerOne, Bugcrowd, Intigriti, YesWeHack, Federacy
-Worldwide index (program-level watch, catches HackenProof, BugBountyCH,
-direct/self-hosted programs):
-  ProjectDiscovery Chaos — 800+ programs
-Notifies on:
-  - new program with bounty + source code in scope
-  - source code added to an existing program
-  - program starts paying bounties
-  - new bounty program discovered outside major platforms
+  via arkadiyt/bounty-targets-data (public programs only).
+Blockchain feeds (best-effort ~30 min, slower — detail pages):
+  HackenProof (sitemap + program pages), Immunefi (public-api/bounties.json),
+  Cantina (sitemap + bounty pages), Sherlock (sitemap + bug-bounty pages).
+  Smart-contract scope counts as source here (SMART_CONTRACT/BLOCKCHAIN
+  asset types or repo-host URLs). /blockchain in the bot is the dedicated view.
+Chaos index (program-level ONLY: names/URLs/bounty flag, NO scope).
+SC = explicit SC asset type OR repo-host URL in identifier. Nothing else.
+Timestamps = DETECTION time, not launch time.
+HackerOne amounts are NOT in the feed (yes/no only).
+Full SC removal is NOT alerted (program just drops from qualifying).
+Notifies owner channel on:
+  - new qualifying program (deduped 30d vs state resets)
+  - SC added / SC sets changed (non-SC reshuffles ignored)
+  - bounty turned on (with SC present)
+  - new Chaos bounty name (only if no big-5/blockchain bounty with same name)
 """
 
-import hashlib, json, os, time
+import hashlib, json, os, re, time
+from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from typing import Dict, List, Optional, Tuple
 import requests
@@ -23,7 +32,9 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
-SCHEMA_VERSION   = 6  # bump to force a silent re-baseline on format changes
+SCHEMA_VERSION   = 8  # v8: + blockchain feeds (hackenproof/immunefi/cantina/sherlock).
+# Previous versions matched "source code" in descriptions and flagged API/URL
+# assets (e.g. Twilio api.segment.io) as source-code. v7 re-baselines silently.
 
 PLATFORM_URLS: Dict[str, str] = {
     "hackerone": "https://raw.githubusercontent.com/arkadiyt/bounty-targets-data/main/data/hackerone_data.json",
@@ -35,11 +46,33 @@ PLATFORM_URLS: Dict[str, str] = {
 CHAOS_URL = "https://chaos-data.projectdiscovery.io/index.json"
 MAJOR_PLATFORMS = set(PLATFORM_URLS)
 
+# ── Blockchain feeds (smart-contract bounties; /blockchain in the bot) ─────────
+IMMUNEFI_API_URL       = "https://immunefi.com/public-api/bounties.json"
+HACKENPROOF_SITEMAP_URL = "https://hackenproof.com/sitemap.xml"
+HACKENPROOF_PROGRAM_URL = "https://hackenproof.com/programs/{slug}"
+CANTINA_SITEMAP_URL    = "https://cantina.xyz/sitemap-0.xml"
+CANTINA_BOUNTY_URL     = "https://cantina.xyz/bounties/{uid}"
+SHERLOCK_SITEMAP_URL   = "https://audits.sherlock.xyz/sitemap.xml"
+SHERLOCK_BOUNTY_URL    = "https://audits.sherlock.xyz/bug-bounties/{bid}"
+BLOCKCHAIN_PLATFORMS   = {"hackenproof", "immunefi", "cantina", "sherlock"}
+UA_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; BountyMonitor/1.0)"}
+
+# Smart-contract scope counts as source ONLY on blockchain feeds. Big-5 keeps
+# the strict check (explicit SC type or repo-host URL) to avoid false
+# positives like Twilio's api.segment.io API asset.
+BLOCKCHAIN_ASSET_TYPES = {"SMART_CONTRACT", "BLOCKCHAIN", "SOURCE_CODE",
+                          "GITHUB", "GITLAB", "BITBUCKET"}
+
 SOURCE_CODE_ASSET_TYPES = {"SOURCE_CODE", "GITHUB", "GITLAB", "BITBUCKET"}
-SOURCE_CODE_SUBSTRINGS  = ["github.com/", "gitlab.com/", "bitbucket.org/",
-                            "source code", "open-source", "open source"]
+# Strict on purpose: description mentions ("review the source code…") are NOT scope.
+# Only an explicit SC asset type or a repo-host URL in the identifier counts.
+# (Old broad list matched "source code"/"open source" in descriptions and caused
+# false positives like Twilio's api.segment.io API asset.)
+REPO_HOST_SUBSTRINGS = ["github.com/", "gitlab.com/", "bitbucket.org/"]
+SOURCE_CODE_SUBSTRINGS = REPO_HOST_SUBSTRINGS  # kept for back-compat imports
 PLATFORM_EMOJI = {"hackerone":"🟢","bugcrowd":"🔴","intigriti":"🔵","yeswehack":"🟡",
-                   "federacy":"🟣","chaos":"🌍"}
+                   "federacy":"🟣","chaos":"🌍",
+                   "hackenproof":"🟠","immunefi":"💠","cantina":"🍷","sherlock":"🔍"}
 EVENT_LABELS   = {
     "new_program":    ("🆕","New program — source code in scope + bounty"),
     "scope_added":    ("📦","Source code ADDED to in-scope"),
@@ -133,8 +166,8 @@ def _normalize_chaos(e: dict) -> Optional[dict]:
 
 def is_sc(t: dict) -> bool:
     if t.get("asset_type","").upper() in SOURCE_CODE_ASSET_TYPES: return True
-    blob = (t.get("identifier","")+" "+t.get("description","")).lower()
-    return any(s in blob for s in SOURCE_CODE_SUBSTRINGS)
+    ident = (t.get("identifier","") or "").lower()
+    return any(h in ident for h in REPO_HOST_SUBSTRINGS)
 
 def sc_targets(prog: dict) -> List[dict]:
     return [t for t in prog["in_scope"] if is_sc(t)]
@@ -168,6 +201,127 @@ def github_repos_list(prog: dict) -> List[str]:
             repos.add(f"{parts[0]}/{parts[1]}")
     return sorted(repos)
 
+# ── Blockchain helpers (smart-contract scope counts as source) ─────────────────
+
+def is_blockchain_sc(t: dict) -> bool:
+    if t.get("asset_type", "").upper() in BLOCKCHAIN_ASSET_TYPES:
+        return True
+    ident = (t.get("identifier", "") or "").lower()
+    return any(h in ident for h in REPO_HOST_SUBSTRINGS)
+
+def blockchain_sc_targets(prog: dict) -> List[dict]:
+    return [t for t in prog.get("in_scope", []) if is_blockchain_sc(t)]
+
+def blockchain_sc_ids_list(prog: dict) -> List[str]:
+    """Full sorted normalized ids of blockchain source targets (not truncated)."""
+    return sorted({norm_id(t.get("identifier", "")) for t in blockchain_sc_targets(prog)
+                   if norm_id(t.get("identifier", ""))})
+
+def blockchain_github_repos_list(prog: dict) -> List[str]:
+    """Extract github.com/org/repo from blockchain source target identifiers."""
+    repos = set()
+    for t in blockchain_sc_targets(prog):
+        ident = (t.get("identifier") or "").lower()
+        m = ident.find("github.com/")
+        if m == -1:
+            continue
+        rest = ident[m + len("github.com/"):].strip().strip("/")
+        parts = [p for p in rest.split("/") if p]
+        if len(parts) >= 2:
+            repos.add(f"{parts[0]}/{parts[1]}")
+    return sorted(repos)
+
+def _detect_scope_events(prog: dict, platform: str, key: str, h: str,
+                         hb: bool, hs: bool, ids: List[str], gh: List[str],
+                         prev: dict, first_run: bool,
+                         changes: list, events: list):
+    """Shared new-program / scope / bounty / repo event detection for big-5
+    AND blockchain feeds. Sets prog _added/_removed/_github_new for messages."""
+    if first_run or not (hb and hs):
+        return
+    p = prev.get(key)
+    if p is None:
+        # idempotency: state resets must not re-spam old programs
+        if recent_duplicate(changes, platform, prog["handle"], "new_program"):
+            return
+        events.append((prog, platform, "new_program"))
+    elif p.get("hash") != h:
+        old_ids = set(p.get("sc_ids") or [])
+        new_ids = set(ids)
+        added = sorted(new_ids - old_ids)[:20]
+        removed = sorted(old_ids - new_ids)[:20]
+        # fallback for pre-v6 states without sc_ids: diff display targets
+        if not old_ids and not added:
+            added = [norm_id(t.get("identifier", "")) for t in
+                     targets_for(platform, prog)[:20]
+                     if norm_id(t.get("identifier", ""))]
+        old_gh = set(p.get("github_repos") or [])
+        gh_new = sorted(set(gh) - old_gh)[:20]
+        prog["_added"] = added
+        prog["_removed"] = removed
+        prog["_github_new"] = gh_new
+        was = p.get("source", False)
+        was_bounty = p.get("bounty", False)
+        # BLUNT: non-SC reshuffles (hash changed but SC sets identical,
+        # bounty/source flags unchanged) are noise — skip, no alert.
+        if not added and not removed and not gh_new and was == hs and was_bounty == hb:
+            return
+        # bounty flip is worth its own signal even when scope moved too
+        if not was_bounty and hb:
+            events.append((prog, platform, "bounty_enabled"))
+            # still fall through to scope event only if SC actually moved
+            if not added and not removed and not gh_new:
+                return
+        events.append((prog, platform, "scope_added" if (hs and not was) else "scope_updated"))
+        if gh_new:
+            events.append((prog, platform, "new_repo"))
+    elif not p.get("bounty") and hb:
+        events.append((prog, platform, "bounty_enabled"))
+    else:
+        # hash unchanged but repo tracking was added later: catch repos
+        # missed by old states without sc_ids
+        old_gh = set((p.get("github_repos") or []))
+        gh_new = sorted(set(gh) - old_gh)[:20]
+        if gh_new and p.get("sc_ids") is None:
+            prog["_added"] = []
+            prog["_removed"] = []
+            prog["_github_new"] = gh_new
+            events.append((prog, platform, "new_repo"))
+
+def has_blockchain_source(prog: dict) -> bool:
+    return bool(blockchain_sc_targets(prog))
+
+def blockchain_scope_hash(prog: dict, status: str = "", bmax: int = 0) -> str:
+    """Scope hash that ALSO covers live-status + max-bounty, so a pause,
+    resume, or reward bump on a blockchain program fires a scope event.
+    (Big-5 keeps the scope-only hash + separate bounty-flip signal.)"""
+    s = json.dumps(sorted(json.dumps(t, sort_keys=True) for t in prog["in_scope"]))
+    return hashlib.sha1(f"{s}|{status}|{bmax}".encode()).hexdigest()
+
+def targets_for(platform: str, prog: dict) -> List[dict]:
+    """SC target list appropriate for the platform (used by messages)."""
+    if platform in BLOCKCHAIN_PLATFORMS:
+        return blockchain_sc_targets(prog)
+    return sc_targets(prog)
+
+def _parse_money(s) -> int:
+    """'$15,500,000' / '10000.0' / 15000 → int. 0 = unknown."""
+    try:
+        if s is None:
+            return 0
+        if isinstance(s, (int, float)):
+            return int(s)
+        t = re.sub(r"[^0-9.]", "", str(s))
+        return int(float(t)) if t else 0
+    except Exception:
+        return 0
+
+def _sitemap_locs(url: str, timeout: int = 30) -> Optional[List[str]]:
+    """Fetch an XML sitemap, return all <loc> values. None = fetch failed."""
+    r = requests.get(url, timeout=timeout, headers=UA_HEADERS)
+    r.raise_for_status()
+    return re.findall(r"<loc>([^<]+)</loc>", r.text)
+
 # ── Telegram ───────────────────────────────────────────────────────────────────
 
 def tg_send(text: str, retries=3) -> bool:
@@ -188,6 +342,7 @@ def tg_send(text: str, retries=3) -> bool:
 def build_message(prog: dict, platform: str, event: str) -> str:
     emoji,title = EVENT_LABELS.get(event,("🔔","Update"))
     ts = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    detected_note = f"\n⏰ Detected: {ts} (detection time, not launch time)"
     if event == "new_external":
         return "\n".join([
             f"{emoji} <b>{title}</b>","",
@@ -195,12 +350,21 @@ def build_message(prog: dict, platform: str, event: str) -> str:
             f"🌐 <b>Found via:</b>  {prog.get('origin','direct')} (worldwide index)",
             f"🔗 <b>URL:</b>       {prog['url']}","",
             "ℹ️ No scope detail in the worldwide index — check the program page",
-            f"\n⏰ {ts}",
+            "ℹ️ Program-level watch only: bounty flag from Chaos index, may be stale",
+            detected_note,
         ])
     sc = sc_targets(prog)
     lines = [f"{emoji} <b>{title}</b>","",
              f"{PLATFORM_EMOJI.get(platform,'⚪')} <b>Platform:</b>  {platform.capitalize()}",
              f"📋 <b>Program:</b>   {prog['name']}",f"🔗 <b>URL:</b>       {prog['url']}",""]
+    if platform in BLOCKCHAIN_PLATFORMS:
+        st = prog.get("live_status") or "?"
+        mb = prog.get("bounty_max") or 0
+        ccy = prog.get("bounty_ccy") or ""
+        wallet = f" · 💰 up to {mb:,} {ccy}".rstrip() if mb else ""
+        lines.append(f"⛓️ <b>Status:</b> {st}{wallet}")
+        lines.append("")
+        sc = blockchain_sc_targets(prog)
     if event == "new_repo":
         gh_new = prog.get("_github_new", []) or []
         if gh_new:
@@ -237,7 +401,7 @@ def build_message(prog: dict, platform: str, event: str) -> str:
         for t in sc[:6]:
             lines.append(f"  • <code>{t['identifier']}</code>  [{t['asset_type']}]")
         if len(sc)>6: lines.append(f"  … and {len(sc)-6} more")
-    lines.append(f"\n⏰ {ts}")
+    lines.append(detected_note)
     return "\n".join(lines)
 
 # ── State & Changes ────────────────────────────────────────────────────────────
@@ -259,7 +423,7 @@ def append_change(changes: list, prog: dict, platform: str, event: str):
         "handle":    prog["handle"],
         "name":      prog["name"],
         "url":       prog["url"],
-        "sc_targets": sc_targets(prog)[:8],
+        "sc_targets": targets_for(platform, prog)[:8],
         "added":     list(prog.get("_added", []) or [])[:20],
         "removed":   list(prog.get("_removed", []) or [])[:20],
         "github_repos": list(prog.get("_github_new", []) or [])[:20],
@@ -269,6 +433,25 @@ def append_change(changes: list, prog: dict, platform: str, event: str):
 
 def save_changes(changes: list):
     json.dump(changes, open(CHANGES_FILE,"w"), indent=2)
+
+def recent_duplicate(changes: list, platform: str, handle: str, event: str,
+                     days: int = 30) -> bool:
+    """True if the same platform+handle+event was already logged recently.
+    Prevents duplicate new_program spam after state resets / key churn
+    (e.g. SecureDrop logged twice). Detection time, not launch time."""
+    try:
+        cutoff = time.time() - days * 86400
+        for c in reversed(changes[-MAX_CHANGES:]):
+            if (c.get("platform") == platform and c.get("handle") == handle
+                    and c.get("event") == event):
+                try:
+                    ts = datetime.fromisoformat(c.get("timestamp", "")).timestamp()
+                except Exception:
+                    return True  # unparseable: be conservative, skip
+                return ts >= cutoff
+        return False
+    except Exception:
+        return False
 
 # ── Fetch ──────────────────────────────────────────────────────────────────────
 
@@ -292,6 +475,366 @@ def fetch_chaos() -> Optional[List[dict]]:
     except Exception as e:
         print(f"  ✗ {'chaos':12s} → ERROR: {e}"); return None
 
+# ── Immunefi (public-api/bounties.json — single request, rich assets) ───────────
+
+_IMMUNEFI_TYPE_MAP = {"smart_contract": "SMART_CONTRACT", "blockchain": "BLOCKCHAIN",
+                      "web": "WEB", "website": "WEB", "app": "APP"}
+
+def _normalize_immunefi(item: dict) -> Optional[dict]:
+    """Immunefi bounty → big-5-shaped prog dict. Private/paused → tracked
+    without bounty (unpause flips it back with a bounty_enabled event)."""
+    try:
+        slug = str(item.get("slug") or "").strip()
+        if not slug:
+            return None
+        if item.get("inviteOnly"):
+            return None  # private program — not a public feed
+        project = str(item.get("project") or slug).strip()
+        max_bounty = _parse_money(item.get("maxBounty"))
+        paused = bool(item.get("isPaused"))
+        has_bounty = max_bounty > 0 and not paused
+        scope = []
+        for a in item.get("assets") or []:
+            url = str(a.get("url") or "").strip()
+            desc = str(a.get("description") or "").strip()
+            if not url and not desc:
+                continue
+            atype = _IMMUNEFI_TYPE_MAP.get(str(a.get("type") or "").lower(), "OTHER")
+            scope.append({"asset_type": atype, "identifier": url or desc,
+                          "description": desc if url else ""})
+        return {
+            "handle": slug, "name": project,
+            "url": f"https://immunefi.com/bug-bounty/{slug}",
+            "platform": "immunefi",
+            "has_bounty": has_bounty,
+            "bounty_min": 0, "bounty_max": max_bounty,
+            "bounty_ccy": str(item.get("rewardsToken") or "USD"),
+            "live_status": "PAUSED" if paused else "LIVE",
+            "in_scope": scope,
+        }
+    except Exception as e:
+        print(f"    [immunefi] normalize error: {e}")
+    return None
+
+def fetch_immunefi() -> Optional[List[dict]]:
+    try:
+        r = requests.get(IMMUNEFI_API_URL, timeout=60, headers=UA_HEADERS)
+        r.raise_for_status()
+        raw = r.json()
+        out = [n for item in raw if (n := _normalize_immunefi(item))]
+        print(f"  ✓ {'immunefi':12s} → {len(out):4d} programs"); return out
+    except Exception as e:
+        print(f"  ✗ {'immunefi':12s} → ERROR: {e}"); return None
+
+# ── HackenProof (sitemap discovery + parallel program-page fetch) ───────────────
+
+def _deref(payload, idx, depth: int = 0, _memo=None, _active=None):
+    """Resolve Nuxt devalue payload refs: non-negative ints are indexes into
+    the flat payload array, -1/None stay empty. Dicts/lists resolve deeply.
+    Memoized + cycle-guarded: payloads contain circular refs, and naive
+    recursion re-explores shared subgraphs exponentially (observed hang)."""
+    if _memo is None:
+        _memo = {}
+        _active = set()
+    if depth > 60:
+        return None
+    if idx is None or isinstance(idx, bool):
+        return idx
+    if isinstance(idx, int):
+        if idx < 0 or idx >= len(payload):
+            return None
+        if idx in _memo:
+            return _memo[idx]
+        if idx in _active:
+            return None  # circular ref — cut it
+        _active.add(idx)
+        val = _deref(payload, payload[idx], depth + 1, _memo, _active)
+        _active.discard(idx)
+        _memo[idx] = val
+        return val
+    if isinstance(idx, dict):
+        return {k: _deref(payload, v, depth + 1, _memo, _active)
+                for k, v in idx.items()}
+    if isinstance(idx, list):
+        return [_deref(payload, v, depth + 1, _memo, _active) for v in idx]
+    return idx
+
+_HP_TYPE_MAP = [("smart", "SMART_CONTRACT"), ("blockchain", "BLOCKCHAIN"),
+                ("web", "WEB"), ("api", "API"), ("mobile", "MOBILE")]
+
+def _hp_asset_type(title: str) -> str:
+    t = (title or "").lower()
+    for needle, atype in _HP_TYPE_MAP:
+        if needle in t:
+            return atype
+    return "OTHER"
+
+def _parse_hackenproof_program(slug: str, html: str) -> Optional[dict]:
+    """Parse a hackenproof.com/programs/<slug> SSR payload. None = unparseable
+    (caller carries over the previous record instead of dropping it)."""
+    try:
+        m = re.search(r'<script type="application/json"[^>]*>(.*?)</script>',
+                      html, re.DOTALL)
+        if not m:
+            return None
+        payload = json.loads(m.group(1))
+        prog = None
+        for item in payload:
+            if isinstance(item, dict) and "scopes" in item and "maxReward" in item:
+                cand = _deref(payload, item)
+                if isinstance(cand, dict) and isinstance(cand.get("scopes"), list):
+                    prog = cand
+                    break
+        if not prog:
+            return None
+        title = str(prog.get("title") or slug).strip()
+        state = str(prog.get("state") or "")
+        status = str(prog.get("status") or "")
+        max_bounty = _parse_money(prog.get("maxBounty") or prog.get("maxReward"))
+        min_bounty = _parse_money(prog.get("minBounty"))
+        scope = []
+        for s in prog.get("scopes") or []:
+            if not isinstance(s, dict):
+                continue
+            target = str(s.get("target") or "").strip()
+            if not target:
+                continue
+            scope.append({
+                "asset_type": _hp_asset_type(str(s.get("title") or "")),
+                "identifier": target,
+                "description": str(s.get("target_description") or ""),
+            })
+        has_bounty = (state == "published") and (status != "ENDED") and max_bounty > 0
+        return {
+            "handle": slug, "name": title,
+            "url": HACKENPROOF_PROGRAM_URL.format(slug=slug),
+            "platform": "hackenproof",
+            "has_bounty": has_bounty,
+            "bounty_min": min_bounty, "bounty_max": max_bounty,
+            "bounty_ccy": "USD",
+            "live_status": status or state or "?",
+            "in_scope": scope,
+        }
+    except Exception as e:
+        print(f"    [hackenproof:{slug}] parse error: {e}")
+    return None
+
+def _fetch_text(url: str, timeout: int = 20) -> Optional[str]:
+    try:
+        r = requests.get(url, timeout=timeout, headers=UA_HEADERS)
+        r.raise_for_status()
+        return r.text
+    except Exception:
+        return None
+
+def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str]]]:
+    """Returns (programs, failed_slugs). None = sitemap failed (full carry-over).
+    Detail failures are reported so the caller can carry those over stale."""
+    try:
+        locs = _sitemap_locs(HACKENPROOF_SITEMAP_URL)
+        slugs = sorted({m.group(1) for loc in locs
+                        for m in [re.search(r"/programs/([A-Za-z0-9_\-]+)", loc)] if m})
+        if not slugs:
+            raise ValueError("no program slugs in sitemap")
+    except Exception as e:
+        print(f"  ✗ {'hackenproof':12s} → ERROR: {e}"); return None
+    print(f"  … hackenproof sitemap → {len(slugs)} slugs; fetching details…")
+    out, failed = [], []
+
+    def _one(slug: str):
+        try:
+            html = _fetch_text(HACKENPROOF_PROGRAM_URL.format(slug=slug))
+            if not html:
+                return (slug, None)
+            return (slug, _parse_hackenproof_program(slug, html))
+        except Exception as e:
+            print(f"    [hackenproof:{slug}] worker error: {e}")
+            return (slug, None)
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for slug, norm in ex.map(_one, slugs):
+            if norm:
+                out.append(norm)
+            else:
+                failed.append(slug)
+    print(f"  ✓ {'hackenproof':12s} → {len(out):4d} programs"
+          + (f" ({len(failed)} detail fails → stale)" if failed else ""))
+    return (out, failed)
+
+# ── Cantina (sitemap discovery + parallel bounty-page fetch) ────────────────────
+
+def _parse_cantina_bounty(uid: str, html: str) -> Optional[dict]:
+    """Parse a cantina.xyz/bounties/<uid> page (bounty JSON in RSC payload).
+    Smart-contract/blockchain scope or GitHub refs ⇒ source."""
+    try:
+        m = re.search(r'\\"name\\":\\"([^\\]+)\\",\\"url\\":\\"https://cantina\.xyz/bounties/',
+                      html)
+        name = m.group(1).strip() if m else uid
+        # bounty-level status sits right after "timeframe" (other "status"
+        # fields in the page are submission states like "success")
+        ms = re.search(r'\\"timeframe\\":\{[^}]*\},\\"status\\":\\"([a-zA-Z]+)\\"', html)
+        if not ms:
+            ms = re.search(r'\\"status\\":\\"(live|ended|paused|draft)\\"', html)
+        status = (ms.group(1) if ms else "").upper() or "?"
+        mp = re.search(r'\\"totalRewardPot\\":\\"([\d.]+)\\"', html)
+        pot = _parse_money(mp.group(1)) if mp else 0
+        if not pot:
+            mr = re.search(r'Maximum reward</p><p[^>]*>\$([\d,]+)</p>', html)
+            pot = _parse_money(mr.group(1)) if mr else 0
+        mc = re.search(r'\\"currencyCode\\":\\"([A-Z]+)\\"', html)
+        ccy = mc.group(1) if mc else "USDC"
+        groups = re.findall(r'\\"name\\":\\"([^\\]+)\\",\\"description', html)
+        scopes = " ".join(groups).lower()
+        refs = sorted(set(re.findall(r'\\"reference\\":\\"([^\\]+)\\"', html)))
+        gh = sorted({g for g in refs if "github.com/" in g.lower()})
+        scope = [{"asset_type": "SMART_CONTRACT", "identifier": g,
+                  "description": "cantina scope"} for g in gh[:30]]
+        has_chain = ("smart contract" in scopes) or ("blockchain" in scopes)
+        if scope or has_chain:
+            # keep a marker so scope text (not just URLs) diffs too
+            scope.append({"asset_type": "SMART_CONTRACT",
+                          "identifier": f"cantina:{uid[:8]}",
+                          "description": "; ".join(groups[:6])})
+        live = (status == "LIVE")
+        ended = (status == "ENDED") or (">Ended<" in html)
+        has_bounty = pot > 0 and live and not ended
+        return {
+            "handle": uid, "name": name,
+            "url": CANTINA_BOUNTY_URL.format(uid=uid),
+            "platform": "cantina",
+            "has_bounty": has_bounty,
+            "bounty_min": 0, "bounty_max": pot, "bounty_ccy": ccy,
+            "live_status": "LIVE" if live else ("ENDED" if ended else status),
+            "in_scope": scope,
+        }
+    except Exception as e:
+        print(f"    [cantina:{uid}] parse error: {e}")
+    return None
+
+def fetch_cantina() -> Optional[Tuple[List[dict], List[str]]]:
+    try:
+        # sitemap.xml is an index (sitemap-0, sitemap-1, …) — gather them all
+        index = _sitemap_locs("https://cantina.xyz/sitemap.xml") or []
+        maps = sorted({loc for loc in index if re.search(r"sitemap-\d+\.xml$", loc)})
+        if not maps:
+            maps = [CANTINA_SITEMAP_URL]
+        locs: List[str] = []
+        for sm in maps:
+            try:
+                locs += _sitemap_locs(sm) or []
+            except Exception as e:
+                print(f"    [cantina] sitemap part failed: {sm}: {e}")
+        uids = sorted({m.group(1) for loc in locs
+                       for m in [re.search(r"/bounties/([a-f0-9\-]+)", loc)] if m})
+        if not uids:
+            raise ValueError("no bounty ids in sitemap")
+    except Exception as e:
+        print(f"  ✗ {'cantina':12s} → ERROR: {e}"); return None
+    print(f"  … cantina sitemap → {len(uids)} bounties; fetching details…")
+    out, failed = [], []
+
+    def _one(uid: str):
+        try:
+            html = _fetch_text(CANTINA_BOUNTY_URL.format(uid=uid))
+            if not html:
+                return (uid, None)
+            return (uid, _parse_cantina_bounty(uid, html))
+        except Exception as e:
+            print(f"    [cantina:{uid}] worker error: {e}")
+            return (uid, None)
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for uid, norm in ex.map(_one, uids):
+            if norm:
+                out.append(norm)
+            else:
+                failed.append(uid)
+    print(f"  ✓ {'cantina':12s} → {len(out):4d} bounties"
+          + (f" ({len(failed)} detail fails → stale)" if failed else ""))
+    return (out, failed)
+
+# ── Sherlock (sitemap discovery + parallel bug-bounty-page fetch) ───────────────
+
+def _parse_sherlock_bounty(bid: str, html: str) -> Optional[dict]:
+    """Parse audits.sherlock.xyz/bug-bounties/<id>. Sherlock bounties are
+    smart-contract by definition; contract `names` in Scope diff like targets."""
+    try:
+        t = re.search(r"<title>([^<]+)</title>", html)
+        title = (t.group(1).replace(" Bug Bounty - Sherlock", "").strip()
+                 if t else f"Sherlock {bid}")
+        m = re.search(r"Max Rewards</p><span[^>]*>([^<]+)</span>", html)
+        pot = _parse_money(m.group(1)) if m else 0
+        if ">LIVE<" in html:
+            status = "LIVE"
+        elif ">ENDED<" in html:
+            status = "ENDED"
+        else:
+            status = "?"
+        scope, contracts = [], []
+        ms = re.search(r"## Scope(.*?)## Out of Scope", html, re.DOTALL)
+        if ms:
+            # contract `names` are plain backticks; newlines are literal \n
+            contracts = sorted(set(re.findall(r"`([A-Za-z0-9_.$*][A-Za-z0-9_.$* ]{0,40})`",
+                                              ms.group(1))))[:20]
+            scope = [{"asset_type": "SMART_CONTRACT", "identifier": c,
+                      "description": "sherlock scope"} for c in contracts]
+        gh = sorted(set(re.findall(r"https://github\.com/[A-Za-z0-9_.\-]+/[A-Za-z0-9_.\-]+",
+                                   html)))[:20]
+        for g in gh:
+            scope.append({"asset_type": "SMART_CONTRACT", "identifier": g,
+                          "description": "sherlock scope"})
+        if not scope and status == "LIVE":
+            # live smart-contract bounty with no machine-readable scope —
+            # marker keeps it qualifying; detail lives on the program page
+            scope = [{"asset_type": "SMART_CONTRACT",
+                      "identifier": f"sherlock:{bid}",
+                      "description": "live contracts — see program page"}]
+        has_bounty = pot > 0 and status == "LIVE"
+        return {
+            "handle": bid, "name": title,
+            "url": SHERLOCK_BOUNTY_URL.format(bid=bid),
+            "platform": "sherlock",
+            "has_bounty": has_bounty,
+            "bounty_min": 0, "bounty_max": pot, "bounty_ccy": "USDC",
+            "live_status": status,
+            "in_scope": scope,
+        }
+    except Exception as e:
+        print(f"    [sherlock:{bid}] parse error: {e}")
+    return None
+
+def fetch_sherlock() -> Optional[Tuple[List[dict], List[str]]]:
+    try:
+        locs = _sitemap_locs(SHERLOCK_SITEMAP_URL)
+        bids = sorted({loc.rstrip("/").rsplit("/", 1)[-1] for loc in locs
+                       if re.search(r"/bug-bounties/\d+/?$", loc)})
+        if not bids:
+            raise ValueError("no bounty ids in sitemap")
+    except Exception as e:
+        print(f"  ✗ {'sherlock':12s} → ERROR: {e}"); return None
+    print(f"  … sherlock sitemap → {len(bids)} bounties; fetching details…")
+    out, failed = [], []
+
+    def _one(bid: str):
+        try:
+            html = _fetch_text(SHERLOCK_BOUNTY_URL.format(bid=bid))
+            if not html:
+                return (bid, None)
+            return (bid, _parse_sherlock_bounty(bid, html))
+        except Exception as e:
+            print(f"    [sherlock:{bid}] worker error: {e}")
+            return (bid, None)
+
+    with ThreadPoolExecutor(max_workers=8) as ex:
+        for bid, norm in ex.map(_one, bids):
+            if norm:
+                out.append(norm)
+            else:
+                failed.append(bid)
+    print(f"  ✓ {'sherlock':12s} → {len(out):4d} bounties"
+          + (f" ({len(failed)} detail fails → stale)" if failed else ""))
+    return (out, failed)
+
 def carry_over(prev: dict, new_state: dict, prefix: str) -> int:
     stale = {k: v for k, v in prev.items() if k.startswith(prefix)}
     new_state.update(stale)
@@ -300,7 +843,7 @@ def carry_over(prev: dict, new_state: dict, prefix: str) -> int:
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor v3 (worldwide)\n  {datetime.now(timezone.utc).isoformat()}\n{'─'*58}\n")
+    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor v4 (worldwide + blockchain)\n  {datetime.now(timezone.utc).isoformat()}\n{'─'*58}\n")
     prev = load_state()
     # Old/incompatible state format → silent re-baseline (prevents notification floods)
     first_run = (not prev) or prev.get("_meta", {}).get("schema") != SCHEMA_VERSION
@@ -321,14 +864,17 @@ def main():
                 chaos_domains.get(prog["name"].lower(), 0), prog.get("domains", 0))
 
     print("Fetching platforms…")
+    fetch_ok: Dict[str, bool] = {}
 
     # ── Big platforms: full scope analysis ──
     for platform, url in PLATFORM_URLS.items():
         progs = fetch(platform, url)
         if progs is None:
+            fetch_ok[platform] = False
             n = carry_over(prev, new_state, f"{platform}:")
             print(f"  ↻ {platform} unavailable — carried over {n} stale entries (no events)")
             continue
+        fetch_ok[platform] = True
         for prog in progs:
             key = f"{platform}:{prog['handle']}"
             h   = scope_hash(prog)
@@ -344,59 +890,107 @@ def main():
                 "bounty_min": prog.get("bounty_min", 0),
                 "bounty_max": prog.get("bounty_max", 0),
                 "bounty_ccy": prog.get("bounty_ccy", ""),
+                "bounty_note": "amount not in upstream feed" if (hb and not prog.get("bounty_max")) else "",
                 "domains": chaos_domains.get(prog["name"].lower(), 0),
                 "resp_eff": prog.get("resp_eff"),
                 "bounty_days": prog.get("bounty_days"),
                 "sc_targets": sc[:10],
+                "sc_total": len(sc),
                 "sc_ids": ids,
                 "github_repos": gh,
             }
 
-            if first_run or not (hb and hs): continue
-            p = prev.get(key)
-            if p is None:
-                events.append((prog, platform, "new_program"))
-            elif p.get("hash") != h:
-                old_ids = set(p.get("sc_ids") or [])
-                new_ids = set(ids)
-                added = sorted(new_ids - old_ids)[:20]
-                removed = sorted(old_ids - new_ids)[:20]
-                # fallback for pre-v6 states without sc_ids: diff display targets
-                if not old_ids and not added:
-                    added = [norm_id(t.get("identifier","")) for t in sc[:20]
-                             if norm_id(t.get("identifier",""))]
-                old_gh = set(p.get("github_repos") or [])
-                gh_new = sorted(set(gh) - old_gh)[:20]
-                prog["_added"] = added
-                prog["_removed"] = removed
-                prog["_github_new"] = gh_new
-                was = p.get("source", False)
-                events.append((prog, platform, "scope_added" if (hs and not was) else "scope_updated"))
-                if gh_new:
-                    events.append((prog, platform, "new_repo"))
-            elif not p.get("bounty") and hb:
-                events.append((prog, platform, "bounty_enabled"))
+            if first_run or not (hb and hs):
+                pass
             else:
-                # hash unchanged but v6 adds repo tracking: catch repos missed pre-v6
-                old_gh = set((p.get("github_repos") or []))
-                gh_new = sorted(set(gh) - old_gh)[:20]
-                if gh_new and p.get("sc_ids") is None:
-                    prog["_added"] = []
-                    prog["_removed"] = []
-                    prog["_github_new"] = gh_new
-                    events.append((prog, platform, "new_repo"))
+                _detect_scope_events(prog, platform, key, h, hb, hs, ids, gh,
+                                     prev, first_run, changes, events)
 
-    # Names already covered by big platforms (avoid duplicate chaos entries)
-    known_names = {v.get("name","").lower() for k, v in new_state.items()}
+    # ── Blockchain feeds: smart-contract bounties (detail pages) ──
+    print("Fetching blockchain feeds…")
+
+    def _safe(fetch_fn, platform: str):
+        """A blockchain feed must never crash the whole run — worst case it
+        goes stale and its previous records carry over silently."""
+        try:
+            return fetch_fn()
+        except Exception as e:
+            print(f"  ✗ {platform:12s} → ERROR: {e}")
+            return None
+
+    bc_feeds = [
+        ("immunefi", _safe(fetch_immunefi, "immunefi")),
+        ("hackenproof", _safe(fetch_hackenproof, "hackenproof")),
+        ("cantina", _safe(fetch_cantina, "cantina")),
+        ("sherlock", _safe(fetch_sherlock, "sherlock")),
+    ]
+    for platform, result in bc_feeds:
+        progs, failed = (result if isinstance(result, tuple) else (result, []))
+        if progs is None:
+            fetch_ok[platform] = False
+            n = carry_over(prev, new_state, f"{platform}:")
+            print(f"  ↻ {platform} unavailable — carried over {n} stale entries (no events)")
+            continue
+        fetch_ok[platform] = True
+        for prog in progs:
+            key = f"{platform}:{prog['handle']}"
+            status = prog.get("live_status", "")
+            bmax = prog.get("bounty_max", 0) or 0
+            h   = blockchain_scope_hash(prog, status, bmax)
+            hb  = prog["has_bounty"]
+            sc  = blockchain_sc_targets(prog)
+            hs  = bool(sc)
+            ids = blockchain_sc_ids_list(prog)
+            gh  = blockchain_github_repos_list(prog)
+
+            new_state[key] = {
+                "hash": h, "bounty": hb, "source": hs,
+                "name": prog["name"], "url": prog["url"], "platform": platform,
+                "bounty_min": prog.get("bounty_min", 0),
+                "bounty_max": bmax,
+                "bounty_ccy": prog.get("bounty_ccy", ""),
+                "bounty_note": "",
+                "domains": 0,
+                "resp_eff": None,
+                "bounty_days": None,
+                "live_status": status,
+                "sc_targets": sc[:10],
+                "sc_total": len(sc),
+                "sc_ids": ids,
+                "github_repos": gh,
+            }
+
+            if first_run or not (hb and hs):
+                pass
+            else:
+                _detect_scope_events(prog, platform, key, h, hb, hs, ids, gh,
+                                     prev, first_run, changes, events)
+        # partial detail failures → stale carry-over (no events for these)
+        carried = 0
+        for handle in (failed or []):
+            key = f"{platform}:{handle}"
+            if key in prev and key not in new_state:
+                new_state[key] = prev[key]
+                carried += 1
+        if carried:
+            print(f"  ↻ {platform} carried over {carried} stale detail(s) (no events)")
+
+    # BLUNT: only suppress a Chaos entry when the SAME name already pays
+    # on a big-5 OR blockchain platform. Old code suppressed on ANY name
+    # match (even VDP / no-bounty), silently hiding real external bounties.
+    known_bounty_names = {v.get("name", "").lower() for v in new_state.values()
+                          if v.get("bounty")}
 
     # ── Worldwide index: program-level watch ──
     if chaos is None:
+        fetch_ok["chaos"] = False
         n = carry_over(prev, new_state, "chaos:")
         print(f"  ↻ chaos unavailable — carried over {n} stale entries (no events)")
     else:
+        fetch_ok["chaos"] = True
         seen = set()
         for prog in chaos:
-            if prog["name"].lower() in known_names: continue
+            if prog["name"].lower() in known_bounty_names: continue
             key = f"chaos:{prog['handle']}"
             if key in seen: continue
             seen.add(key)
@@ -408,28 +1002,44 @@ def main():
                 "sc_targets": [],
             }
             if first_run or prev.get(key): continue
+            if recent_duplicate(changes, "chaos", prog["handle"], "new_external"):
+                continue
             events.append((prog, "chaos", "new_external"))
 
     total = sum(1 for k in new_state if k != "_meta")
     qualifying = sum(1 for k, v in new_state.items() if k != "_meta" and v.get("bounty") and v.get("source"))
     external = sum(1 for k in new_state if k.startswith("chaos:"))
+    blockchain = sum(1 for k, v in new_state.items()
+                     if k != "_meta" and v.get("platform") in BLOCKCHAIN_PLATFORMS
+                     and v.get("bounty") and v.get("source"))
     new_state["_meta"] = {
         "schema": SCHEMA_VERSION,
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total": total, "qualifying": qualifying, "external": external,
+        "blockchain": blockchain,
+        "fetch_ok": fetch_ok,
+        "stale": [p for p, ok in fetch_ok.items() if not ok],
     }
     save_state(new_state)
-    print(f"\n📊 {qualifying} bounty+source · {external} worldwide programs · {total} total\n")
+    print(f"\n📊 {qualifying} bounty+source ({blockchain} blockchain) · "
+          f"{external} worldwide programs · {total} total\n")
+    if any(not ok for ok in fetch_ok.values()):
+        print(f"  ⚠ STALE feeds this cycle: {[p for p, ok in fetch_ok.items() if not ok]}")
 
     if first_run:
-        tg_send(f"✅ <b>Bug Bounty Monitor v3 is LIVE! (worldwide)</b>\n\n"
+        tg_send(f"✅ <b>Bug Bounty Monitor v4 is LIVE</b>\n\n"
                 f"📊 <b>Baseline snapshot:</b>\n"
-                f"  • Bounty + source code      : {qualifying}\n"
+                f"  • Bounty + source code      : {qualifying} ({blockchain} blockchain)\n"
                 f"  • Worldwide (outside big-5) : {external}\n"
                 f"  • Total programs tracked    : {total}\n\n"
-                f"🔔 Notifying on new programs, scope changes, bounty changes\n"
+                f"Blunt truth:\n"
+                f"  • 5 classic feeds (H1/BC/Intigriti/YWH/Federacy) + Chaos index\n"
+                f"  • 4 blockchain feeds (HackenProof/Immunefi/Cantina/Sherlock) — /blockchain\n"
+                f"  • Timestamps are DETECTION time, not launch time\n"
+                f"  • HackerOne amounts are NOT in the feed (yes/no only)\n"
+                f"  • Full source removal is NOT alerted (program just drops out)\n"
                 f"🤖 Bot ready — type /help in Telegram\n"
-                f"🔁 Checks every 30 min\n"
+                f"🔁 Best-effort ~30 min (GitHub cron + restarts can delay)\n"
                 f"⏰ {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}")
         save_changes(changes)
         print("✅ Baseline done.\n"); return
