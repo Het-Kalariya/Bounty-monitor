@@ -627,9 +627,10 @@ def _fetch_text(url: str, timeout: int = 20) -> Optional[str]:
     except Exception:
         return None
 
-def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str]]]:
-    """Returns (programs, failed_slugs). None = sitemap failed (full carry-over).
-    Detail failures are reported so the caller can carry those over stale."""
+def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str], List[str]]]:
+    """Returns (programs, failed_slugs, all_slugs). None = sitemap failed.
+    Detail failures are reported so the caller can carry those over stale.
+    Datacenter IPs get throttled → low concurrency + one retry pass."""
     try:
         locs = _sitemap_locs(HACKENPROOF_SITEMAP_URL)
         slugs = sorted({m.group(1) for loc in locs
@@ -640,26 +641,44 @@ def fetch_hackenproof() -> Optional[Tuple[List[dict], List[str]]]:
         print(f"  ✗ {'hackenproof':12s} → ERROR: {e}"); return None
     print(f"  … hackenproof sitemap → {len(slugs)} slugs; fetching details…")
     out, failed = [], []
+    reasons: Dict[str, int] = {}
 
     def _one(slug: str):
         try:
             html = _fetch_text(HACKENPROOF_PROGRAM_URL.format(slug=slug))
             if not html:
-                return (slug, None)
-            return (slug, _parse_hackenproof_program(slug, html))
+                return (slug, None, "fetch")
+            norm = _parse_hackenproof_program(slug, html)
+            return (slug, norm, "" if norm else "parse")
         except Exception as e:
             print(f"    [hackenproof:{slug}] worker error: {e}")
-            return (slug, None)
+            return (slug, None, "worker")
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        for slug, norm in ex.map(_one, slugs):
+    def _pass(work: List[str]):
+        res = []
+        with ThreadPoolExecutor(max_workers=4) as ex:
+            res = list(ex.map(_one, work))
+        return res
+
+    todo = slugs
+    for attempt in (1, 2):
+        for slug, norm, reason in _pass(todo):
             if norm:
                 out.append(norm)
             else:
+                reasons[reason] = reasons.get(reason, 0) + 1
                 failed.append(slug)
+        todo = failed
+        failed = []
+        if todo and attempt == 1:
+            print(f"  … hackenproof retrying {len(todo)} failed details…")
+            time.sleep(2)
+    failed = todo
+    if reasons:
+        print(f"  … hackenproof detail failures: {dict(sorted(reasons.items()))}")
     print(f"  ✓ {'hackenproof':12s} → {len(out):4d} programs"
           + (f" ({len(failed)} detail fails → stale)" if failed else ""))
-    return (out, failed)
+    return (out, failed, slugs)
 
 # ── Cantina (sitemap discovery + parallel bounty-page fetch) ────────────────────
 
@@ -711,7 +730,7 @@ def _parse_cantina_bounty(uid: str, html: str) -> Optional[dict]:
         print(f"    [cantina:{uid}] parse error: {e}")
     return None
 
-def fetch_cantina() -> Optional[Tuple[List[dict], List[str]]]:
+def fetch_cantina() -> Optional[Tuple[List[dict], List[str], List[str]]]:
     try:
         # sitemap.xml is an index (sitemap-0, sitemap-1, …) — gather them all
         index = _sitemap_locs("https://cantina.xyz/sitemap.xml") or []
@@ -743,15 +762,24 @@ def fetch_cantina() -> Optional[Tuple[List[dict], List[str]]]:
             print(f"    [cantina:{uid}] worker error: {e}")
             return (uid, None)
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        for uid, norm in ex.map(_one, uids):
+    todo = uids
+    for attempt in (1, 2):
+        batch = []
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            batch = list(ex.map(_one, todo))
+        todo = []
+        for uid, norm in batch:
             if norm:
                 out.append(norm)
             else:
-                failed.append(uid)
+                todo.append(uid)
+        if todo and attempt == 1:
+            print(f"  … cantina retrying {len(todo)} failed details…")
+            time.sleep(1)
+    failed = todo
     print(f"  ✓ {'cantina':12s} → {len(out):4d} bounties"
           + (f" ({len(failed)} detail fails → stale)" if failed else ""))
-    return (out, failed)
+    return (out, failed, uids)
 
 # ── Sherlock (sitemap discovery + parallel bug-bounty-page fetch) ───────────────
 
@@ -803,7 +831,7 @@ def _parse_sherlock_bounty(bid: str, html: str) -> Optional[dict]:
         print(f"    [sherlock:{bid}] parse error: {e}")
     return None
 
-def fetch_sherlock() -> Optional[Tuple[List[dict], List[str]]]:
+def fetch_sherlock() -> Optional[Tuple[List[dict], List[str], List[str]]]:
     try:
         locs = _sitemap_locs(SHERLOCK_SITEMAP_URL)
         bids = sorted({loc.rstrip("/").rsplit("/", 1)[-1] for loc in locs
@@ -825,15 +853,24 @@ def fetch_sherlock() -> Optional[Tuple[List[dict], List[str]]]:
             print(f"    [sherlock:{bid}] worker error: {e}")
             return (bid, None)
 
-    with ThreadPoolExecutor(max_workers=8) as ex:
-        for bid, norm in ex.map(_one, bids):
+    todo = bids
+    for attempt in (1, 2):
+        batch = []
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            batch = list(ex.map(_one, todo))
+        todo = []
+        for bid, norm in batch:
             if norm:
                 out.append(norm)
             else:
-                failed.append(bid)
+                todo.append(bid)
+        if todo and attempt == 1:
+            print(f"  … sherlock retrying {len(todo)} failed details…")
+            time.sleep(1)
+    failed = todo
     print(f"  ✓ {'sherlock':12s} → {len(out):4d} bounties"
           + (f" ({len(failed)} detail fails → stale)" if failed else ""))
-    return (out, failed)
+    return (out, failed, bids)
 
 def carry_over(prev: dict, new_state: dict, prefix: str) -> int:
     stale = {k: v for k, v in prev.items() if k.startswith(prefix)}
@@ -924,14 +961,27 @@ def main():
         ("cantina", _safe(fetch_cantina, "cantina")),
         ("sherlock", _safe(fetch_sherlock, "sherlock")),
     ]
+    # Sitemap IDs from the previous cycle: lets a recovered detail fetch
+    # tell backfill (slug seen before, never fetched → silent) from
+    # genuinely new slugs (→ new_program alert). No history yet → assume
+    # known for one cycle (quiet, never spammy).
+    prev_feed_ids = prev.get("_meta", {}).get("feed_ids") or {}
+    feed_ids: Dict[str, List[str]] = {}
     for platform, result in bc_feeds:
-        progs, failed = (result if isinstance(result, tuple) else (result, []))
+        progs, failed, all_ids = (result if isinstance(result, tuple)
+                                  else (result, [], []))
+        feed_ids[platform] = all_ids
         if progs is None:
             fetch_ok[platform] = False
             n = carry_over(prev, new_state, f"{platform}:")
             print(f"  ↻ {platform} unavailable — carried over {n} stale entries (no events)")
+            # keep the last known sitemap so the next recovery can tell
+            # backfill (seen slug, never fetched) from genuinely new slugs
+            feed_ids[platform] = prev_feed_ids.get(platform) or []
             continue
         fetch_ok[platform] = True
+        backfilled = 0
+        prev_ids = prev_feed_ids.get(platform)  # None = no sitemap history yet
         for prog in progs:
             key = f"{platform}:{prog['handle']}"
             status = prog.get("live_status", "")
@@ -962,9 +1012,18 @@ def main():
 
             if first_run or not (hb and hs):
                 pass
+            elif prev.get(key) is None and (prev_ids is None
+                                            or prog["handle"] in prev_ids):
+                # backfill, not a launch: this slug was already in a
+                # previous sitemap (or we have no sitemap history yet) but
+                # was never successfully fetched — baseline it silently
+                # instead of firing a bogus new_program alert.
+                backfilled += 1
             else:
                 _detect_scope_events(prog, platform, key, h, hb, hs, ids, gh,
                                      prev, first_run, changes, events)
+        if backfilled:
+            print(f"  … {platform} backfilled {backfilled} program(s) silently (no alerts)")
         # partial detail failures → stale carry-over (no events for these)
         carried = 0
         for handle in (failed or []):
@@ -1017,6 +1076,7 @@ def main():
         "updated_at": datetime.now(timezone.utc).isoformat(),
         "total": total, "qualifying": qualifying, "external": external,
         "blockchain": blockchain,
+        "feed_ids": feed_ids,
         "fetch_ok": fetch_ok,
         "stale": [p for p, ok in fetch_ok.items() if not ok],
     }
