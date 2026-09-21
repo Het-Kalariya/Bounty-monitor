@@ -4,6 +4,17 @@ name: Telegram Bot
 # When this run completes, "Bot Keepalive" auto-restarts it via workflow_run —
 # the two workflows ping-pong forever, no cron schedules needed.
 # Stop everything: disable BOTH workflows + cancel the active run.
+#
+# BULLETPROOF NOTES (why it used to stop daily):
+# - NO concurrency group on purpose: sharing one group queued runs behind each
+#   other; queued duplicates started late, hit Telegram 409, exited, and the
+#   skipped/cancelled guards below broke the chain. Brief overlap is safe —
+#   bot.py stays alive on 409 with backoff instead of exiting.
+# - UNCONDITIONAL restart: any completed/cancelled/failure conclusion restarts
+#   the partner. The old skipped/cancelled guards halted the whole chain after
+#   one manual cancel. To stop the bot now, DISABLE both workflows first.
+# - No schedule here: keepalive.yml owns the single dead-man schedule, so the
+#   two never overlap at 03:00/03:17 and 409 each other.
 
 on:
   workflow_dispatch:
@@ -15,33 +26,25 @@ on:
   workflow_run:
     workflows: ["Bot Keepalive"]
     types: [completed]
-  schedule:
-    - cron: '0 3 * * *'   # dead-man: reboot the chain daily if it ever breaks
 
 permissions:
   contents: write
 
-concurrency:
-  group: telegram-bot
-  cancel-in-progress: false
-
 jobs:
   bot:
     name: Resident bot (long-poll)
-    # a skipped Keepalive means the previous bot run was cancelled on purpose —
-    # don't resurrect the chain (manual "Run workflow" restarts it).
     # forks don't inherit secrets — run the resident bot only in the home
     # repo; everywhere else the job skips and the chain halts quietly
-    if: >-
-      github.repository_owner == 'Het-Kalariya' &&
-      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'skipped')
+    if: github.repository_owner == 'Het-Kalariya'
     runs-on: ubuntu-latest
     timeout-minutes: 350
 
     steps:
 
-      - name: Checkout
+      - name: Checkout (full history — shallow clones break rebase/push)
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -55,7 +58,7 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BOT_MAX_MINUTES:  ${{ inputs.quick_test && '5' || '330' }}
+          BOT_MAX_MINUTES:  ${{ inputs.quick_test && '5' || '300' }}
         run: python -u bot.py
 
       - name: Commit updated offset

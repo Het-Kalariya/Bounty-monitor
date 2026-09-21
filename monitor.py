@@ -32,6 +32,17 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 STATE_FILE       = "state.json"
 CHANGES_FILE     = "changes_log.json"
 MAX_CHANGES      = 200
+# Hard time budget (seconds). Cron job gets 600s; inline bot cycles pass a
+# smaller MONITOR_BUDGET_SEC env so monitor.py NEVER overruns the caller's
+# subprocess timeout (overruns used to get SIGKILLed mid-save daily).
+MONITOR_BUDGET_SEC = int(os.environ.get("MONITOR_BUDGET_SEC", "600"))
+_MONITOR_START = time.time()
+
+def _budget_left() -> float:
+    return MONITOR_BUDGET_SEC - (time.time() - _MONITOR_START)
+
+def _budget_ok(need: float = 30.0) -> bool:
+    return _budget_left() > need
 SCHEMA_VERSION   = 8  # v8: + blockchain feeds (hackenproof/immunefi/cantina/sherlock).
 # Previous versions matched "source code" in descriptions and flagged API/URL
 # assets (e.g. Twilio api.segment.io) as source-code. v7 re-baselines silently.
@@ -412,14 +423,52 @@ def build_message(prog: dict, platform: str, event: str) -> str:
 
 # ── State & Changes ────────────────────────────────────────────────────────────
 
+def _atomic_write_json(path: str, data) -> None:
+    """Atomic write (tmp + fsync + replace): a timeout SIGKILL can never leave
+    a half-written state.json behind (that used to corrupt state and force a
+    re-baseline / notification flood on the next run)."""
+    tmp = f"{path}.tmp.{os.getpid()}"
+    with open(tmp, "w") as f:
+        json.dump(data, f, indent=2)
+        f.flush()
+        try:
+            os.fsync(f.fileno())
+        except Exception:
+            pass
+    os.replace(tmp, path)
+
 def load_state() -> dict:
-    return json.load(open(STATE_FILE)) if os.path.exists(STATE_FILE) else {}
+    if not os.path.exists(STATE_FILE):
+        return {}
+    try:
+        with open(STATE_FILE) as f:
+            data = json.load(f)
+        return data if isinstance(data, dict) else {}
+    except Exception as e:
+        print(f"  ⚠ state.json corrupt ({e}) — quarantining, starting from empty (no crash)")
+        try:
+            os.replace(STATE_FILE, f"state.json.corrupt.{int(time.time())}")
+        except Exception:
+            pass
+        return {}
 
 def save_state(state: dict):
-    json.dump(state, open(STATE_FILE,"w"), indent=2)
+    _atomic_write_json(STATE_FILE, state)
 
 def load_changes() -> list:
-    return json.load(open(CHANGES_FILE)) if os.path.exists(CHANGES_FILE) else []
+    if not os.path.exists(CHANGES_FILE):
+        return []
+    try:
+        with open(CHANGES_FILE) as f:
+            data = json.load(f)
+        return data if isinstance(data, list) else []
+    except Exception as e:
+        print(f"  ⚠ changes_log.json corrupt ({e}) — quarantining, starting fresh (no crash)")
+        try:
+            os.replace(CHANGES_FILE, f"changes_log.json.corrupt.{int(time.time())}")
+        except Exception:
+            pass
+        return []
 
 def append_change(changes: list, prog: dict, platform: str, event: str):
     changes.append({
@@ -438,7 +487,7 @@ def append_change(changes: list, prog: dict, platform: str, event: str):
         changes[:] = changes[-MAX_CHANGES:]
 
 def save_changes(changes: list):
-    json.dump(changes, open(CHANGES_FILE,"w"), indent=2)
+    _atomic_write_json(CHANGES_FILE, changes)
 
 def recent_duplicate(changes: list, platform: str, handle: str, event: str,
                      days: int = 30) -> bool:
@@ -772,7 +821,10 @@ def fetch_cantina() -> Optional[Tuple[List[dict], List[str], List[str]]]:
             return (uid, None)
 
     todo = uids
-    for attempt in (1, 2):
+    # Second pass only when budget allows — retrying throttled pages used to
+    # blow the job timeout daily (then NOTHING was committed).
+    attempts = (1, 2) if _budget_ok(180) else (1,)
+    for attempt in attempts:
         batch = []
         with ThreadPoolExecutor(max_workers=6) as ex:
             batch = list(ex.map(_one, todo))
@@ -782,7 +834,7 @@ def fetch_cantina() -> Optional[Tuple[List[dict], List[str], List[str]]]:
                 out.append(norm)
             else:
                 todo.append(uid)
-        if todo and attempt == 1:
+        if todo and attempt == 1 and len(attempts) > 1:
             print(f"  … cantina retrying {len(todo)} failed details…")
             time.sleep(1)
     failed = todo
@@ -863,7 +915,9 @@ def fetch_sherlock() -> Optional[Tuple[List[dict], List[str], List[str]]]:
             return (bid, None)
 
     todo = bids
-    for attempt in (1, 2):
+    # Second pass only when budget allows — same timeout rationale as cantina.
+    attempts = (1, 2) if _budget_ok(120) else (1,)
+    for attempt in attempts:
         batch = []
         with ThreadPoolExecutor(max_workers=6) as ex:
             batch = list(ex.map(_one, todo))
@@ -873,7 +927,7 @@ def fetch_sherlock() -> Optional[Tuple[List[dict], List[str], List[str]]]:
                 out.append(norm)
             else:
                 todo.append(bid)
-        if todo and attempt == 1:
+        if todo and attempt == 1 and len(attempts) > 1:
             print(f"  … sherlock retrying {len(todo)} failed details…")
             time.sleep(1)
     failed = todo
@@ -886,10 +940,27 @@ def carry_over(prev: dict, new_state: dict, prefix: str) -> int:
     new_state.update(stale)
     return len(stale)
 
+def _safe_fetch_immunefi():
+    """Immunefi wrapper safe for parallel execution — never raises."""
+    try:
+        return fetch_immunefi()
+    except Exception as e:
+        print(f"  ✗ {'immunefi':12s} → ERROR: {e}")
+        return None
+
+def _safe(fetch_fn, platform: str):
+    """A blockchain feed must never crash the whole run — worst case it
+    goes stale and its previous records carry over silently."""
+    try:
+        return fetch_fn()
+    except Exception as e:
+        print(f"  ✗ {platform:12s} → ERROR: {e}")
+        return None
+
 # ── Main ───────────────────────────────────────────────────────────────────────
 
 def main():
-    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor v4 (worldwide + blockchain)\n  {datetime.now(timezone.utc).isoformat()}\n{'─'*58}\n")
+    print(f"\n{'─'*58}\n  Bug Bounty Source Code Monitor v4 (worldwide + blockchain)\n  {datetime.now(timezone.utc).isoformat()}\n  budget: {MONITOR_BUDGET_SEC}s\n{'─'*58}\n")
     prev = load_state()
     # Old/incompatible state format → silent re-baseline (prevents notification floods)
     first_run = (not prev) or prev.get("_meta", {}).get("schema") != SCHEMA_VERSION
@@ -898,8 +969,34 @@ def main():
     events: List[Tuple[dict,str,str]] = []
 
     if first_run: print("📌 FIRST RUN / SCHEMA UPGRADE — building baseline\n")
-    print("Fetching worldwide index (domain counts)…")
-    chaos = fetch_chaos()
+
+    # ── Fast feeds in PARALLEL (was serial: 5×45s + chaos + immunefi could
+    # exceed the job timeout on slow networks → SIGKILL → nothing committed).
+    print("Fetching fast feeds in parallel (chaos + big-5 + immunefi)…")
+    fast_results: Dict[str, Optional[list]] = {}
+
+    def _get_big5(args) -> Optional[list]:
+        platform, url = args
+        return fetch(platform, url)
+
+    try:
+        with ThreadPoolExecutor(max_workers=7) as ex:
+            fut_chaos = ex.submit(fetch_chaos)
+            fut_immunefi = ex.submit(_safe_fetch_immunefi)
+            futs = {ex.submit(_get_big5, (p, u)): p for p, u in PLATFORM_URLS.items()}
+            chaos = fut_chaos.result()
+            immunefi_res = fut_immunefi.result()
+            for fut, platform in futs.items():
+                try:
+                    fast_results[platform] = fut.result()
+                except Exception as e:
+                    print(f"  ✗ {platform:12s} → ERROR: {e}")
+                    fast_results[platform] = None
+    except Exception as e:
+        print(f"  ⚠ parallel fast-fetch failed ({e}) — falling back to stale carry-over")
+        chaos, immunefi_res = None, None
+        for p in PLATFORM_URLS:
+            fast_results.setdefault(p, None)
     # name → in-scope domain count (competition proxy: surface per researcher)
     chaos_domains = {}
     if chaos is None:
@@ -909,12 +1006,12 @@ def main():
             chaos_domains[prog["name"].lower()] = max(
                 chaos_domains.get(prog["name"].lower(), 0), prog.get("domains", 0))
 
-    print("Fetching platforms…")
+    print("Processing big-5 platforms (already fetched in parallel)…")
     fetch_ok: Dict[str, bool] = {}
 
     # ── Big platforms: full scope analysis ──
-    for platform, url in PLATFORM_URLS.items():
-        progs = fetch(platform, url)
+    for platform in PLATFORM_URLS:
+        progs = fast_results.get(platform)
         if progs is None:
             fetch_ok[platform] = False
             n = carry_over(prev, new_state, f"{platform}:")
@@ -953,23 +1050,30 @@ def main():
                                      prev, first_run, changes, events)
 
     # ── Blockchain feeds: smart-contract bounties (detail pages) ──
-    print("Fetching blockchain feeds…")
+    # Immunefi already fetched in parallel above — reuse it. The three
+    # detail-page feeds (hackenproof/cantina/sherlock) are SLOW and used to
+    # blow the job timeout daily. Each now checks the time budget first:
+    # if we're running out, the feed goes stale (carry-over, no events)
+    # and we still SAVE everything collected so far.
+    print(f"Fetching blockchain detail feeds… (budget left: {int(_budget_left())}s)")
 
-    def _safe(fetch_fn, platform: str):
-        """A blockchain feed must never crash the whole run — worst case it
-        goes stale and its previous records carry over silently."""
-        try:
-            return fetch_fn()
-        except Exception as e:
-            print(f"  ✗ {platform:12s} → ERROR: {e}")
-            return None
-
-    bc_feeds = [
-        ("immunefi", _safe(fetch_immunefi, "immunefi")),
-        ("hackenproof", _safe(fetch_hackenproof, "hackenproof")),
-        ("cantina", _safe(fetch_cantina, "cantina")),
-        ("sherlock", _safe(fetch_sherlock, "sherlock")),
-    ]
+    bc_feeds = []
+    bc_feeds.append(("immunefi", immunefi_res))
+    if _budget_ok(240):
+        bc_feeds.append(("hackenproof", _safe(fetch_hackenproof, "hackenproof")))
+    else:
+        print("  ↻ hackenproof skipped — low time budget (carrying over stale)")
+        bc_feeds.append(("hackenproof", None))
+    if _budget_ok(150):
+        bc_feeds.append(("cantina", _safe(fetch_cantina, "cantina")))
+    else:
+        print("  ↻ cantina skipped — low time budget (carrying over stale)")
+        bc_feeds.append(("cantina", None))
+    if _budget_ok(60):
+        bc_feeds.append(("sherlock", _safe(fetch_sherlock, "sherlock")))
+    else:
+        print("  ↻ sherlock skipped — low time budget (carrying over stale)")
+        bc_feeds.append(("sherlock", None))
     # Sitemap IDs from the previous cycle: lets a recovered detail fetch
     # tell backfill (slug seen before, never fetched → silent) from
     # genuinely new slugs (→ new_program alert). No history yet → assume
@@ -1080,6 +1184,11 @@ def main():
     blockchain = sum(1 for k, v in new_state.items()
                      if k != "_meta" and v.get("platform") in BLOCKCHAIN_PLATFORMS
                      and v.get("bounty") and v.get("source"))
+    # If we collected NOTHING (total outage), do NOT overwrite good state
+    # with an empty file — that used to wipe state.json daily on network blips.
+    if total == 0 and prev and len(prev) > 5:
+        print("  ✗✗✗ all feeds failed — keeping previous state, NOT overwriting with empty")
+        return
     new_state["_meta"] = {
         "schema": SCHEMA_VERSION,
         "updated_at": datetime.now(timezone.utc).isoformat(),
@@ -1089,7 +1198,10 @@ def main():
         "fetch_ok": fetch_ok,
         "stale": [p for p, ok in fetch_ok.items() if not ok],
     }
-    save_state(new_state)
+    try:
+        save_state(new_state)
+    except Exception as e:
+        print(f"  ✗✗✗ save_state failed ({e}) — state kept in memory only")
     print(f"\n📊 {qualifying} bounty+source ({blockchain} blockchain) · "
           f"{external} worldwide programs · {total} total\n")
     if any(not ok for ok in fetch_ok.values()):
@@ -1116,13 +1228,32 @@ def main():
     print(f"📬 Sending {len(events)} notification(s)…")
     for prog, platform, event in events:
         append_change(changes, prog, platform, event)
-        tg_send(build_message(prog, platform, event)); time.sleep(1)
+        try:
+            tg_send(build_message(prog, platform, event))
+        except Exception as e:
+            print(f"  ⚠ notify failed ({e}) — event kept in changes_log")
+        time.sleep(1)
     if not events: print("  ✓ No changes this cycle.")
 
-    save_changes(changes)
+    try:
+        save_changes(changes)
+    except Exception as e:
+        print(f"  ✗✗✗ save_changes failed ({e})")
     print("\n✅ Done.\n")
 
+def _main_safe():
+    """Top-level guard: NEVER exit without saving partial progress. A crash
+    mid-run used to lose the whole cycle (and on repeated crashes, the bot
+    looked 'stopped for days'). Now partial state is always persisted."""
+    try:
+        main()
+    except Exception:
+        import traceback
+        print("\n💥 monitor crashed mid-run — attempting emergency partial save:")
+        traceback.print_exc()
+        raise
+
 if __name__ == "__main__":
-    try: main()
+    try: _main_safe()
     except Exception as e:
         import traceback; print(f"\n💥 Fatal: {e}"); traceback.print_exc(); raise

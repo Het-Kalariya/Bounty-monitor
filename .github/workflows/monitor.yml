@@ -19,12 +19,14 @@ jobs:
     # everywhere else skip (no mute monitor committing tokenless state)
     if: github.repository_owner == 'Het-Kalariya'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
 
     steps:
 
-      - name: Checkout
+      - name: Checkout (full history — shallow clones break rebase/push)
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -38,9 +40,14 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MONITOR_BUDGET_SEC: '600'
         run: python monitor.py
 
       - name: Commit updated state
+        # MUST run even when monitor times out/fails: otherwise the fresh
+        # state.json it did manage to write is lost and the next run repeats
+        # everything (this lost data daily before).
+        if: always()
         run: |
           git config user.name  "BountyBot[bot]"
           git config user.email "bountybot@users.noreply.github.com"

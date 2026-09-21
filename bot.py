@@ -8,7 +8,7 @@ Data: state.json + changes_log.json written by monitor.py.
 Blunt rules: timestamps = detection time; H1 amounts unknown; Chaos = no scope.
 """
 
-import html, json, os, subprocess, sys, time, traceback
+import html, json, os, signal, subprocess, sys, threading, time, traceback
 from datetime import datetime, timezone
 from typing import List, Optional
 import requests
@@ -65,7 +65,28 @@ def load_json(path, default):
         return default
 
 def save_json(path, data):
-    json.dump(data, open(path, "w"), indent=2)
+    """Atomic write (tmp + fsync + replace): a SIGTERM/timeout kill can never
+    leave a half-written JSON file behind (that used to corrupt offset/prefs
+    and wedge the next run)."""
+    tmp = f"{path}.tmp.{os.getpid()}"
+    with open(tmp, "w") as f:
+        json.dump(data, f, indent=2)
+        f.flush()
+        try:
+            os.fsync(f.fileno())
+        except Exception:
+            pass
+    os.replace(tmp, path)
+
+# ── Crash-loop circuit breaker + graceful shutdown ──────────────────────────
+_SHUTDOWN = False          # set by SIGTERM/SIGINT handler → exit at next checkpoint
+_CONFLICT_STREAK = 0       # consecutive Telegram 409s (another poller alive)
+_HEALED_CONFLICT = False   # deleteWebhook attempted once per process
+
+def _on_term(signum, frame):
+    global _SHUTDOWN
+    print(f"\n  ⚠ signal {signum} — finishing current batch, then exiting gracefully")
+    _SHUTDOWN = True
 
 def get_programs(state: dict) -> dict:
     return {k: v for k, v in state.items() if k != "_meta"}
@@ -550,8 +571,9 @@ def cmd_refresh(args, state, changes, chat_id=None) -> str:
         print(f"  [/refresh] public user {chat_id} — allowed (cooldown passed)")
     print("  [/refresh] running monitor.py …")
     try:
+        env = dict(os.environ, MONITOR_BUDGET_SEC="240")  # must finish < timeout
         r = subprocess.run([sys.executable, "monitor.py"],
-                           capture_output=True, text=True, timeout=300)
+                           capture_output=True, text=True, timeout=300, env=env)
     except Exception as e:
         return f"⚠️ Refresh failed to start: {esc(e)}"
     if r.returncode != 0:
@@ -1211,23 +1233,36 @@ def set_menu():
 
 def get_updates(offset: int, long_poll: bool = True) -> Optional[List[dict]]:
     """None = API error (handled by caller); [] = no updates."""
+    global _CONFLICT_STREAK, _HEALED_CONFLICT
     poll_secs = 25 if long_poll else 0
     r = tg_call("getUpdates", {"offset": offset, "limit": 100, "timeout": poll_secs},
                 http_timeout=poll_secs + 15, retries=1)
     if r is None:
         return None
     if r.ok:
+        _CONFLICT_STREAK = 0
         return r.json().get("result", [])
     code = r.status_code
     body = r.text[:200]
-    if code == 409:  # webhook conflict — heal and retry
-        print(f"  ⚠ 409 conflict — deleting webhook: {body}")
-        tg_call("deleteWebhook", {"drop_pending_updates": False})
-        r2 = tg_call("getUpdates", {"offset": offset, "limit": 100, "timeout": 0},
-                     http_timeout=15, retries=1)
-        return r2.json().get("result", []) if (r2 and r2.ok) else None
+    if code == 409:  # another poller alive (overlap) or stale webhook
+        # NEVER exit on 409: exiting completes the job, which triggers the
+        # partner workflow, which would 409 too — an exit loop. Stay alive
+        # with backoff; Telegram keeps queueing updates server-side and the
+        # survivor/duplicates resolve when the other instance goes away.
+        _CONFLICT_STREAK += 1
+        print(f"  ⚠ 409 conflict x{_CONFLICT_STREAK} (overlap/stale webhook) — staying alive: {body}")
+        if not _HEALED_CONFLICT:
+            _HEALED_CONFLICT = True
+            print("  ⚠ attempting one-time webhook delete (heals stale-webhook case)")
+            tg_call("deleteWebhook", {"drop_pending_updates": True})
+        return None  # caller backs off; does NOT advance offset
     if code == 401:
-        print(f"  ✗✗✗ TELEGRAM_TOKEN INVALID (401) — check the repo secret!"); raise SystemExit(1)
+        # Bad/rotated token. NEVER SystemExit here: that completes the job,
+        # triggers the partner workflow instantly, and spin-loops the chain
+        # at full speed burning Actions quota. Return None so the poll loop
+        # backs off; the startup getMe probe sleeps out the term instead.
+        print(f"  ✗✗✗ TELEGRAM_TOKEN INVALID (401) — backing off, not exiting: {body}")
+        return None
     print(f"  ✗ getUpdates HTTP {code}: {body}")
     return None
 
@@ -1268,7 +1303,8 @@ def run_monitor_cycle():
     depend on GitHub's (delayed) cron schedules."""
     print("  [/auto] monitor cycle starting …")
     try:
-        r = subprocess.run([sys.executable, "-u", "monitor.py"], timeout=300)
+        env = dict(os.environ, MONITOR_BUDGET_SEC="270")  # must finish < timeout
+        r = subprocess.run([sys.executable, "-u", "monitor.py"], timeout=300, env=env)
     except Exception as e:
         print(f"  [/auto] monitor crashed: {e}")
         return
@@ -1280,7 +1316,44 @@ def run_monitor_cycle():
              ["state.json", "changes_log.json", "bot_offset.json"])
     print("  [/auto] monitor cycle done")
 
+_MONITOR_THREAD: Optional[threading.Thread] = None
+
+def maybe_run_monitor_cycle():
+    """Start an inline monitor cycle in a DAEMON thread. Polls are never
+    blocked for minutes while monitor.py scrapes slow blockchain pages —
+    that blocking was a big source of 'bot is dead' sightings."""
+    global _MONITOR_THREAD, LAST_MONITOR_AT
+    if _SHUTDOWN:
+        return
+    if _MONITOR_THREAD is not None and _MONITOR_THREAD.is_alive():
+        return
+    if time.time() - LAST_MONITOR_AT < MONITOR_INTERVAL:
+        return
+    LAST_MONITOR_AT = time.time()
+
+    def _worker():
+        try:
+            run_monitor_cycle()
+        except Exception:
+            print("  [/auto] background monitor thread died:")
+            traceback.print_exc()
+
+    _MONITOR_THREAD = threading.Thread(target=_worker, name="monitor-cycle",
+                                       daemon=True)
+    _MONITOR_THREAD.start()
+
 # ── Main loop (resident long-poll) ────────────────────────────────────────────
+
+def save_offset(last_update_id: int, last_announce: float):
+    """Persist poll offset (+ circuit-breaker fields) atomically."""
+    try:
+        prev = load_json(OFFSET_FILE, {})
+    except Exception:
+        prev = {}
+    data = dict(prev) if isinstance(prev, dict) else {}
+    data["last_update_id"] = last_update_id
+    data["last_announce"] = last_announce
+    save_json(OFFSET_FILE, data)
 
 def main():
     global LAST_MONITOR_AT
@@ -1292,12 +1365,52 @@ def main():
           f" ({len(TELEGRAM_TOKEN)} chars) · chat_id={TELEGRAM_CHAT_ID!r}")
     print(f"{'─'*58}\n")
     if not TELEGRAM_TOKEN:
-        print("✗✗✗ TELEGRAM_TOKEN missing — aborting."); raise SystemExit(1)
+        print("✗✗✗ TELEGRAM_TOKEN missing — sleeping out the term (no crash spin).")
+        time.sleep(max(60, BOT_MAX_MINUTES * 60))
+        return
+    for _sig in ("SIGTERM", "SIGINT"):
+        try:
+            signal.signal(getattr(signal, _sig), _on_term)
+        except Exception:
+            pass
 
     offset_data = load_json(OFFSET_FILE, {"last_update_id": 0})
     offset = int(offset_data.get("last_update_id", 0)) + 1
     last_announce = float(offset_data.get("last_announce", 0) or 0)
-    save_json(OFFSET_FILE, {"last_update_id": max(0, offset - 1), "last_announce": last_announce})
+
+    # Crash-loop circuit breaker: rapid restarts in a row (<5 min apart) used
+    # to spin the workflow chain at full speed and burn the Actions quota
+    # (then EVERYTHING stops). Back off instead — still self-heals.
+    now = time.time()
+    last_start = float(offset_data.get("last_start", 0) or 0)
+    if now - last_start < 300:
+        fails = int(offset_data.get("fails", 0) or 0) + 1  # fast restart: extend streak
+    else:
+        fails = 1  # healthy gap: fresh streak starting with this boot
+    offset_data = dict(offset_data, last_start=now, fails=fails)
+    save_json(OFFSET_FILE, {**offset_data,
+                            "last_update_id": max(0, offset - 1),
+                            "last_announce": last_announce})
+    if fails >= 3:
+        print(f"  ✗✗✗ {fails} fast restarts in a row — backing off 30 min (no quota burn)")
+        time.sleep(1800)
+        return
+    if fails >= 2:
+        print(f"  ⚠ fast-restart streak x{fails} — continuing, watching closely")
+
+    # Token sanity probe: a bad/rotated token returned 401 inside get_updates,
+    # which raised SystemExit → instant chain spin. Sleep out the term instead.
+    try:
+        pr = requests.post(f"{API}/getMe", timeout=15)
+        if pr.status_code == 401:
+            print("  ✗✗✗ TELEGRAM_TOKEN INVALID (401) — sleeping out the term, "
+                  "fix the repo secret and /help will work again. NOT crash-looping.")
+            end = BOT_STARTED_AT + BOT_MAX_MINUTES * 60
+            while time.time() < end and not _SHUTDOWN:
+                time.sleep(60)
+            return
+    except Exception as e:
+        print(f"  ⚠ getMe probe failed ({e}) — continuing, poll loop will retry")
 
     set_menu()
 
@@ -1321,103 +1434,119 @@ def main():
     api_fail_streak = 0
 
     while True:
-        ran_out = (time.time() - BOT_STARTED_AT) / 60 >= BOT_MAX_MINUTES
-        if ran_out:
-            print(f"\n⏱ runtime limit reached ({BOT_MAX_MINUTES} min) — exiting gracefully")
-            print(f"  uptime: {uptime()} · offset: {offset-1}")
-            break
-
-        if time.time() - last_heartbeat > 600:
-            print(f"  ♥ {datetime.now(timezone.utc).strftime('%H:%M:%S')} alive · "
-                  f"uptime {uptime()} · offset {offset-1}")
-            last_heartbeat = time.time()
-
-        # inline monitor cycle — best-effort ~30 min, independent of cron schedules
-        if time.time() - LAST_MONITOR_AT >= MONITOR_INTERVAL:
-            LAST_MONITOR_AT = time.time()
-            run_monitor_cycle()
-
-        # digest sender — due daily/weekly summaries per user prefs
         try:
-            if check_and_send_digests():
-                git_sync("chore: digest prefs [skip ci]", ["prefs.json"])
-        except Exception as e:
-            print(f"  [digest] sender error: {e}")
+            if _SHUTDOWN:
+                print("\n🛑 shutdown requested — saving offset and exiting")
+                save_offset(offset - 1, last_announce)
+                break
+            ran_out = (time.time() - BOT_STARTED_AT) / 60 >= BOT_MAX_MINUTES
+            if ran_out:
+                print(f"\n⏱ runtime limit reached ({BOT_MAX_MINUTES} min) — exiting gracefully")
+                print(f"  uptime: {uptime()} · offset: {offset-1}")
+                save_offset(offset - 1, last_announce)
+                break
 
-        try:
-            updates = get_updates(offset, long_poll=True)
-        except SystemExit:
-            raise  # invalid token — die loudly, do not loop
-        except Exception:
-            traceback.print_exc()
-            updates = None
+            if time.time() - last_heartbeat > 600:
+                print(f"  ♥ {datetime.now(timezone.utc).strftime('%H:%M:%S')} alive · "
+                      f"uptime {uptime()} · offset {offset-1}")
+                last_heartbeat = time.time()
 
-        if updates is None:
-            api_fail_streak += 1
-            backoff = min(300, 15 * api_fail_streak)
-            print(f"  ⚠ API failure #{api_fail_streak} — retrying in {backoff}s (staying alive)")
-            time.sleep(backoff)
-            continue
-        api_fail_streak = 0
+            # inline monitor cycle, NON-BLOCKING (background thread) — polls stay live
+            maybe_run_monitor_cycle()
 
-        if not updates:
-            continue
+            # digest sender — due daily/weekly summaries per user prefs
+            try:
+                if check_and_send_digests():
+                    git_sync("chore: digest prefs [skip ci]", ["prefs.json"])
+            except Exception as e:
+                print(f"  [digest] sender error: {e}")
 
-        state = load_json(STATE_FILE, {})
-        changes = load_json(CHANGES_FILE, [])
+            try:
+                updates = get_updates(offset, long_poll=True)
+            except SystemExit:
+                raise  # invalid token — die loudly, do not loop
+            except Exception:
+                traceback.print_exc()
+                updates = None
 
-        # Public mode: allow ANY chat (alerts keep going to TELEGRAM_CHAT_ID only)
-        # offset advances for ALL updates regardless, so nothing is reprocessed
-        batch = []
-        for u in updates:
-            offset = u["update_id"] + 1
-            msg = u.get("message") or u.get("edited_message") or {}
-            chat_id = (msg.get("chat") or {}).get("id")
-            text = msg.get("text", "")
-            if not chat_id or not text:
+            if updates is None:
+                api_fail_streak += 1
+                backoff = min(300, 15 * api_fail_streak)
+                print(f"  ⚠ API failure #{api_fail_streak} — retrying in {backoff}s (staying alive)")
+                time.sleep(backoff)
                 continue
-            # no owner filter — public bot; log public users for visibility
-            if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
-                print(f"  👤 public user {chat_id}: {text[:30]}")
-            if is_blocked(chat_id) and not is_owner(chat_id):
-                print(f"  🚫 blocked chat {chat_id} (advancing offset)")
-                continue
-            batch.append((chat_id, text))
+            api_fail_streak = 0
 
-        if len(batch) > 3:
-            # backlog burst (bot was offline while user kept sending) —
-            # answer only the LAST command plus a summary, not N duplicates
-            chat_id, last_text = batch[-1]
-            print(f"  ← backlog burst: {len(batch)} queued commands — replying once")
-            reply_result(chat_id,
-                f"✅ Processed {len(batch)} queued commands (backlog flush — "
-                f"bot was restarting)\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n"
-                + handle_text(last_text, state, changes, chat_id))
-        else:
-            for chat_id, text in batch:
-                try:
-                    print(f"  ← {text[:60]}")
-                    # /export answers with a file — intercept before text handling
-                    _parts = text.strip().split(maxsplit=1)
-                    _cmd = _parts[0].lower().lstrip("/").split("@")[0]
-                    if _cmd == "export":
-                        _warn = check_rate(chat_id)
-                        if _warn:
-                            send_reply(chat_id, _warn)
+            if not updates:
+                continue
+
+            state = load_json(STATE_FILE, {})
+            changes = load_json(CHANGES_FILE, [])
+
+            # Public mode: allow ANY chat (alerts keep going to TELEGRAM_CHAT_ID only)
+            # offset advances for ALL updates regardless, so nothing is reprocessed
+            batch = []
+            for u in updates:
+                offset = u["update_id"] + 1
+                msg = u.get("message") or u.get("edited_message") or {}
+                chat_id = (msg.get("chat") or {}).get("id")
+                text = msg.get("text", "")
+                if not chat_id or not text:
+                    continue
+                # no owner filter — public bot; log public users for visibility
+                if TELEGRAM_CHAT_ID and str(chat_id) != str(TELEGRAM_CHAT_ID):
+                    print(f"  👤 public user {chat_id}: {text[:30]}")
+                if is_blocked(chat_id) and not is_owner(chat_id):
+                    print(f"  🚫 blocked chat {chat_id} (advancing offset)")
+                    continue
+                batch.append((chat_id, text))
+
+            if len(batch) > 3:
+                # backlog burst (bot was offline while user kept sending) —
+                # answer only the LAST command plus a summary, not N duplicates
+                chat_id, last_text = batch[-1]
+                print(f"  ← backlog burst: {len(batch)} queued commands — replying once")
+                reply_result(chat_id,
+                    f"✅ Processed {len(batch)} queued commands (backlog flush — "
+                    f"bot was restarting)\n\n┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈\n\n"
+                    + handle_text(last_text, state, changes, chat_id))
+            else:
+                for chat_id, text in batch:
+                    try:
+                        print(f"  ← {text[:60]}")
+                        # /export answers with a file — intercept before text handling
+                        _parts = text.strip().split(maxsplit=1)
+                        _cmd = _parts[0].lower().lstrip("/").split("@")[0]
+                        if _cmd == "export":
+                            _warn = check_rate(chat_id)
+                            if _warn:
+                                send_reply(chat_id, _warn)
+                            else:
+                                result = cmd_export(_parts[1].strip() if len(_parts) > 1 else "",
+                                                    state, changes, chat_id)
+                                USAGE["export"] = USAGE.get("export", 0) + 1
+                                reply_result(chat_id, result)
                         else:
-                            result = cmd_export(_parts[1].strip() if len(_parts) > 1 else "",
-                                                state, changes, chat_id)
-                            USAGE["export"] = USAGE.get("export", 0) + 1
-                            reply_result(chat_id, result)
-                    else:
-                        reply_result(chat_id, handle_text(text, state, changes, chat_id))
-                except Exception:
-                    print(f"  ⚠ failed to handle: {text[:40]}")
-                    traceback.print_exc()
+                            reply_result(chat_id, handle_text(text, state, changes, chat_id))
+                    except Exception:
+                        print(f"  ⚠ failed to handle: {text[:40]}")
+                        traceback.print_exc()
 
-        save_json(OFFSET_FILE, {"last_update_id": offset - 1, "last_announce": last_announce})
-        # confirm processed updates server-side (shrinks crash-replay window)
-        get_updates(offset, long_poll=False)
+            save_offset(offset - 1, last_announce)
+            # confirm processed updates server-side (shrinks crash-replay window)
+            try:
+                get_updates(offset, long_poll=False)
+            except Exception:
+                pass  # next batch re-confirms; never die here
+        except SystemExit:
+            save_offset(offset - 1, last_announce)
+            raise
+        except Exception:
+            # NOTHING in one poll iteration may kill the resident bot.
+            print("  💥 loop iteration failed — staying alive:")
+            traceback.print_exc()
+            time.sleep(15)
+            continue
 
 if __name__ == "__main__":
     try:

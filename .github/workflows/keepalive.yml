@@ -4,6 +4,14 @@ name: Bot Keepalive
 # The two workflows ping-pong each other via workflow_run — the bot stays
 # alive 24/7 without depending on cron schedules.
 # Stop everything: disable BOTH workflows + cancel the active run.
+#
+# BULLETPROOF NOTES:
+# - Single dead-man schedule lives HERE ONLY (every 6h). bot.yml has none, so
+#   the old 03:00 vs 03:17 double-reboot overlap (Telegram 409 → exit loop)
+#   can't happen anymore.
+# - UNCONDITIONAL restart (no conclusion guard): cancelled/failed predecessors
+#   still restart the chain. A cancel used to skip keepalive, which made bot
+#   skip next, halting everything until manual intervention.
 
 on:
   workflow_run:
@@ -11,32 +19,26 @@ on:
     types: [completed]
   workflow_dispatch:
   schedule:
-    - cron: '17 3 * * *'   # dead-man restart if the chain ever breaks
+    - cron: '17 */6 * * *'   # dead-man: reboot the chain if it ever breaks
 
 permissions:
   contents: write
 
-concurrency:
-  group: telegram-bot
-  cancel-in-progress: false
-
 jobs:
   keepalive:
     name: Resident bot (keepalive)
-    # a cancelled predecessor means someone stopped the bot on purpose —
-    # don't restart the chain in that case.
     # forks don't inherit secrets — run the resident bot only in the home
     # repo; everywhere else the job skips and the chain halts quietly
-    if: >-
-      github.repository_owner == 'Het-Kalariya' &&
-      (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion != 'cancelled')
+    if: github.repository_owner == 'Het-Kalariya'
     runs-on: ubuntu-latest
     timeout-minutes: 350
 
     steps:
 
-      - name: Checkout
+      - name: Checkout (full history — shallow clones break rebase/push)
         uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -50,7 +52,7 @@ jobs:
         env:
           TELEGRAM_TOKEN:   ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          BOT_MAX_MINUTES:  '330'
+          BOT_MAX_MINUTES:  '300'
         run: python -u bot.py
 
       - name: Commit updated offset
