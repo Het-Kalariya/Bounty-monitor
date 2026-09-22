@@ -19951,6 +19951,107 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:cowprotocol": {
+    "hash": "af3addb937cf84c06f09486301958a8888503f91",
+    "bounty": true,
+    "source": true,
+    "name": "CoW Protocol",
+    "url": "https://immunefi.com/bug-bounty/cowprotocol",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
+        "description": "GPv2AllowListAuthentication"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
+        "description": "GPv2EIP1967"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
+        "description": "GPv2Settlement"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
+        "description": "GPv2Signing.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
+        "description": "StorageAccessible.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
+        "description": "GPv2Interaction.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
+        "description": "GPv2Order.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
+        "description": "GPv2Trade.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
+        "description": "GPv2Transfer.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
+        "description": "GPv2SafeERC20.sol"
+      }
+    ],
+    "sc_total": 25,
+    "sc_ids": [
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol",
+      "https://github.com/cowprotocol/cow-sdk",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cow-fi",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cowswap-frontend",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/iframe-transport",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-lib",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-react"
+    ],
+    "github_repos": [
+      "cowprotocol/contracts",
+      "cowprotocol/cow-sdk",
+      "cowprotocol/cowswap"
+    ]
+  },
   "immunefi:zksync-os": {
     "hash": "2fba6134b7e6b840942745c4c51fe08b94a8f719",
     "bounty": true,
@@ -36178,99 +36279,6 @@
       "folks-finance/algorand-smart-contract-library"
     ]
   },
-  "immunefi:cowprotocol": {
-    "hash": "bc51bd943efec97a72c9b6c58787ce09ccedf3c2",
-    "bounty": true,
-    "source": true,
-    "name": "CoW Protocol",
-    "url": "https://immunefi.com/bug-bounty/cowprotocol",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "ETH",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
-        "description": "GPv2AllowListAuthentication"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
-        "description": "GPv2EIP1967"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
-        "description": "GPv2Settlement"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
-        "description": "GPv2Signing.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
-        "description": "StorageAccessible.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
-        "description": "GPv2Interaction.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
-        "description": "GPv2Order.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
-        "description": "GPv2Trade.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
-        "description": "GPv2Transfer.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
-        "description": "GPv2SafeERC20.sol"
-      }
-    ],
-    "sc_total": 19,
-    "sc_ids": [
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol"
-    ],
-    "github_repos": [
-      "cowprotocol/contracts"
-    ]
-  },
   "immunefi:audit-comp-spectra-finance": {
     "hash": "e67728f3acc7819b495fa820dfdcba82b59c5713",
     "bounty": true,
@@ -43328,6 +43336,82 @@
       "dexalot/contracts"
     ]
   },
+  "hackenproof:emojicoin-dot-fun-frontend": {
+    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
+    "bounty": true,
+    "source": false,
+    "name": "emojicoin.fun frontend",
+    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:kucoin": {
+    "hash": "b84e20844903b7535171b39d53833c864951b346",
+    "bounty": true,
+    "source": false,
+    "name": "KuCoin",
+    "url": "https://hackenproof.com/programs/kucoin",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:lachain-dot-io": {
+    "hash": "bf1f904ee69b4b6e9b3f18d0a4389ad6e77203f3",
+    "bounty": true,
+    "source": true,
+    "name": "LACHAIN.IO",
+    "url": "https://hackenproof.com/programs/lachain-dot-io",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/LATOKEN/lachain",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/LATOKEN/lachain/tree/dev/src/Lachain.Consensus",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/latoken/lachain",
+      "https://github.com/latoken/lachain/tree/dev/src/lachain.consensus"
+    ],
+    "github_repos": [
+      "latoken/lachain"
+    ]
+  },
   "hackenproof:dexalot-smart-contracts-archived": {
     "hash": "f78b362b6307a62758c601e413a3f4b246811329",
     "bounty": true,
@@ -43737,26 +43821,6 @@
     "github_repos": [
       "ember-protocol/ember-vaults"
     ]
-  },
-  "hackenproof:emojicoin-dot-fun-frontend": {
-    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
-    "bounty": true,
-    "source": false,
-    "name": "emojicoin.fun frontend",
-    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:enkrypt-wallet": {
     "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
@@ -45582,26 +45646,6 @@
       "kub-chain/bkc"
     ]
   },
-  "hackenproof:kucoin": {
-    "hash": "b84e20844903b7535171b39d53833c864951b346",
-    "bounty": true,
-    "source": false,
-    "name": "KuCoin",
-    "url": "https://hackenproof.com/programs/kucoin",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:kuna-crypto-exchange": {
     "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
     "bounty": true,
@@ -45621,42 +45665,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:lachain-dot-io": {
-    "hash": "bf1f904ee69b4b6e9b3f18d0a4389ad6e77203f3",
-    "bounty": true,
-    "source": true,
-    "name": "LACHAIN.IO",
-    "url": "https://hackenproof.com/programs/lachain-dot-io",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/LATOKEN/lachain",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/LATOKEN/lachain/tree/dev/src/Lachain.Consensus",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/latoken/lachain",
-      "https://github.com/latoken/lachain/tree/dev/src/lachain.consensus"
-    ],
-    "github_repos": [
-      "latoken/lachain"
-    ]
   },
   "hackenproof:latoken-exchange": {
     "hash": "88f9271460754dd494ee2b27fa844e341aef7fa2",
@@ -58269,7 +58277,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-22T15:46:08.519315+00:00",
+    "updated_at": "2026-09-22T16:16:43.093481+00:00",
     "total": 1921,
     "qualifying": 434,
     "external": 362,
