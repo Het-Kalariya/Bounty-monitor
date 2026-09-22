@@ -41125,7 +41125,7 @@
     ]
   },
   "hackenproof:aurora-smart-contract": {
-    "hash": "3b50e93d72cba73cc4cbb4fb590a1bd85ce62520",
+    "hash": "332ee6ae8d6ba22ac99dbe878cefa5a3757cec72",
     "bounty": true,
     "source": true,
     "name": "Aurora Smart Contract",
@@ -41177,11 +41177,6 @@
       },
       {
         "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-transactions",
-        "description": "Engine Dev Transactions"
-      },
-      {
-        "asset_type": "OTHER",
         "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/engine-types",
         "description": "Master Engine Types"
       },
@@ -41189,14 +41184,18 @@
         "asset_type": "OTHER",
         "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-types",
         "description": "Dev Engine Types"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/etc/eth-contracts",
+        "description": "Master Eth Contracts"
       }
     ],
-    "sc_total": 13,
+    "sc_total": 12,
     "sc_ids": [
       "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine",
       "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-precompiles",
       "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-sdk",
-      "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-transactions",
       "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-types",
       "https://github.com/aurora-is-near/aurora-engine/tree/develop/etc/eth-contracts",
       "https://github.com/aurora-is-near/aurora-engine/tree/master/engine",
@@ -43593,6 +43592,76 @@
     ],
     "github_repos": [
       "dodoex/dodo-route-contract"
+    ]
+  },
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "6f6220a46e13e515e7be5f2495eac1640275d231",
+    "bounty": false,
+    "source": false,
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:raiffeisen-web-and-mobile": {
+    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
+    "bounty": true,
+    "source": false,
+    "name": "Raiffeisen Web & Mobile",
+    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:risc-zero-blockchain-verifiers": {
+    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero Blockchain Verifiers",
+    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
+    ],
+    "github_repos": [
+      "risc0/risc0-ethereum"
     ]
   },
   "hackenproof:dodolimitorder-smart-contract": {
@@ -46734,26 +46803,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "6f6220a46e13e515e7be5f2495eac1640275d231",
-    "bounty": false,
-    "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:noya-dot-ai-smart-contracts": {
     "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
     "bounty": true,
@@ -47308,56 +47357,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:raiffeisen-web-and-mobile": {
-    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
-    "bounty": true,
-    "source": false,
-    "name": "Raiffeisen Web & Mobile",
-    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:risc-zero-blockchain-verifiers": {
-    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero Blockchain Verifiers",
-    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
-    ],
-    "github_repos": [
-      "risc0/risc0-ethereum"
-    ]
   },
   "hackenproof:risc-zero-zkvm": {
     "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
@@ -58304,7 +58303,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-22T12:20:48.864983+00:00",
+    "updated_at": "2026-09-22T12:44:28.372567+00:00",
     "total": 1922,
     "qualifying": 434,
     "external": 362,
