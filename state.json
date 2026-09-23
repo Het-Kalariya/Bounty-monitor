@@ -43895,8 +43895,8 @@
     "github_repos": []
   },
   "hackenproof:exmo": {
-    "hash": "ddf9cfcbc39f7a85ce749db1801be3010b74e614",
-    "bounty": false,
+    "hash": "e57d0b9440916d6cf7fb581ef5770fba4f08e774",
+    "bounty": true,
     "source": false,
     "name": "EXMO",
     "url": "https://hackenproof.com/programs/exmo",
@@ -43908,7 +43908,7 @@
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
-    "live_status": "PAUSED",
+    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -44773,8 +44773,8 @@
     "github_repos": []
   },
   "hackenproof:htx": {
-    "hash": "21b23fb30a52b4b9764da35a954efbfdd3dca5f0",
-    "bounty": false,
+    "hash": "33d826e46d2ed3e1008a9bfaff0d405d795e768b",
+    "bounty": true,
     "source": false,
     "name": "HTX",
     "url": "https://hackenproof.com/programs/htx",
@@ -44786,7 +44786,7 @@
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
-    "live_status": "PAUSED",
+    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -46583,26 +46583,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:neverdie-smart-contract": {
-    "hash": "d46615c8498abe579c3949cfb95b9a81f0b6f604",
-    "bounty": true,
-    "source": false,
-    "name": "Neverdie Smart Contract",
-    "url": "https://hackenproof.com/programs/neverdie-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:neverdie-web": {
     "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
     "bounty": true,
@@ -46666,6 +46646,99 @@
       "nicehash/nicehashminer",
       "nicehash/nicehashquickminer"
     ]
+  },
+  "hackenproof:sg-forge-smart-contracts": {
+    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
+    "bounty": false,
+    "source": true,
+    "name": "SG Forge Smart Contracts",
+    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/castframework/smartcoin",
+        "description": "Smartcontract EURCV/USDCV on Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
+        "description": "Smartcontract EURCV on Solana"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/castframework/smartcoin",
+      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
+    ],
+    "github_repos": [
+      "castframework/smartcoin"
+    ]
+  },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
+    ]
+  },
+  "hackenproof:neverdie-smart-contract": {
+    "hash": "d46615c8498abe579c3949cfb95b9a81f0b6f604",
+    "bounty": true,
+    "source": false,
+    "name": "Neverdie Smart Contract",
+    "url": "https://hackenproof.com/programs/neverdie-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:nimbus": {
     "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
@@ -47491,42 +47564,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:sg-forge-smart-contracts": {
-    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
-    "bounty": false,
-    "source": true,
-    "name": "SG Forge Smart Contracts",
-    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/castframework/smartcoin",
-        "description": "Smartcontract EURCV/USDCV on Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-        "description": "Smartcontract EURCV on Solana"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/castframework/smartcoin",
-      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
-    ],
-    "github_repos": [
-      "castframework/smartcoin"
-    ]
   },
   "hackenproof:shapeshift": {
     "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
@@ -50194,43 +50231,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
   },
   "hackenproof:zo-finance-web": {
     "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
@@ -54151,22 +54151,6 @@
     "bounty_max": 0,
     "bounty_ccy": "",
     "domains": 6922,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
-  "chaos:exmo": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "EXMO",
-    "url": "https://hackenproof.com/exmo/exmo",
-    "platform": "chaos",
-    "origin": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 53,
     "resp_eff": null,
     "bounty_days": null,
     "sc_targets": []
@@ -58205,10 +58189,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-23T14:59:34.216483+00:00",
-    "total": 1916,
+    "updated_at": "2026-09-23T15:30:06.974695+00:00",
+    "total": 1915,
     "qualifying": 432,
-    "external": 355,
+    "external": 354,
     "blockchain": 368,
     "feed_ids": {
       "immunefi": [],
