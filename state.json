@@ -19951,6 +19951,241 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:cowprotocol": {
+    "hash": "af3addb937cf84c06f09486301958a8888503f91",
+    "bounty": true,
+    "source": true,
+    "name": "CoW Protocol",
+    "url": "https://immunefi.com/bug-bounty/cowprotocol",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
+        "description": "GPv2AllowListAuthentication"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
+        "description": "GPv2EIP1967"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
+        "description": "GPv2Settlement"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
+        "description": "GPv2Signing.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
+        "description": "StorageAccessible.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
+        "description": "GPv2Interaction.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
+        "description": "GPv2Order.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
+        "description": "GPv2Trade.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
+        "description": "GPv2Transfer.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
+        "description": "GPv2SafeERC20.sol"
+      }
+    ],
+    "sc_total": 25,
+    "sc_ids": [
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol",
+      "https://github.com/cowprotocol/cow-sdk",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cow-fi",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cowswap-frontend",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/iframe-transport",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-lib",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-react"
+    ],
+    "github_repos": [
+      "cowprotocol/contracts",
+      "cowprotocol/cow-sdk",
+      "cowprotocol/cowswap"
+    ]
+  },
+  "immunefi:dhedge": {
+    "hash": "4d50849e8ae3dd2b990c284c520e710edf0e562b",
+    "bounty": true,
+    "source": true,
+    "name": "dHEDGE",
+    "url": "https://immunefi.com/bug-bounty/dhedge",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xfdc7b8bFe0DD3513Cc669bB8d601Cb83e2F69cB0",
+        "description": "PoolFactory and linked contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x5e61a079A178f0E5784107a4963baAe0c5a680c6",
+        "description": "PoolFactory and linked contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x96D33bCF84DdE326014248E2896F79bbb9c13D6d",
+        "description": "PoolFactory and linked contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x49Afe3abCf66CF09Fab86cb1139D8811C8afe56F",
+        "description": "PoolFactory and linked contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xffFb5fB14606EB3a548C113026355020dDF27535",
+        "description": "PoolFactory and linked contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://dhedge.org/",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://hyperevmscan.io/address/0x615037C2Df6FA97634c5aD2d8144708b9dd3B176",
+        "description": "PoolFactory and linked contracts"
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://arbiscan.io/address/0xfffb5fb14606eb3a548c113026355020ddf27535",
+      "https://basescan.org/address/0x49afe3abcf66cf09fab86cb1139d8811c8afe56f",
+      "https://dhedge.org",
+      "https://etherscan.io/address/0x96d33bcf84dde326014248e2896f79bbb9c13d6d",
+      "https://hyperevmscan.io/address/0x615037c2df6fa97634c5ad2d8144708b9dd3b176",
+      "https://optimistic.etherscan.io/address/0x5e61a079a178f0e5784107a4963baae0c5a680c6",
+      "https://polygonscan.com/address/0xfdc7b8bfe0dd3513cc669bb8d601cb83e2f69cb0"
+    ],
+    "github_repos": []
+  },
+  "immunefi:audit-comp-quantus": {
+    "hash": "b1ae6409d568bc961b5b7c0cc1f781e1ad172c55",
+    "bounty": true,
+    "source": true,
+    "name": "Audit Comp | Quantus",
+    "url": "https://immunefi.com/bug-bounty/audit-comp-quantus",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-chain",
+        "description": "The Substrate L1 node \u2014 runtime, FRAME pallets, QPoW consensus, quantus-node"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/mobile-app",
+        "description": "Mobile application"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-poseidon",
+        "description": "Poseidon2 hash implementation for Quantus"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-zk-circuits",
+        "description": "Zero-Knowledge circuits for Quantus"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/quantus_sdk",
+        "description": "Quantus SDK"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/hdwallet",
+        "description": "HD-wallet module"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/dilithium",
+        "description": "ML-DSA/Dilithium signature implementation"
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/mobile-app",
+      "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/quantus_sdk",
+      "https://github.com/immunefi-team/audit-comp-quantus-chain",
+      "https://github.com/immunefi-team/audit-comp-quantus-qp-poseidon",
+      "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/dilithium",
+      "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/hdwallet",
+      "https://github.com/immunefi-team/audit-comp-quantus-qp-zk-circuits"
+    ],
+    "github_repos": [
+      "immunefi-team/audit-comp-quantus-apps",
+      "immunefi-team/audit-comp-quantus-chain",
+      "immunefi-team/audit-comp-quantus-qp-poseidon",
+      "immunefi-team/audit-comp-quantus-qp-rusty-crystals",
+      "immunefi-team/audit-comp-quantus-qp-zk-circuits"
+    ]
+  },
   "immunefi:mux": {
     "hash": "468b8d2a2328a720b7300b03a254bcb6736f0d08",
     "bounty": false,
@@ -20038,76 +20273,6 @@
       "mux-world/mux-protocol",
       "mux-world/mux-staking",
       "mux-world/mux3-protocol"
-    ]
-  },
-  "immunefi:audit-comp-quantus": {
-    "hash": "b1ae6409d568bc961b5b7c0cc1f781e1ad172c55",
-    "bounty": true,
-    "source": true,
-    "name": "Audit Comp | Quantus",
-    "url": "https://immunefi.com/bug-bounty/audit-comp-quantus",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-chain",
-        "description": "The Substrate L1 node \u2014 runtime, FRAME pallets, QPoW consensus, quantus-node"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/mobile-app",
-        "description": "Mobile application"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-poseidon",
-        "description": "Poseidon2 hash implementation for Quantus"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-zk-circuits",
-        "description": "Zero-Knowledge circuits for Quantus"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/quantus_sdk",
-        "description": "Quantus SDK"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/hdwallet",
-        "description": "HD-wallet module"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/dilithium",
-        "description": "ML-DSA/Dilithium signature implementation"
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/mobile-app",
-      "https://github.com/immunefi-team/audit-comp-quantus-apps/tree/audit-comp-ready/quantus_sdk",
-      "https://github.com/immunefi-team/audit-comp-quantus-chain",
-      "https://github.com/immunefi-team/audit-comp-quantus-qp-poseidon",
-      "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/dilithium",
-      "https://github.com/immunefi-team/audit-comp-quantus-qp-rusty-crystals/tree/audit-comp-ready/hdwallet",
-      "https://github.com/immunefi-team/audit-comp-quantus-qp-zk-circuits"
-    ],
-    "github_repos": [
-      "immunefi-team/audit-comp-quantus-apps",
-      "immunefi-team/audit-comp-quantus-chain",
-      "immunefi-team/audit-comp-quantus-qp-poseidon",
-      "immunefi-team/audit-comp-quantus-qp-rusty-crystals",
-      "immunefi-team/audit-comp-quantus-qp-zk-circuits"
     ]
   },
   "immunefi:rootstocklabs": {
@@ -20294,107 +20459,6 @@
       "https://etherscan.io/address/0xfe2e637202056d30016725477c5da089ab0a043a"
     ],
     "github_repos": []
-  },
-  "immunefi:cowprotocol": {
-    "hash": "af3addb937cf84c06f09486301958a8888503f91",
-    "bounty": true,
-    "source": true,
-    "name": "CoW Protocol",
-    "url": "https://immunefi.com/bug-bounty/cowprotocol",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
-        "description": "GPv2AllowListAuthentication"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
-        "description": "GPv2EIP1967"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
-        "description": "GPv2Settlement"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
-        "description": "GPv2Signing.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
-        "description": "StorageAccessible.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
-        "description": "GPv2Interaction.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
-        "description": "GPv2Order.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
-        "description": "GPv2Trade.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
-        "description": "GPv2Transfer.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
-        "description": "GPv2SafeERC20.sol"
-      }
-    ],
-    "sc_total": 25,
-    "sc_ids": [
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol",
-      "https://github.com/cowprotocol/cow-sdk",
-      "https://github.com/cowprotocol/cowswap/tree/main/apps/cow-fi",
-      "https://github.com/cowprotocol/cowswap/tree/main/apps/cowswap-frontend",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/iframe-transport",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-lib",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-react"
-    ],
-    "github_repos": [
-      "cowprotocol/contracts",
-      "cowprotocol/cow-sdk",
-      "cowprotocol/cowswap"
-    ]
   },
   "immunefi:zksync-os": {
     "hash": "2fba6134b7e6b840942745c4c51fe08b94a8f719",
@@ -24706,70 +24770,6 @@
       "https://hyperevmscan.io/address/0x77121911a387c9e4eae46345e0f831a6da8a1364",
       "https://hyperevmscan.io/address/0xe0228db13f8c4eb00fd1e08e076b09ef5cd0ea1e",
       "https://immunefi.com"
-    ],
-    "github_repos": []
-  },
-  "immunefi:dhedge": {
-    "hash": "4d50849e8ae3dd2b990c284c520e710edf0e562b",
-    "bounty": true,
-    "source": true,
-    "name": "dHEDGE",
-    "url": "https://immunefi.com/bug-bounty/dhedge",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xfdc7b8bFe0DD3513Cc669bB8d601Cb83e2F69cB0",
-        "description": "PoolFactory and linked contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x5e61a079A178f0E5784107a4963baAe0c5a680c6",
-        "description": "PoolFactory and linked contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x96D33bCF84DdE326014248E2896F79bbb9c13D6d",
-        "description": "PoolFactory and linked contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x49Afe3abCf66CF09Fab86cb1139D8811C8afe56F",
-        "description": "PoolFactory and linked contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xffFb5fB14606EB3a548C113026355020dDF27535",
-        "description": "PoolFactory and linked contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://dhedge.org/",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://hyperevmscan.io/address/0x615037C2Df6FA97634c5aD2d8144708b9dd3B176",
-        "description": "PoolFactory and linked contracts"
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://arbiscan.io/address/0xfffb5fb14606eb3a548c113026355020ddf27535",
-      "https://basescan.org/address/0x49afe3abcf66cf09fab86cb1139d8811c8afe56f",
-      "https://dhedge.org",
-      "https://etherscan.io/address/0x96d33bcf84dde326014248e2896f79bbb9c13d6d",
-      "https://hyperevmscan.io/address/0x615037c2df6fa97634c5ad2d8144708b9dd3b176",
-      "https://optimistic.etherscan.io/address/0x5e61a079a178f0e5784107a4963baae0c5a680c6",
-      "https://polygonscan.com/address/0xfdc7b8bfe0dd3513cc669bb8d601cb83e2f69cb0"
     ],
     "github_repos": []
   },
@@ -58189,7 +58189,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-23T17:37:30.832922+00:00",
+    "updated_at": "2026-09-23T20:54:58.285487+00:00",
     "total": 1915,
     "qualifying": 432,
     "external": 354,
