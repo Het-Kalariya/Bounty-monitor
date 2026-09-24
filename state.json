@@ -4599,7 +4599,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1703,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -43562,6 +43562,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:slush-wallet": {
+    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
+    "bounty": true,
+    "source": false,
+    "name": "Slush Wallet",
+    "url": "https://hackenproof.com/programs/slush-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:cube-exchange-web": {
     "hash": "1bbac85761a4187da22d1c461242f09ea391b0cd",
     "bounty": false,
@@ -43938,93 +43958,6 @@
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
     ]
-  },
-  "hackenproof:snowbridge-web": {
-    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
-    "bounty": true,
-    "source": true,
-    "name": "Snowbridge Web",
-    "url": "https://hackenproof.com/programs/snowbridge-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
-        "description": "Javascript SDK used by web applications for interacting with the bridge"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge-app",
-        "description": "Web app for the bridge\u2019s UI"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/snowfork/snowbridge-app",
-      "https://github.com/snowfork/snowbridge/tree/main/web"
-    ],
-    "github_repos": [
-      "snowfork/snowbridge",
-      "snowfork/snowbridge-app"
-    ]
-  },
-  "hackenproof:solv-smart-contracts": {
-    "hash": "a7ac221f8b40eb3f3c3faf5147daa4f0cfd6d289",
-    "bounty": false,
-    "source": true,
-    "name": "Solv Smart Contracts",
-    "url": "https://hackenproof.com/programs/solv-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/solv-finance/SolvBTC-Solana-Contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb",
-        "description": "directory: `programs/solvbtc/src`"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/solv-finance/solvbtc-solana-contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb"
-    ],
-    "github_repos": [
-      "solv-finance/solvbtc-solana-contract"
-    ]
-  },
-  "hackenproof:solv-web-and-infrastructure": {
-    "hash": "b04c5c7ddfeb757913ea0cd903975c6e860322c6",
-    "bounty": false,
-    "source": false,
-    "name": "Solv Web & Infrastructure",
-    "url": "https://hackenproof.com/programs/solv-web-and-infrastructure",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:dodo-v3": {
     "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
@@ -48106,26 +48039,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:slush-wallet": {
-    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
-    "bounty": true,
-    "source": false,
-    "name": "Slush Wallet",
-    "url": "https://hackenproof.com/programs/slush-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:smardex-smart-contracts": {
     "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
     "bounty": true,
@@ -48315,6 +48228,93 @@
       "paritytech/polkadot-sdk",
       "snowfork/snowbridge"
     ]
+  },
+  "hackenproof:snowbridge-web": {
+    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
+    "bounty": true,
+    "source": true,
+    "name": "Snowbridge Web",
+    "url": "https://hackenproof.com/programs/snowbridge-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
+        "description": "Javascript SDK used by web applications for interacting with the bridge"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge-app",
+        "description": "Web app for the bridge\u2019s UI"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/snowfork/snowbridge-app",
+      "https://github.com/snowfork/snowbridge/tree/main/web"
+    ],
+    "github_repos": [
+      "snowfork/snowbridge",
+      "snowfork/snowbridge-app"
+    ]
+  },
+  "hackenproof:solv-smart-contracts": {
+    "hash": "a7ac221f8b40eb3f3c3faf5147daa4f0cfd6d289",
+    "bounty": false,
+    "source": true,
+    "name": "Solv Smart Contracts",
+    "url": "https://hackenproof.com/programs/solv-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/solv-finance/SolvBTC-Solana-Contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb",
+        "description": "directory: `programs/solvbtc/src`"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/solv-finance/solvbtc-solana-contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb"
+    ],
+    "github_repos": [
+      "solv-finance/solvbtc-solana-contract"
+    ]
+  },
+  "hackenproof:solv-web-and-infrastructure": {
+    "hash": "b04c5c7ddfeb757913ea0cd903975c6e860322c6",
+    "bounty": false,
+    "source": false,
+    "name": "Solv Web & Infrastructure",
+    "url": "https://hackenproof.com/programs/solv-web-and-infrastructure",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:starknet-blockchain-slash-dlt": {
     "hash": "51d2f29c55a691e21f86a57103d46fa87a35358b",
@@ -58732,7 +58732,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-24T22:08:33.188793+00:00",
+    "updated_at": "2026-09-24T22:38:49.359413+00:00",
     "total": 1941,
     "qualifying": 432,
     "external": 361,
