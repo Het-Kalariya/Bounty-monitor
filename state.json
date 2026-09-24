@@ -43538,6 +43538,110 @@
       "dodoex/dodo-v3"
     ]
   },
+  "hackenproof:snowbridge-on-chain-code": {
+    "hash": "a62842f821663025db5dc6c905a03f2da7e4d324",
+    "bounty": true,
+    "source": true,
+    "name": "Snowbridge On-Chain Code",
+    "url": "https://hackenproof.com/programs/snowbridge-on-chain-code",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 75000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Snowfork/snowbridge",
+        "description": "Ethereum Contracts which cover our Beefy Light Client, Parachain Light Client, Gateway, Agent, Messaging Protocol and Asset transfer functionality"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
+        "description": "Pallets and support crates that are deployed to the BridgeHub parachain"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
+      "https://github.com/snowfork/snowbridge"
+    ],
+    "github_repos": [
+      "paritytech/polkadot-sdk",
+      "snowfork/snowbridge"
+    ]
+  },
+  "hackenproof:snowbridge-web": {
+    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
+    "bounty": true,
+    "source": true,
+    "name": "Snowbridge Web",
+    "url": "https://hackenproof.com/programs/snowbridge-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
+        "description": "Javascript SDK used by web applications for interacting with the bridge"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge-app",
+        "description": "Web app for the bridge\u2019s UI"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/snowfork/snowbridge-app",
+      "https://github.com/snowfork/snowbridge/tree/main/web"
+    ],
+    "github_repos": [
+      "snowfork/snowbridge",
+      "snowfork/snowbridge-app"
+    ]
+  },
+  "hackenproof:solv-smart-contracts": {
+    "hash": "a7ac221f8b40eb3f3c3faf5147daa4f0cfd6d289",
+    "bounty": false,
+    "source": true,
+    "name": "Solv Smart Contracts",
+    "url": "https://hackenproof.com/programs/solv-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/solv-finance/SolvBTC-Solana-Contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb",
+        "description": "directory: `programs/solvbtc/src`"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/solv-finance/solvbtc-solana-contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb"
+    ],
+    "github_repos": [
+      "solv-finance/solvbtc-solana-contract"
+    ]
+  },
   "hackenproof:dodofeerouteproxy-smart-contract": {
     "hash": "f12d701eadb4bf7324e76146292d1a91853a1fcf",
     "bounty": true,
@@ -47759,110 +47863,6 @@
     ],
     "github_repos": [
       "smilee-finance/v2-contracts-public"
-    ]
-  },
-  "hackenproof:snowbridge-on-chain-code": {
-    "hash": "a62842f821663025db5dc6c905a03f2da7e4d324",
-    "bounty": true,
-    "source": true,
-    "name": "Snowbridge On-Chain Code",
-    "url": "https://hackenproof.com/programs/snowbridge-on-chain-code",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 75000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Snowfork/snowbridge",
-        "description": "Ethereum Contracts which cover our Beefy Light Client, Parachain Light Client, Gateway, Agent, Messaging Protocol and Asset transfer functionality"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
-        "description": "Pallets and support crates that are deployed to the BridgeHub parachain"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
-      "https://github.com/snowfork/snowbridge"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "snowfork/snowbridge"
-    ]
-  },
-  "hackenproof:snowbridge-web": {
-    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
-    "bounty": true,
-    "source": true,
-    "name": "Snowbridge Web",
-    "url": "https://hackenproof.com/programs/snowbridge-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
-        "description": "Javascript SDK used by web applications for interacting with the bridge"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge-app",
-        "description": "Web app for the bridge\u2019s UI"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/snowfork/snowbridge-app",
-      "https://github.com/snowfork/snowbridge/tree/main/web"
-    ],
-    "github_repos": [
-      "snowfork/snowbridge",
-      "snowfork/snowbridge-app"
-    ]
-  },
-  "hackenproof:solv-smart-contracts": {
-    "hash": "a7ac221f8b40eb3f3c3faf5147daa4f0cfd6d289",
-    "bounty": false,
-    "source": true,
-    "name": "Solv Smart Contracts",
-    "url": "https://hackenproof.com/programs/solv-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/solv-finance/SolvBTC-Solana-Contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb",
-        "description": "directory: `programs/solvbtc/src`"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/solv-finance/solvbtc-solana-contract/tree/4c8f194bb4c42faa617af820ed22e24b685feafb"
-    ],
-    "github_repos": [
-      "solv-finance/solvbtc-solana-contract"
     ]
   },
   "hackenproof:solv-web-and-infrastructure": {
@@ -58301,7 +58301,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-24T03:11:03.126465+00:00",
+    "updated_at": "2026-09-24T03:15:25.565613+00:00",
     "total": 1922,
     "qualifying": 432,
     "external": 361,
