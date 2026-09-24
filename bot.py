@@ -46,11 +46,15 @@ BLOCKED_FILE = "blocked.json"
 # ── Abuse controls (in-memory sliding windows; blocklist persisted) ──────────
 CMD_HITS: dict = {}        # chat_id -> [timestamps] general commands
 REFRESH_HITS: dict = {}    # chat_id -> [timestamps] /refresh uses
+PBBP_HITS: dict = {}       # chat_id -> [timestamps] /public-bbp uses
 LAST_REFRESH_AT = 0.0      # global /refresh cooldown timestamp
+LAST_PBBP_AT = 0.0         # global /public-bbp cooldown timestamp (search-quota protection)
 CMD_LIMIT = 20             # cmds per CMD_WINDOW per chat
 CMD_WINDOW = 60.0
 REFRESH_GLOBAL_COOLDOWN = 15 * 60   # 1 refresh per 15 min globally
 REFRESH_USER_COOLDOWN = 60 * 60     # 1 refresh per hour per public user
+PBBP_GLOBAL_COOLDOWN = 20 * 60      # 1 VDP research run per 20 min globally (owner included)
+PBBP_USER_COOLDOWN = 2 * 60 * 60    # 2 per 2h per public user
 USAGE: dict = {}           # cmd -> count (this process lifetime)
 
 # ── Utils ──────────────────────────────────────────────────────────────────────
@@ -170,6 +174,25 @@ def check_refresh_rate(chat_id) -> Optional[str]:
     LAST_REFRESH_AT = now
     return None
 
+def check_pbbp_rate(chat_id) -> Optional[str]:
+    """Cooldown for /public-BBP (live web research — protects search quota).
+    Global cooldown applies to everyone incl. owner; public users also 1 per 2h."""
+    global LAST_PBBP_AT
+    now = time.time()
+    if now - LAST_PBBP_AT < PBBP_GLOBAL_COOLDOWN:
+        wait = int((PBBP_GLOBAL_COOLDOWN - (now - LAST_PBBP_AT)) // 60) + 1
+        return (f"⏳ VDP research cooldown (search-quota protection) — "
+                f"try again in ~{wait}m. Cached picks: /public-bbp update")
+    if not is_owner(chat_id):
+        uhits = _prune(PBBP_HITS.get(str(chat_id), []), PBBP_USER_COOLDOWN)
+        if uhits:
+            wait = int((PBBP_USER_COOLDOWN - (now - uhits[0])) // 60) + 1
+            return f"⏳ You already ran VDP research recently. Try again in ~{wait}m."
+        uhits.append(now)
+        PBBP_HITS[str(chat_id)] = uhits
+    LAST_PBBP_AT = now
+    return None
+
 def get_prefs() -> dict:
     return load_json(PREFS_FILE, {})
 
@@ -259,7 +282,10 @@ def cmd_help(args, state, changes) -> str:
         "  /repos — 🐙 GitHub repos in scope\n\n"
         "🔄 <b>Intel</b>\n"
         "  /diff &lt;program&gt; — Added/removed scope targets\n"
-        "  /export &lt;program&gt; — Recon .txt file (classic + blockchain)\n\n"
+        "  /export &lt;program&gt; — Recon .txt file (classic + blockchain)\n"
+        "  /public-bbp — 🔎 Fresh low-competition DIRECT VDPs (live research, ~2 min)\n"
+        "     opts: /public-bbp count=3 region=eu cat=web|product|web3\n"
+        "           cash=0 direct=0 cve=0 age=90 exclude=foo,bar update\n\n"
         "⚙️ <b>Control</b>\n"
         "  /refresh — Force a data refresh now\n"
         "  /digest daily|weekly|off — Summary mode (rolling 24h/7d)\n"
@@ -590,6 +616,31 @@ def cmd_refresh(args, state, changes, chat_id=None) -> str:
             f"🌍 Worldwide       : {ext_q}\n"
             f"📦 Total programs  : {meta.get('total','?')}{stale_note}\n\n"
             f"🕒 Wrote {fmt_ts(meta.get('updated_at',''))} — /latest shows DETECTED changes")
+
+def cmd_publicbbp(args, state, changes, chat_id=None) -> str:
+    """Live research: fresh/updated low-competition DIRECT VDPs & paid BBPs.
+    Runs vdp_hunter inline (~1-2 min budget) — cooldowns protect search quota."""
+    wait = check_pbbp_rate(chat_id)
+    if wait:
+        return wait
+    print(f"  [/public-bbp] research run: {args!r}")
+    try:
+        import vdp_hunter
+    except Exception as e:
+        return f"💥 VDP research module failed to load: {esc(e)}"
+    tracked = []
+    try:
+        tracked = [str(v.get("name", "")).lower()
+                   for v in get_programs(state).values()] + \
+                  [k.split(":", 1)[-1].lower() for k in get_programs(state)]
+    except Exception:
+        pass
+    try:
+        return vdp_hunter.run(args, chat_id=str(chat_id) if chat_id is not None else "",
+                              tracked_names=tracked)
+    except Exception as e:
+        print(f"  [/public-bbp] hunter error:\n{traceback.format_exc()}")
+        return f"💥 VDP research failed: {esc(e)}"
 
 def cmd_top(args, state, changes) -> str:
     """Blunt ranking: signals are HackerOne-heavy. No researcher counts exist."""
@@ -1136,6 +1187,10 @@ COMMANDS = {
     "announce": cmd_announce,
     "top":     cmd_top,
     "refresh": cmd_refresh,
+    # /public-BBP (as typed) lowercases to public-bbp; menu-safe alias is
+    # public_bbp because Telegram setMyCommands forbids hyphens
+    "public-bbp": cmd_publicbbp,
+    "public_bbp": cmd_publicbbp,
 }
 
 BOT_MENU = [
@@ -1161,6 +1216,7 @@ BOT_MENU = [
     ("settings", "Your settings"),
     ("top", "Rough ranking (H1-biased, read caveats)"),
     ("refresh", "Force data refresh now"),
+    ("public_bbp", "Find low-competition direct VDPs — /public-BBP"),
 ]
 
 def handle_text(text: str, state: dict, changes: list, chat_id=None) -> str:

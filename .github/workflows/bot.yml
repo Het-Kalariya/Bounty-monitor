@@ -70,6 +70,7 @@ jobs:
           git add bot_offset.json || true
           git add prefs.json 2>/dev/null || true
           git add blocked.json 2>/dev/null || true
+          git add vdp_store.json 2>/dev/null || true
           # inline monitor may also have produced fresh state — include it
           git add state.json changes_log.json 2>/dev/null || true
           if git diff --staged --quiet; then
