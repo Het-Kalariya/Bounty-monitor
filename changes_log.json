@@ -1186,5 +1186,108 @@
       "cowprotocol/cow-sdk",
       "cowprotocol/cowswap"
     ]
+  },
+  {
+    "timestamp": "2026-09-24T05:33:21.806565+00:00",
+    "event": "scope_updated",
+    "platform": "hackerone",
+    "handle": "wordpress",
+    "name": "WordPress",
+    "url": "https://hackerone.com/wordpress",
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org",
+        "description": "**Do _not_ pentest Trac instances**, it's very annoying to clean up after. Setup a local environment instead; the custom source code is available via the Git command below, in the `trac.wordpress.org` subfolder. **If you ignore this you'll forfeit any bounty.**\n\nThe projects here are kept mostly for archival purposes and non-critical information disclosure will generally not be eligible for a bounty.\n\nOnly report vulnerabilities in our custom code, don't report vulnerabilities that only exist upstream in Trac itself. Report those directly to info@edgewall.com.\n\nAll source code that isn't behind authentication is intended to be public. The source code itself has `High` CVSS impact scores. The applications that manage the code (Trac, Git, SVN, etc) have `Low` scores, except for vulnerabilities that allow modifications to the source code.\n\nMost of the source code in these domains is contained in the \"meta\" repository: `git clone git://meta.git.wordpress.org/`"
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "BuddyPress Core",
+        "description": "Download source code from: https://buddypress.org/download/\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "Create Block Theme",
+        "description": "The Create Block Theme plugin at https://github.com/WordPress/create-block-theme.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "GlotPress",
+        "description": "All code located under [the GlotPress organization](https://github.com/GlotPress/) on GitHub.\n\nThe most important target is the `glotpress-wp` repository. Other repositories are in scope, but may have a lower importance.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "Gutenberg",
+        "description": "Download source code from https://github.com/WordPress/gutenberg"
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "Official WordPress plugins",
+        "description": "Only plugins that are officially maintained by WordPress.org are in scope. Most plugins have their own asset, use this asset only for those that don't.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution.\n\nNote that some third-party plugins incorrectly list `wordpressdotorg` as a contributor or developer. These are not in scope."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "Playground",
+        "description": "Covers https://playground.wordpress.net and https://github.com/WordPress/wordpress-playground .\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "SQLite Database Integration",
+        "description": "The SQLite Database Integration plugin at https://github.com/WordPress/sqlite-database-integration.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
+      }
+    ],
+    "added": [
+      "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org",
+      "create block theme",
+      "github.com/wordpress",
+      "playground",
+      "secure custom fields",
+      "sqlite database integration"
+    ],
+    "removed": [
+      "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org, github.com/wordpress"
+    ],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-09-24T05:33:23.438846+00:00",
+    "event": "scope_updated",
+    "platform": "intigriti",
+    "handle": "ripencc",
+    "name": "RIPE NCC",
+    "url": "https://www.intigriti.com/programs/ripencc/ripencc/detail",
+    "sc_targets": [
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/RIPE-NCC/rpki-commons",
+        "description": "This library contains an implementation of an X.509 v3 certificate extension which binds a list of IP address blocks or prefixes to the subject of a certificate (IP Address Delegation Extension)."
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/RIPE-NCC/rpki-core",
+        "description": "This repository contains the source code for the RIPE NCC certification. We strive to publish as many components as possible with reasonable effort. Some elements or information are not included, either because of our threat model or because we can not publish them."
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/RIPE-NCC/whois",
+        "description": "RIPE Database whois code repository, excluding:\n* NRTMv4 client (whois-nrtm4-client)"
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/RIPE-NCC/rpki-monitoring",
+        "description": ""
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/RIPE-NCC/rpki-ta-0",
+        "description": ""
+      }
+    ],
+    "added": [],
+    "removed": [
+      "https://github.com/ripe-ncc/rpki-publication-server",
+      "https://github.com/ripe-ncc/rsyncit"
+    ],
+    "github_repos": []
   }
 ]
