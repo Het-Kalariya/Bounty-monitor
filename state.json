@@ -4599,7 +4599,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1703,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6792,7 +6792,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 69,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -43621,128 +43621,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:flow-protocol": {
-    "hash": "602722994ca0f47d3a9f3ee2225933bb262f8e70",
-    "bounty": true,
-    "source": true,
-    "name": "Flow Protocol",
-    "url": "https://hackenproof.com/programs/flow-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/flow-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/crypto",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/cadence",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/atree",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/ccf",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-core-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-evm-bridge",
-        "description": ""
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://github.com/onflow/atree",
-      "https://github.com/onflow/cadence",
-      "https://github.com/onflow/ccf",
-      "https://github.com/onflow/crypto",
-      "https://github.com/onflow/flow-core-contracts",
-      "https://github.com/onflow/flow-evm-bridge",
-      "https://github.com/onflow/flow-go"
-    ],
-    "github_repos": [
-      "onflow/atree",
-      "onflow/cadence",
-      "onflow/ccf",
-      "onflow/crypto",
-      "onflow/flow-core-contracts",
-      "onflow/flow-evm-bridge",
-      "onflow/flow-go"
-    ]
-  },
-  "hackenproof:pandora-smart-contract": {
-    "hash": "64bf1d4936cfd89b28d3dbf33b823c3464e4250b",
-    "bounty": true,
-    "source": true,
-    "name": "Pandora Smart Contract",
-    "url": "https://hackenproof.com/programs/pandora-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/PandoraDigital/smart-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/pandoradigital/smart-contract"
-    ],
-    "github_repos": [
-      "pandoradigital/smart-contract"
-    ]
-  },
-  "hackenproof:zetachain-web-apps": {
-    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
-    "bounty": true,
-    "source": false,
-    "name": "ZetaChain Web Apps",
-    "url": "https://hackenproof.com/programs/zetachain-web-apps",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -44748,6 +44626,78 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:flow-protocol": {
+    "hash": "602722994ca0f47d3a9f3ee2225933bb262f8e70",
+    "bounty": true,
+    "source": true,
+    "name": "Flow Protocol",
+    "url": "https://hackenproof.com/programs/flow-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/flow-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/crypto",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/cadence",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/atree",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/ccf",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-core-contracts",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-evm-bridge",
+        "description": ""
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/onflow/atree",
+      "https://github.com/onflow/cadence",
+      "https://github.com/onflow/ccf",
+      "https://github.com/onflow/crypto",
+      "https://github.com/onflow/flow-core-contracts",
+      "https://github.com/onflow/flow-evm-bridge",
+      "https://github.com/onflow/flow-go"
+    ],
+    "github_repos": [
+      "onflow/atree",
+      "onflow/cadence",
+      "onflow/ccf",
+      "onflow/crypto",
+      "onflow/flow-core-contracts",
+      "onflow/flow-evm-bridge",
+      "onflow/flow-go"
+    ]
   },
   "hackenproof:flow-wallet": {
     "hash": "e2ba10af6190cf0901ef04d996ee0c6762a7c028",
@@ -47299,6 +47249,36 @@
     ],
     "github_repos": [
       "capsule-corp-ternoa/ternoa-pallets"
+    ]
+  },
+  "hackenproof:pandora-smart-contract": {
+    "hash": "64bf1d4936cfd89b28d3dbf33b823c3464e4250b",
+    "bounty": true,
+    "source": true,
+    "name": "Pandora Smart Contract",
+    "url": "https://hackenproof.com/programs/pandora-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/PandoraDigital/smart-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/pandoradigital/smart-contract"
+    ],
+    "github_repos": [
+      "pandoradigital/smart-contract"
     ]
   },
   "hackenproof:pandora-web": {
@@ -50440,6 +50420,26 @@
       "zeta-chain/protocol-contracts-ton",
       "zeta-chain/toolkit"
     ]
+  },
+  "hackenproof:zetachain-web-apps": {
+    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
+    "bounty": true,
+    "source": false,
+    "name": "ZetaChain Web Apps",
+    "url": "https://hackenproof.com/programs/zetachain-web-apps",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:zo-finance-smart-contracts": {
     "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
@@ -58531,7 +58531,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-24T22:37:10.484817+00:00",
+    "updated_at": "2026-09-24T23:07:34.647225+00:00",
     "total": 1941,
     "qualifying": 432,
     "external": 360,
