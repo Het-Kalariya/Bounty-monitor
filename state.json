@@ -1393,7 +1393,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 76,
     "bounty_days": 255.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2606,7 +2606,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 96,
+    "resp_eff": 97,
     "bounty_days": 127.0,
     "sc_targets": [
       {
@@ -3820,7 +3820,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 68,
     "bounty_days": 301.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5576,7 +5576,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 819,
-    "resp_eff": 84,
+    "resp_eff": 83,
     "bounty_days": 214.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5728,7 +5728,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 76,
     "bounty_days": 195.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6773,7 +6773,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 0,
+    "resp_eff": 50,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6847,7 +6847,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 65,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -7600,7 +7600,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 411,
-    "resp_eff": 16,
+    "resp_eff": 15,
     "bounty_days": 0.0,
     "sc_targets": [
       {
@@ -7912,7 +7912,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1666,
-    "resp_eff": 62,
+    "resp_eff": 64,
     "bounty_days": 48.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8167,7 +8167,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 97,
+    "resp_eff": 96,
     "bounty_days": 93.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43602,6 +43602,222 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:gear-protocol": {
+    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
+    "bounty": true,
+    "source": true,
+    "name": "Gear Protocol",
+    "url": "https://hackenproof.com/programs/gear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
+        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/gear-tech/gear/tree/master/core",
+      "https://github.com/gear-tech/gear/tree/master/core-backend",
+      "https://github.com/gear-tech/gear/tree/master/core-processor",
+      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+      "https://github.com/gear-tech/gear/tree/master/node/authorship",
+      "https://github.com/gear-tech/gear/tree/master/node/service",
+      "https://github.com/gear-tech/gear/tree/master/pallets",
+      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
+    ],
+    "github_repos": [
+      "gear-tech/gear"
+    ]
+  },
+  "hackenproof:shido-network-protocol": {
+    "hash": "3525f9bad1bce8230d13844bae11db0b75f93f83",
+    "bounty": true,
+    "source": false,
+    "name": "Shido Network - Protocol",
+    "url": "https://hackenproof.com/programs/shido-network-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slex-web": {
+    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
+    "bounty": true,
+    "source": false,
+    "name": "Slex Web",
+    "url": "https://hackenproof.com/programs/slex-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slush-wallet": {
+    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
+    "bounty": true,
+    "source": false,
+    "name": "Slush Wallet",
+    "url": "https://hackenproof.com/programs/slush-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:vechainthor": {
+    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor",
+    "url": "https://hackenproof.com/programs/vechainthor",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 35000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/vechain/thor",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/vechain/thor"
+    ],
+    "github_repos": [
+      "vechain/thor"
+    ]
+  },
+  "hackenproof:vechainthor-vip191": {
+    "hash": "afab50257608dbbe57a554c25066537042bd3659",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor VIP191",
+    "url": "https://hackenproof.com/programs/vechainthor-vip191",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "BLOCKCHAIN",
+        "identifier": "VIP191",
+        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "vip191"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:vechainthor-wallet": {
+    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
+    "bounty": true,
+    "source": false,
+    "name": "VeChainThor Wallet",
+    "url": "https://hackenproof.com/programs/vechainthor-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -44809,84 +45025,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:gear-protocol": {
-    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
-    "bounty": true,
-    "source": true,
-    "name": "Gear Protocol",
-    "url": "https://hackenproof.com/programs/gear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
-        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/gear-tech/gear/tree/master/core",
-      "https://github.com/gear-tech/gear/tree/master/core-backend",
-      "https://github.com/gear-tech/gear/tree/master/core-processor",
-      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-      "https://github.com/gear-tech/gear/tree/master/node/authorship",
-      "https://github.com/gear-tech/gear/tree/master/node/service",
-      "https://github.com/gear-tech/gear/tree/master/pallets",
-      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
-    ],
-    "github_repos": [
-      "gear-tech/gear"
-    ]
   },
   "hackenproof:gmgn-web-and-mobile": {
     "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
@@ -47979,66 +48117,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:shido-network-protocol": {
-    "hash": "3525f9bad1bce8230d13844bae11db0b75f93f83",
-    "bounty": true,
-    "source": false,
-    "name": "Shido Network - Protocol",
-    "url": "https://hackenproof.com/programs/shido-network-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slex-web": {
-    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
-    "bounty": true,
-    "source": false,
-    "name": "Slex Web",
-    "url": "https://hackenproof.com/programs/slex-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slush-wallet": {
-    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
-    "bounty": true,
-    "source": false,
-    "name": "Slush Wallet",
-    "url": "https://hackenproof.com/programs/slush-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:smardex-smart-contracts": {
     "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
     "bounty": true,
@@ -49925,84 +50003,6 @@
       "unituslabs/contracts"
     ]
   },
-  "hackenproof:vechainthor": {
-    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor",
-    "url": "https://hackenproof.com/programs/vechainthor",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 35000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/vechain/thor",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/vechain/thor"
-    ],
-    "github_repos": [
-      "vechain/thor"
-    ]
-  },
-  "hackenproof:vechainthor-vip191": {
-    "hash": "afab50257608dbbe57a554c25066537042bd3659",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor VIP191",
-    "url": "https://hackenproof.com/programs/vechainthor-vip191",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "BLOCKCHAIN",
-        "identifier": "VIP191",
-        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "vip191"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:vechainthor-wallet": {
-    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
-    "bounty": true,
-    "source": false,
-    "name": "VeChainThor Wallet",
-    "url": "https://hackenproof.com/programs/vechainthor-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:virtuswap-dex-app-1": {
     "hash": "c04d7d1d1fd6ef5f906023db85e6c61631bbc3dd",
     "bounty": true,
@@ -51290,6 +51290,26 @@
       "injectivelabs/swap-contract"
     ]
   },
+  "cantina:7aa23a2b-7e8b-4b88-a9bb-713dc102a11a": {
+    "hash": "a99c7e4e8e1778a4450ec080e8e58de574f23e2d",
+    "bounty": true,
+    "source": false,
+    "name": "Liquity",
+    "url": "https://cantina.xyz/bounties/7aa23a2b-7e8b-4b88-a9bb-713dc102a11a",
+    "platform": "cantina",
+    "bounty_min": 0,
+    "bounty_max": 125000,
+    "bounty_ccy": "BOLD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "cantina:7e55cc61-e96c-4bda-a324-25b44d45e171": {
     "hash": "3a7e457852ce5a77c9ef857ec1abe2f6ade472c0",
     "bounty": false,
@@ -51755,26 +51775,6 @@
     "bounty_min": 0,
     "bounty_max": 2000000,
     "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "cantina:7aa23a2b-7e8b-4b88-a9bb-713dc102a11a": {
-    "hash": "a99c7e4e8e1778a4450ec080e8e58de574f23e2d",
-    "bounty": true,
-    "source": false,
-    "name": "Liquity",
-    "url": "https://cantina.xyz/bounties/7aa23a2b-7e8b-4b88-a9bb-713dc102a11a",
-    "platform": "cantina",
-    "bounty_min": 0,
-    "bounty_max": 125000,
-    "bounty_ccy": "BOLD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
@@ -58732,7 +58732,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-24T20:59:28.190896+00:00",
+    "updated_at": "2026-09-24T21:38:15.462591+00:00",
     "total": 1941,
     "qualifying": 432,
     "external": 361,
