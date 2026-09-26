@@ -2843,7 +2843,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6708,7 +6708,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 625,
-    "resp_eff": 63,
+    "resp_eff": 60,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8102,7 +8102,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 884975,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 181.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43792,15 +43792,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:nicehash-mining-platform": {
-    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
+  "hackenproof:vechainthor": {
+    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
     "bounty": true,
     "source": true,
-    "name": "NiceHash Mining platform",
-    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
+    "name": "VeChainThor",
+    "url": "https://hackenproof.com/programs/vechainthor",
     "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 25000,
+    "bounty_min": 1000,
+    "bounty_max": 35000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43810,40 +43810,26 @@
     "sc_targets": [
       {
         "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NHOS",
-        "description": "NHOS - Mining operating system"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
-        "description": "NiceHashQuickMiner - Mining client"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashMiner",
-        "description": "NiceHashMiner - Mining client"
+        "identifier": "https://github.com/vechain/thor",
+        "description": ""
       }
     ],
-    "sc_total": 3,
+    "sc_total": 1,
     "sc_ids": [
-      "https://github.com/nicehash/nhos",
-      "https://github.com/nicehash/nicehashminer",
-      "https://github.com/nicehash/nicehashquickminer"
+      "https://github.com/vechain/thor"
     ],
     "github_repos": [
-      "nicehash/nhos",
-      "nicehash/nicehashminer",
-      "nicehash/nicehashquickminer"
+      "vechain/thor"
     ]
   },
-  "hackenproof:nimbus": {
-    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+  "hackenproof:vechainthor-vip191": {
+    "hash": "afab50257608dbbe57a554c25066537042bd3659",
     "bounty": true,
-    "source": false,
-    "name": "Nimbus",
-    "url": "https://hackenproof.com/programs/nimbus",
+    "source": true,
+    "name": "VeChainThor VIP191",
+    "url": "https://hackenproof.com/programs/vechainthor-vip191",
     "platform": "hackenproof",
-    "bounty_min": 50,
+    "bounty_min": 500,
     "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -43851,20 +43837,28 @@
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
+    "sc_targets": [
+      {
+        "asset_type": "BLOCKCHAIN",
+        "identifier": "VIP191",
+        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "vip191"
+    ],
     "github_repos": []
   },
-  "hackenproof:nonkyc-dot-io": {
-    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
+  "hackenproof:vechainthor-wallet": {
+    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
     "bounty": true,
     "source": false,
-    "name": "NonKyc.io",
-    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "name": "VeChainThor Wallet",
+    "url": "https://hackenproof.com/programs/vechainthor-wallet",
     "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
+    "bounty_min": 300,
+    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47063,6 +47057,90 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:nicehash-mining-platform": {
+    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
+    "bounty": true,
+    "source": true,
+    "name": "NiceHash Mining platform",
+    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NHOS",
+        "description": "NHOS - Mining operating system"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
+        "description": "NiceHashQuickMiner - Mining client"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashMiner",
+        "description": "NiceHashMiner - Mining client"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/nicehash/nhos",
+      "https://github.com/nicehash/nicehashminer",
+      "https://github.com/nicehash/nicehashquickminer"
+    ],
+    "github_repos": [
+      "nicehash/nhos",
+      "nicehash/nicehashminer",
+      "nicehash/nicehashquickminer"
+    ]
+  },
+  "hackenproof:nimbus": {
+    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+    "bounty": true,
+    "source": false,
+    "name": "Nimbus",
+    "url": "https://hackenproof.com/programs/nimbus",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:nonkyc-dot-io": {
+    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
+    "bounty": true,
+    "source": false,
+    "name": "NonKyc.io",
+    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:noones-web-and-mobile": {
     "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
     "bounty": true,
@@ -49850,84 +49928,6 @@
       "unituslabs/contracts"
     ]
   },
-  "hackenproof:vechainthor": {
-    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor",
-    "url": "https://hackenproof.com/programs/vechainthor",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 35000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/vechain/thor",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/vechain/thor"
-    ],
-    "github_repos": [
-      "vechain/thor"
-    ]
-  },
-  "hackenproof:vechainthor-vip191": {
-    "hash": "afab50257608dbbe57a554c25066537042bd3659",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor VIP191",
-    "url": "https://hackenproof.com/programs/vechainthor-vip191",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "BLOCKCHAIN",
-        "identifier": "VIP191",
-        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "vip191"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:vechainthor-wallet": {
-    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
-    "bounty": true,
-    "source": false,
-    "name": "VeChainThor Wallet",
-    "url": "https://hackenproof.com/programs/vechainthor-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:virtuswap-dex-app-1": {
     "hash": "c04d7d1d1fd6ef5f906023db85e6c61631bbc3dd",
     "bounty": true,
@@ -51710,6 +51710,238 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "sherlock:11": {
+    "hash": "1686847ec6193ac68d01d9b72e9fbb68159edeeb",
+    "bounty": true,
+    "source": true,
+    "name": "Napier",
+    "url": "https://audits.sherlock.xyz/bug-bounties/11",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Napier-Lab/v1-pool",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/mixbytes/audits_public",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/napierfi/v1-pool",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/mixbytes/audits_public",
+      "https://github.com/napier-lab/v1-pool",
+      "https://github.com/napierfi/v1-pool"
+    ],
+    "github_repos": [
+      "mixbytes/audits_public",
+      "napier-lab/v1-pool",
+      "napierfi/v1-pool"
+    ]
+  },
+  "sherlock:114": {
+    "hash": "06391af9eafc9286d08ce3f2981616b39fc8ce13",
+    "bounty": true,
+    "source": true,
+    "name": "Cap",
+    "url": "https://audits.sherlock.xyz/bug-bounties/114",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cap-labs-dev/cap-contracts",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/cap-labs-dev/cap-contracts"
+    ],
+    "github_repos": [
+      "cap-labs-dev/cap-contracts"
+    ]
+  },
+  "sherlock:122": {
+    "hash": "cec51e40fc36f7d5b50a5dffc650060e3ccfcd95",
+    "bounty": true,
+    "source": true,
+    "name": "Midas",
+    "url": "https://audits.sherlock.xyz/bug-bounties/122",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/d-xo/weird-erc20",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/midas-apps/contracts",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/midas-apps/contracts-solana",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/d-xo/weird-erc20",
+      "https://github.com/midas-apps/contracts",
+      "https://github.com/midas-apps/contracts-solana"
+    ],
+    "github_repos": [
+      "d-xo/weird-erc20",
+      "midas-apps/contracts",
+      "midas-apps/contracts-solana"
+    ]
+  },
+  "sherlock:125": {
+    "hash": "224a28b900450d318bf8f2ded92cbe11da6bb838",
+    "bounty": true,
+    "source": true,
+    "name": "Mellow Core Vaults",
+    "url": "https://audits.sherlock.xyz/bug-bounties/125",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:125",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:125"
+    ],
+    "github_repos": []
+  },
+  "sherlock:233": {
+    "hash": "ee15b9bafa51eaa0749638dbbfae883fbe1f47c7",
+    "bounty": true,
+    "source": true,
+    "name": "Inverse Finance",
+    "url": "https://audits.sherlock.xyz/bug-bounties/233",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:233",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:233"
+    ],
+    "github_repos": []
+  },
+  "sherlock:248": {
+    "hash": "f201ee2dcb7c4183ced7fe35db94ee252fb5384f",
+    "bounty": true,
+    "source": true,
+    "name": "Flying Tulip",
+    "url": "https://audits.sherlock.xyz/bug-bounties/248",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/flyingtulipdotcom/security",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/flyingtulipdotcom/security"
+    ],
+    "github_repos": [
+      "flyingtulipdotcom/security"
+    ]
+  },
+  "sherlock:287": {
+    "hash": "83d9219d119797395077fc1a8885466c3a4ffbf8",
+    "bounty": true,
+    "source": true,
+    "name": "Monolith Stablecoin Factory",
+    "url": "https://audits.sherlock.xyz/bug-bounties/287",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:287",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:287"
+    ],
+    "github_repos": []
+  },
   "sherlock:1": {
     "hash": "098fdf59ee366d59c89242772fd23afd8f454055",
     "bounty": true,
@@ -51854,80 +52086,6 @@
     ],
     "github_repos": []
   },
-  "sherlock:11": {
-    "hash": "1686847ec6193ac68d01d9b72e9fbb68159edeeb",
-    "bounty": true,
-    "source": true,
-    "name": "Napier",
-    "url": "https://audits.sherlock.xyz/bug-bounties/11",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Napier-Lab/v1-pool",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/mixbytes/audits_public",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/napierfi/v1-pool",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/mixbytes/audits_public",
-      "https://github.com/napier-lab/v1-pool",
-      "https://github.com/napierfi/v1-pool"
-    ],
-    "github_repos": [
-      "mixbytes/audits_public",
-      "napier-lab/v1-pool",
-      "napierfi/v1-pool"
-    ]
-  },
-  "sherlock:114": {
-    "hash": "06391af9eafc9286d08ce3f2981616b39fc8ce13",
-    "bounty": true,
-    "source": true,
-    "name": "Cap",
-    "url": "https://audits.sherlock.xyz/bug-bounties/114",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cap-labs-dev/cap-contracts",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/cap-labs-dev/cap-contracts"
-    ],
-    "github_repos": [
-      "cap-labs-dev/cap-contracts"
-    ]
-  },
   "sherlock:12": {
     "hash": "5e04fe81f4d9483b7587253ee385ad9b02c48c32",
     "bounty": true,
@@ -51957,78 +52115,6 @@
     "github_repos": [
       "unioncredit/union-gov-actions"
     ]
-  },
-  "sherlock:122": {
-    "hash": "cec51e40fc36f7d5b50a5dffc650060e3ccfcd95",
-    "bounty": true,
-    "source": true,
-    "name": "Midas",
-    "url": "https://audits.sherlock.xyz/bug-bounties/122",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/d-xo/weird-erc20",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/midas-apps/contracts",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/midas-apps/contracts-solana",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/d-xo/weird-erc20",
-      "https://github.com/midas-apps/contracts",
-      "https://github.com/midas-apps/contracts-solana"
-    ],
-    "github_repos": [
-      "d-xo/weird-erc20",
-      "midas-apps/contracts",
-      "midas-apps/contracts-solana"
-    ]
-  },
-  "sherlock:125": {
-    "hash": "224a28b900450d318bf8f2ded92cbe11da6bb838",
-    "bounty": true,
-    "source": true,
-    "name": "Mellow Core Vaults",
-    "url": "https://audits.sherlock.xyz/bug-bounties/125",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:125",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:125"
-    ],
-    "github_repos": []
   },
   "sherlock:17": {
     "hash": "f74aedd402d11e86713b1ddd484bffaba53553b6",
@@ -52155,64 +52241,6 @@
     ],
     "github_repos": []
   },
-  "sherlock:233": {
-    "hash": "ee15b9bafa51eaa0749638dbbfae883fbe1f47c7",
-    "bounty": true,
-    "source": true,
-    "name": "Inverse Finance",
-    "url": "https://audits.sherlock.xyz/bug-bounties/233",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:233",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:233"
-    ],
-    "github_repos": []
-  },
-  "sherlock:248": {
-    "hash": "f201ee2dcb7c4183ced7fe35db94ee252fb5384f",
-    "bounty": true,
-    "source": true,
-    "name": "Flying Tulip",
-    "url": "https://audits.sherlock.xyz/bug-bounties/248",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/flyingtulipdotcom/security",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/flyingtulipdotcom/security"
-    ],
-    "github_repos": [
-      "flyingtulipdotcom/security"
-    ]
-  },
   "sherlock:27": {
     "hash": "ece1b8a3f4f10908a77971b6c517c12d60d7cd26",
     "bounty": true,
@@ -52316,34 +52344,6 @@
     "github_repos": [
       "scroll-tech/usx-contracts"
     ]
-  },
-  "sherlock:287": {
-    "hash": "83d9219d119797395077fc1a8885466c3a4ffbf8",
-    "bounty": true,
-    "source": true,
-    "name": "Monolith Stablecoin Factory",
-    "url": "https://audits.sherlock.xyz/bug-bounties/287",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:287",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:287"
-    ],
-    "github_repos": []
   },
   "sherlock:298": {
     "hash": "3c046c48b6472c78b3def03b91f3e9943c4ff18f",
@@ -52821,6 +52821,34 @@
     ],
     "github_repos": []
   },
+  "sherlock:8": {
+    "hash": "09a26b065ab13dc8e72c27cd4c91bd60b0e1ba5e",
+    "bounty": true,
+    "source": true,
+    "name": "Axis Finance",
+    "url": "https://audits.sherlock.xyz/bug-bounties/8",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:8",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:8"
+    ],
+    "github_repos": []
+  },
   "sherlock:82": {
     "hash": "87c55c98d87a00c6203521ef569d0ccee4aeac9a",
     "bounty": true,
@@ -52850,34 +52878,6 @@
     "github_repos": [
       "seamless-protocol/leverage-tokens"
     ]
-  },
-  "sherlock:8": {
-    "hash": "09a26b065ab13dc8e72c27cd4c91bd60b0e1ba5e",
-    "bounty": true,
-    "source": true,
-    "name": "Axis Finance",
-    "url": "https://audits.sherlock.xyz/bug-bounties/8",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:8",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:8"
-    ],
-    "github_repos": []
   },
   "chaos:1inch": {
     "hash": "",
@@ -58641,7 +58641,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-26T11:35:21.979510+00:00",
+    "updated_at": "2026-09-26T12:05:29.733709+00:00",
     "total": 1937,
     "qualifying": 430,
     "external": 360,
