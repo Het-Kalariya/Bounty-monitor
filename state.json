@@ -386,7 +386,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": 93.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1336,7 +1336,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 3639,
-    "resp_eff": 87,
+    "resp_eff": 86,
     "bounty_days": 153.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5709,7 +5709,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7573,7 +7573,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 413,
-    "resp_eff": 16,
+    "resp_eff": 17,
     "bounty_days": 0.0,
     "sc_targets": [
       {
@@ -43673,303 +43673,6 @@
       "dexalot/contracts"
     ]
   },
-  "hackenproof:linear-protocol": {
-    "hash": "531fb89548089b2ddc1c1009efa9377ee1dfe8fe",
-    "bounty": false,
-    "source": true,
-    "name": "LiNEAR Protocol",
-    "url": "https://hackenproof.com/programs/linear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/linear-protocol/LiNEAR",
-        "description": "LiNEAR protocol"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/linear-protocol/linear"
-    ],
-    "github_repos": [
-      "linear-protocol/linear"
-    ]
-  },
-  "hackenproof:linen-api-and-mobile": {
-    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
-    "bounty": true,
-    "source": false,
-    "name": "Linen API & Mobile",
-    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:local-traders-smart-contracts": {
-    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
-    "bounty": true,
-    "source": true,
-    "name": "Local Traders Smart Contracts",
-    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
-        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/localtradersteam/LCT_Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
-      "https://github.com/localtradersteam/lct_contract"
-    ],
-    "github_repos": [
-      "localtradersteam/lct_contract"
-    ]
-  },
-  "hackenproof:logos": {
-    "hash": "423251bd34b0c0e7de46d659a9c62bd9893fa3c1",
-    "bounty": true,
-    "source": true,
-    "name": "Logos",
-    "url": "https://hackenproof.com/programs/logos",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
-        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/examples.waku.org",
-        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku",
-        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
-        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/logos-messaging/examples.waku.org",
-      "https://github.com/logos-messaging/go-waku",
-      "https://github.com/logos-messaging/go-waku/tree/master/examples",
-      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-      "https://github.com/logos-messaging/logos-delivery-js"
-    ],
-    "github_repos": [
-      "logos-messaging/examples.waku.org",
-      "logos-messaging/go-waku",
-      "logos-messaging/logos-delivery-go",
-      "logos-messaging/logos-delivery-js"
-    ]
-  },
-  "hackenproof:zetachain-smart-contracts": {
-    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
-    "bounty": false,
-    "source": true,
-    "name": "ZetaChain Smart Contracts",
-    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
-        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts",
-        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/toolkit",
-        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
-        "description": "Solana interface contract for zetachain\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
-        "description": "SUI interface contract for zetachain\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
-        "description": "TON interface contract for zetachain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/zeta-chain/protocol-contracts",
-      "https://github.com/zeta-chain/protocol-contracts-evm",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-solana",
-      "https://github.com/zeta-chain/protocol-contracts-sui",
-      "https://github.com/zeta-chain/protocol-contracts-ton",
-      "https://github.com/zeta-chain/toolkit"
-    ],
-    "github_repos": [
-      "zeta-chain/protocol-contracts",
-      "zeta-chain/protocol-contracts-evm",
-      "zeta-chain/protocol-contracts-solana",
-      "zeta-chain/protocol-contracts-sui",
-      "zeta-chain/protocol-contracts-ton",
-      "zeta-chain/toolkit"
-    ]
-  },
-  "hackenproof:zetachain-web-apps": {
-    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
-    "bounty": true,
-    "source": false,
-    "name": "ZetaChain Web Apps",
-    "url": "https://hackenproof.com/programs/zetachain-web-apps",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
-  },
-  "hackenproof:zo-finance-web": {
-    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
-    "bounty": false,
-    "source": false,
-    "name": "ZO Finance Web",
-    "url": "https://hackenproof.com/programs/zo-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dexalot-smart-contracts-archived": {
     "hash": "f78b362b6307a62758c601e413a3f4b246811329",
     "bounty": true,
@@ -46471,6 +46174,149 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:linear-protocol": {
+    "hash": "531fb89548089b2ddc1c1009efa9377ee1dfe8fe",
+    "bounty": false,
+    "source": true,
+    "name": "LiNEAR Protocol",
+    "url": "https://hackenproof.com/programs/linear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/linear-protocol/LiNEAR",
+        "description": "LiNEAR protocol"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/linear-protocol/linear"
+    ],
+    "github_repos": [
+      "linear-protocol/linear"
+    ]
+  },
+  "hackenproof:linen-api-and-mobile": {
+    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
+    "bounty": true,
+    "source": false,
+    "name": "Linen API & Mobile",
+    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:local-traders-smart-contracts": {
+    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
+    "bounty": true,
+    "source": true,
+    "name": "Local Traders Smart Contracts",
+    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
+        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/localtradersteam/LCT_Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
+      "https://github.com/localtradersteam/lct_contract"
+    ],
+    "github_repos": [
+      "localtradersteam/lct_contract"
+    ]
+  },
+  "hackenproof:logos": {
+    "hash": "423251bd34b0c0e7de46d659a9c62bd9893fa3c1",
+    "bounty": true,
+    "source": true,
+    "name": "Logos",
+    "url": "https://hackenproof.com/programs/logos",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
+        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/examples.waku.org",
+        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku",
+        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
+        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/logos-messaging/examples.waku.org",
+      "https://github.com/logos-messaging/go-waku",
+      "https://github.com/logos-messaging/go-waku/tree/master/examples",
+      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+      "https://github.com/logos-messaging/logos-delivery-js"
+    ],
+    "github_repos": [
+      "logos-messaging/examples.waku.org",
+      "logos-messaging/go-waku",
+      "logos-messaging/logos-delivery-go",
+      "logos-messaging/logos-delivery-js"
+    ]
   },
   "hackenproof:meest-poshta-mobile": {
     "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
@@ -50588,6 +50434,160 @@
       "zeta-chain/node",
       "zeta-chain/tss-lib"
     ]
+  },
+  "hackenproof:zetachain-smart-contracts": {
+    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
+    "bounty": false,
+    "source": true,
+    "name": "ZetaChain Smart Contracts",
+    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
+        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts",
+        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/toolkit",
+        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
+        "description": "Solana interface contract for zetachain\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
+        "description": "SUI interface contract for zetachain\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
+        "description": "TON interface contract for zetachain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/zeta-chain/protocol-contracts",
+      "https://github.com/zeta-chain/protocol-contracts-evm",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-solana",
+      "https://github.com/zeta-chain/protocol-contracts-sui",
+      "https://github.com/zeta-chain/protocol-contracts-ton",
+      "https://github.com/zeta-chain/toolkit"
+    ],
+    "github_repos": [
+      "zeta-chain/protocol-contracts",
+      "zeta-chain/protocol-contracts-evm",
+      "zeta-chain/protocol-contracts-solana",
+      "zeta-chain/protocol-contracts-sui",
+      "zeta-chain/protocol-contracts-ton",
+      "zeta-chain/toolkit"
+    ]
+  },
+  "hackenproof:zetachain-web-apps": {
+    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
+    "bounty": true,
+    "source": false,
+    "name": "ZetaChain Web Apps",
+    "url": "https://hackenproof.com/programs/zetachain-web-apps",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
+    ]
+  },
+  "hackenproof:zo-finance-web": {
+    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
+    "bounty": false,
+    "source": false,
+    "name": "ZO Finance Web",
+    "url": "https://hackenproof.com/programs/zo-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:zoomex-web-and-mobile": {
     "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
@@ -58526,7 +58526,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-27T16:04:20.014443+00:00",
+    "updated_at": "2026-09-27T16:34:43.114025+00:00",
     "total": 1930,
     "qualifying": 430,
     "external": 354,
