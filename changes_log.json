@@ -1409,5 +1409,38 @@
     "added": [],
     "removed": [],
     "github_repos": []
+  },
+  {
+    "timestamp": "2026-09-28T09:01:22.316619+00:00",
+    "event": "bounty_enabled",
+    "platform": "immunefi",
+    "handle": "dawn",
+    "name": "DAWN USD.infra Vault",
+    "url": "https://immunefi.com/bug-bounty/dawn",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x15a6f1f2705b3916b5b1d2b19b10f320778744c1",
+        "description": "InfraFi's on-chain contract on BNB Chain that receives, validates and stores the vault exchange rate published by infrafi-api, implements additional sanity checks and is used for downstream oracle consumption. In scope: rate-publishing authorization, staleness/validation, and any path to posting a manipulated or ripcord-blocked rate."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/token/dawn7ZUF7h7anFuEsDdAU1Y3HYwikwqNMAENZsQJdNL",
+        "description": "USD.tel stablecoin \u2014 M0 wrapped-M issued on Solana's Token-2022 program with the Pausable extension. In scope: InfraFi's mint configuration and pause-authority operation."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/account/EZ8sq2FNnmqQo254irAMGNp7c6B7DPuKh22SyXAwuXSn",
+        "description": "Loopscale credit vault holding InfraFi capital - loan book, NAV and share price computed on-chain by Loopscale; DAWN is the sole whitelisted borrower via a Squads V4 multisig. On-chain Anchor IDL fetchable. In scope: InfraFi's vault configuration and integration \u2014 deposit/withdraw, borrow/repay, and deal-valuation integration; borrower authorization; and the exchange-rate/share-price semantics DAWN reads and publishes. Loopscale protocol and program internals are out of scope (see below)."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/account/4rXteUmbxiXvgLqP14eQwtqkLyVNXVCBHnXyLQ9vZkSh",
+        "description": "Loopscale credit vault holding InfraFi capital - loan book, NAV and share price computed on-chain by Loopscale; DAWN is the sole whitelisted borrower via a Squads V4 multisig. On-chain Anchor IDL fetchable. In scope: InfraFi's vault configuration and integration \u2014 deposit/withdraw, borrow/repay, and deal-valuation integration; borrower authorization; and the exchange-rate/share-price semantics DAWN reads and publishes. Loopscale protocol and program internals are out of scope (see below)."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
   }
 ]

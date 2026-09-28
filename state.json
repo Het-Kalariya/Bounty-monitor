@@ -2500,7 +2500,7 @@
     "github_repos": []
   },
   "hackerone:temu": {
-    "hash": "10d3f9cfef628ef2e063d0db9af0228cef4a9daa",
+    "hash": "14e247ce6ccf57da7eb7d04ce0dc2569001faac3",
     "bounty": true,
     "source": false,
     "name": "Temu",
@@ -4694,7 +4694,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19741,
-    "resp_eff": 47,
+    "resp_eff": 45,
     "bounty_days": 445.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5263,7 +5263,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1490,
-    "resp_eff": 77,
+    "resp_eff": 76,
     "bounty_days": 309.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20239,8 +20239,8 @@
     "github_repos": []
   },
   "immunefi:dawn": {
-    "hash": "dffcc50fd4d346ca48a8e289cef0b4109b851e20",
-    "bounty": false,
+    "hash": "28ea960eba23828ead7a6c70bb79434becfe8903",
+    "bounty": true,
     "source": true,
     "name": "DAWN USD.infra Vault",
     "url": "https://immunefi.com/bug-bounty/dawn",
@@ -20252,7 +20252,7 @@
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
-    "live_status": "PAUSED",
+    "live_status": "LIVE",
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
@@ -43819,6 +43819,96 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dodo-v3": {
+    "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
+    "bounty": true,
+    "source": true,
+    "name": "DODO V3",
+    "url": "https://hackenproof.com/programs/dodo-v3",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/DODOEX/dodo-v3/tree/main/contracts/DODOV3MM",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dodoex/dodo-v3/tree/main/contracts/dodov3mm"
+    ],
+    "github_repos": [
+      "dodoex/dodo-v3"
+    ]
+  },
+  "hackenproof:sweed-web": {
+    "hash": "1a9786b2b1086fd0672f8f50d720ad0c937eb9a2",
+    "bounty": true,
+    "source": false,
+    "name": "Sweed Web",
+    "url": "https://hackenproof.com/programs/sweed-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swisstronik-blockchain-stability": {
+    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
+    "bounty": true,
+    "source": false,
+    "name": "Swisstronik Blockchain Stability",
+    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swisstronik-core": {
+    "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
+    "bounty": true,
+    "source": false,
+    "name": "Swisstronik Core",
+    "url": "https://hackenproof.com/programs/swisstronik-core",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
@@ -43889,36 +43979,6 @@
       "dioneprotocol/odysseygo-installer",
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
-    ]
-  },
-  "hackenproof:dodo-v3": {
-    "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
-    "bounty": true,
-    "source": true,
-    "name": "DODO V3",
-    "url": "https://hackenproof.com/programs/dodo-v3",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/DODOEX/dodo-v3/tree/main/contracts/DODOV3MM",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dodoex/dodo-v3/tree/main/contracts/dodov3mm"
-    ],
-    "github_repos": [
-      "dodoex/dodo-v3"
     ]
   },
   "hackenproof:dodofeerouteproxy-smart-contract": {
@@ -48968,66 +49028,6 @@
     "github_repos": [
       "swap-dot-io/swap-io-clmm"
     ]
-  },
-  "hackenproof:sweed-web": {
-    "hash": "1a9786b2b1086fd0672f8f50d720ad0c937eb9a2",
-    "bounty": true,
-    "source": false,
-    "name": "Sweed Web",
-    "url": "https://hackenproof.com/programs/sweed-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swisstronik-blockchain-stability": {
-    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Blockchain Stability",
-    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swisstronik-core": {
-    "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Core",
-    "url": "https://hackenproof.com/programs/swisstronik-core",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:synfutures-dapp": {
     "hash": "5dac2417e9a0f546c1a37dd7aec0687cbf3d82af",
@@ -58668,11 +58668,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-28T08:30:58.567126+00:00",
+    "updated_at": "2026-09-28T09:01:22.269617+00:00",
     "total": 1937,
-    "qualifying": 430,
+    "qualifying": 431,
     "external": 360,
-    "blockchain": 368,
+    "blockchain": 369,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
