@@ -1165,7 +1165,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 78,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4355,7 +4355,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 439,
-    "resp_eff": 65,
+    "resp_eff": 67,
     "bounty_days": 251.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4561,7 +4561,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 79,
     "bounty_days": 412.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4949,7 +4949,7 @@
     "github_repos": []
   },
   "hackerone:fiserv": {
-    "hash": "6649b8b26c7d0291746b9b556fe51b62c3d6f9fa",
+    "hash": "245937f4808f600f79230e0bf98873a9618cd719",
     "bounty": false,
     "source": false,
     "name": "Fiserv",
@@ -5576,7 +5576,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 819,
-    "resp_eff": 83,
+    "resp_eff": 82,
     "bounty_days": 223.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6146,7 +6146,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 72,
     "bounty_days": 569.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6441,7 +6441,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 660,
-    "resp_eff": 71,
+    "resp_eff": 72,
     "bounty_days": 1855.0,
     "sc_targets": [
       {
@@ -7157,7 +7157,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 68,
     "bounty_days": 269.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8752,6 +8752,35 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackerone:brave": {
+    "hash": "a2f354a6ca0291c4ce7e9e674bab11bc723f80a1",
+    "bounty": true,
+    "source": true,
+    "name": "Brave Software",
+    "url": "https://hackerone.com/brave",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "amount not in upstream feed",
+    "domains": 411,
+    "resp_eff": 100,
+    "bounty_days": 149.0,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
+        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/brave/*, https://github.com/brave-intl/*"
+    ],
+    "github_repos": [
+      "brave/*, https:"
+    ]
   },
   "hackerone:portswigger": {
     "hash": "22096e343eeaf5065d5071cac777b886ac6e3279",
@@ -18967,6 +18996,25 @@
     "bounty_min": 0,
     "bounty_max": 0,
     "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:yahoobugbounty": {
+    "hash": "5c9a8233713ca54d0857f9dd9ebec2a56c86c3d7",
+    "bounty": true,
+    "source": false,
+    "name": "Yahoo Bug Bounty",
+    "url": "https://www.intigriti.com/programs/yahoo/yahoobugbounty/detail",
+    "platform": "intigriti",
+    "bounty_min": 100,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
@@ -43643,56 +43691,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dexalot-web-and-mobile": {
-    "hash": "a19a8e0ccd0848b0f60ff678e81567ca3c505c73",
-    "bounty": true,
-    "source": false,
-    "name": "Dexalot Web & Mobile",
-    "url": "https://hackenproof.com/programs/dexalot-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:dexe-protocol-smart-contracts": {
-    "hash": "226205cd147cd2a75538291739cab08e436ff172",
-    "bounty": true,
-    "source": true,
-    "name": "DeXe Protocol Smart Contracts",
-    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
-    ],
-    "github_repos": [
-      "dexe-network/dexe-protocol"
-    ]
-  },
   "hackenproof:dex-trade": {
     "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
     "bounty": true,
@@ -43777,6 +43775,56 @@
     ],
     "github_repos": [
       "dexalot/contracts"
+    ]
+  },
+  "hackenproof:dexalot-web-and-mobile": {
+    "hash": "a19a8e0ccd0848b0f60ff678e81567ca3c505c73",
+    "bounty": true,
+    "source": false,
+    "name": "Dexalot Web & Mobile",
+    "url": "https://hackenproof.com/programs/dexalot-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:dexe-protocol-smart-contracts": {
+    "hash": "226205cd147cd2a75538291739cab08e436ff172",
+    "bounty": true,
+    "source": true,
+    "name": "DeXe Protocol Smart Contracts",
+    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
+    ],
+    "github_repos": [
+      "dexe-network/dexe-protocol"
     ]
   },
   "hackenproof:dexx-web-and-mobile": {
@@ -53510,22 +53558,6 @@
     "bounty_days": null,
     "sc_targets": []
   },
-  "chaos:brave-software": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "platform": "chaos",
-    "origin": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 411,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
   "chaos:buffer": {
     "hash": "",
     "bounty": true,
@@ -58648,10 +58680,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-28T14:10:33.533308+00:00",
-    "total": 1936,
-    "qualifying": 430,
-    "external": 360,
+    "updated_at": "2026-09-28T14:40:45.413861+00:00",
+    "total": 1937,
+    "qualifying": 431,
+    "external": 359,
     "blockchain": 368,
     "feed_ids": {
       "immunefi": [],
