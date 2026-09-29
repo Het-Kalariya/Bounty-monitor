@@ -3251,7 +3251,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 92,
     "bounty_days": 848.0,
     "sc_targets": [
       {
@@ -3915,7 +3915,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -43564,26 +43564,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:emojicoin-dot-fun-frontend": {
-    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
-    "bounty": true,
-    "source": false,
-    "name": "emojicoin.fun frontend",
-    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:evaa-smart-contracts": {
     "hash": "13f158186f4c6bf44a31b67c71bd2bb74b5a7177",
     "bounty": false,
@@ -43614,54 +43594,44 @@
       "evaafi/contracts"
     ]
   },
-  "hackenproof:fitburn-web-and-mobile": {
-    "hash": "7912eb27291e7a8a18b28805d50dfdf78f03836f",
-    "bounty": true,
-    "source": false,
-    "name": "FitBurn Web & Mobile",
-    "url": "https://hackenproof.com/programs/fitburn-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:init-capital-web": {
-    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
-    "bounty": true,
-    "source": false,
-    "name": "INIT Capital Web",
-    "url": "https://hackenproof.com/programs/init-capital-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:navi-protocol": {
-    "hash": "4ac0e3b5516e59c454eb5cc45fab63cf3081e032",
+  "hackenproof:nado-smart-contracts": {
+    "hash": "0245263f327ea2ac91cce4f7131401244cf88359",
     "bounty": true,
     "source": true,
-    "name": "NAVI Protocol",
-    "url": "https://hackenproof.com/programs/navi-protocol",
+    "name": "Nado Smart Contracts",
+    "url": "https://hackenproof.com/programs/nado-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 300,
+    "bounty_min": 50,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/nadohq/nado-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/nadohq/nado-contracts"
+    ],
+    "github_repos": [
+      "nadohq/nado-contracts"
+    ]
+  },
+  "hackenproof:near-smart-contracts-1": {
+    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Smart Contracts",
+    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
+    "platform": "hackenproof",
+    "bounty_min": 100,
     "bounty_max": 300000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -43672,45 +43642,58 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/tree/main/lending_core",
-        "description": ""
+        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
+        "description": "lockup"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/tree/main/oracle",
-        "description": ""
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
+        "description": "staking pool"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive_v2.move",
-        "description": ""
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+        "description": "staking pool factory"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive.move",
+        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
+        "description": "whitelist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
+        "description": "multisig"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
         "description": ""
       }
     ],
-    "sc_total": 4,
+    "sc_total": 6,
     "sc_ids": [
-      "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive.move",
-      "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive_v2.move",
-      "https://github.com/naviprotocol/navi-smart-contracts/tree/main/lending_core",
-      "https://github.com/naviprotocol/navi-smart-contracts/tree/main/oracle"
+      "https://github.com/near-daos/sputnik-dao-contract",
+      "https://github.com/near/core-contracts/tree/master/lockup",
+      "https://github.com/near/core-contracts/tree/master/multisig",
+      "https://github.com/near/core-contracts/tree/master/staking-pool",
+      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+      "https://github.com/near/core-contracts/tree/master/whitelist"
     ],
     "github_repos": [
-      "naviprotocol/navi-smart-contracts"
+      "near-daos/sputnik-dao-contract",
+      "near/core-contracts"
     ]
   },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
+  "hackenproof:nimbus": {
+    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
     "bounty": true,
     "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
+    "name": "Nimbus",
+    "url": "https://hackenproof.com/programs/nimbus",
     "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43721,66 +43704,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
-    "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
-    ],
-    "github_repos": [
-      "oort-tech/olympus"
-    ]
-  },
-  "hackenproof:virtuswap-smart-contract": {
-    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
-    "bounty": true,
-    "source": true,
-    "name": "VirtuSwap Smart Contract",
-    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/virtuswap/v1-core/tree/main/contracts"
-    ],
-    "github_repos": [
-      "virtuswap/v1-core"
-    ]
   },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
@@ -44357,6 +44280,26 @@
       "ember-protocol/ember-vaults"
     ]
   },
+  "hackenproof:emojicoin-dot-fun-frontend": {
+    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
+    "bounty": true,
+    "source": false,
+    "name": "emojicoin.fun frontend",
+    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:enkrypt-wallet": {
     "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
     "bounty": true,
@@ -44697,6 +44640,26 @@
     "github_repos": [
       "fitburnengineering/fitburn.contracts"
     ]
+  },
+  "hackenproof:fitburn-web-and-mobile": {
+    "hash": "7912eb27291e7a8a18b28805d50dfdf78f03836f",
+    "bounty": true,
+    "source": false,
+    "name": "FitBurn Web & Mobile",
+    "url": "https://hackenproof.com/programs/fitburn-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:flipster-web-and-mobile": {
     "hash": "1ab1a610123df0bfa512e8c323d9f77c91269750",
@@ -45740,6 +45703,26 @@
     ],
     "github_repos": []
   },
+  "hackenproof:init-capital-web": {
+    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
+    "bounty": true,
+    "source": false,
+    "name": "INIT Capital Web",
+    "url": "https://hackenproof.com/programs/init-capital-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:internet-computer-protocol-icp": {
     "hash": "79c1190475b55eb453b7f91666ddc7b806021e2f",
     "bounty": true,
@@ -46738,36 +46721,6 @@
       "myetherwallet/myetherwallet"
     ]
   },
-  "hackenproof:nado-smart-contracts": {
-    "hash": "0245263f327ea2ac91cce4f7131401244cf88359",
-    "bounty": true,
-    "source": true,
-    "name": "Nado Smart Contracts",
-    "url": "https://hackenproof.com/programs/nado-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/nadohq/nado-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/nadohq/nado-contracts"
-    ],
-    "github_repos": [
-      "nadohq/nado-contracts"
-    ]
-  },
   "hackenproof:nado-web": {
     "hash": "625152117079ff27994d2f744634c686b7a2b66f",
     "bounty": true,
@@ -46787,6 +46740,54 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:navi-protocol": {
+    "hash": "4ac0e3b5516e59c454eb5cc45fab63cf3081e032",
+    "bounty": true,
+    "source": true,
+    "name": "NAVI Protocol",
+    "url": "https://hackenproof.com/programs/navi-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/tree/main/lending_core",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/tree/main/oracle",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive_v2.move",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive.move",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive.move",
+      "https://github.com/naviprotocol/navi-smart-contracts/blob/main/lending_core/sources/incentive_v2.move",
+      "https://github.com/naviprotocol/navi-smart-contracts/tree/main/lending_core",
+      "https://github.com/naviprotocol/navi-smart-contracts/tree/main/oracle"
+    ],
+    "github_repos": [
+      "naviprotocol/navi-smart-contracts"
+    ]
   },
   "hackenproof:navi-protocol-web": {
     "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
@@ -46975,67 +46976,6 @@
       "near/nearcore"
     ]
   },
-  "hackenproof:near-smart-contracts-1": {
-    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Smart Contracts",
-    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
-        "description": "lockup"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
-        "description": "staking pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-        "description": "staking pool factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
-        "description": "whitelist"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
-        "description": "multisig"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://github.com/near-daos/sputnik-dao-contract",
-      "https://github.com/near/core-contracts/tree/master/lockup",
-      "https://github.com/near/core-contracts/tree/master/multisig",
-      "https://github.com/near/core-contracts/tree/master/staking-pool",
-      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-      "https://github.com/near/core-contracts/tree/master/whitelist"
-    ],
-    "github_repos": [
-      "near-daos/sputnik-dao-contract",
-      "near/core-contracts"
-    ]
-  },
   "hackenproof:near-web": {
     "hash": "dcc861d54f9c7d6c2610c76281d7eb8e208b9d12",
     "bounty": true,
@@ -47140,15 +47080,15 @@
       "nicehash/nicehashquickminer"
     ]
   },
-  "hackenproof:nimbus": {
-    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+  "hackenproof:nonkyc-dot-io": {
+    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
     "bounty": true,
     "source": false,
-    "name": "Nimbus",
-    "url": "https://hackenproof.com/programs/nimbus",
+    "name": "NonKyc.io",
+    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47160,14 +47100,14 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:nonkyc-dot-io": {
-    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
     "bounty": true,
     "source": false,
-    "name": "NonKyc.io",
-    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
     "platform": "hackenproof",
-    "bounty_min": 50,
+    "bounty_min": 150,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -47287,6 +47227,36 @@
       "https://github.com/okx"
     ],
     "github_repos": []
+  },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
   },
   "hackenproof:openware": {
     "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
@@ -50034,6 +50004,36 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:virtuswap-smart-contract": {
+    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
+    "bounty": true,
+    "source": true,
+    "name": "VirtuSwap Smart Contract",
+    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/virtuswap/v1-core/tree/main/contracts"
+    ],
+    "github_repos": [
+      "virtuswap/v1-core"
+    ]
   },
   "hackenproof:volo-smart-contracts": {
     "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
@@ -58682,7 +58682,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-29T02:47:39.599578+00:00",
+    "updated_at": "2026-09-29T03:17:46.461722+00:00",
     "total": 1937,
     "qualifying": 431,
     "external": 359,
