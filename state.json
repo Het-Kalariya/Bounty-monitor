@@ -4458,7 +4458,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 74,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -16564,25 +16564,6 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 15000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "intigriti:challenge0926": {
-    "hash": "ac356cfe6b8652f17e13da097f80282eaa8ca4c1",
-    "bounty": false,
-    "source": false,
-    "name": "Challenge 0926",
-    "url": "https://www.intigriti.com/programs/intigriti/challenge0926/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 0,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -43583,15 +43564,135 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+  "hackenproof:dodolimitorder-smart-contract": {
+    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
+    "bounty": true,
+    "source": true,
+    "name": "DODOLimitOrder Smart Contract",
+    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
+    ],
+    "github_repos": [
+      "dodoex/dodo-limit-order"
+    ]
+  },
+  "hackenproof:linen-api-and-mobile": {
+    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
     "bounty": true,
     "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "name": "Linen API & Mobile",
+    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:polkalokr-1": {
+    "hash": "6532def9ec49e41a9793544ecd01237764168922",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr-1",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:router-smart-contract": {
+    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
+    "bounty": true,
+    "source": false,
+    "name": "Router Smart Contract",
+    "url": "https://hackenproof.com/programs/router-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitebit": {
+    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT",
+    "url": "https://hackenproof.com/programs/whitebit",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43998,36 +44099,6 @@
     ],
     "github_repos": [
       "dodoex/dodo-route-contract"
-    ]
-  },
-  "hackenproof:dodolimitorder-smart-contract": {
-    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
-    "bounty": true,
-    "source": true,
-    "name": "DODOLimitOrder Smart Contract",
-    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
-    ],
-    "github_repos": [
-      "dodoex/dodo-limit-order"
     ]
   },
   "hackenproof:dop-protocol": {
@@ -46300,26 +46371,6 @@
       "linear-protocol/linear"
     ]
   },
-  "hackenproof:linen-api-and-mobile": {
-    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
-    "bounty": true,
-    "source": false,
-    "name": "Linen API & Mobile",
-    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:local-traders-smart-contracts": {
     "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
     "bounty": true,
@@ -47159,36 +47210,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
-  },
   "hackenproof:nxt-permission-smart-contract": {
     "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
     "bounty": true,
@@ -47634,26 +47655,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:polkalokr-1": {
-    "hash": "6532def9ec49e41a9793544ecd01237764168922",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr-1",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:poloniex-web-and-api": {
     "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
     "bounty": true,
@@ -47794,15 +47795,15 @@
       "risc0/risc0"
     ]
   },
-  "hackenproof:router-smart-contract": {
-    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
+  "hackenproof:router-web": {
+    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
     "bounty": true,
     "source": false,
-    "name": "Router Smart Contract",
-    "url": "https://hackenproof.com/programs/router-smart-contract",
+    "name": "Router Web",
+    "url": "https://hackenproof.com/programs/router-web",
     "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 200000,
+    "bounty_min": 500,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47814,14 +47815,14 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:router-web": {
-    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
     "bounty": true,
     "source": false,
-    "name": "Router Web",
-    "url": "https://hackenproof.com/programs/router-web",
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
     "platform": "hackenproof",
-    "bounty_min": 500,
+    "bounty_min": 50,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -50188,26 +50189,6 @@
     "source": false,
     "name": "WEEX Web & App",
     "url": "https://hackenproof.com/programs/weex-web-and-app",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:whitebit": {
-    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT",
-    "url": "https://hackenproof.com/programs/whitebit",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 10000,
@@ -58701,8 +58682,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-29T01:16:45.451691+00:00",
-    "total": 1938,
+    "updated_at": "2026-09-29T01:47:02.204031+00:00",
+    "total": 1937,
     "qualifying": 431,
     "external": 359,
     "blockchain": 368,
