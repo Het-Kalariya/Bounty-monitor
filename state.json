@@ -1553,7 +1553,7 @@
     "github_repos": []
   },
   "hackerone:syfe_bbp": {
-    "hash": "1fbf7538bf7befc35bc2277eafe4f8b23617cbe9",
+    "hash": "959d65e516acaf40e21aabd9b68429d09ca09eb9",
     "bounty": true,
     "source": false,
     "name": "Syfe",
@@ -20172,6 +20172,84 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:hedera": {
+    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
+    "bounty": true,
+    "source": true,
+    "name": "Hedera",
+    "url": "https://immunefi.com/bug-bounty/hedera",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 30000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
+        "description": "Hedera Services Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
+        "description": "Hedera Mirror Node Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+        "description": "JSON RPC Relay"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
+        "description": "Hedera Cryptography Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/has...edera-transaction-tool",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/has...edera-transaction-tool",
+      "https://github.com/hiero-ledger/hiero-consensus-node",
+      "https://github.com/hiero-ledger/hiero-cryptography",
+      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+      "https://github.com/hiero-ledger/hiero-mirror-node",
+      "https://github.com/hiero-ledger/hiero-sdk-go",
+      "https://github.com/hiero-ledger/hiero-sdk-java",
+      "https://github.com/hiero-ledger/hiero-sdk-js"
+    ],
+    "github_repos": [
+      "hiero-ledger/hiero-consensus-node",
+      "hiero-ledger/hiero-cryptography",
+      "hiero-ledger/hiero-json-rpc-relay",
+      "hiero-ledger/hiero-mirror-node",
+      "hiero-ledger/hiero-sdk-go",
+      "hiero-ledger/hiero-sdk-java",
+      "hiero-ledger/hiero-sdk-js"
+    ]
+  },
   "immunefi:gmx": {
     "hash": "92c62f782268bd1b521d4f39704434289623b88e",
     "bounty": true,
@@ -22059,84 +22137,6 @@
       "https://immunefi.com"
     ],
     "github_repos": []
-  },
-  "immunefi:hedera": {
-    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
-    "bounty": true,
-    "source": true,
-    "name": "Hedera",
-    "url": "https://immunefi.com/bug-bounty/hedera",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 30000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
-        "description": "Hedera Services Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
-        "description": "Hedera Mirror Node Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-        "description": "JSON RPC Relay"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
-        "description": "Hedera Cryptography Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/has...edera-transaction-tool",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/has...edera-transaction-tool",
-      "https://github.com/hiero-ledger/hiero-consensus-node",
-      "https://github.com/hiero-ledger/hiero-cryptography",
-      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-      "https://github.com/hiero-ledger/hiero-mirror-node",
-      "https://github.com/hiero-ledger/hiero-sdk-go",
-      "https://github.com/hiero-ledger/hiero-sdk-java",
-      "https://github.com/hiero-ledger/hiero-sdk-js"
-    ],
-    "github_repos": [
-      "hiero-ledger/hiero-consensus-node",
-      "hiero-ledger/hiero-cryptography",
-      "hiero-ledger/hiero-json-rpc-relay",
-      "hiero-ledger/hiero-mirror-node",
-      "hiero-ledger/hiero-sdk-go",
-      "hiero-ledger/hiero-sdk-java",
-      "hiero-ledger/hiero-sdk-js"
-    ]
   },
   "immunefi:hathornetwork": {
     "hash": "f95d3672c7429889dac59b5daa8764737afd2329",
@@ -43536,6 +43536,142 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:layer3-web": {
+    "hash": "fc48191a41c77410ce46c36dff1fcae99326c1dc",
+    "bounty": true,
+    "source": false,
+    "name": "Layer3 Web",
+    "url": "https://hackenproof.com/programs/layer3-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:lcx": {
+    "hash": "68191e2a77be732a161b40d427f003ef57e8481b",
+    "bounty": true,
+    "source": false,
+    "name": "LCX",
+    "url": "https://hackenproof.com/programs/lcx",
+    "platform": "hackenproof",
+    "bounty_min": 10,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:lendvest-smart-contracts": {
+    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+    "bounty": true,
+    "source": true,
+    "name": "Lendvest Smart Contracts",
+    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
+        "description": "Ethereum Mainnet\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
+        "description": "Chainlink Automations 2.0 (CRE)"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/lendvest/lendvest-smart-staking",
+      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+    ],
+    "github_repos": [
+      "lendvest/lendvest-smart-staking"
+    ]
+  },
+  "hackenproof:ton-diamonds-web": {
+    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
+    "bounty": true,
+    "source": false,
+    "name": "TON Diamonds Web",
+    "url": "https://hackenproof.com/programs/ton-diamonds-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:toobit-web-and-mobile": {
+    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
+    "bounty": true,
+    "source": false,
+    "name": "Toobit Web & Mobile",
+    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tothemoon-web": {
+    "hash": "9a1b84d61a3dd8502e5cecdcb103770ab8bbf449",
+    "bounty": true,
+    "source": false,
+    "name": "Tothemoon Web",
+    "url": "https://hackenproof.com/programs/tothemoon-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dex-trade": {
     "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
     "bounty": true,
@@ -45976,82 +46112,6 @@
     ],
     "github_repos": [
       "layer3xyz/cubes"
-    ]
-  },
-  "hackenproof:layer3-web": {
-    "hash": "fc48191a41c77410ce46c36dff1fcae99326c1dc",
-    "bounty": true,
-    "source": false,
-    "name": "Layer3 Web",
-    "url": "https://hackenproof.com/programs/layer3-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:lcx": {
-    "hash": "68191e2a77be732a161b40d427f003ef57e8481b",
-    "bounty": true,
-    "source": false,
-    "name": "LCX",
-    "url": "https://hackenproof.com/programs/lcx",
-    "platform": "hackenproof",
-    "bounty_min": 10,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:lendvest-smart-contracts": {
-    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
-    "bounty": true,
-    "source": true,
-    "name": "Lendvest Smart Contracts",
-    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 25,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
-        "description": "Ethereum Mainnet\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
-        "description": "Chainlink Automations 2.0 (CRE)"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/lendvest/lendvest-smart-staking",
-      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
-    ],
-    "github_repos": [
-      "lendvest/lendvest-smart-staking"
     ]
   },
   "hackenproof:letsexchange-web-and-api-and-widget-swap-bridge-dex": {
@@ -49292,66 +49352,6 @@
     "platform": "hackenproof",
     "bounty_min": 150,
     "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ton-diamonds-web": {
-    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
-    "bounty": true,
-    "source": false,
-    "name": "TON Diamonds Web",
-    "url": "https://hackenproof.com/programs/ton-diamonds-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:toobit-web-and-mobile": {
-    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
-    "bounty": true,
-    "source": false,
-    "name": "Toobit Web & Mobile",
-    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tothemoon-web": {
-    "hash": "9a1b84d61a3dd8502e5cecdcb103770ab8bbf449",
-    "bounty": true,
-    "source": false,
-    "name": "Tothemoon Web",
-    "url": "https://hackenproof.com/programs/tothemoon-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -58329,7 +58329,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-30T05:00:51.741344+00:00",
+    "updated_at": "2026-09-30T05:31:14.960205+00:00",
     "total": 1916,
     "qualifying": 430,
     "external": 345,
