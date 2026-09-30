@@ -20191,6 +20191,46 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:ssvnetwork": {
+    "hash": "c275f9f6ebd49a81ec4e2d1fd8304a3a4ee8e8ea",
+    "bounty": true,
+    "source": true,
+    "name": "SSV Network",
+    "url": "https://immunefi.com/bug-bounty/ssvnetwork",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "SSV",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xDD9BC35aE942eF0cFa76930954a156B3fF30a4E1",
+        "description": "SSV Network"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xafE830B6Ee262ba11cce5F32fDCd760FFE6a66e4",
+        "description": "SSV Network View"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://etherscan.io/address/0xafe830b6ee262ba11cce5f32fdcd760ffe6a66e4",
+      "https://etherscan.io/address/0xdd9bc35ae942ef0cfa76930954a156b3ff30a4e1",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
   "immunefi:chainlink": {
     "hash": "08cc5bbcb4b675729339cb9cb47aa72116ddaac6",
     "bounty": true,
@@ -25415,46 +25455,6 @@
     "github_repos": [
       "consensys/linea-monorepo"
     ]
-  },
-  "immunefi:ssvnetwork": {
-    "hash": "c275f9f6ebd49a81ec4e2d1fd8304a3a4ee8e8ea",
-    "bounty": true,
-    "source": true,
-    "name": "SSV Network",
-    "url": "https://immunefi.com/bug-bounty/ssvnetwork",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "SSV",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xDD9BC35aE942eF0cFa76930954a156B3fF30a4E1",
-        "description": "SSV Network"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xafE830B6Ee262ba11cce5F32fDCd760FFE6a66e4",
-        "description": "SSV Network View"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://etherscan.io/address/0xafe830b6ee262ba11cce5f32fdcd760ffe6a66e4",
-      "https://etherscan.io/address/0xdd9bc35ae942ef0cfa76930954a156b3ff30a4e1",
-      "https://immunefi.com"
-    ],
-    "github_repos": []
   },
   "immunefi:instadapp": {
     "hash": "4ac2cdcd9f7db06fb012e15d497e81a558b0fe60",
@@ -43449,15 +43449,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:lendvest-smart-contracts": {
-    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+  "hackenproof:kub-chain-and-ecosystem": {
+    "hash": "8f7844fda2c97df2ec459f17ba6aad21f4268c65",
     "bounty": true,
     "source": true,
-    "name": "Lendvest Smart Contracts",
-    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "name": "KUB Chain & Ecosystem",
+    "url": "https://hackenproof.com/programs/kub-chain-and-ecosystem",
     "platform": "hackenproof",
-    "bounty_min": 25,
-    "bounty_max": 30000,
+    "bounty_min": 100,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43466,44 +43466,18 @@
     "live_status": "LIVE",
     "sc_targets": [
       {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
-        "description": "Ethereum Mainnet\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
-        "description": "Chainlink Automations 2.0 (CRE)"
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/kub-chain/bkc",
+        "description": ""
       }
     ],
-    "sc_total": 2,
+    "sc_total": 1,
     "sc_ids": [
-      "https://github.com/lendvest/lendvest-smart-staking",
-      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+      "https://github.com/kub-chain/bkc"
     ],
     "github_repos": [
-      "lendvest/lendvest-smart-staking"
+      "kub-chain/bkc"
     ]
-  },
-  "hackenproof:toobit-web-and-mobile": {
-    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
-    "bounty": true,
-    "source": false,
-    "name": "Toobit Web & Mobile",
-    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
@@ -45894,36 +45868,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:kub-chain-and-ecosystem": {
-    "hash": "8f7844fda2c97df2ec459f17ba6aad21f4268c65",
-    "bounty": true,
-    "source": true,
-    "name": "KUB Chain & Ecosystem",
-    "url": "https://hackenproof.com/programs/kub-chain-and-ecosystem",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/kub-chain/bkc",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/kub-chain/bkc"
-    ],
-    "github_repos": [
-      "kub-chain/bkc"
-    ]
-  },
   "hackenproof:kucoin": {
     "hash": "b84e20844903b7535171b39d53833c864951b346",
     "bounty": true,
@@ -46095,6 +46039,42 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:lendvest-smart-contracts": {
+    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+    "bounty": true,
+    "source": true,
+    "name": "Lendvest Smart Contracts",
+    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
+        "description": "Ethereum Mainnet\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
+        "description": "Chainlink Automations 2.0 (CRE)"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/lendvest/lendvest-smart-staking",
+      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+    ],
+    "github_repos": [
+      "lendvest/lendvest-smart-staking"
+    ]
   },
   "hackenproof:letsexchange-web-and-api-and-widget-swap-bridge-dex": {
     "hash": "bffcca0ce87c4d1f2a1217cc6ad4e3a6a21d8bb0",
@@ -49351,6 +49331,26 @@
     "source": false,
     "name": "TON Diamonds Web",
     "url": "https://hackenproof.com/programs/ton-diamonds-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:toobit-web-and-mobile": {
+    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
+    "bounty": true,
+    "source": false,
+    "name": "Toobit Web & Mobile",
+    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 10000,
@@ -58387,7 +58387,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-30T22:25:01.250032+00:00",
+    "updated_at": "2026-09-30T22:30:57.316116+00:00",
     "total": 1919,
     "qualifying": 430,
     "external": 346,
