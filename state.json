@@ -3554,7 +3554,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 56,
+    "resp_eff": 50,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4949,7 +4949,7 @@
     "github_repos": []
   },
   "hackerone:fiserv": {
-    "hash": "b2c849ccc724512fb655bf646af294c9473a49d3",
+    "hash": "06deda95aade6dc08f7afbeef9da88b1d6a10afc",
     "bounty": false,
     "source": false,
     "name": "Fiserv",
@@ -5396,7 +5396,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 87,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -42846,6 +42846,66 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:coinex-web-and-mobile": {
+    "hash": "85b44b6027e830d5af6c9810def0e4cb3050a2de",
+    "bounty": false,
+    "source": false,
+    "name": "CoinEx Web & Mobile",
+    "url": "https://hackenproof.com/programs/coinex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:coingecko": {
+    "hash": "fd39f514a2772b04ac14552f1d23763bfbd32188",
+    "bounty": true,
+    "source": false,
+    "name": "CoinGecko",
+    "url": "https://hackenproof.com/programs/coingecko",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:coinmetro-exchange": {
+    "hash": "f20a15657145b3df980931e814992175f407ea83",
+    "bounty": true,
+    "source": false,
+    "name": "CoinMetro Exchange",
+    "url": "https://hackenproof.com/programs/coinmetro-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:coinsbit": {
     "hash": "ce1112f2853c7440ed2b4b180522cf2265bf31d9",
     "bounty": true,
@@ -43893,367 +43953,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-intents-bridges": {
-    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Bridges",
-    "url": "https://hackenproof.com/programs/near-intents-bridges",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/near/mpc",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/omni-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-light-client-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/near-one/btc-bridge",
-      "https://github.com/near-one/btc-light-client-contract",
-      "https://github.com/near-one/omni-bridge",
-      "https://github.com/near/mpc"
-    ],
-    "github_repos": [
-      "near-one/btc-bridge",
-      "near-one/btc-light-client-contract",
-      "near-one/omni-bridge",
-      "near/mpc"
-    ]
-  },
-  "hackenproof:near-intents-sdk": {
-    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: SDK",
-    "url": "https://hackenproof.com/programs/near-intents-sdk",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/defuse-protocol/sdk-monorepo"
-    ],
-    "github_repos": [
-      "defuse-protocol/sdk-monorepo"
-    ]
-  },
-  "hackenproof:near-intents-smart-contracts": {
-    "hash": "d9c1c6370922440d3e851db76e21db64beb0da12",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Smart Contracts",
-    "url": "https://hackenproof.com/programs/near-intents-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/intents",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/intents/tree/main/escrow-swap",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/near/intents",
-      "https://github.com/near/intents/tree/main/escrow-swap"
-    ],
-    "github_repos": [
-      "near/intents"
-    ]
-  },
-  "hackenproof:openware": {
-    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
-    "bounty": true,
-    "source": false,
-    "name": "Openware",
-    "url": "https://hackenproof.com/programs/openware",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:p2b-exchange": {
-    "hash": "e738d523c6e11e6a381c6105e251777f4ac2a0e8",
-    "bounty": true,
-    "source": true,
-    "name": "P2B Exchange",
-    "url": "https://hackenproof.com/programs/p2b-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "API",
-        "identifier": "https://github.com/P2B-team/p2b-api-docs",
-        "description": "github.com/P2pb2b-team/P2PB2B-WSS-Public/blob/main/wss_documentation.md"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/p2b-team/p2b-api-docs"
-    ],
-    "github_repos": [
-      "p2b-team/p2b-api-docs"
-    ]
-  },
-  "hackenproof:zetachain-smart-contracts": {
-    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
-    "bounty": false,
-    "source": true,
-    "name": "ZetaChain Smart Contracts",
-    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
-        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts",
-        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/toolkit",
-        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
-        "description": "Solana interface contract for zetachain\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
-        "description": "SUI interface contract for zetachain\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
-        "description": "TON interface contract for zetachain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/zeta-chain/protocol-contracts",
-      "https://github.com/zeta-chain/protocol-contracts-evm",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-solana",
-      "https://github.com/zeta-chain/protocol-contracts-sui",
-      "https://github.com/zeta-chain/protocol-contracts-ton",
-      "https://github.com/zeta-chain/toolkit"
-    ],
-    "github_repos": [
-      "zeta-chain/protocol-contracts",
-      "zeta-chain/protocol-contracts-evm",
-      "zeta-chain/protocol-contracts-solana",
-      "zeta-chain/protocol-contracts-sui",
-      "zeta-chain/protocol-contracts-ton",
-      "zeta-chain/toolkit"
-    ]
-  },
-  "hackenproof:zetachain-web-apps": {
-    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
-    "bounty": true,
-    "source": false,
-    "name": "ZetaChain Web Apps",
-    "url": "https://hackenproof.com/programs/zetachain-web-apps",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
-  },
-  "hackenproof:coinex-web-and-mobile": {
-    "hash": "85b44b6027e830d5af6c9810def0e4cb3050a2de",
-    "bounty": false,
-    "source": false,
-    "name": "CoinEx Web & Mobile",
-    "url": "https://hackenproof.com/programs/coinex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:coingecko": {
-    "hash": "fd39f514a2772b04ac14552f1d23763bfbd32188",
-    "bounty": true,
-    "source": false,
-    "name": "CoinGecko",
-    "url": "https://hackenproof.com/programs/coingecko",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:coinmetro-exchange": {
-    "hash": "f20a15657145b3df980931e814992175f407ea83",
-    "bounty": true,
-    "source": false,
-    "name": "CoinMetro Exchange",
-    "url": "https://hackenproof.com/programs/coinmetro-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -46934,6 +46633,123 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:near-intents-bridges": {
+    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Bridges",
+    "url": "https://hackenproof.com/programs/near-intents-bridges",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/near/mpc",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/omni-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-light-client-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/near-one/btc-bridge",
+      "https://github.com/near-one/btc-light-client-contract",
+      "https://github.com/near-one/omni-bridge",
+      "https://github.com/near/mpc"
+    ],
+    "github_repos": [
+      "near-one/btc-bridge",
+      "near-one/btc-light-client-contract",
+      "near-one/omni-bridge",
+      "near/mpc"
+    ]
+  },
+  "hackenproof:near-intents-sdk": {
+    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: SDK",
+    "url": "https://hackenproof.com/programs/near-intents-sdk",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/defuse-protocol/sdk-monorepo"
+    ],
+    "github_repos": [
+      "defuse-protocol/sdk-monorepo"
+    ]
+  },
+  "hackenproof:near-intents-smart-contracts": {
+    "hash": "d9c1c6370922440d3e851db76e21db64beb0da12",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Smart Contracts",
+    "url": "https://hackenproof.com/programs/near-intents-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/intents",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/intents/tree/main/escrow-swap",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/near/intents",
+      "https://github.com/near/intents/tree/main/escrow-swap"
+    ],
+    "github_repos": [
+      "near/intents"
+    ]
+  },
   "hackenproof:near-protocol": {
     "hash": "1104e4ff3a0e93c9a8c31196ec5160df163ec5a6",
     "bounty": true,
@@ -47325,6 +47141,56 @@
     ],
     "github_repos": [
       "oort-tech/olympus"
+    ]
+  },
+  "hackenproof:openware": {
+    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
+    "bounty": true,
+    "source": false,
+    "name": "Openware",
+    "url": "https://hackenproof.com/programs/openware",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:p2b-exchange": {
+    "hash": "e738d523c6e11e6a381c6105e251777f4ac2a0e8",
+    "bounty": true,
+    "source": true,
+    "name": "P2B Exchange",
+    "url": "https://hackenproof.com/programs/p2b-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "API",
+        "identifier": "https://github.com/P2B-team/p2b-api-docs",
+        "description": "github.com/P2pb2b-team/P2PB2B-WSS-Public/blob/main/wss_documentation.md"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/p2b-team/p2b-api-docs"
+    ],
+    "github_repos": [
+      "p2b-team/p2b-api-docs"
     ]
   },
   "hackenproof:pallets": {
@@ -50528,6 +50394,140 @@
       "zeta-chain/go-tss",
       "zeta-chain/node",
       "zeta-chain/tss-lib"
+    ]
+  },
+  "hackenproof:zetachain-smart-contracts": {
+    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
+    "bounty": false,
+    "source": true,
+    "name": "ZetaChain Smart Contracts",
+    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
+        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts",
+        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/toolkit",
+        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
+        "description": "Solana interface contract for zetachain\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
+        "description": "SUI interface contract for zetachain\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
+        "description": "TON interface contract for zetachain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/zeta-chain/protocol-contracts",
+      "https://github.com/zeta-chain/protocol-contracts-evm",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-solana",
+      "https://github.com/zeta-chain/protocol-contracts-sui",
+      "https://github.com/zeta-chain/protocol-contracts-ton",
+      "https://github.com/zeta-chain/toolkit"
+    ],
+    "github_repos": [
+      "zeta-chain/protocol-contracts",
+      "zeta-chain/protocol-contracts-evm",
+      "zeta-chain/protocol-contracts-solana",
+      "zeta-chain/protocol-contracts-sui",
+      "zeta-chain/protocol-contracts-ton",
+      "zeta-chain/toolkit"
+    ]
+  },
+  "hackenproof:zetachain-web-apps": {
+    "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
+    "bounty": true,
+    "source": false,
+    "name": "ZetaChain Web Apps",
+    "url": "https://hackenproof.com/programs/zetachain-web-apps",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
     ]
   },
   "hackenproof:zo-finance-web": {
@@ -58371,7 +58371,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-09-30T10:49:25.750075+00:00",
+    "updated_at": "2026-09-30T11:18:55.720025+00:00",
     "total": 1918,
     "qualifying": 430,
     "external": 345,
