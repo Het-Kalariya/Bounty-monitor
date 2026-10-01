@@ -1,4 +1,33 @@
 {
+  "hackerone:omarchy": {
+    "hash": "c4403b87dbf76349b5d19648fd675080f66f3534",
+    "bounty": true,
+    "source": true,
+    "name": "Omarchy",
+    "url": "https://hackerone.com/omarchy",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "amount not in upstream feed",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/omacom/omarchy",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/omacom/omarchy"
+    ],
+    "github_repos": [
+      "omacom/omarchy"
+    ]
+  },
   "hackerone:nebius_ai_vdp": {
     "hash": "e8823034f99ab7d274d85db45d2555616b734552",
     "bounty": false,
@@ -690,7 +719,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 76,
     "bounty_days": 355.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7586,7 +7615,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 17099,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 2259.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9881,7 +9910,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 62,
     "bounty_days": 187.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10371,7 +10400,7 @@
     "github_repos": []
   },
   "bugcrowd:Acorns Grow, Inc.": {
-    "hash": "094491355c4bb7aeda1d1f53a76eab0199379add",
+    "hash": "b2f4ef4b4ffe767708025e184555d80e5c95c7eb",
     "bounty": true,
     "source": false,
     "name": "Acorns Grow, Inc.",
@@ -13121,6 +13150,25 @@
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "bugcrowd:lululemon": {
+    "hash": "cb1b4485302464885e3e8d8a37613dfa078b4d46",
+    "bounty": true,
+    "source": false,
+    "name": "lululemon",
+    "url": "https://bugcrowd.com/engagements/lululemon",
+    "platform": "bugcrowd",
+    "bounty_min": 0,
+    "bounty_max": 8000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 1115,
     "resp_eff": null,
     "bounty_days": null,
     "sc_targets": [],
@@ -52272,6 +52320,43 @@
       "moonwell-fi/moonwell-contracts-v2"
     ]
   },
+  "sherlock:355": {
+    "hash": "3de26f9bbfe05681ca40204d043d006d78bacce4",
+    "bounty": true,
+    "source": true,
+    "name": "Puffer",
+    "url": "https://audits.sherlock.xyz/bug-bounties/355",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/PufferFinance/Deployments-and-ACL",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/PufferFinance/puffer-contracts",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/pufferfinance/deployments-and-acl",
+      "https://github.com/pufferfinance/puffer-contracts"
+    ],
+    "github_repos": [
+      "pufferfinance/deployments-and-acl",
+      "pufferfinance/puffer-contracts"
+    ]
+  },
   "sherlock:359": {
     "hash": "ab888480728be3ebb7ccfb41efef4f02390bcb6f",
     "bounty": true,
@@ -52570,43 +52655,6 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
-    ]
-  },
-  "sherlock:355": {
-    "hash": "3de26f9bbfe05681ca40204d043d006d78bacce4",
-    "bounty": true,
-    "source": true,
-    "name": "Puffer",
-    "url": "https://audits.sherlock.xyz/bug-bounties/355",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/PufferFinance/Deployments-and-ACL",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/PufferFinance/puffer-contracts",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/pufferfinance/deployments-and-acl",
-      "https://github.com/pufferfinance/puffer-contracts"
-    ],
-    "github_repos": [
-      "pufferfinance/deployments-and-acl",
-      "pufferfinance/puffer-contracts"
     ]
   },
   "sherlock:8": {
@@ -55481,22 +55529,6 @@
     "bounty_max": 0,
     "bounty_ccy": "",
     "domains": 4953,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
-  "chaos:lululemon": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Lululemon",
-    "url": "https://bugcrowd.com/lululemon",
-    "platform": "chaos",
-    "origin": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 1115,
     "resp_eff": null,
     "bounty_days": null,
     "sc_targets": []
@@ -58431,10 +58463,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-01T17:46:32.745221+00:00",
-    "total": 1933,
-    "qualifying": 428,
-    "external": 362,
+    "updated_at": "2026-10-01T18:16:23.813344+00:00",
+    "total": 1934,
+    "qualifying": 429,
+    "external": 361,
     "blockchain": 367,
     "feed_ids": {
       "immunefi": [],
@@ -58856,11 +58888,13 @@
       "yeswehack": true,
       "federacy": true,
       "immunefi": true,
-      "hackenproof": true,
+      "hackenproof": false,
       "cantina": true,
       "sherlock": true,
       "chaos": true
     },
-    "stale": []
+    "stale": [
+      "hackenproof"
+    ]
   }
 }
