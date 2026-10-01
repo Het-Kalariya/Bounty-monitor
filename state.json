@@ -4774,7 +4774,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 73,
+    "resp_eff": 71,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7615,7 +7615,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 17099,
-    "resp_eff": 90,
+    "resp_eff": 89,
     "bounty_days": 2259.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9145,7 +9145,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 5405,
-    "resp_eff": 80,
+    "resp_eff": 79,
     "bounty_days": 181.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10427,6 +10427,25 @@
     "platform": "bugcrowd",
     "bounty_min": 0,
     "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "bugcrowd:Afterpay Bug Bounty Program": {
+    "hash": "9b4bee1208edb6ab647579ba599198c855d972a6",
+    "bounty": true,
+    "source": false,
+    "name": "Afterpay Bug Bounty Program",
+    "url": "https://bugcrowd.com/engagements/afterpay",
+    "platform": "bugcrowd",
+    "bounty_min": 0,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -15266,7 +15285,7 @@
     "github_repos": []
   },
   "bugcrowd:StonikByte": {
-    "hash": "84e4615b867c446591890d144c0d00da2f57cd0a",
+    "hash": "d1c602230b8547d5ef470fc57c3c26649f422bf6",
     "bounty": true,
     "source": false,
     "name": "StonikByte",
@@ -43296,174 +43315,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:gear-protocol": {
-    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
-    "bounty": true,
-    "source": true,
-    "name": "Gear Protocol",
-    "url": "https://hackenproof.com/programs/gear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
-        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/gear-tech/gear/tree/master/core",
-      "https://github.com/gear-tech/gear/tree/master/core-backend",
-      "https://github.com/gear-tech/gear/tree/master/core-processor",
-      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-      "https://github.com/gear-tech/gear/tree/master/node/authorship",
-      "https://github.com/gear-tech/gear/tree/master/node/service",
-      "https://github.com/gear-tech/gear/tree/master/pallets",
-      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
-    ],
-    "github_repos": [
-      "gear-tech/gear"
-    ]
-  },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
-    "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
-    ],
-    "github_repos": [
-      "oort-tech/olympus"
-    ]
-  },
-  "hackenproof:pionex-app-and-api": {
-    "hash": "259ba1647dff2e716f159208c9485a091cd227f5",
-    "bounty": true,
-    "source": false,
-    "name": "Pionex App & API",
-    "url": "https://hackenproof.com/programs/pionex-app-and-api",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:serenity-shield-testnet-campain": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Serenity Shield Testnet Campain",
-    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slush-wallet": {
-    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
-    "bounty": true,
-    "source": false,
-    "name": "Slush Wallet",
-    "url": "https://hackenproof.com/programs/slush-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -44671,6 +44522,84 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:gear-protocol": {
+    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
+    "bounty": true,
+    "source": true,
+    "name": "Gear Protocol",
+    "url": "https://hackenproof.com/programs/gear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
+        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/gear-tech/gear/tree/master/core",
+      "https://github.com/gear-tech/gear/tree/master/core-backend",
+      "https://github.com/gear-tech/gear/tree/master/core-processor",
+      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+      "https://github.com/gear-tech/gear/tree/master/node/authorship",
+      "https://github.com/gear-tech/gear/tree/master/node/service",
+      "https://github.com/gear-tech/gear/tree/master/pallets",
+      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
+    ],
+    "github_repos": [
+      "gear-tech/gear"
+    ]
   },
   "hackenproof:gmgn-web-and-mobile": {
     "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
@@ -47050,6 +46979,36 @@
     ],
     "github_repos": []
   },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
+  },
   "hackenproof:openware": {
     "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
     "bounty": true,
@@ -47229,6 +47188,26 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:pionex-app-and-api": {
+    "hash": "259ba1647dff2e716f159208c9485a091cd227f5",
+    "bounty": true,
+    "source": false,
+    "name": "Pionex App & API",
+    "url": "https://hackenproof.com/programs/pionex-app-and-api",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47637,6 +47616,26 @@
       "scallop-io/sui-lending-protocol"
     ]
   },
+  "hackenproof:serenity-shield-testnet-campain": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Serenity Shield Testnet Campain",
+    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:sg-forge-smart-contracts": {
     "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
     "bounty": false,
@@ -47722,6 +47721,26 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slush-wallet": {
+    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
+    "bounty": true,
+    "source": false,
+    "name": "Slush Wallet",
+    "url": "https://hackenproof.com/programs/slush-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 30000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -58444,8 +58463,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-01T19:38:05.038413+00:00",
-    "total": 1933,
+    "updated_at": "2026-10-01T20:08:05.840785+00:00",
+    "total": 1934,
     "qualifying": 429,
     "external": 361,
     "blockchain": 367,
