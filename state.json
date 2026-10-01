@@ -97,7 +97,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 92,
+    "resp_eff": 91,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1422,7 +1422,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": 228.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2523,7 +2523,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 84,
     "bounty_days": 355.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5219,7 +5219,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 83,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6731,7 +6731,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 50,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8087,7 +8087,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 92,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9231,7 +9231,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 198,
-    "resp_eff": 75,
+    "resp_eff": 74,
     "bounty_days": 127.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10427,25 +10427,6 @@
     "platform": "bugcrowd",
     "bounty_min": 0,
     "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "bugcrowd:Afterpay Bug Bounty Program": {
-    "hash": "9b4bee1208edb6ab647579ba599198c855d972a6",
-    "bounty": true,
-    "source": false,
-    "name": "Afterpay Bug Bounty Program",
-    "url": "https://bugcrowd.com/engagements/afterpay",
-    "platform": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -18444,25 +18425,6 @@
     "bounty_min": 0,
     "bounty_max": 0,
     "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "intigriti:coca-cola": {
-    "hash": "594eba095be9eaaf0a07bc892459dc07df98e590",
-    "bounty": false,
-    "source": false,
-    "name": "The Coca-Cola Company Vulnerability Disclosure Program",
-    "url": "https://www.intigriti.com/programs/tccc/coca-cola/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
@@ -43334,6 +43296,174 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:gear-protocol": {
+    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
+    "bounty": true,
+    "source": true,
+    "name": "Gear Protocol",
+    "url": "https://hackenproof.com/programs/gear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
+        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/gear-tech/gear/tree/master/core",
+      "https://github.com/gear-tech/gear/tree/master/core-backend",
+      "https://github.com/gear-tech/gear/tree/master/core-processor",
+      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+      "https://github.com/gear-tech/gear/tree/master/node/authorship",
+      "https://github.com/gear-tech/gear/tree/master/node/service",
+      "https://github.com/gear-tech/gear/tree/master/pallets",
+      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
+    ],
+    "github_repos": [
+      "gear-tech/gear"
+    ]
+  },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
+  },
+  "hackenproof:pionex-app-and-api": {
+    "hash": "259ba1647dff2e716f159208c9485a091cd227f5",
+    "bounty": true,
+    "source": false,
+    "name": "Pionex App & API",
+    "url": "https://hackenproof.com/programs/pionex-app-and-api",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:serenity-shield-testnet-campain": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Serenity Shield Testnet Campain",
+    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slush-wallet": {
+    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
+    "bounty": true,
+    "source": false,
+    "name": "Slush Wallet",
+    "url": "https://hackenproof.com/programs/slush-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -43549,6 +43679,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dexe-protocol-smart-contracts": {
+    "hash": "226205cd147cd2a75538291739cab08e436ff172",
+    "bounty": true,
+    "source": true,
+    "name": "DeXe Protocol Smart Contracts",
+    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
+    ],
+    "github_repos": [
+      "dexe-network/dexe-protocol"
+    ]
+  },
   "hackenproof:dexx-web-and-mobile": {
     "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
     "bounty": true,
@@ -43639,301 +43799,6 @@
       "dioneprotocol/odysseygo-installer",
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
-    ]
-  },
-  "hackenproof:openware": {
-    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
-    "bounty": true,
-    "source": false,
-    "name": "Openware",
-    "url": "https://hackenproof.com/programs/openware",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:polkadot-bridge": {
-    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
-    "bounty": false,
-    "source": true,
-    "name": "Polkadot Bridge",
-    "url": "https://hackenproof.com/programs/polkadot-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/parity-bridges-common",
-        "description": "Parity Bridges Common"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-        "description": "Polkadot SDK: Bridges"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-        "description": "Polkadot SDK: Bridge hub parachains"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
-        "description": "Runtimes: Bridge hub"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/paritytech/parity-bridges-common",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
-    ],
-    "github_repos": [
-      "paritytech/parity-bridges-common",
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
-  },
-  "hackenproof:polkadot-sdk-runtime-by-parity": {
-    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
-    "bounty": true,
-    "source": true,
-    "name": "Polkadot SDK, Runtime by Parity",
-    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk",
-        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/",
-        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk",
-      "https://github.com/polkadot-fellows/runtimes"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
-  },
-  "hackenproof:polkalokr": {
-    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:poloniex-web-and-api": {
-    "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
-    "bounty": true,
-    "source": false,
-    "name": "Poloniex Web & API",
-    "url": "https://hackenproof.com/programs/poloniex-web-and-api",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:safeswap-app": {
-    "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
-    "bounty": false,
-    "source": false,
-    "name": "SafeSwap App",
-    "url": "https://hackenproof.com/programs/safeswap-app",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ternoa-wallet": {
-    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
-    "bounty": true,
-    "source": false,
-    "name": "Ternoa Wallet",
-    "url": "https://hackenproof.com/programs/ternoa-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:uacatsdivision-smart-contracts": {
-    "hash": "4ff22760802011cbd9bb876fdad6e4962a0f9c07",
-    "bounty": false,
-    "source": true,
-    "name": "UACatsDivision Smart Contracts",
-    "url": "https://hackenproof.com/programs/uacatsdivision-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:vechainthor": {
-    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor",
-    "url": "https://hackenproof.com/programs/vechainthor",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 35000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/vechain/thor",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/vechain/thor"
-    ],
-    "github_repos": [
-      "vechain/thor"
-    ]
-  },
-  "hackenproof:vechainthor-wallet": {
-    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
-    "bounty": true,
-    "source": false,
-    "name": "VeChainThor Wallet",
-    "url": "https://hackenproof.com/programs/vechainthor-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:dexe-protocol-smart-contracts": {
-    "hash": "226205cd147cd2a75538291739cab08e436ff172",
-    "bounty": true,
-    "source": true,
-    "name": "DeXe Protocol Smart Contracts",
-    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
-    ],
-    "github_repos": [
-      "dexe-network/dexe-protocol"
     ]
   },
   "hackenproof:dodo-v3": {
@@ -44806,84 +44671,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:gear-protocol": {
-    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
-    "bounty": true,
-    "source": true,
-    "name": "Gear Protocol",
-    "url": "https://hackenproof.com/programs/gear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
-        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/gear-tech/gear/tree/master/core",
-      "https://github.com/gear-tech/gear/tree/master/core-backend",
-      "https://github.com/gear-tech/gear/tree/master/core-processor",
-      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-      "https://github.com/gear-tech/gear/tree/master/node/authorship",
-      "https://github.com/gear-tech/gear/tree/master/node/service",
-      "https://github.com/gear-tech/gear/tree/master/pallets",
-      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
-    ],
-    "github_repos": [
-      "gear-tech/gear"
-    ]
   },
   "hackenproof:gmgn-web-and-mobile": {
     "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
@@ -47263,35 +47050,25 @@
     ],
     "github_repos": []
   },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+  "hackenproof:openware": {
+    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
     "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
+    "source": false,
+    "name": "Openware",
+    "url": "https://hackenproof.com/programs/openware",
     "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
+    "bounty_min": 50,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
-    ],
-    "github_repos": [
-      "oort-tech/olympus"
-    ]
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:p2b-exchange": {
     "hash": "e738d523c6e11e6a381c6105e251777f4ac2a0e8",
@@ -47463,26 +47240,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:pionex-app-and-api": {
-    "hash": "259ba1647dff2e716f159208c9485a091cd227f5",
-    "bounty": true,
-    "source": false,
-    "name": "Pionex App & API",
-    "url": "https://hackenproof.com/programs/pionex-app-and-api",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:pointpay-web-and-mobile": {
     "hash": "e8f98e811454d59c664807480653619eaaabb220",
     "bounty": true,
@@ -47503,12 +47260,139 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:polkadot-bridge": {
+    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
+    "bounty": false,
+    "source": true,
+    "name": "Polkadot Bridge",
+    "url": "https://hackenproof.com/programs/polkadot-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/parity-bridges-common",
+        "description": "Parity Bridges Common"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+        "description": "Polkadot SDK: Bridges"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+        "description": "Polkadot SDK: Bridge hub parachains"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
+        "description": "Runtimes: Bridge hub"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/paritytech/parity-bridges-common",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
+    ],
+    "github_repos": [
+      "paritytech/parity-bridges-common",
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:polkadot-sdk-runtime-by-parity": {
+    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
+    "bounty": true,
+    "source": true,
+    "name": "Polkadot SDK, Runtime by Parity",
+    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk",
+        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/",
+        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk",
+      "https://github.com/polkadot-fellows/runtimes"
+    ],
+    "github_repos": [
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:polkalokr": {
+    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:polkalokr-1": {
     "hash": "6532def9ec49e41a9793544ecd01237764168922",
     "bounty": true,
     "source": false,
     "name": "Polkalokr",
     "url": "https://hackenproof.com/programs/polkalokr-1",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:poloniex-web-and-api": {
+    "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
+    "bounty": true,
+    "source": false,
+    "name": "Poloniex Web & API",
+    "url": "https://hackenproof.com/programs/poloniex-web-and-api",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 5000,
@@ -47703,6 +47587,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:safeswap-app": {
+    "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
+    "bounty": false,
+    "source": false,
+    "name": "SafeSwap App",
+    "url": "https://hackenproof.com/programs/safeswap-app",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:scallop-protocol-smart-contract": {
     "hash": "53eedc625dcc280a335510abb8af07432f4b8248",
     "bounty": true,
@@ -47732,26 +47636,6 @@
     "github_repos": [
       "scallop-io/sui-lending-protocol"
     ]
-  },
-  "hackenproof:serenity-shield-testnet-campain": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Serenity Shield Testnet Campain",
-    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:sg-forge-smart-contracts": {
     "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
@@ -47838,26 +47722,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slush-wallet": {
-    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
-    "bounty": true,
-    "source": false,
-    "name": "Slush Wallet",
-    "url": "https://hackenproof.com/programs/slush-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 30000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -48997,6 +48861,26 @@
       "capsule-corp-ternoa/chainbridge-solidity"
     ]
   },
+  "hackenproof:ternoa-wallet": {
+    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
+    "bounty": true,
+    "source": false,
+    "name": "Ternoa Wallet",
+    "url": "https://hackenproof.com/programs/ternoa-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:ternoa-web-and-apps": {
     "hash": "715cf363d49ba8d1735147868a4d7b0950fee276",
     "bounty": true,
@@ -49607,6 +49491,34 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:uacatsdivision-smart-contracts": {
+    "hash": "4ff22760802011cbd9bb876fdad6e4962a0f9c07",
+    "bounty": false,
+    "source": true,
+    "name": "UACatsDivision Smart Contracts",
+    "url": "https://hackenproof.com/programs/uacatsdivision-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5"
+    ],
+    "github_repos": []
+  },
   "hackenproof:uacatsdivision-web": {
     "hash": "9e510c8658b46fd2477afc2a112921b06e07b270",
     "bounty": false,
@@ -49697,6 +49609,36 @@
       "unituslabs/contracts"
     ]
   },
+  "hackenproof:vechainthor": {
+    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor",
+    "url": "https://hackenproof.com/programs/vechainthor",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 35000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/vechain/thor",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/vechain/thor"
+    ],
+    "github_repos": [
+      "vechain/thor"
+    ]
+  },
   "hackenproof:vechainthor-vip191": {
     "hash": "afab50257608dbbe57a554c25066537042bd3659",
     "bounty": true,
@@ -49723,6 +49665,26 @@
     "sc_ids": [
       "vip191"
     ],
+    "github_repos": []
+  },
+  "hackenproof:vechainthor-wallet": {
+    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
+    "bounty": true,
+    "source": false,
+    "name": "VeChainThor Wallet",
+    "url": "https://hackenproof.com/programs/vechainthor-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
     "github_repos": []
   },
   "hackenproof:virtuswap-dex-app-1": {
@@ -58482,8 +58444,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-01T19:07:24.037198+00:00",
-    "total": 1935,
+    "updated_at": "2026-10-01T19:38:05.038413+00:00",
+    "total": 1933,
     "qualifying": 429,
     "external": 361,
     "blockchain": 367,
