@@ -1602,7 +1602,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 41,
+    "resp_eff": 40,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2845,7 +2845,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 70,
     "bounty_days": 603.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2940,7 +2940,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 50,
+    "resp_eff": 60,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4924,7 +4924,7 @@
     "github_repos": []
   },
   "hackerone:fiserv": {
-    "hash": "42a7dcc8f2f7c28bfaba7a3286725089ee8eed80",
+    "hash": "aa78243da924a1314c8718b77d2161ece245549c",
     "bounty": false,
     "source": false,
     "name": "Fiserv",
@@ -7650,7 +7650,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 23056,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": 851.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7688,7 +7688,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 84,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9805,7 +9805,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 11388,
-    "resp_eff": 64,
+    "resp_eff": 63,
     "bounty_days": 151.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20133,6 +20133,129 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:xoxno": {
+    "hash": "9aeaf48fb71a97f27a3be8c6d794a990a92f97d9",
+    "bounty": true,
+    "source": true,
+    "name": "XOXNO",
+    "url": "https://immunefi.com/bug-bounty/xoxno",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://xoxno.com",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/XOXNO/rs-lending-xlm",
+        "description": "XOXNO Lending monorepo on Stellar Soroban: controller, pool, governance, position NFT, price aggregator and shared math"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/xoxno/rs-lending-xlm",
+      "https://xoxno.com"
+    ],
+    "github_repos": [
+      "xoxno/rs-lending-xlm"
+    ]
+  },
+  "immunefi:stargate": {
+    "hash": "feac087fc338cb8d9a618565d6a642a7b34f6e46",
+    "bounty": true,
+    "source": true,
+    "name": "Stargate",
+    "url": "https://immunefi.com/bug-bounty/stargate",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 10000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x3E368B6C95c6fEfB7A16dCc0D756389F3c658a06",
+        "description": "FeeLibV1ETH"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x52B35406CB2FB5e0038EdEcFc129A152a1f74087",
+        "description": "FeeLibV1USDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xe171AFcd1E0394b3312e68ca823D5BC87F3Db311",
+        "description": "FeeLibV1USDT"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x6Dd69717B1194B81A92105B7e0F94cb40f68A3e3",
+        "description": "FeeLibV1METIS"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x6D5521F46b2cba9443feFC09cBaC3B15AE0F73eB",
+        "description": "FeeLibV1mETH"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x5871A7f88b0f3F5143Bf599Fd45F8C0Dc237E881",
+        "description": "StargateMultiRewarder"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
+        "description": "StargatePoolNative"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
+        "description": "StargatePoolUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x933597a323Eb81cAe705C5bC29985172fd5A3973",
+        "description": "StargatePoolUSDT"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
+        "description": "StargatePoolMETIS"
+      }
+    ],
+    "sc_total": 15,
+    "sc_ids": [
+      "https://etherscan.io/address/0x1041d127b2d4bc700f0f563883bc689502606918",
+      "https://etherscan.io/address/0x268ca24daeff1fac2ed883c598200ccbb79e931d",
+      "https://etherscan.io/address/0x3e368b6c95c6fefb7a16dcc0d756389f3c658a06",
+      "https://etherscan.io/address/0x52b35406cb2fb5e0038edecfc129a152a1f74087",
+      "https://etherscan.io/address/0x5871a7f88b0f3f5143bf599fd45f8c0dc237e881",
+      "https://etherscan.io/address/0x6d5521f46b2cba9443fefc09cbac3b15ae0f73eb",
+      "https://etherscan.io/address/0x6d6620efa72948c5f68a3c8646d58c00d3f4a980",
+      "https://etherscan.io/address/0x6dd69717b1194b81a92105b7e0f94cb40f68a3e3",
+      "https://etherscan.io/address/0x77b2043768d28e9c9ab44e1abfc95944bce57931",
+      "https://etherscan.io/address/0x933597a323eb81cae705c5bc29985172fd5a3973",
+      "https://etherscan.io/address/0xc026395860db2d07ee33e05fe50ed7bd583189c7",
+      "https://etherscan.io/address/0xcdafb1b2db43f366e48e6f614b8dccbfeefeecd3",
+      "https://etherscan.io/address/0xe171afcd1e0394b3312e68ca823d5bc87f3db311",
+      "https://etherscan.io/address/0xff551feddbedc0aee764139ccd9cb644bb04a6bd",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
   "immunefi:stacks": {
     "hash": "9511b3828751141f67d22317a784c4213d9e7f3b",
     "bounty": true,
@@ -21694,42 +21817,6 @@
     ],
     "github_repos": [
       "stacks-sbtc/sbtc"
-    ]
-  },
-  "immunefi:xoxno": {
-    "hash": "9aeaf48fb71a97f27a3be8c6d794a990a92f97d9",
-    "bounty": true,
-    "source": true,
-    "name": "XOXNO",
-    "url": "https://immunefi.com/bug-bounty/xoxno",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://xoxno.com",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/XOXNO/rs-lending-xlm",
-        "description": "XOXNO Lending monorepo on Stellar Soroban: controller, pool, governance, position NFT, price aggregator and shared math"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/xoxno/rs-lending-xlm",
-      "https://xoxno.com"
-    ],
-    "github_repos": [
-      "xoxno/rs-lending-xlm"
     ]
   },
   "immunefi:stakewise": {
@@ -32892,93 +32979,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:stargate": {
-    "hash": "feac087fc338cb8d9a618565d6a642a7b34f6e46",
-    "bounty": true,
-    "source": true,
-    "name": "Stargate",
-    "url": "https://immunefi.com/bug-bounty/stargate",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 10000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x3E368B6C95c6fEfB7A16dCc0D756389F3c658a06",
-        "description": "FeeLibV1ETH"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x52B35406CB2FB5e0038EdEcFc129A152a1f74087",
-        "description": "FeeLibV1USDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xe171AFcd1E0394b3312e68ca823D5BC87F3Db311",
-        "description": "FeeLibV1USDT"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x6Dd69717B1194B81A92105B7e0F94cb40f68A3e3",
-        "description": "FeeLibV1METIS"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x6D5521F46b2cba9443feFC09cBaC3B15AE0F73eB",
-        "description": "FeeLibV1mETH"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x5871A7f88b0f3F5143Bf599Fd45F8C0Dc237E881",
-        "description": "StargateMultiRewarder"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x77b2043768d28E9C9aB44E1aBfC95944bcE57931",
-        "description": "StargatePoolNative"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xc026395860Db2d07ee33e05fE50ed7bD583189C7",
-        "description": "StargatePoolUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x933597a323Eb81cAe705C5bC29985172fd5A3973",
-        "description": "StargatePoolUSDT"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xcDafB1b2dB43f366E48e6F614b8DCCBFeeFEEcD3",
-        "description": "StargatePoolMETIS"
-      }
-    ],
-    "sc_total": 15,
-    "sc_ids": [
-      "https://etherscan.io/address/0x1041d127b2d4bc700f0f563883bc689502606918",
-      "https://etherscan.io/address/0x268ca24daeff1fac2ed883c598200ccbb79e931d",
-      "https://etherscan.io/address/0x3e368b6c95c6fefb7a16dcc0d756389f3c658a06",
-      "https://etherscan.io/address/0x52b35406cb2fb5e0038edecfc129a152a1f74087",
-      "https://etherscan.io/address/0x5871a7f88b0f3f5143bf599fd45f8c0dc237e881",
-      "https://etherscan.io/address/0x6d5521f46b2cba9443fefc09cbac3b15ae0f73eb",
-      "https://etherscan.io/address/0x6d6620efa72948c5f68a3c8646d58c00d3f4a980",
-      "https://etherscan.io/address/0x6dd69717b1194b81a92105b7e0f94cb40f68a3e3",
-      "https://etherscan.io/address/0x77b2043768d28e9c9ab44e1abfc95944bce57931",
-      "https://etherscan.io/address/0x933597a323eb81cae705c5bc29985172fd5a3973",
-      "https://etherscan.io/address/0xc026395860db2d07ee33e05fe50ed7bd583189c7",
-      "https://etherscan.io/address/0xcdafb1b2db43f366e48e6f614b8dccbfeefeecd3",
-      "https://etherscan.io/address/0xe171afcd1e0394b3312e68ca823d5bc87f3db311",
-      "https://etherscan.io/address/0xff551feddbedc0aee764139ccd9cb644bb04a6bd",
-      "https://immunefi.com"
-    ],
-    "github_repos": []
-  },
   "immunefi:ankr": {
     "hash": "740358d7f6e4780a0e7501547106c27ce72e2c6e",
     "bounty": true,
@@ -43267,6 +43267,331 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:doubleup-smart-contracts": {
+    "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
+    "bounty": true,
+    "source": true,
+    "name": "DoubleUp Smart Contracts",
+    "url": "https://hackenproof.com/programs/doubleup-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://suivision.xyz/project/Unihouse%20Protocol?tab=Package",
+        "description": "The code in the suivision package can be wrong as it's decompilation of the compiled byte code.\r\nEach issue must contain a PoC that reproduces the vulnerability on a local fork of mainnet, including clear execution steps and the resulting transactions."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://suivision.xyz/project/unihouse%20protocol?tab=package"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:nxt-permission-smart-contract": {
+    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
+    "bounty": true,
+    "source": true,
+    "name": "NXT Permission Smart Contract",
+    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
+    ],
+    "github_repos": [
+      "nxt-technologies-inc/nxtchain"
+    ]
+  },
+  "hackenproof:ofza-web": {
+    "hash": "15e114681cf33e59655591ea2d5554424882b574",
+    "bounty": true,
+    "source": false,
+    "name": "OFZA Web",
+    "url": "https://hackenproof.com/programs/ofza-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:polkalokr": {
+    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:smardex-smart-contracts": {
+    "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
+    "bounty": true,
+    "source": true,
+    "name": "SmarDex Smart Contracts",
+    "url": "https://hackenproof.com/programs/smardex-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x5DE8ab7E27f6E7A1fFf3E5B337584Aa43961BEeF",
+        "description": "Smart Contract - SmarDexToken\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7753F36E711B66a0350a753aba9F5651BAE76A1D",
+        "description": "Smart Contract - SmardexFactory\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xEf2f9b48d7EC80440Ab4573dF1A2aBDBE06D3f60",
+        "description": "Smart Contract - SmardexRouter\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7d85C0905a6E1Ab5837a0b57cD94A419d3a77523",
+        "description": "Smart Contract - Farming\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x80497049b005Fd236591c3CD431DBD6E06eB1A31",
+        "description": "Smart Contract - Staking\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xC049c7fE5EAa024095861212BD8a8E8Df88a2b1f",
+        "description": "Smart Contract - RewardsManager\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x865d61582abc2CCd85549774CEe171280fE82e3e",
+        "description": "Smart Contract - Autoswapper\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x9A1e1681f6D59Ca051776410465AfAda6384398f",
+        "description": "Smart Contract - SmardexFactory\r\n- Group 2 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xA8EF6FEa013034E62E2C4A9Ec1CDb059fE23Af33",
+        "description": "Smart Contract - SmardexRouter\r\n- Group 2 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
+        "description": "Smart Contract - FarmingRangeL2\r\n- Group 2 target"
+      }
+    ],
+    "sc_total": 27,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
+      "https://arbiscan.io/address/0x53d165df0414bd02e91747775450934bf2257f69",
+      "https://arbiscan.io/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
+      "https://arbiscan.io/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
+      "https://arbiscan.io/address/0xdd4536dd9636564d891c919416880a3e250f975a",
+      "https://basescan.org/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
+      "https://basescan.org/address/0x7240aac0f57fa0126c107673597ce3cd5b907e38",
+      "https://basescan.org/address/0xa5d378c05192e3f1f365d6298921879c4d51c5a3",
+      "https://basescan.org/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
+      "https://basescan.org/address/0xdd4536dd9636564d891c919416880a3e250f975a",
+      "https://bscscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
+      "https://bscscan.com/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
+      "https://bscscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
+      "https://bscscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33",
+      "https://bscscan.com/address/0xb891aeb2130805171796644a2af76fc7ff25a0b9",
+      "https://etherscan.io/address/0x5de8ab7e27f6e7a1fff3e5b337584aa43961beef",
+      "https://etherscan.io/address/0x7753f36e711b66a0350a753aba9f5651bae76a1d",
+      "https://etherscan.io/address/0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523",
+      "https://etherscan.io/address/0x80497049b005fd236591c3cd431dbd6e06eb1a31",
+      "https://etherscan.io/address/0x865d61582abc2ccd85549774cee171280fe82e3e",
+      "https://etherscan.io/address/0xc049c7fe5eaa024095861212bd8a8e8df88a2b1f",
+      "https://etherscan.io/address/0xef2f9b48d7ec80440ab4573df1a2abdbe06d3f60",
+      "https://polygonscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
+      "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
+      "https://polygonscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
+      "https://polygonscan.com/address/0x9a1e1681f6d59ca051776410465afada6384398f",
+      "https://polygonscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:smilee-smart-contracts": {
+    "hash": "597500c9698151048291895df431099bfe45d9f6",
+    "bounty": true,
+    "source": true,
+    "name": "Smilee Smart Contracts",
+    "url": "https://hackenproof.com/programs/smilee-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 75000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
+        "description": "Smilee v2 core contracts (contracts out of scope are specified in the following tabs) "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/MasterChefSmilee.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/SimpleRewarderPerSec.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/IGAccessNFT.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet",
+        "description": ""
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/igaccessnft.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/masterchefsmilee.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/simplerewarderpersec.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
+      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet"
+    ],
+    "github_repos": [
+      "smilee-finance/v2-contracts-public"
+    ]
+  },
+  "hackenproof:ternoa-web-and-apps": {
+    "hash": "715cf363d49ba8d1735147868a4d7b0950fee276",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Web and Apps",
+    "url": "https://hackenproof.com/programs/ternoa-web-and-apps",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-js",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-js"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-js"
+    ]
+  },
+  "hackenproof:zeko-protocol": {
+    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
+    "bounty": false,
+    "source": true,
+    "name": "Zeko Protocol",
+    "url": "https://hackenproof.com/programs/zeko-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/zeko",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
+        "description": "SantaClawz Github repo"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/x402-zeko",
+        "description": "x402 Github repo"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zeko-labs/santa_clawz-private_agents",
+      "https://github.com/zeko-labs/x402-zeko",
+      "https://github.com/zeko-labs/zeko"
+    ],
+    "github_repos": [
+      "zeko-labs/santa_clawz-private_agents",
+      "zeko-labs/x402-zeko",
+      "zeko-labs/zeko"
+    ]
+  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -43712,34 +44037,6 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:doubleup-smart-contracts": {
-    "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
-    "bounty": true,
-    "source": true,
-    "name": "DoubleUp Smart Contracts",
-    "url": "https://hackenproof.com/programs/doubleup-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://suivision.xyz/project/Unihouse%20Protocol?tab=Package",
-        "description": "The code in the suivision package can be wrong as it's decompilation of the compiled byte code.\r\nEach issue must contain a PoC that reproduces the vulnerability on a local fork of mainnet, including clear execution steps and the resulting transactions."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://suivision.xyz/project/unihouse%20protocol?tab=package"
-    ],
     "github_repos": []
   },
   "hackenproof:doubleup-web": {
@@ -46853,56 +47150,6 @@
       "noya-ai/noya-jul-2025-audit-scope"
     ]
   },
-  "hackenproof:nxt-permission-smart-contract": {
-    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
-    "bounty": true,
-    "source": true,
-    "name": "NXT Permission Smart Contract",
-    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
-    ],
-    "github_repos": [
-      "nxt-technologies-inc/nxtchain"
-    ]
-  },
-  "hackenproof:ofza-web": {
-    "hash": "15e114681cf33e59655591ea2d5554424882b574",
-    "bounty": true,
-    "source": false,
-    "name": "OFZA Web",
-    "url": "https://hackenproof.com/programs/ofza-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:okx": {
     "hash": "43d0d3ed4289643d7e805731e9c2f149afdf24e2",
     "bounty": true,
@@ -47277,26 +47524,6 @@
       "paritytech/polkadot-sdk",
       "polkadot-fellows/runtimes"
     ]
-  },
-  "hackenproof:polkalokr": {
-    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:polkalokr-1": {
     "hash": "6532def9ec49e41a9793544ecd01237764168922",
@@ -47703,159 +47930,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:smardex-smart-contracts": {
-    "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
-    "bounty": true,
-    "source": true,
-    "name": "SmarDex Smart Contracts",
-    "url": "https://hackenproof.com/programs/smardex-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x5DE8ab7E27f6E7A1fFf3E5B337584Aa43961BEeF",
-        "description": "Smart Contract - SmarDexToken\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7753F36E711B66a0350a753aba9F5651BAE76A1D",
-        "description": "Smart Contract - SmardexFactory\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xEf2f9b48d7EC80440Ab4573dF1A2aBDBE06D3f60",
-        "description": "Smart Contract - SmardexRouter\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7d85C0905a6E1Ab5837a0b57cD94A419d3a77523",
-        "description": "Smart Contract - Farming\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x80497049b005Fd236591c3CD431DBD6E06eB1A31",
-        "description": "Smart Contract - Staking\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xC049c7fE5EAa024095861212BD8a8E8Df88a2b1f",
-        "description": "Smart Contract - RewardsManager\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x865d61582abc2CCd85549774CEe171280fE82e3e",
-        "description": "Smart Contract - Autoswapper\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x9A1e1681f6D59Ca051776410465AfAda6384398f",
-        "description": "Smart Contract - SmardexFactory\r\n- Group 2 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xA8EF6FEa013034E62E2C4A9Ec1CDb059fE23Af33",
-        "description": "Smart Contract - SmardexRouter\r\n- Group 2 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
-        "description": "Smart Contract - FarmingRangeL2\r\n- Group 2 target"
-      }
-    ],
-    "sc_total": 27,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
-      "https://arbiscan.io/address/0x53d165df0414bd02e91747775450934bf2257f69",
-      "https://arbiscan.io/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
-      "https://arbiscan.io/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
-      "https://arbiscan.io/address/0xdd4536dd9636564d891c919416880a3e250f975a",
-      "https://basescan.org/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
-      "https://basescan.org/address/0x7240aac0f57fa0126c107673597ce3cd5b907e38",
-      "https://basescan.org/address/0xa5d378c05192e3f1f365d6298921879c4d51c5a3",
-      "https://basescan.org/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
-      "https://basescan.org/address/0xdd4536dd9636564d891c919416880a3e250f975a",
-      "https://bscscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
-      "https://bscscan.com/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
-      "https://bscscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
-      "https://bscscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33",
-      "https://bscscan.com/address/0xb891aeb2130805171796644a2af76fc7ff25a0b9",
-      "https://etherscan.io/address/0x5de8ab7e27f6e7a1fff3e5b337584aa43961beef",
-      "https://etherscan.io/address/0x7753f36e711b66a0350a753aba9f5651bae76a1d",
-      "https://etherscan.io/address/0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523",
-      "https://etherscan.io/address/0x80497049b005fd236591c3cd431dbd6e06eb1a31",
-      "https://etherscan.io/address/0x865d61582abc2ccd85549774cee171280fe82e3e",
-      "https://etherscan.io/address/0xc049c7fe5eaa024095861212bd8a8e8df88a2b1f",
-      "https://etherscan.io/address/0xef2f9b48d7ec80440ab4573df1a2abdbe06d3f60",
-      "https://polygonscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
-      "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
-      "https://polygonscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
-      "https://polygonscan.com/address/0x9a1e1681f6d59ca051776410465afada6384398f",
-      "https://polygonscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:smilee-smart-contracts": {
-    "hash": "597500c9698151048291895df431099bfe45d9f6",
-    "bounty": true,
-    "source": true,
-    "name": "Smilee Smart Contracts",
-    "url": "https://hackenproof.com/programs/smilee-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 75000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
-        "description": "Smilee v2 core contracts (contracts out of scope are specified in the following tabs) "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/MasterChefSmilee.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/SimpleRewarderPerSec.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/IGAccessNFT.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet",
-        "description": ""
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/igaccessnft.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/masterchefsmilee.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/simplerewarderpersec.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
-      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet"
-    ],
-    "github_repos": [
-      "smilee-finance/v2-contracts-public"
-    ]
   },
   "hackenproof:snowbridge-on-chain-code": {
     "hash": "a62842f821663025db5dc6c905a03f2da7e4d324",
@@ -48851,36 +48925,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:ternoa-web-and-apps": {
-    "hash": "715cf363d49ba8d1735147868a4d7b0950fee276",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Web and Apps",
-    "url": "https://hackenproof.com/programs/ternoa-web-and-apps",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-js",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-js"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-js"
-    ]
   },
   "hackenproof:tetu-smart-contracts": {
     "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
@@ -49995,50 +50039,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:zeko-protocol": {
-    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
-    "bounty": false,
-    "source": true,
-    "name": "Zeko Protocol",
-    "url": "https://hackenproof.com/programs/zeko-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/zeko",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
-        "description": "SantaClawz Github repo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/x402-zeko",
-        "description": "x402 Github repo"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zeko-labs/santa_clawz-private_agents",
-      "https://github.com/zeko-labs/x402-zeko",
-      "https://github.com/zeko-labs/zeko"
-    ],
-    "github_repos": [
-      "zeko-labs/santa_clawz-private_agents",
-      "zeko-labs/x402-zeko",
-      "zeko-labs/zeko"
-    ]
   },
   "hackenproof:zest-protocol-smart-contracts": {
     "hash": "3194c3fc6d789f81897394f1d11728b56a85871f",
@@ -52175,6 +52175,43 @@
       "yearn/yrobotreasury"
     ]
   },
+  "sherlock:300": {
+    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
+    "bounty": true,
+    "source": true,
+    "name": "Aave V4",
+    "url": "https://audits.sherlock.xyz/bug-bounties/300",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 2500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-address-book",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave/aave-v4",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/aave-dao/aave-address-book",
+      "https://github.com/aave/aave-v4"
+    ],
+    "github_repos": [
+      "aave-dao/aave-address-book",
+      "aave/aave-v4"
+    ]
+  },
   "sherlock:344": {
     "hash": "dcc25d4090da7bbb924fd16594f4e3ff70c4b11f",
     "bounty": true,
@@ -52233,43 +52270,6 @@
     ],
     "github_repos": [
       "moonwell-fi/moonwell-contracts-v2"
-    ]
-  },
-  "sherlock:355": {
-    "hash": "3de26f9bbfe05681ca40204d043d006d78bacce4",
-    "bounty": true,
-    "source": true,
-    "name": "Puffer",
-    "url": "https://audits.sherlock.xyz/bug-bounties/355",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/PufferFinance/Deployments-and-ACL",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/PufferFinance/puffer-contracts",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/pufferfinance/deployments-and-acl",
-      "https://github.com/pufferfinance/puffer-contracts"
-    ],
-    "github_repos": [
-      "pufferfinance/deployments-and-acl",
-      "pufferfinance/puffer-contracts"
     ]
   },
   "sherlock:359": {
@@ -52572,15 +52572,15 @@
       "seamless-protocol/leverage-tokens"
     ]
   },
-  "sherlock:300": {
-    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
+  "sherlock:355": {
+    "hash": "3de26f9bbfe05681ca40204d043d006d78bacce4",
     "bounty": true,
     "source": true,
-    "name": "Aave V4",
-    "url": "https://audits.sherlock.xyz/bug-bounties/300",
+    "name": "Puffer",
+    "url": "https://audits.sherlock.xyz/bug-bounties/355",
     "platform": "sherlock",
     "bounty_min": 0,
-    "bounty_max": 2500000,
+    "bounty_max": 100000,
     "bounty_ccy": "USDC",
     "bounty_note": "",
     "domains": 0,
@@ -52590,23 +52590,23 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-address-book",
+        "identifier": "https://github.com/PufferFinance/Deployments-and-ACL",
         "description": "sherlock scope"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave/aave-v4",
+        "identifier": "https://github.com/PufferFinance/puffer-contracts",
         "description": "sherlock scope"
       }
     ],
     "sc_total": 2,
     "sc_ids": [
-      "https://github.com/aave-dao/aave-address-book",
-      "https://github.com/aave/aave-v4"
+      "https://github.com/pufferfinance/deployments-and-acl",
+      "https://github.com/pufferfinance/puffer-contracts"
     ],
     "github_repos": [
-      "aave-dao/aave-address-book",
-      "aave/aave-v4"
+      "pufferfinance/deployments-and-acl",
+      "pufferfinance/puffer-contracts"
     ]
   },
   "sherlock:8": {
@@ -58431,7 +58431,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-01T17:16:13.904731+00:00",
+    "updated_at": "2026-10-01T17:46:32.745221+00:00",
     "total": 1933,
     "qualifying": 428,
     "external": 362,
