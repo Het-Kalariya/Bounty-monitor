@@ -1631,7 +1631,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 41,
+    "resp_eff": 40,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2043,7 +2043,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 65,
+    "resp_eff": 66,
     "bounty_days": 392.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2062,7 +2062,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3710,7 +3710,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": 517.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7615,7 +7615,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 17099,
-    "resp_eff": 90,
+    "resp_eff": 89,
     "bounty_days": 2216.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -18767,6 +18767,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:arkanenetwork": {
+    "hash": "948bfaf22859eb66eca8b2211e3928f3dfc56428",
+    "bounty": true,
+    "source": false,
+    "name": "Venly",
+    "url": "https://www.intigriti.com/programs/arkane/arkanenetwork/detail",
+    "platform": "intigriti",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:veriffbugbounty": {
     "hash": "4c7f7367934947612264d26dee7a27b759e7163e",
     "bounty": true,
@@ -20198,6 +20217,101 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:exactly": {
+    "hash": "2f70b03cc3825f082c29aa75bb205db87cfc1e8e",
+    "bounty": true,
+    "source": true,
+    "name": "Exactly",
+    "url": "https://immunefi.com/bug-bounty/exactly",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xd5f8c9d87b7691449dec453d041d9054e0fdd228",
+        "description": "Refunder"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x22ab31Cd55130435b5efBf9224b6a9d5EC36533F",
+        "description": "MarketWstETH"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xa430A427bd00210506589906a71B54d6C256CEdb",
+        "description": "MarketOP"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x8C2F35c8076bCb5D4b696bAE11AcA0ac0Dd873e4",
+        "description": "InterestRateModelUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x6E1Bb47F2895E84160f61df922e7fF0B656f3Cff",
+        "description": "InstallmentsRouter"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xbea586A167853ADddEF12818f264f1F9823fBc18",
+        "description": "EscrowedEXA"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x6926B434CCe9b5b7966aE1BfEef6D0A7DCF3A8bb",
+        "description": "MarketUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x59a644e490e48235adf8ba9b814a4f666c4feb3a",
+        "description": "IssuerChecker"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x92024C4bDa9DA602b711B9AbB610d072018eb58b",
+        "description": "TimelockController"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xBd1ba78A3976cAB420A9203E6ef14D18C2B2E031",
+        "description": "RewardsController"
+      }
+    ],
+    "sc_total": 23,
+    "sc_ids": [
+      "https://immunefi.com",
+      "https://optimistic.etherscan.io/address/0x22ab31cd55130435b5efbf9224b6a9d5ec36533f",
+      "https://optimistic.etherscan.io/address/0x29babff3eba7b517a75109ea8fd6d1eab4a10258",
+      "https://optimistic.etherscan.io/address/0x3179265d20d13ce507157b8087de48759eb21006",
+      "https://optimistic.etherscan.io/address/0x3d73d0fb9e63c49ba8e9cd738964d5e08c047f3e",
+      "https://optimistic.etherscan.io/address/0x59a644e490e48235adf8ba9b814a4f666c4feb3a",
+      "https://optimistic.etherscan.io/address/0x60d92e570d096f8e5c99a600bd130d71295aaf38",
+      "https://optimistic.etherscan.io/address/0x6817974ca2c354f2fa40d8349b725b5bf81c8338",
+      "https://optimistic.etherscan.io/address/0x6926b434cce9b5b7966ae1bfeef6d0a7dcf3a8bb",
+      "https://optimistic.etherscan.io/address/0x6e1bb47f2895e84160f61df922e7ff0b656f3cff",
+      "https://optimistic.etherscan.io/address/0x6f748fd65d7c71949ba6641b3248c4c191f3b322",
+      "https://optimistic.etherscan.io/address/0x81c9a7b55a4df39a9b7b5f781ec0e53539694873",
+      "https://optimistic.etherscan.io/address/0x8c2f35c8076bcb5d4b696bae11aca0ac0dd873e4",
+      "https://optimistic.etherscan.io/address/0x8f498c8240e621f8050249d1c2f5f2aaee484ca0",
+      "https://optimistic.etherscan.io/address/0x92024c4bda9da602b711b9abb610d072018eb58b",
+      "https://optimistic.etherscan.io/address/0xa430a427bd00210506589906a71b54d6c256cedb",
+      "https://optimistic.etherscan.io/address/0xaeb62e6f27bc103702e7bc879ae98bcea56f027e",
+      "https://optimistic.etherscan.io/address/0xb27113b72135942065e0fa09984fe2bf008d5f3c",
+      "https://optimistic.etherscan.io/address/0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031",
+      "https://optimistic.etherscan.io/address/0xbea586a167853adddef12818f264f1f9823fbc18",
+      "https://optimistic.etherscan.io/address/0xc4d4500326981eacd020e20a81b1c479c161c7ef",
+      "https://optimistic.etherscan.io/address/0xceed2bfe740f02db6094ebe89ff93b1031be752b",
+      "https://optimistic.etherscan.io/address/0xd5f8c9d87b7691449dec453d041d9054e0fdd228"
+    ],
     "github_repos": []
   },
   "immunefi:folksfinance": {
@@ -34069,101 +34183,6 @@
       "immunefi-team/attackathon-xrpl-lending-protocol"
     ]
   },
-  "immunefi:exactly": {
-    "hash": "2f70b03cc3825f082c29aa75bb205db87cfc1e8e",
-    "bounty": true,
-    "source": true,
-    "name": "Exactly",
-    "url": "https://immunefi.com/bug-bounty/exactly",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xd5f8c9d87b7691449dec453d041d9054e0fdd228",
-        "description": "Refunder"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x22ab31Cd55130435b5efBf9224b6a9d5EC36533F",
-        "description": "MarketWstETH"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xa430A427bd00210506589906a71B54d6C256CEdb",
-        "description": "MarketOP"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x8C2F35c8076bCb5D4b696bAE11AcA0ac0Dd873e4",
-        "description": "InterestRateModelUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x6E1Bb47F2895E84160f61df922e7fF0B656f3Cff",
-        "description": "InstallmentsRouter"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xbea586A167853ADddEF12818f264f1F9823fBc18",
-        "description": "EscrowedEXA"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x6926B434CCe9b5b7966aE1BfEef6D0A7DCF3A8bb",
-        "description": "MarketUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x59a644e490e48235adf8ba9b814a4f666c4feb3a",
-        "description": "IssuerChecker"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x92024C4bDa9DA602b711B9AbB610d072018eb58b",
-        "description": "TimelockController"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xBd1ba78A3976cAB420A9203E6ef14D18C2B2E031",
-        "description": "RewardsController"
-      }
-    ],
-    "sc_total": 23,
-    "sc_ids": [
-      "https://immunefi.com",
-      "https://optimistic.etherscan.io/address/0x22ab31cd55130435b5efbf9224b6a9d5ec36533f",
-      "https://optimistic.etherscan.io/address/0x29babff3eba7b517a75109ea8fd6d1eab4a10258",
-      "https://optimistic.etherscan.io/address/0x3179265d20d13ce507157b8087de48759eb21006",
-      "https://optimistic.etherscan.io/address/0x3d73d0fb9e63c49ba8e9cd738964d5e08c047f3e",
-      "https://optimistic.etherscan.io/address/0x59a644e490e48235adf8ba9b814a4f666c4feb3a",
-      "https://optimistic.etherscan.io/address/0x60d92e570d096f8e5c99a600bd130d71295aaf38",
-      "https://optimistic.etherscan.io/address/0x6817974ca2c354f2fa40d8349b725b5bf81c8338",
-      "https://optimistic.etherscan.io/address/0x6926b434cce9b5b7966ae1bfeef6d0a7dcf3a8bb",
-      "https://optimistic.etherscan.io/address/0x6e1bb47f2895e84160f61df922e7ff0b656f3cff",
-      "https://optimistic.etherscan.io/address/0x6f748fd65d7c71949ba6641b3248c4c191f3b322",
-      "https://optimistic.etherscan.io/address/0x81c9a7b55a4df39a9b7b5f781ec0e53539694873",
-      "https://optimistic.etherscan.io/address/0x8c2f35c8076bcb5d4b696bae11aca0ac0dd873e4",
-      "https://optimistic.etherscan.io/address/0x8f498c8240e621f8050249d1c2f5f2aaee484ca0",
-      "https://optimistic.etherscan.io/address/0x92024c4bda9da602b711b9abb610d072018eb58b",
-      "https://optimistic.etherscan.io/address/0xa430a427bd00210506589906a71b54d6c256cedb",
-      "https://optimistic.etherscan.io/address/0xaeb62e6f27bc103702e7bc879ae98bcea56f027e",
-      "https://optimistic.etherscan.io/address/0xb27113b72135942065e0fa09984fe2bf008d5f3c",
-      "https://optimistic.etherscan.io/address/0xbd1ba78a3976cab420a9203e6ef14d18c2b2e031",
-      "https://optimistic.etherscan.io/address/0xbea586a167853adddef12818f264f1f9823fbc18",
-      "https://optimistic.etherscan.io/address/0xc4d4500326981eacd020e20a81b1c479c161c7ef",
-      "https://optimistic.etherscan.io/address/0xceed2bfe740f02db6094ebe89ff93b1031be752b",
-      "https://optimistic.etherscan.io/address/0xd5f8c9d87b7691449dec453d041d9054e0fdd228"
-    ],
-    "github_repos": []
-  },
   "immunefi:variational": {
     "hash": "d7eee746259a5d9aaf2a73cc425c96d9940f0da0",
     "bounty": true,
@@ -43695,6 +43714,86 @@
       "dodoex/dodo-v3"
     ]
   },
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
+    "bounty": true,
+    "source": false,
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
+  },
   "hackenproof:dodofeerouteproxy-smart-contract": {
     "hash": "f12d701eadb4bf7324e76146292d1a91853a1fcf",
     "bounty": true,
@@ -43724,123 +43823,6 @@
     "github_repos": [
       "dodoex/dodo-route-contract"
     ]
-  },
-  "hackenproof:exzo-network-web-and-api": {
-    "hash": "75ca97c01d66baeb0ba5a3976ca4e7ca93e0646c",
-    "bounty": true,
-    "source": true,
-    "name": "Exzo Network Web & API",
-    "url": "https://hackenproof.com/programs/exzo-network-web-and-api",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "API",
-        "identifier": "https://github.com/ExzoNetwork/web3.js",
-        "description": ""
-      },
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/ExzoNetwork/Exzo-Network-Native-Block-Explorer",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/exzonetwork/exzo-network-native-block-explorer",
-      "https://github.com/exzonetwork/web3.js"
-    ],
-    "github_repos": [
-      "exzonetwork/exzo-network-native-block-explorer",
-      "exzonetwork/web3.js"
-    ]
-  },
-  "hackenproof:virtuswap-smart-contract": {
-    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
-    "bounty": true,
-    "source": true,
-    "name": "VirtuSwap Smart Contract",
-    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/virtuswap/v1-core/tree/main/contracts"
-    ],
-    "github_repos": [
-      "virtuswap/v1-core"
-    ]
-  },
-  "hackenproof:volo-smart-contracts": {
-    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
-    "bounty": true,
-    "source": true,
-    "name": "Volo Smart Contracts",
-    "url": "https://hackenproof.com/programs/volo-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/sui-volo/volo-smart-contracts"
-    ],
-    "github_repos": [
-      "sui-volo/volo-smart-contracts"
-    ]
-  },
-  "hackenproof:volo-web": {
-    "hash": "a171fd249bf83bc2e5cd804d9014df3e8ab54144",
-    "bounty": true,
-    "source": false,
-    "name": "Volo Web",
-    "url": "https://hackenproof.com/programs/volo-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:dodolimitorder-smart-contract": {
     "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
@@ -44260,6 +44242,43 @@
     ],
     "github_repos": [
       "exzonetwork/web-wallet"
+    ]
+  },
+  "hackenproof:exzo-network-web-and-api": {
+    "hash": "75ca97c01d66baeb0ba5a3976ca4e7ca93e0646c",
+    "bounty": true,
+    "source": true,
+    "name": "Exzo Network Web & API",
+    "url": "https://hackenproof.com/programs/exzo-network-web-and-api",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "API",
+        "identifier": "https://github.com/ExzoNetwork/web3.js",
+        "description": ""
+      },
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/ExzoNetwork/Exzo-Network-Native-Block-Explorer",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/exzonetwork/exzo-network-native-block-explorer",
+      "https://github.com/exzonetwork/web3.js"
+    ],
+    "github_repos": [
+      "exzonetwork/exzo-network-native-block-explorer",
+      "exzonetwork/web3.js"
     ]
   },
   "hackenproof:fastex-web": {
@@ -46944,56 +46963,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
-    "bounty": true,
-    "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
-  },
   "hackenproof:nxt-permission-smart-contract": {
     "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
     "bounty": true,
@@ -47071,36 +47040,6 @@
       "https://github.com/okx"
     ],
     "github_repos": []
-  },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
-    "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
-    ],
-    "github_repos": [
-      "oort-tech/olympus"
-    ]
   },
   "hackenproof:openware": {
     "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
@@ -49805,6 +49744,86 @@
     "source": false,
     "name": "VirtuSwap DEX APP",
     "url": "https://hackenproof.com/programs/virtuswap-dex-app-1",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:virtuswap-smart-contract": {
+    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
+    "bounty": true,
+    "source": true,
+    "name": "VirtuSwap Smart Contract",
+    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/virtuswap/v1-core/tree/main/contracts"
+    ],
+    "github_repos": [
+      "virtuswap/v1-core"
+    ]
+  },
+  "hackenproof:volo-smart-contracts": {
+    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
+    "bounty": true,
+    "source": true,
+    "name": "Volo Smart Contracts",
+    "url": "https://hackenproof.com/programs/volo-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/sui-volo/volo-smart-contracts"
+    ],
+    "github_repos": [
+      "sui-volo/volo-smart-contracts"
+    ]
+  },
+  "hackenproof:volo-web": {
+    "hash": "a171fd249bf83bc2e5cd804d9014df3e8ab54144",
+    "bounty": true,
+    "source": false,
+    "name": "Volo Web",
+    "url": "https://hackenproof.com/programs/volo-web",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 5000,
@@ -58428,8 +58447,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-02T15:21:25.031965+00:00",
-    "total": 1932,
+    "updated_at": "2026-10-02T15:51:38.607612+00:00",
+    "total": 1933,
     "qualifying": 429,
     "external": 358,
     "blockchain": 367,
