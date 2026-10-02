@@ -2420,7 +2420,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 200715,
-    "resp_eff": 90,
+    "resp_eff": 89,
     "bounty_days": 104.0,
     "sc_targets": [
       {
@@ -3824,7 +3824,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 73,
+    "resp_eff": 72,
     "bounty_days": 270.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3938,7 +3938,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 7404,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 713.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9378,7 +9378,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 22790,
-    "resp_eff": 94,
+    "resp_eff": 93,
     "bounty_days": 505.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10152,7 +10152,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -41494,7 +41494,7 @@
     "github_repos": []
   },
   "hackenproof:bingx-exchange": {
-    "hash": "4e3c30081bb4355b231cd9e07ee153d5133fbd33",
+    "hash": "81fd6b0c6efe965aa6bf30c5395795c9aebcfb9e",
     "bounty": true,
     "source": false,
     "name": "BingX Exchange",
@@ -43726,6 +43726,86 @@
       "dodoex/dodo-limit-order"
     ]
   },
+  "hackenproof:evaa-smart-contracts": {
+    "hash": "13f158186f4c6bf44a31b67c71bd2bb74b5a7177",
+    "bounty": false,
+    "source": true,
+    "name": "EVAA Smart Contracts",
+    "url": "https://hackenproof.com/programs/evaa-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/evaafi/contracts/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/evaafi/contracts/tree/main/contracts"
+    ],
+    "github_repos": [
+      "evaafi/contracts"
+    ]
+  },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:tickets-travel-network-slash-mobile": {
+    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Mobile",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dop-protocol": {
     "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
     "bounty": true,
@@ -43970,36 +44050,6 @@
     ],
     "github_repos": [
       "dao-envelop/envelop-protocol-v1"
-    ]
-  },
-  "hackenproof:evaa-smart-contracts": {
-    "hash": "13f158186f4c6bf44a31b67c71bd2bb74b5a7177",
-    "bounty": false,
-    "source": true,
-    "name": "EVAA Smart Contracts",
-    "url": "https://hackenproof.com/programs/evaa-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/evaafi/contracts/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/evaafi/contracts/tree/main/contracts"
-    ],
-    "github_repos": [
-      "evaafi/contracts"
     ]
   },
   "hackenproof:evaa-web": {
@@ -46855,36 +46905,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
-  },
   "hackenproof:nxt-permission-smart-contract": {
     "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
     "bounty": true,
@@ -49044,26 +49064,6 @@
     "github_repos": [
       "code-payments/flipcash-program"
     ]
-  },
-  "hackenproof:tickets-travel-network-slash-mobile": {
-    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Mobile",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:tickets-travel-network-slash-updated-ui": {
     "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
@@ -58415,7 +58415,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-02T21:23:58.828809+00:00",
+    "updated_at": "2026-10-02T22:22:37.435146+00:00",
     "total": 1932,
     "qualifying": 428,
     "external": 359,
