@@ -2855,7 +2855,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 76,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4736,7 +4736,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7351,7 +7351,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 255,
-    "resp_eff": 61,
+    "resp_eff": 60,
     "bounty_days": 2212.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8106,7 +8106,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 453,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 595.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8325,7 +8325,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 2139,
-    "resp_eff": 62,
+    "resp_eff": 61,
     "bounty_days": 1238.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43268,56 +43268,6 @@
       "dexalot/contracts"
     ]
   },
-  "hackenproof:dexx-web-and-mobile": {
-    "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
-    "bounty": true,
-    "source": false,
-    "name": "DEXX Web & Mobile",
-    "url": "https://hackenproof.com/programs/dexx-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:dodo-v3": {
-    "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
-    "bounty": true,
-    "source": true,
-    "name": "DODO V3",
-    "url": "https://hackenproof.com/programs/dodo-v3",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/DODOEX/dodo-v3/tree/main/contracts/DODOV3MM",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dodoex/dodo-v3/tree/main/contracts/dodov3mm"
-    ],
-    "github_repos": [
-      "dodoex/dodo-v3"
-    ]
-  },
   "hackenproof:dexalot-web-and-mobile": {
     "hash": "a19a8e0ccd0848b0f60ff678e81567ca3c505c73",
     "bounty": true,
@@ -43367,6 +43317,26 @@
     "github_repos": [
       "dexe-network/dexe-protocol"
     ]
+  },
+  "hackenproof:dexx-web-and-mobile": {
+    "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
+    "bounty": true,
+    "source": false,
+    "name": "DEXX Web & Mobile",
+    "url": "https://hackenproof.com/programs/dexx-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
@@ -43438,6 +43408,36 @@
       "dioneprotocol/odysseygo-installer",
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
+    ]
+  },
+  "hackenproof:dodo-v3": {
+    "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
+    "bounty": true,
+    "source": true,
+    "name": "DODO V3",
+    "url": "https://hackenproof.com/programs/dodo-v3",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/DODOEX/dodo-v3/tree/main/contracts/DODOV3MM",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dodoex/dodo-v3/tree/main/contracts/dodov3mm"
+    ],
+    "github_repos": [
+      "dodoex/dodo-v3"
     ]
   },
   "hackenproof:dodofeerouteproxy-smart-contract": {
@@ -58109,7 +58109,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-04T16:08:42.694494+00:00",
+    "updated_at": "2026-10-04T16:38:54.896358+00:00",
     "total": 1924,
     "qualifying": 426,
     "external": 354,
