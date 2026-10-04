@@ -4622,7 +4622,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 58,
+    "resp_eff": 59,
     "bounty_days": 166.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7539,7 +7539,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 2248,
-    "resp_eff": 45,
+    "resp_eff": 44,
     "bounty_days": 1737.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -30147,121 +30147,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:starknet": {
-    "hash": "e68127a723c10a97d74e89ca3fa05ab58bb865d6",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet",
-    "url": "https://immunefi.com/bug-bounty/starknet",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/alloc.cairo",
-        "description": "Cairo - alloc.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/bitwise.cairo",
-        "description": "Cairo - bitwise.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/bool.cairo",
-        "description": "Cairo - bool.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/cairo_builtins.cairo",
-        "description": "Cairo - cairo_builtins.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/default_dict.cairo",
-        "description": "Cairo - default_dict.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/dict.cairo",
-        "description": "Cairo - dict.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/dict_access.cairo",
-        "description": "Cairo - dict_access.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/ec.cairo",
-        "description": "Cairo - ec.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/ec_point.cairo",
-        "description": "Cairo - ec_point.cairo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/find_element.cairo",
-        "description": "Cairo - find_element.cairo"
-      }
-    ],
-    "sc_total": 39,
-    "sc_ids": [
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/alloc.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/bitwise.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/bool.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/cairo_builtins.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/default_dict.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/dict.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/dict_access.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/ec.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/ec_point.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/find_element.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/hash.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/hash_chain.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/hash_state.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/invoke.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/keccak.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/math.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/math_cmp.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/memcpy.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/memset.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/merkle_multi_update.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/merkle_update.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/patricia.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/pow.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/registers.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/segments.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/serialize.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/set.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/signature.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/small_merkle_tree.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/squash_dict.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/uint256.cairo",
-      "https://github.com/starkware-libs/cairo-lang/blob/master/src/starkware/cairo/common/usort.cairo",
-      "https://github.com/starkware-libs/cairo-lang/tree/master/src/starkware/solidity/components",
-      "https://github.com/starkware-libs/cairo-lang/tree/master/src/starkware/solidity/interfaces",
-      "https://github.com/starkware-libs/cairo-lang/tree/master/src/starkware/solidity/libraries",
-      "https://github.com/starkware-libs/cairo-lang/tree/master/src/starkware/starknet/solidity",
-      "https://github.com/starkware-libs/sequencer/tree/main-v0.14.3/crates/apollo_starknet_os_program/src/cairo/starkware/starknet/core/os"
-    ],
-    "github_repos": [
-      "starknet-io/starkgate-contracts",
-      "starkware-libs/cairo-lang",
-      "starkware-libs/sequencer"
-    ]
-  },
   "immunefi:benqi": {
     "hash": "d7d51b6bb7232d1fe289bdcb0e3f2c19987cc00a",
     "bounty": true,
@@ -32582,98 +32467,6 @@
       "https://solscan.io/account/extmahs9bufmycvikcvnsraxgs5pcqmmzcnhrttqe85"
     ],
     "github_repos": []
-  },
-  "immunefi:starknet-staking": {
-    "hash": "3b523e097860a324500b223b9ca466e13d4c36e2",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Staking",
-    "url": "https://immunefi.com/bug-bounty/starknet-staking",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC or STRK",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierStorage.sol",
-        "description": "RewardSupplierStorage.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierExternalInterfaces.sol",
-        "description": "RewardSupplierExternalInterfaces.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplier.sol",
-        "description": "RewardSupplier.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/MintManager.sol",
-        "description": "MintManager.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/libraries",
-        "description": "L1 Solidity Libraries"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/interfaces",
-        "description": "L1 Solidity Interfaces"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/components",
-        "description": "L1 Solidity Components"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/upgrade/ProxySupportImpl.sol",
-        "description": "Upgrade_ProxySupportImpl.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/PeriodMintLimit.sol",
-        "description": "PeriodMintLimit.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
-        "description": "utils.cairo"
-      }
-    ],
-    "sc_total": 18,
-    "sc_ids": [
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/minting_curve.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/pool.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/reward_supplier.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/staking.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/periodmintlimit.sol",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/upgrade/proxysupportimpl.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/components",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/interfaces",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/libraries",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/mintmanager.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplier.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierexternalinterfaces.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierstorage.sol"
-    ],
-    "github_repos": [
-      "starkware-libs/starknet-staking"
-    ]
   },
   "immunefi:synthetix": {
     "hash": "44e212f9af7904d9a41e43fb854cf7e10e607efd",
@@ -43755,6 +43548,145 @@
     ],
     "github_repos": []
   },
+  "hackenproof:slex-web": {
+    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
+    "bounty": true,
+    "source": false,
+    "name": "Slex Web",
+    "url": "https://hackenproof.com/programs/slex-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slush-wallet": {
+    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
+    "bounty": true,
+    "source": false,
+    "name": "Slush Wallet",
+    "url": "https://hackenproof.com/programs/slush-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:smardex-smart-contracts": {
+    "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
+    "bounty": true,
+    "source": true,
+    "name": "SmarDex Smart Contracts",
+    "url": "https://hackenproof.com/programs/smardex-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x5DE8ab7E27f6E7A1fFf3E5B337584Aa43961BEeF",
+        "description": "Smart Contract - SmarDexToken\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7753F36E711B66a0350a753aba9F5651BAE76A1D",
+        "description": "Smart Contract - SmardexFactory\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xEf2f9b48d7EC80440Ab4573dF1A2aBDBE06D3f60",
+        "description": "Smart Contract - SmardexRouter\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7d85C0905a6E1Ab5837a0b57cD94A419d3a77523",
+        "description": "Smart Contract - Farming\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x80497049b005Fd236591c3CD431DBD6E06eB1A31",
+        "description": "Smart Contract - Staking\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xC049c7fE5EAa024095861212BD8a8E8Df88a2b1f",
+        "description": "Smart Contract - RewardsManager\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x865d61582abc2CCd85549774CEe171280fE82e3e",
+        "description": "Smart Contract - Autoswapper\r\n- Group 1 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x9A1e1681f6D59Ca051776410465AfAda6384398f",
+        "description": "Smart Contract - SmardexFactory\r\n- Group 2 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xA8EF6FEa013034E62E2C4A9Ec1CDb059fE23Af33",
+        "description": "Smart Contract - SmardexRouter\r\n- Group 2 target"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
+        "description": "Smart Contract - FarmingRangeL2\r\n- Group 2 target"
+      }
+    ],
+    "sc_total": 27,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
+      "https://arbiscan.io/address/0x53d165df0414bd02e91747775450934bf2257f69",
+      "https://arbiscan.io/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
+      "https://arbiscan.io/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
+      "https://arbiscan.io/address/0xdd4536dd9636564d891c919416880a3e250f975a",
+      "https://basescan.org/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
+      "https://basescan.org/address/0x7240aac0f57fa0126c107673597ce3cd5b907e38",
+      "https://basescan.org/address/0xa5d378c05192e3f1f365d6298921879c4d51c5a3",
+      "https://basescan.org/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
+      "https://basescan.org/address/0xdd4536dd9636564d891c919416880a3e250f975a",
+      "https://bscscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
+      "https://bscscan.com/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
+      "https://bscscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
+      "https://bscscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33",
+      "https://bscscan.com/address/0xb891aeb2130805171796644a2af76fc7ff25a0b9",
+      "https://etherscan.io/address/0x5de8ab7e27f6e7a1fff3e5b337584aa43961beef",
+      "https://etherscan.io/address/0x7753f36e711b66a0350a753aba9f5651bae76a1d",
+      "https://etherscan.io/address/0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523",
+      "https://etherscan.io/address/0x80497049b005fd236591c3cd431dbd6e06eb1a31",
+      "https://etherscan.io/address/0x865d61582abc2ccd85549774cee171280fe82e3e",
+      "https://etherscan.io/address/0xc049c7fe5eaa024095861212bd8a8e8df88a2b1f",
+      "https://etherscan.io/address/0xef2f9b48d7ec80440ab4573df1a2abdbe06d3f60",
+      "https://polygonscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
+      "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
+      "https://polygonscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
+      "https://polygonscan.com/address/0x9a1e1681f6d59ca051776410465afada6384398f",
+      "https://polygonscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33"
+    ],
+    "github_repos": []
+  },
   "hackenproof:doubleup-web": {
     "hash": "8815572173b6fe9bbe8579f2350978dc298943ab",
     "bounty": true,
@@ -47675,145 +47607,6 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slex-web": {
-    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
-    "bounty": true,
-    "source": false,
-    "name": "Slex Web",
-    "url": "https://hackenproof.com/programs/slex-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:slush-wallet": {
-    "hash": "979636be4acf6643335e27d2ee4fa84d54297995",
-    "bounty": true,
-    "source": false,
-    "name": "Slush Wallet",
-    "url": "https://hackenproof.com/programs/slush-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:smardex-smart-contracts": {
-    "hash": "c7db5848d2ec877891a26029fe7fed8ec7111071",
-    "bounty": true,
-    "source": true,
-    "name": "SmarDex Smart Contracts",
-    "url": "https://hackenproof.com/programs/smardex-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x5DE8ab7E27f6E7A1fFf3E5B337584Aa43961BEeF",
-        "description": "Smart Contract - SmarDexToken\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7753F36E711B66a0350a753aba9F5651BAE76A1D",
-        "description": "Smart Contract - SmardexFactory\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xEf2f9b48d7EC80440Ab4573dF1A2aBDBE06D3f60",
-        "description": "Smart Contract - SmardexRouter\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7d85C0905a6E1Ab5837a0b57cD94A419d3a77523",
-        "description": "Smart Contract - Farming\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x80497049b005Fd236591c3CD431DBD6E06eB1A31",
-        "description": "Smart Contract - Staking\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xC049c7fE5EAa024095861212BD8a8E8Df88a2b1f",
-        "description": "Smart Contract - RewardsManager\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x865d61582abc2CCd85549774CEe171280fE82e3e",
-        "description": "Smart Contract - Autoswapper\r\n- Group 1 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x9A1e1681f6D59Ca051776410465AfAda6384398f",
-        "description": "Smart Contract - SmardexFactory\r\n- Group 2 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xA8EF6FEa013034E62E2C4A9Ec1CDb059fE23Af33",
-        "description": "Smart Contract - SmardexRouter\r\n- Group 2 target"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
-        "description": "Smart Contract - FarmingRangeL2\r\n- Group 2 target"
-      }
-    ],
-    "sc_total": 27,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
-      "https://arbiscan.io/address/0x53d165df0414bd02e91747775450934bf2257f69",
-      "https://arbiscan.io/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
-      "https://arbiscan.io/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
-      "https://arbiscan.io/address/0xdd4536dd9636564d891c919416880a3e250f975a",
-      "https://basescan.org/address/0x5c622dcc96b6d96ac6c154f99cf081815094cbc9",
-      "https://basescan.org/address/0x7240aac0f57fa0126c107673597ce3cd5b907e38",
-      "https://basescan.org/address/0xa5d378c05192e3f1f365d6298921879c4d51c5a3",
-      "https://basescan.org/address/0xd978bb7a7ae5b01116d1bd714fedd1b77ca9e75b",
-      "https://basescan.org/address/0xdd4536dd9636564d891c919416880a3e250f975a",
-      "https://bscscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
-      "https://bscscan.com/address/0x41a00e3fbe7f479a99ba6822704d9c5deb611f22",
-      "https://bscscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
-      "https://bscscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33",
-      "https://bscscan.com/address/0xb891aeb2130805171796644a2af76fc7ff25a0b9",
-      "https://etherscan.io/address/0x5de8ab7e27f6e7a1fff3e5b337584aa43961beef",
-      "https://etherscan.io/address/0x7753f36e711b66a0350a753aba9f5651bae76a1d",
-      "https://etherscan.io/address/0x7d85c0905a6e1ab5837a0b57cd94a419d3a77523",
-      "https://etherscan.io/address/0x80497049b005fd236591c3cd431dbd6e06eb1a31",
-      "https://etherscan.io/address/0x865d61582abc2ccd85549774cee171280fe82e3e",
-      "https://etherscan.io/address/0xc049c7fe5eaa024095861212bd8a8e8df88a2b1f",
-      "https://etherscan.io/address/0xef2f9b48d7ec80440ab4573df1a2abdbe06d3f60",
-      "https://polygonscan.com/address/0x391becc8daaf32b9ba8e602e9527bf9da04c8deb",
-      "https://polygonscan.com/address/0x7db73a1e526db36c40e508b09428420c1fa8e46b",
-      "https://polygonscan.com/address/0x8ef71fde0681f567d241a2cb7f2ae46d6d709d30",
-      "https://polygonscan.com/address/0x9a1e1681f6d59ca051776410465afada6384398f",
-      "https://polygonscan.com/address/0xa8ef6fea013034e62e2c4a9ec1cdb059fe23af33"
-    ],
     "github_repos": []
   },
   "hackenproof:smilee-smart-contracts": {
@@ -58316,11 +58109,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-04T08:35:08.592453+00:00",
-    "total": 1926,
-    "qualifying": 428,
+    "updated_at": "2026-10-04T09:06:39.639299+00:00",
+    "total": 1924,
+    "qualifying": 426,
     "external": 354,
-    "blockchain": 367,
+    "blockchain": 365,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
