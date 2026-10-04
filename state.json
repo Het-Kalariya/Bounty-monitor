@@ -7634,7 +7634,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 60,
+    "resp_eff": 62,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -8569,7 +8569,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 43,
+    "resp_eff": 41,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -43617,6 +43617,124 @@
       "dioneprotocol/subnet-evm"
     ]
   },
+  "hackenproof:dop-protocol": {
+    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
+    "bounty": true,
+    "source": false,
+    "name": "DOP Protocol",
+    "url": "https://hackenproof.com/programs/dop-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:doubleup-smart-contracts": {
+    "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
+    "bounty": true,
+    "source": true,
+    "name": "DoubleUp Smart Contracts",
+    "url": "https://hackenproof.com/programs/doubleup-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://suivision.xyz/project/Unihouse%20Protocol?tab=Package",
+        "description": "The code in the suivision package can be wrong as it's decompilation of the compiled byte code.\r\nEach issue must contain a PoC that reproduces the vulnerability on a local fork of mainnet, including clear execution steps and the resulting transactions."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://suivision.xyz/project/unihouse%20protocol?tab=package"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:whitechain-network": {
+    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Network",
+    "url": "https://hackenproof.com/programs/whitechain-network",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitebit-exchange/wbt",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitebit-exchange/wbt"
+    ],
+    "github_repos": [
+      "whitebit-exchange/wbt"
+    ]
+  },
+  "hackenproof:whitemarket-web": {
+    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteMarket Web",
+    "url": "https://hackenproof.com/programs/whitemarket-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:xt": {
+    "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
+    "bounty": true,
+    "source": false,
+    "name": "XT",
+    "url": "https://hackenproof.com/programs/xt",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dodo-v3": {
     "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
     "bounty": true,
@@ -43706,54 +43824,6 @@
     "github_repos": [
       "dodoex/dodo-limit-order"
     ]
-  },
-  "hackenproof:dop-protocol": {
-    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
-    "bounty": true,
-    "source": false,
-    "name": "DOP Protocol",
-    "url": "https://hackenproof.com/programs/dop-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:doubleup-smart-contracts": {
-    "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
-    "bounty": true,
-    "source": true,
-    "name": "DoubleUp Smart Contracts",
-    "url": "https://hackenproof.com/programs/doubleup-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://suivision.xyz/project/Unihouse%20Protocol?tab=Package",
-        "description": "The code in the suivision package can be wrong as it's decompilation of the compiled byte code.\r\nEach issue must contain a PoC that reproduces the vulnerability on a local fork of mainnet, including clear execution steps and the resulting transactions."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://suivision.xyz/project/unihouse%20protocol?tab=package"
-    ],
-    "github_repos": []
   },
   "hackenproof:doubleup-web": {
     "hash": "8815572173b6fe9bbe8579f2350978dc298943ab",
@@ -49938,76 +50008,6 @@
     "github_repos": [
       "whitechain-labs/bridge-contracts"
     ]
-  },
-  "hackenproof:whitechain-network": {
-    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Network",
-    "url": "https://hackenproof.com/programs/whitechain-network",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitebit-exchange/wbt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitebit-exchange/wbt"
-    ],
-    "github_repos": [
-      "whitebit-exchange/wbt"
-    ]
-  },
-  "hackenproof:whitemarket-web": {
-    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteMarket Web",
-    "url": "https://hackenproof.com/programs/whitemarket-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:xt": {
-    "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
-    "bounty": true,
-    "source": false,
-    "name": "XT",
-    "url": "https://hackenproof.com/programs/xt",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:zeko-protocol": {
     "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
@@ -58316,7 +58316,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-04T07:29:09.719864+00:00",
+    "updated_at": "2026-10-04T08:00:43.731495+00:00",
     "total": 1926,
     "qualifying": 428,
     "external": 354,
