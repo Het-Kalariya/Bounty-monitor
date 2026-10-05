@@ -20152,6 +20152,60 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:sbtc": {
+    "hash": "10874ce1feb4daf7056f5f5138221659d4d8094f",
+    "bounty": true,
+    "source": true,
+    "name": "sBTC",
+    "url": "https://immunefi.com/bug-bounty/sbtc",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "STX",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/contracts/contracts",
+        "description": "The sBTC smart contracts"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/emily",
+        "description": "The sBTC Emily implementation"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/signer",
+        "description": "The sBTC signer implementation"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/sbtc",
+        "description": "The sBTC deposit library"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/wsts",
+        "description": "The WSTS library"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/stacks-sbtc/sbtc/tree/main/contracts/contracts",
+      "https://github.com/stacks-sbtc/sbtc/tree/main/emily",
+      "https://github.com/stacks-sbtc/sbtc/tree/main/sbtc",
+      "https://github.com/stacks-sbtc/sbtc/tree/main/signer",
+      "https://github.com/stacks-sbtc/sbtc/tree/main/wsts"
+    ],
+    "github_repos": [
+      "stacks-sbtc/sbtc"
+    ]
+  },
   "immunefi:cosmos": {
     "hash": "bfe05f2225637523b0027ac84bab39591bfa798a",
     "bounty": true,
@@ -22043,60 +22097,6 @@
       "https://www.oklink.com/xlayer/address/0x5903e2be82832c42a868a4748b64b5c401de91eb/contract#category=read"
     ],
     "github_repos": []
-  },
-  "immunefi:sbtc": {
-    "hash": "10874ce1feb4daf7056f5f5138221659d4d8094f",
-    "bounty": true,
-    "source": true,
-    "name": "sBTC",
-    "url": "https://immunefi.com/bug-bounty/sbtc",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "STX",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/contracts/contracts",
-        "description": "The sBTC smart contracts"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/emily",
-        "description": "The sBTC Emily implementation"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/signer",
-        "description": "The sBTC signer implementation"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/sbtc",
-        "description": "The sBTC deposit library"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/stacks-sbtc/sbtc/tree/main/wsts",
-        "description": "The WSTS library"
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/stacks-sbtc/sbtc/tree/main/contracts/contracts",
-      "https://github.com/stacks-sbtc/sbtc/tree/main/emily",
-      "https://github.com/stacks-sbtc/sbtc/tree/main/sbtc",
-      "https://github.com/stacks-sbtc/sbtc/tree/main/signer",
-      "https://github.com/stacks-sbtc/sbtc/tree/main/wsts"
-    ],
-    "github_repos": [
-      "stacks-sbtc/sbtc"
-    ]
   },
   "immunefi:stakewise": {
     "hash": "0210d87d7a784466fd1c22f1bc5e27dbab3548b9",
@@ -58141,7 +58141,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-05T05:10:44.972143+00:00",
+    "updated_at": "2026-10-05T05:41:02.485436+00:00",
     "total": 1926,
     "qualifying": 426,
     "external": 356,
