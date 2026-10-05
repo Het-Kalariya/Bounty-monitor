@@ -1099,7 +1099,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 60,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3672,7 +3672,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 177,
-    "resp_eff": 60,
+    "resp_eff": 59,
     "bounty_days": 36.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3729,7 +3729,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 73,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4774,7 +4774,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 71,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7908,7 +7908,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1141,
-    "resp_eff": 91,
+    "resp_eff": 90,
     "bounty_days": 221.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8699,6 +8699,35 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackerone:brave": {
+    "hash": "a2f354a6ca0291c4ce7e9e674bab11bc723f80a1",
+    "bounty": true,
+    "source": true,
+    "name": "Brave Software",
+    "url": "https://hackerone.com/brave",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "amount not in upstream feed",
+    "domains": 413,
+    "resp_eff": 100,
+    "bounty_days": 125.0,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
+        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/brave/*, https://github.com/brave-intl/*"
+    ],
+    "github_repos": [
+      "brave/*, https:"
+    ]
   },
   "hackerone:portswigger": {
     "hash": "22096e343eeaf5065d5071cac777b886ac6e3279",
@@ -9650,7 +9679,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 611,
-    "resp_eff": 70,
+    "resp_eff": 69,
     "bounty_days": 145.0,
     "sc_targets": [
       {
@@ -9786,7 +9815,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 33382,
-    "resp_eff": 44,
+    "resp_eff": 43,
     "bounty_days": 538.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10124,7 +10153,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 136930,
-    "resp_eff": 100,
+    "resp_eff": 99,
     "bounty_days": 112.0,
     "sc_targets": [
       {
@@ -40257,7 +40286,7 @@
     ]
   },
   "hackenproof:adi-foundation-zkvm-verification": {
-    "hash": "c6dd03e4d1f002f400507008607186d1110f6e3c",
+    "hash": "b256ecc8d966fa1bed9e95bcda0b760bae7b4bb9",
     "bounty": true,
     "source": true,
     "name": "ADI Foundation zkVM Verification",
@@ -40284,7 +40313,7 @@
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ADI-Foundation-Labs/ADI-Stack-Contracts/tree/04346d566e7625ae42ec74861da409329f9f4a3d/l1-contracts/contracts/state-transition",
+        "identifier": "https://github.com/ADI-Foundation-Labs/ADI-Stack-Contracts/tree/9ddc915c85d1f44c79b5d55e160d384138ed5105/l1-contracts/contracts/state-transition",
         "description": ""
       },
       {
@@ -40293,7 +40322,7 @@
         "description": ""
       },
       {
-        "asset_type": "SMART_CONTRACT",
+        "asset_type": "OTHER",
         "identifier": "https://github.com/ADI-Foundation-Labs/ADI-Stack-zkOS-Wrapper/tree/eb75ad8ee972c63a30ef1121a1b9dc79a2942569",
         "description": ""
       }
@@ -40302,7 +40331,7 @@
     "sc_ids": [
       "https://github.com/adi-foundation-labs/adi-stack-airbender-prover/tree/4f0cf4cd1a0d7cf48d366135e53da7960b936932",
       "https://github.com/adi-foundation-labs/adi-stack-airbender-system/tree/357b836552d72550b20a341e1b45b730bef87806",
-      "https://github.com/adi-foundation-labs/adi-stack-contracts/tree/04346d566e7625ae42ec74861da409329f9f4a3d/l1-contracts/contracts/state-transition",
+      "https://github.com/adi-foundation-labs/adi-stack-contracts/tree/9ddc915c85d1f44c79b5d55e160d384138ed5105/l1-contracts/contracts/state-transition",
       "https://github.com/adi-foundation-labs/adi-stack-protocol/tree/767759541cd018e4271f9774f0d760ce727c905d",
       "https://github.com/adi-foundation-labs/adi-stack-zkos-wrapper/tree/eb75ad8ee972c63a30ef1121a1b9dc79a2942569"
     ],
@@ -43959,857 +43988,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:hackenproof": {
-    "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
-    "bounty": true,
-    "source": false,
-    "name": "HackenProof",
-    "url": "https://hackenproof.com/programs/hackenproof",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:haedal-smart-contracts": {
-    "hash": "61ee3a8027f325c1b6b5f4971f8d7b1f43804a90",
-    "bounty": true,
-    "source": true,
-    "name": "Haedal Smart Contracts",
-    "url": "https://hackenproof.com/programs/haedal-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 5,
-    "bounty_max": 200000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/hasui-bug-bounty",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/hawal-bug-bounty",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/hasui-bug-bounty",
-      "https://github.com/hackenproof-public/hawal-bug-bounty"
-    ],
-    "github_repos": [
-      "hackenproof-public/hasui-bug-bounty",
-      "hackenproof-public/hawal-bug-bounty"
-    ]
-  },
-  "hackenproof:idos-apps-and-sc-1": {
-    "hash": "3dec273037b80d5991ac8211eef8d986cceff2fa",
-    "bounty": true,
-    "source": true,
-    "name": "idOS Apps and SC",
-    "url": "https://hackenproof.com/programs/idos-apps-and-sc-1",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSToken.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSVesting.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSNodeStaking.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/idos-network/contracts/blob/master/src/idosnodestaking.sol",
-      "https://github.com/idos-network/contracts/blob/master/src/idostoken.sol",
-      "https://github.com/idos-network/contracts/blob/master/src/idosvesting.sol"
-    ],
-    "github_repos": [
-      "idos-network/contracts"
-    ]
-  },
-  "hackenproof:impermax-finance-smart-contracts": {
-    "hash": "1eff0ae6585a76c5192c08c5ecb013d9931418d6",
-    "bounty": true,
-    "source": true,
-    "name": "Impermax Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/impermax-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main/contracts/test",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/impermax-finance/lending-vault/tree/main",
-      "https://github.com/impermax-finance/lending-vault/tree/main/contracts/test"
-    ],
-    "github_repos": [
-      "impermax-finance/lending-vault"
-    ]
-  },
-  "hackenproof:inceptionlrt-smart-contracts": {
-    "hash": "3e7808e33b281def598c517f34ccd1b5d7e41f51",
-    "bounty": true,
-    "source": true,
-    "name": "InceptionLRT Smart Contracts",
-    "url": "https://hackenproof.com/programs/inceptionlrt-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x814CC6B8fd2555845541FB843f37418b05977d8d",
-        "description": "instETH Inception vault - Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
-        "description": "instETH Inception token - Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://lineascan.build/address/0xd08C3F25862077056cb1b710937576Af899a4959",
-        "description": "instETH Inception token - Linea"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
-        "description": "instETH Inception token - Optimism"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
-        "description": "instETH Inception token - Optimism"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
-        "description": "instETH Inception token - Arbitrum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xc4181dC7BB31453C4A48689ce0CBe975e495321c",
-        "description": "inswETH Inception vault - Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xC3ADe5aCe1bBb033CcAE8177C12Ecbfa16bD6A9D",
-        "description": "inswETH Inception token - Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x36B429439AB227fAB170A4dFb3321741c8815e55",
-        "description": "inankrETH Inception vault - Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xfa2629B9cF3998D52726994E0FcdB750224D8B9D",
-        "description": "inankrETH Inception token - Ethereum"
-      }
-    ],
-    "sc_total": 59,
-    "sc_ids": [
-      "http://etherscan.io/address/0xd496417a50db34279631e0af459493cf9685f529",
-      "http://etherscan.io/address/0xf07052b5a61bbcc8d14a8567494ae8ad688641f9",
-      "https://arbiscan.io/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://arbiscan.io/address/0xd08c3f25862077056cb1b710937576af899a4959",
-      "https://blastscan.io/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://bscscan.com/address/0x3059a337b134cc89851c8de18a00d880fa1d5519",
-      "https://bscscan.com/address/0x5a32d48411387577c26a15775cf939494da8064a",
-      "https://bscscan.com/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://bscscan.com/address/0xb2b446386633c6746b0a2735fb57edbb066c5878",
-      "https://etherscan.io/address/0x016e074ca7304b815e29a9b9d8cf7a5603da2a5f",
-      "https://etherscan.io/address/0x11e8808018afe9343fceb33043f06e1bfbd5d3f3",
-      "https://etherscan.io/address/0x1aa53bc4beb82adf7f5edee9e3bbf3434ad59f12",
-      "https://etherscan.io/address/0x1aee5ec60fc79b669f11fe368fde789e267649e2",
-      "https://etherscan.io/address/0x295234b7e370a5db2d2447aca83bc7448f151161",
-      "https://etherscan.io/address/0x36b429439ab227fab170a4dfb3321741c8815e55",
-      "https://etherscan.io/address/0x46199caa0e453971cedf97f926368d9e5415831a",
-      "https://etherscan.io/address/0x4878f636a9aa314b776ac51a25021c44caf86bed",
-      "https://etherscan.io/address/0x50253dc4a01c6408fab9646e804fcbfdb74e3e4c",
-      "https://etherscan.io/address/0x57a5a0567187ff4a8dcc1a9bba86155e355878f2",
-      "https://etherscan.io/address/0x6e17a8b5d33e6dbdb9fc61d758bf554b6ad93322",
-      "https://etherscan.io/address/0x74d1984a64f447371be4019920180b52a33adadd",
-      "https://etherscan.io/address/0x7fa768e035f956c41d6aeaa3bd857e7e5141cad5",
-      "https://etherscan.io/address/0x80d69e79258fe9d056c822461c4eb0b4ca8802e2",
-      "https://etherscan.io/address/0x814cc6b8fd2555845541fb843f37418b05977d8d",
-      "https://etherscan.io/address/0x8e0789d39db454dbe9f4a77acef6dc7c69f6d552",
-      "https://etherscan.io/address/0x90e80e25abdb6205b08deba29a87f7eb039023c2",
-      "https://etherscan.io/address/0x9181f633e9b9f15a32d5e37094f4c93b333e0e92",
-      "https://etherscan.io/address/0xa8211b17ee8cc9c3e739c32710cc4d6621b360ae",
-      "https://etherscan.io/address/0xa9f8c770661bee8df2d026edb1cb6ff763c780ff",
-      "https://etherscan.io/address/0xbf19eead55a6b100667f04f8fbc5371e03e8ab2e",
-      "https://etherscan.io/address/0xc0660932c5dcad4a1409b7975d147203b1e9a2b6",
-      "https://etherscan.io/address/0xc3ade5ace1bbb033ccae8177c12ecbfa16bd6a9d",
-      "https://etherscan.io/address/0xc4181dc7bb31453c4a48689ce0cbe975e495321c",
-      "https://etherscan.io/address/0xc6cc133477f63d9c0c53d1ef7da83fa250778db4",
-      "https://etherscan.io/address/0xc7373753e8991cea030b01d580c53dda4da31d18",
-      "https://etherscan.io/address/0xd0ee89d82183d7ddaef14c6b4fc0aa742f426355",
-      "https://etherscan.io/address/0xefaf124849b11b513c35350cd8643d29de49c2ba",
-      "https://etherscan.io/address/0xf21014b114bb976f890e15c19900ce9be5fb1e12",
-      "https://etherscan.io/address/0xf9d9f828989a624423c48b95bc04e9ae0ef5ec97",
-      "https://etherscan.io/address/0xfa2629b9cf3998d52726994e0fcdb750224d8b9d",
-      "https://etherscan.io/address/0xfd07fd5ebea6f24888a397997e262179bf494336",
-      "https://etherscan.io/address/0xfe715358368416e01d3a961d3a037b7359735d5e",
-      "https://etherscan.io/token/0x668308d77be3533c909a692302cb4d135bf8041c",
-      "https://etherscan.io/token/0x94b888e11a9e960a9c3b3528eb6ac807b27ca62e",
-      "https://etherscan.io/token/0xda9b11cd701e10c2ec1a284f80820edd128c5246",
-      "https://etherscan.io/token/0xecf3672a6d2147e2a77f07069fb48d8cf6f6fbf9",
-      "https://etherscan.io/token/0xf073bac22dab7faf4a3dd6c6189a70d54110525c",
-      "https://explorer.zircuit.com/address/0x9efde41a87fa4dd47baa584954e8abd5b8bdbfe7",
-      "https://fraxscan.com/address/0x157743261c3ba961e92421b268a881aece450d41",
-      "https://fraxscan.com/address/0xe162075a1c0ac7e985253972beca5e83da3bbaa4",
-      "https://lineascan.build/address/0x5a32d48411387577c26a15775cf939494da8064a",
-      "https://lineascan.build/address/0xd08c3f25862077056cb1b710937576af899a4959",
-      "https://lineascan.build/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://modescan.io/token/0x5a32d48411387577c26a15775cf939494da8064a",
-      "https://modescan.io/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://optimistic.etherscan.io/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
-      "https://optimistic.etherscan.io/address/0xd08c3f25862077056cb1b710937576af899a4959",
-      "https://www.oklink.com/xlayer/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:inheriti-r-app": {
-    "hash": "9d3184e177ca0f84879076dd106b6c41c91c9e10",
-    "bounty": false,
-    "source": false,
-    "name": "Inheriti\u00ae App",
-    "url": "https://hackenproof.com/programs/inheriti-r-app",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:logos": {
-    "hash": "423251bd34b0c0e7de46d659a9c62bd9893fa3c1",
-    "bounty": true,
-    "source": true,
-    "name": "Logos",
-    "url": "https://hackenproof.com/programs/logos",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
-        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/examples.waku.org",
-        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku",
-        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
-        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/logos-messaging/examples.waku.org",
-      "https://github.com/logos-messaging/go-waku",
-      "https://github.com/logos-messaging/go-waku/tree/master/examples",
-      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-      "https://github.com/logos-messaging/logos-delivery-js"
-    ],
-    "github_repos": [
-      "logos-messaging/examples.waku.org",
-      "logos-messaging/go-waku",
-      "logos-messaging/logos-delivery-go",
-      "logos-messaging/logos-delivery-js"
-    ]
-  },
-  "hackenproof:monday-trade-web": {
-    "hash": "24b68d675566f4c4838708d3f199fe18264975cd",
-    "bounty": true,
-    "source": false,
-    "name": "Monday Trade Web",
-    "url": "https://hackenproof.com/programs/monday-trade-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:multipli-smart-contracts": {
-    "hash": "5cb8e0f11bf412530c77dedf7414efd65b2be810",
-    "bounty": true,
-    "source": true,
-    "name": "Multipli Smart Contracts",
-    "url": "https://hackenproof.com/programs/multipli-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0xCF0Eb4ac018C06a16ED5c63484823C7805e7599D/contract/43114/code",
-        "description": "Token Contract (ERC1967Proxy) - Avalanche xUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0x4E5FEa916ef8458b8D877BD760B6930Fb4f28B72/contract/43114/code",
-        "description": "VariableVaultFee - Avalanche"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0x01e676EAA0C9780A88395c651349Cf08Fe52368e/contract/43114/code",
-        "description": "VaultFundManager - Avalanche xUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0xf580B985e2Fd8A8b0e4a56C2a7E24bC28e872609/contract/43114/code",
-        "description": "RolesAuthority - Avalanche xUSDC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/multipli-libs/Barebones-MultipliVault",
-        "description": "Github repo with latest contract code"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0xb63601A11c5bDC79D511B8F73871d7C0d8B57AE9/contract/43114/code",
-        "description": "MultipliVault - Avalanche xUSDC"
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://github.com/multipli-libs/barebones-multiplivault",
-      "https://snowtrace.io/address/0x01e676eaa0c9780a88395c651349cf08fe52368e/contract/43114/code",
-      "https://snowtrace.io/address/0x4e5fea916ef8458b8d877bd760b6930fb4f28b72/contract/43114/code",
-      "https://snowtrace.io/address/0xb63601a11c5bdc79d511b8f73871d7c0d8b57ae9/contract/43114/code",
-      "https://snowtrace.io/address/0xcf0eb4ac018c06a16ed5c63484823c7805e7599d/contract/43114/code",
-      "https://snowtrace.io/address/0xf580b985e2fd8a8b0e4a56c2a7e24bc28e872609/contract/43114/code"
-    ],
-    "github_repos": [
-      "multipli-libs/barebones-multiplivault"
-    ]
-  },
-  "hackenproof:myetherwallet": {
-    "hash": "c7e2185bb2117bdcb95756aeda01b3b1b285da74",
-    "bounty": true,
-    "source": true,
-    "name": "MyEtherWallet",
-    "url": "https://hackenproof.com/programs/myetherwallet",
-    "platform": "hackenproof",
-    "bounty_min": 350,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/MyEtherWallet/MyEtherWallet/tree/feat/v7",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/myetherwallet/myetherwallet/tree/feat/v7"
-    ],
-    "github_repos": [
-      "myetherwallet/myetherwallet"
-    ]
-  },
-  "hackenproof:nado-smart-contracts": {
-    "hash": "0245263f327ea2ac91cce4f7131401244cf88359",
-    "bounty": true,
-    "source": true,
-    "name": "Nado Smart Contracts",
-    "url": "https://hackenproof.com/programs/nado-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/nadohq/nado-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/nadohq/nado-contracts"
-    ],
-    "github_repos": [
-      "nadohq/nado-contracts"
-    ]
-  },
-  "hackenproof:near-smart-contracts-1": {
-    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Smart Contracts",
-    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
-        "description": "lockup"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
-        "description": "staking pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-        "description": "staking pool factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
-        "description": "whitelist"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
-        "description": "multisig"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://github.com/near-daos/sputnik-dao-contract",
-      "https://github.com/near/core-contracts/tree/master/lockup",
-      "https://github.com/near/core-contracts/tree/master/multisig",
-      "https://github.com/near/core-contracts/tree/master/staking-pool",
-      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-      "https://github.com/near/core-contracts/tree/master/whitelist"
-    ],
-    "github_repos": [
-      "near-daos/sputnik-dao-contract",
-      "near/core-contracts"
-    ]
-  },
-  "hackenproof:p2b-exchange": {
-    "hash": "e738d523c6e11e6a381c6105e251777f4ac2a0e8",
-    "bounty": true,
-    "source": true,
-    "name": "P2B Exchange",
-    "url": "https://hackenproof.com/programs/p2b-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "API",
-        "identifier": "https://github.com/P2B-team/p2b-api-docs",
-        "description": "github.com/P2pb2b-team/P2PB2B-WSS-Public/blob/main/wss_documentation.md"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/p2b-team/p2b-api-docs"
-    ],
-    "github_repos": [
-      "p2b-team/p2b-api-docs"
-    ]
-  },
-  "hackenproof:polkalokr-1": {
-    "hash": "6532def9ec49e41a9793544ecd01237764168922",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr-1",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:poloniex-web-and-api": {
-    "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
-    "bounty": true,
-    "source": false,
-    "name": "Poloniex Web & API",
-    "url": "https://hackenproof.com/programs/poloniex-web-and-api",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:pumb-tacsk": {
-    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
-    "bounty": true,
-    "source": false,
-    "name": "Pumb Tacsk",
-    "url": "https://hackenproof.com/programs/pumb-tacsk",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:pumb-web": {
-    "hash": "44e52577d2724d23306b08dbe87775deedc1e518",
-    "bounty": true,
-    "source": false,
-    "name": "PUMB Web",
-    "url": "https://hackenproof.com/programs/pumb-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:raiffeisen-web-and-mobile": {
-    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
-    "bounty": true,
-    "source": false,
-    "name": "Raiffeisen Web & Mobile",
-    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:risc-zero-blockchain-verifiers": {
-    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero Blockchain Verifiers",
-    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
-    ],
-    "github_repos": [
-      "risc0/risc0-ethereum"
-    ]
-  },
-  "hackenproof:risc-zero-zkvm": {
-    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero zkVM",
-    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0/tree/main/risc0"
-    ],
-    "github_repos": [
-      "risc0/risc0"
-    ]
-  },
-  "hackenproof:shapeshift": {
-    "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
-    "bounty": true,
-    "source": false,
-    "name": "ShapeShift",
-    "url": "https://hackenproof.com/programs/shapeshift",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ternoa-enclaves": {
-    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Enclaves",
-    "url": "https://hackenproof.com/programs/ternoa-enclaves",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-enclaves"
-    ]
-  },
-  "hackenproof:u2staking-web": {
-    "hash": "8e29e0d4a21be9594ac328048e81ca5c5bef34a3",
-    "bounty": true,
-    "source": false,
-    "name": "U2Staking Web",
-    "url": "https://hackenproof.com/programs/u2staking-web",
-    "platform": "hackenproof",
-    "bounty_min": 10,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:uacatsdivision-smart-contracts": {
-    "hash": "4ff22760802011cbd9bb876fdad6e4962a0f9c07",
-    "bounty": false,
-    "source": true,
-    "name": "UACatsDivision Smart Contracts",
-    "url": "https://hackenproof.com/programs/uacatsdivision-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:uacatsdivision-web": {
-    "hash": "9e510c8658b46fd2477afc2a112921b06e07b270",
-    "bounty": false,
-    "source": false,
-    "name": "UACatsDivision Web",
-    "url": "https://hackenproof.com/programs/uacatsdivision-web",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:fitburn-smart-contracts": {
     "hash": "8438d2a0e2172ac6aa78a23ee470d36b2628f418",
     "bounty": true,
@@ -45330,6 +44508,63 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:hackenproof": {
+    "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
+    "bounty": true,
+    "source": false,
+    "name": "HackenProof",
+    "url": "https://hackenproof.com/programs/hackenproof",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:haedal-smart-contracts": {
+    "hash": "61ee3a8027f325c1b6b5f4971f8d7b1f43804a90",
+    "bounty": true,
+    "source": true,
+    "name": "Haedal Smart Contracts",
+    "url": "https://hackenproof.com/programs/haedal-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 5,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/hasui-bug-bounty",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/hawal-bug-bounty",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/hackenproof-public/hasui-bug-bounty",
+      "https://github.com/hackenproof-public/hawal-bug-bounty"
+    ],
+    "github_repos": [
+      "hackenproof-public/hasui-bug-bounty",
+      "hackenproof-public/hawal-bug-bounty"
+    ]
+  },
   "hackenproof:hinkal-bug-bounty": {
     "hash": "e9bd696660688c89816108a07347d41add59d16a",
     "bounty": true,
@@ -45506,6 +44741,234 @@
       "polytope-labs/hyperbridge",
       "polytope-labs/solidity-merkle-trees"
     ]
+  },
+  "hackenproof:idos-apps-and-sc-1": {
+    "hash": "3dec273037b80d5991ac8211eef8d986cceff2fa",
+    "bounty": true,
+    "source": true,
+    "name": "idOS Apps and SC",
+    "url": "https://hackenproof.com/programs/idos-apps-and-sc-1",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSToken.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSVesting.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSNodeStaking.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/idos-network/contracts/blob/master/src/idosnodestaking.sol",
+      "https://github.com/idos-network/contracts/blob/master/src/idostoken.sol",
+      "https://github.com/idos-network/contracts/blob/master/src/idosvesting.sol"
+    ],
+    "github_repos": [
+      "idos-network/contracts"
+    ]
+  },
+  "hackenproof:impermax-finance-smart-contracts": {
+    "hash": "1eff0ae6585a76c5192c08c5ecb013d9931418d6",
+    "bounty": true,
+    "source": true,
+    "name": "Impermax Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/impermax-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main/contracts/test",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/impermax-finance/lending-vault/tree/main",
+      "https://github.com/impermax-finance/lending-vault/tree/main/contracts/test"
+    ],
+    "github_repos": [
+      "impermax-finance/lending-vault"
+    ]
+  },
+  "hackenproof:inceptionlrt-smart-contracts": {
+    "hash": "3e7808e33b281def598c517f34ccd1b5d7e41f51",
+    "bounty": true,
+    "source": true,
+    "name": "InceptionLRT Smart Contracts",
+    "url": "https://hackenproof.com/programs/inceptionlrt-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x814CC6B8fd2555845541FB843f37418b05977d8d",
+        "description": "instETH Inception vault - Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7FA768E035F956c41d6aeaa3Bd857e7E5141CAd5",
+        "description": "instETH Inception token - Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://lineascan.build/address/0xd08C3F25862077056cb1b710937576Af899a4959",
+        "description": "instETH Inception token - Linea"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
+        "description": "instETH Inception token - Optimism"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
+        "description": "instETH Inception token - Optimism"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xd08C3F25862077056cb1b710937576Af899a4959",
+        "description": "instETH Inception token - Arbitrum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xc4181dC7BB31453C4A48689ce0CBe975e495321c",
+        "description": "inswETH Inception vault - Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xC3ADe5aCe1bBb033CcAE8177C12Ecbfa16bD6A9D",
+        "description": "inswETH Inception token - Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x36B429439AB227fAB170A4dFb3321741c8815e55",
+        "description": "inankrETH Inception vault - Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xfa2629B9cF3998D52726994E0FcdB750224D8B9D",
+        "description": "inankrETH Inception token - Ethereum"
+      }
+    ],
+    "sc_total": 59,
+    "sc_ids": [
+      "http://etherscan.io/address/0xd496417a50db34279631e0af459493cf9685f529",
+      "http://etherscan.io/address/0xf07052b5a61bbcc8d14a8567494ae8ad688641f9",
+      "https://arbiscan.io/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://arbiscan.io/address/0xd08c3f25862077056cb1b710937576af899a4959",
+      "https://blastscan.io/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://bscscan.com/address/0x3059a337b134cc89851c8de18a00d880fa1d5519",
+      "https://bscscan.com/address/0x5a32d48411387577c26a15775cf939494da8064a",
+      "https://bscscan.com/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://bscscan.com/address/0xb2b446386633c6746b0a2735fb57edbb066c5878",
+      "https://etherscan.io/address/0x016e074ca7304b815e29a9b9d8cf7a5603da2a5f",
+      "https://etherscan.io/address/0x11e8808018afe9343fceb33043f06e1bfbd5d3f3",
+      "https://etherscan.io/address/0x1aa53bc4beb82adf7f5edee9e3bbf3434ad59f12",
+      "https://etherscan.io/address/0x1aee5ec60fc79b669f11fe368fde789e267649e2",
+      "https://etherscan.io/address/0x295234b7e370a5db2d2447aca83bc7448f151161",
+      "https://etherscan.io/address/0x36b429439ab227fab170a4dfb3321741c8815e55",
+      "https://etherscan.io/address/0x46199caa0e453971cedf97f926368d9e5415831a",
+      "https://etherscan.io/address/0x4878f636a9aa314b776ac51a25021c44caf86bed",
+      "https://etherscan.io/address/0x50253dc4a01c6408fab9646e804fcbfdb74e3e4c",
+      "https://etherscan.io/address/0x57a5a0567187ff4a8dcc1a9bba86155e355878f2",
+      "https://etherscan.io/address/0x6e17a8b5d33e6dbdb9fc61d758bf554b6ad93322",
+      "https://etherscan.io/address/0x74d1984a64f447371be4019920180b52a33adadd",
+      "https://etherscan.io/address/0x7fa768e035f956c41d6aeaa3bd857e7e5141cad5",
+      "https://etherscan.io/address/0x80d69e79258fe9d056c822461c4eb0b4ca8802e2",
+      "https://etherscan.io/address/0x814cc6b8fd2555845541fb843f37418b05977d8d",
+      "https://etherscan.io/address/0x8e0789d39db454dbe9f4a77acef6dc7c69f6d552",
+      "https://etherscan.io/address/0x90e80e25abdb6205b08deba29a87f7eb039023c2",
+      "https://etherscan.io/address/0x9181f633e9b9f15a32d5e37094f4c93b333e0e92",
+      "https://etherscan.io/address/0xa8211b17ee8cc9c3e739c32710cc4d6621b360ae",
+      "https://etherscan.io/address/0xa9f8c770661bee8df2d026edb1cb6ff763c780ff",
+      "https://etherscan.io/address/0xbf19eead55a6b100667f04f8fbc5371e03e8ab2e",
+      "https://etherscan.io/address/0xc0660932c5dcad4a1409b7975d147203b1e9a2b6",
+      "https://etherscan.io/address/0xc3ade5ace1bbb033ccae8177c12ecbfa16bd6a9d",
+      "https://etherscan.io/address/0xc4181dc7bb31453c4a48689ce0cbe975e495321c",
+      "https://etherscan.io/address/0xc6cc133477f63d9c0c53d1ef7da83fa250778db4",
+      "https://etherscan.io/address/0xc7373753e8991cea030b01d580c53dda4da31d18",
+      "https://etherscan.io/address/0xd0ee89d82183d7ddaef14c6b4fc0aa742f426355",
+      "https://etherscan.io/address/0xefaf124849b11b513c35350cd8643d29de49c2ba",
+      "https://etherscan.io/address/0xf21014b114bb976f890e15c19900ce9be5fb1e12",
+      "https://etherscan.io/address/0xf9d9f828989a624423c48b95bc04e9ae0ef5ec97",
+      "https://etherscan.io/address/0xfa2629b9cf3998d52726994e0fcdb750224d8b9d",
+      "https://etherscan.io/address/0xfd07fd5ebea6f24888a397997e262179bf494336",
+      "https://etherscan.io/address/0xfe715358368416e01d3a961d3a037b7359735d5e",
+      "https://etherscan.io/token/0x668308d77be3533c909a692302cb4d135bf8041c",
+      "https://etherscan.io/token/0x94b888e11a9e960a9c3b3528eb6ac807b27ca62e",
+      "https://etherscan.io/token/0xda9b11cd701e10c2ec1a284f80820edd128c5246",
+      "https://etherscan.io/token/0xecf3672a6d2147e2a77f07069fb48d8cf6f6fbf9",
+      "https://etherscan.io/token/0xf073bac22dab7faf4a3dd6c6189a70d54110525c",
+      "https://explorer.zircuit.com/address/0x9efde41a87fa4dd47baa584954e8abd5b8bdbfe7",
+      "https://fraxscan.com/address/0x157743261c3ba961e92421b268a881aece450d41",
+      "https://fraxscan.com/address/0xe162075a1c0ac7e985253972beca5e83da3bbaa4",
+      "https://lineascan.build/address/0x5a32d48411387577c26a15775cf939494da8064a",
+      "https://lineascan.build/address/0xd08c3f25862077056cb1b710937576af899a4959",
+      "https://lineascan.build/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://modescan.io/token/0x5a32d48411387577c26a15775cf939494da8064a",
+      "https://modescan.io/token/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://optimistic.etherscan.io/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d",
+      "https://optimistic.etherscan.io/address/0xd08c3f25862077056cb1b710937576af899a4959",
+      "https://www.oklink.com/xlayer/address/0x5a7a183b6b44dc4ec2e3d2ef43f98c5152b1d76d"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:inheriti-r-app": {
+    "hash": "9d3184e177ca0f84879076dd106b6c41c91c9e10",
+    "bounty": false,
+    "source": false,
+    "name": "Inheriti\u00ae App",
+    "url": "https://hackenproof.com/programs/inheriti-r-app",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:init-capital-smart-contracts": {
     "hash": "72b6c6f83c732b368c7ca7cf68737867a830c41f",
@@ -46354,26 +45817,6 @@
       "localtradersteam/lct_contract"
     ]
   },
-  "hackenproof:meest-poshta-mobile": {
-    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
-    "bounty": false,
-    "source": false,
-    "name": "Meest Poshta Mobile",
-    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:metamask-validator-staking-smart-contracts": {
     "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
     "bounty": true,
@@ -46440,15 +45883,15 @@
       "hackenproof-public/mmt-v3-core"
     ]
   },
-  "hackenproof:multipli-web": {
-    "hash": "f801e70eb813179e01f255fe6b069995d0202485",
+  "hackenproof:monday-trade-web": {
+    "hash": "24b68d675566f4c4838708d3f199fe18264975cd",
     "bounty": true,
     "source": false,
-    "name": "Multipli Web",
-    "url": "https://hackenproof.com/programs/multipli-web",
+    "name": "Monday Trade Web",
+    "url": "https://hackenproof.com/programs/monday-trade-web",
     "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
+    "bounty_min": 50,
+    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -46459,6 +45902,66 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:multipli-smart-contracts": {
+    "hash": "5cb8e0f11bf412530c77dedf7414efd65b2be810",
+    "bounty": true,
+    "source": true,
+    "name": "Multipli Smart Contracts",
+    "url": "https://hackenproof.com/programs/multipli-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0xCF0Eb4ac018C06a16ED5c63484823C7805e7599D/contract/43114/code",
+        "description": "Token Contract (ERC1967Proxy) - Avalanche xUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0x4E5FEa916ef8458b8D877BD760B6930Fb4f28B72/contract/43114/code",
+        "description": "VariableVaultFee - Avalanche"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0x01e676EAA0C9780A88395c651349Cf08Fe52368e/contract/43114/code",
+        "description": "VaultFundManager - Avalanche xUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0xf580B985e2Fd8A8b0e4a56C2a7E24bC28e872609/contract/43114/code",
+        "description": "RolesAuthority - Avalanche xUSDC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/multipli-libs/Barebones-MultipliVault",
+        "description": "Github repo with latest contract code"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0xb63601A11c5bDC79D511B8F73871d7C0d8B57AE9/contract/43114/code",
+        "description": "MultipliVault - Avalanche xUSDC"
+      }
+    ],
+    "sc_total": 6,
+    "sc_ids": [
+      "https://github.com/multipli-libs/barebones-multiplivault",
+      "https://snowtrace.io/address/0x01e676eaa0c9780a88395c651349cf08fe52368e/contract/43114/code",
+      "https://snowtrace.io/address/0x4e5fea916ef8458b8d877bd760b6930fb4f28b72/contract/43114/code",
+      "https://snowtrace.io/address/0xb63601a11c5bdc79d511b8f73871d7c0d8b57ae9/contract/43114/code",
+      "https://snowtrace.io/address/0xcf0eb4ac018c06a16ed5c63484823c7805e7599d/contract/43114/code",
+      "https://snowtrace.io/address/0xf580b985e2fd8a8b0e4a56c2a7e24bc28e872609/contract/43114/code"
+    ],
+    "github_repos": [
+      "multipli-libs/barebones-multiplivault"
+    ]
   },
   "hackenproof:mybucks-dot-online-wallet-cracking-challenge": {
     "hash": "a1be6c2a12d57297c17864b9549edacbd779abf8",
@@ -46480,25 +45983,35 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:nado-web": {
-    "hash": "625152117079ff27994d2f744634c686b7a2b66f",
+  "hackenproof:nado-smart-contracts": {
+    "hash": "0245263f327ea2ac91cce4f7131401244cf88359",
     "bounty": true,
-    "source": false,
-    "name": "Nado Web",
-    "url": "https://hackenproof.com/programs/nado-web",
+    "source": true,
+    "name": "Nado Smart Contracts",
+    "url": "https://hackenproof.com/programs/nado-smart-contracts",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_max": 500000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/nadohq/nado-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/nadohq/nado-contracts"
+    ],
+    "github_repos": [
+      "nadohq/nado-contracts"
+    ]
   },
   "hackenproof:navi-protocol": {
     "hash": "4ac0e3b5516e59c454eb5cc45fab63cf3081e032",
@@ -46735,6 +46248,67 @@
       "near/nearcore"
     ]
   },
+  "hackenproof:near-smart-contracts-1": {
+    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Smart Contracts",
+    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
+        "description": "lockup"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
+        "description": "staking pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+        "description": "staking pool factory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
+        "description": "whitelist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
+        "description": "multisig"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 6,
+    "sc_ids": [
+      "https://github.com/near-daos/sputnik-dao-contract",
+      "https://github.com/near/core-contracts/tree/master/lockup",
+      "https://github.com/near/core-contracts/tree/master/multisig",
+      "https://github.com/near/core-contracts/tree/master/staking-pool",
+      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+      "https://github.com/near/core-contracts/tree/master/whitelist"
+    ],
+    "github_repos": [
+      "near-daos/sputnik-dao-contract",
+      "near/core-contracts"
+    ]
+  },
   "hackenproof:near-web": {
     "hash": "736068e72109c2d6495b5912c2453abb8b003c37",
     "bounty": true,
@@ -46775,90 +46349,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:neverdie-web": {
-    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
-    "bounty": true,
-    "source": false,
-    "name": "Neverdie Web",
-    "url": "https://hackenproof.com/programs/neverdie-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:nicehash-mining-platform": {
-    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
-    "bounty": true,
-    "source": true,
-    "name": "NiceHash Mining platform",
-    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NHOS",
-        "description": "NHOS - Mining operating system"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
-        "description": "NiceHashQuickMiner - Mining client"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashMiner",
-        "description": "NiceHashMiner - Mining client"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/nicehash/nhos",
-      "https://github.com/nicehash/nicehashminer",
-      "https://github.com/nicehash/nicehashquickminer"
-    ],
-    "github_repos": [
-      "nicehash/nhos",
-      "nicehash/nicehashminer",
-      "nicehash/nicehashquickminer"
-    ]
-  },
-  "hackenproof:nimbus": {
-    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
-    "bounty": true,
-    "source": false,
-    "name": "Nimbus",
-    "url": "https://hackenproof.com/programs/nimbus",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:nonkyc-dot-io": {
     "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
     "bounty": true,
@@ -46867,26 +46357,6 @@
     "url": "https://hackenproof.com/programs/nonkyc-dot-io",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
-    "bounty": true,
-    "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 150,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -46979,15 +46449,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:okx": {
-    "hash": "43d0d3ed4289643d7e805731e9c2f149afdf24e2",
+  "hackenproof:p2b-exchange": {
+    "hash": "e738d523c6e11e6a381c6105e251777f4ac2a0e8",
     "bounty": true,
     "source": true,
-    "name": "OKX",
-    "url": "https://hackenproof.com/programs/okx",
+    "name": "P2B Exchange",
+    "url": "https://hackenproof.com/programs/p2b-exchange",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 1000000,
+    "bounty_max": 1000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -46996,95 +46466,17 @@
     "live_status": "LIVE",
     "sc_targets": [
       {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/okx/",
-        "description": ""
+        "asset_type": "API",
+        "identifier": "https://github.com/P2B-team/p2b-api-docs",
+        "description": "github.com/P2pb2b-team/P2PB2B-WSS-Public/blob/main/wss_documentation.md"
       }
     ],
     "sc_total": 1,
     "sc_ids": [
-      "https://github.com/okx"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
-    "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
+      "https://github.com/p2b-team/p2b-api-docs"
     ],
     "github_repos": [
-      "oort-tech/olympus"
-    ]
-  },
-  "hackenproof:openware": {
-    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
-    "bounty": true,
-    "source": false,
-    "name": "Openware",
-    "url": "https://hackenproof.com/programs/openware",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:pallets": {
-    "hash": "d0ef62c11f27ce1d57a4b7ace55a494f9a9f1b9f",
-    "bounty": true,
-    "source": true,
-    "name": "Pallets",
-    "url": "https://hackenproof.com/programs/pallets",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-pallets",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-pallets"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-pallets"
+      "p2b-team/p2b-api-docs"
     ]
   },
   "hackenproof:pandora-smart-contract": {
@@ -47116,26 +46508,6 @@
     "github_repos": [
       "pandoradigital/smart-contract"
     ]
-  },
-  "hackenproof:pandora-web": {
-    "hash": "48cd354f9c06532c575443e9c63165792a9814a6",
-    "bounty": true,
-    "source": false,
-    "name": "Pandora WEB",
-    "url": "https://hackenproof.com/programs/pandora-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 8000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:parity-polkadot-release-infrastructure": {
     "hash": "b6390763260e3e0a6014d3e2fed760c12b029b1f",
@@ -47344,6 +46716,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:pumb-web": {
+    "hash": "44e52577d2724d23306b08dbe87775deedc1e518",
+    "bounty": true,
+    "source": false,
+    "name": "PUMB Web",
+    "url": "https://hackenproof.com/programs/pumb-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:router-smart-contract": {
     "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
     "bounty": true,
@@ -47364,14 +46756,14 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:router-web": {
-    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
     "bounty": true,
     "source": false,
-    "name": "Router Web",
-    "url": "https://hackenproof.com/programs/router-web",
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
     "platform": "hackenproof",
-    "bounty_min": 500,
+    "bounty_min": 50,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -47384,14 +46776,1732 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+  "hackenproof:shapeshift": {
+    "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
     "bounty": true,
     "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "name": "ShapeShift",
+    "url": "https://hackenproof.com/programs/shapeshift",
     "platform": "hackenproof",
     "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:smilee-smart-contracts": {
+    "hash": "597500c9698151048291895df431099bfe45d9f6",
+    "bounty": true,
+    "source": true,
+    "name": "Smilee Smart Contracts",
+    "url": "https://hackenproof.com/programs/smilee-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 75000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
+        "description": "Smilee v2 core contracts (contracts out of scope are specified in the following tabs) "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/MasterChefSmilee.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/SimpleRewarderPerSec.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/IGAccessNFT.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet",
+        "description": ""
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/igaccessnft.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/masterchefsmilee.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/simplerewarderpersec.sol",
+      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
+      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet"
+    ],
+    "github_repos": [
+      "smilee-finance/v2-contracts-public"
+    ]
+  },
+  "hackenproof:snowbridge-on-chain-code": {
+    "hash": "a62842f821663025db5dc6c905a03f2da7e4d324",
+    "bounty": true,
+    "source": true,
+    "name": "Snowbridge On-Chain Code",
+    "url": "https://hackenproof.com/programs/snowbridge-on-chain-code",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 75000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Snowfork/snowbridge",
+        "description": "Ethereum Contracts which cover our Beefy Light Client, Parachain Light Client, Gateway, Agent, Messaging Protocol and Asset transfer functionality"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
+        "description": "Pallets and support crates that are deployed to the BridgeHub parachain"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
+      "https://github.com/snowfork/snowbridge"
+    ],
+    "github_repos": [
+      "paritytech/polkadot-sdk",
+      "snowfork/snowbridge"
+    ]
+  },
+  "hackenproof:solv-web-and-infrastructure": {
+    "hash": "b04c5c7ddfeb757913ea0cd903975c6e860322c6",
+    "bounty": false,
+    "source": false,
+    "name": "Solv Web & Infrastructure",
+    "url": "https://hackenproof.com/programs/solv-web-and-infrastructure",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:starknet-web-and-sc": {
+    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
+    "bounty": true,
+    "source": true,
+    "name": "Starknet Web & SC",
+    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
+    "platform": "hackenproof",
+    "bounty_min": 1250,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
+    ],
+    "github_repos": [
+      "starknet-io/starkgate-contracts"
+    ]
+  },
+  "hackenproof:ston-dot-fi-dex-smart-contracts-v2": {
+    "hash": "4e4d2ac112cb9a972a90635646a2b6ae9e6ba20d",
+    "bounty": true,
+    "source": true,
+    "name": "STON.fi DEX Smart Contracts v2",
+    "url": "https://hackenproof.com/programs/ston-dot-fi-dex-smart-contracts-v2",
+    "platform": "hackenproof",
+    "bounty_min": 5000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
+        "description": "LP Account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
+        "description": "LP Wallet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
+        "description": "Pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
+        "description": "Router"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc",
+        "description": "Vault"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc"
+    ],
+    "github_repos": [
+      "ston-fi/dex-core-v2"
+    ]
+  },
+  "hackenproof:sui-protocol": {
+    "hash": "5773f7a04fb33d74ae4c1e3e62718eb1a3cd57f2",
+    "bounty": true,
+    "source": true,
+    "name": "Sui Protocol",
+    "url": "https://hackenproof.com/programs/sui-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-node",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-core",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-types",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/external-crates/move",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-adapter",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-verifier",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-framework",
+        "description": "Blockchain/DLT - Sui Framework"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-bridge",
+        "description": "Only issues affecting funds. Governance not in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/bridge",
+        "description": "Only issues affecting funds. Governance not in scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/deepbookv3",
+        "description": "Specifically:\nDeepBook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/deepbook\nDeepBook Margin - https://github.com/MystenLabs/deepbookv3/tree/main/packages/\nAccount - https://github.com/MystenLabs/deepbookv3/tree/main/packages/account\nPredict - https://github.com/MystenLabs/deepbookv3/tree/main/packages/predict\nPropbook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/propbook\nSessions - https://github.com/MystenLabs/deepbookv3/tree/main/packages/sessions"
+      }
+    ],
+    "sc_total": 15,
+    "sc_ids": [
+      "github.com/mystenlabs/sui/tree/bella-ciao",
+      "https://github.com/mystenlabs/deepbookv3",
+      "https://github.com/mystenlabs/seal/tree/main/crates/key-server",
+      "https://github.com/mystenlabs/seal/tree/main/move/seal/sources ",
+      "https://github.com/mystenlabs/sui/tree/main/bridge",
+      "https://github.com/mystenlabs/sui/tree/main/crates/sui-bridge",
+      "https://github.com/mystenlabs/sui/tree/main/crates/sui-framework",
+      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-adapter",
+      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-verifier",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc-types",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-core",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-node",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-types",
+      "https://github.com/mystenlabs/sui/tree/testnet/external-crates/move"
+    ],
+    "github_repos": [
+      "mystenlabs/deepbookv3",
+      "mystenlabs/seal",
+      "mystenlabs/sui"
+    ]
+  },
+  "hackenproof:superposition-finance-web": {
+    "hash": "471c5dcca6322d4ec911e9e3ae7d73935087537c",
+    "bounty": true,
+    "source": false,
+    "name": "Superposition Finance Web",
+    "url": "https://hackenproof.com/programs/superposition-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swap-dot-io-smart-contracts": {
+    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
+    "bounty": true,
+    "source": true,
+    "name": "Swap.io Smart Contracts",
+    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+        "description": "collect fund fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+        "description": "collect protocol fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+        "description": "create operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+        "description": "admin mod"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+        "description": "transfer reward owner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+        "description": "update amm config"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+        "description": "update operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+        "description": "update pool status"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+        "description": "close position"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+        "description": "collect remaining rewards"
+      }
+    ],
+    "sc_total": 43,
+    "sc_ids": [
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
+    ],
+    "github_repos": [
+      "swap-dot-io/swap-io-clmm"
+    ]
+  },
+  "hackenproof:sweed-web": {
+    "hash": "44b5087d8e34ab998d1efda092ddc6095568d180",
+    "bounty": true,
+    "source": false,
+    "name": "Sweed Web",
+    "url": "https://hackenproof.com/programs/sweed-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swisstronik-blockchain-stability": {
+    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
+    "bounty": true,
+    "source": false,
+    "name": "Swisstronik Blockchain Stability",
+    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swisstronik-core": {
+    "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
+    "bounty": true,
+    "source": false,
+    "name": "Swisstronik Core",
+    "url": "https://hackenproof.com/programs/swisstronik-core",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:synfutures-dapp": {
+    "hash": "5dac2417e9a0f546c1a37dd7aec0687cbf3d82af",
+    "bounty": true,
+    "source": false,
+    "name": "SynFutures dApp",
+    "url": "https://hackenproof.com/programs/synfutures-dapp",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tapbit-web-and-mobile": {
+    "hash": "ac4935f224cbc540c6544f17c0d4d3ddb94bc914",
+    "bounty": true,
+    "source": false,
+    "name": "Tapbit Web & Mobile",
+    "url": "https://hackenproof.com/programs/tapbit-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:telegram-apps-center": {
+    "hash": "ce78dc2e146e4a4e361d9618db1c0cf64f3a439b",
+    "bounty": true,
+    "source": false,
+    "name": "Telegram Apps Center",
+    "url": "https://hackenproof.com/programs/telegram-apps-center",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ternoa-enclaves": {
+    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Enclaves",
+    "url": "https://hackenproof.com/programs/ternoa-enclaves",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-enclaves"
+    ]
+  },
+  "hackenproof:ternoa-wallet": {
+    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
+    "bounty": true,
+    "source": false,
+    "name": "Ternoa Wallet",
+    "url": "https://hackenproof.com/programs/ternoa-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tetu-smart-contracts": {
+    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
+    "bounty": true,
+    "source": true,
+    "name": "TETU Smart Contracts",
+    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25000,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+        "description": "Smart Contract - TETU Token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
+        "description": "Smart Contract - Controller"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
+        "description": "Smart Contract - Announcer"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
+        "description": "Smart Contract - ForwarderV2"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
+        "description": "Smart Contract - Bookkeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
+        "description": "Smart Contract - MintHelper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+        "description": "Smart Contract - FundKeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+        "description": "Smart Contract - tetuBAL(poly)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
+        "description": "Smart Contract - tetuBAL(eth)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+        "description": "Smart Contract - BalLocker(eth)"
+      }
+    ],
+    "sc_total": 21,
+    "sc_ids": [
+      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
+      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
+      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
+      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
+      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
+      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
+      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
+      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
+    ],
+    "github_repos": [
+      "tetu-io/tetu-contracts-v2"
+    ]
+  },
+  "hackenproof:tickets-travel-network-slash-updated-ui": {
+    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Updated UI",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ton-diamonds-web": {
+    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
+    "bounty": true,
+    "source": false,
+    "name": "TON Diamonds Web",
+    "url": "https://hackenproof.com/programs/ton-diamonds-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:turbos-finance-smart-contracts": {
+    "hash": "a45b45275a41ab1052d0e7af49b20fcc6525f0ee",
+    "bounty": true,
+    "source": true,
+    "name": "Turbos Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/turbos-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/turbos-clmm-public",
+        "description": "* KYC Required"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/hackenproof-public/turbos-clmm-public"
+    ],
+    "github_repos": [
+      "hackenproof-public/turbos-clmm-public"
+    ]
+  },
+  "hackenproof:u2staking-web": {
+    "hash": "8e29e0d4a21be9594ac328048e81ca5c5bef34a3",
+    "bounty": true,
+    "source": false,
+    "name": "U2Staking Web",
+    "url": "https://hackenproof.com/programs/u2staking-web",
+    "platform": "hackenproof",
+    "bounty_min": 10,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:uacatsdivision-smart-contracts": {
+    "hash": "4ff22760802011cbd9bb876fdad6e4962a0f9c07",
+    "bounty": false,
+    "source": true,
+    "name": "UACatsDivision Smart Contracts",
+    "url": "https://hackenproof.com/programs/uacatsdivision-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://etherscan.io/address/0xb95712ac7fbf54ab3fd10c86fd1e9463c8461bf5"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:uacatsdivision-web": {
+    "hash": "9e510c8658b46fd2477afc2a112921b06e07b270",
+    "bounty": false,
+    "source": false,
+    "name": "UACatsDivision Web",
+    "url": "https://hackenproof.com/programs/uacatsdivision-web",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:vechainthor-vip191": {
+    "hash": "afab50257608dbbe57a554c25066537042bd3659",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor VIP191",
+    "url": "https://hackenproof.com/programs/vechainthor-vip191",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "BLOCKCHAIN",
+        "identifier": "VIP191",
+        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "vip191"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:virtuswap-smart-contract": {
+    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
+    "bounty": true,
+    "source": true,
+    "name": "VirtuSwap Smart Contract",
+    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/virtuswap/v1-core/tree/main/contracts"
+    ],
+    "github_repos": [
+      "virtuswap/v1-core"
+    ]
+  },
+  "hackenproof:walrus-protocol": {
+    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
+    "bounty": false,
+    "source": true,
+    "name": "Walrus Protocol",
+    "url": "https://hackenproof.com/programs/walrus-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
+        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
+        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
+        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
+        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
+        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
+        "description": "Client SDK for blob upload, download, and on-chain interactions."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
+        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
+        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
+        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
+    ],
+    "github_repos": [
+      "mystenlabs/walrus"
+    ]
+  },
+  "hackenproof:weex-web-and-app": {
+    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
+    "bounty": true,
+    "source": false,
+    "name": "WEEX Web & App",
+    "url": "https://hackenproof.com/programs/weex-web-and-app",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitechain-bridge": {
+    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Bridge",
+    "url": "https://hackenproof.com/programs/whitechain-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitechain-labs/bridge-contracts"
+    ],
+    "github_repos": [
+      "whitechain-labs/bridge-contracts"
+    ]
+  },
+  "hackenproof:whitechain-network": {
+    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Network",
+    "url": "https://hackenproof.com/programs/whitechain-network",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitebit-exchange/wbt",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitebit-exchange/wbt"
+    ],
+    "github_repos": [
+      "whitebit-exchange/wbt"
+    ]
+  },
+  "hackenproof:whitemarket-web": {
+    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteMarket Web",
+    "url": "https://hackenproof.com/programs/whitemarket-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zeko-protocol": {
+    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
+    "bounty": false,
+    "source": true,
+    "name": "Zeko Protocol",
+    "url": "https://hackenproof.com/programs/zeko-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/zeko",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
+        "description": "SantaClawz Github repo"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/x402-zeko",
+        "description": "x402 Github repo"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zeko-labs/santa_clawz-private_agents",
+      "https://github.com/zeko-labs/x402-zeko",
+      "https://github.com/zeko-labs/zeko"
+    ],
+    "github_repos": [
+      "zeko-labs/santa_clawz-private_agents",
+      "zeko-labs/x402-zeko",
+      "zeko-labs/zeko"
+    ]
+  },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
+    ]
+  },
+  "hackenproof:zoomex-web-and-mobile": {
+    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
+    "bounty": true,
+    "source": false,
+    "name": "Zoomex Web & Mobile",
+    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:logos": {
+    "hash": "423251bd34b0c0e7de46d659a9c62bd9893fa3c1",
+    "bounty": true,
+    "source": true,
+    "name": "Logos",
+    "url": "https://hackenproof.com/programs/logos",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
+        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/examples.waku.org",
+        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku",
+        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
+        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/logos-messaging/examples.waku.org",
+      "https://github.com/logos-messaging/go-waku",
+      "https://github.com/logos-messaging/go-waku/tree/master/examples",
+      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+      "https://github.com/logos-messaging/logos-delivery-js"
+    ],
+    "github_repos": [
+      "logos-messaging/examples.waku.org",
+      "logos-messaging/go-waku",
+      "logos-messaging/logos-delivery-go",
+      "logos-messaging/logos-delivery-js"
+    ]
+  },
+  "hackenproof:meest-poshta-mobile": {
+    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
+    "bounty": false,
+    "source": false,
+    "name": "Meest Poshta Mobile",
+    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:multipli-web": {
+    "hash": "f801e70eb813179e01f255fe6b069995d0202485",
+    "bounty": true,
+    "source": false,
+    "name": "Multipli Web",
+    "url": "https://hackenproof.com/programs/multipli-web",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:myetherwallet": {
+    "hash": "c7e2185bb2117bdcb95756aeda01b3b1b285da74",
+    "bounty": true,
+    "source": true,
+    "name": "MyEtherWallet",
+    "url": "https://hackenproof.com/programs/myetherwallet",
+    "platform": "hackenproof",
+    "bounty_min": 350,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/MyEtherWallet/MyEtherWallet/tree/feat/v7",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/myetherwallet/myetherwallet/tree/feat/v7"
+    ],
+    "github_repos": [
+      "myetherwallet/myetherwallet"
+    ]
+  },
+  "hackenproof:nado-web": {
+    "hash": "625152117079ff27994d2f744634c686b7a2b66f",
+    "bounty": true,
+    "source": false,
+    "name": "Nado Web",
+    "url": "https://hackenproof.com/programs/nado-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:neverdie-web": {
+    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
+    "bounty": true,
+    "source": false,
+    "name": "Neverdie Web",
+    "url": "https://hackenproof.com/programs/neverdie-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:nicehash-mining-platform": {
+    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
+    "bounty": true,
+    "source": true,
+    "name": "NiceHash Mining platform",
+    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NHOS",
+        "description": "NHOS - Mining operating system"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
+        "description": "NiceHashQuickMiner - Mining client"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashMiner",
+        "description": "NiceHashMiner - Mining client"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/nicehash/nhos",
+      "https://github.com/nicehash/nicehashminer",
+      "https://github.com/nicehash/nicehashquickminer"
+    ],
+    "github_repos": [
+      "nicehash/nhos",
+      "nicehash/nicehashminer",
+      "nicehash/nicehashquickminer"
+    ]
+  },
+  "hackenproof:nimbus": {
+    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+    "bounty": true,
+    "source": false,
+    "name": "Nimbus",
+    "url": "https://hackenproof.com/programs/nimbus",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
+    "bounty": true,
+    "source": false,
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:okx": {
+    "hash": "43d0d3ed4289643d7e805731e9c2f149afdf24e2",
+    "bounty": true,
+    "source": true,
+    "name": "OKX",
+    "url": "https://hackenproof.com/programs/okx",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/okx/",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/okx"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
+  },
+  "hackenproof:openware": {
+    "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
+    "bounty": true,
+    "source": false,
+    "name": "Openware",
+    "url": "https://hackenproof.com/programs/openware",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:pallets": {
+    "hash": "d0ef62c11f27ce1d57a4b7ace55a494f9a9f1b9f",
+    "bounty": true,
+    "source": true,
+    "name": "Pallets",
+    "url": "https://hackenproof.com/programs/pallets",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-pallets",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-pallets"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-pallets"
+    ]
+  },
+  "hackenproof:pandora-web": {
+    "hash": "48cd354f9c06532c575443e9c63165792a9814a6",
+    "bounty": true,
+    "source": false,
+    "name": "Pandora WEB",
+    "url": "https://hackenproof.com/programs/pandora-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 8000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:polkalokr-1": {
+    "hash": "6532def9ec49e41a9793544ecd01237764168922",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr-1",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:poloniex-web-and-api": {
+    "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
+    "bounty": true,
+    "source": false,
+    "name": "Poloniex Web & API",
+    "url": "https://hackenproof.com/programs/poloniex-web-and-api",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:pumb-tacsk": {
+    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
+    "bounty": true,
+    "source": false,
+    "name": "Pumb Tacsk",
+    "url": "https://hackenproof.com/programs/pumb-tacsk",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:raiffeisen-web-and-mobile": {
+    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
+    "bounty": true,
+    "source": false,
+    "name": "Raiffeisen Web & Mobile",
+    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:risc-zero-blockchain-verifiers": {
+    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero Blockchain Verifiers",
+    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
+    ],
+    "github_repos": [
+      "risc0/risc0-ethereum"
+    ]
+  },
+  "hackenproof:risc-zero-zkvm": {
+    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero zkVM",
+    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0/tree/main/risc0"
+    ],
+    "github_repos": [
+      "risc0/risc0"
+    ]
+  },
+  "hackenproof:router-web": {
+    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
+    "bounty": true,
+    "source": false,
+    "name": "Router Web",
+    "url": "https://hackenproof.com/programs/router-web",
+    "platform": "hackenproof",
+    "bounty_min": 500,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -47669,97 +48779,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:smilee-smart-contracts": {
-    "hash": "597500c9698151048291895df431099bfe45d9f6",
-    "bounty": true,
-    "source": true,
-    "name": "Smilee Smart Contracts",
-    "url": "https://hackenproof.com/programs/smilee-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 75000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
-        "description": "Smilee v2 core contracts (contracts out of scope are specified in the following tabs) "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/MasterChefSmilee.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/SimpleRewarderPerSec.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/IGAccessNFT.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet",
-        "description": ""
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/igaccessnft.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/masterchefsmilee.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/blob/master/src/periphery/simplerewarderpersec.sol",
-      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src",
-      "https://github.com/smilee-finance/v2-contracts-public/tree/master/src/testnet"
-    ],
-    "github_repos": [
-      "smilee-finance/v2-contracts-public"
-    ]
-  },
-  "hackenproof:snowbridge-on-chain-code": {
-    "hash": "a62842f821663025db5dc6c905a03f2da7e4d324",
-    "bounty": true,
-    "source": true,
-    "name": "Snowbridge On-Chain Code",
-    "url": "https://hackenproof.com/programs/snowbridge-on-chain-code",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 75000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Snowfork/snowbridge",
-        "description": "Ethereum Contracts which cover our Beefy Light Client, Parachain Light Client, Gateway, Agent, Messaging Protocol and Asset transfer functionality"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
-        "description": "Pallets and support crates that are deployed to the BridgeHub parachain"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges/snowbridge",
-      "https://github.com/snowfork/snowbridge"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "snowfork/snowbridge"
-    ]
-  },
   "hackenproof:snowbridge-web": {
     "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
     "bounty": true,
@@ -47796,26 +48815,6 @@
       "snowfork/snowbridge",
       "snowfork/snowbridge-app"
     ]
-  },
-  "hackenproof:solv-web-and-infrastructure": {
-    "hash": "b04c5c7ddfeb757913ea0cd903975c6e860322c6",
-    "bounty": false,
-    "source": false,
-    "name": "Solv Web & Infrastructure",
-    "url": "https://hackenproof.com/programs/solv-web-and-infrastructure",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:starknet-blockchain-slash-dlt": {
     "hash": "59343da1648d5dd9ed11065938beb0b63179d28b",
@@ -48021,52 +49020,6 @@
       "starkware-libs/starknet-staking"
     ]
   },
-  "hackenproof:starknet-web-and-sc": {
-    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Web & SC",
-    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
-    "platform": "hackenproof",
-    "bounty_min": 1250,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
-    ],
-    "github_repos": [
-      "starknet-io/starkgate-contracts"
-    ]
-  },
   "hackenproof:status": {
     "hash": "08b02638ea266d953619e418939951d619d97c91",
     "bounty": true,
@@ -48206,151 +49159,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:ston-dot-fi-dex-smart-contracts-v2": {
-    "hash": "4e4d2ac112cb9a972a90635646a2b6ae9e6ba20d",
-    "bounty": true,
-    "source": true,
-    "name": "STON.fi DEX Smart Contracts v2",
-    "url": "https://hackenproof.com/programs/ston-dot-fi-dex-smart-contracts-v2",
-    "platform": "hackenproof",
-    "bounty_min": 5000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
-        "description": "LP Account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
-        "description": "LP Wallet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
-        "description": "Pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
-        "description": "Router"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc",
-        "description": "Vault"
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc"
-    ],
-    "github_repos": [
-      "ston-fi/dex-core-v2"
-    ]
-  },
-  "hackenproof:sui-protocol": {
-    "hash": "5773f7a04fb33d74ae4c1e3e62718eb1a3cd57f2",
-    "bounty": true,
-    "source": true,
-    "name": "Sui Protocol",
-    "url": "https://hackenproof.com/programs/sui-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-node",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-core",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-types",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/external-crates/move",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-adapter",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-verifier",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-framework",
-        "description": "Blockchain/DLT - Sui Framework"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-bridge",
-        "description": "Only issues affecting funds. Governance not in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/bridge",
-        "description": "Only issues affecting funds. Governance not in scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/deepbookv3",
-        "description": "Specifically:\nDeepBook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/deepbook\nDeepBook Margin - https://github.com/MystenLabs/deepbookv3/tree/main/packages/\nAccount - https://github.com/MystenLabs/deepbookv3/tree/main/packages/account\nPredict - https://github.com/MystenLabs/deepbookv3/tree/main/packages/predict\nPropbook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/propbook\nSessions - https://github.com/MystenLabs/deepbookv3/tree/main/packages/sessions"
-      }
-    ],
-    "sc_total": 15,
-    "sc_ids": [
-      "github.com/mystenlabs/sui/tree/bella-ciao",
-      "https://github.com/mystenlabs/deepbookv3",
-      "https://github.com/mystenlabs/seal/tree/main/crates/key-server",
-      "https://github.com/mystenlabs/seal/tree/main/move/seal/sources ",
-      "https://github.com/mystenlabs/sui/tree/main/bridge",
-      "https://github.com/mystenlabs/sui/tree/main/crates/sui-bridge",
-      "https://github.com/mystenlabs/sui/tree/main/crates/sui-framework",
-      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-adapter",
-      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-verifier",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc-types",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-core",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-node",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-types",
-      "https://github.com/mystenlabs/sui/tree/testnet/external-crates/move"
-    ],
-    "github_repos": [
-      "mystenlabs/deepbookv3",
-      "mystenlabs/seal",
-      "mystenlabs/sui"
-    ]
-  },
   "hackenproof:superearn-web-and-smart-contracts": {
     "hash": "5bf449fe90a7f05bd91b093dad4fb096c51ee0e7",
     "bounty": false,
@@ -48380,263 +49188,6 @@
     "github_repos": [
       "superearn-io/superearn-core-public"
     ]
-  },
-  "hackenproof:superposition-finance-web": {
-    "hash": "471c5dcca6322d4ec911e9e3ae7d73935087537c",
-    "bounty": true,
-    "source": false,
-    "name": "Superposition Finance Web",
-    "url": "https://hackenproof.com/programs/superposition-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swap-dot-io-smart-contracts": {
-    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
-    "bounty": true,
-    "source": true,
-    "name": "Swap.io Smart Contracts",
-    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-        "description": "collect fund fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-        "description": "collect protocol fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-        "description": "create operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-        "description": "admin mod"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-        "description": "transfer reward owner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-        "description": "update amm config"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-        "description": "update operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-        "description": "update pool status"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-        "description": "close position"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-        "description": "collect remaining rewards"
-      }
-    ],
-    "sc_total": 43,
-    "sc_ids": [
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
-    ],
-    "github_repos": [
-      "swap-dot-io/swap-io-clmm"
-    ]
-  },
-  "hackenproof:sweed-web": {
-    "hash": "44b5087d8e34ab998d1efda092ddc6095568d180",
-    "bounty": true,
-    "source": false,
-    "name": "Sweed Web",
-    "url": "https://hackenproof.com/programs/sweed-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swisstronik-blockchain-stability": {
-    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Blockchain Stability",
-    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swisstronik-core": {
-    "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Core",
-    "url": "https://hackenproof.com/programs/swisstronik-core",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:synfutures-dapp": {
-    "hash": "5dac2417e9a0f546c1a37dd7aec0687cbf3d82af",
-    "bounty": true,
-    "source": false,
-    "name": "SynFutures dApp",
-    "url": "https://hackenproof.com/programs/synfutures-dapp",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tapbit-web-and-mobile": {
-    "hash": "ac4935f224cbc540c6544f17c0d4d3ddb94bc914",
-    "bounty": true,
-    "source": false,
-    "name": "Tapbit Web & Mobile",
-    "url": "https://hackenproof.com/programs/tapbit-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:telegram-apps-center": {
-    "hash": "ce78dc2e146e4a4e361d9618db1c0cf64f3a439b",
-    "bounty": true,
-    "source": false,
-    "name": "Telegram Apps Center",
-    "url": "https://hackenproof.com/programs/telegram-apps-center",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:ternoa-smart-contracts": {
     "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
@@ -48668,26 +49219,6 @@
       "capsule-corp-ternoa/chainbridge-solidity"
     ]
   },
-  "hackenproof:ternoa-wallet": {
-    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
-    "bounty": true,
-    "source": false,
-    "name": "Ternoa Wallet",
-    "url": "https://hackenproof.com/programs/ternoa-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ternoa-web-and-apps": {
     "hash": "715cf363d49ba8d1735147868a4d7b0950fee276",
     "bounty": true,
@@ -48716,101 +49247,6 @@
     ],
     "github_repos": [
       "capsule-corp-ternoa/ternoa-js"
-    ]
-  },
-  "hackenproof:tetu-smart-contracts": {
-    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
-    "bounty": true,
-    "source": true,
-    "name": "TETU Smart Contracts",
-    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 25000,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-        "description": "Smart Contract - TETU Token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
-        "description": "Smart Contract - Controller"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
-        "description": "Smart Contract - Announcer"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
-        "description": "Smart Contract - ForwarderV2"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
-        "description": "Smart Contract - Bookkeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
-        "description": "Smart Contract - MintHelper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-        "description": "Smart Contract - FundKeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-        "description": "Smart Contract - tetuBAL(poly)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
-        "description": "Smart Contract - tetuBAL(eth)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-        "description": "Smart Contract - BalLocker(eth)"
-      }
-    ],
-    "sc_total": 21,
-    "sc_ids": [
-      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
-      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
-      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
-      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
-      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
-      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
-      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
-      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
-    ],
-    "github_repos": [
-      "tetu-io/tetu-contracts-v2"
     ]
   },
   "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
@@ -48855,26 +49291,6 @@
     "source": false,
     "name": "Tickets Travel Network / Mobile",
     "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tickets-travel-network-slash-updated-ui": {
-    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Updated UI",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 2000,
@@ -48938,26 +49354,6 @@
     "platform": "hackenproof",
     "bounty_min": 150,
     "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ton-diamonds-web": {
-    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
-    "bounty": true,
-    "source": false,
-    "name": "TON Diamonds Web",
-    "url": "https://hackenproof.com/programs/ton-diamonds-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -49248,36 +49644,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:turbos-finance-smart-contracts": {
-    "hash": "a45b45275a41ab1052d0e7af49b20fcc6525f0ee",
-    "bounty": true,
-    "source": true,
-    "name": "Turbos Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/turbos-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/turbos-clmm-public",
-        "description": "* KYC Required"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/turbos-clmm-public"
-    ],
-    "github_repos": [
-      "hackenproof-public/turbos-clmm-public"
-    ]
-  },
   "hackenproof:ult-trade-stocks-and-crypto": {
     "hash": "2bd368e88393c9d7af0beac43ffde4bfedc1ba3d",
     "bounty": true,
@@ -49378,34 +49744,6 @@
       "vechain/thor"
     ]
   },
-  "hackenproof:vechainthor-vip191": {
-    "hash": "afab50257608dbbe57a554c25066537042bd3659",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor VIP191",
-    "url": "https://hackenproof.com/programs/vechainthor-vip191",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "BLOCKCHAIN",
-        "identifier": "VIP191",
-        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "vip191"
-    ],
-    "github_repos": []
-  },
   "hackenproof:vechainthor-wallet": {
     "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
     "bounty": true,
@@ -49445,36 +49783,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:virtuswap-smart-contract": {
-    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
-    "bounty": true,
-    "source": true,
-    "name": "VirtuSwap Smart Contract",
-    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/virtuswap/v1-core/tree/main/contracts"
-    ],
-    "github_repos": [
-      "virtuswap/v1-core"
-    ]
   },
   "hackenproof:volo-smart-contracts": {
     "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
@@ -49526,104 +49834,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:walrus-protocol": {
-    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
-    "bounty": false,
-    "source": true,
-    "name": "Walrus Protocol",
-    "url": "https://hackenproof.com/programs/walrus-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
-        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
-        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
-        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
-        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
-        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
-        "description": "Client SDK for blob upload, download, and on-chain interactions."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
-        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
-        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
-        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
-    ],
-    "github_repos": [
-      "mystenlabs/walrus"
-    ]
-  },
-  "hackenproof:weex-web-and-app": {
-    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
-    "bounty": true,
-    "source": false,
-    "name": "WEEX Web & App",
-    "url": "https://hackenproof.com/programs/weex-web-and-app",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:whitebit": {
     "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
     "bounty": true,
@@ -49664,86 +49874,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:whitechain-bridge": {
-    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Bridge",
-    "url": "https://hackenproof.com/programs/whitechain-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/bridge-contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/bridge-contracts"
-    ]
-  },
-  "hackenproof:whitechain-network": {
-    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Network",
-    "url": "https://hackenproof.com/programs/whitechain-network",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitebit-exchange/wbt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitebit-exchange/wbt"
-    ],
-    "github_repos": [
-      "whitebit-exchange/wbt"
-    ]
-  },
-  "hackenproof:whitemarket-web": {
-    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteMarket Web",
-    "url": "https://hackenproof.com/programs/whitemarket-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:xt": {
     "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
     "bounty": true,
@@ -49763,50 +49893,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:zeko-protocol": {
-    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
-    "bounty": false,
-    "source": true,
-    "name": "Zeko Protocol",
-    "url": "https://hackenproof.com/programs/zeko-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/zeko",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
-        "description": "SantaClawz Github repo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/x402-zeko",
-        "description": "x402 Github repo"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zeko-labs/santa_clawz-private_agents",
-      "https://github.com/zeko-labs/x402-zeko",
-      "https://github.com/zeko-labs/zeko"
-    ],
-    "github_repos": [
-      "zeko-labs/santa_clawz-private_agents",
-      "zeko-labs/x402-zeko",
-      "zeko-labs/zeko"
-    ]
   },
   "hackenproof:zest-protocol-smart-contracts": {
     "hash": "3194c3fc6d789f81897394f1d11728b56a85871f",
@@ -50049,43 +50135,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
-  },
   "hackenproof:zo-finance-web": {
     "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
     "bounty": false,
@@ -50101,26 +50150,6 @@
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zoomex-web-and-mobile": {
-    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
-    "bounty": true,
-    "source": false,
-    "name": "Zoomex Web & Mobile",
-    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -53025,22 +53054,6 @@
     "bounty_max": 0,
     "bounty_ccy": "",
     "domains": 57,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
-  "chaos:brave-software": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "platform": "chaos",
-    "origin": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 413,
     "resp_eff": null,
     "bounty_days": null,
     "sc_targets": []
@@ -58119,10 +58132,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-05T17:00:53.954776+00:00",
+    "updated_at": "2026-10-05T17:31:10.918014+00:00",
     "total": 1925,
-    "qualifying": 426,
-    "external": 357,
+    "qualifying": 427,
+    "external": 356,
     "blockchain": 365,
     "feed_ids": {
       "immunefi": [],
