@@ -1765,7 +1765,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2740,7 +2740,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 66,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6131,7 +6131,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 569.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7351,7 +7351,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 255,
-    "resp_eff": 60,
+    "resp_eff": 59,
     "bounty_days": 2212.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43481,76 +43481,6 @@
       "dodoex/dodo-limit-order"
     ]
   },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
-    "bounty": true,
-    "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:safeswap-app": {
-    "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
-    "bounty": false,
-    "source": false,
-    "name": "SafeSwap App",
-    "url": "https://hackenproof.com/programs/safeswap-app",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:scallop-protocol-smart-contract": {
-    "hash": "53eedc625dcc280a335510abb8af07432f4b8248",
-    "bounty": true,
-    "source": true,
-    "name": "Scallop Protocol (Smart Contract)",
-    "url": "https://hackenproof.com/programs/scallop-protocol-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 30,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/scallop-io/sui-lending-protocol",
-        "description": "Core Smart contract protocol."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/scallop-io/sui-lending-protocol"
-    ],
-    "github_repos": [
-      "scallop-io/sui-lending-protocol"
-    ]
-  },
   "hackenproof:dop-protocol": {
     "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
     "bounty": true,
@@ -47354,6 +47284,76 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+    "bounty": true,
+    "source": false,
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:safeswap-app": {
+    "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
+    "bounty": false,
+    "source": false,
+    "name": "SafeSwap App",
+    "url": "https://hackenproof.com/programs/safeswap-app",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:scallop-protocol-smart-contract": {
+    "hash": "53eedc625dcc280a335510abb8af07432f4b8248",
+    "bounty": true,
+    "source": true,
+    "name": "Scallop Protocol (Smart Contract)",
+    "url": "https://hackenproof.com/programs/scallop-protocol-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 30,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/scallop-io/sui-lending-protocol",
+        "description": "Core Smart contract protocol."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/scallop-io/sui-lending-protocol"
+    ],
+    "github_repos": [
+      "scallop-io/sui-lending-protocol"
+    ]
   },
   "hackenproof:serenity-shield-testnet-campain": {
     "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
@@ -58122,7 +58122,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-05T02:39:38.327111+00:00",
+    "updated_at": "2026-10-05T03:09:53.286845+00:00",
     "total": 1925,
     "qualifying": 426,
     "external": 356,
