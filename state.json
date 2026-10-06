@@ -1746,7 +1746,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 66,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1857,7 +1857,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3160,7 +3160,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 70,
     "bounty_days": 117.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4869,7 +4869,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 90,
     "bounty_days": 577.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5343,7 +5343,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7018,7 +7018,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7739,7 +7739,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 30017,
-    "resp_eff": 80,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8261,7 +8261,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -17058,25 +17058,6 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "intigriti:heretechnologies": {
-    "hash": "765ceb86cfa79bbb6d6e22c7fef09c9df92e41c1",
-    "bounty": true,
-    "source": false,
-    "name": "Here Technologies",
-    "url": "https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 2000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -47293,6 +47274,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+    "bounty": true,
+    "source": false,
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:safeswap-app": {
     "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
     "bounty": false,
@@ -47975,6 +47976,34 @@
     "github_repos": [
       "starknet-io/starkgate-contracts"
     ]
+  },
+  "hackenproof:status": {
+    "hash": "158ee09aba8d85b4b09b71b252d630230adf1195",
+    "bounty": false,
+    "source": true,
+    "name": "Status",
+    "url": "https://hackenproof.com/programs/status",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "Status Smart Contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "status smart contracts"
+    ],
+    "github_repos": []
   },
   "hackenproof:stbl-smart-contracts": {
     "hash": "6783a6fb49f1fc2f6b925bb51e0963ea97519a69",
@@ -50147,54 +50176,6 @@
       "zynklabs/audit-reports",
       "zynklabs/zynk-protocol-solana-programs.public"
     ]
-  },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
-    "bounty": true,
-    "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:status": {
-    "hash": "158ee09aba8d85b4b09b71b252d630230adf1195",
-    "bounty": false,
-    "source": true,
-    "name": "Status",
-    "url": "https://hackenproof.com/programs/status",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "Status Smart Contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "status smart contracts"
-    ],
-    "github_repos": []
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
     "hash": "19782609020423324cf26c0603eed0c32f1fe0ba",
@@ -58381,8 +58362,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-06T13:10:29.646322+00:00",
-    "total": 1932,
+    "updated_at": "2026-10-06T13:40:55.636272+00:00",
+    "total": 1931,
     "qualifying": 424,
     "external": 363,
     "blockchain": 362,
