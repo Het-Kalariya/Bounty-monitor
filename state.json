@@ -20060,6 +20060,214 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:gnosischain": {
+    "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
+    "bounty": true,
+    "source": true,
+    "name": "Gnosis Chain",
+    "url": "https://immunefi.com/bug-bounty/gnosischain",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 2000000,
+    "bounty_ccy": "USDC or xDAI",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
+        "description": "XDaiForeignBridge: DAI-xDAI TokenBridge contract on the Ethereum Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://blockscout.com/xdai/mainnet/address/0x7301CFA0e1756B71869E93d4e4Dca5c7d0eb0AA6",
+        "description": "HomeBridgeErcToNative: DAI-xDAI TokenBridge contract on the Gnosis chain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x88ad09518695c6c3712AC10a214bE5109a655671",
+        "description": "ForeignOmnibridge: OmniBridge contract on the Ethereum Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://blockscout.com/xdai/mainnet/address/0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
+        "description": "HomeOmnibridge: OmniBridge contract on the Gnosis chain"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://blockscout.com/xdai/mainnet/address/0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6",
+      "https://blockscout.com/xdai/mainnet/address/0xf6a78083ca3e2a662d6dd1703c939c8ace2e268d",
+      "https://etherscan.io/address/0x4aa42145aa6ebf72e164c9bbc74fbd3788045016",
+      "https://etherscan.io/address/0x88ad09518695c6c3712ac10a214be5109a655671"
+    ],
+    "github_repos": []
+  },
+  "immunefi:debridge": {
+    "hash": "0e6c465f66a5b33906451cde505274849a9bc81c",
+    "bounty": true,
+    "source": true,
+    "name": "deBridge",
+    "url": "https://immunefi.com/bug-bounty/debridge",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 200000,
+    "bounty_ccy": "USDC or USDT",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin ETH"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin BSC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin MATIC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://hecoinfo.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin HECO"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin ARBI"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin AVAX"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://ftmscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
+        "description": "ProxyAdmin FTM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+        "description": "deBridgeGate Proxy ETH"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+        "description": "deBridgeGate Proxy BSC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
+        "description": "deBridgeGate Proxy MATIC"
+      }
+    ],
+    "sc_total": 90,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+      "https://arbiscan.io/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+      "https://arbiscan.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://arbiscan.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://arbiscan.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://arbiscan.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://arbiscan.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://arbiscan.io/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
+      "https://arbiscan.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://arbiscan.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://arbiscan.io/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "https://arbiscan.io/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "https://bscscan.com/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+      "https://bscscan.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+      "https://bscscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://bscscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://bscscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://bscscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://bscscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://bscscan.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
+      "https://bscscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://bscscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://bscscan.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "https://bscscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "https://bscscan.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "https://etherscan.io/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+      "https://etherscan.io/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+      "https://etherscan.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://etherscan.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://etherscan.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://etherscan.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://etherscan.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://etherscan.io/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
+      "https://etherscan.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://etherscan.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://etherscan.io/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "https://etherscan.io/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "https://etherscan.io/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "https://ftmscan.com/address/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87",
+      "https://ftmscan.com/address/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
+      "https://ftmscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://ftmscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://ftmscan.com/address/0x55c93b20dd2f790ac429d6341a022a781791654a",
+      "https://ftmscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://ftmscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://ftmscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://ftmscan.com/address/0xb1a20d1c885fd775df97396397d6f8f07abdd20d",
+      "https://ftmscan.com/address/0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
+      "https://ftmscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://ftmscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://ftmscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "https://hecoinfo.com/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
+      "https://hecoinfo.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+      "https://hecoinfo.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://hecoinfo.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://hecoinfo.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://hecoinfo.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://hecoinfo.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://hecoinfo.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
+      "https://hecoinfo.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://hecoinfo.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://hecoinfo.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "https://hecoinfo.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "https://hecoinfo.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "https://polygonscan.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
+      "https://polygonscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://polygonscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://polygonscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://polygonscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://polygonscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://polygonscan.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
+      "https://polygonscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://polygonscan.com/address/0xcc7571c12b6f4647c4b8c851b62721f6a373c695",
+      "https://polygonscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://polygonscan.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
+      "https://polygonscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
+      "https://polygonscan.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
+      "https://snowtrace.io/address/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87",
+      "https://snowtrace.io/address/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
+      "https://snowtrace.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
+      "https://snowtrace.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
+      "https://snowtrace.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
+      "https://snowtrace.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
+      "https://snowtrace.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
+      "https://snowtrace.io/address/0xb1a20d1c885fd775df97396397d6f8f07abdd20d",
+      "https://snowtrace.io/address/0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
+      "https://snowtrace.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
+      "https://snowtrace.io/address/0xd34c2302f497b8a7fe2d07865f31dbe04d5044d6",
+      "https://snowtrace.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
+      "https://snowtrace.io/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59"
+    ],
+    "github_repos": []
+  },
   "immunefi:sbtc": {
     "hash": "10874ce1feb4daf7056f5f5138221659d4d8094f",
     "bounty": true,
@@ -26491,52 +26699,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:gnosischain": {
-    "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
-    "bounty": true,
-    "source": true,
-    "name": "Gnosis Chain",
-    "url": "https://immunefi.com/bug-bounty/gnosischain",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 2000000,
-    "bounty_ccy": "USDC or xDAI",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
-        "description": "XDaiForeignBridge: DAI-xDAI TokenBridge contract on the Ethereum Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://blockscout.com/xdai/mainnet/address/0x7301CFA0e1756B71869E93d4e4Dca5c7d0eb0AA6",
-        "description": "HomeBridgeErcToNative: DAI-xDAI TokenBridge contract on the Gnosis chain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x88ad09518695c6c3712AC10a214bE5109a655671",
-        "description": "ForeignOmnibridge: OmniBridge contract on the Ethereum Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://blockscout.com/xdai/mainnet/address/0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
-        "description": "HomeOmnibridge: OmniBridge contract on the Gnosis chain"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://blockscout.com/xdai/mainnet/address/0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6",
-      "https://blockscout.com/xdai/mainnet/address/0xf6a78083ca3e2a662d6dd1703c939c8ace2e268d",
-      "https://etherscan.io/address/0x4aa42145aa6ebf72e164c9bbc74fbd3788045016",
-      "https://etherscan.io/address/0x88ad09518695c6c3712ac10a214be5109a655671"
-    ],
-    "github_repos": []
-  },
   "immunefi:optimism": {
     "hash": "b229f6e8c64e6d08ef9ce7c326574ae747642d4d",
     "bounty": true,
@@ -28299,168 +28461,6 @@
     "sc_total": 1,
     "sc_ids": [
       "https://solscan.io/account/onreughhhgvzmwskj2oqdldtvvgvoepbpkqyaubfcwe"
-    ],
-    "github_repos": []
-  },
-  "immunefi:debridge": {
-    "hash": "0e6c465f66a5b33906451cde505274849a9bc81c",
-    "bounty": true,
-    "source": true,
-    "name": "deBridge",
-    "url": "https://immunefi.com/bug-bounty/debridge",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC or USDT",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin ETH"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin BSC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin MATIC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://hecoinfo.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin HECO"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin ARBI"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin AVAX"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://ftmscan.com/address/0xE4427af3555CD9303D728C491364FAdFDD7494Fe",
-        "description": "ProxyAdmin FTM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
-        "description": "deBridgeGate Proxy ETH"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
-        "description": "deBridgeGate Proxy BSC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x43dE2d77BF8027e25dBD179B491e8d64f38398aA",
-        "description": "deBridgeGate Proxy MATIC"
-      }
-    ],
-    "sc_total": 90,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
-      "https://arbiscan.io/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
-      "https://arbiscan.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://arbiscan.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://arbiscan.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://arbiscan.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://arbiscan.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://arbiscan.io/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
-      "https://arbiscan.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://arbiscan.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://arbiscan.io/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
-      "https://arbiscan.io/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
-      "https://bscscan.com/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
-      "https://bscscan.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
-      "https://bscscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://bscscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://bscscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://bscscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://bscscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://bscscan.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
-      "https://bscscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://bscscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://bscscan.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
-      "https://bscscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
-      "https://bscscan.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
-      "https://etherscan.io/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
-      "https://etherscan.io/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
-      "https://etherscan.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://etherscan.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://etherscan.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://etherscan.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://etherscan.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://etherscan.io/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
-      "https://etherscan.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://etherscan.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://etherscan.io/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
-      "https://etherscan.io/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
-      "https://etherscan.io/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
-      "https://ftmscan.com/address/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87",
-      "https://ftmscan.com/address/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
-      "https://ftmscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://ftmscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://ftmscan.com/address/0x55c93b20dd2f790ac429d6341a022a781791654a",
-      "https://ftmscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://ftmscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://ftmscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://ftmscan.com/address/0xb1a20d1c885fd775df97396397d6f8f07abdd20d",
-      "https://ftmscan.com/address/0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
-      "https://ftmscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://ftmscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://ftmscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
-      "https://hecoinfo.com/address/0x24455aa55ded7728783c9474be8ea2f5c935f8eb",
-      "https://hecoinfo.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
-      "https://hecoinfo.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://hecoinfo.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://hecoinfo.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://hecoinfo.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://hecoinfo.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://hecoinfo.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
-      "https://hecoinfo.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://hecoinfo.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://hecoinfo.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
-      "https://hecoinfo.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
-      "https://hecoinfo.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
-      "https://polygonscan.com/address/0x37a52ddb753c924f8c914de65ef00b5210caa83c",
-      "https://polygonscan.com/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://polygonscan.com/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://polygonscan.com/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://polygonscan.com/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://polygonscan.com/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://polygonscan.com/address/0xbd3d657ae87671ec6f8d6272a9f431a7c4a9b6f8",
-      "https://polygonscan.com/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://polygonscan.com/address/0xcc7571c12b6f4647c4b8c851b62721f6a373c695",
-      "https://polygonscan.com/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://polygonscan.com/address/0xf8a2902c0a5f817f5e22c82f453538d3f0734c2b",
-      "https://polygonscan.com/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59",
-      "https://polygonscan.com/address/0xfe7de3c1e1bd252c67667b56347cabfc6df08df4",
-      "https://snowtrace.io/address/0x27406ebf0b76923d93b4c6c6224bcab7fff11f87",
-      "https://snowtrace.io/address/0x2a3e72ed893b5958690e16c3bbe1bd92137b6250",
-      "https://snowtrace.io/address/0x43de2d77bf8027e25dbd179b491e8d64f38398aa",
-      "https://snowtrace.io/address/0x4c7ca8fcffe77281a8b81d4580cff8257d785491",
-      "https://snowtrace.io/address/0x8244d6ffe0695b30b2bad424683ee3bc534ea464",
-      "https://snowtrace.io/address/0x8a0c79f5532f3b2a16ad1e4282a5daf81928a824",
-      "https://snowtrace.io/address/0x949b3b3c098348b879c9e4f15cecc8046d9c8a8c",
-      "https://snowtrace.io/address/0xb1a20d1c885fd775df97396397d6f8f07abdd20d",
-      "https://snowtrace.io/address/0xc1656b63d9eeba6d114f6be19565177893e5bcbf",
-      "https://snowtrace.io/address/0xc2bac0db5b18b0c3225581ba14bd0b448c623636",
-      "https://snowtrace.io/address/0xd34c2302f497b8a7fe2d07865f31dbe04d5044d6",
-      "https://snowtrace.io/address/0xe4427af3555cd9303d728c491364fadfdd7494fe",
-      "https://snowtrace.io/address/0xfcf83648b8cdef62e5d03319a6f1fce16e4d6a59"
     ],
     "github_repos": []
   },
@@ -43022,6 +43022,56 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dex-trade": {
+    "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
+    "bounty": true,
+    "source": false,
+    "name": "Dex-Trade",
+    "url": "https://hackenproof.com/programs/dex-trade",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:dexalot-smart-contracts-archived": {
+    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
+    "bounty": true,
+    "source": true,
+    "name": "Dexalot Smart Contracts (Archived)",
+    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Dexalot/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexalot/contracts"
+    ],
+    "github_repos": [
+      "dexalot/contracts"
+    ]
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -43151,26 +43201,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dex-trade": {
-    "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
-    "bounty": true,
-    "source": false,
-    "name": "Dex-Trade",
-    "url": "https://hackenproof.com/programs/dex-trade",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dexalot-smart-contracts-2": {
     "hash": "46b0e6171d3a04734b97e87c214ed0cd1436534a",
     "bounty": true,
@@ -43202,36 +43232,6 @@
     "sc_ids": [
       "constracts/mainnetrfq.sol",
       "https://github.com/dexalot/contracts/tree/cd/removeauction"
-    ],
-    "github_repos": [
-      "dexalot/contracts"
-    ]
-  },
-  "hackenproof:dexalot-smart-contracts-archived": {
-    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
-    "bounty": true,
-    "source": true,
-    "name": "Dexalot Smart Contracts (Archived)",
-    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Dexalot/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexalot/contracts"
     ],
     "github_repos": [
       "dexalot/contracts"
@@ -58329,7 +58329,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-07T14:37:47.159000+00:00",
+    "updated_at": "2026-10-07T15:07:56.919179+00:00",
     "total": 1929,
     "qualifying": 422,
     "external": 361,
