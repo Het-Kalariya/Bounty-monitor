@@ -20060,6 +20060,63 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:ens": {
+    "hash": "5b7029a6f8b2a1331c0548e8093d4389c6d76536",
+    "bounty": true,
+    "source": true,
+    "name": "ENS",
+    "url": "https://immunefi.com/bug-bounty/ens",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/ensdomains-landing",
+        "description": "Ens landing page source code"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/ens-app-v3",
+        "description": "ENS app source code"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/ens-metadata-service",
+        "description": "ENS Metadata service source code"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ensdomains/ens-contracts/wiki/ENS-Contract-Deployments",
+        "description": "Smart Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/ensdomains/ens-app-v3",
+      "https://github.com/ensdomains/ens-contracts/wiki/ens-contract-deployments",
+      "https://github.com/ensdomains/ens-metadata-service",
+      "https://github.com/ensdomains/ensdomains-landing",
+      "https://immunefi.com"
+    ],
+    "github_repos": [
+      "ensdomains/ens-app-v3",
+      "ensdomains/ens-contracts",
+      "ensdomains/ens-metadata-service",
+      "ensdomains/ensdomains-landing"
+    ]
+  },
   "immunefi:gnosischain": {
     "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
     "bounty": true,
@@ -28625,63 +28682,6 @@
       "https://etherscan.io/address/0xf55041e37e12cd407ad00ce2910b8269b01263b9"
     ],
     "github_repos": []
-  },
-  "immunefi:ens": {
-    "hash": "4e96debc963acb633a4c52d00df04b12650b037e",
-    "bounty": true,
-    "source": true,
-    "name": "ENS",
-    "url": "https://immunefi.com/bug-bounty/ens",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/ensdomains-landing",
-        "description": "Ens landing page source code"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/ens-app-v3",
-        "description": "ENS app source code"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/ens-metadata-service",
-        "description": "ENS Metadata service source code"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ensdomains/ens-contracts/wiki/ENS-Contract-Deployments",
-        "description": "Smart Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/ensdomains/ens-app-v3",
-      "https://github.com/ensdomains/ens-contracts/wiki/ens-contract-deployments",
-      "https://github.com/ensdomains/ens-metadata-service",
-      "https://github.com/ensdomains/ensdomains-landing",
-      "https://immunefi.com"
-    ],
-    "github_repos": [
-      "ensdomains/ens-app-v3",
-      "ensdomains/ens-contracts",
-      "ensdomains/ens-metadata-service",
-      "ensdomains/ensdomains-landing"
-    ]
   },
   "immunefi:intuition": {
     "hash": "be6bd548905c76fd54404ecd9f6108df827684b1",
@@ -43439,92 +43439,6 @@
       "dodoex/dodo-route-contract"
     ]
   },
-  "hackenproof:linear-protocol": {
-    "hash": "531fb89548089b2ddc1c1009efa9377ee1dfe8fe",
-    "bounty": false,
-    "source": true,
-    "name": "LiNEAR Protocol",
-    "url": "https://hackenproof.com/programs/linear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/linear-protocol/LiNEAR",
-        "description": "LiNEAR protocol"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/linear-protocol/linear"
-    ],
-    "github_repos": [
-      "linear-protocol/linear"
-    ]
-  },
-  "hackenproof:linen-api-and-mobile": {
-    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
-    "bounty": true,
-    "source": false,
-    "name": "Linen API & Mobile",
-    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:local-traders-smart-contracts": {
-    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
-    "bounty": true,
-    "source": true,
-    "name": "Local Traders Smart Contracts",
-    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
-        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/localtradersteam/LCT_Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
-      "https://github.com/localtradersteam/lct_contract"
-    ],
-    "github_repos": [
-      "localtradersteam/lct_contract"
-    ]
-  },
   "hackenproof:dodolimitorder-smart-contract": {
     "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
     "bounty": true,
@@ -45794,6 +45708,92 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:linear-protocol": {
+    "hash": "531fb89548089b2ddc1c1009efa9377ee1dfe8fe",
+    "bounty": false,
+    "source": true,
+    "name": "LiNEAR Protocol",
+    "url": "https://hackenproof.com/programs/linear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/linear-protocol/LiNEAR",
+        "description": "LiNEAR protocol"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/linear-protocol/linear"
+    ],
+    "github_repos": [
+      "linear-protocol/linear"
+    ]
+  },
+  "hackenproof:linen-api-and-mobile": {
+    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
+    "bounty": true,
+    "source": false,
+    "name": "Linen API & Mobile",
+    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:local-traders-smart-contracts": {
+    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
+    "bounty": true,
+    "source": true,
+    "name": "Local Traders Smart Contracts",
+    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
+        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/localtradersteam/LCT_Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
+      "https://github.com/localtradersteam/lct_contract"
+    ],
+    "github_repos": [
+      "localtradersteam/lct_contract"
+    ]
   },
   "hackenproof:logos": {
     "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
@@ -58249,7 +58249,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-08T08:19:29.978602+00:00",
+    "updated_at": "2026-10-08T08:49:52.697211+00:00",
     "total": 1924,
     "qualifying": 422,
     "external": 356,
