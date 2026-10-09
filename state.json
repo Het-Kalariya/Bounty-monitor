@@ -510,7 +510,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 64,
+    "resp_eff": 57,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1555,7 +1555,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 77,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1803,7 +1803,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 61,
+    "resp_eff": 63,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2100,7 +2100,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5903,7 +5903,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 266,
-    "resp_eff": 64,
+    "resp_eff": 65,
     "bounty_days": 206.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8307,7 +8307,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -20125,6 +20125,100 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:openzeppelin": {
+    "hash": "5115fbd1c1eb62a38c45e347eafc5e1ef76210a1",
+    "bounty": true,
+    "source": true,
+    "name": "OpenZeppelin",
+    "url": "https://immunefi.com/bug-bounty/openzeppelin",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/uniswap-hooks",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/openzeppelin-contracts",
+        "description": "Smart Contract"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable",
+        "description": "Smart Contract"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/releases/tag/v0.5.3",
+        "description": "OpenZeppelin Confidential Contracts (only the latest release v.0.5.3 (4a4f6c71f58b75e391899b57e42e3b73d288dfe3) is in-scope, mocks and examples are also out-of-scope)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/axelar/AxelarGatewayAdapter.sol",
+        "description": "Axelar Gateway Adapter (only commit 0361935dc5edd233adbb9fbae5871ccbb8c739d8 in scope)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/ERC7786OpenBridge.sol",
+        "description": "ERC7786OpenBridge (only commit 0361935dc5edd233adbb9fbae5871ccbb8c739d8 in scope)"
+      }
+    ],
+    "sc_total": 6,
+    "sc_ids": [
+      "https://github.com/openzeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/axelar/axelargatewayadapter.sol",
+      "https://github.com/openzeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/erc7786openbridge.sol",
+      "https://github.com/openzeppelin/openzeppelin-confidential-contracts/releases/tag/v0.5.3",
+      "https://github.com/openzeppelin/openzeppelin-contracts",
+      "https://github.com/openzeppelin/openzeppelin-contracts-upgradeable",
+      "https://github.com/openzeppelin/uniswap-hooks"
+    ],
+    "github_repos": [
+      "openzeppelin/openzeppelin-community-contracts",
+      "openzeppelin/openzeppelin-confidential-contracts",
+      "openzeppelin/openzeppelin-contracts",
+      "openzeppelin/openzeppelin-contracts-upgradeable",
+      "openzeppelin/uniswap-hooks"
+    ]
+  },
+  "immunefi:openzeppelin-stellar": {
+    "hash": "034f0d1ef500aadb9d11dd61f7c674cf99ae1985",
+    "bounty": true,
+    "source": true,
+    "name": "OpenZeppelin on Stellar",
+    "url": "https://immunefi.com/bug-bounty/openzeppelin-stellar",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "XLM",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/OpenZeppelin/stellar-contracts/releases",
+        "description": "OpenZeppelin Stellar Contracts Library (only the packages folder of the latest release is in scope)"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/openzeppelin/stellar-contracts/releases"
+    ],
+    "github_repos": [
+      "openzeppelin/stellar-contracts"
+    ]
+  },
   "immunefi:gnosischain": {
     "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
     "bounty": true,
@@ -24298,70 +24392,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:openzeppelin": {
-    "hash": "5115fbd1c1eb62a38c45e347eafc5e1ef76210a1",
-    "bounty": true,
-    "source": true,
-    "name": "OpenZeppelin",
-    "url": "https://immunefi.com/bug-bounty/openzeppelin",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/uniswap-hooks",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/openzeppelin-contracts",
-        "description": "Smart Contract"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/openzeppelin-contracts-upgradeable",
-        "description": "Smart Contract"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/openzeppelin-confidential-contracts/releases/tag/v0.5.3",
-        "description": "OpenZeppelin Confidential Contracts (only the latest release v.0.5.3 (4a4f6c71f58b75e391899b57e42e3b73d288dfe3) is in-scope, mocks and examples are also out-of-scope)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/axelar/AxelarGatewayAdapter.sol",
-        "description": "Axelar Gateway Adapter (only commit 0361935dc5edd233adbb9fbae5871ccbb8c739d8 in scope)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/ERC7786OpenBridge.sol",
-        "description": "ERC7786OpenBridge (only commit 0361935dc5edd233adbb9fbae5871ccbb8c739d8 in scope)"
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://github.com/openzeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/axelar/axelargatewayadapter.sol",
-      "https://github.com/openzeppelin/openzeppelin-community-contracts/blob/master/contracts/crosschain/erc7786openbridge.sol",
-      "https://github.com/openzeppelin/openzeppelin-confidential-contracts/releases/tag/v0.5.3",
-      "https://github.com/openzeppelin/openzeppelin-contracts",
-      "https://github.com/openzeppelin/openzeppelin-contracts-upgradeable",
-      "https://github.com/openzeppelin/uniswap-hooks"
-    ],
-    "github_repos": [
-      "openzeppelin/openzeppelin-community-contracts",
-      "openzeppelin/openzeppelin-confidential-contracts",
-      "openzeppelin/openzeppelin-contracts",
-      "openzeppelin/openzeppelin-contracts-upgradeable",
-      "openzeppelin/uniswap-hooks"
-    ]
-  },
   "immunefi:horizen": {
     "hash": "beb2a43dc68b52a5e5cdca9baf7bca947ea1f9fd",
     "bounty": true,
@@ -28192,36 +28222,6 @@
     ],
     "github_repos": [
       "strata-markets/contracts"
-    ]
-  },
-  "immunefi:openzeppelin-stellar": {
-    "hash": "034f0d1ef500aadb9d11dd61f7c674cf99ae1985",
-    "bounty": true,
-    "source": true,
-    "name": "OpenZeppelin on Stellar",
-    "url": "https://immunefi.com/bug-bounty/openzeppelin-stellar",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "XLM",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/OpenZeppelin/stellar-contracts/releases",
-        "description": "OpenZeppelin Stellar Contracts Library (only the packages folder of the latest release is in scope)"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/openzeppelin/stellar-contracts/releases"
-    ],
-    "github_repos": [
-      "openzeppelin/stellar-contracts"
     ]
   },
   "immunefi:originprotocol": {
@@ -47234,36 +47234,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:risc-zero-blockchain-verifiers": {
-    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero Blockchain Verifiers",
-    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
-    ],
-    "github_repos": [
-      "risc0/risc0-ethereum"
-    ]
-  },
   "hackenproof:risc-zero-zkvm": {
     "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
     "bounty": false,
@@ -47322,26 +47292,6 @@
     "url": "https://hackenproof.com/programs/router-web",
     "platform": "hackenproof",
     "bounty_min": 500,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
-    "bounty": true,
-    "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -47730,43 +47680,6 @@
       "snowfork/snowbridge"
     ]
   },
-  "hackenproof:snowbridge-web": {
-    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
-    "bounty": true,
-    "source": true,
-    "name": "Snowbridge Web",
-    "url": "https://hackenproof.com/programs/snowbridge-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
-        "description": "Javascript SDK used by web applications for interacting with the bridge"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Snowfork/snowbridge-app",
-        "description": "Web app for the bridge\u2019s UI"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/snowfork/snowbridge-app",
-      "https://github.com/snowfork/snowbridge/tree/main/web"
-    ],
-    "github_repos": [
-      "snowfork/snowbridge",
-      "snowfork/snowbridge-app"
-    ]
-  },
   "hackenproof:solv-web-and-infrastructure": {
     "hash": "b04c5c7ddfeb757913ea0cd903975c6e860322c6",
     "bounty": false,
@@ -47897,144 +47810,6 @@
     "github_repos": [
       "starkware-libs/cairo-lang",
       "starkware-libs/sequencer"
-    ]
-  },
-  "hackenproof:starknet-staking": {
-    "hash": "8a00d99b34595dadf733b2728e56e050eeaaa75c",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Staking",
-    "url": "https://hackenproof.com/programs/starknet-staking",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierStorage.sol",
-        "description": "RewardSupplierStorage.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierExternalInterfaces.sol",
-        "description": "RewardSupplierExternalInterfaces.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplier.sol",
-        "description": "RewardSupplier.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/MintManager.sol",
-        "description": "MintManager.sol"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/libraries",
-        "description": "L1 Solidity Libraries"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/interfaces",
-        "description": "L1 Solidity Interfaces"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/components",
-        "description": "L1 Solidity Components"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/upgrade/ProxySupportImpl.sol",
-        "description": "Upgrade_ProxySupportImpl.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/PeriodMintLimit.sol",
-        "description": "PeriodMintLimit.sol"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
-        "description": "utils.cairo"
-      }
-    ],
-    "sc_total": 18,
-    "sc_ids": [
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/minting_curve.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/pool.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/reward_supplier.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/interface.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/staking.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/periodmintlimit.sol",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierexternalinterfaces.sol",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierstorage.sol",
-      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/upgrade/proxysupportimpl.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/components",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/interfaces",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/libraries",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/mintmanager.sol",
-      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplier.sol"
-    ],
-    "github_repos": [
-      "starkware-libs/starknet-staking"
-    ]
-  },
-  "hackenproof:starknet-web-and-sc": {
-    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Web & SC",
-    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
-    "platform": "hackenproof",
-    "bounty_min": 1250,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
-    ],
-    "github_repos": [
-      "starknet-io/starkgate-contracts"
     ]
   },
   "hackenproof:status": {
@@ -50235,6 +50010,231 @@
     "github_repos": [
       "zynklabs/audit-reports",
       "zynklabs/zynk-protocol-solana-programs.public"
+    ]
+  },
+  "hackenproof:risc-zero-blockchain-verifiers": {
+    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero Blockchain Verifiers",
+    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
+    ],
+    "github_repos": [
+      "risc0/risc0-ethereum"
+    ]
+  },
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+    "bounty": true,
+    "source": false,
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:snowbridge-web": {
+    "hash": "f18cb4f3dd9846aa3956ec667edb6c6ca061d35e",
+    "bounty": true,
+    "source": true,
+    "name": "Snowbridge Web",
+    "url": "https://hackenproof.com/programs/snowbridge-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge/tree/main/web",
+        "description": "Javascript SDK used by web applications for interacting with the bridge"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Snowfork/snowbridge-app",
+        "description": "Web app for the bridge\u2019s UI"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/snowfork/snowbridge-app",
+      "https://github.com/snowfork/snowbridge/tree/main/web"
+    ],
+    "github_repos": [
+      "snowfork/snowbridge",
+      "snowfork/snowbridge-app"
+    ]
+  },
+  "hackenproof:starknet-staking": {
+    "hash": "8a00d99b34595dadf733b2728e56e050eeaaa75c",
+    "bounty": true,
+    "source": true,
+    "name": "Starknet Staking",
+    "url": "https://hackenproof.com/programs/starknet-staking",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierStorage.sol",
+        "description": "RewardSupplierStorage.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplierExternalInterfaces.sol",
+        "description": "RewardSupplierExternalInterfaces.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/RewardSupplier.sol",
+        "description": "RewardSupplier.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/MintManager.sol",
+        "description": "MintManager.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/libraries",
+        "description": "L1 Solidity Libraries"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/interfaces",
+        "description": "L1 Solidity Interfaces"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/components",
+        "description": "L1 Solidity Components"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/upgrade/ProxySupportImpl.sol",
+        "description": "Upgrade_ProxySupportImpl.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/L1/starkware/solidity/stake/PeriodMintLimit.sol",
+        "description": "PeriodMintLimit.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
+        "description": "utils.cairo"
+      }
+    ],
+    "sc_total": 18,
+    "sc_ids": [
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/interface.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/minting_curve/minting_curve.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/interface.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/pool/pool.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/interface.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/reward_supplier/reward_supplier.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/interface.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/staking/staking.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/contracts/src/utils.cairo",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/periodmintlimit.sol",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierexternalinterfaces.sol",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplierstorage.sol",
+      "https://github.com/starkware-libs/starknet-staking/blob/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/upgrade/proxysupportimpl.sol",
+      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/components",
+      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/interfaces",
+      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/libraries",
+      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/mintmanager.sol",
+      "https://github.com/starkware-libs/starknet-staking/tree/%40staking/contracts-v1.0.1-dev.854/workspace/apps/staking/l1/starkware/solidity/stake/rewardsupplier.sol"
+    ],
+    "github_repos": [
+      "starkware-libs/starknet-staking"
+    ]
+  },
+  "hackenproof:starknet-web-and-sc": {
+    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
+    "bounty": true,
+    "source": true,
+    "name": "Starknet Web & SC",
+    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
+    "platform": "hackenproof",
+    "bounty_min": 1250,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
+    ],
+    "github_repos": [
+      "starknet-io/starkgate-contracts"
     ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
@@ -58230,7 +58230,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T13:28:10.926414+00:00",
+    "updated_at": "2026-10-09T13:58:27.701762+00:00",
     "total": 1922,
     "qualifying": 421,
     "external": 351,
