@@ -5238,7 +5238,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 78,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -12127,6 +12127,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "bugcrowd:Etsy": {
+    "hash": "07214c29fc71aa8c0633bd386628bb820e630277",
+    "bounty": true,
+    "source": false,
+    "name": "Etsy",
+    "url": "https://bugcrowd.com/engagements/etsy",
+    "platform": "bugcrowd",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 169749,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "bugcrowd:Excentia Bug Bounty": {
     "hash": "eb6feb3ab4d1e227e0d834b395834963ba89d23c",
     "bounty": true,
@@ -18567,35 +18586,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "intigriti:upholdcom": {
-    "hash": "e9c82ca4c036e19de02c9e6bbeb484a8d4d24b16",
-    "bounty": true,
-    "source": true,
-    "name": "Uphold",
-    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 6000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 96,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [
-      {
-        "asset_type": "wildcard",
-        "identifier": "github.com/uphold/*",
-        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "github.com/uphold/*"
-    ],
-    "github_repos": [
-      "uphold/*"
-    ]
   },
   "intigriti:vrtnv": {
     "hash": "aaae61181f7f9141f4eb6aa68340af405b3cd444",
@@ -54313,22 +54303,6 @@
     "bounty_days": null,
     "sc_targets": []
   },
-  "chaos:etsy": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Etsy",
-    "url": "https://bugcrowd.com/etsy",
-    "platform": "chaos",
-    "origin": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 169749,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
   "chaos:filezilla": {
     "hash": "",
     "bounty": true,
@@ -57721,6 +57695,22 @@
     "bounty_days": null,
     "sc_targets": []
   },
+  "chaos:uphold": {
+    "hash": "",
+    "bounty": true,
+    "source": false,
+    "name": "Uphold",
+    "url": "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+    "platform": "chaos",
+    "origin": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "domains": 96,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": []
+  },
   "chaos:upstox": {
     "hash": "",
     "bounty": true,
@@ -58187,9 +58177,9 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T05:34:50.839047+00:00",
+    "updated_at": "2026-10-09T06:04:55.888828+00:00",
     "total": 1920,
-    "qualifying": 421,
+    "qualifying": 420,
     "external": 352,
     "blockchain": 359,
     "feed_ids": {
