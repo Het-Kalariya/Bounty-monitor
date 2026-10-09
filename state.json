@@ -301,7 +301,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -586,7 +586,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -814,7 +814,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 74,
     "bounty_days": 45.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3900,7 +3900,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 9029,
-    "resp_eff": 73,
+    "resp_eff": 74,
     "bounty_days": 509.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5827,7 +5827,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 100,
+    "resp_eff": 71,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6369,7 +6369,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 59,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6901,7 +6901,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 77,
     "bounty_days": 441.0,
     "sc_targets": [
       {
@@ -7180,7 +7180,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 64,
+    "resp_eff": 63,
     "bounty_days": 8178.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -16698,6 +16698,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:datacamp": {
+    "hash": "1b908318492a66ef7a81d5a6dd54437e62b84979",
+    "bounty": true,
+    "source": false,
+    "name": "DataCamp",
+    "url": "https://www.intigriti.com/programs/datacamp/datacamp/detail",
+    "platform": "intigriti",
+    "bounty_min": 25,
+    "bounty_max": 1500,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:demorgen": {
     "hash": "1fb858c8e00696ab8472ab3f1d1b40094bdd7139",
     "bounty": true,
@@ -20106,6 +20125,52 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:gnosischain": {
+    "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
+    "bounty": true,
+    "source": true,
+    "name": "Gnosis Chain",
+    "url": "https://immunefi.com/bug-bounty/gnosischain",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 2000000,
+    "bounty_ccy": "USDC or xDAI",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
+        "description": "XDaiForeignBridge: DAI-xDAI TokenBridge contract on the Ethereum Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://blockscout.com/xdai/mainnet/address/0x7301CFA0e1756B71869E93d4e4Dca5c7d0eb0AA6",
+        "description": "HomeBridgeErcToNative: DAI-xDAI TokenBridge contract on the Gnosis chain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x88ad09518695c6c3712AC10a214bE5109a655671",
+        "description": "ForeignOmnibridge: OmniBridge contract on the Ethereum Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://blockscout.com/xdai/mainnet/address/0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
+        "description": "HomeOmnibridge: OmniBridge contract on the Gnosis chain"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://blockscout.com/xdai/mainnet/address/0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6",
+      "https://blockscout.com/xdai/mainnet/address/0xf6a78083ca3e2a662d6dd1703c939c8ace2e268d",
+      "https://etherscan.io/address/0x4aa42145aa6ebf72e164c9bbc74fbd3788045016",
+      "https://etherscan.io/address/0x88ad09518695c6c3712ac10a214be5109a655671"
+    ],
+    "github_repos": []
+  },
   "immunefi:enzyme-onyx": {
     "hash": "1f3606289c9a0a19f6e9632ec8b36f2ef8ede288",
     "bounty": true,
@@ -21171,52 +21236,6 @@
     "github_repos": [
       "trufin-io/smart-contracts-solana-public"
     ]
-  },
-  "immunefi:gnosischain": {
-    "hash": "fc713c685658f8c3b83c903deac4a751d31c462d",
-    "bounty": true,
-    "source": true,
-    "name": "Gnosis Chain",
-    "url": "https://immunefi.com/bug-bounty/gnosischain",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 2000000,
-    "bounty_ccy": "USDC or xDAI",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x4aa42145Aa6Ebf72e164C9bBC74fbD3788045016",
-        "description": "XDaiForeignBridge: DAI-xDAI TokenBridge contract on the Ethereum Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://blockscout.com/xdai/mainnet/address/0x7301CFA0e1756B71869E93d4e4Dca5c7d0eb0AA6",
-        "description": "HomeBridgeErcToNative: DAI-xDAI TokenBridge contract on the Gnosis chain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x88ad09518695c6c3712AC10a214bE5109a655671",
-        "description": "ForeignOmnibridge: OmniBridge contract on the Ethereum Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://blockscout.com/xdai/mainnet/address/0xf6A78083ca3e2a662D6dd1703c939c8aCE2e268d",
-        "description": "HomeOmnibridge: OmniBridge contract on the Gnosis chain"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://blockscout.com/xdai/mainnet/address/0x7301cfa0e1756b71869e93d4e4dca5c7d0eb0aa6",
-      "https://blockscout.com/xdai/mainnet/address/0xf6a78083ca3e2a662d6dd1703c939c8ace2e268d",
-      "https://etherscan.io/address/0x4aa42145aa6ebf72e164c9bbc74fbd3788045016",
-      "https://etherscan.io/address/0x88ad09518695c6c3712ac10a214be5109a655671"
-    ],
-    "github_repos": []
   },
   "immunefi:debridge": {
     "hash": "0e6c465f66a5b33906451cde505274849a9bc81c",
@@ -58211,8 +58230,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T12:26:49.008602+00:00",
-    "total": 1921,
+    "updated_at": "2026-10-09T12:56:57.709216+00:00",
+    "total": 1922,
     "qualifying": 421,
     "external": 351,
     "blockchain": 359,
