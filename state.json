@@ -59,7 +59,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 93,
+    "resp_eff": 92,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -3767,7 +3767,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 68,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7653,7 +7653,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 117016,
-    "resp_eff": 75,
+    "resp_eff": 74,
     "bounty_days": 163.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7672,7 +7672,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8790,7 +8790,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 3126,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 35.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -17637,6 +17637,25 @@
     "bounty_min": 0,
     "bounty_max": 0,
     "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:nestl\u00e9vdp": {
+    "hash": "30768be3ce7882d20771ce5321661d51f942f00d",
+    "bounty": false,
+    "source": false,
+    "name": "Nestl\u00e9 VDP",
+    "url": "https://www.intigriti.com/programs/nestl%C3%A9/nestl%C3%A9vdp/detail",
+    "platform": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
@@ -43301,26 +43320,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dop-protocol": {
-    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
-    "bounty": true,
-    "source": false,
-    "name": "DOP Protocol",
-    "url": "https://hackenproof.com/programs/dop-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
@@ -43391,6 +43390,36 @@
       "dioneprotocol/odysseygo-installer",
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
+    ]
+  },
+  "hackenproof:kaia-protocol": {
+    "hash": "1674073df40ca8779059a29b2d5c234ff783bea8",
+    "bounty": true,
+    "source": true,
+    "name": "Kaia Protocol",
+    "url": "https://hackenproof.com/programs/kaia-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 10,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/kaiachain/kaia",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/kaiachain/kaia"
+    ],
+    "github_repos": [
+      "kaiachain/kaia"
     ]
   },
   "hackenproof:dodo-v3": {
@@ -43482,6 +43511,26 @@
     "github_repos": [
       "dodoex/dodo-limit-order"
     ]
+  },
+  "hackenproof:dop-protocol": {
+    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
+    "bounty": true,
+    "source": false,
+    "name": "DOP Protocol",
+    "url": "https://hackenproof.com/programs/dop-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:doubleup-smart-contracts": {
     "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
@@ -45281,36 +45330,6 @@
     ],
     "github_repos": [
       "kunalabs-io/sui-smart-contracts"
-    ]
-  },
-  "hackenproof:kaia-protocol": {
-    "hash": "1674073df40ca8779059a29b2d5c234ff783bea8",
-    "bounty": true,
-    "source": true,
-    "name": "Kaia Protocol",
-    "url": "https://hackenproof.com/programs/kaia-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 10,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/kaiachain/kaia",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/kaiachain/kaia"
-    ],
-    "github_repos": [
-      "kaiachain/kaia"
     ]
   },
   "hackenproof:kaia-web": {
@@ -58179,8 +58198,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T08:14:42.405244+00:00",
-    "total": 1920,
+    "updated_at": "2026-10-09T09:35:38.580158+00:00",
+    "total": 1921,
     "qualifying": 420,
     "external": 352,
     "blockchain": 359,
