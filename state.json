@@ -2950,7 +2950,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 86,
     "bounty_days": 3895.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4698,7 +4698,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5040,7 +5040,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 94,
+    "resp_eff": 92,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6928,7 +6928,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": 123.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20058,6 +20058,126 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:enzyme-onyx": {
+    "hash": "1f3606289c9a0a19f6e9632ec8b36f2ef8ede288",
+    "bounty": true,
+    "source": true,
+    "name": "Enzyme Onyx",
+    "url": "https://immunefi.com/bug-bounty/enzyme-onyx",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 200000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/85570db648edb66240564ae844d88d5a3f8fe610/src/components/value/position-trackers/LinearCreditDebtTracker.sol",
+        "description": "LinearCreditDebtTracker"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/LimitedAccessLimitedCallForwarder.sol",
+        "description": "LimitedAccessLimitedCallForwarder"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/utils/StorageHelpersLib.sol",
+        "description": "StorageHelpersLib"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/ValuationHandler.sol",
+        "description": "ValuationHandler"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/management-fee-trackers/ContinuousFlatRateManagementFeeTracker.sol",
+        "description": "ContinuousFlatRateManagementFeeTracker"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/infra/oracles/OneToOneAggregator.sol",
+        "description": "OneToOneAggregator"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/position-trackers/AccountERC20Tracker.sol",
+        "description": "AccountERC20Tracker"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/OpenAccessLimitedCallForwarder.sol",
+        "description": "OpenAccessLimitedCallForwarder"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/FeeHandler.sol",
+        "description": "FeeHandler"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/global/Global.sol",
+        "description": "Global"
+      }
+    ],
+    "sc_total": 45,
+    "sc_ids": [
+      "https://github.com/enzymefinance/protocol-onyx-dev/blob/d8a522d6ca58af9dbb831dad2b8045a88952e468/src/components/issuance/redeem-handlers/syncredeemhandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/automations/chainlink-cre/creworkflowconsumer.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/lists/sharesownedaddresslist.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/infra/lists/address-list/ownableaddresslist.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/6bde0489b1a3196e6290b59e119748ecbeb8b8e4/src/components/fees/performance-fee-trackers/continuousflatrateperformancefeetracker.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/erc7540likedepositqueue.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/sharesminthandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/syncdeposithandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likedepositqueuepostexecutedepositrequestvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likedepositqueueprerequestdepositvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likeredeemqueuepostexecuteredeemrequestvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likeredeemqueueprerequestredeemvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesharesburnhandlerpreburnvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesharesminthandlerpremintvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesyncdeposithandlerpostdepositvalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likedepositqueuepostexecutedepositrequestextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likedepositqueueprerequestdepositextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likeredeemqueuepostexecuteredeemrequestextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likeredeemqueueprerequestredeemextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesharesburnhandlerpreburnextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesharesminthandlerpremintextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesyncdeposithandlerpostdepositextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/redeem-handlers/erc7540likeredeemqueue.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/redeem-handlers/sharesburnhandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/addresslistssharestransfervalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/chainlinkacesharestransferextractor.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/chainlinkacesharestransfervalidator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/shares/shares.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/85570db648edb66240564ae844d88d5a3f8fe610/src/components/value/position-trackers/linearcreditdebttracker.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/8ae6f589b13a19d8390eb0956836c6a9f48fadab/src/components/automations/chainlink-cre/creworkflowconsumer.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/feehandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/management-fee-trackers/continuousflatratemanagementfeetracker.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/limitedaccesslimitedcallforwarder.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/openaccesslimitedcallforwarder.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/position-trackers/accounterc20tracker.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/valuationhandler.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/factories/componentbeaconproxy.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/global/global.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/infra/oracles/onetooneaggregator.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/utils/storagehelperslib.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/ccip/depositorwallet.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/components/ccip/walletsmanager.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/factories/deterministicbeaconfactory.sol",
+      "https://github.com/enzymefinance/protocol-onyx/blob/df697194bdfbb883b6eff7a667b08debfcf467a0/src/utils/valuehelperslib.sol",
+      "https://immunefi.com"
+    ],
+    "github_repos": [
+      "enzymefinance/protocol-onyx",
+      "enzymefinance/protocol-onyx-dev"
+    ]
+  },
   "immunefi:compoundfinance": {
     "hash": "1fdc9155ba8884500828c5eb5433b1f8c392b53a",
     "bounty": true,
@@ -30628,124 +30748,6 @@
       "https://snowscan.xyz/address/0x7cc6fb28ec7b5e7afc3cb3986141797ffc27253c"
     ],
     "github_repos": []
-  },
-  "immunefi:enzyme-onyx": {
-    "hash": "12f6c8df87f76caf3b854652c2995b14b8adf224",
-    "bounty": true,
-    "source": true,
-    "name": "Enzyme Onyx",
-    "url": "https://immunefi.com/bug-bounty/enzyme-onyx",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/85570db648edb66240564ae844d88d5a3f8fe610/src/components/value/position-trackers/LinearCreditDebtTracker.sol",
-        "description": "LinearCreditDebtTracker"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/LimitedAccessLimitedCallForwarder.sol",
-        "description": "LimitedAccessLimitedCallForwarder"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/utils/StorageHelpersLib.sol",
-        "description": "StorageHelpersLib"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/ValuationHandler.sol",
-        "description": "ValuationHandler"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/management-fee-trackers/ContinuousFlatRateManagementFeeTracker.sol",
-        "description": "ContinuousFlatRateManagementFeeTracker"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/infra/oracles/OneToOneAggregator.sol",
-        "description": "OneToOneAggregator"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/position-trackers/AccountERC20Tracker.sol",
-        "description": "AccountERC20Tracker"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/OpenAccessLimitedCallForwarder.sol",
-        "description": "OpenAccessLimitedCallForwarder"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/FeeHandler.sol",
-        "description": "FeeHandler"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/global/Global.sol",
-        "description": "Global"
-      }
-    ],
-    "sc_total": 44,
-    "sc_ids": [
-      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/automations/chainlink-cre/creworkflowconsumer.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/components/lists/sharesownedaddresslist.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/61ef53d2dfd17d83183d832529b148e6e15c26ab/src/infra/lists/address-list/ownableaddresslist.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/6bde0489b1a3196e6290b59e119748ecbeb8b8e4/src/components/fees/performance-fee-trackers/continuousflatrateperformancefeetracker.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/erc7540likedepositqueue.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/sharesminthandler.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/deposit-handlers/syncdeposithandler.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likedepositqueuepostexecutedepositrequestvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likedepositqueueprerequestdepositvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likeredeemqueuepostexecuteredeemrequestvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkaceerc7540likeredeemqueueprerequestredeemvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesharesburnhandlerpreburnvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesharesminthandlerpremintvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/chainlinkacesyncdeposithandlerpostdepositvalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likedepositqueuepostexecutedepositrequestextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likedepositqueueprerequestdepositextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likeredeemqueuepostexecuteredeemrequestextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkaceerc7540likeredeemqueueprerequestredeemextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesharesburnhandlerpreburnextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesharesminthandlerpremintextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/hooks/chainlink-ace/extractors/chainlinkacesyncdeposithandlerpostdepositextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/redeem-handlers/erc7540likeredeemqueue.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/issuance/redeem-handlers/sharesburnhandler.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/addresslistssharestransfervalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/chainlinkacesharestransferextractor.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/components/shares-transfer-validators/chainlinkacesharestransfervalidator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/7b48d243f505b362cd6f1fcf723c21bc8b047c06/src/shares/shares.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/85570db648edb66240564ae844d88d5a3f8fe610/src/components/value/position-trackers/linearcreditdebttracker.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/8ae6f589b13a19d8390eb0956836c6a9f48fadab/src/components/automations/chainlink-cre/creworkflowconsumer.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/feehandler.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/fees/management-fee-trackers/continuousflatratemanagementfeetracker.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/limitedaccesslimitedcallforwarder.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/roles/openaccesslimitedcallforwarder.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/position-trackers/accounterc20tracker.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/components/value/valuationhandler.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/factories/componentbeaconproxy.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/global/global.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/infra/oracles/onetooneaggregator.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/b98576fa39213b3c8aecb8b5b104c9acaa24eff0/src/utils/storagehelperslib.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/ccip/depositorwallet.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/components/ccip/walletsmanager.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/d1141ff017ec95d33ec46669f404413a0304edb7/src/factories/deterministicbeaconfactory.sol",
-      "https://github.com/enzymefinance/protocol-onyx/blob/df697194bdfbb883b6eff7a667b08debfcf467a0/src/utils/valuehelperslib.sol",
-      "https://immunefi.com"
-    ],
-    "github_repos": [
-      "enzymefinance/protocol-onyx"
-    ]
   },
   "immunefi:ethena": {
     "hash": "6c536704a0732111ccae8477f960f8da51d76ab4",
@@ -43299,6 +43301,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dop-protocol": {
+    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
+    "bounty": true,
+    "source": false,
+    "name": "DOP Protocol",
+    "url": "https://hackenproof.com/programs/dop-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
@@ -43460,26 +43482,6 @@
     "github_repos": [
       "dodoex/dodo-limit-order"
     ]
-  },
-  "hackenproof:dop-protocol": {
-    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
-    "bounty": true,
-    "source": false,
-    "name": "DOP Protocol",
-    "url": "https://hackenproof.com/programs/dop-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:doubleup-smart-contracts": {
     "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
@@ -58177,7 +58179,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T07:51:32.559329+00:00",
+    "updated_at": "2026-10-09T08:14:42.405244+00:00",
     "total": 1920,
     "qualifying": 420,
     "external": 352,
