@@ -1574,7 +1574,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 73,
+    "resp_eff": 75,
     "bounty_days": 1088.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1765,7 +1765,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 84,
     "bounty_days": 163.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4535,7 +4535,7 @@
     "github_repos": []
   },
   "hackerone:mondelez": {
-    "hash": "2fe8259b88394d6dd175397140e6cb3b571ae4eb",
+    "hash": "8402564bd03f17fb212d6e23dc2ae03ffb55abaf",
     "bounty": false,
     "source": false,
     "name": "Mondel\u0113z International",
@@ -6055,7 +6055,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 10238,
-    "resp_eff": 78,
+    "resp_eff": 77,
     "bounty_days": 152.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6731,7 +6731,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 68,
     "bounty_days": 278.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7161,7 +7161,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 62,
+    "resp_eff": 63,
     "bounty_days": 217.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7218,7 +7218,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1192,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 455.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7490,7 +7490,7 @@
     "github_repos": []
   },
   "hackerone:hyatt": {
-    "hash": "eab1238a58e15e1928eafec8254d5fc714da9761",
+    "hash": "275958faac8ef7002dd2752f0e74ba92eee937b0",
     "bounty": true,
     "source": false,
     "name": "Hyatt Hotels",
@@ -12296,25 +12296,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "bugcrowd:Fivetran": {
-    "hash": "6f89f523d7f1e82d9efd7b58c009ed1539102488",
-    "bounty": true,
-    "source": false,
-    "name": "Fivetran",
-    "url": "https://bugcrowd.com/engagements/fivetran-mbb-og",
-    "platform": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 7500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "bugcrowd:Flourish": {
     "hash": "7ccc164b53bc540d3f02deba89b855fae823c092",
     "bounty": true,
@@ -14292,6 +14273,25 @@
     "sc_ids": [
       "https://github.com/pinterest"
     ],
+    "github_repos": []
+  },
+  "bugcrowd:Pixabay": {
+    "hash": "117d89a850769b728021449d4b2734af7254df0e",
+    "bounty": true,
+    "source": false,
+    "name": "Pixabay",
+    "url": "https://bugcrowd.com/engagements/pixabay",
+    "platform": "bugcrowd",
+    "bounty_min": 0,
+    "bounty_max": 6000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 43,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
     "github_repos": []
   },
   "bugcrowd:PlanetHoster Bug Bounty ": {
@@ -56341,22 +56341,6 @@
     "bounty_days": null,
     "sc_targets": []
   },
-  "chaos:pixabay": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Pixabay",
-    "url": "https://bugcrowd.com/pixabay",
-    "platform": "chaos",
-    "origin": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 43,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
   "chaos:oneplus": {
     "hash": "",
     "bounty": true,
@@ -58215,10 +58199,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T17:56:46.041774+00:00",
-    "total": 1921,
+    "updated_at": "2026-10-09T18:30:57.687200+00:00",
+    "total": 1920,
     "qualifying": 421,
-    "external": 352,
+    "external": 351,
     "blockchain": 359,
     "feed_ids": {
       "immunefi": [],
@@ -58643,12 +58627,14 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": true,
-      "sherlock": true,
+      "cantina": false,
+      "sherlock": false,
       "chaos": true
     },
     "stale": [
-      "federacy"
+      "federacy",
+      "cantina",
+      "sherlock"
     ]
   }
 }
