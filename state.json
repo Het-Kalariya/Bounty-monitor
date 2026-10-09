@@ -18480,6 +18480,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:truelayer": {
+    "hash": "53b7f5127d7e78f7cf35db9f95e33a105f2ca7a6",
+    "bounty": true,
+    "source": false,
+    "name": "TrueLayer",
+    "url": "https://www.intigriti.com/programs/truelayer/truelayer/detail",
+    "platform": "intigriti",
+    "bounty_min": 75,
+    "bounty_max": 6000,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:truelayervdp": {
     "hash": "0dd57851768466e2f9768a4a47597f6bad44438d",
     "bounty": false,
@@ -43072,6 +43091,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dexalot-smart-contracts-archived": {
+    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
+    "bounty": true,
+    "source": true,
+    "name": "Dexalot Smart Contracts (Archived)",
+    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Dexalot/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexalot/contracts"
+    ],
+    "github_repos": [
+      "dexalot/contracts"
+    ]
+  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -43232,36 +43281,6 @@
     "sc_ids": [
       "constracts/mainnetrfq.sol",
       "https://github.com/dexalot/contracts/tree/cd/removeauction"
-    ],
-    "github_repos": [
-      "dexalot/contracts"
-    ]
-  },
-  "hackenproof:dexalot-smart-contracts-archived": {
-    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
-    "bounty": true,
-    "source": true,
-    "name": "Dexalot Smart Contracts (Archived)",
-    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Dexalot/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexalot/contracts"
     ],
     "github_repos": [
       "dexalot/contracts"
@@ -58199,8 +58218,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T18:30:57.687200+00:00",
-    "total": 1920,
+    "updated_at": "2026-10-09T18:58:55.801301+00:00",
+    "total": 1921,
     "qualifying": 421,
     "external": 351,
     "blockchain": 359,
@@ -58627,14 +58646,12 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": false,
-      "sherlock": false,
+      "cantina": true,
+      "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy",
-      "cantina",
-      "sherlock"
+      "federacy"
     ]
   }
 }
