@@ -6445,7 +6445,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 660,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": 1956.0,
     "sc_targets": [
       {
@@ -8729,35 +8729,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackerone:brave": {
-    "hash": "a2f354a6ca0291c4ce7e9e674bab11bc723f80a1",
-    "bounty": true,
-    "source": true,
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "platform": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "bounty_note": "amount not in upstream feed",
-    "domains": 413,
-    "resp_eff": 100,
-    "bounty_days": 111.0,
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
-        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/brave/*, https://github.com/brave-intl/*"
-    ],
-    "github_repos": [
-      "brave/*, https:"
-    ]
-  },
   "hackerone:portswigger": {
     "hash": "22096e343eeaf5065d5071cac777b886ac6e3279",
     "bounty": true,
@@ -9806,7 +9777,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 7939,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": 147.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -53251,6 +53222,22 @@
     "bounty_days": null,
     "sc_targets": []
   },
+  "chaos:brave-software": {
+    "hash": "",
+    "bounty": true,
+    "source": false,
+    "name": "Brave Software",
+    "url": "https://hackerone.com/brave",
+    "platform": "chaos",
+    "origin": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "domains": 413,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": []
+  },
   "chaos:btse": {
     "hash": "",
     "bounty": true,
@@ -58277,10 +58264,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-09T23:58:09.394401+00:00",
+    "updated_at": "2026-10-10T00:09:43.180937+00:00",
     "total": 1923,
-    "qualifying": 421,
-    "external": 351,
+    "qualifying": 420,
+    "external": 352,
     "blockchain": 359,
     "feed_ids": {
       "immunefi": [],
