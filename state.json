@@ -116,7 +116,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -662,7 +662,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 4048,
-    "resp_eff": 77,
+    "resp_eff": 78,
     "bounty_days": 62.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1784,7 +1784,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 65,
+    "resp_eff": 66,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4679,7 +4679,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 85,
     "bounty_days": 1.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8560,7 +8560,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 36,
+    "resp_eff": 37,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -43518,6 +43518,62 @@
       "dodoex/dodo-route-contract"
     ]
   },
+  "hackenproof:latoken-exchange": {
+    "hash": "88f9271460754dd494ee2b27fa844e341aef7fa2",
+    "bounty": true,
+    "source": false,
+    "name": "Latoken Exchange",
+    "url": "https://hackenproof.com/programs/latoken-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:layer3-smart-contracts": {
+    "hash": "4c71f4f0bab2621cc11ecb051ac8225b4c30f412",
+    "bounty": true,
+    "source": true,
+    "name": "Layer3 Smart Contracts",
+    "url": "https://hackenproof.com/programs/layer3-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
+        "description": "**Staking (Proxy)**\r\n- Contract is deployed with proxy. The current **implementation** of the contract is in scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/layer3xyz/cubes/blob/main/src/escrow/Factory.sol",
+        "description": "https://etherscan.io/address/0x5e2b297016d41055876ff1078100c548adc3a498"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
+      "https://github.com/layer3xyz/cubes/blob/main/src/escrow/factory.sol"
+    ],
+    "github_repos": [
+      "layer3xyz/cubes"
+    ]
+  },
   "hackenproof:dodolimitorder-smart-contract": {
     "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
     "bounty": true,
@@ -45614,62 +45670,6 @@
     ],
     "github_repos": [
       "latoken/lachain"
-    ]
-  },
-  "hackenproof:latoken-exchange": {
-    "hash": "88f9271460754dd494ee2b27fa844e341aef7fa2",
-    "bounty": true,
-    "source": false,
-    "name": "Latoken Exchange",
-    "url": "https://hackenproof.com/programs/latoken-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:layer3-smart-contracts": {
-    "hash": "4c71f4f0bab2621cc11ecb051ac8225b4c30f412",
-    "bounty": true,
-    "source": true,
-    "name": "Layer3 Smart Contracts",
-    "url": "https://hackenproof.com/programs/layer3-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
-        "description": "**Staking (Proxy)**\r\n- Contract is deployed with proxy. The current **implementation** of the contract is in scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/layer3xyz/cubes/blob/main/src/escrow/Factory.sol",
-        "description": "https://etherscan.io/address/0x5e2b297016d41055876ff1078100c548adc3a498"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
-      "https://github.com/layer3xyz/cubes/blob/main/src/escrow/factory.sol"
-    ],
-    "github_repos": [
-      "layer3xyz/cubes"
     ]
   },
   "hackenproof:layer3-web": {
@@ -58440,7 +58440,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-11T06:05:44.297594+00:00",
+    "updated_at": "2026-10-11T08:01:25.387420+00:00",
     "total": 1934,
     "qualifying": 420,
     "external": 363,
