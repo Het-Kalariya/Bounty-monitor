@@ -5903,7 +5903,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 266,
-    "resp_eff": 63,
+    "resp_eff": 62,
     "bounty_days": 206.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6731,7 +6731,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 69,
     "bounty_days": 278.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6901,7 +6901,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 441.0,
     "sc_targets": [
       {
@@ -7037,7 +7037,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 23158,
-    "resp_eff": 90,
+    "resp_eff": 88,
     "bounty_days": 112.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8069,7 +8069,7 @@
     "github_repos": []
   },
   "hackerone:autodesk": {
-    "hash": "97d170e1550eee4afc0af065b78cda302a97674c",
+    "hash": "ff304cacf76596111f99226a863a8717318d4232",
     "bounty": false,
     "source": false,
     "name": "Autodesk",
@@ -8996,7 +8996,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 5413,
-    "resp_eff": 72,
+    "resp_eff": 64,
     "bounty_days": 1298.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20032,6 +20032,103 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:babylon-labs": {
+    "hash": "a954100e9d3de27d2e836a5443582608ea768b1b",
+    "bounty": false,
+    "source": true,
+    "name": "Babylon Labs",
+    "url": "https://immunefi.com/bug-bounty/babylon-labs",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC/BABY",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-core-ui",
+        "description": "Core UI"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/services/simple-staking",
+        "description": "Staking dApp"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/babylon-staking-indexer/releases/tag/v3.0.2",
+        "description": "Babylon Genesis and Bitcoin Indexer"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-proto-ts",
+        "description": "Babylon Proto Libraries"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/vigilante/tree/release/v0.24.x",
+        "description": "Vigilante"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.15.x",
+        "description": "Covenant Emulator"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/finality-provider/tree/release/v2.x",
+        "description": "Finality Provider Tool Set"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-wallet-connector",
+        "description": "Wallet Connect"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/staking-expiry-checker/tree/release/v1.x",
+        "description": "Staking Expiration Checker Micro-Service"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/babylonlabs-io/staking-queue-client/tree/release/v1.x",
+        "description": "Staking Queue Client"
+      }
+    ],
+    "sc_total": 14,
+    "sc_ids": [
+      "https://github.com/babylonlabs-io/babylon",
+      "https://github.com/babylonlabs-io/babylon-staking-indexer/releases/tag/v3.0.2",
+      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-core-ui",
+      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-proto-ts",
+      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-wallet-connector",
+      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/services/simple-staking",
+      "https://github.com/babylonlabs-io/btc-staking-ts/releases/tag/v2.8.2",
+      "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.15.x",
+      "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.16.x",
+      "https://github.com/babylonlabs-io/finality-provider/tree/release/v2.x",
+      "https://github.com/babylonlabs-io/staking-api-service/releases/tag/v3.0.3",
+      "https://github.com/babylonlabs-io/staking-expiry-checker/tree/release/v1.x",
+      "https://github.com/babylonlabs-io/staking-queue-client/tree/release/v1.x",
+      "https://github.com/babylonlabs-io/vigilante/tree/release/v0.24.x"
+    ],
+    "github_repos": [
+      "babylonlabs-io/babylon",
+      "babylonlabs-io/babylon-staking-indexer",
+      "babylonlabs-io/babylon-toolkit",
+      "babylonlabs-io/btc-staking-ts",
+      "babylonlabs-io/covenant-emulator",
+      "babylonlabs-io/finality-provider",
+      "babylonlabs-io/staking-api-service",
+      "babylonlabs-io/staking-expiry-checker",
+      "babylonlabs-io/staking-queue-client",
+      "babylonlabs-io/vigilante"
+    ]
+  },
   "immunefi:enzyme-onyx": {
     "hash": "e95ac66b86b91169a7391e4052cbccead77c74cf",
     "bounty": true,
@@ -28359,103 +28456,6 @@
       "https://immunefi.com"
     ],
     "github_repos": []
-  },
-  "immunefi:babylon-labs": {
-    "hash": "8c0e6f5ecfaf5f1e54cbd66bcbc86d70343816c9",
-    "bounty": true,
-    "source": true,
-    "name": "Babylon Labs",
-    "url": "https://immunefi.com/bug-bounty/babylon-labs",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC/BABY",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-core-ui",
-        "description": "Core UI"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/services/simple-staking",
-        "description": "Staking dApp"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/babylon-staking-indexer/releases/tag/v3.0.2",
-        "description": "Babylon Genesis and Bitcoin Indexer"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-proto-ts",
-        "description": "Babylon Proto Libraries"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/vigilante/tree/release/v0.24.x",
-        "description": "Vigilante"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.15.x",
-        "description": "Covenant Emulator"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/finality-provider/tree/release/v2.x",
-        "description": "Finality Provider Tool Set"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-wallet-connector",
-        "description": "Wallet Connect"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/staking-expiry-checker/tree/release/v1.x",
-        "description": "Staking Expiration Checker Micro-Service"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/babylonlabs-io/staking-queue-client/tree/release/v1.x",
-        "description": "Staking Queue Client"
-      }
-    ],
-    "sc_total": 14,
-    "sc_ids": [
-      "https://github.com/babylonlabs-io/babylon",
-      "https://github.com/babylonlabs-io/babylon-staking-indexer/releases/tag/v3.0.2",
-      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-core-ui",
-      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-proto-ts",
-      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/packages/babylon-wallet-connector",
-      "https://github.com/babylonlabs-io/babylon-toolkit/tree/simple-staking/v1.4.6/services/simple-staking",
-      "https://github.com/babylonlabs-io/btc-staking-ts/releases/tag/v2.8.2",
-      "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.15.x",
-      "https://github.com/babylonlabs-io/covenant-emulator/tree/release/v0.16.x",
-      "https://github.com/babylonlabs-io/finality-provider/tree/release/v2.x",
-      "https://github.com/babylonlabs-io/staking-api-service/releases/tag/v3.0.3",
-      "https://github.com/babylonlabs-io/staking-expiry-checker/tree/release/v1.x",
-      "https://github.com/babylonlabs-io/staking-queue-client/tree/release/v1.x",
-      "https://github.com/babylonlabs-io/vigilante/tree/release/v0.24.x"
-    ],
-    "github_repos": [
-      "babylonlabs-io/babylon",
-      "babylonlabs-io/babylon-staking-indexer",
-      "babylonlabs-io/babylon-toolkit",
-      "babylonlabs-io/btc-staking-ts",
-      "babylonlabs-io/covenant-emulator",
-      "babylonlabs-io/finality-provider",
-      "babylonlabs-io/staking-api-service",
-      "babylonlabs-io/staking-expiry-checker",
-      "babylonlabs-io/staking-queue-client",
-      "babylonlabs-io/vigilante"
-    ]
   },
   "immunefi:stackingdao": {
     "hash": "b34c08fed6e2378e64a1484e29ba4475dc096486",
@@ -43011,163 +43011,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:risc-zero-zkvm": {
-    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero zkVM",
-    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0/tree/main/risc0"
-    ],
-    "github_repos": [
-      "risc0/risc0"
-    ]
-  },
-  "hackenproof:slex-web": {
-    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
-    "bounty": true,
-    "source": false,
-    "name": "Slex Web",
-    "url": "https://hackenproof.com/programs/slex-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:volo-smart-contracts": {
-    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
-    "bounty": true,
-    "source": true,
-    "name": "Volo Smart Contracts",
-    "url": "https://hackenproof.com/programs/volo-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/sui-volo/volo-smart-contracts"
-    ],
-    "github_repos": [
-      "sui-volo/volo-smart-contracts"
-    ]
-  },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
-  },
-  "hackenproof:zo-finance-web": {
-    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
-    "bounty": false,
-    "source": false,
-    "name": "ZO Finance Web",
-    "url": "https://hackenproof.com/programs/zo-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zoomex-web-and-mobile": {
-    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
-    "bounty": true,
-    "source": false,
-    "name": "Zoomex Web & Mobile",
-    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -43296,6 +43139,226 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:serenity-shield-testnet-campain": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Serenity Shield Testnet Campain",
+    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:starknet-web-and-sc": {
+    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
+    "bounty": true,
+    "source": true,
+    "name": "Starknet Web & SC",
+    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
+    "platform": "hackenproof",
+    "bounty_min": 1250,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
+    ],
+    "github_repos": [
+      "starknet-io/starkgate-contracts"
+    ]
+  },
+  "hackenproof:ttc-mobile": {
+    "hash": "c657459c9ac2df4c64f7d30b137bc6210992baa2",
+    "bounty": true,
+    "source": false,
+    "name": "TTC | Mobile",
+    "url": "https://hackenproof.com/programs/ttc-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:vechainthor-wallet": {
+    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
+    "bounty": true,
+    "source": false,
+    "name": "VeChainThor Wallet",
+    "url": "https://hackenproof.com/programs/vechainthor-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zetachain-smart-contracts": {
+    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
+    "bounty": false,
+    "source": true,
+    "name": "ZetaChain Smart Contracts",
+    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
+        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts",
+        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/toolkit",
+        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
+        "description": "Solana interface contract for zetachain\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
+        "description": "SUI interface contract for zetachain\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
+        "description": "TON interface contract for zetachain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/zeta-chain/protocol-contracts",
+      "https://github.com/zeta-chain/protocol-contracts-evm",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-solana",
+      "https://github.com/zeta-chain/protocol-contracts-sui",
+      "https://github.com/zeta-chain/protocol-contracts-ton",
+      "https://github.com/zeta-chain/toolkit"
+    ],
+    "github_repos": [
+      "zeta-chain/protocol-contracts",
+      "zeta-chain/protocol-contracts-evm",
+      "zeta-chain/protocol-contracts-solana",
+      "zeta-chain/protocol-contracts-sui",
+      "zeta-chain/protocol-contracts-ton",
+      "zeta-chain/toolkit"
+    ]
+  },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
+    ]
   },
   "hackenproof:dexalot-smart-contracts-2": {
     "hash": "46b0e6171d3a04734b97e87c214ed0cd1436534a",
@@ -47329,6 +47392,36 @@
       "risc0/risc0-ethereum"
     ]
   },
+  "hackenproof:risc-zero-zkvm": {
+    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero zkVM",
+    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0/tree/main/risc0"
+    ],
+    "github_repos": [
+      "risc0/risc0"
+    ]
+  },
   "hackenproof:router-smart-contract": {
     "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
     "bounty": true,
@@ -47439,26 +47532,6 @@
       "scallop-io/sui-lending-protocol"
     ]
   },
-  "hackenproof:serenity-shield-testnet-campain": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Serenity Shield Testnet Campain",
-    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:sg-forge-smart-contracts": {
     "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
     "bounty": false,
@@ -47524,6 +47597,26 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:slex-web": {
+    "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
+    "bounty": true,
+    "source": false,
+    "name": "Slex Web",
+    "url": "https://hackenproof.com/programs/slex-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 500,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -48004,52 +48097,6 @@
     ],
     "github_repos": [
       "starkware-libs/starknet-staking"
-    ]
-  },
-  "hackenproof:starknet-web-and-sc": {
-    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Web & SC",
-    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
-    "platform": "hackenproof",
-    "bounty_min": 1250,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
-    ],
-    "github_repos": [
-      "starknet-io/starkgate-contracts"
     ]
   },
   "hackenproof:status": {
@@ -49203,26 +49250,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:ttc-mobile": {
-    "hash": "c657459c9ac2df4c64f7d30b137bc6210992baa2",
-    "bounty": true,
-    "source": false,
-    "name": "TTC | Mobile",
-    "url": "https://hackenproof.com/programs/ttc-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ttc-protocol": {
     "hash": "9fd092b6f604c4b2358db64915bf374b4ba41616",
     "bounty": true,
@@ -49489,26 +49516,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:vechainthor-wallet": {
-    "hash": "e418341a5b8b62c2e69f3fa4f9cfbc8f51286caa",
-    "bounty": true,
-    "source": false,
-    "name": "VeChainThor Wallet",
-    "url": "https://hackenproof.com/programs/vechainthor-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:virtuswap-dex-app-1": {
     "hash": "c04d7d1d1fd6ef5f906023db85e6c61631bbc3dd",
     "bounty": true,
@@ -49557,6 +49564,36 @@
     ],
     "github_repos": [
       "virtuswap/v1-core"
+    ]
+  },
+  "hackenproof:volo-smart-contracts": {
+    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
+    "bounty": true,
+    "source": true,
+    "name": "Volo Smart Contracts",
+    "url": "https://hackenproof.com/programs/volo-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/sui-volo/volo-smart-contracts"
+    ],
+    "github_repos": [
+      "sui-volo/volo-smart-contracts"
     ]
   },
   "hackenproof:volo-web": {
@@ -50005,83 +50042,6 @@
       "zeta-chain/tss-lib"
     ]
   },
-  "hackenproof:zetachain-smart-contracts": {
-    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
-    "bounty": false,
-    "source": true,
-    "name": "ZetaChain Smart Contracts",
-    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
-        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts",
-        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/toolkit",
-        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
-        "description": "Solana interface contract for zetachain\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
-        "description": "SUI interface contract for zetachain\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
-        "description": "TON interface contract for zetachain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/zeta-chain/protocol-contracts",
-      "https://github.com/zeta-chain/protocol-contracts-evm",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-solana",
-      "https://github.com/zeta-chain/protocol-contracts-sui",
-      "https://github.com/zeta-chain/protocol-contracts-ton",
-      "https://github.com/zeta-chain/toolkit"
-    ],
-    "github_repos": [
-      "zeta-chain/protocol-contracts",
-      "zeta-chain/protocol-contracts-evm",
-      "zeta-chain/protocol-contracts-solana",
-      "zeta-chain/protocol-contracts-sui",
-      "zeta-chain/protocol-contracts-ton",
-      "zeta-chain/toolkit"
-    ]
-  },
   "hackenproof:zetachain-web-apps": {
     "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
     "bounty": true,
@@ -50091,6 +50051,46 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zo-finance-web": {
+    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
+    "bounty": false,
+    "source": false,
+    "name": "ZO Finance Web",
+    "url": "https://hackenproof.com/programs/zo-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zoomex-web-and-mobile": {
+    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
+    "bounty": true,
+    "source": false,
+    "name": "Zoomex Web & Mobile",
+    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -58346,11 +58346,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-12T13:47:13.237378+00:00",
+    "updated_at": "2026-10-12T14:17:43.194494+00:00",
     "total": 1933,
-    "qualifying": 419,
+    "qualifying": 418,
     "external": 364,
-    "blockchain": 359,
+    "blockchain": 358,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
