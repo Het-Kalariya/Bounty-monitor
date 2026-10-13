@@ -1023,7 +1023,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 83,
+    "resp_eff": 82,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1080,7 +1080,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 78,
     "bounty_days": 254.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3767,7 +3767,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 68,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3900,7 +3900,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 9037,
-    "resp_eff": 76,
+    "resp_eff": 71,
     "bounty_days": 479.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7825,7 +7825,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1669,
-    "resp_eff": 60,
+    "resp_eff": 61,
     "bounty_days": 46.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -14328,7 +14328,7 @@
     "github_repos": []
   },
   "bugcrowd:Programmer Hat Marketplace Bug Bounty Program": {
-    "hash": "c658a6d449e754c16a181f76add5b675dbcccc35",
+    "hash": "a3149ab4d7a9f20c07f10d1e4fcdfe56a7707bab",
     "bounty": true,
     "source": false,
     "name": "Programmer Hat Marketplace Bug Bounty Program",
@@ -20050,6 +20050,136 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "immunefi:filecoin": {
+    "hash": "872a04c990fb08906684b390af33a30def63bff3",
+    "bounty": true,
+    "source": true,
+    "name": "Filecoin",
+    "url": "https://immunefi.com/bug-bounty/filecoin",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whyrusleeping/cbor-gen",
+        "description": "Some basic utilities to generate fast path cbor codecs for your types."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/boost",
+        "description": "Boost is a tool for Filecoin storage providers to manage data storage and retrievals on Filecoin."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ipfs/go-graphsync",
+        "description": "An implementation of the graphsync protocol in go!"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/lotus/tree/master/miner",
+        "description": "Lotus miner node"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/rust-fil-proofs-ffi",
+        "description": "Filecoin Proofs"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/rust-filecoin-proofs-api",
+        "description": "Filecoin Proofs API"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/rust-fil-proofs",
+        "description": "Filecoin Proofs in Rust"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/bellperson",
+        "description": "zk-SNARK library"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/filecoin-project/merkletree",
+        "description": "merkle is a lightweight Rust implementation of a Merkle tree."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/lurk-lab/neptune",
+        "description": "Rust Poseidon implementation."
+      }
+    ],
+    "sc_total": 29,
+    "sc_ids": [
+      "https://github.com/filecoin-project/bellperson",
+      "https://github.com/filecoin-project/boost",
+      "https://github.com/filecoin-project/builtin-actors",
+      "https://github.com/filecoin-project/go-address",
+      "https://github.com/filecoin-project/go-amt-ipld",
+      "https://github.com/filecoin-project/go-bitfield",
+      "https://github.com/filecoin-project/go-cbor-util",
+      "https://github.com/filecoin-project/go-crypto",
+      "https://github.com/filecoin-project/go-data-transfer",
+      "https://github.com/filecoin-project/go-f3",
+      "https://github.com/filecoin-project/go-fil-commcid",
+      "https://github.com/filecoin-project/go-padreader",
+      "https://github.com/filecoin-project/go-sectorbuilder",
+      "https://github.com/filecoin-project/go-statemachine",
+      "https://github.com/filecoin-project/go-statestore",
+      "https://github.com/filecoin-project/lotus",
+      "https://github.com/filecoin-project/lotus/tree/master/miner",
+      "https://github.com/filecoin-project/merkletree",
+      "https://github.com/filecoin-project/paired",
+      "https://github.com/filecoin-project/ref-fvm",
+      "https://github.com/filecoin-project/rust-fil-proofs",
+      "https://github.com/filecoin-project/rust-fil-proofs-ffi",
+      "https://github.com/filecoin-project/rust-filecoin-proofs-api",
+      "https://github.com/ipfs/go-graphsync",
+      "https://github.com/ipfs/go-hamt-ipld",
+      "https://github.com/ipfs/go-ipld-cbor",
+      "https://github.com/lurk-lab/neptune",
+      "https://github.com/lurk-lab/neptune-triton",
+      "https://github.com/whyrusleeping/cbor-gen"
+    ],
+    "github_repos": [
+      "filecoin-project/bellperson",
+      "filecoin-project/boost",
+      "filecoin-project/builtin-actors",
+      "filecoin-project/go-address",
+      "filecoin-project/go-amt-ipld",
+      "filecoin-project/go-bitfield",
+      "filecoin-project/go-cbor-util",
+      "filecoin-project/go-crypto",
+      "filecoin-project/go-data-transfer",
+      "filecoin-project/go-f3",
+      "filecoin-project/go-fil-commcid",
+      "filecoin-project/go-padreader",
+      "filecoin-project/go-sectorbuilder",
+      "filecoin-project/go-statemachine",
+      "filecoin-project/go-statestore",
+      "filecoin-project/lotus",
+      "filecoin-project/merkletree",
+      "filecoin-project/paired",
+      "filecoin-project/ref-fvm",
+      "filecoin-project/rust-fil-proofs",
+      "filecoin-project/rust-fil-proofs-ffi",
+      "filecoin-project/rust-filecoin-proofs-api",
+      "ipfs/go-graphsync",
+      "ipfs/go-hamt-ipld",
+      "ipfs/go-ipld-cbor",
+      "lurk-lab/neptune",
+      "lurk-lab/neptune-triton",
+      "whyrusleeping/cbor-gen"
+    ]
   },
   "immunefi:enzymefinance": {
     "hash": "d7cd6439684ce032dbaec7c6df5ea4fe9087a193",
@@ -27073,136 +27203,6 @@
       "https://bscscan.com/address/0x103071da56e7cd95b415320760d6a0ddc4da1ca5"
     ],
     "github_repos": []
-  },
-  "immunefi:filecoin": {
-    "hash": "872a04c990fb08906684b390af33a30def63bff3",
-    "bounty": true,
-    "source": true,
-    "name": "Filecoin",
-    "url": "https://immunefi.com/bug-bounty/filecoin",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whyrusleeping/cbor-gen",
-        "description": "Some basic utilities to generate fast path cbor codecs for your types."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/boost",
-        "description": "Boost is a tool for Filecoin storage providers to manage data storage and retrievals on Filecoin."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ipfs/go-graphsync",
-        "description": "An implementation of the graphsync protocol in go!"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/lotus/tree/master/miner",
-        "description": "Lotus miner node"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/rust-fil-proofs-ffi",
-        "description": "Filecoin Proofs"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/rust-filecoin-proofs-api",
-        "description": "Filecoin Proofs API"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/rust-fil-proofs",
-        "description": "Filecoin Proofs in Rust"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/bellperson",
-        "description": "zk-SNARK library"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/filecoin-project/merkletree",
-        "description": "merkle is a lightweight Rust implementation of a Merkle tree."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/lurk-lab/neptune",
-        "description": "Rust Poseidon implementation."
-      }
-    ],
-    "sc_total": 29,
-    "sc_ids": [
-      "https://github.com/filecoin-project/bellperson",
-      "https://github.com/filecoin-project/boost",
-      "https://github.com/filecoin-project/builtin-actors",
-      "https://github.com/filecoin-project/go-address",
-      "https://github.com/filecoin-project/go-amt-ipld",
-      "https://github.com/filecoin-project/go-bitfield",
-      "https://github.com/filecoin-project/go-cbor-util",
-      "https://github.com/filecoin-project/go-crypto",
-      "https://github.com/filecoin-project/go-data-transfer",
-      "https://github.com/filecoin-project/go-f3",
-      "https://github.com/filecoin-project/go-fil-commcid",
-      "https://github.com/filecoin-project/go-padreader",
-      "https://github.com/filecoin-project/go-sectorbuilder",
-      "https://github.com/filecoin-project/go-statemachine",
-      "https://github.com/filecoin-project/go-statestore",
-      "https://github.com/filecoin-project/lotus",
-      "https://github.com/filecoin-project/lotus/tree/master/miner",
-      "https://github.com/filecoin-project/merkletree",
-      "https://github.com/filecoin-project/paired",
-      "https://github.com/filecoin-project/ref-fvm",
-      "https://github.com/filecoin-project/rust-fil-proofs",
-      "https://github.com/filecoin-project/rust-fil-proofs-ffi",
-      "https://github.com/filecoin-project/rust-filecoin-proofs-api",
-      "https://github.com/ipfs/go-graphsync",
-      "https://github.com/ipfs/go-hamt-ipld",
-      "https://github.com/ipfs/go-ipld-cbor",
-      "https://github.com/lurk-lab/neptune",
-      "https://github.com/lurk-lab/neptune-triton",
-      "https://github.com/whyrusleeping/cbor-gen"
-    ],
-    "github_repos": [
-      "filecoin-project/bellperson",
-      "filecoin-project/boost",
-      "filecoin-project/builtin-actors",
-      "filecoin-project/go-address",
-      "filecoin-project/go-amt-ipld",
-      "filecoin-project/go-bitfield",
-      "filecoin-project/go-cbor-util",
-      "filecoin-project/go-crypto",
-      "filecoin-project/go-data-transfer",
-      "filecoin-project/go-f3",
-      "filecoin-project/go-fil-commcid",
-      "filecoin-project/go-padreader",
-      "filecoin-project/go-sectorbuilder",
-      "filecoin-project/go-statemachine",
-      "filecoin-project/go-statestore",
-      "filecoin-project/lotus",
-      "filecoin-project/merkletree",
-      "filecoin-project/paired",
-      "filecoin-project/ref-fvm",
-      "filecoin-project/rust-fil-proofs",
-      "filecoin-project/rust-fil-proofs-ffi",
-      "filecoin-project/rust-filecoin-proofs-api",
-      "ipfs/go-graphsync",
-      "ipfs/go-hamt-ipld",
-      "ipfs/go-ipld-cbor",
-      "lurk-lab/neptune",
-      "lurk-lab/neptune-triton",
-      "whyrusleeping/cbor-gen"
-    ]
   },
   "immunefi:extrafinance": {
     "hash": "627efaf83f049730c10d1193446609a61ef3c260",
@@ -51231,6 +51231,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "sherlock:1": {
+    "hash": "098fdf59ee366d59c89242772fd23afd8f454055",
+    "bounty": true,
+    "source": true,
+    "name": "Flat Money",
+    "url": "https://audits.sherlock.xyz/bug-bounties/1",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/rocket-pool/rocketpool",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/rocket-pool/rocketpool"
+    ],
+    "github_repos": [
+      "rocket-pool/rocketpool"
+    ]
+  },
   "sherlock:100": {
     "hash": "9e46e74633badc7ae381d859acba68abbf22c310",
     "bounty": true,
@@ -52507,36 +52537,6 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
-    ]
-  },
-  "sherlock:1": {
-    "hash": "098fdf59ee366d59c89242772fd23afd8f454055",
-    "bounty": true,
-    "source": true,
-    "name": "Flat Money",
-    "url": "https://audits.sherlock.xyz/bug-bounties/1",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/rocket-pool/rocketpool",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/rocket-pool/rocketpool"
-    ],
-    "github_repos": [
-      "rocket-pool/rocketpool"
     ]
   },
   "chaos:1inch": {
@@ -58349,7 +58349,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-13T04:48:12.776008+00:00",
+    "updated_at": "2026-10-13T05:53:30.921208+00:00",
     "total": 1933,
     "qualifying": 418,
     "external": 363,
