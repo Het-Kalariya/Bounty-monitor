@@ -1669,7 +1669,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 42,
+    "resp_eff": 43,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2797,7 +2797,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 64,
+    "resp_eff": 55,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4527,7 +4527,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 72,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4926,7 +4926,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 100,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6731,7 +6731,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 66,
+    "resp_eff": 67,
     "bounty_days": 278.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20051,6 +20051,102 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:optimism": {
+    "hash": "b229f6e8c64e6d08ef9ce7c326574ae747642d4d",
+    "bounty": true,
+    "source": true,
+    "name": "Optimism",
+    "url": "https://immunefi.com/bug-bounty/optimism",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 2000042,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ethereum-optimism/optimism/tree/develop/op-dispute-mon",
+        "description": "op-dispute-mon (in scope for impacts listed in the smart contracts section)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xbEb5Fc579115071764c7423A4f12eDde41f106Ed",
+        "description": "OptimismPortal"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x543bA4AADBAb8f9025686Bd03993043599c6fB04",
+        "description": "ProxyAdmin"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xe5965Ab5962eDc7477C8520243A95517CD252fA9",
+        "description": "DisputeGameFactory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xdfe97868233d1aa22e815a266982f2cf17685a27",
+        "description": "L2OutputOracle"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x75505a97BD334E7BD3C476893285569C4136Fa0F",
+        "description": "OptimismMintableERC20Factory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
+        "description": "L1CrossDomainMessenger"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE9daD167EF4DE8812C1abD013Ac9570C616599A0",
+        "description": "PermissionedDisputeGame"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ethereum-optimism/optimism/tree/develop/op-node",
+        "description": "op-node"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE497B094d6DbB3D5E4CaAc9a14696D7572588d14",
+        "description": "DelayedWETH"
+      }
+    ],
+    "sc_total": 22,
+    "sc_ids": [
+      "https://etherscan.io/address/0x0f8edfbddd3c0256a80ad8c0f2560b1807873c9c",
+      "https://etherscan.io/address/0x18dac71c228d1c32c99489b7323d441e1175e443",
+      "https://etherscan.io/address/0x229047fed2591dbec1ef1118d64f7af3db9eb290",
+      "https://etherscan.io/address/0x25ace71c97b33cc4729cf772ae268934f7ab5fa1",
+      "https://etherscan.io/address/0x4146df64d83acb0dcb0c1a4884a16f090165e122",
+      "https://etherscan.io/address/0x543ba4aadbab8f9025686bd03993043599c6fb04",
+      "https://etherscan.io/address/0x5a7749f83b81b301cab5f48eb8516b986daef23d",
+      "https://etherscan.io/address/0x75505a97bd334e7bd3c476893285569c4136fa0f",
+      "https://etherscan.io/address/0x99c9fc46f92e8a1c0dec1b1747d010903e884be1",
+      "https://etherscan.io/address/0xbeb5fc579115071764c7423a4f12edde41f106ed",
+      "https://etherscan.io/address/0xd326e10b8186e90f4e2adc5c13a2d0c137ee8b34",
+      "https://etherscan.io/address/0xde1fcfb0851916ca5101820a69b13a4e276bd81f",
+      "https://etherscan.io/address/0xdfe97868233d1aa22e815a266982f2cf17685a27",
+      "https://etherscan.io/address/0xe2f826324b2faf99e513d16d266c3f80ae87832b",
+      "https://etherscan.io/address/0xe497b094d6dbb3d5e4caac9a14696d7572588d14",
+      "https://etherscan.io/address/0xe5965ab5962edc7477c8520243a95517cd252fa9",
+      "https://etherscan.io/address/0xe9dad167ef4de8812c1abd013ac9570c616599a0",
+      "https://github.com/ethereum-optimism/optimism/tree/develop/op-dispute-mon",
+      "https://github.com/ethereum-optimism/optimism/tree/develop/op-node",
+      "https://github.com/ethereum-optimism/optimism/tree/develop/rust/op-reth",
+      "https://immunefi.com",
+      "https://optimistic.etherscan.io/address/0xb5cb7a05dd1311195982a26dfc8222477f9d8179"
+    ],
+    "github_repos": [
+      "ethereum-optimism/optimism"
+    ]
+  },
   "immunefi:filecoin": {
     "hash": "872a04c990fb08906684b390af33a30def63bff3",
     "bounty": true,
@@ -27790,102 +27886,6 @@
       "https://etherscan.io/address/0x8dddb96cf36ac8860f1de5c7c4698fd499fab405#code"
     ],
     "github_repos": []
-  },
-  "immunefi:optimism": {
-    "hash": "b229f6e8c64e6d08ef9ce7c326574ae747642d4d",
-    "bounty": true,
-    "source": true,
-    "name": "Optimism",
-    "url": "https://immunefi.com/bug-bounty/optimism",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 2000042,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ethereum-optimism/optimism/tree/develop/op-dispute-mon",
-        "description": "op-dispute-mon (in scope for impacts listed in the smart contracts section)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xbEb5Fc579115071764c7423A4f12eDde41f106Ed",
-        "description": "OptimismPortal"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x543bA4AADBAb8f9025686Bd03993043599c6fB04",
-        "description": "ProxyAdmin"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xe5965Ab5962eDc7477C8520243A95517CD252fA9",
-        "description": "DisputeGameFactory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xdfe97868233d1aa22e815a266982f2cf17685a27",
-        "description": "L2OutputOracle"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x75505a97BD334E7BD3C476893285569C4136Fa0F",
-        "description": "OptimismMintableERC20Factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x25ace71c97B33Cc4729CF772ae268934F7ab5fA1",
-        "description": "L1CrossDomainMessenger"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE9daD167EF4DE8812C1abD013Ac9570C616599A0",
-        "description": "PermissionedDisputeGame"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ethereum-optimism/optimism/tree/develop/op-node",
-        "description": "op-node"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE497B094d6DbB3D5E4CaAc9a14696D7572588d14",
-        "description": "DelayedWETH"
-      }
-    ],
-    "sc_total": 22,
-    "sc_ids": [
-      "https://etherscan.io/address/0x0f8edfbddd3c0256a80ad8c0f2560b1807873c9c",
-      "https://etherscan.io/address/0x18dac71c228d1c32c99489b7323d441e1175e443",
-      "https://etherscan.io/address/0x229047fed2591dbec1ef1118d64f7af3db9eb290",
-      "https://etherscan.io/address/0x25ace71c97b33cc4729cf772ae268934f7ab5fa1",
-      "https://etherscan.io/address/0x4146df64d83acb0dcb0c1a4884a16f090165e122",
-      "https://etherscan.io/address/0x543ba4aadbab8f9025686bd03993043599c6fb04",
-      "https://etherscan.io/address/0x5a7749f83b81b301cab5f48eb8516b986daef23d",
-      "https://etherscan.io/address/0x75505a97bd334e7bd3c476893285569c4136fa0f",
-      "https://etherscan.io/address/0x99c9fc46f92e8a1c0dec1b1747d010903e884be1",
-      "https://etherscan.io/address/0xbeb5fc579115071764c7423a4f12edde41f106ed",
-      "https://etherscan.io/address/0xd326e10b8186e90f4e2adc5c13a2d0c137ee8b34",
-      "https://etherscan.io/address/0xde1fcfb0851916ca5101820a69b13a4e276bd81f",
-      "https://etherscan.io/address/0xdfe97868233d1aa22e815a266982f2cf17685a27",
-      "https://etherscan.io/address/0xe2f826324b2faf99e513d16d266c3f80ae87832b",
-      "https://etherscan.io/address/0xe497b094d6dbb3d5e4caac9a14696d7572588d14",
-      "https://etherscan.io/address/0xe5965ab5962edc7477c8520243a95517cd252fa9",
-      "https://etherscan.io/address/0xe9dad167ef4de8812c1abd013ac9570c616599a0",
-      "https://github.com/ethereum-optimism/optimism/tree/develop/op-dispute-mon",
-      "https://github.com/ethereum-optimism/optimism/tree/develop/op-node",
-      "https://github.com/ethereum-optimism/optimism/tree/develop/rust/op-reth",
-      "https://immunefi.com",
-      "https://optimistic.etherscan.io/address/0xb5cb7a05dd1311195982a26dfc8222477f9d8179"
-    ],
-    "github_repos": [
-      "ethereum-optimism/optimism"
-    ]
   },
   "immunefi:celer": {
     "hash": "f9f3ac84dc58269cfe5fa59f758925957bddcd6e",
@@ -43397,56 +43397,6 @@
       "dodoex/dodo-v3"
     ]
   },
-  "hackenproof:enkrypt-wallet": {
-    "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
-    "bounty": true,
-    "source": true,
-    "name": "Enkrypt Wallet",
-    "url": "https://hackenproof.com/programs/enkrypt-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 350,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/enkryptcom/enKrypt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/enkryptcom/enkrypt"
-    ],
-    "github_repos": [
-      "enkryptcom/enkrypt"
-    ]
-  },
-  "hackenproof:navi-protocol-web": {
-    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
-    "bounty": true,
-    "source": false,
-    "name": "NAVI Protocol Web",
-    "url": "https://hackenproof.com/programs/navi-protocol-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dodofeerouteproxy-smart-contract": {
     "hash": "f12d701eadb4bf7324e76146292d1a91853a1fcf",
     "bounty": true,
@@ -43674,6 +43624,36 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:enkrypt-wallet": {
+    "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
+    "bounty": true,
+    "source": true,
+    "name": "Enkrypt Wallet",
+    "url": "https://hackenproof.com/programs/enkrypt-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 350,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/enkryptcom/enKrypt",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/enkryptcom/enkrypt"
+    ],
+    "github_repos": [
+      "enkryptcom/enkrypt"
+    ]
   },
   "hackenproof:envelop-smart-contracts": {
     "hash": "0e970255c180b4be8d32327e3429df10b0d3bb44",
@@ -46193,6 +46173,26 @@
     "github_repos": [
       "naviprotocol/navi-smart-contracts"
     ]
+  },
+  "hackenproof:navi-protocol-web": {
+    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
+    "bounty": true,
+    "source": false,
+    "name": "NAVI Protocol Web",
+    "url": "https://hackenproof.com/programs/navi-protocol-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:near-foundation-web-low": {
     "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
@@ -58349,7 +58349,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-13T10:26:28.706740+00:00",
+    "updated_at": "2026-10-13T10:53:58.646457+00:00",
     "total": 1933,
     "qualifying": 418,
     "external": 363,
