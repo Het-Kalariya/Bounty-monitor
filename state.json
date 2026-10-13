@@ -5059,7 +5059,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5486,7 +5486,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 92,
     "bounty_days": 379.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5808,7 +5808,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 47,
+    "resp_eff": 42,
     "bounty_days": 189.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6901,7 +6901,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 74,
     "bounty_days": 441.0,
     "sc_targets": [
       {
@@ -43275,82 +43275,6 @@
       "dexe-network/dexe-protocol"
     ]
   },
-  "hackenproof:kucoin": {
-    "hash": "b84e20844903b7535171b39d53833c864951b346",
-    "bounty": true,
-    "source": false,
-    "name": "KuCoin",
-    "url": "https://hackenproof.com/programs/kucoin",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:kuna-crypto-exchange": {
-    "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
-    "bounty": true,
-    "source": false,
-    "name": "Kuna Crypto Exchange",
-    "url": "https://hackenproof.com/programs/kuna-crypto-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:lachain-dot-io": {
-    "hash": "bf1f904ee69b4b6e9b3f18d0a4389ad6e77203f3",
-    "bounty": true,
-    "source": true,
-    "name": "LACHAIN.IO",
-    "url": "https://hackenproof.com/programs/lachain-dot-io",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/LATOKEN/lachain",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/LATOKEN/lachain/tree/dev/src/Lachain.Consensus",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/latoken/lachain",
-      "https://github.com/latoken/lachain/tree/dev/src/lachain.consensus"
-    ],
-    "github_repos": [
-      "latoken/lachain"
-    ]
-  },
   "hackenproof:dexx-web-and-mobile": {
     "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
     "bounty": true,
@@ -45523,6 +45447,82 @@
     ],
     "github_repos": [
       "kub-chain/bkc"
+    ]
+  },
+  "hackenproof:kucoin": {
+    "hash": "b84e20844903b7535171b39d53833c864951b346",
+    "bounty": true,
+    "source": false,
+    "name": "KuCoin",
+    "url": "https://hackenproof.com/programs/kucoin",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:kuna-crypto-exchange": {
+    "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
+    "bounty": true,
+    "source": false,
+    "name": "Kuna Crypto Exchange",
+    "url": "https://hackenproof.com/programs/kuna-crypto-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:lachain-dot-io": {
+    "hash": "bf1f904ee69b4b6e9b3f18d0a4389ad6e77203f3",
+    "bounty": true,
+    "source": true,
+    "name": "LACHAIN.IO",
+    "url": "https://hackenproof.com/programs/lachain-dot-io",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/LATOKEN/lachain",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/LATOKEN/lachain/tree/dev/src/Lachain.Consensus",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/latoken/lachain",
+      "https://github.com/latoken/lachain/tree/dev/src/lachain.consensus"
+    ],
+    "github_repos": [
+      "latoken/lachain"
     ]
   },
   "hackenproof:latoken-exchange": {
@@ -58349,7 +58349,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-13T08:25:19.930129+00:00",
+    "updated_at": "2026-10-13T08:55:37.208984+00:00",
     "total": 1933,
     "qualifying": 418,
     "external": 363,
