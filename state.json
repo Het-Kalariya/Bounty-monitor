@@ -2185,7 +2185,7 @@
     "github_repos": []
   },
   "hackerone:ion": {
-    "hash": "21084ca076360465b566a519070f0bb6f588833f",
+    "hash": "33ed2c66094efbe1f9a754d4705a304f9c0ca058",
     "bounty": false,
     "source": false,
     "name": "ION Group",
@@ -4577,7 +4577,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 64,
+    "resp_eff": 65,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7246,7 +7246,7 @@
     "github_repos": []
   },
   "hackerone:expediagroup_bbp": {
-    "hash": "1bccbacf058eb2d289d2a8efb51fd6d6abb32313",
+    "hash": "8f695cd86604e15186a587ba75ff6b73e989f244",
     "bounty": true,
     "source": false,
     "name": "Expedia Group Bug Bounty",
@@ -7559,7 +7559,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 7062,
-    "resp_eff": 73,
+    "resp_eff": 72,
     "bounty_days": 5156.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -14689,25 +14689,6 @@
     "platform": "bugcrowd",
     "bounty_min": 0,
     "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "bugcrowd:Refined": {
-    "hash": "3648a00b2535840b7ebbb534bfa534543724b4cb",
-    "bounty": true,
-    "source": false,
-    "name": "Refined",
-    "url": "https://bugcrowd.com/engagements/refined2",
-    "platform": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 2500,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43598,6 +43579,312 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:init-capital-web": {
+    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
+    "bounty": true,
+    "source": false,
+    "name": "INIT Capital Web",
+    "url": "https://hackenproof.com/programs/init-capital-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:internet-computer-protocol-icp": {
+    "hash": "79c1190475b55eb453b7f91666ddc7b806021e2f",
+    "bounty": true,
+    "source": true,
+    "name": "Internet Computer Protocol (ICP)",
+    "url": "https://hackenproof.com/programs/internet-computer-protocol-icp",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic",
+        "description": "The core Internet Computer Protocol stack."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/nns",
+        "description": "Network Nervous System (NNS) canisters"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
+        "description": "Rosetta API provides applications that third parties (e.g. exchanges) can run to obtain ICP price data."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/nns-dapp",
+        "description": "Front-end and back-end components of the Network Nervous System (NNS) canisters."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/internet-identity",
+        "description": "Internet identity is an anonymous blockchain authentication framework on ICP and supports passkey authentication"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/sns",
+        "description": "ICP offers a framework to launch decentralized autonomous organizations (DAOs), called the Service Nervous System (SNS)"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/caffeinelabs/motoko-core",
+        "description": "The standard library for Motoko."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/caffeinelabs/motoko",
+        "description": "Motoko is a safe, simple, actor-based programming language for building Internet Computer (ICP) canister smart contracts."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend",
+        "description": "IC software development kit"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/cdk-rs",
+        "description": "Rust Canister Development Kit allows rust developers to build ICP canisters in Rust."
+      }
+    ],
+    "sc_total": 22,
+    "sc_ids": [
+      "https://github.com/caffeinelabs/motoko",
+      "https://github.com/caffeinelabs/motoko-core",
+      "https://github.com/dfinity/agent-rs",
+      "https://github.com/dfinity/candid",
+      "https://github.com/dfinity/cdk-rs",
+      "https://github.com/dfinity/chain-fusion-signer",
+      "https://github.com/dfinity/exchange-rate-canister",
+      "https://github.com/dfinity/ic",
+      "https://github.com/dfinity/ic/tree/master/rs/boundary_node",
+      "https://github.com/dfinity/ic/tree/master/rs/nns",
+      "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
+      "https://github.com/dfinity/ic/tree/master/rs/sns",
+      "https://github.com/dfinity/icp-cli",
+      "https://github.com/dfinity/icp-js-core",
+      "https://github.com/dfinity/imcp2",
+      "https://github.com/dfinity/internet-identity",
+      "https://github.com/dfinity/nns-dapp",
+      "https://github.com/dfinity/oisy-trade",
+      "https://github.com/dfinity/oisy-wallet",
+      "https://github.com/dfinity/orbit",
+      "https://github.com/dfinity/quill",
+      "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend"
+    ],
+    "github_repos": [
+      "caffeinelabs/motoko",
+      "caffeinelabs/motoko-core",
+      "dfinity/agent-rs",
+      "dfinity/candid",
+      "dfinity/cdk-rs",
+      "dfinity/chain-fusion-signer",
+      "dfinity/exchange-rate-canister",
+      "dfinity/ic",
+      "dfinity/icp-cli",
+      "dfinity/icp-js-core",
+      "dfinity/imcp2",
+      "dfinity/internet-identity",
+      "dfinity/nns-dapp",
+      "dfinity/oisy-trade",
+      "dfinity/oisy-wallet",
+      "dfinity/orbit",
+      "dfinity/quill",
+      "dfinity/sdk"
+    ]
+  },
+  "hackenproof:jojo-smart-contracts": {
+    "hash": "5aa125faec6dbc02f7f94be85e152074eaab1498",
+    "bounty": true,
+    "source": true,
+    "name": "JOJO Smart Contracts",
+    "url": "https://hackenproof.com/programs/jojo-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/JOJOexchange/smart-contract-EVM",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/jojoexchange/smart-contract-evm"
+    ],
+    "github_repos": [
+      "jojoexchange/smart-contract-evm"
+    ]
+  },
+  "hackenproof:router-smart-contract": {
+    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
+    "bounty": true,
+    "source": false,
+    "name": "Router Smart Contract",
+    "url": "https://hackenproof.com/programs/router-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:router-web": {
+    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
+    "bounty": true,
+    "source": false,
+    "name": "Router Web",
+    "url": "https://hackenproof.com/programs/router-web",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+    "bounty": true,
+    "source": false,
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zo-finance-web": {
+    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
+    "bounty": false,
+    "source": false,
+    "name": "ZO Finance Web",
+    "url": "https://hackenproof.com/programs/zo-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zoomex-web-and-mobile": {
+    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
+    "bounty": true,
+    "source": false,
+    "name": "Zoomex Web & Mobile",
+    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zynk-protocol": {
+    "hash": "1961ca5f2b9e38761cbab98566d212a0f8be30fa",
+    "bounty": true,
+    "source": true,
+    "name": "Zynk Protocol",
+    "url": "https://hackenproof.com/programs/zynk-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\n\nThe program manages:\n\n- Beneficiary and assets whitelisting\n- Liquidity deployment to beneficiaries\n- Partner settlement flows\n- Order lifecycle tracking\n- Governance and administrative actions\n- Protocol safety mechanisms\n\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
+        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\n\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Zynklabs/audit-reports",
+        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zynklabs/audit-reports",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
+    ],
+    "github_repos": [
+      "zynklabs/audit-reports",
+      "zynklabs/zynk-protocol-solana-programs.public"
+    ]
+  },
   "hackenproof:doubleup-smart-contracts": {
     "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
     "bounty": true,
@@ -45179,6 +45466,26 @@
     ],
     "github_repos": []
   },
+  "hackenproof:jojo-web": {
+    "hash": "83186d7c0844d53b4d4919bde2f67622bd0ffc9b",
+    "bounty": true,
+    "source": false,
+    "name": "JOJO Web",
+    "url": "https://hackenproof.com/programs/jojo-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:kai-finance-yield-protocol": {
     "hash": "6b9cbec9ec27a5fd7a09b6819dca67bf20c0824e",
     "bounty": true,
@@ -45244,347 +45551,6 @@
     "github_repos": [
       "kaiachain/kaia"
     ]
-  },
-  "hackenproof:ofza-web": {
-    "hash": "15e114681cf33e59655591ea2d5554424882b574",
-    "bounty": true,
-    "source": false,
-    "name": "OFZA Web",
-    "url": "https://hackenproof.com/programs/ofza-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:okx": {
-    "hash": "43d0d3ed4289643d7e805731e9c2f149afdf24e2",
-    "bounty": true,
-    "source": true,
-    "name": "OKX",
-    "url": "https://hackenproof.com/programs/okx",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/okx/",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/okx"
-    ],
-    "github_repos": []
-  },
-  "hackenproof:oort-protocol": {
-    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
-    "bounty": true,
-    "source": true,
-    "name": "OORT Protocol",
-    "url": "https://hackenproof.com/programs/oort-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/oort-tech/Olympus",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/oort-tech/olympus"
-    ],
-    "github_repos": [
-      "oort-tech/olympus"
-    ]
-  },
-  "hackenproof:sweed-web": {
-    "hash": "44b5087d8e34ab998d1efda092ddc6095568d180",
-    "bounty": true,
-    "source": false,
-    "name": "Sweed Web",
-    "url": "https://hackenproof.com/programs/sweed-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swisstronik-blockchain-stability": {
-    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Blockchain Stability",
-    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tickets-travel-network-slash-mobile": {
-    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Mobile",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tickets-travel-network-slash-updated-ui": {
-    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Updated UI",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:init-capital-web": {
-    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
-    "bounty": true,
-    "source": false,
-    "name": "INIT Capital Web",
-    "url": "https://hackenproof.com/programs/init-capital-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:internet-computer-protocol-icp": {
-    "hash": "79c1190475b55eb453b7f91666ddc7b806021e2f",
-    "bounty": true,
-    "source": true,
-    "name": "Internet Computer Protocol (ICP)",
-    "url": "https://hackenproof.com/programs/internet-computer-protocol-icp",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic",
-        "description": "The core Internet Computer Protocol stack."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/nns",
-        "description": "Network Nervous System (NNS) canisters"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
-        "description": "Rosetta API provides applications that third parties (e.g. exchanges) can run to obtain ICP price data."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/nns-dapp",
-        "description": "Front-end and back-end components of the Network Nervous System (NNS) canisters."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/internet-identity",
-        "description": "Internet identity is an anonymous blockchain authentication framework on ICP and supports passkey authentication"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/sns",
-        "description": "ICP offers a framework to launch decentralized autonomous organizations (DAOs), called the Service Nervous System (SNS)"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/caffeinelabs/motoko-core",
-        "description": "The standard library for Motoko."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/caffeinelabs/motoko",
-        "description": "Motoko is a safe, simple, actor-based programming language for building Internet Computer (ICP) canister smart contracts."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend",
-        "description": "IC software development kit"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/cdk-rs",
-        "description": "Rust Canister Development Kit allows rust developers to build ICP canisters in Rust."
-      }
-    ],
-    "sc_total": 22,
-    "sc_ids": [
-      "https://github.com/caffeinelabs/motoko",
-      "https://github.com/caffeinelabs/motoko-core",
-      "https://github.com/dfinity/agent-rs",
-      "https://github.com/dfinity/candid",
-      "https://github.com/dfinity/cdk-rs",
-      "https://github.com/dfinity/chain-fusion-signer",
-      "https://github.com/dfinity/exchange-rate-canister",
-      "https://github.com/dfinity/ic",
-      "https://github.com/dfinity/ic/tree/master/rs/boundary_node",
-      "https://github.com/dfinity/ic/tree/master/rs/nns",
-      "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
-      "https://github.com/dfinity/ic/tree/master/rs/sns",
-      "https://github.com/dfinity/icp-cli",
-      "https://github.com/dfinity/icp-js-core",
-      "https://github.com/dfinity/imcp2",
-      "https://github.com/dfinity/internet-identity",
-      "https://github.com/dfinity/nns-dapp",
-      "https://github.com/dfinity/oisy-trade",
-      "https://github.com/dfinity/oisy-wallet",
-      "https://github.com/dfinity/orbit",
-      "https://github.com/dfinity/quill",
-      "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend"
-    ],
-    "github_repos": [
-      "caffeinelabs/motoko",
-      "caffeinelabs/motoko-core",
-      "dfinity/agent-rs",
-      "dfinity/candid",
-      "dfinity/cdk-rs",
-      "dfinity/chain-fusion-signer",
-      "dfinity/exchange-rate-canister",
-      "dfinity/ic",
-      "dfinity/icp-cli",
-      "dfinity/icp-js-core",
-      "dfinity/imcp2",
-      "dfinity/internet-identity",
-      "dfinity/nns-dapp",
-      "dfinity/oisy-trade",
-      "dfinity/oisy-wallet",
-      "dfinity/orbit",
-      "dfinity/quill",
-      "dfinity/sdk"
-    ]
-  },
-  "hackenproof:jojo-smart-contracts": {
-    "hash": "5aa125faec6dbc02f7f94be85e152074eaab1498",
-    "bounty": true,
-    "source": true,
-    "name": "JOJO Smart Contracts",
-    "url": "https://hackenproof.com/programs/jojo-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/JOJOexchange/smart-contract-EVM",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/jojoexchange/smart-contract-evm"
-    ],
-    "github_repos": [
-      "jojoexchange/smart-contract-evm"
-    ]
-  },
-  "hackenproof:jojo-web": {
-    "hash": "83186d7c0844d53b4d4919bde2f67622bd0ffc9b",
-    "bounty": true,
-    "source": false,
-    "name": "JOJO Web",
-    "url": "https://hackenproof.com/programs/jojo-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:kaia-web": {
     "hash": "3dc8f7d7ad104d9f3d01905d90d287770c9d6eae",
@@ -46925,6 +46891,84 @@
       "nxt-technologies-inc/nxtchain"
     ]
   },
+  "hackenproof:ofza-web": {
+    "hash": "15e114681cf33e59655591ea2d5554424882b574",
+    "bounty": true,
+    "source": false,
+    "name": "OFZA Web",
+    "url": "https://hackenproof.com/programs/ofza-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:okx": {
+    "hash": "43d0d3ed4289643d7e805731e9c2f149afdf24e2",
+    "bounty": true,
+    "source": true,
+    "name": "OKX",
+    "url": "https://hackenproof.com/programs/okx",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/okx/",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/okx"
+    ],
+    "github_repos": []
+  },
+  "hackenproof:oort-protocol": {
+    "hash": "130edaa2e74037bf66e4e47f9fa723af992db9e5",
+    "bounty": true,
+    "source": true,
+    "name": "OORT Protocol",
+    "url": "https://hackenproof.com/programs/oort-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/oort-tech/Olympus",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/oort-tech/olympus"
+    ],
+    "github_repos": [
+      "oort-tech/olympus"
+    ]
+  },
   "hackenproof:openware": {
     "hash": "03dee0a21da855ba4d02f501766160d8f0061b99",
     "bounty": true,
@@ -47421,66 +47465,6 @@
     "github_repos": [
       "risc0/risc0"
     ]
-  },
-  "hackenproof:router-smart-contract": {
-    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
-    "bounty": true,
-    "source": false,
-    "name": "Router Smart Contract",
-    "url": "https://hackenproof.com/programs/router-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 200000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:router-web": {
-    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
-    "bounty": true,
-    "source": false,
-    "name": "Router Web",
-    "url": "https://hackenproof.com/programs/router-web",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
-    "bounty": true,
-    "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:safeswap-app": {
     "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
@@ -48617,6 +48601,46 @@
       "swap-dot-io/swap-io-clmm"
     ]
   },
+  "hackenproof:sweed-web": {
+    "hash": "44b5087d8e34ab998d1efda092ddc6095568d180",
+    "bounty": true,
+    "source": false,
+    "name": "Sweed Web",
+    "url": "https://hackenproof.com/programs/sweed-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:swisstronik-blockchain-stability": {
+    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
+    "bounty": true,
+    "source": false,
+    "name": "Swisstronik Blockchain Stability",
+    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:swisstronik-core": {
     "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
     "bounty": true,
@@ -48937,6 +48961,46 @@
     "github_repos": [
       "code-payments/flipcash-program"
     ]
+  },
+  "hackenproof:tickets-travel-network-slash-mobile": {
+    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Mobile",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tickets-travel-network-slash-updated-ui": {
+    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Updated UI",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:tidex-exchange": {
     "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
@@ -50201,89 +50265,6 @@
     "github_repos": [
       "zofinance/zo-contracts-public",
       "zofinance/zo-contracts-usdz-public"
-    ]
-  },
-  "hackenproof:zo-finance-web": {
-    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
-    "bounty": false,
-    "source": false,
-    "name": "ZO Finance Web",
-    "url": "https://hackenproof.com/programs/zo-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zoomex-web-and-mobile": {
-    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
-    "bounty": true,
-    "source": false,
-    "name": "Zoomex Web & Mobile",
-    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zynk-protocol": {
-    "hash": "1961ca5f2b9e38761cbab98566d212a0f8be30fa",
-    "bounty": true,
-    "source": true,
-    "name": "Zynk Protocol",
-    "url": "https://hackenproof.com/programs/zynk-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\n\nThe program manages:\n\n- Beneficiary and assets whitelisting\n- Liquidity deployment to beneficiaries\n- Partner settlement flows\n- Order lifecycle tracking\n- Governance and administrative actions\n- Protocol safety mechanisms\n\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
-        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\n\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Zynklabs/audit-reports",
-        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zynklabs/audit-reports",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
-    ],
-    "github_repos": [
-      "zynklabs/audit-reports",
-      "zynklabs/zynk-protocol-solana-programs.public"
     ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
@@ -58471,8 +58452,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-14T09:35:43.026939+00:00",
-    "total": 1931,
+    "updated_at": "2026-10-14T10:04:33.155455+00:00",
+    "total": 1930,
     "qualifying": 421,
     "external": 363,
     "blockchain": 359,
@@ -58899,13 +58880,12 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": false,
+      "cantina": true,
       "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy",
-      "cantina"
+      "federacy"
     ]
   }
 }
