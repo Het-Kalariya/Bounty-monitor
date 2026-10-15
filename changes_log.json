@@ -3722,5 +3722,86 @@
     "github_repos": [
       "hackenproof-public/cetus-contract-bounty"
     ]
+  },
+  {
+    "timestamp": "2026-10-15T09:53:55.305869+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "1inch-aqua",
+    "name": "1inch - Aqua",
+    "url": "https://immunefi.com/bug-bounty/1inch-aqua",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/Aqua.sol",
+        "description": "Aqua - src/Aqua.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/AquaRouter.sol",
+        "description": "Aqua - src/AquaRouter.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/Balance.sol",
+        "description": "Aqua - src/libs/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/SwapVM.sol",
+        "description": "Swap VM - src/SwapVM.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Balances.sol",
+        "description": "Swap VM - src/instructions/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Controls.sol",
+        "description": "Swap VM - src/instructions/Controls.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Decay.sol",
+        "description": "Swap VM - src/instructions/Decay.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Extruction.sol",
+        "description": "Swap VM - src/instructions/Extruction.sol - new"
+      }
+    ],
+    "added": [],
+    "removed": [
+      "https://github.com/1inch/swap-vm/blob/main/src/routers/aquaswapvmrouter.sol"
+    ],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-10-15T09:53:56.925237+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "pragmaoracle",
+    "name": "Pragma Oracle",
+    "url": "https://immunefi.com/bug-bounty/pragmaoracle",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://voyager.online/contract/0x02a85bd616f912537c50a49a4076db02c00b29b2cdc8a197ce92ed1837fa875b",
+        "description": "Oracle"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://voyager.online/contract/0x024a55b928496ef83468fdb9a5430fe031ac386b8f62f5c2eb7dd20ef7237415",
+        "description": "PublisherRegistry"
+      }
+    ],
+    "added": [],
+    "removed": [
+      "https://immunefi.com",
+      "https://voyager.online/contract/0x49eefafae944d07744d07cc72a5bf14728a6fb463c3eae5bca13552f5d455fd#readcontract"
+    ],
+    "github_repos": []
   }
 ]
