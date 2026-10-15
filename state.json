@@ -1117,7 +1117,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3141,7 +3141,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 26.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4267,7 +4267,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 82,
     "bounty_days": 19.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7718,6 +7718,51 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackerone:mariadb": {
+    "hash": "96e1133f4a96fe28d1ffba5ffe691f52680972c4",
+    "bounty": false,
+    "source": true,
+    "name": "MariaDB",
+    "url": "https://hackerone.com/mariadb",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": 54,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "MariaDB Server & Connectors  - Denial of Service",
+        "description": "Any program errors that attackers can use to crash the server immediately and/or corrupt its internal state and configuration permanently, preventing the user from easily resuming the service, resulting in near, or total loss of availability are commonly know as Denial of Service (DoS) attacks. In addition to the vulnerabilities listed in the RCE scope, the ones that don't lead to a code execution scenario, but do crash the server or lead to program state corruption at run-time, further examples include:\n\n* NULL pointer dereferences\n* Concurrency issues leading to dead-locks, buffer underruns and race conditions\n* Resource and memory leaks leading to a DoS condition in a short period of time\n\nOur source code is on [GitHub](https://github.com/MariaDB)."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "MariaDB Server & Connectors - Access control bypass",
+        "description": "Any vulnerability leading to database authentication bypass, privilege escalation and other access control bypass attacks are considered Critical and will be handled accordingly. Examples of security vulnerabilities that subvert access controls are:\n\n* Authentication bypass (tricking the server to authenticate as any user without valid credentials)\n* Vertical escalation of privilege (normal user gains administrative access)\n* Horizontal escalation of privilege (normal user can view/modify databases of another user)\n\nOur source code is on [GitHub](https://github.com/MariaDB)."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "MariaDB Server & Connectors - Data corruption, exfiltration, disclosure",
+        "description": "Data corruption attacks that affect the integrity of the database without authentication or privileges to do that normally are considered with a base risk of Medium and depending on the severity of the corruption and affected data, it can be raised to Critical. Similarly, for data exfiltration attacks that affect the confidentiality of the database without authorization to do that normally and attacks leading to protected information disclosure without authentication or authorization are considered as Medium severity but can be elevated to Critical on a case by case basis.\n\nIn addition to all of the other classified attacks that lead to total control of the server and/or the underlying operating system, like a buffer overflow with remote code execution, other examples of security vulnerabilities that lead to corruption and leakages are: \n\n* overwriting configuration/random files in the filesystem via SQL routines\n* sensitive information leaks via unprotected log files\n* path traversal leading to protected information disclosure\n* information exposure via warning and error messages with superfluous verbosity\n* cryptographic algorithm implementation and design errors\n\nOur source code is on [GitHub](https://github.com/MariaDB)."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "MariaDB Server & Connectors - Remote Code Execution",
+        "description": "Gaining unauthorized Remote Code Execution (RCE) on the server, slave (replication, federated) or client machine is considered a Critical vulnerability. Examples of security vulnerabilities that could potentially lead to such a vulnerability include:\n* Stack based buffer overflows\n* Heap based buffer overflows\n* Format string errors\n* Off by one errors\n* Integer overflows, divide-by-zero, precision errors that lead to controlable memory corruption\n* Dangling pointer, double free and use after free\n\nWhile this list doesn't aim to be exhaustive, you have to prove that your report does lead to Remote Code Execution via known exploitation techniques either directly or by chaining multiple, previously undisclosed/unfixed, vulnerabilities together. Otherwise they should be classified as denial of service (DoS).\n\nOur source code is on [GitHub](https://github.com/MariaDB)."
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "mariadb server & connectors  - denial of service",
+      "mariadb server & connectors - access control bypass",
+      "mariadb server & connectors - data corruption, exfiltration, disclosure",
+      "mariadb server & connectors - remote code execution"
+    ],
+    "github_repos": []
+  },
   "hackerone:chaturbate": {
     "hash": "9515c25c74077f62d47498189dc060f453633d70",
     "bounty": true,
@@ -10542,7 +10587,7 @@
     "github_repos": []
   },
   "bugcrowd:Amoeboids": {
-    "hash": "0ac60b58f8d6c6722b454fd021349b162133171d",
+    "hash": "ab24bd866b92a0d762b82140953a9d54564093ce",
     "bounty": true,
     "source": false,
     "name": "Amoeboids",
@@ -43958,6 +44003,86 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:nxt-permission-smart-contract": {
+    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
+    "bounty": true,
+    "source": true,
+    "name": "NXT Permission Smart Contract",
+    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
+    ],
+    "github_repos": [
+      "nxt-technologies-inc/nxtchain"
+    ]
+  },
+  "hackenproof:ofza-web": {
+    "hash": "15e114681cf33e59655591ea2d5554424882b574",
+    "bounty": true,
+    "source": false,
+    "name": "OFZA Web",
+    "url": "https://hackenproof.com/programs/ofza-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:exzo-network-protocol": {
     "hash": "fe9de9bf9570e1e2b78b1c5fc6a6040d670e80e6",
     "bounty": true,
@@ -44219,227 +44344,6 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:nonkyc-dot-io": {
-    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
-    "bounty": true,
-    "source": false,
-    "name": "NonKyc.io",
-    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
-    "bounty": true,
-    "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
-  },
-  "hackenproof:xt": {
-    "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
-    "bounty": true,
-    "source": false,
-    "name": "XT",
-    "url": "https://hackenproof.com/programs/xt",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zeko-protocol": {
-    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
-    "bounty": false,
-    "source": true,
-    "name": "Zeko Protocol",
-    "url": "https://hackenproof.com/programs/zeko-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/zeko",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
-        "description": "SantaClawz Github repo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/x402-zeko",
-        "description": "x402 Github repo"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zeko-labs/santa_clawz-private_agents",
-      "https://github.com/zeko-labs/x402-zeko",
-      "https://github.com/zeko-labs/zeko"
-    ],
-    "github_repos": [
-      "zeko-labs/santa_clawz-private_agents",
-      "zeko-labs/x402-zeko",
-      "zeko-labs/zeko"
-    ]
-  },
-  "hackenproof:zest-protocol-smart-contracts": {
-    "hash": "fc7a2402d8561160a086ce7ad9cb910649a526df",
-    "bounty": true,
-    "source": true,
-    "name": "Zest Protocol Smart Contracts",
-    "url": "https://hackenproof.com/programs/zest-protocol-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-assets?chain=mainnet",
-        "description": "Smart Contract - v0-assets"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-usdc?chain=mainnet",
-        "description": "Smart Contract - v0-vault-usdc"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/0xaa6dc8f25dee3cda1bf2fca6c7b65a8c230f9e2dae2f0c6d4f377b19e1189645?chain=mainnet",
-        "description": "Smart Contract - vault-traits"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/0xcb9f16912e5045c61ad2cdada636a244b9c021deb21d9c742547db5a71af14ca?chain=mainnet",
-        "description": "Smart Contract - dao-multisig"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/0x8b54f4d0d5b4fcbf8f881f6a33744b4c51a73851143b51aba26f6509ffd21fed?chain=mainnet",
-        "description": "Smart Contract - dao-treasury"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-egroup?chain=mainnet",
-        "description": "Smart Contract - v0-egroup"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-ststx?chain=mainnet",
-        "description": "Smart Contract - v0-vault-ststx"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/0x12f3fa6b08d34737610d43a3a1d6b5662a89076f04224c0691ad151f4d8b2e31?chain=mainnet",
-        "description": "Smart Contract - market-trait"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-sbtc?chain=mainnet",
-        "description": "Smart Contract - v0-vault-sbtc"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP3YCQZYWQR0CA6TT35301B28DV9D926VBZBBJWR7.dao-traits?chain=mainnet",
-        "description": "Smart Contract - dao-traits"
-      }
-    ],
-    "sc_total": 15,
-    "sc_ids": [
-      "https://explorer.hiro.so/txid/0x110c04dab690e12be239ebd41df6b8a4e71a55782c2c592cbb3350c31e1bdb19?chain=mainnet",
-      "https://explorer.hiro.so/txid/0x12f3fa6b08d34737610d43a3a1d6b5662a89076f04224c0691ad151f4d8b2e31?chain=mainnet",
-      "https://explorer.hiro.so/txid/0x8b54f4d0d5b4fcbf8f881f6a33744b4c51a73851143b51aba26f6509ffd21fed?chain=mainnet",
-      "https://explorer.hiro.so/txid/0xaa6dc8f25dee3cda1bf2fca6c7b65a8c230f9e2dae2f0c6d4f377b19e1189645?chain=mainnet",
-      "https://explorer.hiro.so/txid/0xcb9f16912e5045c61ad2cdada636a244b9c021deb21d9c742547db5a71af14ca?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-8-market?chain=mainnet&tab=availablefunctions",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-assets?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-egroup?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-sbtc?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-ststx?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-ststxbtc?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-stx?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-usdc?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-usdh?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3ycqzywqr0ca6tt35301b28dv9d926vbzbbjwr7.dao-traits?chain=mainnet"
-    ],
     "github_repos": []
   },
   "hackenproof:flow-protocol": {
@@ -46952,45 +46856,35 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:nxt-permission-smart-contract": {
-    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
+  "hackenproof:nonkyc-dot-io": {
+    "hash": "24bc34647d7da476b70157b99dfb7ed8ef8e7783",
     "bounty": true,
-    "source": true,
-    "name": "NXT Permission Smart Contract",
-    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
+    "source": false,
+    "name": "NonKyc.io",
+    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
-    ],
-    "github_repos": [
-      "nxt-technologies-inc/nxtchain"
-    ]
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
-  "hackenproof:ofza-web": {
-    "hash": "15e114681cf33e59655591ea2d5554424882b574",
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
     "bounty": true,
     "source": false,
-    "name": "OFZA Web",
-    "url": "https://hackenproof.com/programs/ofza-web",
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
     "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
+    "bounty_min": 150,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -50074,6 +49968,157 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:xt": {
+    "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
+    "bounty": true,
+    "source": false,
+    "name": "XT",
+    "url": "https://hackenproof.com/programs/xt",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zeko-protocol": {
+    "hash": "57316e8d412e6e88c4bc0f12b40ce96286466a66",
+    "bounty": false,
+    "source": true,
+    "name": "Zeko Protocol",
+    "url": "https://hackenproof.com/programs/zeko-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/zeko",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
+        "description": "SantaClawz Github repo"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/x402-zeko",
+        "description": "x402 Github repo"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zeko-labs/santa_clawz-private_agents",
+      "https://github.com/zeko-labs/x402-zeko",
+      "https://github.com/zeko-labs/zeko"
+    ],
+    "github_repos": [
+      "zeko-labs/santa_clawz-private_agents",
+      "zeko-labs/x402-zeko",
+      "zeko-labs/zeko"
+    ]
+  },
+  "hackenproof:zest-protocol-smart-contracts": {
+    "hash": "fc7a2402d8561160a086ce7ad9cb910649a526df",
+    "bounty": true,
+    "source": true,
+    "name": "Zest Protocol Smart Contracts",
+    "url": "https://hackenproof.com/programs/zest-protocol-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-assets?chain=mainnet",
+        "description": "Smart Contract - v0-assets"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-usdc?chain=mainnet",
+        "description": "Smart Contract - v0-vault-usdc"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0xaa6dc8f25dee3cda1bf2fca6c7b65a8c230f9e2dae2f0c6d4f377b19e1189645?chain=mainnet",
+        "description": "Smart Contract - vault-traits"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0xcb9f16912e5045c61ad2cdada636a244b9c021deb21d9c742547db5a71af14ca?chain=mainnet",
+        "description": "Smart Contract - dao-multisig"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x8b54f4d0d5b4fcbf8f881f6a33744b4c51a73851143b51aba26f6509ffd21fed?chain=mainnet",
+        "description": "Smart Contract - dao-treasury"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-egroup?chain=mainnet",
+        "description": "Smart Contract - v0-egroup"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-ststx?chain=mainnet",
+        "description": "Smart Contract - v0-vault-ststx"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x12f3fa6b08d34737610d43a3a1d6b5662a89076f04224c0691ad151f4d8b2e31?chain=mainnet",
+        "description": "Smart Contract - market-trait"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP1A27KFY4XERQCCRCARCYD1CC5N7M6688BSYADJ7.v0-vault-sbtc?chain=mainnet",
+        "description": "Smart Contract - v0-vault-sbtc"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3YCQZYWQR0CA6TT35301B28DV9D926VBZBBJWR7.dao-traits?chain=mainnet",
+        "description": "Smart Contract - dao-traits"
+      }
+    ],
+    "sc_total": 15,
+    "sc_ids": [
+      "https://explorer.hiro.so/txid/0x110c04dab690e12be239ebd41df6b8a4e71a55782c2c592cbb3350c31e1bdb19?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x12f3fa6b08d34737610d43a3a1d6b5662a89076f04224c0691ad151f4d8b2e31?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x8b54f4d0d5b4fcbf8f881f6a33744b4c51a73851143b51aba26f6509ffd21fed?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xaa6dc8f25dee3cda1bf2fca6c7b65a8c230f9e2dae2f0c6d4f377b19e1189645?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xcb9f16912e5045c61ad2cdada636a244b9c021deb21d9c742547db5a71af14ca?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-8-market?chain=mainnet&tab=availablefunctions",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-assets?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-egroup?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-sbtc?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-ststx?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-ststxbtc?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-stx?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-usdc?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp1a27kfy4xerqccrcarcyd1cc5n7m6688bsyadj7.v0-vault-usdh?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3ycqzywqr0ca6tt35301b28dv9d926vbzbbjwr7.dao-traits?chain=mainnet"
+    ],
     "github_repos": []
   },
   "hackenproof:zetachain-blockchain-software": {
@@ -58584,8 +58629,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-15T10:54:51.361557+00:00",
-    "total": 1937,
+    "updated_at": "2026-10-15T11:24:56.335504+00:00",
+    "total": 1938,
     "qualifying": 421,
     "external": 363,
     "blockchain": 359,
