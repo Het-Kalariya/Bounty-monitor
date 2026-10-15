@@ -7635,7 +7635,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 2255,
-    "resp_eff": 38,
+    "resp_eff": 39,
     "bounty_days": 1781.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20098,6 +20098,52 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:variational": {
+    "hash": "d7eee746259a5d9aaf2a73cc425c96d9940f0da0",
+    "bounty": true,
+    "source": true,
+    "name": "Variational",
+    "url": "https://immunefi.com/bug-bounty/variational",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x74bbbb0e7f0bad6938509dd4b556a39a4db1f2cd",
+        "description": "Core OLP Vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x5e91b40467fb8902c46a7b6cb90482363188d645",
+        "description": "Variational Protocol Treasury"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x0F820B9afC270d658a9fD7D16B1Bdc45b70f074C",
+        "description": "Settlement Pool Factory Contract"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.variational.io/",
+        "description": "Primacy of Impact Critical"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x0f820b9afc270d658a9fd7d16b1bdc45b70f074c",
+      "https://arbiscan.io/address/0x5e91b40467fb8902c46a7b6cb90482363188d645",
+      "https://arbiscan.io/address/0x74bbbb0e7f0bad6938509dd4b556a39a4db1f2cd",
+      "https://www.variational.io"
+    ],
     "github_repos": []
   },
   "immunefi:balancer": {
@@ -34285,52 +34331,6 @@
     "github_repos": [
       "immunefi-team/attackathon-xrpl-lending-protocol"
     ]
-  },
-  "immunefi:variational": {
-    "hash": "d7eee746259a5d9aaf2a73cc425c96d9940f0da0",
-    "bounty": true,
-    "source": true,
-    "name": "Variational",
-    "url": "https://immunefi.com/bug-bounty/variational",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x74bbbb0e7f0bad6938509dd4b556a39a4db1f2cd",
-        "description": "Core OLP Vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x5e91b40467fb8902c46a7b6cb90482363188d645",
-        "description": "Variational Protocol Treasury"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x0F820B9afC270d658a9fD7D16B1Bdc45b70f074C",
-        "description": "Settlement Pool Factory Contract"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://www.variational.io/",
-        "description": "Primacy of Impact Critical"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x0f820b9afc270d658a9fd7d16b1bdc45b70f074c",
-      "https://arbiscan.io/address/0x5e91b40467fb8902c46a7b6cb90482363188d645",
-      "https://arbiscan.io/address/0x74bbbb0e7f0bad6938509dd4b556a39a4db1f2cd",
-      "https://www.variational.io"
-    ],
-    "github_repos": []
   },
   "immunefi:bobanetwork": {
     "hash": "7b2e198744cabbf816e3473101888ebc3f13bc85",
@@ -58521,7 +58521,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-15T03:52:54.385651+00:00",
+    "updated_at": "2026-10-15T04:24:08.558603+00:00",
     "total": 1933,
     "qualifying": 421,
     "external": 363,
