@@ -30,7 +30,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 96,
+    "resp_eff": 97,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -662,7 +662,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 4056,
-    "resp_eff": 84,
+    "resp_eff": 83,
     "bounty_days": 59.0,
     "sc_targets": [
       {
@@ -2638,7 +2638,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3844,7 +3844,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 92,
     "bounty_days": 337.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4053,7 +4053,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 7582,
-    "resp_eff": 91,
+    "resp_eff": 90,
     "bounty_days": 713.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4362,7 +4362,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 84,
     "bounty_days": 247.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4908,7 +4908,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 62,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5695,7 +5695,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 819,
-    "resp_eff": 78,
+    "resp_eff": 77,
     "bounty_days": 254.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -10152,7 +10152,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 979,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": 1159.0,
     "sc_targets": [
       {
@@ -20221,8 +20221,42 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:magpiexyz": {
+    "hash": "e9cad931c40a01d3ecc6abf657f5bd423d5894f1",
+    "bounty": true,
+    "source": true,
+    "name": "MagpieXYZ",
+    "url": "https://immunefi.com/bug-bounty/magpiexyz",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC and BUSD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0xb68F5247f31fe28FDe0b0F7543F635a4d6EDbD7F",
+        "description": "Main Pool USDC Deposit Helper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/address/0xb68f5247f31fe28fde0b0f7543f635a4d6edbd7f",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
   "immunefi:dawn": {
-    "hash": "28ea960eba23828ead7a6c70bb79434becfe8903",
+    "hash": "1e6ab7b55168d980a4a46ce4a2071095328be9d0",
     "bounty": true,
     "source": true,
     "name": "DAWN USD.infra Vault",
@@ -20256,11 +20290,17 @@
         "asset_type": "SMART_CONTRACT",
         "identifier": "https://solscan.io/account/4rXteUmbxiXvgLqP14eQwtqkLyVNXVCBHnXyLQ9vZkSh",
         "description": "Loopscale credit vault holding InfraFi capital - loan book, NAV and share price computed on-chain by Loopscale; DAWN is the sole whitelisted borrower via a Squads V4 multisig. On-chain Anchor IDL fetchable. In scope: InfraFi's vault configuration and integration \u2014 deposit/withdraw, borrow/repay, and deal-valuation integration; borrower authorization; and the exchange-rate/share-price semantics DAWN reads and publishes. Loopscale protocol and program internals are out of scope (see below)."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x8b7eA48F5F528F5bCf256f75623dA98152Ec95f3",
+        "description": "InfraFi's on-chain contract on BNB Chain that receives, validates and stores the vault exchange rate published by infrafi-api, implements additional sanity checks and is used for downstream oracle consumption. In scope: rate-publishing authorization, staleness/validation, and any path to posting a manipulated or ripcord-blocked rate. Feed is purely informational."
       }
     ],
-    "sc_total": 4,
+    "sc_total": 5,
     "sc_ids": [
       "https://bscscan.com/address/0x15a6f1f2705b3916b5b1d2b19b10f320778744c1",
+      "https://bscscan.com/address/0x8b7ea48f5f528f5bcf256f75623da98152ec95f3",
       "https://solscan.io/account/4rxteumbxixvglqp14eqwtqklyvnxvcbhnxylq9vzksh",
       "https://solscan.io/account/ez8sq2fnnmqqo254iramgnp7c6b7dpukh22syxawuxsn",
       "https://solscan.io/token/dawn7zuf7h7anfuesddau1y3hywikwqnmaenzsqjdnl"
@@ -30043,40 +30083,6 @@
       "https://explorer.intuition.systems/address/0xc3efd5471dc63d74639725f381f9686e3f264366",
       "https://explorer.intuition.systems/address/0xd0e488fb32130232527eedeb72f8ce2bfc0f9930",
       "https://intuition.systems"
-    ],
-    "github_repos": []
-  },
-  "immunefi:magpiexyz": {
-    "hash": "2c8e07ea664bd3852339687ab0e85a6913439062",
-    "bounty": true,
-    "source": true,
-    "name": "MagpieXYZ",
-    "url": "https://immunefi.com/bug-bounty/magpiexyz",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC and BUSD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0xb68F5247f31fe28FDe0b0F7543F635a4d6EDbD7F",
-        "description": "Main Pool USDC Deposit Helper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/address/0xb68f5247f31fe28fde0b0f7543f635a4d6edbd7f",
-      "https://immunefi.com"
     ],
     "github_repos": []
   },
@@ -58629,7 +58635,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-15T12:14:11.433109+00:00",
+    "updated_at": "2026-10-15T12:44:46.121687+00:00",
     "total": 1938,
     "qualifying": 421,
     "external": 363,
