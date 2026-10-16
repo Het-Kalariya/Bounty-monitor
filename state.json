@@ -510,7 +510,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 51,
+    "resp_eff": 53,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1250,7 +1250,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 70,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3227,7 +3227,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 84,
     "bounty_days": 2294.0,
     "sc_targets": [
       {
@@ -18360,6 +18360,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:skodaautoprivatebugbountyprogram": {
+    "hash": "47f705de17d3cdb2263a70d2828e3209d09dc9df",
+    "bounty": true,
+    "source": false,
+    "name": "Skoda Auto Bug Bounty Program",
+    "url": "https://www.intigriti.com/programs/skodaauto/skodaautoprivatebugbountyprogram/detail",
+    "platform": "intigriti",
+    "bounty_min": 200,
+    "bounty_max": 5000,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:socialdeal": {
     "hash": "9de71ca41aeddfa0ed57d5f30f72a4799321035c",
     "bounty": true,
@@ -20259,6 +20278,78 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:sp1": {
+    "hash": "7229869a96ce97ae8773bf91d50ed45e50dd82ff",
+    "bounty": true,
+    "source": true,
+    "name": "SP1",
+    "url": "https://immunefi.com/bug-bounty/sp1",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/core/executor",
+        "description": "sp1-core-executor"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/core/machine",
+        "description": "sp1-core-machine"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/hypercube",
+        "description": "sp1-hypercube"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/recursion",
+        "description": "sp1-recursion"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/entrypoint",
+        "description": "sp1-zkvm"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/lib",
+        "description": "sp1-lib"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/tree/main/slop/crates/",
+        "description": "slop (Succinct Library of Polynomials) - excluding whir, veil, spartan, pgspcs"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1/blob/main/crates/prover/src/verify.rs",
+        "description": "sp1-prover verifier"
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/succinctlabs/sp1/blob/main/crates/prover/src/verify.rs",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/core/executor",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/core/machine",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/hypercube",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/recursion",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/entrypoint",
+      "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/lib",
+      "https://github.com/succinctlabs/sp1/tree/main/slop/crates"
+    ],
+    "github_repos": [
+      "succinctlabs/sp1"
+    ]
+  },
   "immunefi:decentraland": {
     "hash": "8ce4541c34e4a543384dd769e607804816219135",
     "bounty": false,
@@ -20371,78 +20462,6 @@
       "https://polygonscan.com/address/0xf44063d872c88eebab2efc0318194e75a5218c1e"
     ],
     "github_repos": []
-  },
-  "immunefi:sp1": {
-    "hash": "7229869a96ce97ae8773bf91d50ed45e50dd82ff",
-    "bounty": true,
-    "source": true,
-    "name": "SP1",
-    "url": "https://immunefi.com/bug-bounty/sp1",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/core/executor",
-        "description": "sp1-core-executor"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/core/machine",
-        "description": "sp1-core-machine"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/hypercube",
-        "description": "sp1-hypercube"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/recursion",
-        "description": "sp1-recursion"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/entrypoint",
-        "description": "sp1-zkvm"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/lib",
-        "description": "sp1-lib"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/tree/main/slop/crates/",
-        "description": "slop (Succinct Library of Polynomials) - excluding whir, veil, spartan, pgspcs"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1/blob/main/crates/prover/src/verify.rs",
-        "description": "sp1-prover verifier"
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/succinctlabs/sp1/blob/main/crates/prover/src/verify.rs",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/core/executor",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/core/machine",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/hypercube",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/recursion",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/entrypoint",
-      "https://github.com/succinctlabs/sp1/tree/main/crates/zkvm/lib",
-      "https://github.com/succinctlabs/sp1/tree/main/slop/crates"
-    ],
-    "github_repos": [
-      "succinctlabs/sp1"
-    ]
   },
   "immunefi:lombard-finance": {
     "hash": "1855ee2d114e427b0181791588b088128df1a876",
@@ -58658,8 +58677,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-16T10:15:32.149933+00:00",
-    "total": 1939,
+    "updated_at": "2026-10-16T10:46:07.395645+00:00",
+    "total": 1940,
     "qualifying": 420,
     "external": 362,
     "blockchain": 358,
