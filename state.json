@@ -794,7 +794,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 100,
+    "resp_eff": 83,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1535,7 +1535,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1554,7 +1554,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 219.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5155,7 +5155,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7133,7 +7133,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 23158,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": 344.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7832,7 +7832,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 70,
+    "resp_eff": 73,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -20228,6 +20228,121 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:maple": {
+    "hash": "df906e128ee9c93aeb1f8ff407c2c1e24bd1a647",
+    "bounty": true,
+    "source": true,
+    "name": "Maple",
+    "url": "https://immunefi.com/bug-bounty/maple",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC, SYRUP",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x90b14505221a24039a2d11ad5862339db97cc160",
+        "description": "LoanManagerFactory (Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
+        "description": "LoanManagerImplementation (v100 - Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x20d0b31c2620c28d22489babfef9445c7d952921",
+        "description": "LoanManagerInitializer (v100 - Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x9BeAbb1B6F3ad1DdB87b65148BA5Eb6102334956",
+        "description": "MapleGlobalsImplementation (v301)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x804a6F5F667170F545Bf14e5DDB48C70B788390C",
+        "description": "MapleGlobalsProxy (v2)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x6fad515fc046dd17166453a79725f50b917b7cf6",
+        "description": "MapleLoanFactory (Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xEeaDb66693d63cFCF3E4D942D2812D4aE9443Fc1",
+        "description": "MapleLoanImplementation (v201 - Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x9385A0F681c3D4b39c2780cD69777Dd97a681485",
+        "description": "MapleLoanInitializer (v201 - Open-Term)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x12fB5dbBDB06ab973f047cC46D6bB33ba4d03b96",
+        "description": "PoolDeployer"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE463cD473EcC1d1A4ecF20b62624D84DD20a8339",
+        "description": "PoolManagerFactory"
+      }
+    ],
+    "sc_total": 43,
+    "sc_ids": [
+      "https://etherscan.io/address/0x01ab799f77f9a9f4dd0d2b6e7c83dcf3f48d5650",
+      "https://etherscan.io/address/0x0d2dbb28b1c7d225132722fadb2402e93a35c1be",
+      "https://etherscan.io/address/0x12fb5dbbdb06ab973f047cc46d6bb33ba4d03b96",
+      "https://etherscan.io/address/0x134ccaaa4f1e4552ec8aecb9e4a2360ddcf8df76",
+      "https://etherscan.io/address/0x1bc47a0dd0fdab96e9ef982fdf1f34dc6207cfe3",
+      "https://etherscan.io/address/0x20d0b31c2620c28d22489babfef9445c7d952921",
+      "https://etherscan.io/address/0x27327e08de810c687687f95bfce92088089b56db",
+      "https://etherscan.io/address/0x29199d071717c72baab50eef9add6736a18a1d1d",
+      "https://etherscan.io/address/0x2b9addb5244548f126e59fa5483040efc102f69e",
+      "https://etherscan.io/address/0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
+      "https://etherscan.io/address/0x485ba3f5235f150bf8e4afbd3a25c266cdadd9dd",
+      "https://etherscan.io/address/0x560b3a85af1cef113bb60105d0cf21e1d05f91d4",
+      "https://etherscan.io/address/0x637f8dc4c4d07d1cc30ae131fa94a060dee6be96",
+      "https://etherscan.io/address/0x653d4947620b73a433cabbc9dfb068c3e9c18984",
+      "https://etherscan.io/address/0x6aceb4caba81fa6a8065059f3a944fb066a10fac",
+      "https://etherscan.io/address/0x6fad515fc046dd17166453a79725f50b917b7cf6",
+      "https://etherscan.io/address/0x78c5f240a1150c3c2ebdbde559d04a0418dfcff3",
+      "https://etherscan.io/address/0x7a1e281ec29f3a861f211a28a23161762bd55b73",
+      "https://etherscan.io/address/0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
+      "https://etherscan.io/address/0x804a6f5f667170f545bf14e5ddb48c70b788390c",
+      "https://etherscan.io/address/0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
+      "https://etherscan.io/address/0x859c9980931fa0a63765fd8ef2e29918af5b038c",
+      "https://etherscan.io/address/0x876d54dbf61473ca169b89b95344a14e81f37afe",
+      "https://etherscan.io/address/0x899b57bbd8597aa2d1898476504f479c982c5c2c",
+      "https://etherscan.io/address/0x90b14505221a24039a2d11ad5862339db97cc160",
+      "https://etherscan.io/address/0x9385a0f681c3d4b39c2780cd69777dd97a681485",
+      "https://etherscan.io/address/0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
+      "https://etherscan.io/address/0x9e62fe15d0e99ce2b30ce0d256e9ab7b6893aff5",
+      "https://etherscan.io/address/0xb33bfa00e1d92fdac5aecb2976d6998c2ecca759",
+      "https://etherscan.io/address/0xb9e25b584dc4a7c9d47aef577f111fbe5705773b",
+      "https://etherscan.io/address/0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
+      "https://etherscan.io/address/0xbbee42621499005ff0ddef947bbdeffbbee77730",
+      "https://etherscan.io/address/0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
+      "https://etherscan.io/address/0xc3530358e54bc81efce4a2e12a898e996b091753",
+      "https://etherscan.io/address/0xca33105902e8d232ddfb9f71ff3d79c7e7f2c4e5",
+      "https://etherscan.io/address/0xcc4e684916aa7fa0e4faef2359b49a755f89c75b",
+      "https://etherscan.io/address/0xd389bfe4a129525b486b098411336a4fcecf3024",
+      "https://etherscan.io/address/0xda8f7941192590408dce701a60fb3892455669ce",
+      "https://etherscan.io/address/0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339",
+      "https://etherscan.io/address/0xeeadb66693d63cfcf3e4d942d2812d4ae9443fc1",
+      "https://etherscan.io/address/0xf95e5722226a1018d058cd757b75f1d10289e967",
+      "https://etherscan.io/address/0xfc8f7f97165d446b02cc95363d2ca31154bbe9f9",
+      "https://etherscan.io/address/0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8"
+    ],
     "github_repos": []
   },
   "immunefi:cosmos": {
@@ -33837,121 +33952,6 @@
       "serai-dex/serai"
     ]
   },
-  "immunefi:maple": {
-    "hash": "df906e128ee9c93aeb1f8ff407c2c1e24bd1a647",
-    "bounty": true,
-    "source": true,
-    "name": "Maple",
-    "url": "https://immunefi.com/bug-bounty/maple",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC, SYRUP",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x90b14505221a24039a2d11ad5862339db97cc160",
-        "description": "LoanManagerFactory (Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
-        "description": "LoanManagerImplementation (v100 - Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x20d0b31c2620c28d22489babfef9445c7d952921",
-        "description": "LoanManagerInitializer (v100 - Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x9BeAbb1B6F3ad1DdB87b65148BA5Eb6102334956",
-        "description": "MapleGlobalsImplementation (v301)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x804a6F5F667170F545Bf14e5DDB48C70B788390C",
-        "description": "MapleGlobalsProxy (v2)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x6fad515fc046dd17166453a79725f50b917b7cf6",
-        "description": "MapleLoanFactory (Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xEeaDb66693d63cFCF3E4D942D2812D4aE9443Fc1",
-        "description": "MapleLoanImplementation (v201 - Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x9385A0F681c3D4b39c2780cD69777Dd97a681485",
-        "description": "MapleLoanInitializer (v201 - Open-Term)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x12fB5dbBDB06ab973f047cC46D6bB33ba4d03b96",
-        "description": "PoolDeployer"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE463cD473EcC1d1A4ecF20b62624D84DD20a8339",
-        "description": "PoolManagerFactory"
-      }
-    ],
-    "sc_total": 43,
-    "sc_ids": [
-      "https://etherscan.io/address/0x01ab799f77f9a9f4dd0d2b6e7c83dcf3f48d5650",
-      "https://etherscan.io/address/0x0d2dbb28b1c7d225132722fadb2402e93a35c1be",
-      "https://etherscan.io/address/0x12fb5dbbdb06ab973f047cc46d6bb33ba4d03b96",
-      "https://etherscan.io/address/0x134ccaaa4f1e4552ec8aecb9e4a2360ddcf8df76",
-      "https://etherscan.io/address/0x1bc47a0dd0fdab96e9ef982fdf1f34dc6207cfe3",
-      "https://etherscan.io/address/0x20d0b31c2620c28d22489babfef9445c7d952921",
-      "https://etherscan.io/address/0x27327e08de810c687687f95bfce92088089b56db",
-      "https://etherscan.io/address/0x29199d071717c72baab50eef9add6736a18a1d1d",
-      "https://etherscan.io/address/0x2b9addb5244548f126e59fa5483040efc102f69e",
-      "https://etherscan.io/address/0x2efff88747eb5a3ff00d4d8d0f0800e306c0426b",
-      "https://etherscan.io/address/0x485ba3f5235f150bf8e4afbd3a25c266cdadd9dd",
-      "https://etherscan.io/address/0x560b3a85af1cef113bb60105d0cf21e1d05f91d4",
-      "https://etherscan.io/address/0x637f8dc4c4d07d1cc30ae131fa94a060dee6be96",
-      "https://etherscan.io/address/0x653d4947620b73a433cabbc9dfb068c3e9c18984",
-      "https://etherscan.io/address/0x6aceb4caba81fa6a8065059f3a944fb066a10fac",
-      "https://etherscan.io/address/0x6fad515fc046dd17166453a79725f50b917b7cf6",
-      "https://etherscan.io/address/0x78c5f240a1150c3c2ebdbde559d04a0418dfcff3",
-      "https://etherscan.io/address/0x7a1e281ec29f3a861f211a28a23161762bd55b73",
-      "https://etherscan.io/address/0x7ad5ffa5fdf509e30186f4609c2f6269f4b6158f",
-      "https://etherscan.io/address/0x804a6f5f667170f545bf14e5ddb48c70b788390c",
-      "https://etherscan.io/address/0x80ac24aa929eaf5013f6436cda2a7ba190f5cc0b",
-      "https://etherscan.io/address/0x859c9980931fa0a63765fd8ef2e29918af5b038c",
-      "https://etherscan.io/address/0x876d54dbf61473ca169b89b95344a14e81f37afe",
-      "https://etherscan.io/address/0x899b57bbd8597aa2d1898476504f479c982c5c2c",
-      "https://etherscan.io/address/0x90b14505221a24039a2d11ad5862339db97cc160",
-      "https://etherscan.io/address/0x9385a0f681c3d4b39c2780cd69777dd97a681485",
-      "https://etherscan.io/address/0x9beabb1b6f3ad1ddb87b65148ba5eb6102334956",
-      "https://etherscan.io/address/0x9e62fe15d0e99ce2b30ce0d256e9ab7b6893aff5",
-      "https://etherscan.io/address/0xb33bfa00e1d92fdac5aecb2976d6998c2ecca759",
-      "https://etherscan.io/address/0xb9e25b584dc4a7c9d47aef577f111fbe5705773b",
-      "https://etherscan.io/address/0xbad003da1e107f537ae2f687f5fe7a7affe9b241",
-      "https://etherscan.io/address/0xbbee42621499005ff0ddef947bbdeffbbee77730",
-      "https://etherscan.io/address/0xbe10adce8b6e3e02db384e7fada5395dd113d8b3",
-      "https://etherscan.io/address/0xc3530358e54bc81efce4a2e12a898e996b091753",
-      "https://etherscan.io/address/0xca33105902e8d232ddfb9f71ff3d79c7e7f2c4e5",
-      "https://etherscan.io/address/0xcc4e684916aa7fa0e4faef2359b49a755f89c75b",
-      "https://etherscan.io/address/0xd389bfe4a129525b486b098411336a4fcecf3024",
-      "https://etherscan.io/address/0xda8f7941192590408dce701a60fb3892455669ce",
-      "https://etherscan.io/address/0xe463cd473ecc1d1a4ecf20b62624d84dd20a8339",
-      "https://etherscan.io/address/0xeeadb66693d63cfcf3e4d942d2812d4ae9443fc1",
-      "https://etherscan.io/address/0xf95e5722226a1018d058cd757b75f1d10289e967",
-      "https://etherscan.io/address/0xfc8f7f97165d446b02cc95363d2ca31154bbe9f9",
-      "https://etherscan.io/address/0xfe02be1ad28edfd8e3dd6f29c402b244c2a258b8"
-    ],
-    "github_repos": []
-  },
   "immunefi:audit-comp-folks-finance-staking-contracts": {
     "hash": "5d1f5a6350f8d5db9fd2bf697f3656b62819bce1",
     "bounty": true,
@@ -43654,6 +43654,116 @@
     ],
     "github_repos": []
   },
+  "hackenproof:ember-vaults-smart-contracts": {
+    "hash": "5946b1901a3918604d4456c93fa9f0750cc65ed1",
+    "bounty": true,
+    "source": true,
+    "name": "Ember Vaults Smart Contracts",
+    "url": "https://hackenproof.com/programs/ember-vaults-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 5000,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ember-protocol/Ember-Vaults",
+        "description": "!! Only smart contracts residing in the sources folder are in scope. Functions which are marked with [test_only] are not in scope. The rest is there to make testing easier !!\r\n\r\nPlease contact our support team in Discord to get access to scope."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/ember-protocol/ember-vaults"
+    ],
+    "github_repos": [
+      "ember-protocol/ember-vaults"
+    ]
+  },
+  "hackenproof:flipster-web-and-mobile": {
+    "hash": "1ab1a610123df0bfa512e8c323d9f77c91269750",
+    "bounty": true,
+    "source": false,
+    "name": "Flipster Web & Mobile",
+    "url": "https://hackenproof.com/programs/flipster-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:parity-polkadot-release-infrastructure": {
+    "hash": "b6390763260e3e0a6014d3e2fed760c12b029b1f",
+    "bounty": true,
+    "source": false,
+    "name": "Parity Polkadot Release Infrastructure",
+    "url": "https://hackenproof.com/programs/parity-polkadot-release-infrastructure",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:pumb-tacsk": {
+    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
+    "bounty": true,
+    "source": false,
+    "name": "Pumb Tacsk",
+    "url": "https://hackenproof.com/programs/pumb-tacsk",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:router-smart-contract": {
+    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
+    "bounty": true,
+    "source": false,
+    "name": "Router Smart Contract",
+    "url": "https://hackenproof.com/programs/router-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:doubleup-web": {
     "hash": "8815572173b6fe9bbe8579f2350978dc298943ab",
     "bounty": true,
@@ -43722,36 +43832,6 @@
     ],
     "github_repos": [
       "ember-protocol/ember-vaults-evm"
-    ]
-  },
-  "hackenproof:ember-vaults-smart-contracts": {
-    "hash": "5946b1901a3918604d4456c93fa9f0750cc65ed1",
-    "bounty": true,
-    "source": true,
-    "name": "Ember Vaults Smart Contracts",
-    "url": "https://hackenproof.com/programs/ember-vaults-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 5000,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ember-protocol/Ember-Vaults",
-        "description": "!! Only smart contracts residing in the sources folder are in scope. Functions which are marked with [test_only] are not in scope. The rest is there to make testing easier !!\r\n\r\nPlease contact our support team in Discord to get access to scope."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/ember-protocol/ember-vaults"
-    ],
-    "github_repos": [
-      "ember-protocol/ember-vaults"
     ]
   },
   "hackenproof:emojicoin-dot-fun-frontend": {
@@ -44154,26 +44234,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:flipster-web-and-mobile": {
-    "hash": "1ab1a610123df0bfa512e8c323d9f77c91269750",
-    "bounty": true,
-    "source": false,
-    "name": "Flipster Web & Mobile",
-    "url": "https://hackenproof.com/programs/flipster-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47003,26 +47063,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:parity-polkadot-release-infrastructure": {
-    "hash": "b6390763260e3e0a6014d3e2fed760c12b029b1f",
-    "bounty": true,
-    "source": false,
-    "name": "Parity Polkadot Release Infrastructure",
-    "url": "https://hackenproof.com/programs/parity-polkadot-release-infrastructure",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:payhub-web": {
     "hash": "3874f9e20f44aa32c8017623d330a37c72fa4724",
     "bounty": true,
@@ -47250,26 +47290,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:pumb-tacsk": {
-    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
-    "bounty": true,
-    "source": false,
-    "name": "Pumb Tacsk",
-    "url": "https://hackenproof.com/programs/pumb-tacsk",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:pumb-web": {
     "hash": "44e52577d2724d23306b08dbe87775deedc1e518",
     "bounty": true,
@@ -47369,26 +47389,6 @@
     "github_repos": [
       "risc0/risc0"
     ]
-  },
-  "hackenproof:router-smart-contract": {
-    "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
-    "bounty": true,
-    "source": false,
-    "name": "Router Smart Contract",
-    "url": "https://hackenproof.com/programs/router-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 200000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:router-web": {
     "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
@@ -58564,7 +58564,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-17T16:33:52.232561+00:00",
+    "updated_at": "2026-10-17T18:58:34.370047+00:00",
     "total": 1939,
     "qualifying": 419,
     "external": 364,
