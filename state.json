@@ -3397,7 +3397,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 98,
+    "resp_eff": 99,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -16784,6 +16784,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:datacamp": {
+    "hash": "1b908318492a66ef7a81d5a6dd54437e62b84979",
+    "bounty": true,
+    "source": false,
+    "name": "DataCamp",
+    "url": "https://www.intigriti.com/programs/datacamp/datacamp/detail",
+    "platform": "intigriti",
+    "bounty_min": 25,
+    "bounty_max": 1500,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:demorgen": {
     "hash": "1fb858c8e00696ab8472ab3f1d1b40094bdd7139",
     "bounty": true,
@@ -20211,6 +20230,113 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:cosmos": {
+    "hash": "bfe05f2225637523b0027ac84bab39591bfa798a",
+    "bounty": true,
+    "source": true,
+    "name": "Cosmos",
+    "url": "https://immunefi.com/bug-bounty/cosmos",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cometbft/cometbft",
+        "description": "CometBFT - A distributed, Byzantine fault-tolerant, deterministic state machine replication engine. A fork and successor to Tendermint Core."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/cosmos-sdk",
+        "description": "Cosmos SDK - Framework for building performant, customizable blockchains with native interoperability."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/evm",
+        "description": "Cosmos EVM - An EVM compatible framework for blockchain development with the Cosmos SDK.\",         \"isPrimacyOfImpact"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/gaia",
+        "description": "Gaia - Cosmos Hub"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/iavl",
+        "description": "IAVL - Merkleized IAVL+ Tree implementation in Go."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/ibc-go",
+        "description": "IBC Go enables cross-blockchain communication. The protocol achieves interoperability by specifying data structures, abstractions, and semantics implementable by any distributed ledger that satisfies a small set of requirements."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/ics23",
+        "description": "ICS23 - A generic merkle proof format for IBC"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/ledger-cosmos",
+        "description": "Ledger Cosmos - The Cosmos app for Ledger Nano S+, X, Stax, Flex and Apex P."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/cosmos/solidity-ibc-eureka",
+        "description": "Solidity IBC Eureka - IBC v2 is a simplified version of the IBC protocol that is encoding agnostic. This enables a trust-minimized IBC connection between Ethereum and a Cosmos SDK chain."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/CosmWasm/cosmwasm",
+        "description": "CosmWasm - WebAssembly Smart Contracts for the Cosmos SDK"
+      }
+    ],
+    "sc_total": 18,
+    "sc_ids": [
+      "https://github.com/cometbft/cometbft",
+      "https://github.com/cosmos/cosmos-sdk",
+      "https://github.com/cosmos/evm",
+      "https://github.com/cosmos/gaia",
+      "https://github.com/cosmos/iavl",
+      "https://github.com/cosmos/ibc-go",
+      "https://github.com/cosmos/ics23",
+      "https://github.com/cosmos/ledger-cosmos",
+      "https://github.com/cosmos/solidity-ibc-eureka",
+      "https://github.com/cosmwasm/cosmwasm",
+      "https://github.com/cosmwasm/cw-storage-plus",
+      "https://github.com/cosmwasm/cw-utils",
+      "https://github.com/cosmwasm/rust-optimizer",
+      "https://github.com/cosmwasm/serde-json-wasm",
+      "https://github.com/cosmwasm/wasmd",
+      "https://github.com/cosmwasm/wasmvm",
+      "https://github.com/informalsystems/hermes"
+    ],
+    "github_repos": [
+      "cometbft/cometbft",
+      "cosmos/cosmos-sdk",
+      "cosmos/evm",
+      "cosmos/gaia",
+      "cosmos/iavl",
+      "cosmos/ibc-go",
+      "cosmos/ics23",
+      "cosmos/ledger-cosmos",
+      "cosmos/solidity-ibc-eureka",
+      "cosmwasm/cosmwasm",
+      "cosmwasm/cw-storage-plus",
+      "cosmwasm/cw-utils",
+      "cosmwasm/rust-optimizer",
+      "cosmwasm/serde-json-wasm",
+      "cosmwasm/wasmd",
+      "cosmwasm/wasmvm",
+      "informalsystems/hermes"
+    ]
+  },
   "immunefi:alchemix-1": {
     "hash": "faa4f4ed9a44ef9f50693df1c904c050f11f655c",
     "bounty": true,
@@ -22103,113 +22229,6 @@
     ],
     "github_repos": [
       "stacks-network/stacks-core"
-    ]
-  },
-  "immunefi:cosmos": {
-    "hash": "bfe05f2225637523b0027ac84bab39591bfa798a",
-    "bounty": true,
-    "source": true,
-    "name": "Cosmos",
-    "url": "https://immunefi.com/bug-bounty/cosmos",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cometbft/cometbft",
-        "description": "CometBFT - A distributed, Byzantine fault-tolerant, deterministic state machine replication engine. A fork and successor to Tendermint Core."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/cosmos-sdk",
-        "description": "Cosmos SDK - Framework for building performant, customizable blockchains with native interoperability."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/evm",
-        "description": "Cosmos EVM - An EVM compatible framework for blockchain development with the Cosmos SDK.\",         \"isPrimacyOfImpact"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/gaia",
-        "description": "Gaia - Cosmos Hub"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/iavl",
-        "description": "IAVL - Merkleized IAVL+ Tree implementation in Go."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/ibc-go",
-        "description": "IBC Go enables cross-blockchain communication. The protocol achieves interoperability by specifying data structures, abstractions, and semantics implementable by any distributed ledger that satisfies a small set of requirements."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/ics23",
-        "description": "ICS23 - A generic merkle proof format for IBC"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/ledger-cosmos",
-        "description": "Ledger Cosmos - The Cosmos app for Ledger Nano S+, X, Stax, Flex and Apex P."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/cosmos/solidity-ibc-eureka",
-        "description": "Solidity IBC Eureka - IBC v2 is a simplified version of the IBC protocol that is encoding agnostic. This enables a trust-minimized IBC connection between Ethereum and a Cosmos SDK chain."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/CosmWasm/cosmwasm",
-        "description": "CosmWasm - WebAssembly Smart Contracts for the Cosmos SDK"
-      }
-    ],
-    "sc_total": 18,
-    "sc_ids": [
-      "https://github.com/cometbft/cometbft",
-      "https://github.com/cosmos/cosmos-sdk",
-      "https://github.com/cosmos/evm",
-      "https://github.com/cosmos/gaia",
-      "https://github.com/cosmos/iavl",
-      "https://github.com/cosmos/ibc-go",
-      "https://github.com/cosmos/ics23",
-      "https://github.com/cosmos/ledger-cosmos",
-      "https://github.com/cosmos/solidity-ibc-eureka",
-      "https://github.com/cosmwasm/cosmwasm",
-      "https://github.com/cosmwasm/cw-storage-plus",
-      "https://github.com/cosmwasm/cw-utils",
-      "https://github.com/cosmwasm/rust-optimizer",
-      "https://github.com/cosmwasm/serde-json-wasm",
-      "https://github.com/cosmwasm/wasmd",
-      "https://github.com/cosmwasm/wasmvm",
-      "https://github.com/informalsystems/hermes"
-    ],
-    "github_repos": [
-      "cometbft/cometbft",
-      "cosmos/cosmos-sdk",
-      "cosmos/evm",
-      "cosmos/gaia",
-      "cosmos/iavl",
-      "cosmos/ibc-go",
-      "cosmos/ics23",
-      "cosmos/ledger-cosmos",
-      "cosmos/solidity-ibc-eureka",
-      "cosmwasm/cosmwasm",
-      "cosmwasm/cw-storage-plus",
-      "cosmwasm/cw-utils",
-      "cosmwasm/rust-optimizer",
-      "cosmwasm/serde-json-wasm",
-      "cosmwasm/wasmd",
-      "cosmwasm/wasmvm",
-      "informalsystems/hermes"
     ]
   },
   "immunefi:chainlink": {
@@ -58545,8 +58564,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-17T15:16:09.837268+00:00",
-    "total": 1938,
+    "updated_at": "2026-10-17T15:44:56.821354+00:00",
+    "total": 1939,
     "qualifying": 419,
     "external": 364,
     "blockchain": 358,
