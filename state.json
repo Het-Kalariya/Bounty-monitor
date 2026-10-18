@@ -2874,7 +2874,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 68,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8876,7 +8876,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 307,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": 133.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43093,6 +43093,76 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:dragon-king": {
+    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
+    "bounty": true,
+    "source": false,
+    "name": "Dragon King",
+    "url": "https://hackenproof.com/programs/dragon-king",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:flow-web": {
+    "hash": "b7cb05c569fdd66866cfd3942977eb95053f3861",
+    "bounty": true,
+    "source": false,
+    "name": "Flow Web",
+    "url": "https://hackenproof.com/programs/flow-web",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:kub-chain-and-ecosystem": {
+    "hash": "8f7844fda2c97df2ec459f17ba6aad21f4268c65",
+    "bounty": true,
+    "source": true,
+    "name": "KUB Chain & Ecosystem",
+    "url": "https://hackenproof.com/programs/kub-chain-and-ecosystem",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/kub-chain/bkc",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/kub-chain/bkc"
+    ],
+    "github_repos": [
+      "kub-chain/bkc"
+    ]
+  },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
     "bounty": true,
@@ -43490,64 +43560,6 @@
       "dodoex/dodo-route-contract"
     ]
   },
-  "hackenproof:ember-vaults-smart-contracts": {
-    "hash": "5946b1901a3918604d4456c93fa9f0750cc65ed1",
-    "bounty": true,
-    "source": true,
-    "name": "Ember Vaults Smart Contracts",
-    "url": "https://hackenproof.com/programs/ember-vaults-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 5000,
-    "bounty_max": 15000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ember-protocol/Ember-Vaults",
-        "description": "!! Only smart contracts residing in the sources folder are in scope. Functions which are marked with [test_only] are not in scope. The rest is there to make testing easier !!\r\n\r\nPlease contact our support team in Discord to get access to scope."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/ember-protocol/ember-vaults"
-    ],
-    "github_repos": [
-      "ember-protocol/ember-vaults"
-    ]
-  },
-  "hackenproof:gridex-protocol-hacker-house-2023": {
-    "hash": "6cbad56277d9812d1811adabd225f017f6be8d32",
-    "bounty": true,
-    "source": true,
-    "name": "Gridex Protocol: Hacker House 2023",
-    "url": "https://hackenproof.com/programs/gridex-protocol-hacker-house-2023",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/GridexProtocol",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/gridexprotocol"
-    ],
-    "github_repos": []
-  },
   "hackenproof:dodolimitorder-smart-contract": {
     "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
     "bounty": true,
@@ -43646,26 +43658,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dragon-king": {
-    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
-    "bounty": true,
-    "source": false,
-    "name": "Dragon King",
-    "url": "https://hackenproof.com/programs/dragon-king",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ember-evm-smart-contracts": {
     "hash": "bad357a0c2d08b8df5318fbf8449755223ad14db",
     "bounty": true,
@@ -43694,6 +43686,36 @@
     ],
     "github_repos": [
       "ember-protocol/ember-vaults-evm"
+    ]
+  },
+  "hackenproof:ember-vaults-smart-contracts": {
+    "hash": "5946b1901a3918604d4456c93fa9f0750cc65ed1",
+    "bounty": true,
+    "source": true,
+    "name": "Ember Vaults Smart Contracts",
+    "url": "https://hackenproof.com/programs/ember-vaults-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 5000,
+    "bounty_max": 15000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ember-protocol/Ember-Vaults",
+        "description": "!! Only smart contracts residing in the sources folder are in scope. Functions which are marked with [test_only] are not in scope. The rest is there to make testing easier !!\r\n\r\nPlease contact our support team in Discord to get access to scope."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/ember-protocol/ember-vaults"
+    ],
+    "github_repos": [
+      "ember-protocol/ember-vaults"
     ]
   },
   "hackenproof:emojicoin-dot-fun-frontend": {
@@ -44219,26 +44241,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:flow-web": {
-    "hash": "b7cb05c569fdd66866cfd3942977eb95053f3861",
-    "bounty": true,
-    "source": false,
-    "name": "Flow Web",
-    "url": "https://hackenproof.com/programs/flow-web",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:flowx-clmm-smart-contracts": {
     "hash": "bb9410578876a23e7457583061f865bbd45e191f",
     "bounty": true,
@@ -44476,6 +44478,34 @@
     "github_repos": [
       "allinbits/govgen-governance-dapp"
     ]
+  },
+  "hackenproof:gridex-protocol-hacker-house-2023": {
+    "hash": "6cbad56277d9812d1811adabd225f017f6be8d32",
+    "bounty": true,
+    "source": true,
+    "name": "Gridex Protocol: Hacker House 2023",
+    "url": "https://hackenproof.com/programs/gridex-protocol-hacker-house-2023",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/GridexProtocol",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/gridexprotocol"
+    ],
+    "github_repos": []
   },
   "hackenproof:grovex-web-and-mobile": {
     "hash": "c30f54ef7af27983a71718800e2b13b763365b66",
@@ -45481,36 +45511,6 @@
       "https://bscscan.com/address/0xec203e7676c45455bf8cb43d28f9556f014ab461"
     ],
     "github_repos": []
-  },
-  "hackenproof:kub-chain-and-ecosystem": {
-    "hash": "8f7844fda2c97df2ec459f17ba6aad21f4268c65",
-    "bounty": true,
-    "source": true,
-    "name": "KUB Chain & Ecosystem",
-    "url": "https://hackenproof.com/programs/kub-chain-and-ecosystem",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/kub-chain/bkc",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/kub-chain/bkc"
-    ],
-    "github_repos": [
-      "kub-chain/bkc"
-    ]
   },
   "hackenproof:kucoin": {
     "hash": "b84e20844903b7535171b39d53833c864951b346",
@@ -58382,7 +58382,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-18T21:23:35.041051+00:00",
+    "updated_at": "2026-10-18T21:53:59.078853+00:00",
     "total": 1929,
     "qualifying": 418,
     "external": 358,
