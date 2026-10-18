@@ -9561,7 +9561,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 22199,
-    "resp_eff": 72,
+    "resp_eff": 71,
     "bounty_days": 12161.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -43546,124 +43546,6 @@
       "dodoex/dodo-v3"
     ]
   },
-  "hackenproof:walrus-protocol": {
-    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
-    "bounty": false,
-    "source": true,
-    "name": "Walrus Protocol",
-    "url": "https://hackenproof.com/programs/walrus-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
-        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
-        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
-        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
-        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
-        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
-        "description": "Client SDK for blob upload, download, and on-chain interactions."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
-        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
-        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
-        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
-    ],
-    "github_repos": [
-      "mystenlabs/walrus"
-    ]
-  },
-  "hackenproof:weex-web-and-app": {
-    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
-    "bounty": true,
-    "source": false,
-    "name": "WEEX Web & App",
-    "url": "https://hackenproof.com/programs/weex-web-and-app",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:whitebit": {
-    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT",
-    "url": "https://hackenproof.com/programs/whitebit",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dodofeerouteproxy-smart-contract": {
     "hash": "f12d701eadb4bf7324e76146292d1a91853a1fcf",
     "bounty": true,
@@ -49778,6 +49660,124 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:walrus-protocol": {
+    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
+    "bounty": false,
+    "source": true,
+    "name": "Walrus Protocol",
+    "url": "https://hackenproof.com/programs/walrus-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
+        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
+        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
+        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
+        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
+        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
+        "description": "Client SDK for blob upload, download, and on-chain interactions."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
+        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
+        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
+        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
+    ],
+    "github_repos": [
+      "mystenlabs/walrus"
+    ]
+  },
+  "hackenproof:weex-web-and-app": {
+    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
+    "bounty": true,
+    "source": false,
+    "name": "WEEX Web & App",
+    "url": "https://hackenproof.com/programs/weex-web-and-app",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitebit": {
+    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT",
+    "url": "https://hackenproof.com/programs/whitebit",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -58452,7 +58452,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-18T06:13:30.254335+00:00",
+    "updated_at": "2026-10-18T06:45:55.632844+00:00",
     "total": 1932,
     "qualifying": 419,
     "external": 357,
