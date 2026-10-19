@@ -548,7 +548,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9164,7 +9164,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 5414,
-    "resp_eff": 63,
+    "resp_eff": 64,
     "bounty_days": 920.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -16811,6 +16811,25 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:datacamp": {
+    "hash": "1b908318492a66ef7a81d5a6dd54437e62b84979",
+    "bounty": true,
+    "source": false,
+    "name": "DataCamp",
+    "url": "https://www.intigriti.com/programs/datacamp/datacamp/detail",
+    "platform": "intigriti",
+    "bounty_min": 25,
+    "bounty_max": 1500,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "intigriti:demorgen": {
     "hash": "1fb858c8e00696ab8472ab3f1d1b40094bdd7139",
     "bounty": true,
@@ -17125,6 +17144,25 @@
     "platform": "intigriti",
     "bounty_min": 50,
     "bounty_max": 3500,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:fluvius": {
+    "hash": "1af8f921e5b0b3999bc763797076abbfd46e4d87",
+    "bounty": true,
+    "source": false,
+    "name": "Fluvius",
+    "url": "https://www.intigriti.com/programs/fluvius/fluvius/detail",
+    "platform": "intigriti",
+    "bounty_min": 100,
+    "bounty_max": 5500,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -18680,6 +18718,35 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "intigriti:upholdcom": {
+    "hash": "e9c82ca4c036e19de02c9e6bbeb484a8d4d24b16",
+    "bounty": true,
+    "source": true,
+    "name": "Uphold",
+    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
+    "platform": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 6000,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 96,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "wildcard",
+        "identifier": "github.com/uphold/*",
+        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "github.com/uphold/*"
+    ],
+    "github_repos": [
+      "uphold/*"
+    ]
   },
   "intigriti:vrtnv": {
     "hash": "aaae61181f7f9141f4eb6aa68340af405b3cd444",
@@ -43615,6 +43682,86 @@
     ],
     "github_repos": []
   },
+  "hackenproof:raiffeisen-web-and-mobile": {
+    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
+    "bounty": true,
+    "source": false,
+    "name": "Raiffeisen Web & Mobile",
+    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:risc-zero-blockchain-verifiers": {
+    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero Blockchain Verifiers",
+    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
+    ],
+    "github_repos": [
+      "risc0/risc0-ethereum"
+    ]
+  },
+  "hackenproof:risc-zero-zkvm": {
+    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero zkVM",
+    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0/tree/main/risc0"
+    ],
+    "github_repos": [
+      "risc0/risc0"
+    ]
+  },
   "hackenproof:doubleup-web": {
     "hash": "8815572173b6fe9bbe8579f2350978dc298943ab",
     "bounty": true,
@@ -47250,86 +47397,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:raiffeisen-web-and-mobile": {
-    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
-    "bounty": true,
-    "source": false,
-    "name": "Raiffeisen Web & Mobile",
-    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:risc-zero-blockchain-verifiers": {
-    "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero Blockchain Verifiers",
-    "url": "https://hackenproof.com/programs/risc-zero-blockchain-verifiers",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0-ethereum/tree/main/contracts/src"
-    ],
-    "github_repos": [
-      "risc0/risc0-ethereum"
-    ]
-  },
-  "hackenproof:risc-zero-zkvm": {
-    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero zkVM",
-    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0/tree/main/risc0"
-    ],
-    "github_repos": [
-      "risc0/risc0"
-    ]
   },
   "hackenproof:router-smart-contract": {
     "hash": "d8511d4785efe1145c085b46f42a37403b3a0b1a",
@@ -57867,22 +57934,6 @@
     "bounty_days": null,
     "sc_targets": []
   },
-  "chaos:uphold": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Uphold",
-    "url": "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
-    "platform": "chaos",
-    "origin": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 96,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
   "chaos:unikrn": {
     "hash": "",
     "bounty": true,
@@ -58445,10 +58496,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-19T09:28:58.189211+00:00",
-    "total": 1932,
-    "qualifying": 419,
-    "external": 359,
+    "updated_at": "2026-10-19T09:56:30.653576+00:00",
+    "total": 1934,
+    "qualifying": 420,
+    "external": 358,
     "blockchain": 358,
     "feed_ids": {
       "immunefi": [],
