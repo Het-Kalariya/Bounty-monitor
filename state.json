@@ -529,7 +529,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 89,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7303,7 +7303,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 66,
     "bounty_days": 8178.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42302,12 +42302,84 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:tidex-exchange": {
-    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
+  "hackenproof:dione-protocol": {
+    "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
-    "source": false,
-    "name": "Tidex Exchange",
-    "url": "https://hackenproof.com/programs/tidex-exchange",
+    "source": true,
+    "name": "Dione Protocol",
+    "url": "https://hackenproof.com/programs/dione-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/odysseygo",
+        "description": "Node implementation for the Odyssey network."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/coreth",
+        "description": "Coreth (from core Ethereum) is the Virtual Machine (VM) that defines the Contract Chain (D-Chain). This chain implements the Ethereum Virtual Machine and supports Solidity smart contracts as well as most other Ethereum client functionality.\r\n\r\n"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/odysseygo-installer",
+        "description": "This node installer is a shell (bash) script that installs OdysseyGo (the node) on any Linux computer. This script sets up a full, running node.\r\n"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/odyssey-cli",
+        "description": "a command line tool that gives developers access to everything Odyssey. This release specializes in helping developers develop and test subnets."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/subnet-evm",
+        "description": "Subnet EVM is the Virtual Machine (VM) that defines the Subnet Contract Chains."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/odyssey-network-runner",
+        "description": "This is a tool to run and interact with a local Odyssey network."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/DioneProtocol/sfxdx__odysseyjs",
+        "description": "The OdysseyJS library allows you to issue commands to the Odyssey node APIs."
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/dioneprotocol/coreth",
+      "https://github.com/dioneprotocol/odyssey-cli",
+      "https://github.com/dioneprotocol/odyssey-network-runner",
+      "https://github.com/dioneprotocol/odysseygo",
+      "https://github.com/dioneprotocol/odysseygo-installer",
+      "https://github.com/dioneprotocol/sfxdx__odysseyjs",
+      "https://github.com/dioneprotocol/subnet-evm"
+    ],
+    "github_repos": [
+      "dioneprotocol/coreth",
+      "dioneprotocol/odyssey-cli",
+      "dioneprotocol/odyssey-network-runner",
+      "dioneprotocol/odysseygo",
+      "dioneprotocol/odysseygo-installer",
+      "dioneprotocol/sfxdx__odysseyjs",
+      "dioneprotocol/subnet-evm"
+    ]
+  },
+  "hackenproof:virtuswap-smart-contract": {
+    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
+    "bounty": true,
+    "source": true,
+    "name": "VirtuSwap Smart Contract",
+    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 10000,
@@ -42317,30 +42389,20 @@
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:virtuswap-dex-app-1": {
-    "hash": "c04d7d1d1fd6ef5f906023db85e6c61631bbc3dd",
-    "bounty": true,
-    "source": false,
-    "name": "VirtuSwap DEX APP",
-    "url": "https://hackenproof.com/programs/virtuswap-dex-app-1",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/virtuswap/v1-core/tree/main/contracts"
+    ],
+    "github_repos": [
+      "virtuswap/v1-core"
+    ]
   },
   "hackenproof:deepfi-games": {
     "hash": "690d1c2f6705c9dc7454b79893cfbb241b13437b",
@@ -42606,78 +42668,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:dione-protocol": {
-    "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
-    "bounty": true,
-    "source": true,
-    "name": "Dione Protocol",
-    "url": "https://hackenproof.com/programs/dione-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/odysseygo",
-        "description": "Node implementation for the Odyssey network."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/coreth",
-        "description": "Coreth (from core Ethereum) is the Virtual Machine (VM) that defines the Contract Chain (D-Chain). This chain implements the Ethereum Virtual Machine and supports Solidity smart contracts as well as most other Ethereum client functionality.\r\n\r\n"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/odysseygo-installer",
-        "description": "This node installer is a shell (bash) script that installs OdysseyGo (the node) on any Linux computer. This script sets up a full, running node.\r\n"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/odyssey-cli",
-        "description": "a command line tool that gives developers access to everything Odyssey. This release specializes in helping developers develop and test subnets."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/subnet-evm",
-        "description": "Subnet EVM is the Virtual Machine (VM) that defines the Subnet Contract Chains."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/odyssey-network-runner",
-        "description": "This is a tool to run and interact with a local Odyssey network."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/DioneProtocol/sfxdx__odysseyjs",
-        "description": "The OdysseyJS library allows you to issue commands to the Odyssey node APIs."
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://github.com/dioneprotocol/coreth",
-      "https://github.com/dioneprotocol/odyssey-cli",
-      "https://github.com/dioneprotocol/odyssey-network-runner",
-      "https://github.com/dioneprotocol/odysseygo",
-      "https://github.com/dioneprotocol/odysseygo-installer",
-      "https://github.com/dioneprotocol/sfxdx__odysseyjs",
-      "https://github.com/dioneprotocol/subnet-evm"
-    ],
-    "github_repos": [
-      "dioneprotocol/coreth",
-      "dioneprotocol/odyssey-cli",
-      "dioneprotocol/odyssey-network-runner",
-      "dioneprotocol/odysseygo",
-      "dioneprotocol/odysseygo-installer",
-      "dioneprotocol/sfxdx__odysseyjs",
-      "dioneprotocol/subnet-evm"
-    ]
   },
   "hackenproof:dodo-v3": {
     "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
@@ -48129,6 +48119,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:tidex-exchange": {
+    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
+    "bounty": true,
+    "source": false,
+    "name": "Tidex Exchange",
+    "url": "https://hackenproof.com/programs/tidex-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:tokenize-xchange-web-and-mobile": {
     "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
     "bounty": true,
@@ -48714,35 +48724,25 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:virtuswap-smart-contract": {
-    "hash": "e1466010314c66d77e9f9a97a7b7ed7f0b0232bb",
+  "hackenproof:virtuswap-dex-app-1": {
+    "hash": "c04d7d1d1fd6ef5f906023db85e6c61631bbc3dd",
     "bounty": true,
-    "source": true,
-    "name": "VirtuSwap Smart Contract",
-    "url": "https://hackenproof.com/programs/virtuswap-smart-contract",
+    "source": false,
+    "name": "VirtuSwap DEX APP",
+    "url": "https://hackenproof.com/programs/virtuswap-dex-app-1",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Virtuswap/v1-core/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/virtuswap/v1-core/tree/main/contracts"
-    ],
-    "github_repos": [
-      "virtuswap/v1-core"
-    ]
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:volo-smart-contracts": {
     "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
@@ -57640,7 +57640,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-19T22:29:54.089483+00:00",
+    "updated_at": "2026-10-19T23:00:08.320787+00:00",
     "total": 1924,
     "qualifying": 421,
     "external": 357,
