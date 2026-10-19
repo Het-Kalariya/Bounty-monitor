@@ -6758,6 +6758,33 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackerone:gocardless_bbp": {
+    "hash": "f803fc209e3dd5efdb10fa94790a957af5b2f156",
+    "bounty": true,
+    "source": true,
+    "name": "GoCardless Bug Bounty Program",
+    "url": "https://hackerone.com/gocardless_bbp",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "amount not in upstream feed",
+    "domains": 0,
+    "resp_eff": 85,
+    "bounty_days": 224.0,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/gocardless",
+        "description": "We require a practical demonstration of exploitability rather than just a code snippet that seems incorrect, because it may be countered by other code operations or integrations."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/gocardless"
+    ],
+    "github_repos": []
+  },
   "hackerone:equifax": {
     "hash": "6748670f14a52c66adadaf5e9b6e84b0550f77b6",
     "bounty": false,
@@ -7654,7 +7681,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 416,
-    "resp_eff": 16,
+    "resp_eff": 17,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -9799,7 +9826,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1681,
-    "resp_eff": 93,
+    "resp_eff": 92,
     "bounty_days": 621.0,
     "sc_targets": [
       {
@@ -20163,6 +20190,213 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:zksyncera": {
+    "hash": "e53e7c788a9995cbade332c03f52f64dc9c9b09d",
+    "bounty": true,
+    "source": true,
+    "name": "ZKsync Era",
+    "url": "https://immunefi.com/bug-bounty/zksyncera",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 300000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_application",
+        "description": "Storage Application"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xECE8e30bFc92c2A8e11e6cb2e17B70868572E3f6#code",
+        "description": "EmergencyUpgradeBoard.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE30Dca3047B37dc7d88849dE4A4Dc07937ad5Ab3",
+        "description": "ProtocolUpgradeHandler proxy TransparentUpgradeableProxy.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ecrecover",
+        "description": "EC Recover"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324",
+        "description": "DiamondProxy.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x303a465B659cBB0ab36eE643eA362c509EEb5213#code",
+        "description": "Bridgehub proxy TransparentUpgradeableProxy.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/main_vm",
+        "description": "Main vm"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-crypto/tree/main/crates/snark-wrapper",
+        "description": "SNARK wrapper"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/transient_storage_validity_by_grand_product",
+        "description": "Transient Storage"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 131,
+    "sc_ids": [
+      "https://etherscan.io/address/0x0a67f0fd2f7523057039f14969fe23a5f620f19a#code",
+      "https://etherscan.io/address/0x303a465b659cbb0ab36ee643ea362c509eeb5213#code",
+      "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324",
+      "https://etherscan.io/address/0x57891966931eb4bb6fb81430e6ce0a03aabde063",
+      "https://etherscan.io/address/0x600da620ab29f41abc6596a15981e14ce58c86b8",
+      "https://etherscan.io/address/0x66e4431266dc7e04e7d8b7fe9d2181253df7f410#code",
+      "https://etherscan.io/address/0xc2ee6b6af7d616f6e27ce7f4a451aedc2b0f5f5c#code",
+      "https://etherscan.io/address/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb#code",
+      "https://etherscan.io/address/0xe30dca3047b37dc7d88849de4a4dc07937ad5ab3",
+      "https://etherscan.io/address/0xece8e30bfc92c2a8e11e6cb2e17b70868572e3f6#code",
+      "https://explorer.zksync.io/address/0x01a6715d3560241e09e865a46122bf347a576c09#contract",
+      "https://explorer.zksync.io/address/0x085b8b6407f150d62adb1ef926f7f304600ec714#contract",
+      "https://explorer.zksync.io/address/0x11f943b2c77b743ab90f4a0ae7d5a4e7fca3e102#contract",
+      "https://explorer.zksync.io/address/0x5a7d6b2f92c77fad6ccabd7ee0624e64907eaf3e#contract",
+      "https://explorer.zksync.io/address/0x76705327e682f2d96943280d99464ab61219e34f#contract",
+      "https://explorer.zksync.io/address/0xb83ff6501214ddf40c91c9565d095400f3f45746#contract",
+      "https://explorer.zksync.io/address/0xc9e442574958f96c026def9a50c3236cab17428a#contract",
+      "https://explorer.zksync.io/address/0xe5d21a9179ca2e1f0f327d598d464ccf60d89c3d#contract",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/blobsl1davalidatorzksyncos.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/da-layers/avail/availl1davalidator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/eip7702checker.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/rollupl1davalidator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-router/l1assetrouter.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-router/l2assetrouter.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/gwassettracker.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/l1assettracker.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/l2assettracker.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/bridgedstandarderc20.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l1erc20bridge.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l1nullifier.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2sharedbridgelegacy.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2wrappedbasetoken.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2wrappedbasetokenstore.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l1nativetokenvault.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l2nativetokenvault.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l2nativetokenvaultzkos.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/upgradeablebeacondeployer.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/bridgehub/l1bridgehub.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/bridgehub/l2bridgehub.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-asset-handler/l1chainassethandler.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-asset-handler/l2chainassethandler.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-registration/chainregistrationsender.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/ctm-deployment/ctmdeploymenttracker.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/message-root/l1messageroot.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/message-root/l2messageroot.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/interopcenter.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/interophandler.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/l2interoprootstorage.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/l2messageverification.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/basetokenholder.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/era/l2basetokenera.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/l1messengerzkos.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/l2basetokenzkos.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/systemcontext.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/l2complexupgrader.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/l2genesisupgrade.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/systemcontractproxy.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/systemcontractproxyadmin.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/admin.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/committer.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/executor.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/getters.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/mailbox.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/migrator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/data-availability/rollupdamanager.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/data-availability/validiuml1davalidator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/erachaintypemanager.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/eramultisigvalidator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/multisigcommitter.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/permissionlessvalidator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/validatortimelock.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eradualverifier.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eraverifierfflonk.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eraverifierplonk.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosdualverifier.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosverifierfflonk.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosverifierplonk.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/zksyncoschaintypemanager.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/bootloader/bootloader.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/accountcodestorage.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/bootloaderutilities.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/compressor.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/contractdeployer.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/create2factory.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/defaultaccount.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/emptycontract.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/eventwriter.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmemulator.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmgasmanager.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmhashesstorage.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmpredeploysmanager.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/immutablesimulator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/knowncodesstorage.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/l1messenger.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/msgvaluesimulator.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/nonceholder.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/codeoracle.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecadd.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecmul.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecpairing.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecrecover.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/identity.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/keccak256.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/modexp.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/p256verify.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/sha256.yul",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/pubdatachunkpublisher.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/sloadcontract.sol",
+      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/systemcontext.sol",
+      "https://github.com/matter-labs/zksync-crypto/tree/main/crates/snark-wrapper",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/code_unpacker_sha256",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/demux_log_queue",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ecrecover",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/eip_4844",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/fsm_input_output",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/keccak256_round_function",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/linear_hasher",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/log_sorter",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/main_vm",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ram_permutation",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/recursion",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/scheduler",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/secp256r1_verify",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/sha256_round_function",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/sort_decommittment_requests",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_application",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_validity_by_grand_product",
+      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/transient_storage_validity_by_grand_product",
+      "https://immunefi.com",
+      "https://www.tally.xyz/gov/zksync/proposal/39818012355511486328740463691883430307761328158522613751057493126514636439545?govid=eip155:324:0x76705327e682f2d96943280d99464ab61219e34f"
+    ],
+    "github_repos": [
+      "matter-labs/era-contracts",
+      "matter-labs/zksync-crypto",
+      "matter-labs/zksync-protocol"
+    ]
+  },
   "immunefi:maple": {
     "hash": "df906e128ee9c93aeb1f8ff407c2c1e24bd1a647",
     "bounty": true,
@@ -20563,212 +20797,6 @@
       "instadapp/dsa-contracts",
       "instadapp/fluid-contracts-public",
       "instadapp/inst-governance"
-    ]
-  },
-  "immunefi:zksyncera": {
-    "hash": "7f877ffd03442fc7d9a1413bb7da68291a446a96",
-    "bounty": true,
-    "source": true,
-    "name": "ZKsync Era",
-    "url": "https://immunefi.com/bug-bounty/zksyncera",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 300000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_application",
-        "description": "Storage Application"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xECE8e30bFc92c2A8e11e6cb2e17B70868572E3f6#code",
-        "description": "EmergencyUpgradeBoard.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE30Dca3047B37dc7d88849dE4A4Dc07937ad5Ab3",
-        "description": "ProtocolUpgradeHandler proxy TransparentUpgradeableProxy.sol"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ecrecover",
-        "description": "EC Recover"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324",
-        "description": "DiamondProxy.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x303a465B659cBB0ab36eE643eA362c509EEb5213#code",
-        "description": "Bridgehub proxy TransparentUpgradeableProxy.sol"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/main_vm",
-        "description": "Main vm"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/matter-labs/zksync-crypto/tree/main/crates/snark-wrapper",
-        "description": "SNARK wrapper"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/transient_storage_validity_by_grand_product",
-        "description": "Transient Storage"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 130,
-    "sc_ids": [
-      "https://etherscan.io/address/0x0a67f0fd2f7523057039f14969fe23a5f620f19a#code",
-      "https://etherscan.io/address/0x303a465b659cbb0ab36ee643ea362c509eeb5213#code",
-      "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324",
-      "https://etherscan.io/address/0x57891966931eb4bb6fb81430e6ce0a03aabde063",
-      "https://etherscan.io/address/0x600da620ab29f41abc6596a15981e14ce58c86b8",
-      "https://etherscan.io/address/0x66e4431266dc7e04e7d8b7fe9d2181253df7f410#code",
-      "https://etherscan.io/address/0xc2ee6b6af7d616f6e27ce7f4a451aedc2b0f5f5c#code",
-      "https://etherscan.io/address/0xd7f9f54194c633f36ccd5f3da84ad4a1c38cb2cb#code",
-      "https://etherscan.io/address/0xe30dca3047b37dc7d88849de4a4dc07937ad5ab3",
-      "https://etherscan.io/address/0xece8e30bfc92c2a8e11e6cb2e17b70868572e3f6#code",
-      "https://explorer.zksync.io/address/0x01a6715d3560241e09e865a46122bf347a576c09#contract",
-      "https://explorer.zksync.io/address/0x085b8b6407f150d62adb1ef926f7f304600ec714#contract",
-      "https://explorer.zksync.io/address/0x11f943b2c77b743ab90f4a0ae7d5a4e7fca3e102#contract",
-      "https://explorer.zksync.io/address/0x5a7d6b2f92c77fad6ccabd7ee0624e64907eaf3e#contract",
-      "https://explorer.zksync.io/address/0x76705327e682f2d96943280d99464ab61219e34f#contract",
-      "https://explorer.zksync.io/address/0xb83ff6501214ddf40c91c9565d095400f3f45746#contract",
-      "https://explorer.zksync.io/address/0xc9e442574958f96c026def9a50c3236cab17428a#contract",
-      "https://explorer.zksync.io/address/0xe5d21a9179ca2e1f0f327d598d464ccf60d89c3d#contract",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/blobsl1davalidatorzksyncos.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/da-layers/avail/availl1davalidator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/eip7702checker.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/da-contracts/contracts/rollupl1davalidator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-router/l1assetrouter.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-router/l2assetrouter.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/gwassettracker.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/l1assettracker.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/asset-tracker/l2assettracker.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/bridgedstandarderc20.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l1erc20bridge.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l1nullifier.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2sharedbridgelegacy.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2wrappedbasetoken.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/l2wrappedbasetokenstore.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l1nativetokenvault.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l2nativetokenvault.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/ntv/l2nativetokenvaultzkos.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/bridge/upgradeablebeacondeployer.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/bridgehub/l1bridgehub.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/bridgehub/l2bridgehub.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-asset-handler/l1chainassethandler.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-asset-handler/l2chainassethandler.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/chain-registration/chainregistrationsender.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/ctm-deployment/ctmdeploymenttracker.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/message-root/l1messageroot.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/core/message-root/l2messageroot.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/interopcenter.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/interophandler.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/l2interoprootstorage.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/interop/l2messageverification.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/basetokenholder.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/era/l2basetokenera.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/l1messengerzkos.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/l2basetokenzkos.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-system/zksync-os/systemcontext.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/l2complexupgrader.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/l2genesisupgrade.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/systemcontractproxy.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/l2-upgrades/systemcontractproxyadmin.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/admin.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/committer.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/executor.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/getters.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/mailbox.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/chain-deps/facets/migrator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/data-availability/rollupdamanager.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/data-availability/validiuml1davalidator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/erachaintypemanager.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/eramultisigvalidator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/multisigcommitter.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/permissionlessvalidator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/validators/validatortimelock.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eradualverifier.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eraverifierfflonk.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/eraverifierplonk.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosdualverifier.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosverifierfflonk.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/verifiers/zksyncosverifierplonk.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/l1-contracts/contracts/state-transition/zksyncoschaintypemanager.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/bootloader/bootloader.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/accountcodestorage.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/bootloaderutilities.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/compressor.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/contractdeployer.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/create2factory.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/defaultaccount.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/emptycontract.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/eventwriter.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmemulator.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmgasmanager.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmhashesstorage.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/evmpredeploysmanager.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/immutablesimulator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/knowncodesstorage.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/l1messenger.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/msgvaluesimulator.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/nonceholder.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/codeoracle.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecadd.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecmul.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecpairing.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/ecrecover.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/identity.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/keccak256.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/modexp.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/p256verify.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/precompiles/sha256.yul",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/pubdatachunkpublisher.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/sloadcontract.sol",
-      "https://github.com/matter-labs/era-contracts/blob/7b75e11e631936f8bd93ec7c03e7e4f4ac63f6b4/system-contracts/contracts/systemcontext.sol",
-      "https://github.com/matter-labs/zksync-crypto/tree/main/crates/snark-wrapper",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/code_unpacker_sha256",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/demux_log_queue",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ecrecover",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/eip_4844",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/fsm_input_output",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/keccak256_round_function",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/linear_hasher",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/log_sorter",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/main_vm",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ram_permutation",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/recursion",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/scheduler",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/secp256r1_verify",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/sha256_round_function",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/sort_decommittment_requests",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_application",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_validity_by_grand_product",
-      "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/transient_storage_validity_by_grand_product",
-      "https://immunefi.com"
-    ],
-    "github_repos": [
-      "matter-labs/era-contracts",
-      "matter-labs/zksync-crypto",
-      "matter-labs/zksync-protocol"
     ]
   },
   "immunefi:sp1": {
@@ -43559,166 +43587,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noones-web-and-mobile": {
-    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
-    "bounty": true,
-    "source": false,
-    "name": "NoOnes Web & Mobile",
-    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
-  },
-  "hackenproof:nxt-permission-smart-contract": {
-    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
-    "bounty": true,
-    "source": true,
-    "name": "NXT Permission Smart Contract",
-    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
-    ],
-    "github_repos": [
-      "nxt-technologies-inc/nxtchain"
-    ]
-  },
-  "hackenproof:whitebit-blog": {
-    "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT Blog",
-    "url": "https://hackenproof.com/programs/whitebit-blog",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:whitechain-bridge": {
-    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Bridge",
-    "url": "https://hackenproof.com/programs/whitechain-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/bridge-contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/bridge-contracts"
-    ]
-  },
-  "hackenproof:whitechain-network": {
-    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Network",
-    "url": "https://hackenproof.com/programs/whitechain-network",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitebit-exchange/wbt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitebit-exchange/wbt"
-    ],
-    "github_repos": [
-      "whitebit-exchange/wbt"
-    ]
-  },
   "hackenproof:doubleup-smart-contracts": {
     "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
     "bounty": true,
@@ -46808,6 +46676,86 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:noones-web-and-mobile": {
+    "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
+    "bounty": true,
+    "source": false,
+    "name": "NoOnes Web & Mobile",
+    "url": "https://hackenproof.com/programs/noones-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:nxt-permission-smart-contract": {
+    "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
+    "bounty": true,
+    "source": true,
+    "name": "NXT Permission Smart Contract",
+    "url": "https://hackenproof.com/programs/nxt-permission-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/NXT-Technologies-INC/NXTChain/tree/main/Permission%20Smart%20Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/nxt-technologies-inc/nxtchain/tree/main/permission%20smart%20contract"
+    ],
+    "github_repos": [
+      "nxt-technologies-inc/nxtchain"
+    ]
+  },
   "hackenproof:ofza-web": {
     "hash": "15e114681cf33e59655591ea2d5554424882b574",
     "bounty": true,
@@ -49801,6 +49749,86 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:whitebit-blog": {
+    "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT Blog",
+    "url": "https://hackenproof.com/programs/whitebit-blog",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitechain-bridge": {
+    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Bridge",
+    "url": "https://hackenproof.com/programs/whitechain-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitechain-labs/bridge-contracts"
+    ],
+    "github_repos": [
+      "whitechain-labs/bridge-contracts"
+    ]
+  },
+  "hackenproof:whitechain-network": {
+    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Network",
+    "url": "https://hackenproof.com/programs/whitechain-network",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitebit-exchange/wbt",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitebit-exchange/wbt"
+    ],
+    "github_repos": [
+      "whitebit-exchange/wbt"
+    ]
   },
   "hackenproof:whitemarket-web": {
     "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
@@ -58417,9 +58445,9 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-19T08:28:38.137972+00:00",
-    "total": 1931,
-    "qualifying": 418,
+    "updated_at": "2026-10-19T08:58:43.921500+00:00",
+    "total": 1932,
+    "qualifying": 419,
     "external": 359,
     "blockchain": 358,
     "feed_ids": {

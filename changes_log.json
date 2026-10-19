@@ -3898,5 +3898,78 @@
     ],
     "removed": [],
     "github_repos": []
+  },
+  {
+    "timestamp": "2026-10-19T08:58:43.957393+00:00",
+    "event": "new_program",
+    "platform": "hackerone",
+    "handle": "gocardless_bbp",
+    "name": "GoCardless Bug Bounty Program",
+    "url": "https://hackerone.com/gocardless_bbp",
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/gocardless",
+        "description": "We require a practical demonstration of exploitability rather than just a code snippet that seems incorrect, because it may be countered by other code operations or integrations."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-10-19T08:58:45.526747+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "zksyncera",
+    "name": "ZKsync Era",
+    "url": "https://immunefi.com/bug-bounty/zksyncera",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/storage_application",
+        "description": "Storage Application"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xECE8e30bFc92c2A8e11e6cb2e17B70868572E3f6#code",
+        "description": "EmergencyUpgradeBoard.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE30Dca3047B37dc7d88849dE4A4Dc07937ad5Ab3",
+        "description": "ProtocolUpgradeHandler proxy TransparentUpgradeableProxy.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/ecrecover",
+        "description": "EC Recover"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x32400084c286cf3e17e7b677ea9583e60a000324",
+        "description": "DiamondProxy.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x303a465B659cBB0ab36eE643eA362c509EEb5213#code",
+        "description": "Bridgehub proxy TransparentUpgradeableProxy.sol"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-protocol/tree/main/crates/zkevm_circuits/src/main_vm",
+        "description": "Main vm"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/matter-labs/zksync-crypto/tree/main/crates/snark-wrapper",
+        "description": "SNARK wrapper"
+      }
+    ],
+    "added": [
+      "https://www.tally.xyz/gov/zksync/proposal/39818012355511486328740463691883430307761328158522613751057493126514636439545?govid=eip155:324:0x76705327e682f2d96943280d99464ab61219e34f"
+    ],
+    "removed": [],
+    "github_repos": []
   }
 ]
