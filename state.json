@@ -529,7 +529,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 89,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1193,7 +1193,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 53,
+    "resp_eff": 56,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1763,7 +1763,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 44,
+    "resp_eff": 45,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -4872,7 +4872,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 50,
+    "resp_eff": 57,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -20326,6 +20326,95 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:ostium": {
+    "hash": "b52fc1a9c31a8a99e94624bef1e92879c0df6116",
+    "bounty": true,
+    "source": true,
+    "name": "Ostium",
+    "url": "https://immunefi.com/bug-bounty/ostium",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 200000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.ostium.com/",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xeB85dC6095c74D36500C9cdcaCc15EcDC223Bbf7",
+        "description": "TimeLockOwner - Timelock governance for ownership actions"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xE607aC9FF58697c5978AfA1Fc1C5C437a6D1858c",
+        "description": "OpenPnlFeed - Aggregated open PnL feed"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xd456939e54F68Ef9B0BE62aBB2EC4A37397Cb814",
+        "description": "Verifier - Price data signature verification"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+        "description": "TradingStorage - Central storage for trades and orders"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xB71ec9eBD8145daCaCF6724363143cb5667A3d36",
+        "description": "PrivatePriceUpKeep - Permissioned price update keeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xb4f1123BE58f5d69E1cf565ED8756C7fcf31c8D3",
+        "description": "LockedDepositNft - NFT representing locked vault deposits"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x959Da1452238F71F17f7DA5dbA2e9c04FEf57324",
+        "description": "TradesUpKeep - Automated trade execution keeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x799a139aE56e11F0476aCE2f6118CfcAed9608d2",
+        "description": "Registry - Central contract registry and role management"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x7720fC8c8680bF4a1Af99d44c6c265a74e9742a9",
+        "description": "TradingCallbacks - Order execution and trade settlement"
+      }
+    ],
+    "sc_total": 17,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x083f97babf33d4abc03151b5dec98170761f4025",
+      "https://arbiscan.io/address/0x20d419a8e12c45f88fda7c5760bb6923cee27f98",
+      "https://arbiscan.io/address/0x260e349f643f12797fdc6f8c9d3df211d5577823",
+      "https://arbiscan.io/address/0x3890243a8fc091c626ed26c087a028b46bc9d66c",
+      "https://arbiscan.io/address/0x52453fbc4a33f7a2a0a01d67b952625816f161b4",
+      "https://arbiscan.io/address/0x52b2a78e12b09b66c6c8ce291d653d40bab77f0c",
+      "https://arbiscan.io/address/0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411",
+      "https://arbiscan.io/address/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9",
+      "https://arbiscan.io/address/0x799a139ae56e11f0476ace2f6118cfcaed9608d2",
+      "https://arbiscan.io/address/0x959da1452238f71f17f7da5dba2e9c04fef57324",
+      "https://arbiscan.io/address/0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3",
+      "https://arbiscan.io/address/0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
+      "https://arbiscan.io/address/0xccd5891083a8acd2074690f65d3024e7d13d66e7",
+      "https://arbiscan.io/address/0xd456939e54f68ef9b0be62abb2ec4a37397cb814",
+      "https://arbiscan.io/address/0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c",
+      "https://arbiscan.io/address/0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7",
+      "https://www.ostium.com"
+    ],
+    "github_repos": []
+  },
   "immunefi:sbtc": {
     "hash": "10874ce1feb4daf7056f5f5138221659d4d8094f",
     "bounty": true,
@@ -32872,95 +32961,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:ostium": {
-    "hash": "f3554734821b17612bc9fb23d81aa539d08d8cf6",
-    "bounty": true,
-    "source": true,
-    "name": "Ostium",
-    "url": "https://immunefi.com/bug-bounty/ostium",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://www.ostium.com/",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xeB85dC6095c74D36500C9cdcaCc15EcDC223Bbf7",
-        "description": "TimeLockOwner - Timelock governance for ownership actions"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xE607aC9FF58697c5978AfA1Fc1C5C437a6D1858c",
-        "description": "OpenPnlFeed - Aggregated open PnL feed"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xd456939e54F68Ef9B0BE62aBB2EC4A37397Cb814",
-        "description": "Verifier - Price data signature verification"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xccd5891083a8acd2074690f65d3024e7d13d66e7",
-        "description": "TradingStorage - Central storage for trades and orders"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xB71ec9eBD8145daCaCF6724363143cb5667A3d36",
-        "description": "PrivatePriceUpKeep - Permissioned price update keeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xb4f1123BE58f5d69E1cf565ED8756C7fcf31c8D3",
-        "description": "LockedDepositNft - NFT representing locked vault deposits"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x959Da1452238F71F17f7DA5dbA2e9c04FEf57324",
-        "description": "TradesUpKeep - Automated trade execution keeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x799a139aE56e11F0476aCE2f6118CfcAed9608d2",
-        "description": "Registry - Central contract registry and role management"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x7720fC8c8680bF4a1Af99d44c6c265a74e9742a9",
-        "description": "TradingCallbacks - Order execution and trade settlement"
-      }
-    ],
-    "sc_total": 17,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x083f97babf33d4abc03151b5dec98170761f4025",
-      "https://arbiscan.io/address/0x20d419a8e12c45f88fda7c5760bb6923cee27f98",
-      "https://arbiscan.io/address/0x260e349f643f12797fdc6f8c9d3df211d5577823",
-      "https://arbiscan.io/address/0x3890243a8fc091c626ed26c087a028b46bc9d66c",
-      "https://arbiscan.io/address/0x52453fbc4a33f7a2a0a01d67b952625816f161b4",
-      "https://arbiscan.io/address/0x52b2a78e12b09b66c6c8ce291d653d40bab77f0c",
-      "https://arbiscan.io/address/0x6d0ba1f9996dbd8885827e1b2e8f6593e7702411",
-      "https://arbiscan.io/address/0x7720fc8c8680bf4a1af99d44c6c265a74e9742a9",
-      "https://arbiscan.io/address/0x799a139ae56e11f0476ace2f6118cfcaed9608d2",
-      "https://arbiscan.io/address/0x959da1452238f71f17f7da5dba2e9c04fef57324",
-      "https://arbiscan.io/address/0xb4f1123be58f5d69e1cf565ed8756c7fcf31c8d3",
-      "https://arbiscan.io/address/0xb71ec9ebd8145dacacf6724363143cb5667a3d36",
-      "https://arbiscan.io/address/0xccd5891083a8acd2074690f65d3024e7d13d66e7",
-      "https://arbiscan.io/address/0xd456939e54f68ef9b0be62abb2ec4a37397cb814",
-      "https://arbiscan.io/address/0xe607ac9ff58697c5978afa1fc1c5c437a6d1858c",
-      "https://arbiscan.io/address/0xeb85dc6095c74d36500c9cdcacc15ecdc223bbf7",
-      "https://www.ostium.com"
-    ],
-    "github_repos": []
-  },
   "immunefi:ankr": {
     "hash": "740358d7f6e4780a0e7501547106c27ce72e2c6e",
     "bounty": true,
@@ -42766,6 +42766,169 @@
       "dioneprotocol/subnet-evm"
     ]
   },
+  "hackenproof:goby-wallet": {
+    "hash": "587be866d0c5a619c3edbde1797e33a2d8b0ef7c",
+    "bounty": true,
+    "source": false,
+    "name": "Goby Wallet",
+    "url": "https://hackenproof.com/programs/goby-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:hack-to-the-future-2024-icp-dot-hub-ae-hackathon": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Hack to the Future 2024 | ICP.Hub AE Hackathon",
+    "url": "https://hackenproof.com/programs/hack-to-the-future-2024-icp-dot-hub-ae-hackathon",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:polkadot-sdk-runtime-by-parity": {
+    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
+    "bounty": true,
+    "source": true,
+    "name": "Polkadot SDK, Runtime by Parity",
+    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk",
+        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/",
+        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk",
+      "https://github.com/polkadot-fellows/runtimes"
+    ],
+    "github_repos": [
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:pumb-tacsk": {
+    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
+    "bounty": true,
+    "source": false,
+    "name": "Pumb Tacsk",
+    "url": "https://hackenproof.com/programs/pumb-tacsk",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:starknet-web-and-sc": {
+    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
+    "bounty": true,
+    "source": true,
+    "name": "Starknet Web & SC",
+    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
+    "platform": "hackenproof",
+    "bounty_min": 1250,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
+        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
+      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
+    ],
+    "github_repos": [
+      "starknet-io/starkgate-contracts"
+    ]
+  },
+  "hackenproof:trustee-plus-web-and-mobile": {
+    "hash": "03dd95ac2868a118a6caa62ddc2260b4bb5e9f46",
+    "bounty": true,
+    "source": false,
+    "name": "Trustee Plus Web & Mobile",
+    "url": "https://hackenproof.com/programs/trustee-plus-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dodo-v3": {
     "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
     "bounty": true,
@@ -43735,26 +43898,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:goby-wallet": {
-    "hash": "587be866d0c5a619c3edbde1797e33a2d8b0ef7c",
-    "bounty": true,
-    "source": false,
-    "name": "Goby Wallet",
-    "url": "https://hackenproof.com/programs/goby-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:govgen-governance-dapp": {
     "hash": "73587ada601616865b9a65c536d8dcb0fe0ca305",
     "bounty": true,
@@ -43828,26 +43971,6 @@
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:hack-to-the-future-2024-icp-dot-hub-ae-hackathon": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Hack to the Future 2024 | ICP.Hub AE Hackathon",
-    "url": "https://hackenproof.com/programs/hack-to-the-future-2024-icp-dot-hub-ae-hackathon",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -46403,43 +46526,6 @@
       "polkadot-fellows/runtimes"
     ]
   },
-  "hackenproof:polkadot-sdk-runtime-by-parity": {
-    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
-    "bounty": true,
-    "source": true,
-    "name": "Polkadot SDK, Runtime by Parity",
-    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk",
-        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/",
-        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk",
-      "https://github.com/polkadot-fellows/runtimes"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
-  },
   "hackenproof:polkalokr": {
     "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
     "bounty": true,
@@ -46489,26 +46575,6 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:pumb-tacsk": {
-    "hash": "bf6918adb708517591c087ee6ab00fb7f03965a1",
-    "bounty": true,
-    "source": false,
-    "name": "Pumb Tacsk",
-    "url": "https://hackenproof.com/programs/pumb-tacsk",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47315,52 +47381,6 @@
     ],
     "github_repos": [
       "starkware-libs/starknet-staking"
-    ]
-  },
-  "hackenproof:starknet-web-and-sc": {
-    "hash": "0b45bfc1d33fc0054792aa4139e663829bac4ebb",
-    "bounty": true,
-    "source": true,
-    "name": "Starknet Web & SC",
-    "url": "https://hackenproof.com/programs/starknet-web-and-sc",
-    "platform": "hackenproof",
-    "bounty_min": 1250,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity",
-        "description": "**Smart Contract**\r\nStarkGate Solidity Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-        "description": "**Smart Contract**\r\nStarkGate Cairo Contracts"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/cairo",
-      "https://github.com/starknet-io/starkgate-contracts/tree/cairo-1/src/solidity"
-    ],
-    "github_repos": [
-      "starknet-io/starkgate-contracts"
     ]
   },
   "hackenproof:status": {
@@ -48484,26 +48504,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:trustee-plus-web-and-mobile": {
-    "hash": "03dd95ac2868a118a6caa62ddc2260b4bb5e9f46",
-    "bounty": true,
-    "source": false,
-    "name": "Trustee Plus Web & Mobile",
-    "url": "https://hackenproof.com/programs/trustee-plus-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57709,7 +57709,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-21T15:10:47.022306+00:00",
+    "updated_at": "2026-10-21T15:41:10.650255+00:00",
     "total": 1924,
     "qualifying": 421,
     "external": 357,
