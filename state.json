@@ -1231,7 +1231,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 57,
+    "resp_eff": 59,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3065,7 +3065,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 52,
+    "resp_eff": 50,
     "bounty_days": 180.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3084,7 +3084,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 80,
     "bounty_days": 512.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -18731,25 +18731,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "intigriti:truelayer": {
-    "hash": "53b7f5127d7e78f7cf35db9f95e33a105f2ca7a6",
-    "bounty": true,
-    "source": false,
-    "name": "TrueLayer",
-    "url": "https://www.intigriti.com/programs/truelayer/truelayer/detail",
-    "platform": "intigriti",
-    "bounty_min": 75,
-    "bounty_max": 6000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "intigriti:truelayervdp": {
     "hash": "0dd57851768466e2f9768a4a47597f6bad44438d",
     "bounty": false,
@@ -20383,6 +20364,92 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:paxos-labs": {
+    "hash": "bea3a6c0c0037b10bee6e6effeef5d3b2b388410",
+    "bounty": true,
+    "source": true,
+    "name": "Paxos Labs",
+    "url": "https://immunefi.com/bug-bounty/paxos-labs",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDG",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x49AAA987b1a7e9E4AE091dcD8332c39F322D7d28#code",
+        "description": "TransitStation contract. Receives orders and also allows execution of orders."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x91FE06C6E9F97E7DE4580A280E03046155f8e1e3",
+        "description": "Transit BoringVault contract. Custodies funds from user orders and allows it to be routed to various venues based on secure permissions."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x666156ab52bb9984F5c3985726f048Dd4A73887a#code",
+        "description": "Transit Manager contract. Part of BoringVault architecture that allows merkle root based permissions to move funds."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x3B4decc43d2173280198B46532Ef570062FCc8f5#code",
+        "description": "Transit RolesAuthority contract. Solmate library for auth logic."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xF34942E8612ccE476307B30a6246B43ce42B5D20#code",
+        "description": "Transit Decoder contract. Used in conjunction with the Manager contract for secure permissions."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x6c6494Fd9962eB98B94ffA48F6679058F820700e#code",
+        "description": "PAXGy Token BoringVault. Custodies funds and deploys them into strategies."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x353741aBa79974a90F88594f6CBd1a9c54651015#code",
+        "description": "PAXGy Manager Contract."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x397e38359f169748a02bc11f98D4f451FE88C1fd#code",
+        "description": "PAXGy Accountant contract. Stores the NAV of the vault shares."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x41AB5d8387e60E30AACCF11357C306f6d875A6f7#code",
+        "description": "PAXGy Teller. Receives deposits for minting PAXGy."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xC444dA4DF6AF6A9A3891a720c1712a4188d899DD",
+        "description": "PAXGy Roles Authority contract."
+      }
+    ],
+    "sc_total": 14,
+    "sc_ids": [
+      "https://etherscan.io/address/0x353741aba79974a90f88594f6cbd1a9c54651015#code",
+      "https://etherscan.io/address/0x397e38359f169748a02bc11f98d4f451fe88c1fd#code",
+      "https://etherscan.io/address/0x3b4decc43d2173280198b46532ef570062fcc8f5#code",
+      "https://etherscan.io/address/0x41ab5d8387e60e30aaccf11357c306f6d875a6f7#code",
+      "https://etherscan.io/address/0x49aaa987b1a7e9e4ae091dcd8332c39f322d7d28#code",
+      "https://etherscan.io/address/0x666156ab52bb9984f5c3985726f048dd4a73887a#code",
+      "https://etherscan.io/address/0x69e0bf658be5600864a946b4e5b911736d248fb4",
+      "https://etherscan.io/address/0x6c6494fd9962eb98b94ffa48f6679058f820700e#code",
+      "https://etherscan.io/address/0x6e0a209672f6e357b2b5435ab6aea2acbb4b8c6d#code",
+      "https://etherscan.io/address/0x91fe06c6e9f97e7de4580a280e03046155f8e1e3",
+      "https://etherscan.io/address/0xc444da4df6af6a9a3891a720c1712a4188d899dd",
+      "https://etherscan.io/address/0xf34942e8612cce476307b30a6246b43ce42b5d20#code",
+      "https://etherscan.io/address/0xf41e79d6e646f334c2fc4ea5ae609707ae82264d#code",
+      "https://etherscan.io/address/0xf6de922d08cf9ee4e7ce25ca1f3936ec1aa1f62c#code"
+    ],
+    "github_repos": []
+  },
   "immunefi:rootstocklabs": {
     "hash": "e4145e187cbae2396d7117a3c51d6a381b396c5b",
     "bounty": true,
@@ -20477,92 +20544,6 @@
       "rsksmart/rsk-powhsm",
       "rsksmart/rskj"
     ]
-  },
-  "immunefi:paxos-labs": {
-    "hash": "bea3a6c0c0037b10bee6e6effeef5d3b2b388410",
-    "bounty": true,
-    "source": true,
-    "name": "Paxos Labs",
-    "url": "https://immunefi.com/bug-bounty/paxos-labs",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDG",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x49AAA987b1a7e9E4AE091dcD8332c39F322D7d28#code",
-        "description": "TransitStation contract. Receives orders and also allows execution of orders."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x91FE06C6E9F97E7DE4580A280E03046155f8e1e3",
-        "description": "Transit BoringVault contract. Custodies funds from user orders and allows it to be routed to various venues based on secure permissions."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x666156ab52bb9984F5c3985726f048Dd4A73887a#code",
-        "description": "Transit Manager contract. Part of BoringVault architecture that allows merkle root based permissions to move funds."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x3B4decc43d2173280198B46532Ef570062FCc8f5#code",
-        "description": "Transit RolesAuthority contract. Solmate library for auth logic."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xF34942E8612ccE476307B30a6246B43ce42B5D20#code",
-        "description": "Transit Decoder contract. Used in conjunction with the Manager contract for secure permissions."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x6c6494Fd9962eB98B94ffA48F6679058F820700e#code",
-        "description": "PAXGy Token BoringVault. Custodies funds and deploys them into strategies."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x353741aBa79974a90F88594f6CBd1a9c54651015#code",
-        "description": "PAXGy Manager Contract."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x397e38359f169748a02bc11f98D4f451FE88C1fd#code",
-        "description": "PAXGy Accountant contract. Stores the NAV of the vault shares."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x41AB5d8387e60E30AACCF11357C306f6d875A6f7#code",
-        "description": "PAXGy Teller. Receives deposits for minting PAXGy."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xC444dA4DF6AF6A9A3891a720c1712a4188d899DD",
-        "description": "PAXGy Roles Authority contract."
-      }
-    ],
-    "sc_total": 14,
-    "sc_ids": [
-      "https://etherscan.io/address/0x353741aba79974a90f88594f6cbd1a9c54651015#code",
-      "https://etherscan.io/address/0x397e38359f169748a02bc11f98d4f451fe88c1fd#code",
-      "https://etherscan.io/address/0x3b4decc43d2173280198b46532ef570062fcc8f5#code",
-      "https://etherscan.io/address/0x41ab5d8387e60e30aaccf11357c306f6d875a6f7#code",
-      "https://etherscan.io/address/0x49aaa987b1a7e9e4ae091dcd8332c39f322d7d28#code",
-      "https://etherscan.io/address/0x666156ab52bb9984f5c3985726f048dd4a73887a#code",
-      "https://etherscan.io/address/0x69e0bf658be5600864a946b4e5b911736d248fb4",
-      "https://etherscan.io/address/0x6c6494fd9962eb98b94ffa48f6679058f820700e#code",
-      "https://etherscan.io/address/0x6e0a209672f6e357b2b5435ab6aea2acbb4b8c6d#code",
-      "https://etherscan.io/address/0x91fe06c6e9f97e7de4580a280e03046155f8e1e3",
-      "https://etherscan.io/address/0xc444da4df6af6a9a3891a720c1712a4188d899dd",
-      "https://etherscan.io/address/0xf34942e8612cce476307b30a6246b43ce42b5d20#code",
-      "https://etherscan.io/address/0xf41e79d6e646f334c2fc4ea5ae609707ae82264d#code",
-      "https://etherscan.io/address/0xf6de922d08cf9ee4e7ce25ca1f3936ec1aa1f62c#code"
-    ],
-    "github_repos": []
   },
   "immunefi:cosmos": {
     "hash": "bfe05f2225637523b0027ac84bab39591bfa798a",
@@ -42486,15 +42467,35 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dexalot-smart-contracts-archived": {
-    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
+  "hackenproof:linen-api-and-mobile": {
+    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
+    "bounty": true,
+    "source": false,
+    "name": "Linen API & Mobile",
+    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:local-traders-smart-contracts": {
+    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
     "bounty": true,
     "source": true,
-    "name": "Dexalot Smart Contracts (Archived)",
-    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
+    "name": "Local Traders Smart Contracts",
+    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
+    "bounty_min": 100,
+    "bounty_max": 20000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42504,33 +42505,116 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Dexalot/contracts",
+        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
+        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/localtradersteam/LCT_Contract",
         "description": ""
       }
     ],
-    "sc_total": 1,
+    "sc_total": 2,
     "sc_ids": [
-      "https://github.com/dexalot/contracts"
+      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
+      "https://github.com/localtradersteam/lct_contract"
     ],
     "github_repos": [
-      "dexalot/contracts"
+      "localtradersteam/lct_contract"
     ]
   },
-  "hackenproof:inheriti-r-app": {
-    "hash": "9d3184e177ca0f84879076dd106b6c41c91c9e10",
+  "hackenproof:logos": {
+    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
     "bounty": false,
-    "source": false,
-    "name": "Inheriti\u00ae App",
-    "url": "https://hackenproof.com/programs/inheriti-r-app",
+    "source": true,
+    "name": "Logos",
+    "url": "https://hackenproof.com/programs/logos",
     "platform": "hackenproof",
     "bounty_min": 100,
-    "bounty_max": 2500,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
+        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/examples.waku.org",
+        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku",
+        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
+        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/logos-messaging/examples.waku.org",
+      "https://github.com/logos-messaging/go-waku",
+      "https://github.com/logos-messaging/go-waku/tree/master/examples",
+      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+      "https://github.com/logos-messaging/logos-delivery-js"
+    ],
+    "github_repos": [
+      "logos-messaging/examples.waku.org",
+      "logos-messaging/go-waku",
+      "logos-messaging/logos-delivery-go",
+      "logos-messaging/logos-delivery-js"
+    ]
+  },
+  "hackenproof:meest-poshta-mobile": {
+    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
+    "bounty": false,
+    "source": false,
+    "name": "Meest Poshta Mobile",
+    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:navi-protocol-web": {
+    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
+    "bounty": true,
+    "source": false,
+    "name": "NAVI Protocol Web",
+    "url": "https://hackenproof.com/programs/navi-protocol-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -42556,45 +42640,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:ternoa-enclaves": {
-    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Enclaves",
-    "url": "https://hackenproof.com/programs/ternoa-enclaves",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-enclaves"
-    ]
-  },
-  "hackenproof:ton-diamonds-web": {
-    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
+  "hackenproof:tokenize-xchange-web-and-mobile": {
+    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
     "bounty": true,
     "source": false,
-    "name": "TON Diamonds Web",
-    "url": "https://hackenproof.com/programs/ton-diamonds-web",
+    "name": "Tokenize Xchange Web & Mobile",
+    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
     "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_min": 3000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42606,15 +42660,35 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:ttc-protocol": {
-    "hash": "9fd092b6f604c4b2358db64915bf374b4ba41616",
+  "hackenproof:ton": {
+    "hash": "c00b6e325264799aa406d075f3791fe47e630c7b",
     "bounty": true,
     "source": false,
-    "name": "TTC | Protocol",
-    "url": "https://hackenproof.com/programs/ttc-protocol",
+    "name": "TON",
+    "url": "https://hackenproof.com/programs/ton",
     "platform": "hackenproof",
-    "bounty_min": 600,
+    "bounty_min": 150,
     "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ton-diamonds-web": {
+    "hash": "8679fe0a4af77429f2d6b3e09f1e6a9974fbe839",
+    "bounty": true,
+    "source": false,
+    "name": "TON Diamonds Web",
+    "url": "https://hackenproof.com/programs/ton-diamonds-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42786,6 +42860,36 @@
     "sc_ids": [
       "constracts/mainnetrfq.sol",
       "https://github.com/dexalot/contracts/tree/cd/removeauction"
+    ],
+    "github_repos": [
+      "dexalot/contracts"
+    ]
+  },
+  "hackenproof:dexalot-smart-contracts-archived": {
+    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
+    "bounty": true,
+    "source": true,
+    "name": "Dexalot Smart Contracts (Archived)",
+    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Dexalot/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexalot/contracts"
     ],
     "github_repos": [
       "dexalot/contracts"
@@ -44482,6 +44586,26 @@
     ],
     "github_repos": []
   },
+  "hackenproof:inheriti-r-app": {
+    "hash": "9d3184e177ca0f84879076dd106b6c41c91c9e10",
+    "bounty": false,
+    "source": false,
+    "name": "Inheriti\u00ae App",
+    "url": "https://hackenproof.com/programs/inheriti-r-app",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:init-capital-smart-contracts": {
     "hash": "72b6c6f83c732b368c7ca7cf68737867a830c41f",
     "bounty": true,
@@ -45273,139 +45397,6 @@
       "linear-protocol/linear"
     ]
   },
-  "hackenproof:linen-api-and-mobile": {
-    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
-    "bounty": true,
-    "source": false,
-    "name": "Linen API & Mobile",
-    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:local-traders-smart-contracts": {
-    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
-    "bounty": true,
-    "source": true,
-    "name": "Local Traders Smart Contracts",
-    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
-        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/localtradersteam/LCT_Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
-      "https://github.com/localtradersteam/lct_contract"
-    ],
-    "github_repos": [
-      "localtradersteam/lct_contract"
-    ]
-  },
-  "hackenproof:logos": {
-    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
-    "bounty": false,
-    "source": true,
-    "name": "Logos",
-    "url": "https://hackenproof.com/programs/logos",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
-        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/examples.waku.org",
-        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku",
-        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
-        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/logos-messaging/examples.waku.org",
-      "https://github.com/logos-messaging/go-waku",
-      "https://github.com/logos-messaging/go-waku/tree/master/examples",
-      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-      "https://github.com/logos-messaging/logos-delivery-js"
-    ],
-    "github_repos": [
-      "logos-messaging/examples.waku.org",
-      "logos-messaging/go-waku",
-      "logos-messaging/logos-delivery-go",
-      "logos-messaging/logos-delivery-js"
-    ]
-  },
-  "hackenproof:meest-poshta-mobile": {
-    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
-    "bounty": false,
-    "source": false,
-    "name": "Meest Poshta Mobile",
-    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:metamask-validator-staking-smart-contracts": {
     "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
     "bounty": true,
@@ -45719,26 +45710,6 @@
     "github_repos": [
       "naviprotocol/navi-smart-contracts"
     ]
-  },
-  "hackenproof:navi-protocol-web": {
-    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
-    "bounty": true,
-    "source": false,
-    "name": "NAVI Protocol Web",
-    "url": "https://hackenproof.com/programs/navi-protocol-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:near-intents-bridges": {
     "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
@@ -48062,6 +48033,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:ternoa-enclaves": {
+    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Enclaves",
+    "url": "https://hackenproof.com/programs/ternoa-enclaves",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-enclaves"
+    ]
+  },
   "hackenproof:ternoa-smart-contracts": {
     "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
     "bounty": true,
@@ -48333,46 +48334,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:tokenize-xchange-web-and-mobile": {
-    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
-    "bounty": true,
-    "source": false,
-    "name": "Tokenize Xchange Web & Mobile",
-    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 3000,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ton": {
-    "hash": "c00b6e325264799aa406d075f3791fe47e630c7b",
-    "bounty": true,
-    "source": false,
-    "name": "TON",
-    "url": "https://hackenproof.com/programs/ton",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:toobit-web-and-mobile": {
     "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
     "bounty": true,
@@ -48600,6 +48561,26 @@
     "url": "https://hackenproof.com/programs/ttc-mobile",
     "platform": "hackenproof",
     "bounty_min": 250,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ttc-protocol": {
+    "hash": "9fd092b6f604c4b2358db64915bf374b4ba41616",
+    "bounty": true,
+    "source": false,
+    "name": "TTC | Protocol",
+    "url": "https://hackenproof.com/programs/ttc-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 600,
     "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -57766,8 +57747,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-21T09:17:55.032763+00:00",
-    "total": 1927,
+    "updated_at": "2026-10-21T09:48:14.044188+00:00",
+    "total": 1926,
     "qualifying": 421,
     "external": 357,
     "blockchain": 358,
