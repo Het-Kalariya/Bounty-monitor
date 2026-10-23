@@ -1326,7 +1326,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 76,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1763,7 +1763,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 43,
+    "resp_eff": 44,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -4807,7 +4807,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19741,
-    "resp_eff": 65,
+    "resp_eff": 64,
     "bounty_days": 633.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -18788,35 +18788,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "intigriti:upholdcom": {
-    "hash": "03ace0a5e28ade3cc55f28957c922a352e5e3319",
-    "bounty": true,
-    "source": true,
-    "name": "Uphold",
-    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 6000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 96,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [
-      {
-        "asset_type": "wildcard",
-        "identifier": "github.com/uphold/*",
-        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "github.com/uphold/*"
-    ],
-    "github_repos": [
-      "uphold/*"
-    ]
   },
   "intigriti:vrtnv": {
     "hash": "aaae61181f7f9141f4eb6aa68340af405b3cd444",
@@ -42360,6 +42331,140 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:flow-protocol": {
+    "hash": "66acdbe6e3f0d37c7cc4510f9a9e7378972c7132",
+    "bounty": true,
+    "source": true,
+    "name": "Flow Protocol",
+    "url": "https://hackenproof.com/programs/flow-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/flow-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/crypto",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/cadence",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/atree",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/ccf",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-core-contracts",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-evm-bridge",
+        "description": ""
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/onflow/atree",
+      "https://github.com/onflow/cadence",
+      "https://github.com/onflow/ccf",
+      "https://github.com/onflow/crypto",
+      "https://github.com/onflow/flow-core-contracts",
+      "https://github.com/onflow/flow-evm-bridge",
+      "https://github.com/onflow/flow-go"
+    ],
+    "github_repos": [
+      "onflow/atree",
+      "onflow/cadence",
+      "onflow/ccf",
+      "onflow/crypto",
+      "onflow/flow-core-contracts",
+      "onflow/flow-evm-bridge",
+      "onflow/flow-go"
+    ]
+  },
+  "hackenproof:idos-apps-and-sc-1": {
+    "hash": "3dec273037b80d5991ac8211eef8d986cceff2fa",
+    "bounty": true,
+    "source": true,
+    "name": "idOS Apps and SC",
+    "url": "https://hackenproof.com/programs/idos-apps-and-sc-1",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSToken.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSVesting.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSNodeStaking.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/idos-network/contracts/blob/master/src/idosnodestaking.sol",
+      "https://github.com/idos-network/contracts/blob/master/src/idostoken.sol",
+      "https://github.com/idos-network/contracts/blob/master/src/idosvesting.sol"
+    ],
+    "github_repos": [
+      "idos-network/contracts"
+    ]
+  },
+  "hackenproof:kucoin": {
+    "hash": "b84e20844903b7535171b39d53833c864951b346",
+    "bounty": true,
+    "source": false,
+    "name": "KuCoin",
+    "url": "https://hackenproof.com/programs/kucoin",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:current-smart-contracts": {
     "hash": "77e7ef4fa4376f5b2fe279fd3ba9f90af06ddd71",
     "bounty": true,
@@ -42405,43 +42510,6 @@
       "https://suiscan.xyz/mainnet/object/0xec244262968307f6b502f28bbf03aed94140e7467d1638b01a29ec5cc43fd769"
     ],
     "github_repos": []
-  },
-  "hackenproof:polkadot-sdk-runtime-by-parity": {
-    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
-    "bounty": true,
-    "source": true,
-    "name": "Polkadot SDK, Runtime by Parity",
-    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk",
-        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/",
-        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk",
-      "https://github.com/polkadot-fellows/runtimes"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
   },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
@@ -43469,78 +43537,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:flow-protocol": {
-    "hash": "66acdbe6e3f0d37c7cc4510f9a9e7378972c7132",
-    "bounty": true,
-    "source": true,
-    "name": "Flow Protocol",
-    "url": "https://hackenproof.com/programs/flow-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/flow-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/crypto",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/cadence",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/atree",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/ccf",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-core-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-evm-bridge",
-        "description": ""
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://github.com/onflow/atree",
-      "https://github.com/onflow/cadence",
-      "https://github.com/onflow/ccf",
-      "https://github.com/onflow/crypto",
-      "https://github.com/onflow/flow-core-contracts",
-      "https://github.com/onflow/flow-evm-bridge",
-      "https://github.com/onflow/flow-go"
-    ],
-    "github_repos": [
-      "onflow/atree",
-      "onflow/cadence",
-      "onflow/ccf",
-      "onflow/crypto",
-      "onflow/flow-core-contracts",
-      "onflow/flow-evm-bridge",
-      "onflow/flow-go"
-    ]
-  },
   "hackenproof:flow-wallet": {
     "hash": "e2ba10af6190cf0901ef04d996ee0c6762a7c028",
     "bounty": false,
@@ -44139,48 +44135,6 @@
     "github_repos": [
       "polytope-labs/hyperbridge",
       "polytope-labs/solidity-merkle-trees"
-    ]
-  },
-  "hackenproof:idos-apps-and-sc-1": {
-    "hash": "3dec273037b80d5991ac8211eef8d986cceff2fa",
-    "bounty": true,
-    "source": true,
-    "name": "idOS Apps and SC",
-    "url": "https://hackenproof.com/programs/idos-apps-and-sc-1",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSToken.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSVesting.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/idos-network/contracts/blob/master/src/IDOSNodeStaking.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/idos-network/contracts/blob/master/src/idosnodestaking.sol",
-      "https://github.com/idos-network/contracts/blob/master/src/idostoken.sol",
-      "https://github.com/idos-network/contracts/blob/master/src/idosvesting.sol"
-    ],
-    "github_repos": [
-      "idos-network/contracts"
     ]
   },
   "hackenproof:impermax-finance-smart-contracts": {
@@ -44881,26 +44835,6 @@
     "github_repos": [
       "kub-chain/bkc"
     ]
-  },
-  "hackenproof:kucoin": {
-    "hash": "b84e20844903b7535171b39d53833c864951b346",
-    "bounty": true,
-    "source": false,
-    "name": "KuCoin",
-    "url": "https://hackenproof.com/programs/kucoin",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:kuna-crypto-exchange": {
     "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
@@ -46433,6 +46367,43 @@
     ],
     "github_repos": [
       "paritytech/parity-bridges-common",
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:polkadot-sdk-runtime-by-parity": {
+    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
+    "bounty": true,
+    "source": true,
+    "name": "Polkadot SDK, Runtime by Parity",
+    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk",
+        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/",
+        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk",
+      "https://github.com/polkadot-fellows/runtimes"
+    ],
+    "github_repos": [
       "paritytech/polkadot-sdk",
       "polkadot-fellows/runtimes"
     ]
@@ -57326,6 +57297,22 @@
     "bounty_days": null,
     "sc_targets": []
   },
+  "chaos:uphold": {
+    "hash": "",
+    "bounty": true,
+    "source": false,
+    "name": "Uphold",
+    "url": "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+    "platform": "chaos",
+    "origin": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "domains": 96,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": []
+  },
   "chaos:united-airlines": {
     "hash": "",
     "bounty": true,
@@ -57776,10 +57763,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-23T13:24:04.390771+00:00",
+    "updated_at": "2026-10-23T13:59:06.443570+00:00",
     "total": 1921,
-    "qualifying": 425,
-    "external": 351,
+    "qualifying": 424,
+    "external": 352,
     "blockchain": 362,
     "feed_ids": {
       "immunefi": [],
