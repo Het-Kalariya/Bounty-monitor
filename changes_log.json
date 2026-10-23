@@ -4628,5 +4628,60 @@
       "github.com/wordpress"
     ],
     "github_repos": []
+  },
+  {
+    "timestamp": "2026-10-23T21:32:45.237653+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "paxos-labs",
+    "name": "Paxos Labs",
+    "url": "https://immunefi.com/bug-bounty/paxos-labs",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x49AAA987b1a7e9E4AE091dcD8332c39F322D7d28#code",
+        "description": "TransitStation contract. Receives orders and also allows execution of orders."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x91FE06C6E9F97E7DE4580A280E03046155f8e1e3",
+        "description": "Transit BoringVault contract. Custodies funds from user orders and allows it to be routed to various venues based on secure permissions."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x666156ab52bb9984F5c3985726f048Dd4A73887a#code",
+        "description": "Transit Manager contract. Part of BoringVault architecture that allows merkle root based permissions to move funds."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x3B4decc43d2173280198B46532Ef570062FCc8f5#code",
+        "description": "Transit RolesAuthority contract. Solmate library for auth logic."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xF34942E8612ccE476307B30a6246B43ce42B5D20#code",
+        "description": "Transit Decoder contract. Used in conjunction with the Manager contract for secure permissions."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x6c6494Fd9962eB98B94ffA48F6679058F820700e#code",
+        "description": "PAXGy Token BoringVault. Custodies funds and deploys them into strategies."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x353741aBa79974a90F88594f6CBd1a9c54651015#code",
+        "description": "PAXGy Manager Contract."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x397e38359f169748a02bc11f98D4f451FE88C1fd#code",
+        "description": "PAXGy Accountant contract. Stores the NAV of the vault shares."
+      }
+    ],
+    "added": [
+      "https://etherscan.io/address/0x91248711709bc6a09078baf79eb9f9be5035870a#code"
+    ],
+    "removed": [],
+    "github_repos": []
   }
 ]
