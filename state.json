@@ -4674,7 +4674,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 86,
     "bounty_days": 123.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8430,7 +8430,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 2192,
-    "resp_eff": 63,
+    "resp_eff": 64,
     "bounty_days": 1067.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9634,7 +9634,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 27665,
-    "resp_eff": 53,
+    "resp_eff": 52,
     "bounty_days": 291.0,
     "sc_targets": [
       {
@@ -42634,6 +42634,97 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:navi-protocol-web": {
+    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
+    "bounty": true,
+    "source": false,
+    "name": "NAVI Protocol Web",
+    "url": "https://hackenproof.com/programs/navi-protocol-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:near-foundation-web-low": {
+    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
+    "bounty": true,
+    "source": false,
+    "name": "NEAR Foundation Web (Low)",
+    "url": "https://hackenproof.com/programs/near-foundation-web-low",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:near-intents-bridges": {
+    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Bridges",
+    "url": "https://hackenproof.com/programs/near-intents-bridges",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/near/mpc",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/omni-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-light-client-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/near-one/btc-bridge",
+      "https://github.com/near-one/btc-light-client-contract",
+      "https://github.com/near-one/omni-bridge",
+      "https://github.com/near/mpc"
+    ],
+    "github_repos": [
+      "near-one/btc-bridge",
+      "near-one/btc-light-client-contract",
+      "near-one/omni-bridge",
+      "near/mpc"
+    ]
+  },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
@@ -45511,97 +45602,6 @@
     ],
     "github_repos": [
       "naviprotocol/navi-smart-contracts"
-    ]
-  },
-  "hackenproof:navi-protocol-web": {
-    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
-    "bounty": true,
-    "source": false,
-    "name": "NAVI Protocol Web",
-    "url": "https://hackenproof.com/programs/navi-protocol-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-foundation-web-low": {
-    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
-    "bounty": true,
-    "source": false,
-    "name": "NEAR Foundation Web (Low)",
-    "url": "https://hackenproof.com/programs/near-foundation-web-low",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-intents-bridges": {
-    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Bridges",
-    "url": "https://hackenproof.com/programs/near-intents-bridges",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/near/mpc",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/omni-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-light-client-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/near-one/btc-bridge",
-      "https://github.com/near-one/btc-light-client-contract",
-      "https://github.com/near-one/omni-bridge",
-      "https://github.com/near/mpc"
-    ],
-    "github_repos": [
-      "near-one/btc-bridge",
-      "near-one/btc-light-client-contract",
-      "near-one/omni-bridge",
-      "near/mpc"
     ]
   },
   "hackenproof:near-intents-sdk": {
@@ -57964,7 +57964,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-26T04:16:05.798674+00:00",
+    "updated_at": "2026-10-26T04:47:31.349672+00:00",
     "total": 1933,
     "qualifying": 423,
     "external": 364,
