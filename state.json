@@ -6240,7 +6240,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": 475.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6874,42 +6874,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackerone:solidus": {
-    "hash": "96db4b20ff7e269fdabca640b25ebcc6efb8b9c0",
-    "bounty": false,
-    "source": true,
-    "name": "Solidus",
-    "url": "https://hackerone.com/solidus",
-    "platform": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": 84,
-    "bounty_days": null,
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/solidusio/solidus",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/solidusio/solidus_auth_devise",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/solidusio/solidus",
-      "https://github.com/solidusio/solidus_auth_devise"
-    ],
-    "github_repos": [
-      "solidusio/solidus",
-      "solidusio/solidus_auth_devise"
-    ]
-  },
   "hackerone:worklytics": {
     "hash": "6926f07a8680c866c31427cf8d1b6065b13a3019",
     "bounty": false,
@@ -7064,7 +7028,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 24986,
-    "resp_eff": 58,
+    "resp_eff": 59,
     "bounty_days": 230.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7363,7 +7327,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 100,
+    "resp_eff": 99,
     "bounty_days": 3571.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8487,7 +8451,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 96,
+    "resp_eff": 95,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -9923,7 +9887,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 65,
+    "resp_eff": 63,
     "bounty_days": 190.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42306,25 +42270,35 @@
     ],
     "github_repos": []
   },
-  "hackenproof:evaa-web": {
-    "hash": "666f957205bc01deb68f85942519dad1dc429a95",
+  "hackenproof:dexe-protocol-smart-contracts": {
+    "hash": "226205cd147cd2a75538291739cab08e436ff172",
     "bounty": true,
-    "source": false,
-    "name": "EVAA Web",
-    "url": "https://hackenproof.com/programs/evaa-web",
+    "source": true,
+    "name": "DeXe Protocol Smart Contracts",
+    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 3000,
+    "bounty_min": 500,
+    "bounty_max": 500000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
+    ],
+    "github_repos": [
+      "dexe-network/dexe-protocol"
+    ]
   },
   "hackenproof:exmo": {
     "hash": "e57d0b9440916d6cf7fb581ef5770fba4f08e774",
@@ -42580,36 +42554,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:dexe-protocol-smart-contracts": {
-    "hash": "226205cd147cd2a75538291739cab08e436ff172",
-    "bounty": true,
-    "source": true,
-    "name": "DeXe Protocol Smart Contracts",
-    "url": "https://hackenproof.com/programs/dexe-protocol-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/dexe-network/DeXe-Protocol/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexe-network/dexe-protocol/tree/master/contracts"
-    ],
-    "github_repos": [
-      "dexe-network/dexe-protocol"
-    ]
   },
   "hackenproof:dexx-web-and-mobile": {
     "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
@@ -43068,6 +43012,26 @@
     "github_repos": [
       "evaafi/contracts"
     ]
+  },
+  "hackenproof:evaa-web": {
+    "hash": "666f957205bc01deb68f85942519dad1dc429a95",
+    "bounty": true,
+    "source": false,
+    "name": "EVAA Web",
+    "url": "https://hackenproof.com/programs/evaa-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:exzo-network-protocol": {
     "hash": "fe9de9bf9570e1e2b78b1c5fc6a6040d670e80e6",
@@ -57873,8 +57837,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-26T18:54:02.270075+00:00",
-    "total": 1933,
+    "updated_at": "2026-10-26T19:24:07.775678+00:00",
+    "total": 1932,
     "qualifying": 422,
     "external": 362,
     "blockchain": 359,
