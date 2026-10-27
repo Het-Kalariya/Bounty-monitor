@@ -358,7 +358,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7836,7 +7836,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 83,
     "bounty_days": 289.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8158,7 +8158,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 89,
     "bounty_days": 98.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8727,7 +8727,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 51611,
-    "resp_eff": 34,
+    "resp_eff": 18,
     "bounty_days": 1236.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20212,6 +20212,98 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:beanstalk": {
+    "hash": "e66e7244d6f165828d0a518c8999efbd673f7ca9",
+    "bounty": true,
+    "source": true,
+    "name": "Beanstalk",
+    "url": "https://immunefi.com/bug-bounty/beanstalk",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1100000,
+    "bounty_ccy": "BEAN",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5",
+        "description": "L1 Beanstalk"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xD1A0060ba708BC4BCD3DA6C37EFa8deDF015FB70",
+        "description": "L2 Beanstalk"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xBEA0005B8599265D41256905A9B3073D397812E4",
+        "description": "Bean ERC-20 token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x1BEA054dddBca12889e07B3E076f511Bf1d27543",
+        "description": "Unripe Bean ERC-20 token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x1BEA059c3Ea15F6C10be1c53d70C75fD1266D788",
+        "description": "Unripe LP ERC-20 token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xFEFEFECA5375630d6950F40e564A27f6074845B5",
+        "description": "Fertilizer ERC-1155 token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xFEFEFE2cfb089aEF0b0578573eF3CFAbC15f1490",
+        "description": "Fertilizer Implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xCCCCCC35b53c8a16404Ae414AFa31F30A5B35626",
+        "description": "LSD Chainlink Oracle"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x555555987d98079b9f43CDcDBD52DbB24FfEEef5",
+        "description": "Shipment Planner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x5A5A5ADe4C9713172a5228703213d4D39608E2cD",
+        "description": "Junctions"
+      }
+    ],
+    "sc_total": 20,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x1bea054dddbca12889e07b3e076f511bf1d27543",
+      "https://arbiscan.io/address/0x1bea059c3ea15f6c10be1c53d70c75fd1266d788",
+      "https://arbiscan.io/address/0x555555987d98079b9f43cdcdbd52dbb24ffeeef5",
+      "https://arbiscan.io/address/0x5a5a5ade4c9713172a5228703213d4d39608e2cd",
+      "https://arbiscan.io/address/0xb1be000644bd25996b0d9c2f7a6d6ba3954c91b0",
+      "https://arbiscan.io/address/0xba150002660bbca20675d1c1535cd76c98a95b13",
+      "https://arbiscan.io/address/0xba15000450bf6d48ec50bd6327a9403e401b72b4",
+      "https://arbiscan.io/address/0xba150052e11591d0648b17a0e608511874921cbc",
+      "https://arbiscan.io/address/0xba51055dad14d3920e1798d2e8a152d91cadb461",
+      "https://arbiscan.io/address/0xba5106bd62b342afacb93f1078fe60177a62d1a9",
+      "https://arbiscan.io/address/0xba510995783111be5301d93ccfd5de4e3b28e50b",
+      "https://arbiscan.io/address/0xba51aaaa8c2f911ae672e783707ceb2da6e97521",
+      "https://arbiscan.io/address/0xbea0005b8599265d41256905a9b3073d397812e4",
+      "https://arbiscan.io/address/0xcccccc35b53c8a16404ae414afa31f30a5b35626",
+      "https://arbiscan.io/address/0xd1a0060ba708bc4bcd3da6c37efa8dedf015fb70",
+      "https://arbiscan.io/address/0xd6fc4a63d7e93267c3007ea176081052369a4749",
+      "https://arbiscan.io/address/0xdeb0f082ed3b0efe9257aea9f2e6e974aa4120c3",
+      "https://arbiscan.io/address/0xfefefe2cfb089aef0b0578573ef3cfabc15f1490",
+      "https://arbiscan.io/address/0xfefefeca5375630d6950f40e564a27f6074845b5",
+      "https://etherscan.io/address/0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5"
+    ],
+    "github_repos": []
+  },
   "immunefi:magpiexyz": {
     "hash": "2f8b3cbd99c9a02e7785c459011edb494796f7d1",
     "bounty": false,
@@ -29166,98 +29258,6 @@
     "github_repos": [
       "rocket-pool/rocketpool"
     ]
-  },
-  "immunefi:beanstalk": {
-    "hash": "e66e7244d6f165828d0a518c8999efbd673f7ca9",
-    "bounty": true,
-    "source": true,
-    "name": "Beanstalk",
-    "url": "https://immunefi.com/bug-bounty/beanstalk",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1100000,
-    "bounty_ccy": "BEAN",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xC1E088fC1323b20BCBee9bd1B9fC9546db5624C5",
-        "description": "L1 Beanstalk"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xD1A0060ba708BC4BCD3DA6C37EFa8deDF015FB70",
-        "description": "L2 Beanstalk"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xBEA0005B8599265D41256905A9B3073D397812E4",
-        "description": "Bean ERC-20 token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x1BEA054dddBca12889e07B3E076f511Bf1d27543",
-        "description": "Unripe Bean ERC-20 token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x1BEA059c3Ea15F6C10be1c53d70C75fD1266D788",
-        "description": "Unripe LP ERC-20 token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xFEFEFECA5375630d6950F40e564A27f6074845B5",
-        "description": "Fertilizer ERC-1155 token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xFEFEFE2cfb089aEF0b0578573eF3CFAbC15f1490",
-        "description": "Fertilizer Implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xCCCCCC35b53c8a16404Ae414AFa31F30A5B35626",
-        "description": "LSD Chainlink Oracle"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x555555987d98079b9f43CDcDBD52DbB24FfEEef5",
-        "description": "Shipment Planner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x5A5A5ADe4C9713172a5228703213d4D39608E2cD",
-        "description": "Junctions"
-      }
-    ],
-    "sc_total": 20,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x1bea054dddbca12889e07b3e076f511bf1d27543",
-      "https://arbiscan.io/address/0x1bea059c3ea15f6c10be1c53d70c75fd1266d788",
-      "https://arbiscan.io/address/0x555555987d98079b9f43cdcdbd52dbb24ffeeef5",
-      "https://arbiscan.io/address/0x5a5a5ade4c9713172a5228703213d4d39608e2cd",
-      "https://arbiscan.io/address/0xb1be000644bd25996b0d9c2f7a6d6ba3954c91b0",
-      "https://arbiscan.io/address/0xba150002660bbca20675d1c1535cd76c98a95b13",
-      "https://arbiscan.io/address/0xba15000450bf6d48ec50bd6327a9403e401b72b4",
-      "https://arbiscan.io/address/0xba150052e11591d0648b17a0e608511874921cbc",
-      "https://arbiscan.io/address/0xba51055dad14d3920e1798d2e8a152d91cadb461",
-      "https://arbiscan.io/address/0xba5106bd62b342afacb93f1078fe60177a62d1a9",
-      "https://arbiscan.io/address/0xba510995783111be5301d93ccfd5de4e3b28e50b",
-      "https://arbiscan.io/address/0xba51aaaa8c2f911ae672e783707ceb2da6e97521",
-      "https://arbiscan.io/address/0xbea0005b8599265d41256905a9b3073d397812e4",
-      "https://arbiscan.io/address/0xcccccc35b53c8a16404ae414afa31f30a5b35626",
-      "https://arbiscan.io/address/0xd1a0060ba708bc4bcd3da6c37efa8dedf015fb70",
-      "https://arbiscan.io/address/0xd6fc4a63d7e93267c3007ea176081052369a4749",
-      "https://arbiscan.io/address/0xdeb0f082ed3b0efe9257aea9f2e6e974aa4120c3",
-      "https://arbiscan.io/address/0xfefefe2cfb089aef0b0578573ef3cfabc15f1490",
-      "https://arbiscan.io/address/0xfefefeca5375630d6950f40e564a27f6074845b5",
-      "https://etherscan.io/address/0xc1e088fc1323b20bcbee9bd1b9fc9546db5624c5"
-    ],
-    "github_repos": []
   },
   "immunefi:sei": {
     "hash": "19afbee00c89579a17981612fc84e60dce81c7bc",
@@ -42213,6 +42213,259 @@
     ],
     "github_repos": []
   },
+  "hackenproof:polkadot-bridge": {
+    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
+    "bounty": false,
+    "source": true,
+    "name": "Polkadot Bridge",
+    "url": "https://hackenproof.com/programs/polkadot-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/parity-bridges-common",
+        "description": "Parity Bridges Common"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+        "description": "Polkadot SDK: Bridges"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+        "description": "Polkadot SDK: Bridge hub parachains"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
+        "description": "Runtimes: Bridge hub"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/paritytech/parity-bridges-common",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
+    ],
+    "github_repos": [
+      "paritytech/parity-bridges-common",
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:polkadot-sdk-runtime-by-parity": {
+    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
+    "bounty": true,
+    "source": true,
+    "name": "Polkadot SDK, Runtime by Parity",
+    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk",
+        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/",
+        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/paritytech/polkadot-sdk",
+      "https://github.com/polkadot-fellows/runtimes"
+    ],
+    "github_repos": [
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:polkalokr": {
+    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:rtree-finance-web": {
+    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
+    "bounty": true,
+    "source": false,
+    "name": "Rtree Finance Web",
+    "url": "https://hackenproof.com/programs/rtree-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:serenity-shield-testnet-campain": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Serenity Shield Testnet Campain",
+    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:sg-forge-smart-contracts": {
+    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
+    "bounty": false,
+    "source": true,
+    "name": "SG Forge Smart Contracts",
+    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/castframework/smartcoin",
+        "description": "Smartcontract EURCV/USDCV on Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
+        "description": "Smartcontract EURCV on Solana"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/castframework/smartcoin",
+      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
+    ],
+    "github_repos": [
+      "castframework/smartcoin"
+    ]
+  },
+  "hackenproof:toobit-web-and-mobile": {
+    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
+    "bounty": true,
+    "source": false,
+    "name": "Toobit Web & Mobile",
+    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:volo-smart-contracts": {
+    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
+    "bounty": true,
+    "source": true,
+    "name": "Volo Smart Contracts",
+    "url": "https://hackenproof.com/programs/volo-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 150,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/sui-volo/volo-smart-contracts"
+    ],
+    "github_repos": [
+      "sui-volo/volo-smart-contracts"
+    ]
+  },
+  "hackenproof:volo-web": {
+    "hash": "a171fd249bf83bc2e5cd804d9014df3e8ab54144",
+    "bounty": true,
+    "source": false,
+    "name": "Volo Web",
+    "url": "https://hackenproof.com/programs/volo-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -46157,113 +46410,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:polkadot-bridge": {
-    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
-    "bounty": false,
-    "source": true,
-    "name": "Polkadot Bridge",
-    "url": "https://hackenproof.com/programs/polkadot-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/parity-bridges-common",
-        "description": "Parity Bridges Common"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-        "description": "Polkadot SDK: Bridges"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-        "description": "Polkadot SDK: Bridge hub parachains"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
-        "description": "Runtimes: Bridge hub"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/paritytech/parity-bridges-common",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
-    ],
-    "github_repos": [
-      "paritytech/parity-bridges-common",
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
-  },
-  "hackenproof:polkadot-sdk-runtime-by-parity": {
-    "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
-    "bounty": true,
-    "source": true,
-    "name": "Polkadot SDK, Runtime by Parity",
-    "url": "https://hackenproof.com/programs/polkadot-sdk-runtime-by-parity",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk",
-        "description": "Implementation-related issues only. Any bugs which can be used to bring down or take control of Substrate based chains without direct access to the machine, including bugs in pallets and primitives."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/",
-        "description": "Any bugs that compromise the intended behaviour of the various blockchain runtimes (Kusama, Polkadot, etc)."
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/paritytech/polkadot-sdk",
-      "https://github.com/polkadot-fellows/runtimes"
-    ],
-    "github_repos": [
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
-  },
-  "hackenproof:polkalokr": {
-    "hash": "9eab8d1f57c7091dc7c125e66f676f8b5c43aa95",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:polkalokr-1": {
     "hash": "6532def9ec49e41a9793544ecd01237764168922",
     "bounty": true,
@@ -46591,26 +46737,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:rtree-finance-web": {
-    "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
-    "bounty": true,
-    "source": false,
-    "name": "Rtree Finance Web",
-    "url": "https://hackenproof.com/programs/rtree-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:safeswap-app": {
     "hash": "a4a49f47e0bd94fa146c2e9432a436ce3a3219cf",
     "bounty": false,
@@ -46659,62 +46785,6 @@
     ],
     "github_repos": [
       "scallop-io/sui-lending-protocol"
-    ]
-  },
-  "hackenproof:serenity-shield-testnet-campain": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Serenity Shield Testnet Campain",
-    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:sg-forge-smart-contracts": {
-    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
-    "bounty": false,
-    "source": true,
-    "name": "SG Forge Smart Contracts",
-    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/castframework/smartcoin",
-        "description": "Smartcontract EURCV/USDCV on Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-        "description": "Smartcontract EURCV on Solana"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/castframework/smartcoin",
-      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
-    ],
-    "github_repos": [
-      "castframework/smartcoin"
     ]
   },
   "hackenproof:shapeshift": {
@@ -48227,26 +48297,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:toobit-web-and-mobile": {
-    "hash": "60c6a55587069cee500beb7695a61cd6feda5536",
-    "bounty": true,
-    "source": false,
-    "name": "Toobit Web & Mobile",
-    "url": "https://hackenproof.com/programs/toobit-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:tothemoon-web": {
     "hash": "9a1b84d61a3dd8502e5cecdcb103770ab8bbf449",
     "bounty": true,
@@ -48801,56 +48851,6 @@
     "github_repos": [
       "virtuswap/v1-core"
     ]
-  },
-  "hackenproof:volo-smart-contracts": {
-    "hash": "8c8c1568d5b1eee790a9a4f0b9601652a31d582e",
-    "bounty": true,
-    "source": true,
-    "name": "Volo Smart Contracts",
-    "url": "https://hackenproof.com/programs/volo-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 150,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Sui-Volo/volo-smart-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/sui-volo/volo-smart-contracts"
-    ],
-    "github_repos": [
-      "sui-volo/volo-smart-contracts"
-    ]
-  },
-  "hackenproof:volo-web": {
-    "hash": "a171fd249bf83bc2e5cd804d9014df3e8ab54144",
-    "bounty": true,
-    "source": false,
-    "name": "Volo Web",
-    "url": "https://hackenproof.com/programs/volo-web",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:walrus-protocol": {
     "hash": "57799ef9989f60e090f1adeab0894b858585104c",
@@ -57677,7 +57677,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-27T05:47:41.729516+00:00",
+    "updated_at": "2026-10-27T06:18:14.269180+00:00",
     "total": 1924,
     "qualifying": 421,
     "external": 357,
