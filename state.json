@@ -1193,7 +1193,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": 267.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1250,7 +1250,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 82,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3267,7 +3267,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 219,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 131.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3838,7 +3838,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 70,
+    "resp_eff": 71,
     "bounty_days": 921.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4487,7 +4487,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 442,
-    "resp_eff": 66,
+    "resp_eff": 64,
     "bounty_days": 272.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5347,7 +5347,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5860,7 +5860,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 70,
+    "resp_eff": 71,
     "bounty_days": 183.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -18925,7 +18925,7 @@
     "github_repos": []
   },
   "intigriti:water-link": {
-    "hash": "22e48b39fca289e21234def85ea08c369e128337",
+    "hash": "f2d1ed7c4aa78be50ca2611bb83e232c78bb30c8",
     "bounty": true,
     "source": false,
     "name": "Water-Link",
@@ -18944,7 +18944,7 @@
     "github_repos": []
   },
   "intigriti:water-linkvdp": {
-    "hash": "9ec28ff3302df4d27235e228d687559cef86ba61",
+    "hash": "e87b1e6b84cf0215e03df6e99715657f262acb28",
     "bounty": false,
     "source": false,
     "name": "Water-Link VDP",
@@ -42764,26 +42764,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dragon-king": {
-    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
-    "bounty": true,
-    "source": false,
-    "name": "Dragon King",
-    "url": "https://hackenproof.com/programs/dragon-king",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ember-evm-smart-contracts": {
     "hash": "bad357a0c2d08b8df5318fbf8449755223ad14db",
     "bounty": true,
@@ -42813,6 +42793,182 @@
     "github_repos": [
       "ember-protocol/ember-vaults-evm"
     ]
+  },
+  "hackenproof:lcx": {
+    "hash": "68191e2a77be732a161b40d427f003ef57e8481b",
+    "bounty": true,
+    "source": false,
+    "name": "LCX",
+    "url": "https://hackenproof.com/programs/lcx",
+    "platform": "hackenproof",
+    "bounty_min": 10,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:lendvest-smart-contracts": {
+    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+    "bounty": true,
+    "source": true,
+    "name": "Lendvest Smart Contracts",
+    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
+        "description": "Ethereum Mainnet\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
+        "description": "Chainlink Automations 2.0 (CRE)"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/lendvest/lendvest-smart-staking",
+      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+    ],
+    "github_repos": [
+      "lendvest/lendvest-smart-staking"
+    ]
+  },
+  "hackenproof:letsexchange-web-and-api-and-widget-swap-bridge-dex": {
+    "hash": "bffcca0ce87c4d1f2a1217cc6ad4e3a6a21d8bb0",
+    "bounty": true,
+    "source": false,
+    "name": "LetsExchange Web & API & Widget: Swap, Bridge, DEX",
+    "url": "https://hackenproof.com/programs/letsexchange-web-and-api-and-widget-swap-bridge-dex",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ternoa-enclaves": {
+    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Enclaves",
+    "url": "https://hackenproof.com/programs/ternoa-enclaves",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-enclaves"
+    ]
+  },
+  "hackenproof:ternoa-smart-contracts": {
+    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Smart Contracts",
+    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/chainbridge-solidity"
+    ]
+  },
+  "hackenproof:ternoa-wallet": {
+    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
+    "bounty": true,
+    "source": false,
+    "name": "Ternoa Wallet",
+    "url": "https://hackenproof.com/programs/ternoa-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:dragon-king": {
+    "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
+    "bounty": true,
+    "source": false,
+    "name": "Dragon King",
+    "url": "https://hackenproof.com/programs/dragon-king",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:ember-vaults-smart-contracts": {
     "hash": "5946b1901a3918604d4456c93fa9f0750cc65ed1",
@@ -44829,82 +44985,6 @@
     "platform": "hackenproof",
     "bounty_min": 200,
     "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:lcx": {
-    "hash": "68191e2a77be732a161b40d427f003ef57e8481b",
-    "bounty": true,
-    "source": false,
-    "name": "LCX",
-    "url": "https://hackenproof.com/programs/lcx",
-    "platform": "hackenproof",
-    "bounty_min": 10,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:lendvest-smart-contracts": {
-    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
-    "bounty": true,
-    "source": true,
-    "name": "Lendvest Smart Contracts",
-    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 25,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
-        "description": "Ethereum Mainnet\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
-        "description": "Chainlink Automations 2.0 (CRE)"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/lendvest/lendvest-smart-staking",
-      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
-    ],
-    "github_repos": [
-      "lendvest/lendvest-smart-staking"
-    ]
-  },
-  "hackenproof:letsexchange-web-and-api-and-widget-swap-bridge-dex": {
-    "hash": "bffcca0ce87c4d1f2a1217cc6ad4e3a6a21d8bb0",
-    "bounty": true,
-    "source": false,
-    "name": "LetsExchange Web & API & Widget: Swap, Bridge, DEX",
-    "url": "https://hackenproof.com/programs/letsexchange-web-and-api-and-widget-swap-bridge-dex",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -47902,86 +47982,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ternoa-enclaves": {
-    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Enclaves",
-    "url": "https://hackenproof.com/programs/ternoa-enclaves",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-enclaves"
-    ]
-  },
-  "hackenproof:ternoa-smart-contracts": {
-    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Smart Contracts",
-    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/chainbridge-solidity"
-    ]
-  },
-  "hackenproof:ternoa-wallet": {
-    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
-    "bounty": true,
-    "source": false,
-    "name": "Ternoa Wallet",
-    "url": "https://hackenproof.com/programs/ternoa-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -51017,6 +51017,34 @@
       "pinto-org/protocol"
     ]
   },
+  "sherlock:227": {
+    "hash": "faba42a0db23619214e821450e848b5f3155c56a",
+    "bounty": true,
+    "source": true,
+    "name": "Usual - Fira UZR (Usual Zero Rate) module",
+    "url": "https://audits.sherlock.xyz/bug-bounties/227",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 7500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:227",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:227"
+    ],
+    "github_repos": []
+  },
   "sherlock:233": {
     "hash": "ee15b9bafa51eaa0749638dbbfae883fbe1f47c7",
     "bounty": true,
@@ -51981,34 +52009,6 @@
     "github_repos": [
       "seamless-protocol/leverage-tokens"
     ]
-  },
-  "sherlock:227": {
-    "hash": "faba42a0db23619214e821450e848b5f3155c56a",
-    "bounty": true,
-    "source": true,
-    "name": "Usual - Fira UZR (Usual Zero Rate) module",
-    "url": "https://audits.sherlock.xyz/bug-bounties/227",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 7500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:227",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:227"
-    ],
-    "github_repos": []
   },
   "chaos:1inch": {
     "hash": "",
@@ -57804,7 +57804,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-28T12:39:02.472643+00:00",
+    "updated_at": "2026-10-28T13:10:32.886460+00:00",
     "total": 1930,
     "qualifying": 422,
     "external": 362,
