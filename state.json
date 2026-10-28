@@ -1899,7 +1899,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 52,
+    "resp_eff": 51,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2245,7 +2245,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 381.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5974,7 +5974,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 61,
+    "resp_eff": 64,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -15194,25 +15194,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "bugcrowd:SolDevelo": {
-    "hash": "be5e8648ff8b0e4af0967ffbcac9e9558f9a2697",
-    "bounty": true,
-    "source": false,
-    "name": "SolDevelo",
-    "url": "https://bugcrowd.com/engagements/soldevelo",
-    "platform": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "bugcrowd:Sophos": {
     "hash": "a7174904b937e9841eb79d58bf49e54a67fd05df",
     "bounty": true,
@@ -20250,6 +20231,108 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:granite-protocol": {
+    "hash": "9437841eef2ff313762cb0cb32af76977b8c982c",
+    "bounty": true,
+    "source": true,
+    "name": "Granite Protocol",
+    "url": "https://immunefi.com/bug-bounty/granite-protocol",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.state-v1?chain=mainnet",
+        "description": "USDCx Market"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidity-provider-v1?chain=mainnet",
+        "description": "Supplier USDCx"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.liquidator-v1?chain=mainnet",
+        "description": "Liquidator USDCx"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.linear-kinked-ir-v1?chain=mainnet",
+        "description": "USDCx interest rate kink"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP3M2BYF7RGF8WKW5FVDNJ6WR8D7AR9BHDXAKPXZE.borrower-v1?chain=mainnet",
+        "description": "Borrow USDCx"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SP119QJ4NVE3RQP8RXJVW5EXAV3XD4CJZWRCEEAAR.borrower-v1?chain=mainnet",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.governance-v1?chain=mainnet",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.pyth-adapter-v1?chain=mainnet",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/SPSX722NK9V3A8D3CVQT0CDY4EBQ3E9FSDDE61FT.liquidity-provider-v1?chain=mainnet",
+        "description": ""
+      }
+    ],
+    "sc_total": 34,
+    "sc_ids": [
+      "https://explorer.hiro.so/txid/0x0a9f1bf8fa6439cbcddbe5c05f486a1f1179ebdb91d99b13f1904c9ac8b223b5?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x132f1a6ffec5ab0d0184e738ff20f096f5b1f05f1b3e2d1aee478f6e819d593c?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x19e8500f37e6a82972afb08b3fd204db05c86d8d747fd776257b48877b156a38?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x57550ac4401f8e57c1c18d22eb246b4585b4ff35428a7cf8668e9b8e46473ecc?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x6069114a3275b983e864761c8fb4ea977facf7a20ec3d168f0b9e836ae9a58ca?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x86d1bb19ed9b103cf2c0840fd3eed16c8fa0b61a1d8cb728da547429eb771ddb?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x90b2b5ffaec838a58682514b89985abe17d99bb6104f6fc48e801c9a086044b6?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xa057ebce9c8c1501cf56b18185ea3eed4e35a72934446bb9599508637d476520?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xc4bc67a8a9ddd84e92a818eea1a921c5cb464299d39e25cbac150160cc5be977?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xe05b5a92318bbb1dc555c1f32faf02d6c8d9f12c8d5ffac045f892fcb9a906e5?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xf4cc59c2769921d84226db4e0243f618684581fb4a14c2bcaed7db80f00d262d?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp119qj4nve3rqp8rxjvw5exav3xd4cjzwrceeaar.borrower-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.trait-flash-loan-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.constants-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.staking-reward-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.state-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3bjr4p3w2y9g22ha595z59vhbc9eqyrfwskg743.constants-v2?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.borrower-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.flash-loan-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.governance-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.linear-kinked-ir-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.liquidator-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.liquidity-provider-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.meta-governance-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.pyth-adapter-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.state-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/spsx722nk9v3a8d3cvqt0cdy4ebq3e9fsdde61ft.governance-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/spsx722nk9v3a8d3cvqt0cdy4ebq3e9fsdde61ft.liquidity-provider-v1?chain=mainnet",
+      "https://explorer.hiro.so/txid/spsx722nk9v3a8d3cvqt0cdy4ebq3e9fsdde61ft.pyth-adapter-v1?chain=mainnet",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
   "immunefi:gmx": {
     "hash": "92c62f782268bd1b521d4f39704434289623b88e",
     "bounty": true,
@@ -23292,105 +23375,6 @@
       "https://etherscan.io/address/0xba1333333333a1ba1108e8412f11850a5c319ba9",
       "https://etherscan.io/address/0xea66501df1a00261e3bb79d1e90444fc6a186b62",
       "https://etherscan.io/address/0xeb1aa94421aecfb1dc17ddb1068e4609c4be8758#code"
-    ],
-    "github_repos": []
-  },
-  "immunefi:granite-protocol": {
-    "hash": "4ae7b8db1ed1e21365bab7c5861d42094b9f848b",
-    "bounty": true,
-    "source": true,
-    "name": "Granite Protocol",
-    "url": "https://immunefi.com/bug-bounty/granite-protocol",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-traits-v2?chain=mainnet",
-        "description": "pyth-traits-v2.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.constants-v1?chain=mainnet",
-        "description": "constants-v1.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-governance-v3?chain=mainnet",
-        "description": "pyth-governance-v3.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.pyth-adapter-v1?chain=mainnet",
-        "description": "pyth-adapter-v1.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.constants-v1?chain=mainnet",
-        "description": "constants-v1.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.pyth-pnau-decoder-v3?chain=mainnet",
-        "description": "pyth-pnau-decoder-v3.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP1CGXWEAMG6P6FT04W66NVGJ7PQWMDAC19R7PJ0Y.wormhole-core-v4?chain=mainnet",
-        "description": "wormhole-core-v4.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP26NGV9AFZBX7XBDBS2C7EC7FCPSAV9PKREQNMVS.governance-v1?chain=mainnet",
-        "description": "governance-v1.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP35E2BBMDT2Y1HB0NTK139YBGYV3PAPK3WA8BRNA.math-v1?chain=mainnet",
-        "description": "math-v1.clar"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.hiro.so/txid/SP3BJR4P3W2Y9G22HA595Z59VHBC9EQYRFWSKG743.constants-v1?chain=mainnet",
-        "description": "constants-v2.clar"
-      }
-    ],
-    "sc_total": 29,
-    "sc_ids": [
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.pyth-governance-v3?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.pyth-oracle-v4?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.pyth-pnau-decoder-v3?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.pyth-storage-v4?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.pyth-traits-v2?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.wormhole-core-v4?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp1cgxweamg6p6ft04w66nvgj7pqwmdac19r7pj0y.wormhole-traits-v2?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.borrower-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.flash-loan-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.governance-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.liquidator-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.liquidity-provider-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.pyth-adapter-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp26ngv9afzbx7xbdbs2c7ec7fcpsav9pkreqnmvs.withdrawal-caps-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.constants-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.linear-kinked-ir-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.math-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.meta-governance-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp35e2bbmdt2y1hb0ntk139ybgyv3papk3wa8brna.state-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3bjr4p3w2y9g22ha595z59vhbc9eqyrfwskg743.constants-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3bjr4p3w2y9g22ha595z59vhbc9eqyrfwskg743.staking-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.borrower-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.linear-kinked-ir-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.liquidator-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.liquidity-provider-v1?chain=mainnet",
-      "https://explorer.hiro.so/txid/sp3m2byf7rgf8wkw5fvdnj6wr8d7ar9bhdxakpxze.state-v1?chain=mainnet",
-      "https://immunefi.com"
     ],
     "github_repos": []
   },
@@ -57820,8 +57804,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-28T05:55:56.165198+00:00",
-    "total": 1931,
+    "updated_at": "2026-10-28T06:26:10.738322+00:00",
+    "total": 1930,
     "qualifying": 422,
     "external": 362,
     "blockchain": 359,
