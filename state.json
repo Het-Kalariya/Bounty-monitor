@@ -2592,7 +2592,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 91,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2668,7 +2668,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 83,
+    "resp_eff": 82,
     "bounty_days": 392.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9246,7 +9246,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 200,
-    "resp_eff": 81,
+    "resp_eff": 82,
     "bounty_days": 117.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42265,26 +42265,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:deepfi-trade": {
-    "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
-    "bounty": true,
-    "source": false,
-    "name": "DeepFi Trade",
-    "url": "https://hackenproof.com/programs/deepfi-trade",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -42311,6 +42291,26 @@
     "source": false,
     "name": "DeepFi Games",
     "url": "https://hackenproof.com/programs/deepfi-games",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:deepfi-trade": {
+    "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
+    "bounty": true,
+    "source": false,
+    "name": "DeepFi Trade",
+    "url": "https://hackenproof.com/programs/deepfi-trade",
     "platform": "hackenproof",
     "bounty_min": 200,
     "bounty_max": 3000,
@@ -42621,6 +42621,251 @@
       "dioneprotocol/sfxdx__odysseyjs",
       "dioneprotocol/subnet-evm"
     ]
+  },
+  "hackenproof:near-foundation-web-low": {
+    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
+    "bounty": true,
+    "source": false,
+    "name": "NEAR Foundation Web (Low)",
+    "url": "https://hackenproof.com/programs/near-foundation-web-low",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 2500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:near-intents-bridges": {
+    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Bridges",
+    "url": "https://hackenproof.com/programs/near-intents-bridges",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/near/mpc",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/omni-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-light-client-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/near-one/btc-bridge",
+      "https://github.com/near-one/btc-light-client-contract",
+      "https://github.com/near-one/omni-bridge",
+      "https://github.com/near/mpc"
+    ],
+    "github_repos": [
+      "near-one/btc-bridge",
+      "near-one/btc-light-client-contract",
+      "near-one/omni-bridge",
+      "near/mpc"
+    ]
+  },
+  "hackenproof:near-intents-sdk": {
+    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: SDK",
+    "url": "https://hackenproof.com/programs/near-intents-sdk",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/defuse-protocol/sdk-monorepo"
+    ],
+    "github_repos": [
+      "defuse-protocol/sdk-monorepo"
+    ]
+  },
+  "hackenproof:near-intents-smart-contracts": {
+    "hash": "d9c1c6370922440d3e851db76e21db64beb0da12",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Smart Contracts",
+    "url": "https://hackenproof.com/programs/near-intents-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/intents",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/intents/tree/main/escrow-swap",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/near/intents",
+      "https://github.com/near/intents/tree/main/escrow-swap"
+    ],
+    "github_repos": [
+      "near/intents"
+    ]
+  },
+  "hackenproof:unistake-smart-contracts": {
+    "hash": "0a7bcc004b1fb5c83674c11a5124df50b5e398d7",
+    "bounty": true,
+    "source": false,
+    "name": "Unistake Smart Contracts",
+    "url": "https://hackenproof.com/programs/unistake-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:unitus-v2-smart-contracts": {
+    "hash": "45ad935eff4d17c66fd0738873cbb4c6a3b5f053",
+    "bounty": true,
+    "source": true,
+    "name": "Unitus V2 Smart Contracts",
+    "url": "https://hackenproof.com/programs/unitus-v2-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/UnitusLabs/Contracts/wiki/Deployments#base-contracts",
+        "description": "This bounty program is limited to contracts and their corresponding functions that have already been deployed on-chain and are currently active. Unitus reserves the right of final interpretation regarding the scope."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/unituslabs/contracts/wiki/deployments#base-contracts"
+    ],
+    "github_repos": [
+      "unituslabs/contracts"
+    ]
+  },
+  "hackenproof:vechainthor": {
+    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor",
+    "url": "https://hackenproof.com/programs/vechainthor",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 35000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/vechain/thor",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/vechain/thor"
+    ],
+    "github_repos": [
+      "vechain/thor"
+    ]
+  },
+  "hackenproof:vechainthor-vip191": {
+    "hash": "afab50257608dbbe57a554c25066537042bd3659",
+    "bounty": true,
+    "source": true,
+    "name": "VeChainThor VIP191",
+    "url": "https://hackenproof.com/programs/vechainthor-vip191",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "BLOCKCHAIN",
+        "identifier": "VIP191",
+        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "vip191"
+    ],
+    "github_repos": []
   },
   "hackenproof:dodo-v3": {
     "hash": "0538b79ba91752e50a5cbe8bcb0562165e46ca93",
@@ -45448,143 +45693,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:near-foundation-web-low": {
-    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
-    "bounty": true,
-    "source": false,
-    "name": "NEAR Foundation Web (Low)",
-    "url": "https://hackenproof.com/programs/near-foundation-web-low",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-intents-bridges": {
-    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Bridges",
-    "url": "https://hackenproof.com/programs/near-intents-bridges",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/near/mpc",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/omni-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-light-client-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/near-one/btc-bridge",
-      "https://github.com/near-one/btc-light-client-contract",
-      "https://github.com/near-one/omni-bridge",
-      "https://github.com/near/mpc"
-    ],
-    "github_repos": [
-      "near-one/btc-bridge",
-      "near-one/btc-light-client-contract",
-      "near-one/omni-bridge",
-      "near/mpc"
-    ]
-  },
-  "hackenproof:near-intents-sdk": {
-    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: SDK",
-    "url": "https://hackenproof.com/programs/near-intents-sdk",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/defuse-protocol/sdk-monorepo"
-    ],
-    "github_repos": [
-      "defuse-protocol/sdk-monorepo"
-    ]
-  },
-  "hackenproof:near-intents-smart-contracts": {
-    "hash": "d9c1c6370922440d3e851db76e21db64beb0da12",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Smart Contracts",
-    "url": "https://hackenproof.com/programs/near-intents-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/intents",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/intents/tree/main/escrow-swap",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/near/intents",
-      "https://github.com/near/intents/tree/main/escrow-swap"
-    ],
-    "github_repos": [
-      "near/intents"
-    ]
   },
   "hackenproof:near-protocol": {
     "hash": "1104e4ff3a0e93c9a8c31196ec5160df163ec5a6",
@@ -48685,114 +48793,6 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:unistake-smart-contracts": {
-    "hash": "0a7bcc004b1fb5c83674c11a5124df50b5e398d7",
-    "bounty": true,
-    "source": false,
-    "name": "Unistake Smart Contracts",
-    "url": "https://hackenproof.com/programs/unistake-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:unitus-v2-smart-contracts": {
-    "hash": "45ad935eff4d17c66fd0738873cbb4c6a3b5f053",
-    "bounty": true,
-    "source": true,
-    "name": "Unitus V2 Smart Contracts",
-    "url": "https://hackenproof.com/programs/unitus-v2-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/UnitusLabs/Contracts/wiki/Deployments#base-contracts",
-        "description": "This bounty program is limited to contracts and their corresponding functions that have already been deployed on-chain and are currently active. Unitus reserves the right of final interpretation regarding the scope."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/unituslabs/contracts/wiki/deployments#base-contracts"
-    ],
-    "github_repos": [
-      "unituslabs/contracts"
-    ]
-  },
-  "hackenproof:vechainthor": {
-    "hash": "da45e7560b66a0730e7551a458fe8015427c4bc3",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor",
-    "url": "https://hackenproof.com/programs/vechainthor",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 35000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/vechain/thor",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/vechain/thor"
-    ],
-    "github_repos": [
-      "vechain/thor"
-    ]
-  },
-  "hackenproof:vechainthor-vip191": {
-    "hash": "afab50257608dbbe57a554c25066537042bd3659",
-    "bounty": true,
-    "source": true,
-    "name": "VeChainThor VIP191",
-    "url": "https://hackenproof.com/programs/vechainthor-vip191",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "BLOCKCHAIN",
-        "identifier": "VIP191",
-        "description": "[VIP191 - Designated Gas Payer function](https://github.com/vechain/thor/releases/tag/v1.1.0)\r\n"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "vip191"
-    ],
     "github_repos": []
   },
   "hackenproof:vechainthor-wallet": {
@@ -57820,7 +57820,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-28T04:58:08.732898+00:00",
+    "updated_at": "2026-10-28T05:28:29.300814+00:00",
     "total": 1931,
     "qualifying": 422,
     "external": 362,
