@@ -1250,7 +1250,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 73,
+    "resp_eff": 76,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2592,7 +2592,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4674,7 +4674,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 73,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6069,7 +6069,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 91,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6810,7 +6810,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -7788,7 +7788,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8670,7 +8670,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 302,
-    "resp_eff": 90,
+    "resp_eff": 91,
     "bounty_days": 246.0,
     "sc_targets": [
       {
@@ -42501,15 +42501,15 @@
       "dexe-network/dexe-protocol"
     ]
   },
-  "hackenproof:flow-protocol": {
-    "hash": "66acdbe6e3f0d37c7cc4510f9a9e7378972c7132",
+  "hackenproof:tetu-smart-contracts": {
+    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
     "bounty": true,
     "source": true,
-    "name": "Flow Protocol",
-    "url": "https://hackenproof.com/programs/flow-protocol",
+    "name": "TETU Smart Contracts",
+    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 10000,
+    "bounty_min": 25000,
+    "bounty_max": 1000000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42518,90 +42518,129 @@
     "live_status": "LIVE",
     "sc_targets": [
       {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/flow-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/crypto",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/cadence",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/atree",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/onflow/ccf",
-        "description": ""
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+        "description": "Smart Contract - TETU Token"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-core-contracts",
-        "description": ""
+        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
+        "description": "Smart Contract - Controller"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/onflow/flow-evm-bridge",
-        "description": ""
+        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
+        "description": "Smart Contract - Announcer"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
+        "description": "Smart Contract - ForwarderV2"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
+        "description": "Smart Contract - Bookkeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
+        "description": "Smart Contract - MintHelper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+        "description": "Smart Contract - FundKeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+        "description": "Smart Contract - tetuBAL(poly)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
+        "description": "Smart Contract - tetuBAL(eth)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+        "description": "Smart Contract - BalLocker(eth)"
       }
     ],
-    "sc_total": 7,
+    "sc_total": 21,
     "sc_ids": [
-      "https://github.com/onflow/atree",
-      "https://github.com/onflow/cadence",
-      "https://github.com/onflow/ccf",
-      "https://github.com/onflow/crypto",
-      "https://github.com/onflow/flow-core-contracts",
-      "https://github.com/onflow/flow-evm-bridge",
-      "https://github.com/onflow/flow-go"
+      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
+      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
+      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
+      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
+      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
+      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
+      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
+      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
     ],
     "github_repos": [
-      "onflow/atree",
-      "onflow/cadence",
-      "onflow/ccf",
-      "onflow/crypto",
-      "onflow/flow-core-contracts",
-      "onflow/flow-evm-bridge",
-      "onflow/flow-go"
+      "tetu-io/tetu-contracts-v2"
     ]
   },
-  "hackenproof:payhub-web": {
-    "hash": "3874f9e20f44aa32c8017623d330a37c72fa4724",
+  "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
+    "hash": "1088557476b2b831ce4ceab49b1e8bb793f5a8ff",
     "bounty": true,
-    "source": false,
-    "name": "Payhub Web",
-    "url": "https://hackenproof.com/programs/payhub-web",
+    "source": true,
+    "name": "The Flipcash Reserve Contract Bug Bounty",
+    "url": "https://hackenproof.com/programs/the-flipcash-reserve-contract-bug-bounty",
     "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
+    "bounty_min": 0,
+    "bounty_max": 250000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/code-payments/flipcash-program",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.solana.com/address/9oREdQzzrVH9HPTqKtVMbwP7fFtjrxVAYkMM664CwMGS",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://explorer.solana.com/address/9oredqzzrvh9hptqktvmbwp7fftjrxvaykmm664cwmgs",
+      "https://github.com/code-payments/flipcash-program"
+    ],
+    "github_repos": [
+      "code-payments/flipcash-program"
+    ]
   },
-  "hackenproof:tidex-exchange": {
-    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
+  "hackenproof:tickets-travel-network-slash-mobile": {
+    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
     "bounty": true,
     "source": false,
-    "name": "Tidex Exchange",
-    "url": "https://hackenproof.com/programs/tidex-exchange",
+    "name": "Tickets Travel Network / Mobile",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 10000,
+    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -43373,6 +43412,78 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:flow-protocol": {
+    "hash": "66acdbe6e3f0d37c7cc4510f9a9e7378972c7132",
+    "bounty": true,
+    "source": true,
+    "name": "Flow Protocol",
+    "url": "https://hackenproof.com/programs/flow-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/flow-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/crypto",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/cadence",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/atree",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/onflow/ccf",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-core-contracts",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/onflow/flow-evm-bridge",
+        "description": ""
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/onflow/atree",
+      "https://github.com/onflow/cadence",
+      "https://github.com/onflow/ccf",
+      "https://github.com/onflow/crypto",
+      "https://github.com/onflow/flow-core-contracts",
+      "https://github.com/onflow/flow-evm-bridge",
+      "https://github.com/onflow/flow-go"
+    ],
+    "github_repos": [
+      "onflow/atree",
+      "onflow/cadence",
+      "onflow/ccf",
+      "onflow/crypto",
+      "onflow/flow-core-contracts",
+      "onflow/flow-evm-bridge",
+      "onflow/flow-go"
+    ]
   },
   "hackenproof:flow-wallet": {
     "hash": "e2ba10af6190cf0901ef04d996ee0c6762a7c028",
@@ -46140,6 +46251,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:payhub-web": {
+    "hash": "3874f9e20f44aa32c8017623d330a37c72fa4724",
+    "bounty": true,
+    "source": false,
+    "name": "Payhub Web",
+    "url": "https://hackenproof.com/programs/payhub-web",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:phemex-web-and-mobile": {
     "hash": "98c18457d8d42ff1563e3421664e864b49f99672",
     "bounty": true,
@@ -48030,143 +48161,12 @@
       "capsule-corp-ternoa/ternoa-js"
     ]
   },
-  "hackenproof:tetu-smart-contracts": {
-    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
-    "bounty": true,
-    "source": true,
-    "name": "TETU Smart Contracts",
-    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 25000,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-        "description": "Smart Contract - TETU Token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
-        "description": "Smart Contract - Controller"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
-        "description": "Smart Contract - Announcer"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
-        "description": "Smart Contract - ForwarderV2"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
-        "description": "Smart Contract - Bookkeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
-        "description": "Smart Contract - MintHelper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-        "description": "Smart Contract - FundKeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-        "description": "Smart Contract - tetuBAL(poly)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
-        "description": "Smart Contract - tetuBAL(eth)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-        "description": "Smart Contract - BalLocker(eth)"
-      }
-    ],
-    "sc_total": 21,
-    "sc_ids": [
-      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
-      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
-      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
-      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
-      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
-      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
-      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
-      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
-    ],
-    "github_repos": [
-      "tetu-io/tetu-contracts-v2"
-    ]
-  },
-  "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
-    "hash": "1088557476b2b831ce4ceab49b1e8bb793f5a8ff",
-    "bounty": true,
-    "source": true,
-    "name": "The Flipcash Reserve Contract Bug Bounty",
-    "url": "https://hackenproof.com/programs/the-flipcash-reserve-contract-bug-bounty",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/code-payments/flipcash-program",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.solana.com/address/9oREdQzzrVH9HPTqKtVMbwP7fFtjrxVAYkMM664CwMGS",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://explorer.solana.com/address/9oredqzzrvh9hptqktvmbwp7fftjrxvaykmm664cwmgs",
-      "https://github.com/code-payments/flipcash-program"
-    ],
-    "github_repos": [
-      "code-payments/flipcash-program"
-    ]
-  },
-  "hackenproof:tickets-travel-network-slash-mobile": {
-    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
+  "hackenproof:tickets-travel-network-slash-updated-ui": {
+    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
     "bounty": true,
     "source": false,
-    "name": "Tickets Travel Network / Mobile",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
+    "name": "Tickets Travel Network / Updated UI",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 2000,
@@ -48181,15 +48181,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:tickets-travel-network-slash-updated-ui": {
-    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
+  "hackenproof:tidex-exchange": {
+    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
     "bounty": true,
     "source": false,
-    "name": "Tickets Travel Network / Updated UI",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
+    "name": "Tidex Exchange",
+    "url": "https://hackenproof.com/programs/tidex-exchange",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 2000,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57807,7 +57807,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-10-28T01:57:29.085045+00:00",
+    "updated_at": "2026-10-28T03:27:40.030029+00:00",
     "total": 1931,
     "qualifying": 421,
     "external": 363,
