@@ -2686,7 +2686,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 83,
+    "resp_eff": 84,
     "bounty_days": 545.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42102,15 +42102,45 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:dexalot-smart-contracts-2": {
-    "hash": "46b0e6171d3a04734b97e87c214ed0cd1436534a",
+  "hackenproof:evaa-smart-contracts": {
+    "hash": "13f158186f4c6bf44a31b67c71bd2bb74b5a7177",
+    "bounty": false,
+    "source": true,
+    "name": "EVAA Smart Contracts",
+    "url": "https://hackenproof.com/programs/evaa-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/evaafi/contracts/tree/main/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/evaafi/contracts/tree/main/contracts"
+    ],
+    "github_repos": [
+      "evaafi/contracts"
+    ]
+  },
+  "hackenproof:metamask-validator-staking-smart-contracts": {
+    "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
     "bounty": true,
     "source": true,
-    "name": "Dexalot Smart Contracts",
-    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-2",
+    "name": "MetaMask Validator Staking Smart Contracts",
+    "url": "https://hackenproof.com/programs/metamask-validator-staking-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 20000,
+    "bounty_min": 0,
+    "bounty_max": 700000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42120,33 +42150,73 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Dexalot/contracts/tree/cd/removeAuction",
-        "description": ""
+        "identifier": "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
+        "description": "\r\n* Contract is deployed without proxy. More info can be found in documentation [here.](https://hackenproof.com/redirect?url=https://docs.kiln.fi/kiln-on-chain-v1/6eQVsjjelOTzT9cvtG8s/introduction/overview)\r\n"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "constracts/MainnetRFQ.sol",
-        "description": ""
+        "identifier": "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d",
+        "description": "commit hash of the deploy without proxy"
       }
     ],
     "sc_total": 2,
     "sc_ids": [
-      "constracts/mainnetrfq.sol",
-      "https://github.com/dexalot/contracts/tree/cd/removeauction"
+      "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
+      "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d"
     ],
     "github_repos": [
-      "dexalot/contracts"
+      "kilnfi/staking-contracts"
     ]
   },
-  "hackenproof:momentum-smart-contracts": {
-    "hash": "393c0be45a2d43e02427ce9f8d7a3ea5af661327",
+  "hackenproof:swisstronik-blockchain-stability": {
+    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
     "bounty": true,
-    "source": true,
-    "name": "Momentum Smart Contracts",
-    "url": "https://hackenproof.com/programs/momentum-smart-contracts",
+    "source": false,
+    "name": "Swisstronik Blockchain Stability",
+    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
     "platform": "hackenproof",
     "bounty_min": 50,
-    "bounty_max": 200000,
+    "bounty_max": 500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitebit": {
+    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT",
+    "url": "https://hackenproof.com/programs/whitebit",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zynk-protocol": {
+    "hash": "07089128dec72e94db8e9b0b1bd70b07cf61662c",
+    "bounty": true,
+    "source": true,
+    "name": "Zynk Protocol",
+    "url": "https://hackenproof.com/programs/zynk-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42156,46 +42226,29 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/mmt-v3-core",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/mmt-v3-core"
-    ],
-    "github_repos": [
-      "hackenproof-public/mmt-v3-core"
-    ]
-  },
-  "hackenproof:near-intents-sdk": {
-    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: SDK",
-    "url": "https://hackenproof.com/programs/near-intents-sdk",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
+        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
+      },
       {
         "asset_type": "OTHER",
-        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
-        "description": ""
+        "identifier": "https://github.com/Zynklabs/audit-reports",
+        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
       }
     ],
-    "sc_total": 1,
+    "sc_total": 3,
     "sc_ids": [
-      "https://github.com/defuse-protocol/sdk-monorepo"
+      "https://github.com/zynklabs/audit-reports",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
     ],
     "github_repos": [
-      "defuse-protocol/sdk-monorepo"
+      "zynklabs/audit-reports",
+      "zynklabs/zynk-protocol-solana-programs.public"
     ]
   },
   "hackenproof:deepfi-games": {
@@ -42326,6 +42379,42 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:dexalot-smart-contracts-2": {
+    "hash": "46b0e6171d3a04734b97e87c214ed0cd1436534a",
+    "bounty": true,
+    "source": true,
+    "name": "Dexalot Smart Contracts",
+    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-2",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Dexalot/contracts/tree/cd/removeAuction",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "constracts/MainnetRFQ.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "constracts/mainnetrfq.sol",
+      "https://github.com/dexalot/contracts/tree/cd/removeauction"
+    ],
+    "github_repos": [
+      "dexalot/contracts"
+    ]
   },
   "hackenproof:dexalot-smart-contracts-archived": {
     "hash": "f78b362b6307a62758c601e413a3f4b246811329",
@@ -42833,36 +42922,6 @@
     ],
     "github_repos": [
       "dao-envelop/envelop-protocol-v1"
-    ]
-  },
-  "hackenproof:evaa-smart-contracts": {
-    "hash": "13f158186f4c6bf44a31b67c71bd2bb74b5a7177",
-    "bounty": false,
-    "source": true,
-    "name": "EVAA Smart Contracts",
-    "url": "https://hackenproof.com/programs/evaa-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/evaafi/contracts/tree/main/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/evaafi/contracts/tree/main/contracts"
-    ],
-    "github_repos": [
-      "evaafi/contracts"
     ]
   },
   "hackenproof:evaa-web": {
@@ -44992,15 +45051,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:metamask-validator-staking-smart-contracts": {
-    "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
+  "hackenproof:momentum-smart-contracts": {
+    "hash": "393c0be45a2d43e02427ce9f8d7a3ea5af661327",
     "bounty": true,
     "source": true,
-    "name": "MetaMask Validator Staking Smart Contracts",
-    "url": "https://hackenproof.com/programs/metamask-validator-staking-smart-contracts",
+    "name": "Momentum Smart Contracts",
+    "url": "https://hackenproof.com/programs/momentum-smart-contracts",
     "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 700000,
+    "bounty_min": 50,
+    "bounty_max": 200000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -45010,22 +45069,16 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
-        "description": "\r\n* Contract is deployed without proxy. More info can be found in documentation [here.](https://hackenproof.com/redirect?url=https://docs.kiln.fi/kiln-on-chain-v1/6eQVsjjelOTzT9cvtG8s/introduction/overview)\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d",
-        "description": "commit hash of the deploy without proxy"
+        "identifier": "https://github.com/hackenproof-public/mmt-v3-core",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
       }
     ],
-    "sc_total": 2,
+    "sc_total": 1,
     "sc_ids": [
-      "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
-      "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d"
+      "https://github.com/hackenproof-public/mmt-v3-core"
     ],
     "github_repos": [
-      "kilnfi/staking-contracts"
+      "hackenproof-public/mmt-v3-core"
     ]
   },
   "hackenproof:monday-trade-web": {
@@ -45365,6 +45418,36 @@
       "near-one/btc-light-client-contract",
       "near-one/omni-bridge",
       "near/mpc"
+    ]
+  },
+  "hackenproof:near-intents-sdk": {
+    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: SDK",
+    "url": "https://hackenproof.com/programs/near-intents-sdk",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/defuse-protocol/sdk-monorepo"
+    ],
+    "github_repos": [
+      "defuse-protocol/sdk-monorepo"
     ]
   },
   "hackenproof:near-intents-smart-contracts": {
@@ -47646,26 +47729,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:swisstronik-blockchain-stability": {
-    "hash": "a2c9373fbce2f12c767ed0bdb7c880bdc8a2a9c7",
-    "bounty": true,
-    "source": false,
-    "name": "Swisstronik Blockchain Stability",
-    "url": "https://hackenproof.com/programs/swisstronik-blockchain-stability",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:swisstronik-core": {
     "hash": "e740dae505419b7437bf6066393b08b20ae4c0fd",
     "bounty": true,
@@ -48830,26 +48893,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:whitebit": {
-    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT",
-    "url": "https://hackenproof.com/programs/whitebit",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:whitebit-blog": {
     "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
     "bounty": true,
@@ -49386,49 +49429,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:zynk-protocol": {
-    "hash": "07089128dec72e94db8e9b0b1bd70b07cf61662c",
-    "bounty": true,
-    "source": true,
-    "name": "Zynk Protocol",
-    "url": "https://hackenproof.com/programs/zynk-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
-        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Zynklabs/audit-reports",
-        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zynklabs/audit-reports",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
-    ],
-    "github_repos": [
-      "zynklabs/audit-reports",
-      "zynklabs/zynk-protocol-solana-programs.public"
-    ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
     "hash": "19782609020423324cf26c0603eed0c32f1fe0ba",
@@ -57577,7 +57577,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-01T23:04:56.816046+00:00",
+    "updated_at": "2026-11-01T23:16:09.820678+00:00",
     "total": 1922,
     "qualifying": 423,
     "external": 356,
