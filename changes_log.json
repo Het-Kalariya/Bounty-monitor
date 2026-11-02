@@ -5958,5 +5958,38 @@
     "github_repos": [
       "better-auth/better-auth"
     ]
+  },
+  {
+    "timestamp": "2026-11-02T14:26:21.386647+00:00",
+    "event": "new_program",
+    "platform": "immunefi",
+    "handle": "plether",
+    "name": "Audit Competition | Plether",
+    "url": "https://immunefi.com/bug-bounty/plether",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/MarginClearinghouse.sol",
+        "description": "MarginClearinghouse.sol - Holds trader USDG - 1,343 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/HousePool.sol",
+        "description": "HousePool.sol - Holds active LP USDG - 1,427 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/TrancheVault.sol",
+        "description": "TrancheVault.sol - Handles pending LP deposits and funded withdrawals. Deployed as two instances, one per tranche; both are in scope - 1,657 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src",
+        "description": "All other contracts, libraries, router contracts and interfaces in packages/perps/src, except the six view-only contracts listed as out of scope below - about 17,000 nSLOC"
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
   }
 ]
