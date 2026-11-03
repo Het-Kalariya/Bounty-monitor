@@ -20100,6 +20100,54 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:plether": {
+    "hash": "cd3a1b3d58a45be4a7f26068af7fcbccbabd3c69",
+    "bounty": true,
+    "source": true,
+    "name": "Audit Competition | Plether",
+    "url": "https://immunefi.com/bug-bounty/plether",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 80000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/MarginClearinghouse.sol",
+        "description": "MarginClearinghouse.sol - Holds trader USDG - 1,343 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/HousePool.sol",
+        "description": "HousePool.sol - Holds active LP USDG - 1,427 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/TrancheVault.sol",
+        "description": "TrancheVault.sol - Handles pending LP deposits and funded withdrawals. Deployed as two instances, one per tranche; both are in scope - 1,657 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src",
+        "description": "All other contracts, libraries, router contracts and interfaces in packages/perps/src, except the six view-only contracts listed as out of scope below - about 17,000 nSLOC"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/housepool.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/marginclearinghouse.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/tranchevault.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src"
+    ],
+    "github_repos": [
+      "immunefi-team/audit-comp-plether"
+    ]
+  },
   "immunefi:originprotocol": {
     "hash": "3ad46a52f96e3dbaf4b6ac0a697a5e9b6e331706",
     "bounty": true,
@@ -20549,54 +20597,6 @@
     ],
     "github_repos": [
       "mtpelerin/bridge-v2"
-    ]
-  },
-  "immunefi:plether": {
-    "hash": "cd3a1b3d58a45be4a7f26068af7fcbccbabd3c69",
-    "bounty": true,
-    "source": true,
-    "name": "Audit Competition | Plether",
-    "url": "https://immunefi.com/bug-bounty/plether",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 80000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/MarginClearinghouse.sol",
-        "description": "MarginClearinghouse.sol - Holds trader USDG - 1,343 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/HousePool.sol",
-        "description": "HousePool.sol - Holds active LP USDG - 1,427 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/TrancheVault.sol",
-        "description": "TrancheVault.sol - Handles pending LP deposits and funded withdrawals. Deployed as two instances, one per tranche; both are in scope - 1,657 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src",
-        "description": "All other contracts, libraries, router contracts and interfaces in packages/perps/src, except the six view-only contracts listed as out of scope below - about 17,000 nSLOC"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/housepool.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/marginclearinghouse.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/tranchevault.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src"
-    ],
-    "github_repos": [
-      "immunefi-team/audit-comp-plether"
     ]
   },
   "immunefi:gmx": {
@@ -41998,6 +41998,112 @@
     ],
     "github_repos": []
   },
+  "hackenproof:uacatsdivision-web": {
+    "hash": "9e510c8658b46fd2477afc2a112921b06e07b270",
+    "bounty": false,
+    "source": false,
+    "name": "UACatsDivision Web",
+    "url": "https://hackenproof.com/programs/uacatsdivision-web",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitebit": {
+    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT",
+    "url": "https://hackenproof.com/programs/whitebit",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitechain": {
+    "hash": "ad28f0018e9bbbac712b1527acefb879eef7246d",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain",
+    "url": "https://hackenproof.com/programs/whitechain",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
+        "description": "l1-addresses.json"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "Smart Contracts",
+        "description": "https://docs.whitechain.io/build/bridge/bridge-assets#contract-addresses"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
+      "smart contracts"
+    ],
+    "github_repos": [
+      "whitechain-labs/whitechain-bootstrap"
+    ]
+  },
+  "hackenproof:whitechain-bridge": {
+    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain Bridge",
+    "url": "https://hackenproof.com/programs/whitechain-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/whitechain-labs/bridge-contracts"
+    ],
+    "github_repos": [
+      "whitechain-labs/bridge-contracts"
+    ]
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -48380,26 +48486,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:uacatsdivision-web": {
-    "hash": "9e510c8658b46fd2477afc2a112921b06e07b270",
-    "bounty": false,
-    "source": false,
-    "name": "UACatsDivision Web",
-    "url": "https://hackenproof.com/programs/uacatsdivision-web",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ult-trade-stocks-and-crypto": {
     "hash": "2bd368e88393c9d7af0beac43ffde4bfedc1ba3d",
     "bounty": true,
@@ -48746,26 +48832,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:whitebit": {
-    "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT",
-    "url": "https://hackenproof.com/programs/whitebit",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:whitebit-blog": {
     "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
     "bounty": true,
@@ -48785,72 +48851,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:whitechain": {
-    "hash": "ad28f0018e9bbbac712b1527acefb879eef7246d",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain",
-    "url": "https://hackenproof.com/programs/whitechain",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
-        "description": "l1-addresses.json"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "Smart Contracts",
-        "description": "https://docs.whitechain.io/build/bridge/bridge-assets#contract-addresses"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
-      "smart contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/whitechain-bootstrap"
-    ]
-  },
-  "hackenproof:whitechain-bridge": {
-    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Bridge",
-    "url": "https://hackenproof.com/programs/whitechain-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/bridge-contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/bridge-contracts"
-    ]
   },
   "hackenproof:whitechain-network": {
     "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
@@ -57605,7 +57605,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-03T13:36:04.251436+00:00",
+    "updated_at": "2026-11-03T14:06:14.971897+00:00",
     "total": 1924,
     "qualifying": 423,
     "external": 363,
