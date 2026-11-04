@@ -945,7 +945,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 68,
     "bounty_days": 34.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3388,7 +3388,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 86,
     "bounty_days": 242.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8653,7 +8653,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 307,
-    "resp_eff": 91,
+    "resp_eff": 90,
     "bounty_days": 246.0,
     "sc_targets": [
       {
@@ -42024,6 +42024,127 @@
     ],
     "github_repos": []
   },
+  "hackenproof:polkalokr-1": {
+    "hash": "6532def9ec49e41a9793544ecd01237764168922",
+    "bounty": true,
+    "source": false,
+    "name": "Polkalokr",
+    "url": "https://hackenproof.com/programs/polkalokr-1",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:rhea-finance-smart-contracts": {
+    "hash": "1b9eaba7b12a2561cca29da8cec9512ff2e095b3",
+    "bounty": true,
+    "source": true,
+    "name": "Rhea Finance Smart Contracts (ex-Ref Finance)",
+    "url": "https://hackenproof.com/programs/rhea-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/rhea-contracts",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/rnear-contract",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/boost-farm",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/burrowland",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/hackenproof-public/boost-farm",
+      "https://github.com/hackenproof-public/burrowland",
+      "https://github.com/hackenproof-public/rhea-contracts",
+      "https://github.com/hackenproof-public/rnear-contract"
+    ],
+    "github_repos": [
+      "hackenproof-public/boost-farm",
+      "hackenproof-public/burrowland",
+      "hackenproof-public/rhea-contracts",
+      "hackenproof-public/rnear-contract"
+    ]
+  },
+  "hackenproof:superearn-web-and-smart-contracts": {
+    "hash": "5bf449fe90a7f05bd91b093dad4fb096c51ee0e7",
+    "bounty": false,
+    "source": true,
+    "name": "SuperEarn Web & Smart Contracts",
+    "url": "https://hackenproof.com/programs/superearn-web-and-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/superearn-io/superearn-core-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/superearn-io/superearn-core-public"
+    ],
+    "github_repos": [
+      "superearn-io/superearn-core-public"
+    ]
+  },
+  "hackenproof:whitemarket-web": {
+    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteMarket Web",
+    "url": "https://hackenproof.com/programs/whitemarket-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -42132,46 +42253,6 @@
       "deltaprimelabs/deltaprime-contracts",
       "deltaprimelabs/deltaprime-contracts-v2"
     ]
-  },
-  "hackenproof:dexx-web-and-mobile": {
-    "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
-    "bounty": true,
-    "source": false,
-    "name": "DEXX Web & Mobile",
-    "url": "https://hackenproof.com/programs/dexx-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:flow-web": {
-    "hash": "b7cb05c569fdd66866cfd3942977eb95053f3861",
-    "bounty": true,
-    "source": false,
-    "name": "Flow Web",
-    "url": "https://hackenproof.com/programs/flow-web",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 4000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:detee-hackers-challenge": {
     "hash": "14afa53aa2c51bd35a55a55ae55296c5f77834ae",
@@ -42328,6 +42409,26 @@
     "github_repos": [
       "dexe-network/dexe-protocol"
     ]
+  },
+  "hackenproof:dexx-web-and-mobile": {
+    "hash": "d113ee5f313ddb6891d330e4ecd02ff7885f0930",
+    "bounty": true,
+    "source": false,
+    "name": "DEXX Web & Mobile",
+    "url": "https://hackenproof.com/programs/dexx-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
@@ -43157,6 +43258,26 @@
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:flow-web": {
+    "hash": "b7cb05c569fdd66866cfd3942977eb95053f3861",
+    "bounty": true,
+    "source": false,
+    "name": "Flow Web",
+    "url": "https://hackenproof.com/programs/flow-web",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 4000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -46075,26 +46196,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:polkalokr-1": {
-    "hash": "6532def9ec49e41a9793544ecd01237764168922",
-    "bounty": true,
-    "source": false,
-    "name": "Polkalokr",
-    "url": "https://hackenproof.com/programs/polkalokr-1",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:poloniex-web-and-api": {
     "hash": "b3ab8ac8c0a78e06829217ad2f78bf449effde08",
     "bounty": true,
@@ -46261,57 +46362,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:rhea-finance-smart-contracts": {
-    "hash": "1b9eaba7b12a2561cca29da8cec9512ff2e095b3",
-    "bounty": true,
-    "source": true,
-    "name": "Rhea Finance Smart Contracts (ex-Ref Finance)",
-    "url": "https://hackenproof.com/programs/rhea-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/rhea-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/rnear-contract",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/boost-farm",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/burrowland",
-        "description": ""
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/boost-farm",
-      "https://github.com/hackenproof-public/burrowland",
-      "https://github.com/hackenproof-public/rhea-contracts",
-      "https://github.com/hackenproof-public/rnear-contract"
-    ],
-    "github_repos": [
-      "hackenproof-public/boost-farm",
-      "hackenproof-public/burrowland",
-      "hackenproof-public/rhea-contracts",
-      "hackenproof-public/rnear-contract"
-    ]
   },
   "hackenproof:risc-zero-blockchain-verifiers": {
     "hash": "92ad8f7ef86b81b496fa75b1e3dd8ea5d544a97a",
@@ -47399,36 +47449,6 @@
       "mystenlabs/hashi",
       "mystenlabs/seal",
       "mystenlabs/sui"
-    ]
-  },
-  "hackenproof:superearn-web-and-smart-contracts": {
-    "hash": "5bf449fe90a7f05bd91b093dad4fb096c51ee0e7",
-    "bounty": false,
-    "source": true,
-    "name": "SuperEarn Web & Smart Contracts",
-    "url": "https://hackenproof.com/programs/superearn-web-and-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 30000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/superearn-io/superearn-core-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/superearn-io/superearn-core-public"
-    ],
-    "github_repos": [
-      "superearn-io/superearn-core-public"
     ]
   },
   "hackenproof:superposition-finance-web": {
@@ -48907,26 +48927,6 @@
     "github_repos": [
       "whitebit-exchange/wbt"
     ]
-  },
-  "hackenproof:whitemarket-web": {
-    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteMarket Web",
-    "url": "https://hackenproof.com/programs/whitemarket-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:xt": {
     "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
@@ -57535,7 +57535,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-04T23:26:40.889421+00:00",
+    "updated_at": "2026-11-04T23:51:01.356226+00:00",
     "total": 1917,
     "qualifying": 424,
     "external": 357,
