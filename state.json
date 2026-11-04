@@ -3342,7 +3342,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": 35.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42101,6 +42101,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:ternoa-smart-contracts": {
+    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Smart Contracts",
+    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/chainbridge-solidity"
+    ]
+  },
   "hackenproof:dex-trade": {
     "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
     "bounty": true,
@@ -42779,6 +42809,36 @@
       "exzonetwork/exzo-network-web3.js"
     ]
   },
+  "hackenproof:exzo-network-wallet": {
+    "hash": "08e2f0d590ec2e56ed6622abe6f941f213fd8566",
+    "bounty": true,
+    "source": true,
+    "name": "Exzo Network Wallet",
+    "url": "https://hackenproof.com/programs/exzo-network-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/ExzoNetwork/web-wallet",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/exzonetwork/web-wallet"
+    ],
+    "github_repos": [
+      "exzonetwork/web-wallet"
+    ]
+  },
   "hackenproof:exzo-network-web-and-api": {
     "hash": "75ca97c01d66baeb0ba5a3976ca4e7ca93e0646c",
     "bounty": true,
@@ -42835,172 +42895,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:gmgn-web-and-mobile": {
-    "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
-    "bounty": true,
-    "source": false,
-    "name": "GMGN Web & Mobile",
-    "url": "https://hackenproof.com/programs/gmgn-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:serenity-shield-testnet-campain": {
-    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
-    "bounty": false,
-    "source": false,
-    "name": "Serenity Shield Testnet Campain",
-    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:sg-forge-smart-contracts": {
-    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
-    "bounty": false,
-    "source": true,
-    "name": "SG Forge Smart Contracts",
-    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/castframework/smartcoin",
-        "description": "Smartcontract EURCV/USDCV on Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-        "description": "Smartcontract EURCV on Solana"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/castframework/smartcoin",
-      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
-    ],
-    "github_repos": [
-      "castframework/smartcoin"
-    ]
-  },
-  "hackenproof:shapeshift": {
-    "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
-    "bounty": true,
-    "source": false,
-    "name": "ShapeShift",
-    "url": "https://hackenproof.com/programs/shapeshift",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:shido-network-protocol": {
-    "hash": "3525f9bad1bce8230d13844bae11db0b75f93f83",
-    "bounty": true,
-    "source": false,
-    "name": "Shido Network - Protocol",
-    "url": "https://hackenproof.com/programs/shido-network-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:stbl-web": {
-    "hash": "59ac672ef65bb6aa27a5312237e1548ce6847d3c",
-    "bounty": true,
-    "source": false,
-    "name": "STBL Web",
-    "url": "https://hackenproof.com/programs/stbl-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:exzo-network-wallet": {
-    "hash": "08e2f0d590ec2e56ed6622abe6f941f213fd8566",
-    "bounty": true,
-    "source": true,
-    "name": "Exzo Network Wallet",
-    "url": "https://hackenproof.com/programs/exzo-network-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/ExzoNetwork/web-wallet",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/exzonetwork/web-wallet"
-    ],
-    "github_repos": [
-      "exzonetwork/web-wallet"
-    ]
   },
   "hackenproof:filmio-smart-contracts": {
     "hash": "8db4d3538c6e29023a680ab9527df288bef51ff4",
@@ -43413,6 +43307,26 @@
     "github_repos": [
       "gear-tech/gear"
     ]
+  },
+  "hackenproof:gmgn-web-and-mobile": {
+    "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
+    "bounty": true,
+    "source": false,
+    "name": "GMGN Web & Mobile",
+    "url": "https://hackenproof.com/programs/gmgn-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:goby-wallet": {
     "hash": "587be866d0c5a619c3edbde1797e33a2d8b0ef7c",
@@ -46547,6 +46461,102 @@
       "scallop-io/sui-lending-protocol"
     ]
   },
+  "hackenproof:serenity-shield-testnet-campain": {
+    "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
+    "bounty": false,
+    "source": false,
+    "name": "Serenity Shield Testnet Campain",
+    "url": "https://hackenproof.com/programs/serenity-shield-testnet-campain",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:sg-forge-smart-contracts": {
+    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
+    "bounty": false,
+    "source": true,
+    "name": "SG Forge Smart Contracts",
+    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/castframework/smartcoin",
+        "description": "Smartcontract EURCV/USDCV on Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
+        "description": "Smartcontract EURCV on Solana"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/castframework/smartcoin",
+      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
+    ],
+    "github_repos": [
+      "castframework/smartcoin"
+    ]
+  },
+  "hackenproof:shapeshift": {
+    "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
+    "bounty": true,
+    "source": false,
+    "name": "ShapeShift",
+    "url": "https://hackenproof.com/programs/shapeshift",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:shido-network-protocol": {
+    "hash": "3525f9bad1bce8230d13844bae11db0b75f93f83",
+    "bounty": true,
+    "source": false,
+    "name": "Shido Network - Protocol",
+    "url": "https://hackenproof.com/programs/shido-network-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:slex-web": {
     "hash": "cd8dc06cf38e2385ecf966d0db7967253a4d7b7f",
     "bounty": true,
@@ -47203,6 +47213,26 @@
     ],
     "github_repos": []
   },
+  "hackenproof:stbl-web": {
+    "hash": "59ac672ef65bb6aa27a5312237e1548ce6847d3c",
+    "bounty": true,
+    "source": false,
+    "name": "STBL Web",
+    "url": "https://hackenproof.com/programs/stbl-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:ston-dot-fi-dex-smart-contracts-v2": {
     "hash": "4e4d2ac112cb9a972a90635646a2b6ae9e6ba20d",
     "bounty": true,
@@ -47664,36 +47694,6 @@
     ],
     "github_repos": [
       "capsule-corp-ternoa/ternoa-enclaves"
-    ]
-  },
-  "hackenproof:ternoa-smart-contracts": {
-    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Smart Contracts",
-    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/chainbridge-solidity"
     ]
   },
   "hackenproof:ternoa-wallet": {
@@ -57483,7 +57483,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-04T01:08:41.753873+00:00",
+    "updated_at": "2026-11-04T01:38:38.377670+00:00",
     "total": 1917,
     "qualifying": 423,
     "external": 357,
