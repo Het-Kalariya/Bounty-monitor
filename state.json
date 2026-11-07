@@ -2208,7 +2208,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4772,7 +4772,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 87,
     "bounty_days": 3.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4810,7 +4810,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19741,
-    "resp_eff": 68,
+    "resp_eff": 69,
     "bounty_days": 588.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5331,7 +5331,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5512,7 +5512,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 87,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -49504,24 +49504,54 @@
     "github_repos": []
   },
   "cantina:32e64f2e-5f01-4a0b-bbe3-76f32c17b99f": {
-    "hash": "efe0e4c4057bb4c452c8655e99874b3a7b2d4028",
-    "bounty": true,
-    "source": false,
+    "hash": "cc6ec7e370789d3dc60ff55f36c9005fc2d7ed7e",
+    "bounty": false,
+    "source": true,
     "name": "USDai",
     "url": "https://cantina.xyz/bounties/32e64f2e-5f01-4a0b-bbe3-76f32c17b99f",
     "platform": "cantina",
     "bounty_min": 0,
-    "bounty_max": 100000,
+    "bounty_max": 0,
     "bounty_ccy": "USDC",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/usdai-foundation/usdai-contracts/tree/devel",
+        "description": "cantina scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/usdai-foundation/usdai-governance-contracts/tree/main",
+        "description": "cantina scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/usdai-foundation/usdai-loan-router-contracts/tree/devel",
+        "description": "cantina scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "cantina:32e64f2e",
+        "description": "Smart Contracts; USDai contracts; Loan Router; Governance"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "cantina:32e64f2e",
+      "https://github.com/usdai-foundation/usdai-contracts/tree/devel",
+      "https://github.com/usdai-foundation/usdai-governance-contracts/tree/main",
+      "https://github.com/usdai-foundation/usdai-loan-router-contracts/tree/devel"
+    ],
+    "github_repos": [
+      "usdai-foundation/usdai-contracts",
+      "usdai-foundation/usdai-governance-contracts",
+      "usdai-foundation/usdai-loan-router-contracts"
+    ]
   },
   "cantina:35a5f0a1-2ffd-432c-8f3b-77d169add8c3": {
     "hash": "9b0f0e65005ce3c5b86bd5c19d25f84295f5f084",
@@ -57451,7 +57481,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-07T06:38:12.310108+00:00",
+    "updated_at": "2026-11-07T07:35:06.636510+00:00",
     "total": 1914,
     "qualifying": 422,
     "external": 355,
@@ -57886,14 +57916,12 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": false,
-      "sherlock": false,
+      "cantina": true,
+      "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy",
-      "cantina",
-      "sherlock"
+      "federacy"
     ]
   }
 }
