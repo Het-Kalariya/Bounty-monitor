@@ -8783,35 +8783,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackerone:brave": {
-    "hash": "a2f354a6ca0291c4ce7e9e674bab11bc723f80a1",
-    "bounty": true,
-    "source": true,
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "platform": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "bounty_note": "amount not in upstream feed",
-    "domains": 417,
-    "resp_eff": 99,
-    "bounty_days": 85.0,
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
-        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/brave/*, https://github.com/brave-intl/*"
-    ],
-    "github_repos": [
-      "brave/*, https:"
-    ]
-  },
   "hackerone:portswigger": {
     "hash": "22096e343eeaf5065d5071cac777b886ac6e3279",
     "bounty": true,
@@ -17255,25 +17226,6 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "intigriti:heretechnologies": {
-    "hash": "765ceb86cfa79bbb6d6e22c7fef09c9df92e41c1",
-    "bounty": true,
-    "source": false,
-    "name": "Here Technologies",
-    "url": "https://www.intigriti.com/programs/heretechnologies/heretechnologies/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 2000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -52409,6 +52361,22 @@
     "bounty_days": null,
     "sc_targets": []
   },
+  "chaos:brave-software": {
+    "hash": "",
+    "bounty": true,
+    "source": false,
+    "name": "Brave Software",
+    "url": "https://hackerone.com/brave",
+    "platform": "chaos",
+    "origin": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "domains": 417,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": []
+  },
   "chaos:btse": {
     "hash": "",
     "bounty": true,
@@ -57483,10 +57451,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-07T00:33:47.414832+00:00",
-    "total": 1915,
-    "qualifying": 423,
-    "external": 354,
+    "updated_at": "2026-11-07T01:04:13.010156+00:00",
+    "total": 1914,
+    "qualifying": 422,
+    "external": 355,
     "blockchain": 360,
     "feed_ids": {
       "immunefi": [],
