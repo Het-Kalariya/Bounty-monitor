@@ -41926,6 +41926,105 @@
     ],
     "github_repos": []
   },
+  "hackenproof:fitburn-smart-contracts": {
+    "hash": "8438d2a0e2172ac6aa78a23ee470d36b2628f418",
+    "bounty": true,
+    "source": true,
+    "name": "FitBurn Smart Contracts",
+    "url": "https://hackenproof.com/programs/fitburn-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts/tree/main/contracts/ThirdParty",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts/blob/main/contracts/MOCKS",
+        "description": ""
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/fitburnengineering/fitburn.contracts",
+      "https://github.com/fitburnengineering/fitburn.contracts/blob/main/contracts/mocks",
+      "https://github.com/fitburnengineering/fitburn.contracts/tree/main/contracts/thirdparty"
+    ],
+    "github_repos": [
+      "fitburnengineering/fitburn.contracts"
+    ]
+  },
+  "hackenproof:logos": {
+    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
+    "bounty": false,
+    "source": true,
+    "name": "Logos",
+    "url": "https://hackenproof.com/programs/logos",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
+        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/examples.waku.org",
+        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku",
+        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
+        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/logos-messaging/examples.waku.org",
+      "https://github.com/logos-messaging/go-waku",
+      "https://github.com/logos-messaging/go-waku/tree/master/examples",
+      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+      "https://github.com/logos-messaging/logos-delivery-js"
+    ],
+    "github_repos": [
+      "logos-messaging/examples.waku.org",
+      "logos-messaging/go-waku",
+      "logos-messaging/logos-delivery-go",
+      "logos-messaging/logos-delivery-js"
+    ]
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -42109,66 +42208,6 @@
     ],
     "github_repos": [
       "dexalot/contracts"
-    ]
-  },
-  "hackenproof:enkrypt-wallet": {
-    "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
-    "bounty": true,
-    "source": true,
-    "name": "Enkrypt Wallet",
-    "url": "https://hackenproof.com/programs/enkrypt-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 350,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/enkryptcom/enKrypt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/enkryptcom/enkrypt"
-    ],
-    "github_repos": [
-      "enkryptcom/enkrypt"
-    ]
-  },
-  "hackenproof:momentum-smart-contracts": {
-    "hash": "393c0be45a2d43e02427ce9f8d7a3ea5af661327",
-    "bounty": true,
-    "source": true,
-    "name": "Momentum Smart Contracts",
-    "url": "https://hackenproof.com/programs/momentum-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 200000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/mmt-v3-core",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/mmt-v3-core"
-    ],
-    "github_repos": [
-      "hackenproof-public/mmt-v3-core"
     ]
   },
   "hackenproof:dexalot-smart-contracts-archived": {
@@ -42601,6 +42640,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:enkrypt-wallet": {
+    "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
+    "bounty": true,
+    "source": true,
+    "name": "Enkrypt Wallet",
+    "url": "https://hackenproof.com/programs/enkrypt-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 350,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/enkryptcom/enKrypt",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/enkryptcom/enkrypt"
+    ],
+    "github_repos": [
+      "enkryptcom/enkrypt"
+    ]
+  },
   "hackenproof:envelop-smart-contracts": {
     "hash": "0e970255c180b4be8d32327e3429df10b0d3bb44",
     "bounty": true,
@@ -42899,48 +42968,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:fitburn-smart-contracts": {
-    "hash": "8438d2a0e2172ac6aa78a23ee470d36b2628f418",
-    "bounty": true,
-    "source": true,
-    "name": "FitBurn Smart Contracts",
-    "url": "https://hackenproof.com/programs/fitburn-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts/tree/main/contracts/ThirdParty",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/FitburnEngineering/Fitburn.Contracts/blob/main/contracts/MOCKS",
-        "description": ""
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/fitburnengineering/fitburn.contracts",
-      "https://github.com/fitburnengineering/fitburn.contracts/blob/main/contracts/mocks",
-      "https://github.com/fitburnengineering/fitburn.contracts/tree/main/contracts/thirdparty"
-    ],
-    "github_repos": [
-      "fitburnengineering/fitburn.contracts"
-    ]
   },
   "hackenproof:fitburn-web-and-mobile": {
     "hash": "7912eb27291e7a8a18b28805d50dfdf78f03836f",
@@ -44729,63 +44756,6 @@
       "localtradersteam/lct_contract"
     ]
   },
-  "hackenproof:logos": {
-    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
-    "bounty": false,
-    "source": true,
-    "name": "Logos",
-    "url": "https://hackenproof.com/programs/logos",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
-        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/examples.waku.org",
-        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku",
-        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
-        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/logos-messaging/examples.waku.org",
-      "https://github.com/logos-messaging/go-waku",
-      "https://github.com/logos-messaging/go-waku/tree/master/examples",
-      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-      "https://github.com/logos-messaging/logos-delivery-js"
-    ],
-    "github_repos": [
-      "logos-messaging/examples.waku.org",
-      "logos-messaging/go-waku",
-      "logos-messaging/logos-delivery-go",
-      "logos-messaging/logos-delivery-js"
-    ]
-  },
   "hackenproof:meest-poshta-mobile": {
     "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
     "bounty": false,
@@ -44840,6 +44810,36 @@
     ],
     "github_repos": [
       "kilnfi/staking-contracts"
+    ]
+  },
+  "hackenproof:momentum-smart-contracts": {
+    "hash": "393c0be45a2d43e02427ce9f8d7a3ea5af661327",
+    "bounty": true,
+    "source": true,
+    "name": "Momentum Smart Contracts",
+    "url": "https://hackenproof.com/programs/momentum-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/mmt-v3-core",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/hackenproof-public/mmt-v3-core"
+    ],
+    "github_repos": [
+      "hackenproof-public/mmt-v3-core"
     ]
   },
   "hackenproof:monday-trade-web": {
@@ -57467,7 +57467,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-08T17:50:40.244036+00:00",
+    "updated_at": "2026-11-08T18:20:54.600759+00:00",
     "total": 1914,
     "qualifying": 422,
     "external": 357,
