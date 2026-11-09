@@ -6452,5 +6452,41 @@
       "github.com/stytchauth/samlshield"
     ],
     "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-09T16:56:49.570184+00:00",
+    "event": "new_program",
+    "platform": "intigriti",
+    "handle": "cmcom",
+    "name": "CM.com",
+    "url": "https://www.intigriti.com/programs/cmcom/cmcom/detail",
+    "sc_targets": [
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/cmdotcom",
+        "description": "Our public code repositories are being used by our customers. In scope for this domain is issues with the public code we host (vulnerabilities, libraries that have known security concerns, keys accidentally pushed to the public GitHub etc.). \n**Testing the GitHub itself is out-of-scope**, they have their own bug bounty program if you are interested :)"
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-09T16:56:51.232760+00:00",
+    "event": "new_program",
+    "platform": "intigriti",
+    "handle": "upholdcom",
+    "name": "Uphold",
+    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
+    "sc_targets": [
+      {
+        "asset_type": "wildcard",
+        "identifier": "github.com/uphold/*",
+        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
   }
 ]
