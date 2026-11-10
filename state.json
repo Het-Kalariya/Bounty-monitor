@@ -1808,7 +1808,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 41,
+    "resp_eff": 42,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2715,7 +2715,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 91,
     "bounty_days": 303.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3982,7 +3982,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 60,
+    "resp_eff": 63,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -42300,6 +42300,265 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:linen-api-and-mobile": {
+    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
+    "bounty": true,
+    "source": false,
+    "name": "Linen API & Mobile",
+    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:local-traders-smart-contracts": {
+    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
+    "bounty": true,
+    "source": true,
+    "name": "Local Traders Smart Contracts",
+    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
+        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/localtradersteam/LCT_Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
+      "https://github.com/localtradersteam/lct_contract"
+    ],
+    "github_repos": [
+      "localtradersteam/lct_contract"
+    ]
+  },
+  "hackenproof:logos": {
+    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
+    "bounty": false,
+    "source": true,
+    "name": "Logos",
+    "url": "https://hackenproof.com/programs/logos",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
+        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/examples.waku.org",
+        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku",
+        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
+        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/logos-messaging/examples.waku.org",
+      "https://github.com/logos-messaging/go-waku",
+      "https://github.com/logos-messaging/go-waku/tree/master/examples",
+      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
+      "https://github.com/logos-messaging/logos-delivery-js"
+    ],
+    "github_repos": [
+      "logos-messaging/examples.waku.org",
+      "logos-messaging/go-waku",
+      "logos-messaging/logos-delivery-go",
+      "logos-messaging/logos-delivery-js"
+    ]
+  },
+  "hackenproof:meest-poshta-mobile": {
+    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
+    "bounty": false,
+    "source": false,
+    "name": "Meest Poshta Mobile",
+    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:metamask-validator-staking-smart-contracts": {
+    "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
+    "bounty": true,
+    "source": true,
+    "name": "MetaMask Validator Staking Smart Contracts",
+    "url": "https://hackenproof.com/programs/metamask-validator-staking-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 700000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
+        "description": "\r\n* Contract is deployed without proxy. More info can be found in documentation [here.](https://hackenproof.com/redirect?url=https://docs.kiln.fi/kiln-on-chain-v1/6eQVsjjelOTzT9cvtG8s/introduction/overview)\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d",
+        "description": "commit hash of the deploy without proxy"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
+      "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d"
+    ],
+    "github_repos": [
+      "kilnfi/staking-contracts"
+    ]
+  },
+  "hackenproof:synfutures-dapp": {
+    "hash": "5dac2417e9a0f546c1a37dd7aec0687cbf3d82af",
+    "bounty": true,
+    "source": false,
+    "name": "SynFutures dApp",
+    "url": "https://hackenproof.com/programs/synfutures-dapp",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tapbit-web-and-mobile": {
+    "hash": "ac4935f224cbc540c6544f17c0d4d3ddb94bc914",
+    "bounty": true,
+    "source": false,
+    "name": "Tapbit Web & Mobile",
+    "url": "https://hackenproof.com/programs/tapbit-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:telegram-apps-center": {
+    "hash": "ce78dc2e146e4a4e361d9618db1c0cf64f3a439b",
+    "bounty": true,
+    "source": false,
+    "name": "Telegram Apps Center",
+    "url": "https://hackenproof.com/programs/telegram-apps-center",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ternoa-enclaves": {
+    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Enclaves",
+    "url": "https://hackenproof.com/programs/ternoa-enclaves",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/ternoa-enclaves"
+    ]
+  },
   "hackenproof:dexe-protocol-smart-contracts": {
     "hash": "226205cd147cd2a75538291739cab08e436ff172",
     "bounty": true,
@@ -44780,175 +45039,6 @@
     ],
     "github_repos": [
       "linear-protocol/linear"
-    ]
-  },
-  "hackenproof:linen-api-and-mobile": {
-    "hash": "d3a807ec56a0b9f57a7c1e2a4639379ef0697388",
-    "bounty": true,
-    "source": false,
-    "name": "Linen API & Mobile",
-    "url": "https://hackenproof.com/programs/linen-api-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:local-traders-smart-contracts": {
-    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
-    "bounty": true,
-    "source": true,
-    "name": "Local Traders Smart Contracts",
-    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
-        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/localtradersteam/LCT_Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
-      "https://github.com/localtradersteam/lct_contract"
-    ],
-    "github_repos": [
-      "localtradersteam/lct_contract"
-    ]
-  },
-  "hackenproof:logos": {
-    "hash": "fff9b2d35abe3ad81893267496758ce628d211ca",
-    "bounty": false,
-    "source": true,
-    "name": "Logos",
-    "url": "https://hackenproof.com/programs/logos",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-js",
-        "description": "TypeScript/JavaScript implementation of the Waku v2 protocol (RFC 10). This is the primary SDK used by dApp developers to integrate Waku messaging into web and Node.js applications. Vulnerabilities here may impact any application built on top of it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/examples.waku.org",
-        "description": "Example applications demonstrating js-waku usage, including end-to-end encrypted Ethereum private messaging, Waku Store retrieval, and React/JS integrations. Vulnerabilities found here will be considered lower severity than the core library. Note: this repository was archived in April 2026 and is no longer actively maintained."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku",
-        "description": "Go implementation of the Waku v2 protocol. Used both as a standalone node and as an embeddable library. Supports Relay, Lightpush, Filter, and Store protocols, as well as C FFI bindings for mobile (Android/iOS) integration. Vulnerabilities here may affect node operators and any application embedding go-waku as a library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/go-waku/tree/master/examples",
-        "description": "Example applications demonstrating go-waku usage as a library, including basic messaging, a chat client using relay/lightpush/filter/store, and C FFI bindings. Vulnerabilities found here will be considered lower severity than the core library."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-        "description": "The Rate Limiting Nullifier (RLN) protocol implementation is currently out of scope. RLN is a zero-knowledge based spam prevention mechanism used within Waku. This component is undergoing active research and development and will be considered for inclusion in the programme at a later stage."
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/logos-messaging/examples.waku.org",
-      "https://github.com/logos-messaging/go-waku",
-      "https://github.com/logos-messaging/go-waku/tree/master/examples",
-      "https://github.com/logos-messaging/logos-delivery-go/tree/master/waku/v2/protocol/rln",
-      "https://github.com/logos-messaging/logos-delivery-js"
-    ],
-    "github_repos": [
-      "logos-messaging/examples.waku.org",
-      "logos-messaging/go-waku",
-      "logos-messaging/logos-delivery-go",
-      "logos-messaging/logos-delivery-js"
-    ]
-  },
-  "hackenproof:meest-poshta-mobile": {
-    "hash": "387a06c225d1b80e085e6fef01022c38a07910d9",
-    "bounty": false,
-    "source": false,
-    "name": "Meest Poshta Mobile",
-    "url": "https://hackenproof.com/programs/meest-poshta-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:metamask-validator-staking-smart-contracts": {
-    "hash": "38dc3e94f490a5ff1c5452db6812f7aaa30253f5",
-    "bounty": true,
-    "source": true,
-    "name": "MetaMask Validator Staking Smart Contracts",
-    "url": "https://hackenproof.com/programs/metamask-validator-staking-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 700000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
-        "description": "\r\n* Contract is deployed without proxy. More info can be found in documentation [here.](https://hackenproof.com/redirect?url=https://docs.kiln.fi/kiln-on-chain-v1/6eQVsjjelOTzT9cvtG8s/introduction/overview)\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d",
-        "description": "commit hash of the deploy without proxy"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://etherscan.io/address/0xdc71affc862fceb6ad32be58e098423a7727bebd#code",
-      "https://github.com/kilnfi/staking-contracts/tree/f33eb8dc37fab40217dbe1e69853ca3fcd884a2d"
-    ],
-    "github_repos": [
-      "kilnfi/staking-contracts"
     ]
   },
   "hackenproof:momentum-smart-contracts": {
@@ -47668,96 +47758,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:synfutures-dapp": {
-    "hash": "5dac2417e9a0f546c1a37dd7aec0687cbf3d82af",
-    "bounty": true,
-    "source": false,
-    "name": "SynFutures dApp",
-    "url": "https://hackenproof.com/programs/synfutures-dapp",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tapbit-web-and-mobile": {
-    "hash": "ac4935f224cbc540c6544f17c0d4d3ddb94bc914",
-    "bounty": true,
-    "source": false,
-    "name": "Tapbit Web & Mobile",
-    "url": "https://hackenproof.com/programs/tapbit-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:telegram-apps-center": {
-    "hash": "ce78dc2e146e4a4e361d9618db1c0cf64f3a439b",
-    "bounty": true,
-    "source": false,
-    "name": "Telegram Apps Center",
-    "url": "https://hackenproof.com/programs/telegram-apps-center",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ternoa-enclaves": {
-    "hash": "39275c38e6ab4b8574bea147345c295390d826ef",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Enclaves",
-    "url": "https://hackenproof.com/programs/ternoa-enclaves",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/ternoa-enclaves",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/ternoa-enclaves"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/ternoa-enclaves"
-    ]
   },
   "hackenproof:ternoa-smart-contracts": {
     "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
@@ -57462,7 +57462,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-10T08:00:49.657096+00:00",
+    "updated_at": "2026-11-10T08:31:22.179559+00:00",
     "total": 1909,
     "qualifying": 425,
     "external": 348,
