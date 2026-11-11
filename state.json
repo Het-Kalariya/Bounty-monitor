@@ -1741,7 +1741,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 82,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3668,7 +3668,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 55,
+    "resp_eff": 50,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4086,7 +4086,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 90,
     "bounty_days": 13.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4637,7 +4637,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5348,7 +5348,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8072,7 +8072,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1669,
-    "resp_eff": 69,
+    "resp_eff": 70,
     "bounty_days": 113.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8592,7 +8592,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 91,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -10241,7 +10241,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 277,
-    "resp_eff": 63,
+    "resp_eff": 62,
     "bounty_days": 820.0,
     "sc_targets": [
       {
@@ -18958,6 +18958,35 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "intigriti:upholdcom": {
+    "hash": "03ace0a5e28ade3cc55f28957c922a352e5e3319",
+    "bounty": true,
+    "source": true,
+    "name": "Uphold",
+    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
+    "platform": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 6000,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 98,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "wildcard",
+        "identifier": "github.com/uphold/*",
+        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "github.com/uphold/*"
+    ],
+    "github_repos": [
+      "uphold/*"
+    ]
+  },
   "intigriti:vrtnv": {
     "hash": "aaae61181f7f9141f4eb6aa68340af405b3cd444",
     "bounty": true,
@@ -20340,6 +20369,107 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "immunefi:axelarnetwork": {
+    "hash": "e9734765a681a1d7496022db22d3048b44d8619d",
+    "bounty": true,
+    "source": true,
+    "name": "Axelar Network",
+    "url": "https://immunefi.com/bug-bounty/axelarnetwork",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x4F4495243837681061C4743b74B3eEdf548D56A5",
+        "description": "Ethereum Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0x5029C0EFf6C34351a0CEc334542cDb22c7928f78",
+        "description": "Avalanche Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://snowtrace.io/address/0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC",
+        "description": "Avalanche axlUSDC token address"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x304acf330bbE08d1e512eefaa92F6a57871fD895",
+        "description": "Binance Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x4268B8F0B87b6Eae5d897996E6b845ddbD99Adf3",
+        "description": "Binance  axlUSDC token address"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://aurorascan.dev/address/0x304acf330bbE08d1e512eefaa92F6a57871fD895#code",
+        "description": "Aurora Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://ftmscan.com/address/0x5e3C572A97D898Fe359a2Cea31c7D46ba5386895",
+        "description": "Fantom Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://ftmscan.com/address/0x1B6382DBDEa11d97f24495C9A90b7c88469134a4",
+        "description": "Fantom axlUSDC token address"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x6f015F16De9fC8791b234eF68D486d2bF203FBA8",
+        "description": "Polygon Axelar Gateway contract address Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x750e4C4984a9e0f12978eA6742Bc1c5D248f40ed",
+        "description": "Polygon axlUSDC token address"
+      }
+    ],
+    "sc_total": 22,
+    "sc_ids": [
+      "https://aurorascan.dev/address/0x304acf330bbe08d1e512eefaa92f6a57871fd895#code",
+      "https://bscscan.com/address/0x304acf330bbe08d1e512eefaa92f6a57871fd895",
+      "https://bscscan.com/address/0x4268b8f0b87b6eae5d897996e6b845ddbd99adf3",
+      "https://etherscan.io/address/0x4f4495243837681061c4743b74b3eedf548d56a5",
+      "https://etherscan.io/address/0x83a93500d23fbc3e82b410ad07a6a9f7a0670d66",
+      "https://etherscan.io/address/0xb5fb4be02232b1bba4dc8f81dc24c26980de9e3c",
+      "https://etherscan.io/token/0x467719ad09025fcc6cf6f8311755809d45a5e5f3",
+      "https://ftmscan.com/address/0x1b6382dbdea11d97f24495c9a90b7c88469134a4",
+      "https://ftmscan.com/address/0x5e3c572a97d898fe359a2cea31c7d46ba5386895",
+      "https://github.com/axelarnetwork/axelar-cgp-solidity",
+      "https://github.com/axelarnetwork/axelar-core",
+      "https://github.com/axelarnetwork/axelar-gmp-sdk-solidity",
+      "https://github.com/axelarnetwork/axelar-gmp-sdk-solidity/blob/main/contracts/governance/interchaingovernance.sol",
+      "https://github.com/axelarnetwork/interchain-token-service",
+      "https://github.com/axelarnetwork/tofn/blob/main/src/ecdsa/mod.rs",
+      "https://github.com/axelarnetwork/tofnd",
+      "https://moonbeam.moonscan.io/address/0x4f4495243837681061c4743b74b3eedf548d56a5#code",
+      "https://moonbeam.moonscan.io/address/0xca01a1d0993565291051daff390892518acfad3a",
+      "https://polygonscan.com/address/0x6f015f16de9fc8791b234ef68d486d2bf203fba8",
+      "https://polygonscan.com/address/0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed",
+      "https://snowtrace.io/address/0x5029c0eff6c34351a0cec334542cdb22c7928f78",
+      "https://snowtrace.io/address/0xfab550568c688d5d8a52c7d794cb93edc26ec0ec"
+    ],
+    "github_repos": [
+      "axelarnetwork/axelar-cgp-solidity",
+      "axelarnetwork/axelar-core",
+      "axelarnetwork/axelar-gmp-sdk-solidity",
+      "axelarnetwork/interchain-token-service",
+      "axelarnetwork/tofn",
+      "axelarnetwork/tofnd"
+    ]
   },
   "immunefi:1inch-web": {
     "hash": "911cc6d9efc14ed56baa93782893ec7a89cf070a",
@@ -30792,107 +30922,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "immunefi:axelarnetwork": {
-    "hash": "e9734765a681a1d7496022db22d3048b44d8619d",
-    "bounty": true,
-    "source": true,
-    "name": "Axelar Network",
-    "url": "https://immunefi.com/bug-bounty/axelarnetwork",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x4F4495243837681061C4743b74B3eEdf548D56A5",
-        "description": "Ethereum Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0x5029C0EFf6C34351a0CEc334542cDb22c7928f78",
-        "description": "Avalanche Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://snowtrace.io/address/0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC",
-        "description": "Avalanche axlUSDC token address"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x304acf330bbE08d1e512eefaa92F6a57871fD895",
-        "description": "Binance Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x4268B8F0B87b6Eae5d897996E6b845ddbD99Adf3",
-        "description": "Binance  axlUSDC token address"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://aurorascan.dev/address/0x304acf330bbE08d1e512eefaa92F6a57871fD895#code",
-        "description": "Aurora Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://ftmscan.com/address/0x5e3C572A97D898Fe359a2Cea31c7D46ba5386895",
-        "description": "Fantom Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://ftmscan.com/address/0x1B6382DBDEa11d97f24495C9A90b7c88469134a4",
-        "description": "Fantom axlUSDC token address"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x6f015F16De9fC8791b234eF68D486d2bF203FBA8",
-        "description": "Polygon Axelar Gateway contract address Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x750e4C4984a9e0f12978eA6742Bc1c5D248f40ed",
-        "description": "Polygon axlUSDC token address"
-      }
-    ],
-    "sc_total": 22,
-    "sc_ids": [
-      "https://aurorascan.dev/address/0x304acf330bbe08d1e512eefaa92f6a57871fd895#code",
-      "https://bscscan.com/address/0x304acf330bbe08d1e512eefaa92f6a57871fd895",
-      "https://bscscan.com/address/0x4268b8f0b87b6eae5d897996e6b845ddbd99adf3",
-      "https://etherscan.io/address/0x4f4495243837681061c4743b74b3eedf548d56a5",
-      "https://etherscan.io/address/0x83a93500d23fbc3e82b410ad07a6a9f7a0670d66",
-      "https://etherscan.io/address/0xb5fb4be02232b1bba4dc8f81dc24c26980de9e3c",
-      "https://etherscan.io/token/0x467719ad09025fcc6cf6f8311755809d45a5e5f3",
-      "https://ftmscan.com/address/0x1b6382dbdea11d97f24495c9a90b7c88469134a4",
-      "https://ftmscan.com/address/0x5e3c572a97d898fe359a2cea31c7d46ba5386895",
-      "https://github.com/axelarnetwork/axelar-cgp-solidity",
-      "https://github.com/axelarnetwork/axelar-core",
-      "https://github.com/axelarnetwork/axelar-gmp-sdk-solidity",
-      "https://github.com/axelarnetwork/axelar-gmp-sdk-solidity/blob/main/contracts/governance/interchaingovernance.sol",
-      "https://github.com/axelarnetwork/interchain-token-service",
-      "https://github.com/axelarnetwork/tofn/blob/main/src/ecdsa/mod.rs",
-      "https://github.com/axelarnetwork/tofnd",
-      "https://moonbeam.moonscan.io/address/0x4f4495243837681061c4743b74b3eedf548d56a5#code",
-      "https://moonbeam.moonscan.io/address/0xca01a1d0993565291051daff390892518acfad3a",
-      "https://polygonscan.com/address/0x6f015f16de9fc8791b234ef68d486d2bf203fba8",
-      "https://polygonscan.com/address/0x750e4c4984a9e0f12978ea6742bc1c5d248f40ed",
-      "https://snowtrace.io/address/0x5029c0eff6c34351a0cec334542cdb22c7928f78",
-      "https://snowtrace.io/address/0xfab550568c688d5d8a52c7d794cb93edc26ec0ec"
-    ],
-    "github_repos": [
-      "axelarnetwork/axelar-cgp-solidity",
-      "axelarnetwork/axelar-core",
-      "axelarnetwork/axelar-gmp-sdk-solidity",
-      "axelarnetwork/interchain-token-service",
-      "axelarnetwork/tofn",
-      "axelarnetwork/tofnd"
-    ]
   },
   "immunefi:royco": {
     "hash": "a1f71bc66bc8d7c5034efde8719f73c0126b541e",
@@ -57227,22 +57256,6 @@
     "bounty_days": null,
     "sc_targets": []
   },
-  "chaos:uphold": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Uphold",
-    "url": "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
-    "platform": "chaos",
-    "origin": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 98,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
   "chaos:united-airlines": {
     "hash": "",
     "bounty": true,
@@ -57613,10 +57626,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-11T11:43:38.726988+00:00",
+    "updated_at": "2026-11-11T12:13:45.506949+00:00",
     "total": 1911,
-    "qualifying": 425,
-    "external": 345,
+    "qualifying": 426,
+    "external": 344,
     "blockchain": 360,
     "feed_ids": {
       "immunefi": [],
