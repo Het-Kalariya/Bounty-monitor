@@ -396,7 +396,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 78,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -434,7 +434,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -700,7 +700,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 4126,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": 89.0,
     "sc_targets": [
       {
@@ -1133,7 +1133,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 70,
     "bounty_days": 359.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1779,7 +1779,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 41,
+    "resp_eff": 42,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2827,7 +2827,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3018,7 +3018,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 73,
     "bounty_days": 560.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4048,7 +4048,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4124,7 +4124,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 50,
+    "resp_eff": 100,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4270,7 +4270,7 @@
     ]
   },
   "hackerone:hilton": {
-    "hash": "d7561f39588e5a368536ef241a09667a627b59fe",
+    "hash": "424cbdd76c36ade0b1ad54a2373636601d14920c",
     "bounty": true,
     "source": false,
     "name": "Hilton",
@@ -4998,7 +4998,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": 498.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7722,7 +7722,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 79,
     "bounty_days": 1146.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7900,7 +7900,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 117017,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 219.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8973,7 +8973,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 49,
-    "resp_eff": 81,
+    "resp_eff": 82,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -9002,7 +9002,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 3157,
-    "resp_eff": 93,
+    "resp_eff": 94,
     "bounty_days": 25.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42160,6 +42160,84 @@
     ],
     "github_repos": []
   },
+  "hackenproof:walrus-protocol": {
+    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
+    "bounty": false,
+    "source": true,
+    "name": "Walrus Protocol",
+    "url": "https://hackenproof.com/programs/walrus-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
+        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
+        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
+        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
+        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
+        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
+        "description": "Client SDK for blob upload, download, and on-chain interactions."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
+        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
+        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
+        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
+    ],
+    "github_repos": [
+      "mystenlabs/walrus"
+    ]
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -42288,63 +42366,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:hacken-web-and-apps": {
-    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
-    "bounty": false,
-    "source": false,
-    "name": "Hacken Web & Apps",
-    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:haedal-smart-contracts": {
-    "hash": "61ee3a8027f325c1b6b5f4971f8d7b1f43804a90",
-    "bounty": true,
-    "source": true,
-    "name": "Haedal Smart Contracts",
-    "url": "https://hackenproof.com/programs/haedal-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 5,
-    "bounty_max": 200000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/hasui-bug-bounty",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/hackenproof-public/hawal-bug-bounty",
-        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/hackenproof-public/hasui-bug-bounty",
-      "https://github.com/hackenproof-public/hawal-bug-bounty"
-    ],
-    "github_repos": [
-      "hackenproof-public/hasui-bug-bounty",
-      "hackenproof-public/hawal-bug-bounty"
-    ]
   },
   "hackenproof:dex-trade": {
     "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
@@ -43661,6 +43682,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:hacken-web-and-apps": {
+    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
+    "bounty": false,
+    "source": false,
+    "name": "Hacken Web & Apps",
+    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:hackenproof": {
     "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
     "bounty": true,
@@ -43680,6 +43721,43 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:haedal-smart-contracts": {
+    "hash": "61ee3a8027f325c1b6b5f4971f8d7b1f43804a90",
+    "bounty": true,
+    "source": true,
+    "name": "Haedal Smart Contracts",
+    "url": "https://hackenproof.com/programs/haedal-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 5,
+    "bounty_max": 200000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/hasui-bug-bounty",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/hackenproof-public/hawal-bug-bounty",
+        "description": "* Participation: Invite-only - https://discord.gg/g7u4afaYu7\r\n* KYC Required"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/hackenproof-public/hasui-bug-bounty",
+      "https://github.com/hackenproof-public/hawal-bug-bounty"
+    ],
+    "github_repos": [
+      "hackenproof-public/hasui-bug-bounty",
+      "hackenproof-public/hawal-bug-bounty"
+    ]
   },
   "hackenproof:hinkal-bug-bounty": {
     "hash": "e9bd696660688c89816108a07347d41add59d16a",
@@ -48810,84 +48888,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:walrus-protocol": {
-    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
-    "bounty": false,
-    "source": true,
-    "name": "Walrus Protocol",
-    "url": "https://hackenproof.com/programs/walrus-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
-        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
-        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
-        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
-        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
-        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
-        "description": "Client SDK for blob upload, download, and on-chain interactions."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
-        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
-        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
-        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
-    ],
-    "github_repos": [
-      "mystenlabs/walrus"
-    ]
-  },
   "hackenproof:weex-web-and-app": {
     "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
     "bounty": true,
@@ -51418,36 +51418,6 @@
       "pufferfinance/puffer-contracts"
     ]
   },
-  "sherlock:359": {
-    "hash": "ab888480728be3ebb7ccfb41efef4f02390bcb6f",
-    "bounty": true,
-    "source": true,
-    "name": "Kite AI",
-    "url": "https://audits.sherlock.xyz/bug-bounties/359",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/code-423n4/Kite-AI-bug-bounty",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/code-423n4/kite-ai-bug-bounty"
-    ],
-    "github_repos": [
-      "code-423n4/kite-ai-bug-bounty"
-    ]
-  },
   "sherlock:366": {
     "hash": "3402791f50ee30d70729fbaf782de65bcbb81f78",
     "bounty": true,
@@ -51985,6 +51955,36 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
+    ]
+  },
+  "sherlock:359": {
+    "hash": "ab888480728be3ebb7ccfb41efef4f02390bcb6f",
+    "bounty": true,
+    "source": true,
+    "name": "Kite AI",
+    "url": "https://audits.sherlock.xyz/bug-bounties/359",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/code-423n4/Kite-AI-bug-bounty",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/code-423n4/kite-ai-bug-bounty"
+    ],
+    "github_repos": [
+      "code-423n4/kite-ai-bug-bounty"
     ]
   },
   "chaos:1inch": {
@@ -57509,7 +57509,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-11T17:14:51.244534+00:00",
+    "updated_at": "2026-11-11T18:45:12.999156+00:00",
     "total": 1911,
     "qualifying": 424,
     "external": 345,
