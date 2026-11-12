@@ -643,7 +643,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 55,
+    "resp_eff": 58,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2827,7 +2827,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 86,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3199,7 +3199,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 95,
+    "resp_eff": 94,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6996,7 +6996,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 91,
+    "resp_eff": 86,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -8222,7 +8222,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 66,
+    "resp_eff": 65,
     "bounty_days": 592.0,
     "sc_targets": [
       {
@@ -42449,69 +42449,6 @@
       "dodoex/dodo-v3"
     ]
   },
-  "hackenproof:zoomex-web-and-mobile": {
-    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
-    "bounty": true,
-    "source": false,
-    "name": "Zoomex Web & Mobile",
-    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zynk-protocol": {
-    "hash": "438cba31a4a01a9a56fbc0aa2cb8b8aedf33885d",
-    "bounty": false,
-    "source": true,
-    "name": "Zynk Protocol",
-    "url": "https://hackenproof.com/programs/zynk-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
-        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Zynklabs/audit-reports",
-        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zynklabs/audit-reports",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
-    ],
-    "github_repos": [
-      "zynklabs/audit-reports",
-      "zynklabs/zynk-protocol-solana-programs.public"
-    ]
-  },
   "hackenproof:dodofeerouteproxy-smart-contract": {
     "hash": "f12d701eadb4bf7324e76146292d1a91853a1fcf",
     "bounty": true,
@@ -49409,6 +49346,69 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:zoomex-web-and-mobile": {
+    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
+    "bounty": true,
+    "source": false,
+    "name": "Zoomex Web & Mobile",
+    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zynk-protocol": {
+    "hash": "438cba31a4a01a9a56fbc0aa2cb8b8aedf33885d",
+    "bounty": false,
+    "source": true,
+    "name": "Zynk Protocol",
+    "url": "https://hackenproof.com/programs/zynk-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
+        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Zynklabs/audit-reports",
+        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zynklabs/audit-reports",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
+    ],
+    "github_repos": [
+      "zynklabs/audit-reports",
+      "zynklabs/zynk-protocol-solana-programs.public"
+    ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
     "hash": "19782609020423324cf26c0603eed0c32f1fe0ba",
@@ -57603,7 +57603,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-12T00:45:35.305261+00:00",
+    "updated_at": "2026-11-12T01:15:44.772785+00:00",
     "total": 1920,
     "qualifying": 423,
     "external": 357,
