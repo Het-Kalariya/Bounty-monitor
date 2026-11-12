@@ -624,7 +624,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 59,
+    "resp_eff": 60,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -962,7 +962,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2282,7 +2282,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 70,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -8222,7 +8222,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 9,
+    "resp_eff": 0,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9627,7 +9627,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 75,
     "bounty_days": 199.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -19241,7 +19241,7 @@
     "github_repos": []
   },
   "yeswehack:3ds-outscale": {
-    "hash": "de6a01ef95336e8409c5b96b571b470a099fc409",
+    "hash": "ecc68cc526b67b5ba3fa8a501035dd8f536aac5e",
     "bounty": true,
     "source": false,
     "name": "3DS OUTSCALE",
@@ -42381,72 +42381,6 @@
       "dexalot/contracts"
     ]
   },
-  "hackenproof:near-intents-sdk": {
-    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: SDK",
-    "url": "https://hackenproof.com/programs/near-intents-sdk",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/defuse-protocol/sdk-monorepo"
-    ],
-    "github_repos": [
-      "defuse-protocol/sdk-monorepo"
-    ]
-  },
-  "hackenproof:whitechain": {
-    "hash": "ad28f0018e9bbbac712b1527acefb879eef7246d",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain",
-    "url": "https://hackenproof.com/programs/whitechain",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
-        "description": "l1-addresses.json"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "Smart Contracts",
-        "description": "https://docs.whitechain.io/build/bridge/bridge-assets#contract-addresses"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
-      "smart contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/whitechain-bootstrap"
-    ]
-  },
   "hackenproof:dexalot-smart-contracts-archived": {
     "hash": "f78b362b6307a62758c601e413a3f4b246811329",
     "bounty": true,
@@ -45515,6 +45449,36 @@
       "near-one/btc-light-client-contract",
       "near-one/omni-bridge",
       "near/mpc"
+    ]
+  },
+  "hackenproof:near-intents-sdk": {
+    "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: SDK",
+    "url": "https://hackenproof.com/programs/near-intents-sdk",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/defuse-protocol/sdk-monorepo",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/defuse-protocol/sdk-monorepo"
+    ],
+    "github_repos": [
+      "defuse-protocol/sdk-monorepo"
     ]
   },
   "hackenproof:near-intents-smart-contracts": {
@@ -49019,6 +48983,42 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:whitechain": {
+    "hash": "ad28f0018e9bbbac712b1527acefb879eef7246d",
+    "bounty": true,
+    "source": true,
+    "name": "Whitechain",
+    "url": "https://hackenproof.com/programs/whitechain",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
+        "description": "l1-addresses.json"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "Smart Contracts",
+        "description": "https://docs.whitechain.io/build/bridge/bridge-assets#contract-addresses"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/whitechain-labs/whitechain-bootstrap/tree/main",
+      "smart contracts"
+    ],
+    "github_repos": [
+      "whitechain-labs/whitechain-bootstrap"
+    ]
   },
   "hackenproof:whitechain-bridge": {
     "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
@@ -57737,7 +57737,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-12T14:55:48.544861+00:00",
+    "updated_at": "2026-11-12T15:26:03.614160+00:00",
     "total": 1922,
     "qualifying": 423,
     "external": 357,
