@@ -1,266 +1,5 @@
 [
   {
-    "timestamp": "2026-09-14T01:32:35.316518+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "western-union",
-    "name": "Western Union",
-    "url": "https://bugcrowd.com/westernunion",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-14T01:32:36.812214+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "zoom",
-    "name": "Zoom",
-    "url": "https://explore.zoom.us/docs/ent/h1.html",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-14T14:16:23.182658+00:00",
-    "event": "new_program",
-    "platform": "hackerone",
-    "handle": "brave",
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
-        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-14T22:38:41.052553+00:00",
-    "event": "scope_updated",
-    "platform": "hackerone",
-    "handle": "circle-bbp",
-    "name": "Circle BBP",
-    "url": "https://hackerone.com/circle-bbp",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "http://github.com/circlefin/noble-cctp",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/circlefin/aptos-cctp",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/buidl-wallet-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/evm-cctp-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/evm-cpn-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/evm-gateway-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/evm-xreserve-contracts",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/circlefin/noble-fiattokenfactory",
-        "description": ""
-      }
-    ],
-    "added": [],
-    "removed": [
-      "https://github.com/circlefin/arc-node",
-      "https://github.com/circlefin/arc-remote-signer",
-      "https://github.com/circlefin/malachite"
-    ],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-16T00:32:49.521135+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "zendesk",
-    "name": "Zendesk",
-    "url": "https://hackerone.com/zendesk",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-16T05:23:44.780873+00:00",
-    "event": "new_program",
-    "platform": "hackerone",
-    "handle": "arc-bbp",
-    "name": "Arc BBP",
-    "url": "https://hackerone.com/arc-bbp",
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/circlefin/arc-node",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/circlefin/arc-remote-signer",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/circlefin/malachite",
-        "description": "The repository containing the source-code for Malachite.    Malachite is a Byzantine-fault tolerant (BFT) consensus engine implemented in Rust.\n \n==Partial scope only:==\nin scope is code/crates minus the starknet and test folders; everything outside code/crates is out of scope."
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-16T05:23:46.851641+00:00",
-    "event": "scope_updated",
-    "platform": "intigriti",
-    "handle": "cmcom",
-    "name": "CM.com",
-    "url": "https://www.intigriti.com/programs/cmcom/cmcom/detail",
-    "sc_targets": [
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/cmdotcom",
-        "description": "Our public code repositories are being used by our customers. In scope for this domain is issues with the public code we host (vulnerabilities, libraries that have known security concerns, keys accidentally pushed to the public GitHub etc.). \n**Testing the GitHub itself is out-of-scope**, they have their own bug bounty program if you are interested :)"
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-16T23:55:51.833914+00:00",
-    "event": "scope_updated",
-    "platform": "hackerone",
-    "handle": "mongodb",
-    "name": "MongoDB",
-    "url": "https://hackerone.com/mongodb",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "All Evergreen Assets (Excluding staging)",
-        "description": "https://github.com/evergreen-ci/evergreen"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "Jira Projects",
-        "description": "MongoDB is open-sourced and has publicly visible JIRA tickets. Only report information disclosure issues-- no technical bugs are accepted. Bounty may be varied. "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "MongoDB MCP Server",
-        "description": "https://github.com/mongodb-js/mongodb-mcp-server"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "MongoDB Owned GitHub Repositories",
-        "description": "Only github.com/mongodb is considered to be eligible for bounty. Other MongoDB owned repositories are in scope, but not eligible for bounty. \nhttps://github.com/mongodb/kingfisher is out of scope and not eligible for bounty.\n"
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-17T07:50:01.600562+00:00",
-    "event": "new_program",
-    "platform": "yeswehack",
-    "handle": "dovecot",
-    "name": "Dovecot",
-    "url": "https://yeswehack.com/programs/dovecot",
-    "sc_targets": [
-      {
-        "asset_type": "open-source",
-        "identifier": "Dovecot IMAP Server and Pigeonhole SIEVE (see \"Software packages\" and \"Source code\")",
-        "description": ""
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-17T12:49:01.676914+00:00",
-    "event": "new_program",
-    "platform": "intigriti",
-    "handle": "truelayer",
-    "name": "TrueLayer",
-    "url": "https://www.intigriti.com/programs/truelayer/truelayer/detail",
-    "sc_targets": [
-      {
-        "asset_type": "other",
-        "identifier": "C# SDK",
-        "description": "https://github.com/TrueLayer/truelayer-dotnet"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "Java SDK",
-        "description": "https://github.com/TrueLayer/truelayer-java"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "PHP SDK",
-        "description": "https://github.com/TrueLayer/truelayer-php"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "TrueLayer for Magento (Magento plugin)",
-        "description": "https://github.com/TrueLayer/magento2"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "TrueLayer for WooCommerce (WordPress plugin)",
-        "description": "https://wordpress.org/plugins/truelayer-for-woocommerce/ is our WordPress plugin allowing you to use TrueLayer as a checkout option in your WooCommerce store. The source code is also [available on GitHub](https://github.com/TrueLayer/truelayer-woocommerce)."
-      },
-      {
-        "asset_type": "other",
-        "identifier": "truelayer-signing",
-        "description": "https://github.com/TrueLayer/truelayer-signing is our open source library for generating signed requests for calling TrueLayer APIs. Many languages are supported including Rust, C#, NodeJS, Go, Java and PHP."
-      },
-      {
-        "asset_type": "other",
-        "identifier": "iOS SDK",
-        "description": "https://github.com/TrueLayer/TrueLayer-iOS-SDK"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "React Native SDK",
-        "description": "https://github.com/TrueLayer/truelayer-react-native-sdk"
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-17T15:20:06.067672+00:00",
     "event": "scope_updated",
     "platform": "yeswehack",
@@ -7289,5 +7028,125 @@
       "infomaniak/desktop-kmeet",
       "infomaniak/ios-infomaniak-meet"
     ]
+  },
+  {
+    "timestamp": "2026-11-14T00:55:51.439496+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "ubiquiti",
+    "name": "Ubiquiti",
+    "url": "https://hackerone.com/ui",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:55:52.916086+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "tts-bug-bounty",
+    "name": "TTS Bug Bounty",
+    "url": "https://hackerone.com/tts",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:55:54.371869+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "vechain",
+    "name": "VeChain",
+    "url": "https://hackenproof.com/vechain",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:55:55.839400+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "vertex-protocol",
+    "name": "Vertex Protocol",
+    "url": "https://hackenproof.com/vertex-protocol",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:55:57.319803+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "vfs",
+    "name": "Vfs",
+    "url": "https://yeswehack.com/programs/vfs-global-bug-bounty-program",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:55:58.780650+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "vanilla",
+    "name": "Vanilla",
+    "url": "https://hackerone.com/vanilla",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:56:00.250425+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "valve-software",
+    "name": "Valve Software",
+    "url": "https://hackerone.com/valve",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:56:01.745715+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "vivo",
+    "name": "Vivo",
+    "url": "https://security.vivo.com.cn/#/home",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:56:03.221962+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "visma-public",
+    "name": "Visma Public",
+    "url": "https://app.intigriti.com/researcher/programs/visma/visma/detail",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-14T00:56:04.701889+00:00",
+    "event": "new_external",
+    "platform": "chaos",
+    "handle": "walla!-communication",
+    "name": "Walla! Communication",
+    "url": "https://www.walla.co.il/.well-know/security.txt",
+    "sc_targets": [],
+    "added": [],
+    "removed": [],
+    "github_repos": []
   }
 ]
