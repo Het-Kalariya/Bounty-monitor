@@ -5747,7 +5747,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 822,
-    "resp_eff": 73,
+    "resp_eff": 74,
     "bounty_days": 294.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20216,6 +20216,56 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:metric": {
+    "hash": "6327916d6caa672def62756057664e2e2093e029",
+    "bounty": true,
+    "source": true,
+    "name": "Metric",
+    "url": "https://immunefi.com/bug-bounty/metric",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Metricxyz/periphery-contracts",
+        "description": "Periphery Contracts that facilitate the protocol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Metricxyz/pool-contracts",
+        "description": "Pool Contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.metric.xyz",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Metricxyz/oracle-contracts",
+        "description": "Oracle and Price Provider Contracts"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/metricxyz/oracle-contracts",
+      "https://github.com/metricxyz/periphery-contracts",
+      "https://github.com/metricxyz/pool-contracts",
+      "https://www.metric.xyz"
+    ],
+    "github_repos": [
+      "metricxyz/oracle-contracts",
+      "metricxyz/periphery-contracts",
+      "metricxyz/pool-contracts"
+    ]
+  },
   "immunefi:sparklend": {
     "hash": "aa1f2ad1da5818765817e2d3cf40cd60504c8435",
     "bounty": true,
@@ -23878,56 +23928,6 @@
       "sky-ecosystem/usds",
       "sky-ecosystem/value-registry",
       "sky-ecosystem/vote-delegate"
-    ]
-  },
-  "immunefi:metric": {
-    "hash": "6327916d6caa672def62756057664e2e2093e029",
-    "bounty": true,
-    "source": true,
-    "name": "Metric",
-    "url": "https://immunefi.com/bug-bounty/metric",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Metricxyz/periphery-contracts",
-        "description": "Periphery Contracts that facilitate the protocol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Metricxyz/pool-contracts",
-        "description": "Pool Contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://www.metric.xyz",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Metricxyz/oracle-contracts",
-        "description": "Oracle and Price Provider Contracts"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/metricxyz/oracle-contracts",
-      "https://github.com/metricxyz/periphery-contracts",
-      "https://github.com/metricxyz/pool-contracts",
-      "https://www.metric.xyz"
-    ],
-    "github_repos": [
-      "metricxyz/oracle-contracts",
-      "metricxyz/periphery-contracts",
-      "metricxyz/pool-contracts"
     ]
   },
   "immunefi:zest-protocol-v2": {
@@ -57429,7 +57429,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-15T05:53:06.719546+00:00",
+    "updated_at": "2026-11-15T06:23:53.958858+00:00",
     "total": 1912,
     "qualifying": 424,
     "external": 352,
