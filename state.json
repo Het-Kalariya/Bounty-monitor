@@ -1475,7 +1475,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 73,
+    "resp_eff": 72,
     "bounty_days": 176.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1570,7 +1570,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 67,
     "bounty_days": 369.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2282,7 +2282,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 71,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -3782,7 +3782,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 59,
+    "resp_eff": 62,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4281,7 +4281,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 15.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4656,7 +4656,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 77,
+    "resp_eff": 78,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -48958,6 +48958,139 @@
       "whitechain-labs/whitechain-bootstrap"
     ]
   },
+  "hackenproof:zetachain-blockchain-software": {
+    "hash": "eda4166bd06d08c6f6bfdaa2468ca325caa30cb6",
+    "bounty": false,
+    "source": true,
+    "name": "ZetaChain Blockchain Software",
+    "url": "https://hackenproof.com/programs/zetachain-blockchain-software",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeta-chain/node",
+        "description": "This code is for ZetaChain\u2019s L1 blockchain node (`zetacored`) and it's cross-chain validator client (`zetaclientd`). \r\n\r\n"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeta-chain/go-tss",
+        "description": "Threshold signature orchestration library used by [zeta-chain/node](https://github.com/zeta-chain/node)\r\n\r\nOnly functionality that is ultimately used by [zeta-chain/node](https://github.com/zeta-chain/node) is in scope. Your main goal as an attacker is to pivot from one key share to full control of the private key."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeta-chain/tss-lib",
+        "description": "Threshold signature orchestration library used by [zeta-chain/node](https://github.com/zeta-chain/node).\r\n\r\nOnly functionality that is ultimately used by [zeta-chain/node](https://github.com/zeta-chain/node) is in scope. Your main goal as an attacker is to pivot from one key share to full control of the private key."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/node/tree/develop/e2e/contracts",
+        "description": "These are the smart contracts tailored towards e2e tests in the development process. "
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeta-chain/node/tree/develop/precompiles",
+        "description": ""
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/zeta-chain/go-tss",
+      "https://github.com/zeta-chain/node",
+      "https://github.com/zeta-chain/node/tree/develop/e2e/contracts",
+      "https://github.com/zeta-chain/node/tree/develop/precompiles",
+      "https://github.com/zeta-chain/tss-lib"
+    ],
+    "github_repos": [
+      "zeta-chain/go-tss",
+      "zeta-chain/node",
+      "zeta-chain/tss-lib"
+    ]
+  },
+  "hackenproof:zetachain-smart-contracts": {
+    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
+    "bounty": false,
+    "source": true,
+    "name": "ZetaChain Smart Contracts",
+    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
+        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts",
+        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/toolkit",
+        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
+        "description": "Solana interface contract for zetachain\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
+        "description": "SUI interface contract for zetachain\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
+        "description": "TON interface contract for zetachain"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/zeta-chain/protocol-contracts",
+      "https://github.com/zeta-chain/protocol-contracts-evm",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
+      "https://github.com/zeta-chain/protocol-contracts-solana",
+      "https://github.com/zeta-chain/protocol-contracts-sui",
+      "https://github.com/zeta-chain/protocol-contracts-ton",
+      "https://github.com/zeta-chain/toolkit"
+    ],
+    "github_repos": [
+      "zeta-chain/protocol-contracts",
+      "zeta-chain/protocol-contracts-evm",
+      "zeta-chain/protocol-contracts-solana",
+      "zeta-chain/protocol-contracts-sui",
+      "zeta-chain/protocol-contracts-ton",
+      "zeta-chain/toolkit"
+    ]
+  },
   "hackenproof:whitechain-bridge": {
     "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
     "bounty": true,
@@ -49188,139 +49321,6 @@
       "https://explorer.hiro.so/txid/sp3ycqzywqr0ca6tt35301b28dv9d926vbzbbjwr7.dao-traits?chain=mainnet"
     ],
     "github_repos": []
-  },
-  "hackenproof:zetachain-blockchain-software": {
-    "hash": "eda4166bd06d08c6f6bfdaa2468ca325caa30cb6",
-    "bounty": false,
-    "source": true,
-    "name": "ZetaChain Blockchain Software",
-    "url": "https://hackenproof.com/programs/zetachain-blockchain-software",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeta-chain/node",
-        "description": "This code is for ZetaChain\u2019s L1 blockchain node (`zetacored`) and it's cross-chain validator client (`zetaclientd`). \r\n\r\n"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeta-chain/go-tss",
-        "description": "Threshold signature orchestration library used by [zeta-chain/node](https://github.com/zeta-chain/node)\r\n\r\nOnly functionality that is ultimately used by [zeta-chain/node](https://github.com/zeta-chain/node) is in scope. Your main goal as an attacker is to pivot from one key share to full control of the private key."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeta-chain/tss-lib",
-        "description": "Threshold signature orchestration library used by [zeta-chain/node](https://github.com/zeta-chain/node).\r\n\r\nOnly functionality that is ultimately used by [zeta-chain/node](https://github.com/zeta-chain/node) is in scope. Your main goal as an attacker is to pivot from one key share to full control of the private key."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/node/tree/develop/e2e/contracts",
-        "description": "These are the smart contracts tailored towards e2e tests in the development process. "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeta-chain/node/tree/develop/precompiles",
-        "description": ""
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/zeta-chain/go-tss",
-      "https://github.com/zeta-chain/node",
-      "https://github.com/zeta-chain/node/tree/develop/e2e/contracts",
-      "https://github.com/zeta-chain/node/tree/develop/precompiles",
-      "https://github.com/zeta-chain/tss-lib"
-    ],
-    "github_repos": [
-      "zeta-chain/go-tss",
-      "zeta-chain/node",
-      "zeta-chain/tss-lib"
-    ]
-  },
-  "hackenproof:zetachain-smart-contracts": {
-    "hash": "8af411f1427a404112d8a06a0a666f4fa8bb1e1c",
-    "bounty": false,
-    "source": true,
-    "name": "ZetaChain Smart Contracts",
-    "url": "https://hackenproof.com/programs/zetachain-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm",
-        "description": "These smart contracts are deployed on external chains and work with the node software to support ZetaChain's cross-chain functionality.\r\n\r\nContracts in the contacts`/*/legacy/*` path are out of scope for this program as they are no longer used. Example: `contracts/evm/legacy/*`"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts",
-        "description": "These smart contracts are deprecated and are no longer part of the bug bounty program. "
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/toolkit",
-        "description": "Helper scripts and tools for interacting with ZetaChain and deploying Smart Contracts. Rewards for findings in this repo are capped at $5000"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-solana",
-        "description": "Solana interface contract for zetachain\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-sui",
-        "description": "SUI interface contract for zetachain\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-ton",
-        "description": "TON interface contract for zetachain"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/zeta-chain/protocol-contracts",
-      "https://github.com/zeta-chain/protocol-contracts-evm",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/evm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-evm/tree/develop/contracts/zevm/legacy",
-      "https://github.com/zeta-chain/protocol-contracts-solana",
-      "https://github.com/zeta-chain/protocol-contracts-sui",
-      "https://github.com/zeta-chain/protocol-contracts-ton",
-      "https://github.com/zeta-chain/toolkit"
-    ],
-    "github_repos": [
-      "zeta-chain/protocol-contracts",
-      "zeta-chain/protocol-contracts-evm",
-      "zeta-chain/protocol-contracts-solana",
-      "zeta-chain/protocol-contracts-sui",
-      "zeta-chain/protocol-contracts-ton",
-      "zeta-chain/toolkit"
-    ]
   },
   "hackenproof:zetachain-web-apps": {
     "hash": "f6598105a4d9d093abc089aacd9969fbc31f1d91",
@@ -57595,7 +57595,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-15T17:54:56.575797+00:00",
+    "updated_at": "2026-11-15T18:25:05.127502+00:00",
     "total": 1912,
     "qualifying": 423,
     "external": 352,
