@@ -3237,7 +3237,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 75,
     "bounty_days": 2468.0,
     "sc_targets": [
       {
@@ -8117,7 +8117,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1188,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 456.0,
     "sc_targets": [
       {
@@ -20216,6 +20216,54 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:plether": {
+    "hash": "cd3a1b3d58a45be4a7f26068af7fcbccbabd3c69",
+    "bounty": true,
+    "source": true,
+    "name": "Audit Competition | Plether",
+    "url": "https://immunefi.com/bug-bounty/plether",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 80000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/MarginClearinghouse.sol",
+        "description": "MarginClearinghouse.sol - Holds trader USDG - 1,343 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/HousePool.sol",
+        "description": "HousePool.sol - Holds active LP USDG - 1,427 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/TrancheVault.sol",
+        "description": "TrancheVault.sol - Handles pending LP deposits and funded withdrawals. Deployed as two instances, one per tranche; both are in scope - 1,657 nSLOC"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src",
+        "description": "All other contracts, libraries, router contracts and interfaces in packages/perps/src, except the six view-only contracts listed as out of scope below - about 17,000 nSLOC"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/housepool.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/marginclearinghouse.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/tranchevault.sol",
+      "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src"
+    ],
+    "github_repos": [
+      "immunefi-team/audit-comp-plether"
+    ]
+  },
   "immunefi:metric": {
     "hash": "6327916d6caa672def62756057664e2e2093e029",
     "bounty": true,
@@ -26323,54 +26371,6 @@
     ],
     "github_repos": [
       "alchemix-finance/v3"
-    ]
-  },
-  "immunefi:plether": {
-    "hash": "cd3a1b3d58a45be4a7f26068af7fcbccbabd3c69",
-    "bounty": true,
-    "source": true,
-    "name": "Audit Competition | Plether",
-    "url": "https://immunefi.com/bug-bounty/plether",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 80000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/MarginClearinghouse.sol",
-        "description": "MarginClearinghouse.sol - Holds trader USDG - 1,343 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/HousePool.sol",
-        "description": "HousePool.sol - Holds active LP USDG - 1,427 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/TrancheVault.sol",
-        "description": "TrancheVault.sol - Handles pending LP deposits and funded withdrawals. Deployed as two instances, one per tranche; both are in scope - 1,657 nSLOC"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src",
-        "description": "All other contracts, libraries, router contracts and interfaces in packages/perps/src, except the six view-only contracts listed as out of scope below - about 17,000 nSLOC"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/housepool.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/marginclearinghouse.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/blob/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src/tranchevault.sol",
-      "https://github.com/immunefi-team/audit-comp-plether/tree/a82d4fefb02768e5b3bddcc97dee371eee24fea8/packages/perps/src"
-    ],
-    "github_repos": [
-      "immunefi-team/audit-comp-plether"
     ]
   },
   "immunefi:beanstalk": {
@@ -46099,6 +46099,36 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:risc-zero-zkvm": {
+    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
+    "bounty": false,
+    "source": true,
+    "name": "RISC Zero zkVM",
+    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
+    "platform": "hackenproof",
+    "bounty_min": 250,
+    "bounty_max": 150000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/risc0/risc0/tree/main/risc0"
+    ],
+    "github_repos": [
+      "risc0/risc0"
+    ]
+  },
   "hackenproof:raiffeisen-web-and-mobile": {
     "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
     "bounty": true,
@@ -46285,36 +46315,6 @@
     ],
     "github_repos": [
       "risc0/risc0-ethereum"
-    ]
-  },
-  "hackenproof:risc-zero-zkvm": {
-    "hash": "3debcf20f3c74c47949f520712fe5901e604ae43",
-    "bounty": false,
-    "source": true,
-    "name": "RISC Zero zkVM",
-    "url": "https://hackenproof.com/programs/risc-zero-zkvm",
-    "platform": "hackenproof",
-    "bounty_min": 250,
-    "bounty_max": 150000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/risc0/risc0/tree/main/risc0",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/risc0/risc0/tree/main/risc0"
-    ],
-    "github_repos": [
-      "risc0/risc0"
     ]
   },
   "hackenproof:router-smart-contract": {
@@ -57429,7 +57429,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-15T06:23:53.958858+00:00",
+    "updated_at": "2026-11-15T06:48:57.323014+00:00",
     "total": 1912,
     "qualifying": 424,
     "external": 352,
