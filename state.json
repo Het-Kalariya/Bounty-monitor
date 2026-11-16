@@ -518,7 +518,7 @@
     "github_repos": []
   },
   "hackerone:essity": {
-    "hash": "28c67e7e1299ed3756497221308a046bc1e25de4",
+    "hash": "96199be0e8a99ebc2e84d6b82809e20d25b85b72",
     "bounty": false,
     "source": false,
     "name": "Essity",
@@ -1122,7 +1122,7 @@
     "github_repos": []
   },
   "hackerone:meesho_bbp": {
-    "hash": "dfd158e6a6b4e9806ed6d4fef44bc561380dbcbf",
+    "hash": "a07d28b8481056a6d68d7027a5821fadc05e01d3",
     "bounty": true,
     "source": false,
     "name": "Meesho",
@@ -1779,7 +1779,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 42,
+    "resp_eff": 43,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -1898,7 +1898,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 54,
+    "resp_eff": 53,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2225,7 +2225,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 70,
+    "resp_eff": 71,
     "bounty_days": 114.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5842,7 +5842,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 81,
     "bounty_days": 207.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6165,7 +6165,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 10273,
-    "resp_eff": 79,
+    "resp_eff": 78,
     "bounty_days": 129.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9765,7 +9765,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 611,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": 351.0,
     "sc_targets": [
       {
@@ -15047,7 +15047,7 @@
     "github_repos": []
   },
   "bugcrowd:SimpliSafe Managed Bug Bounty Engagement": {
-    "hash": "662858f48e10f2b73794232f05cfc7738f4245dc",
+    "hash": "733afbcadbba99b74aaf1486497b9a8cafe53ede",
     "bounty": true,
     "source": false,
     "name": "SimpliSafe Managed Bug Bounty Engagement",
@@ -20244,6 +20244,101 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:livepeer": {
+    "hash": "c4ea50a161d62915c06e18a2edfed11837344754",
+    "bounty": true,
+    "source": true,
+    "name": "Livepeer",
+    "url": "https://immunefi.com/bug-bounty/livepeer",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 40000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xD9dEd6f9959176F0A04dcf88a0d2306178A736a6#code",
+        "description": "Governor"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xD8E8328501E9645d16Cf49539efC04f734606ee4#code",
+        "description": "Controller"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x289ba1701C2F088cf0faf8B3705246331cB8A839#code",
+        "description": "LivepeerToken"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xc20DE37170B45774e6CD3d2304017fc962f27252",
+        "description": "Minter"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x35Bcf3c30594191d53231E4FF333E8A770453e40#code",
+        "description": "Bonding Manager (Proxy)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xa8bB618B1520E284046F3dFc448851A1Ff26e41B#code",
+        "description": "TicketBroker (Proxy)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xdd6f56DcC28D3F5f27084381fE8Df634985cc39f#code",
+        "description": "RoundsManager (Proxy)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xC92d3A360b8f9e083bA64DE15d95Cf8180897431#code",
+        "description": "ServiceRegistry (Proxy)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xC45f6918F7Bcac7aBc8fe05302b3cDF39776cdeb#code",
+        "description": "SortedDoublyLL (Library)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x8bb50806D60c492c0004DAD5D9627DAA2d9732E6#code",
+        "description": "PollCreator"
+      }
+    ],
+    "sc_total": 23,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x0b9c254837e72ebe9fe04960c43b69782e68169a",
+      "https://arbiscan.io/address/0x10736fface687658f88a46d042631d182c7757f7#code",
+      "https://arbiscan.io/address/0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085#code",
+      "https://arbiscan.io/address/0x289ba1701c2f088cf0faf8b3705246331cb8a839#code",
+      "https://arbiscan.io/address/0x35bcf3c30594191d53231e4ff333e8a770453e40#code",
+      "https://arbiscan.io/address/0x6d2457a4ad276000a615295f7a80f79e48ccd318#code",
+      "https://arbiscan.io/address/0x8bb50806d60c492c0004dad5d9627daa2d9732e6#code",
+      "https://arbiscan.io/address/0xa8bb618b1520e284046f3dfc448851a1ff26e41b#code",
+      "https://arbiscan.io/address/0xc20de37170b45774e6cd3d2304017fc962f27252",
+      "https://arbiscan.io/address/0xc45f6918f7bcac7abc8fe05302b3cdf39776cdeb#code",
+      "https://arbiscan.io/address/0xc92d3a360b8f9e083ba64de15d95cf8180897431#code",
+      "https://arbiscan.io/address/0xcfe4e2879b786c3aa075813f0e364bb5accb6aa0",
+      "https://arbiscan.io/address/0xd78b6bd09cd28a83cfb21afa0da95c685a6bb0b1#code",
+      "https://arbiscan.io/address/0xd8e8328501e9645d16cf49539efc04f734606ee4#code",
+      "https://arbiscan.io/address/0xd9ded6f9959176f0a04dcf88a0d2306178a736a6#code",
+      "https://arbiscan.io/address/0xdd6f56dcc28d3f5f27084381fe8df634985cc39f#code",
+      "https://arbiscan.io/address/0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
+      "https://arbiscan.io/address/0xfdb06109032ad3671a8f14f5f2e78f4b9e81b567#code",
+      "https://etherscan.io/address/0x1d24838b35a9c138ac157a852e19e948ad6323d7#code",
+      "https://etherscan.io/address/0x2a69191b43c9db47c927bd7287f9c93838d07759#code",
+      "https://etherscan.io/address/0x6142f1c8bbf02e6a6bd074e8d564c9a5420a0676#code",
+      "https://etherscan.io/address/0x6a23f4940bd5ba117da261f98aae51a8bffa210a#code",
+      "https://etherscan.io/address/0x8dddb96cf36ac8860f1de5c7c4698fd499fab405#code"
+    ],
+    "github_repos": []
+  },
   "immunefi:staderforeth": {
     "hash": "4c09c0ea33aad822a094ff7a330932b817ce7104",
     "bounty": true,
@@ -22501,101 +22596,6 @@
       "https://etherscan.io/address/0xf03a919a59f8381be220511ecf788b15fb039e4c",
       "https://etherscan.io/address/0xfcc5c47be19d06bf83eb04298b026f81069ff65b#code",
       "https://yearn.fi/vaults/1/0x696d02db93291651ed510704c9b286841d506987"
-    ],
-    "github_repos": []
-  },
-  "immunefi:livepeer": {
-    "hash": "c4ea50a161d62915c06e18a2edfed11837344754",
-    "bounty": true,
-    "source": true,
-    "name": "Livepeer",
-    "url": "https://immunefi.com/bug-bounty/livepeer",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 40000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xD9dEd6f9959176F0A04dcf88a0d2306178A736a6#code",
-        "description": "Governor"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xD8E8328501E9645d16Cf49539efC04f734606ee4#code",
-        "description": "Controller"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x289ba1701C2F088cf0faf8B3705246331cB8A839#code",
-        "description": "LivepeerToken"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xc20DE37170B45774e6CD3d2304017fc962f27252",
-        "description": "Minter"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x35Bcf3c30594191d53231E4FF333E8A770453e40#code",
-        "description": "Bonding Manager (Proxy)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xa8bB618B1520E284046F3dFc448851A1Ff26e41B#code",
-        "description": "TicketBroker (Proxy)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xdd6f56DcC28D3F5f27084381fE8Df634985cc39f#code",
-        "description": "RoundsManager (Proxy)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xC92d3A360b8f9e083bA64DE15d95Cf8180897431#code",
-        "description": "ServiceRegistry (Proxy)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xC45f6918F7Bcac7aBc8fe05302b3cDF39776cdeb#code",
-        "description": "SortedDoublyLL (Library)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x8bb50806D60c492c0004DAD5D9627DAA2d9732E6#code",
-        "description": "PollCreator"
-      }
-    ],
-    "sc_total": 23,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x0b9c254837e72ebe9fe04960c43b69782e68169a",
-      "https://arbiscan.io/address/0x10736fface687658f88a46d042631d182c7757f7#code",
-      "https://arbiscan.io/address/0x148d5b6b4df9530c7c76a810bd1cdf69ec4c2085#code",
-      "https://arbiscan.io/address/0x289ba1701c2f088cf0faf8b3705246331cb8a839#code",
-      "https://arbiscan.io/address/0x35bcf3c30594191d53231e4ff333e8a770453e40#code",
-      "https://arbiscan.io/address/0x6d2457a4ad276000a615295f7a80f79e48ccd318#code",
-      "https://arbiscan.io/address/0x8bb50806d60c492c0004dad5d9627daa2d9732e6#code",
-      "https://arbiscan.io/address/0xa8bb618b1520e284046f3dfc448851a1ff26e41b#code",
-      "https://arbiscan.io/address/0xc20de37170b45774e6cd3d2304017fc962f27252",
-      "https://arbiscan.io/address/0xc45f6918f7bcac7abc8fe05302b3cdf39776cdeb#code",
-      "https://arbiscan.io/address/0xc92d3a360b8f9e083ba64de15d95cf8180897431#code",
-      "https://arbiscan.io/address/0xcfe4e2879b786c3aa075813f0e364bb5accb6aa0",
-      "https://arbiscan.io/address/0xd78b6bd09cd28a83cfb21afa0da95c685a6bb0b1#code",
-      "https://arbiscan.io/address/0xd8e8328501e9645d16cf49539efc04f734606ee4#code",
-      "https://arbiscan.io/address/0xd9ded6f9959176f0a04dcf88a0d2306178a736a6#code",
-      "https://arbiscan.io/address/0xdd6f56dcc28d3f5f27084381fe8df634985cc39f#code",
-      "https://arbiscan.io/address/0xf82c1ff415f1fcf582554fdba790e27019c8e8c4",
-      "https://arbiscan.io/address/0xfdb06109032ad3671a8f14f5f2e78f4b9e81b567#code",
-      "https://etherscan.io/address/0x1d24838b35a9c138ac157a852e19e948ad6323d7#code",
-      "https://etherscan.io/address/0x2a69191b43c9db47c927bd7287f9c93838d07759#code",
-      "https://etherscan.io/address/0x6142f1c8bbf02e6a6bd074e8d564c9a5420a0676#code",
-      "https://etherscan.io/address/0x6a23f4940bd5ba117da261f98aae51a8bffa210a#code",
-      "https://etherscan.io/address/0x8dddb96cf36ac8860f1de5c7c4698fd499fab405#code"
     ],
     "github_repos": []
   },
@@ -57587,7 +57587,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-16T14:49:11.308738+00:00",
+    "updated_at": "2026-11-16T15:19:34.249516+00:00",
     "total": 1911,
     "qualifying": 423,
     "external": 348,
@@ -58023,12 +58023,13 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": true,
+      "cantina": false,
       "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy"
+      "federacy",
+      "cantina"
     ]
   }
 }
