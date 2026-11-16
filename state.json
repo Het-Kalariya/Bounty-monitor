@@ -211,7 +211,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 87,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2225,7 +2225,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 72,
     "bounty_days": 114.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6260,7 +6260,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": 475.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8445,7 +8445,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 71,
     "bounty_days": 1465.0,
     "sc_targets": [
       {
@@ -8637,7 +8637,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1624,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": 1244.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8843,6 +8843,35 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackerone:brave": {
+    "hash": "a2f354a6ca0291c4ce7e9e674bab11bc723f80a1",
+    "bounty": true,
+    "source": true,
+    "name": "Brave Software",
+    "url": "https://hackerone.com/brave",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "amount not in upstream feed",
+    "domains": 417,
+    "resp_eff": 99,
+    "bounty_days": 91.0,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
+        "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/brave/*, https://github.com/brave-intl/*"
+    ],
+    "github_repos": [
+      "brave/*, https:"
+    ]
   },
   "hackerone:portswigger": {
     "hash": "22096e343eeaf5065d5071cac777b886ac6e3279",
@@ -9193,7 +9222,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 5439,
-    "resp_eff": 62,
+    "resp_eff": 64,
     "bounty_days": 816.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -40209,6 +40238,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:bag-labs-web": {
+    "hash": "a05370b4ecbc0b74b3526893ca57e9d6b338cfd9",
+    "bounty": true,
+    "source": false,
+    "name": "Bag Labs Web",
+    "url": "https://hackenproof.com/programs/bag-labs-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:biconomy-web-and-mobile": {
     "hash": "d9e894b5e32366fa0478637be148b26eb070e6f0",
     "bounty": true,
@@ -42695,26 +42744,6 @@
     "github_repos": [
       "ember-protocol/ember-vaults"
     ]
-  },
-  "hackenproof:emojicoin-dot-fun-frontend": {
-    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
-    "bounty": true,
-    "source": false,
-    "name": "emojicoin.fun frontend",
-    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:enkrypt-wallet": {
     "hash": "84a0a65d51a53dc274570dd61c1e04e1fe90c7ad",
@@ -48116,26 +48145,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:tokenize-xchange-web-and-mobile": {
-    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
-    "bounty": true,
-    "source": false,
-    "name": "Tokenize Xchange Web & Mobile",
-    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 3000,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ton": {
     "hash": "c00b6e325264799aa406d075f3791fe47e630c7b",
     "bounty": true,
@@ -49499,15 +49508,35 @@
       "zynklabs/zynk-protocol-solana-programs.public"
     ]
   },
-  "hackenproof:bag-labs-web": {
-    "hash": "a05370b4ecbc0b74b3526893ca57e9d6b338cfd9",
+  "hackenproof:emojicoin-dot-fun-frontend": {
+    "hash": "88e5ee101e3ecdde2d77a9da6c84a67436d79a35",
     "bounty": true,
     "source": false,
-    "name": "Bag Labs Web",
-    "url": "https://hackenproof.com/programs/bag-labs-web",
+    "name": "emojicoin.fun frontend",
+    "url": "https://hackenproof.com/programs/emojicoin-dot-fun-frontend",
     "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tokenize-xchange-web-and-mobile": {
+    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
+    "bounty": true,
+    "source": false,
+    "name": "Tokenize Xchange Web & Mobile",
+    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 3000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -52618,22 +52647,6 @@
     "bounty_max": 0,
     "bounty_ccy": "",
     "domains": 6,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": []
-  },
-  "chaos:brave-software": {
-    "hash": "",
-    "bounty": true,
-    "source": false,
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "platform": "chaos",
-    "origin": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "domains": 417,
     "resp_eff": null,
     "bounty_days": null,
     "sc_targets": []
@@ -57568,10 +57581,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-16T17:51:39.702203+00:00",
+    "updated_at": "2026-11-16T18:20:48.880269+00:00",
     "total": 1910,
-    "qualifying": 423,
-    "external": 348,
+    "qualifying": 424,
+    "external": 347,
     "blockchain": 361,
     "feed_ids": {
       "immunefi": [],
@@ -58005,13 +58018,12 @@
       "immunefi": true,
       "hackenproof": true,
       "cantina": false,
-      "sherlock": false,
+      "sherlock": true,
       "chaos": true
     },
     "stale": [
       "federacy",
-      "cantina",
-      "sherlock"
+      "cantina"
     ]
   }
 }
