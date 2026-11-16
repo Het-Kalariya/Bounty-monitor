@@ -396,7 +396,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -2724,7 +2724,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": 308.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3426,7 +3426,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 95,
+    "resp_eff": 94,
     "bounty_days": 579.0,
     "sc_targets": [
       {
@@ -8306,7 +8306,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 94,
+    "resp_eff": 93,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -18051,25 +18051,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "intigriti:pdqcomprivate": {
-    "hash": "ff726184513622dad5ec5f3b67e1782bd1c3ab4c",
-    "bounty": true,
-    "source": false,
-    "name": "PDQ bug bounty program",
-    "url": "https://www.intigriti.com/programs/pdq/pdqcomprivate/detail",
-    "platform": "intigriti",
-    "bounty_min": 50,
-    "bounty_max": 3500,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "intigriti:peoplecert": {
     "hash": "0bca246737fd13bc2f4922387d5f585595073010",
     "bounty": false,
@@ -20243,6 +20224,84 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "immunefi:hedera": {
+    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
+    "bounty": true,
+    "source": true,
+    "name": "Hedera",
+    "url": "https://immunefi.com/bug-bounty/hedera",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 30000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
+        "description": "Hedera Services Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
+        "description": "Hedera Mirror Node Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+        "description": "JSON RPC Relay"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
+        "description": "Hedera Cryptography Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/has...edera-transaction-tool",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/has...edera-transaction-tool",
+      "https://github.com/hiero-ledger/hiero-consensus-node",
+      "https://github.com/hiero-ledger/hiero-cryptography",
+      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+      "https://github.com/hiero-ledger/hiero-mirror-node",
+      "https://github.com/hiero-ledger/hiero-sdk-go",
+      "https://github.com/hiero-ledger/hiero-sdk-java",
+      "https://github.com/hiero-ledger/hiero-sdk-js"
+    ],
+    "github_repos": [
+      "hiero-ledger/hiero-consensus-node",
+      "hiero-ledger/hiero-cryptography",
+      "hiero-ledger/hiero-json-rpc-relay",
+      "hiero-ledger/hiero-mirror-node",
+      "hiero-ledger/hiero-sdk-go",
+      "hiero-ledger/hiero-sdk-java",
+      "hiero-ledger/hiero-sdk-js"
+    ]
   },
   "immunefi:metric": {
     "hash": "6327916d6caa672def62756057664e2e2093e029",
@@ -29820,84 +29879,6 @@
       "https://www.oklink.com/x-layer/address/0x94bcca6bdfd6a61817ab0e960bfede4984505554"
     ],
     "github_repos": []
-  },
-  "immunefi:hedera": {
-    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
-    "bounty": true,
-    "source": true,
-    "name": "Hedera",
-    "url": "https://immunefi.com/bug-bounty/hedera",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 30000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
-        "description": "Hedera Services Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
-        "description": "Hedera Mirror Node Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-        "description": "JSON RPC Relay"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
-        "description": "Hedera Cryptography Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/has...edera-transaction-tool",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/has...edera-transaction-tool",
-      "https://github.com/hiero-ledger/hiero-consensus-node",
-      "https://github.com/hiero-ledger/hiero-cryptography",
-      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-      "https://github.com/hiero-ledger/hiero-mirror-node",
-      "https://github.com/hiero-ledger/hiero-sdk-go",
-      "https://github.com/hiero-ledger/hiero-sdk-java",
-      "https://github.com/hiero-ledger/hiero-sdk-js"
-    ],
-    "github_repos": [
-      "hiero-ledger/hiero-consensus-node",
-      "hiero-ledger/hiero-cryptography",
-      "hiero-ledger/hiero-json-rpc-relay",
-      "hiero-ledger/hiero-mirror-node",
-      "hiero-ledger/hiero-sdk-go",
-      "hiero-ledger/hiero-sdk-java",
-      "hiero-ledger/hiero-sdk-js"
-    ]
   },
   "immunefi:zerion": {
     "hash": "a0755c7f2901f9d3da67b50e008ec508cbe17197",
@@ -57587,8 +57568,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-16T12:18:54.927652+00:00",
-    "total": 1911,
+    "updated_at": "2026-11-16T12:51:00.253755+00:00",
+    "total": 1910,
     "qualifying": 423,
     "external": 348,
     "blockchain": 361,
@@ -58024,12 +58005,13 @@
       "immunefi": true,
       "hackenproof": true,
       "cantina": false,
-      "sherlock": true,
+      "sherlock": false,
       "chaos": true
     },
     "stale": [
       "federacy",
-      "cantina"
+      "cantina",
+      "sherlock"
     ]
   }
 }
