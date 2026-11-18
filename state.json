@@ -45606,7 +45606,7 @@
     "github_repos": []
   },
   "hackenproof:noirwallet": {
-    "hash": "895d72d9c5e25cecbf5cf64d3d957a900dc6cac8",
+    "hash": "e96c6c05b50af44790affdafa84c4cdf489da541",
     "bounty": true,
     "source": true,
     "name": "NoirWallet",
@@ -45621,11 +45621,6 @@
     "bounty_days": null,
     "live_status": "LIVE",
     "sc_targets": [
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/NoirWallet/noir-wallet",
-        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
-      },
       {
         "asset_type": "OTHER",
         "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
@@ -45642,9 +45637,8 @@
         "description": "SDK"
       }
     ],
-    "sc_total": 4,
+    "sc_total": 3,
     "sc_ids": [
-      "https://github.com/noirwallet/noir-wallet",
       "https://github.com/noirwallet/noir-wallet/tree/main/packages/sdk",
       "https://github.com/noirwallet/zcash-wallet-adapter",
       "https://github.com/noirwallet/zcash-wallet-wasm"
@@ -46250,6 +46244,99 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:quantova": {
+    "hash": "a879fd09a68acfe36bd6f83f3ec9261f4e0bf99d",
+    "bounty": true,
+    "source": true,
+    "name": "Quantova",
+    "url": "https://hackenproof.com/programs/quantova",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/Quantova/Q-Crypto",
+        "description": "Q-Crypto\r\nThe post-quantum cryptography library (ML-DSA-65, SLH-DSA, ML-KEM-768, SHA3). It produces every\r\nsignature and hash on the network, so a flaw compromises keys, signatures and integrity across the whole\r\nstack."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/Quantova-Chain",
+        "description": "Quantova-Chain\r\nThe node, ledger and state machine. Transaction execution, value conservation, staking, governance and\r\nfees. The largest attack surface. A flaw can move or mint funds, corrupt state, or halt the chain."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/QRC-CONSENSUS",
+        "description": "QRC-CONSENSUS\r\nThe committee BFT consensus and deterministic finality. A flaw can fork the chain, break finality, or stop block\r\nproduction."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/QVM",
+        "description": "QVM\r\nThe virtual machine that executes untrusted smart-contract bytecode under gas metering and memory bounds.\r\nA flaw lets hostile contract code escape isolation or corrupt state."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "http://github.com/Quantova/Quanta-Smart-Contract-language",
+        "description": "Quanta-Smart-Contract-language\r\nThe smart-contract language and compiler that make unsafe contracts fail to compile. A compiler flaw lets an\r\nunsafe contract build and deploy."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/q-prover",
+        "description": "The hash-based STARK prover and verifier. A soundness flaw lets a false statement be proven and accepted\r\non chain."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/Q-Oracle",
+        "description": "Q-Oracle\r\nThe oracle airlock that reads and verifies foreign blockchains. The main external untrusted-input boundary. A\r\nflaw lets forged foreign events cross into consensus."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/QCore.rs",
+        "description": "QCore.rs\r\nThe Rust SDK core. Key generation, signing and transaction construction. A flaw in randomness, signing or\r\nserialization can expose keys or forge transactions."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/QCore.js",
+        "description": "QCore.js\r\nThe JavaScript and Node binding over the Rust core, with the same key and signing surface for web\r\napplications."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "http://github.com/Quantova/QCore.py",
+        "description": "QCore.py\r\nThe Python binding over the Rust core, with the same key and signing surface for Python applications and\r\nservices."
+      }
+    ],
+    "sc_total": 10,
+    "sc_ids": [
+      "http://github.com/quantova/q-oracle",
+      "http://github.com/quantova/q-prover",
+      "http://github.com/quantova/qcore.js",
+      "http://github.com/quantova/qcore.py",
+      "http://github.com/quantova/qcore.rs",
+      "http://github.com/quantova/qrc-consensus",
+      "http://github.com/quantova/quanta-smart-contract-language",
+      "http://github.com/quantova/quantova-chain",
+      "http://github.com/quantova/qvm",
+      "https://github.com/quantova/q-crypto"
+    ],
+    "github_repos": [
+      "quantova/q-crypto",
+      "quantova/q-oracle",
+      "quantova/q-prover",
+      "quantova/qcore.js",
+      "quantova/qcore.py",
+      "quantova/qcore.rs",
+      "quantova/qrc-consensus",
+      "quantova/quanta-smart-contract-language",
+      "quantova/quantova-chain",
+      "quantova/qvm"
+    ]
+  },
   "hackenproof:raiffeisen-web-and-mobile": {
     "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
     "bounty": true,
@@ -46488,26 +46575,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:router-web": {
-    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
-    "bounty": true,
-    "source": false,
-    "name": "Router Web",
-    "url": "https://hackenproof.com/programs/router-web",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:rtree-finance-web": {
     "hash": "0b6309755703b1af691e4ffe864ea7e3e1211a20",
     "bounty": true,
@@ -46597,42 +46664,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:sg-forge-smart-contracts": {
-    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
-    "bounty": false,
-    "source": true,
-    "name": "SG Forge Smart Contracts",
-    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/castframework/smartcoin",
-        "description": "Smartcontract EURCV/USDCV on Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
-        "description": "Smartcontract EURCV on Solana"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/castframework/smartcoin",
-      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
-    ],
-    "github_repos": [
-      "castframework/smartcoin"
-    ]
   },
   "hackenproof:shapeshift": {
     "hash": "498840719d25a1d04e559974dcd6a5703b19a00a",
@@ -49465,6 +49496,62 @@
     "github_repos": [
       "zynklabs/audit-reports",
       "zynklabs/zynk-protocol-solana-programs.public"
+    ]
+  },
+  "hackenproof:router-web": {
+    "hash": "1f709799e435ac7f1933575e0e23a8efd83ad061",
+    "bounty": true,
+    "source": false,
+    "name": "Router Web",
+    "url": "https://hackenproof.com/programs/router-web",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:sg-forge-smart-contracts": {
+    "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
+    "bounty": false,
+    "source": true,
+    "name": "SG Forge Smart Contracts",
+    "url": "https://hackenproof.com/programs/sg-forge-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/castframework/smartcoin",
+        "description": "Smartcontract EURCV/USDCV on Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://solscan.io/token/DghpMkatCiUsofbTmid3M3kAbDTPqDwKiYHnudXeGG52",
+        "description": "Smartcontract EURCV on Solana"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/castframework/smartcoin",
+      "https://solscan.io/token/dghpmkatciusofbtmid3m3kabdtpqdwkiyhnudxegg52"
+    ],
+    "github_repos": [
+      "castframework/smartcoin"
     ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
@@ -57713,11 +57800,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-18T13:13:31.531425+00:00",
-    "total": 1924,
-    "qualifying": 425,
+    "updated_at": "2026-11-18T14:18:09.220741+00:00",
+    "total": 1925,
+    "qualifying": 426,
     "external": 358,
-    "blockchain": 362,
+    "blockchain": 363,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
@@ -58151,12 +58238,14 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": true,
-      "sherlock": true,
+      "cantina": false,
+      "sherlock": false,
       "chaos": true
     },
     "stale": [
-      "federacy"
+      "federacy",
+      "cantina",
+      "sherlock"
     ]
   }
 }
