@@ -1209,7 +1209,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": 339.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3199,7 +3199,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 94,
+    "resp_eff": 95,
     "bounty_days": 0.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3407,7 +3407,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 95,
+    "resp_eff": 94,
     "bounty_days": 579.0,
     "sc_targets": [
       {
@@ -3820,7 +3820,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 87,
+    "resp_eff": 86,
     "bounty_days": 545.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5150,7 +5150,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5226,7 +5226,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 94,
+    "resp_eff": 92,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -6977,7 +6977,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 56,
+    "resp_eff": 57,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -8661,7 +8661,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 307,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": 811.0,
     "sc_targets": [
       {
@@ -9565,7 +9565,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 97,
+    "resp_eff": 98,
     "bounty_days": 194.0,
     "sc_targets": [
       {
@@ -42050,15 +42050,35 @@
     ],
     "github_repos": []
   },
-  "hackenproof:impermax-finance-smart-contracts": {
-    "hash": "1eff0ae6585a76c5192c08c5ecb013d9931418d6",
+  "hackenproof:nonkyc-dot-io": {
+    "hash": "a3889d9d708db64da619435ccfad9d0067590e79",
+    "bounty": true,
+    "source": false,
+    "name": "NonKyc.io",
+    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:whitechain-bridge": {
+    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
     "bounty": true,
     "source": true,
-    "name": "Impermax Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/impermax-finance-smart-contracts",
+    "name": "Whitechain Bridge",
+    "url": "https://hackenproof.com/programs/whitechain-bridge",
     "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42068,33 +42088,27 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main/contracts/test",
+        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
         "description": ""
       }
     ],
-    "sc_total": 2,
+    "sc_total": 1,
     "sc_ids": [
-      "https://github.com/impermax-finance/lending-vault/tree/main",
-      "https://github.com/impermax-finance/lending-vault/tree/main/contracts/test"
+      "https://github.com/whitechain-labs/bridge-contracts"
     ],
     "github_repos": [
-      "impermax-finance/lending-vault"
+      "whitechain-labs/bridge-contracts"
     ]
   },
-  "hackenproof:lendvest-smart-contracts": {
-    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+  "hackenproof:whitechain-network": {
+    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
     "bounty": true,
     "source": true,
-    "name": "Lendvest Smart Contracts",
-    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "name": "Whitechain Network",
+    "url": "https://hackenproof.com/programs/whitechain-network",
     "platform": "hackenproof",
-    "bounty_min": 25,
-    "bounty_max": 30000,
+    "bounty_min": 50,
+    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42103,70 +42117,48 @@
     "live_status": "LIVE",
     "sc_targets": [
       {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
-        "description": "Ethereum Mainnet\r\n\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
-        "description": "Chainlink Automations 2.0 (CRE)"
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/whitebit-exchange/wbt",
+        "description": ""
       }
     ],
-    "sc_total": 2,
+    "sc_total": 1,
     "sc_ids": [
-      "https://github.com/lendvest/lendvest-smart-staking",
-      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+      "https://github.com/whitebit-exchange/wbt"
     ],
     "github_repos": [
-      "lendvest/lendvest-smart-staking"
+      "whitebit-exchange/wbt"
     ]
   },
-  "hackenproof:local-traders-smart-contracts": {
-    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
+  "hackenproof:whitemarket-web": {
+    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
     "bounty": true,
-    "source": true,
-    "name": "Local Traders Smart Contracts",
-    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
+    "source": false,
+    "name": "WhiteMarket Web",
+    "url": "https://hackenproof.com/programs/whitemarket-web",
     "platform": "hackenproof",
     "bounty_min": 100,
-    "bounty_max": 20000,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
     "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
-        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/localtradersteam/LCT_Contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
-      "https://github.com/localtradersteam/lct_contract"
-    ],
-    "github_repos": [
-      "localtradersteam/lct_contract"
-    ]
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
-  "hackenproof:walrus-protocol": {
-    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
+  "hackenproof:zynk-protocol": {
+    "hash": "438cba31a4a01a9a56fbc0aa2cb8b8aedf33885d",
     "bounty": false,
     "source": true,
-    "name": "Walrus Protocol",
-    "url": "https://hackenproof.com/programs/walrus-protocol",
+    "name": "Zynk Protocol",
+    "url": "https://hackenproof.com/programs/zynk-protocol",
     "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 100000,
+    "bounty_min": 0,
+    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42176,64 +42168,29 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
-        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
-        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
-        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
+        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
       },
       {
         "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
-        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
-        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
-        "description": "Client SDK for blob upload, download, and on-chain interactions."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
-        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
-        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
-        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
+        "identifier": "https://github.com/Zynklabs/audit-reports",
+        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
       }
     ],
-    "sc_total": 9,
+    "sc_total": 3,
     "sc_ids": [
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
-      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
-      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
+      "https://github.com/zynklabs/audit-reports",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
+      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
     ],
     "github_repos": [
-      "mystenlabs/walrus"
+      "zynklabs/audit-reports",
+      "zynklabs/zynk-protocol-solana-programs.public"
     ]
   },
   "hackenproof:deepcoin-web-and-mobile": {
@@ -43976,6 +43933,42 @@
       "idos-network/contracts"
     ]
   },
+  "hackenproof:impermax-finance-smart-contracts": {
+    "hash": "1eff0ae6585a76c5192c08c5ecb013d9931418d6",
+    "bounty": true,
+    "source": true,
+    "name": "Impermax Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/impermax-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Impermax-Finance/lending-vault/tree/main/contracts/test",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/impermax-finance/lending-vault/tree/main",
+      "https://github.com/impermax-finance/lending-vault/tree/main/contracts/test"
+    ],
+    "github_repos": [
+      "impermax-finance/lending-vault"
+    ]
+  },
   "hackenproof:inceptionlrt-smart-contracts": {
     "hash": "3e7808e33b281def598c517f34ccd1b5d7e41f51",
     "bounty": true,
@@ -44811,6 +44804,42 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:lendvest-smart-contracts": {
+    "hash": "65cceeaeb6afc73c1ec54cca4c539ea26171a23d",
+    "bounty": true,
+    "source": true,
+    "name": "Lendvest Smart Contracts",
+    "url": "https://hackenproof.com/programs/lendvest-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25,
+    "bounty_max": 30000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking",
+        "description": "Ethereum Mainnet\r\n\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre",
+        "description": "Chainlink Automations 2.0 (CRE)"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/lendvest/lendvest-smart-staking",
+      "https://github.com/lendvest/lendvest-smart-staking/tree/feat-integrate-chainlink-cre"
+    ],
+    "github_repos": [
+      "lendvest/lendvest-smart-staking"
+    ]
+  },
   "hackenproof:letsexchange-web-and-api-and-widget-swap-bridge-dex": {
     "hash": "bffcca0ce87c4d1f2a1217cc6ad4e3a6a21d8bb0",
     "bounty": true,
@@ -44900,6 +44929,42 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:local-traders-smart-contracts": {
+    "hash": "b07bdf8a709c38d777869b2dd0e4790582b7fb44",
+    "bounty": true,
+    "source": true,
+    "name": "Local Traders Smart Contracts",
+    "url": "https://hackenproof.com/programs/local-traders-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/token/0x5C65BAdf7F97345B7B92776b22255c973234EfE7",
+        "description": "Here you can find the .sol file.\r\n\r\nhttps://github.com/solidproof/projects/blob/main/Local%20Traders/Contract/LocalTraders.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/localtradersteam/LCT_Contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/token/0x5c65badf7f97345b7b92776b22255c973234efe7",
+      "https://github.com/localtradersteam/lct_contract"
+    ],
+    "github_repos": [
+      "localtradersteam/lct_contract"
+    ]
   },
   "hackenproof:logos": {
     "hash": "423251bd34b0c0e7de46d659a9c62bd9893fa3c1",
@@ -45713,26 +45778,6 @@
       "noirwallet/zcash-wallet-adapter",
       "noirwallet/zcash-wallet-wasm"
     ]
-  },
-  "hackenproof:nonkyc-dot-io": {
-    "hash": "a3889d9d708db64da619435ccfad9d0067590e79",
-    "bounty": true,
-    "source": false,
-    "name": "NonKyc.io",
-    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:noones-web-and-mobile": {
     "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
@@ -48921,6 +48966,84 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:walrus-protocol": {
+    "hash": "57799ef9989f60e090f1adeab0894b858585104c",
+    "bounty": false,
+    "source": true,
+    "name": "Walrus Protocol",
+    "url": "https://hackenproof.com/programs/walrus-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus",
+        "description": "Core system contract: blob registration, storage resources, staking, and governance.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal",
+        "description": "WAL token contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope.\r\n"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/walrus_subsidies",
+        "description": "Storage subsidies contract.\r\n\r\n**Important:** See the \"Scope Details\" section below for further details about what exactly is in and out of scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-core",
+        "description": "Erasure coding (\"Red Stuff\"), cryptographic types, and slivers."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-service",
+        "description": "Storage node and aggregator: sliver storage, REST APIs, epoch transitions, and shard sync.\r\n\r\n**Important:** Only attacks against storage nodes and aggregators are in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sdk",
+        "description": "Client SDK for blob upload, download, and on-chain interactions."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/crates/walrus-sui",
+        "description": "Sui blockchain interaction layer: transaction building and on-chain type mappings."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/wal_exchange",
+        "description": "This is a testnet-only contract that is not deployed on mainnet and is intentionally kept simple."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/walrus/tree/main/contracts/subsidies",
+        "description": "This contract is no longer used, replaced by `walrus_subsidies`."
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/wal_exchange",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus",
+      "https://github.com/mystenlabs/walrus/tree/main/contracts/walrus_subsidies",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-core",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sdk",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-service",
+      "https://github.com/mystenlabs/walrus/tree/main/crates/walrus-sui"
+    ],
+    "github_repos": [
+      "mystenlabs/walrus"
+    ]
+  },
   "hackenproof:weex-web-and-app": {
     "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
     "bounty": true,
@@ -49016,86 +49139,6 @@
     "github_repos": [
       "whitechain-labs/whitechain-bootstrap"
     ]
-  },
-  "hackenproof:whitechain-bridge": {
-    "hash": "a1050ec83b34fbf0aefafe21682dffbc33556c31",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Bridge",
-    "url": "https://hackenproof.com/programs/whitechain-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/whitechain-labs/bridge-contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitechain-labs/bridge-contracts"
-    ],
-    "github_repos": [
-      "whitechain-labs/bridge-contracts"
-    ]
-  },
-  "hackenproof:whitechain-network": {
-    "hash": "7585c9acb84108ebed71192db402692f7b72ed97",
-    "bounty": true,
-    "source": true,
-    "name": "Whitechain Network",
-    "url": "https://hackenproof.com/programs/whitechain-network",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/whitebit-exchange/wbt",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/whitebit-exchange/wbt"
-    ],
-    "github_repos": [
-      "whitebit-exchange/wbt"
-    ]
-  },
-  "hackenproof:whitemarket-web": {
-    "hash": "5e735b147a3d7a3d8b8602327aff2e82ca8808e7",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteMarket Web",
-    "url": "https://hackenproof.com/programs/whitemarket-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:xt": {
     "hash": "4fd36af8c4193e569a7a9e0b1bbec742fbc38c98",
@@ -49497,49 +49540,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:zynk-protocol": {
-    "hash": "438cba31a4a01a9a56fbc0aa2cb8b8aedf33885d",
-    "bounty": false,
-    "source": true,
-    "name": "Zynk Protocol",
-    "url": "https://hackenproof.com/programs/zynk-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\r\n\r\nThe program manages:\r\n\r\n- Beneficiary and assets whitelisting\r\n- Liquidity deployment to beneficiaries\r\n- Partner settlement flows\r\n- Order lifecycle tracking\r\n- Governance and administrative actions\r\n- Protocol safety mechanisms\r\n\r\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
-        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\r\n\r\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Zynklabs/audit-reports",
-        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zynklabs/audit-reports",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-      "https://github.com/zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit"
-    ],
-    "github_repos": [
-      "zynklabs/audit-reports",
-      "zynklabs/zynk-protocol-solana-programs.public"
-    ]
   },
   "cantina:01da0370-eacb-48a2-a2df-3aa44f7bc838": {
     "hash": "19782609020423324cf26c0603eed0c32f1fe0ba",
@@ -50726,6 +50726,34 @@
       "40-acres/loan-contracts"
     ]
   },
+  "sherlock:105": {
+    "hash": "443ffc99fd6f2f3f9559c430448bce6c4458d5c8",
+    "bounty": true,
+    "source": true,
+    "name": "Axal - TEE &amp; Server",
+    "url": "https://audits.sherlock.xyz/bug-bounties/105",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:105",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:105"
+    ],
+    "github_repos": []
+  },
   "sherlock:11": {
     "hash": "1686847ec6193ac68d01d9b72e9fbb68159edeeb",
     "bounty": true,
@@ -51085,6 +51113,43 @@
       "flyingtulipdotcom/security"
     ]
   },
+  "sherlock:27": {
+    "hash": "ece1b8a3f4f10908a77971b6c517c12d60d7cd26",
+    "bounty": true,
+    "source": true,
+    "name": "Exactly",
+    "url": "https://audits.sherlock.xyz/bug-bounties/27",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/exactly/audits",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/sherlock-protocol/sherlock-reports",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/exactly/audits",
+      "https://github.com/sherlock-protocol/sherlock-reports"
+    ],
+    "github_repos": [
+      "exactly/audits",
+      "sherlock-protocol/sherlock-reports"
+    ]
+  },
   "sherlock:272": {
     "hash": "ab41de0630b939cb0baef75b7f92e27df3d9c8c9",
     "bounty": true,
@@ -51180,6 +51245,34 @@
     ],
     "github_repos": []
   },
+  "sherlock:298": {
+    "hash": "3c046c48b6472c78b3def03b91f3e9943c4ff18f",
+    "bounty": true,
+    "source": true,
+    "name": "Fira Protocol",
+    "url": "https://audits.sherlock.xyz/bug-bounties/298",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "1778112000",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "1778112000"
+    ],
+    "github_repos": []
+  },
   "sherlock:30": {
     "hash": "fd4cd47025bfb929d46e790b7a5c9399a6008937",
     "bounty": true,
@@ -51259,6 +51352,66 @@
     "github_repos": [
       "aave-dao/aave-address-book",
       "aave/aave-v4"
+    ]
+  },
+  "sherlock:344": {
+    "hash": "dcc25d4090da7bbb924fd16594f4e3ff70c4b11f",
+    "bounty": true,
+    "source": true,
+    "name": "Paradex",
+    "url": "https://audits.sherlock.xyz/bug-bounties/344",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Cairo-Security-Clan/Audit-Portfolio",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/cairo-security-clan/audit-portfolio"
+    ],
+    "github_repos": [
+      "cairo-security-clan/audit-portfolio"
+    ]
+  },
+  "sherlock:350": {
+    "hash": "aa24af1517b7accaf131a3f16d7636e3b4e65bff",
+    "bounty": true,
+    "source": true,
+    "name": "Moonwell",
+    "url": "https://audits.sherlock.xyz/bug-bounties/350",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/moonwell-fi/moonwell-contracts-v2",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/moonwell-fi/moonwell-contracts-v2"
+    ],
+    "github_repos": [
+      "moonwell-fi/moonwell-contracts-v2"
     ]
   },
   "sherlock:355": {
@@ -51532,6 +51685,43 @@
       "golemfactory/yagna"
     ]
   },
+  "sherlock:425": {
+    "hash": "169b39a77b1cda852b8220740ca5d1bae0d2ddb9",
+    "bounty": true,
+    "source": true,
+    "name": "IOTA",
+    "url": "https://audits.sherlock.xyz/bug-bounties/425",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/iotaledger/iota",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/iotaledger/iota-rust-sdk",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/iotaledger/iota",
+      "https://github.com/iotaledger/iota-rust-sdk"
+    ],
+    "github_repos": [
+      "iotaledger/iota",
+      "iotaledger/iota-rust-sdk"
+    ]
+  },
   "sherlock:433": {
     "hash": "b3f23ec9b7dc73528e3a6d39e96747391df24039",
     "bounty": true,
@@ -51694,6 +51884,34 @@
       "symm-io/audits"
     ]
   },
+  "sherlock:50": {
+    "hash": "5d3bf7681b3f2f3beb6330e1bb06153209416087",
+    "bounty": true,
+    "source": true,
+    "name": "Satlayer",
+    "url": "https://audits.sherlock.xyz/bug-bounties/50",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 200000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:50",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:50"
+    ],
+    "github_repos": []
+  },
   "sherlock:56": {
     "hash": "3246836915c7eb52ff0fd84fbb03be051346ed22",
     "bounty": true,
@@ -51838,224 +52056,6 @@
     "github_repos": [
       "seamless-protocol/leverage-tokens"
     ]
-  },
-  "sherlock:105": {
-    "hash": "443ffc99fd6f2f3f9559c430448bce6c4458d5c8",
-    "bounty": true,
-    "source": true,
-    "name": "Axal - TEE &amp; Server",
-    "url": "https://audits.sherlock.xyz/bug-bounties/105",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:105",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:105"
-    ],
-    "github_repos": []
-  },
-  "sherlock:27": {
-    "hash": "ece1b8a3f4f10908a77971b6c517c12d60d7cd26",
-    "bounty": true,
-    "source": true,
-    "name": "Exactly",
-    "url": "https://audits.sherlock.xyz/bug-bounties/27",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/exactly/audits",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/sherlock-protocol/sherlock-reports",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/exactly/audits",
-      "https://github.com/sherlock-protocol/sherlock-reports"
-    ],
-    "github_repos": [
-      "exactly/audits",
-      "sherlock-protocol/sherlock-reports"
-    ]
-  },
-  "sherlock:344": {
-    "hash": "dcc25d4090da7bbb924fd16594f4e3ff70c4b11f",
-    "bounty": true,
-    "source": true,
-    "name": "Paradex",
-    "url": "https://audits.sherlock.xyz/bug-bounties/344",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Cairo-Security-Clan/Audit-Portfolio",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/cairo-security-clan/audit-portfolio"
-    ],
-    "github_repos": [
-      "cairo-security-clan/audit-portfolio"
-    ]
-  },
-  "sherlock:350": {
-    "hash": "aa24af1517b7accaf131a3f16d7636e3b4e65bff",
-    "bounty": true,
-    "source": true,
-    "name": "Moonwell",
-    "url": "https://audits.sherlock.xyz/bug-bounties/350",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/moonwell-fi/moonwell-contracts-v2",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/moonwell-fi/moonwell-contracts-v2"
-    ],
-    "github_repos": [
-      "moonwell-fi/moonwell-contracts-v2"
-    ]
-  },
-  "sherlock:425": {
-    "hash": "169b39a77b1cda852b8220740ca5d1bae0d2ddb9",
-    "bounty": true,
-    "source": true,
-    "name": "IOTA",
-    "url": "https://audits.sherlock.xyz/bug-bounties/425",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/iotaledger/iota",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/iotaledger/iota-rust-sdk",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/iotaledger/iota",
-      "https://github.com/iotaledger/iota-rust-sdk"
-    ],
-    "github_repos": [
-      "iotaledger/iota",
-      "iotaledger/iota-rust-sdk"
-    ]
-  },
-  "sherlock:50": {
-    "hash": "5d3bf7681b3f2f3beb6330e1bb06153209416087",
-    "bounty": true,
-    "source": true,
-    "name": "Satlayer",
-    "url": "https://audits.sherlock.xyz/bug-bounties/50",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:50",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:50"
-    ],
-    "github_repos": []
-  },
-  "sherlock:298": {
-    "hash": "3c046c48b6472c78b3def03b91f3e9943c4ff18f",
-    "bounty": true,
-    "source": true,
-    "name": "Fira Protocol",
-    "url": "https://audits.sherlock.xyz/bug-bounties/298",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "1778112000",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "1778112000"
-    ],
-    "github_repos": []
   },
   "chaos:1inch": {
     "hash": "",
@@ -57787,7 +57787,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-18T18:14:53.430627+00:00",
+    "updated_at": "2026-11-18T18:44:15.759914+00:00",
     "total": 1924,
     "qualifying": 426,
     "external": 358,
