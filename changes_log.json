@@ -1,29 +1,5 @@
 [
   {
-    "timestamp": "2026-09-19T00:50:56.905265+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "brave-software",
-    "name": "Brave Software",
-    "url": "https://hackerone.com/brave",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-20T01:09:17.522177+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "yandex",
-    "name": "Yandex",
-    "url": "https://yandex.com/bugbounty/index",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-20T01:09:19.025051+00:00",
     "event": "new_external",
     "platform": "chaos",
@@ -7229,6 +7205,64 @@
     "url": "https://bugcrowd.com/asana",
     "sc_targets": [],
     "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-18T17:19:10.964660+00:00",
+    "event": "new_program",
+    "platform": "bugcrowd",
+    "handle": "Aiven Managed Bug Bounty",
+    "name": "Aiven Managed Bug Bounty",
+    "url": "https://bugcrowd.com/engagements/aiven-mbb-og",
+    "sc_targets": [
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/Aiven-Open",
+        "description": "github.com/Aiven-Open"
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/Aiven",
+        "description": "github.com/Aiven"
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-18T17:19:12.449400+00:00",
+    "event": "scope_updated",
+    "platform": "hackenproof",
+    "handle": "noirwallet",
+    "name": "NoirWallet",
+    "url": "https://hackenproof.com/programs/noirwallet",
+    "sc_targets": [
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/NoirWallet/noir-wallet",
+        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
+        "description": "Zcash accounts, key operations, transaction construction, signing, and synchronization"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-adapter",
+        "description": "Wallet connectivity, messaging, and permission management"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/noir-wallet/tree/main/packages/sdk",
+        "description": "SDK"
+      }
+    ],
+    "added": [
+      "https://github.com/noirwallet/noir-wallet"
+    ],
     "removed": [],
     "github_repos": []
   }
