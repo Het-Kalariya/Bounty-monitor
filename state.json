@@ -472,7 +472,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 93,
+    "resp_eff": 92,
     "bounty_days": 399.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -2039,7 +2039,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 2542.0,
     "sc_targets": [
       {
@@ -10712,84 +10712,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "bugcrowd:Auth0 by Okta": {
-    "hash": "f1c9a427ccee75edb8ff780cfca6a82d1a587989",
-    "bounty": true,
-    "source": true,
-    "name": "Auth0 by Okta",
-    "url": "https://bugcrowd.com/engagements/auth0-okta",
-    "platform": "bugcrowd",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/auth0.js",
-        "description": "Auth0 SDK for Web (Auth0.js)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/lock",
-        "description": "Lock for Web (lock)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/auth0-spa-js",
-        "description": "Auth0 Single Page App SDK (auth0-spa-js)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/Auth0.Net",
-        "description": ".NET SDK (Auth0.Net)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/nextjs-auth0",
-        "description": "Auth0 Next.js SDK (nextjs-auth0)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/auth0-java",
-        "description": "Auth0 Java SDK (auth0-java)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/react-native-auth0",
-        "description": "Auth0 React Native SDK (react-native-auth0)"
-      },
-      {
-        "asset_type": "other",
-        "identifier": "https://github.com/auth0/auth0-php",
-        "description": "Auth0 PHP SDK (auth0-php)"
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/auth0/auth0-java",
-      "https://github.com/auth0/auth0-php",
-      "https://github.com/auth0/auth0-spa-js",
-      "https://github.com/auth0/auth0.js",
-      "https://github.com/auth0/auth0.net",
-      "https://github.com/auth0/lock",
-      "https://github.com/auth0/nextjs-auth0",
-      "https://github.com/auth0/react-native-auth0"
-    ],
-    "github_repos": [
-      "auth0/auth0-java",
-      "auth0/auth0-php",
-      "auth0/auth0-spa-js",
-      "auth0/auth0.js",
-      "auth0/auth0.net",
-      "auth0/lock",
-      "auth0/nextjs-auth0",
-      "auth0/react-native-auth0"
-    ]
   },
   "bugcrowd:AppFox": {
     "hash": "dc11a69f3fb764f57999467bafdaeada8954fa23",
@@ -57576,9 +57498,9 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-19T06:17:54.366377+00:00",
-    "total": 1911,
-    "qualifying": 426,
+    "updated_at": "2026-11-19T06:43:52.498711+00:00",
+    "total": 1910,
+    "qualifying": 425,
     "external": 346,
     "blockchain": 363,
     "feed_ids": {
@@ -58014,14 +57936,12 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": false,
-      "sherlock": false,
+      "cantina": true,
+      "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy",
-      "cantina",
-      "sherlock"
+      "federacy"
     ]
   }
 }
