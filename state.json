@@ -1133,7 +1133,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": 314.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4376,7 +4376,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 54,
-    "resp_eff": 63,
+    "resp_eff": 64,
     "bounty_days": 1331.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5377,7 +5377,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1493,
-    "resp_eff": 73,
+    "resp_eff": 74,
     "bounty_days": 307.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5558,7 +5558,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 221,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 696.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5785,7 +5785,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 56,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8623,7 +8623,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 74,
     "bounty_days": 1220.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9811,7 +9811,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 11398,
-    "resp_eff": 67,
+    "resp_eff": 66,
     "bounty_days": 115.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20231,7 +20231,7 @@
     "github_repos": []
   },
   "immunefi:hedera": {
-    "hash": "35edaf9aba098119ad89c5944e2c3c0cf3bb0773",
+    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
     "bounty": true,
     "source": true,
     "name": "Hedera",
@@ -20285,17 +20285,11 @@
         "asset_type": "OTHER",
         "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
         "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-block-node",
-        "description": "Hedera Block Node Codebase"
       }
     ],
-    "sc_total": 9,
+    "sc_total": 8,
     "sc_ids": [
       "https://github.com/has...edera-transaction-tool",
-      "https://github.com/hiero-ledger/hiero-block-node",
       "https://github.com/hiero-ledger/hiero-consensus-node",
       "https://github.com/hiero-ledger/hiero-cryptography",
       "https://github.com/hiero-ledger/hiero-json-rpc-relay",
@@ -20305,7 +20299,6 @@
       "https://github.com/hiero-ledger/hiero-sdk-js"
     ],
     "github_repos": [
-      "hiero-ledger/hiero-block-node",
       "hiero-ledger/hiero-consensus-node",
       "hiero-ledger/hiero-cryptography",
       "hiero-ledger/hiero-json-rpc-relay",
@@ -40918,6 +40911,99 @@
       "chain4travel/caminogo"
     ]
   },
+  "hackenproof:celestia": {
+    "hash": "e3b2c6564499f094ecd8172b7476062bcbc3be89",
+    "bounty": true,
+    "source": true,
+    "name": "Celestia",
+    "url": "https://hackenproof.com/programs/celestia",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/celestia-core",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/celestia-app",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/celestia-node",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/go-header",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/rsmt2d",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/nmt",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/go-square",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/celestiaorg/go-fraud",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/klauspost/reedsolomon",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/succinctlabs/sp1-blobstream",
+        "description": "Blobstream"
+      }
+    ],
+    "sc_total": 11,
+    "sc_ids": [
+      "https://github.com/celestiaorg/celestia-app",
+      "https://github.com/celestiaorg/celestia-core",
+      "https://github.com/celestiaorg/celestia-node",
+      "https://github.com/celestiaorg/go-fraud",
+      "https://github.com/celestiaorg/go-header",
+      "https://github.com/celestiaorg/go-square",
+      "https://github.com/celestiaorg/nmt",
+      "https://github.com/celestiaorg/rsmt2d",
+      "https://github.com/klauspost/reedsolomon",
+      "https://github.com/succinctlabs/sp1-blobstream"
+    ],
+    "github_repos": [
+      "celestiaorg/celestia-app",
+      "celestiaorg/celestia-core",
+      "celestiaorg/celestia-node",
+      "celestiaorg/go-fraud",
+      "celestiaorg/go-header",
+      "celestiaorg/go-square",
+      "celestiaorg/nmt",
+      "celestiaorg/rsmt2d",
+      "klauspost/reedsolomon",
+      "succinctlabs/sp1-blobstream"
+    ]
+  },
   "hackenproof:cetus-smart-contracts": {
     "hash": "5bf591d665a7d6a84579d9b0079e3bd0764d21dc",
     "bounty": true,
@@ -43173,6 +43259,84 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:gear-protocol": {
+    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
+    "bounty": true,
+    "source": true,
+    "name": "Gear Protocol",
+    "url": "https://hackenproof.com/programs/gear-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
+        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
+        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
+      }
+    ],
+    "sc_total": 9,
+    "sc_ids": [
+      "https://github.com/gear-tech/gear/tree/master/core",
+      "https://github.com/gear-tech/gear/tree/master/core-backend",
+      "https://github.com/gear-tech/gear/tree/master/core-processor",
+      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
+      "https://github.com/gear-tech/gear/tree/master/node/authorship",
+      "https://github.com/gear-tech/gear/tree/master/node/service",
+      "https://github.com/gear-tech/gear/tree/master/pallets",
+      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
+      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
+    ],
+    "github_repos": [
+      "gear-tech/gear"
+    ]
+  },
   "hackenproof:gmgn-web-and-mobile": {
     "hash": "00a218c9d4be19ca93f1c2a33bebaebea6c74507",
     "bounty": true,
@@ -43192,6 +43356,56 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:goby-wallet": {
+    "hash": "587be866d0c5a619c3edbde1797e33a2d8b0ef7c",
+    "bounty": true,
+    "source": false,
+    "name": "Goby Wallet",
+    "url": "https://hackenproof.com/programs/goby-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:govgen-governance-dapp": {
+    "hash": "73587ada601616865b9a65c536d8dcb0fe0ca305",
+    "bounty": true,
+    "source": true,
+    "name": "GovGen Governance dApp",
+    "url": "https://hackenproof.com/programs/govgen-governance-dapp",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/allinbits/govgen-governance-dapp",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/allinbits/govgen-governance-dapp"
+    ],
+    "github_repos": [
+      "allinbits/govgen-governance-dapp"
+    ]
   },
   "hackenproof:gridex-protocol-hacker-house-2023": {
     "hash": "6cbad56277d9812d1811adabd225f017f6be8d32",
@@ -46438,227 +46652,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:celestia": {
-    "hash": "e3b2c6564499f094ecd8172b7476062bcbc3be89",
-    "bounty": true,
-    "source": true,
-    "name": "Celestia",
-    "url": "https://hackenproof.com/programs/celestia",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/celestia-core",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/celestia-app",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/celestia-node",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/go-header",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/rsmt2d",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/nmt",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/go-square",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/celestiaorg/go-fraud",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/klauspost/reedsolomon",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/succinctlabs/sp1-blobstream",
-        "description": "Blobstream"
-      }
-    ],
-    "sc_total": 11,
-    "sc_ids": [
-      "https://github.com/celestiaorg/celestia-app",
-      "https://github.com/celestiaorg/celestia-core",
-      "https://github.com/celestiaorg/celestia-node",
-      "https://github.com/celestiaorg/go-fraud",
-      "https://github.com/celestiaorg/go-header",
-      "https://github.com/celestiaorg/go-square",
-      "https://github.com/celestiaorg/nmt",
-      "https://github.com/celestiaorg/rsmt2d",
-      "https://github.com/klauspost/reedsolomon",
-      "https://github.com/succinctlabs/sp1-blobstream"
-    ],
-    "github_repos": [
-      "celestiaorg/celestia-app",
-      "celestiaorg/celestia-core",
-      "celestiaorg/celestia-node",
-      "celestiaorg/go-fraud",
-      "celestiaorg/go-header",
-      "celestiaorg/go-square",
-      "celestiaorg/nmt",
-      "celestiaorg/rsmt2d",
-      "klauspost/reedsolomon",
-      "succinctlabs/sp1-blobstream"
-    ]
-  },
-  "hackenproof:gear-protocol": {
-    "hash": "4729069ca18067d68e93173436f9f34581c880c5",
-    "bounty": true,
-    "source": true,
-    "name": "Gear Protocol",
-    "url": "https://hackenproof.com/programs/gear-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core\u201d aka \u201ccore\u201d [./core]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-processor",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-processor\u201d aka \u201ccore-processor\u201d [./core-processor]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/core-backend",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-core-backend\u201d aka \u201ccore-backend\u201d [./core-backend]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-lazy-pages\u201d aka \u201clazy-pages\u201d and all related [./lazy-pages/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-        "description": "Gear protocol essentials\r\n- crate \u201cgear-runtime-interface\u201d aka \u201cruntime-interface\u201d and all related [./runtime-interface/*] "
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/runtime/vara",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cvara-runtime\u201d [./runtime/vara]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/pallets",
-        "description": "Vara Network (Substrate) essentials\r\n- crates \u201cpallet-gear[-*]\u201d [./pallets/*]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/authorship",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-authorship\u201d [./node/authorship]"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/gear-tech/gear/tree/master/node/service",
-        "description": "Vara Network (Substrate) essentials\r\n- crate \u201cgear-service\u201d [./node/service]"
-      }
-    ],
-    "sc_total": 9,
-    "sc_ids": [
-      "https://github.com/gear-tech/gear/tree/master/core",
-      "https://github.com/gear-tech/gear/tree/master/core-backend",
-      "https://github.com/gear-tech/gear/tree/master/core-processor",
-      "https://github.com/gear-tech/gear/tree/master/lazy-pages",
-      "https://github.com/gear-tech/gear/tree/master/node/authorship",
-      "https://github.com/gear-tech/gear/tree/master/node/service",
-      "https://github.com/gear-tech/gear/tree/master/pallets",
-      "https://github.com/gear-tech/gear/tree/master/runtime-interface",
-      "https://github.com/gear-tech/gear/tree/master/runtime/vara"
-    ],
-    "github_repos": [
-      "gear-tech/gear"
-    ]
-  },
-  "hackenproof:goby-wallet": {
-    "hash": "587be866d0c5a619c3edbde1797e33a2d8b0ef7c",
-    "bounty": true,
-    "source": false,
-    "name": "Goby Wallet",
-    "url": "https://hackenproof.com/programs/goby-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:govgen-governance-dapp": {
-    "hash": "73587ada601616865b9a65c536d8dcb0fe0ca305",
-    "bounty": true,
-    "source": true,
-    "name": "GovGen Governance dApp",
-    "url": "https://hackenproof.com/programs/govgen-governance-dapp",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/allinbits/govgen-governance-dapp",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/allinbits/govgen-governance-dapp"
-    ],
-    "github_repos": [
-      "allinbits/govgen-governance-dapp"
-    ]
   },
   "hackenproof:sg-forge-smart-contracts": {
     "hash": "26f8a43d96e977b7c33e772158551655fae7574b",
@@ -57583,7 +57576,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-19T05:18:01.009405+00:00",
+    "updated_at": "2026-11-19T05:44:34.036397+00:00",
     "total": 1911,
     "qualifying": 426,
     "external": 346,
@@ -58021,14 +58014,12 @@
       "federacy": false,
       "immunefi": true,
       "hackenproof": true,
-      "cantina": false,
-      "sherlock": false,
+      "cantina": true,
+      "sherlock": true,
       "chaos": true
     },
     "stale": [
-      "federacy",
-      "cantina",
-      "sherlock"
+      "federacy"
     ]
   }
 }
