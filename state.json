@@ -1494,7 +1494,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 67,
     "bounty_days": 176.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4376,7 +4376,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 54,
-    "resp_eff": 62,
+    "resp_eff": 63,
     "bounty_days": 1331.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7579,7 +7579,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 96,
+    "resp_eff": 97,
     "bounty_days": 75.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8130,7 +8130,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 885060,
-    "resp_eff": 75,
+    "resp_eff": 76,
     "bounty_days": 184.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -42323,46 +42323,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:hacken-web-and-apps": {
-    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
-    "bounty": false,
-    "source": false,
-    "name": "Hacken Web & Apps",
-    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:hackenproof": {
-    "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
-    "bounty": true,
-    "source": false,
-    "name": "HackenProof",
-    "url": "https://hackenproof.com/programs/hackenproof",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
     "bounty": true,
@@ -42463,6 +42423,120 @@
     ],
     "github_repos": [
       "dodoex/dodo-v3"
+    ]
+  },
+  "hackenproof:nicehash-mining-platform": {
+    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
+    "bounty": true,
+    "source": true,
+    "name": "NiceHash Mining platform",
+    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NHOS",
+        "description": "NHOS - Mining operating system"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
+        "description": "NiceHashQuickMiner - Mining client"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/nicehash/NiceHashMiner",
+        "description": "NiceHashMiner - Mining client"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/nicehash/nhos",
+      "https://github.com/nicehash/nicehashminer",
+      "https://github.com/nicehash/nicehashquickminer"
+    ],
+    "github_repos": [
+      "nicehash/nhos",
+      "nicehash/nicehashminer",
+      "nicehash/nicehashquickminer"
+    ]
+  },
+  "hackenproof:nimbus": {
+    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+    "bounty": true,
+    "source": false,
+    "name": "Nimbus",
+    "url": "https://hackenproof.com/programs/nimbus",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noirwallet": {
+    "hash": "895d72d9c5e25cecbf5cf64d3d957a900dc6cac8",
+    "bounty": true,
+    "source": true,
+    "name": "NoirWallet",
+    "url": "https://hackenproof.com/programs/noirwallet",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/NoirWallet/noir-wallet",
+        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
+        "description": "Zcash accounts, key operations, transaction construction, signing, and synchronization"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-adapter",
+        "description": "Wallet connectivity, messaging, and permission management"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/noir-wallet/tree/main/packages/sdk",
+        "description": "SDK"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/noirwallet/noir-wallet",
+      "https://github.com/noirwallet/noir-wallet/tree/main/packages/sdk",
+      "https://github.com/noirwallet/zcash-wallet-adapter",
+      "https://github.com/noirwallet/zcash-wallet-wasm"
+    ],
+    "github_repos": [
+      "noirwallet/noir-wallet",
+      "noirwallet/zcash-wallet-adapter",
+      "noirwallet/zcash-wallet-wasm"
     ]
   },
   "hackenproof:dodofeerouteproxy-smart-contract": {
@@ -43511,6 +43585,46 @@
     "platform": "hackenproof",
     "bounty_min": 0,
     "bounty_max": 0,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:hacken-web-and-apps": {
+    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
+    "bounty": false,
+    "source": false,
+    "name": "Hacken Web & Apps",
+    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:hackenproof": {
+    "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
+    "bounty": true,
+    "source": false,
+    "name": "HackenProof",
+    "url": "https://hackenproof.com/programs/hackenproof",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -45509,120 +45623,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:nicehash-mining-platform": {
-    "hash": "69ad85af9542bbf609c8b4024321b3d34d76a3d1",
-    "bounty": true,
-    "source": true,
-    "name": "NiceHash Mining platform",
-    "url": "https://hackenproof.com/programs/nicehash-mining-platform",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NHOS",
-        "description": "NHOS - Mining operating system"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashQuickMiner",
-        "description": "NiceHashQuickMiner - Mining client"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/nicehash/NiceHashMiner",
-        "description": "NiceHashMiner - Mining client"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/nicehash/nhos",
-      "https://github.com/nicehash/nicehashminer",
-      "https://github.com/nicehash/nicehashquickminer"
-    ],
-    "github_repos": [
-      "nicehash/nhos",
-      "nicehash/nicehashminer",
-      "nicehash/nicehashquickminer"
-    ]
-  },
-  "hackenproof:nimbus": {
-    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
-    "bounty": true,
-    "source": false,
-    "name": "Nimbus",
-    "url": "https://hackenproof.com/programs/nimbus",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:noirwallet": {
-    "hash": "895d72d9c5e25cecbf5cf64d3d957a900dc6cac8",
-    "bounty": true,
-    "source": true,
-    "name": "NoirWallet",
-    "url": "https://hackenproof.com/programs/noirwallet",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/NoirWallet/noir-wallet",
-        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
-        "description": "Zcash accounts, key operations, transaction construction, signing, and synchronization"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/zcash-wallet-adapter",
-        "description": "Wallet connectivity, messaging, and permission management"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/noir-wallet/tree/main/packages/sdk",
-        "description": "SDK"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/noirwallet/noir-wallet",
-      "https://github.com/noirwallet/noir-wallet/tree/main/packages/sdk",
-      "https://github.com/noirwallet/zcash-wallet-adapter",
-      "https://github.com/noirwallet/zcash-wallet-wasm"
-    ],
-    "github_repos": [
-      "noirwallet/noir-wallet",
-      "noirwallet/zcash-wallet-adapter",
-      "noirwallet/zcash-wallet-wasm"
-    ]
   },
   "hackenproof:nonkyc-dot-io": {
     "hash": "a3889d9d708db64da619435ccfad9d0067590e79",
@@ -57583,7 +57583,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-19T01:43:21.745597+00:00",
+    "updated_at": "2026-11-19T02:13:27.867292+00:00",
     "total": 1911,
     "qualifying": 426,
     "external": 346,
