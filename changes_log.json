@@ -1,58 +1,5 @@
 [
   {
-    "timestamp": "2026-09-21T18:46:00.517742+00:00",
-    "event": "new_program",
-    "platform": "hackerone",
-    "handle": "vercel",
-    "name": "Vercel",
-    "url": "https://hackerone.com/vercel",
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/nitrojs/nitro",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/nuxt/nuxt",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/sveltejs/svelte",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/vercel",
-        "description": "If you have found a repository configuration issue (e.g. vulnerable GitHub Action), please report this here.\n\nOut of scope:\n- Vulnerable/outdated dependencies\n- Best practices\n- Bugs in the code itself: please report this to our responsible disclosure program instead."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/vercel-labs/agent-skills",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/vercel-labs/skills",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/vercel/ai",
-        "description": ""
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "https://github.com/vercel/async-sema",
-        "description": ""
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-21T18:46:02.197012+00:00",
     "event": "scope_added",
     "platform": "bugcrowd",
@@ -7366,6 +7313,39 @@
     "removed": [
       "https://github.com/noirwallet/zcash-wallet-wasm"
     ],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-19T17:10:03.675022+00:00",
+    "event": "new_program",
+    "platform": "immunefi",
+    "handle": "audit-comp-base-everest",
+    "name": "Audit Comp | Base Everest",
+    "url": "https://immunefi.com/bug-bounty/audit-comp-base-everest",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-base/tree/689054ee14933cb2ee5bd54eadcd8dacbe1cc517",
+        "description": "Offchain components - v1.6.0-rc.9"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-contract-deployments/tree/e6797dfd6ac03b35d0ddd7eb369ab94bbc5fcd31",
+        "description": "Deployment and upgrade scripts for Base Sepolia"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-contracts/tree/b9b76d97dca3c420098f597ebc65bee4f28001b7",
+        "description": "Implementation contracts - v8.5.0-rc.1, including the pause logic moved from SuperchainConfig into SystemConfig (PR #432)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-nitro-validator/tree/0ea0d12366b4fa44f9e07e4755f2ad36561cb674",
+        "description": "TEE attestation contracts: NitroValidator, CertManager and P384Verifier, including the libraries defined in this repository that those contracts use"
+      }
+    ],
+    "added": [],
+    "removed": [],
     "github_repos": []
   }
 ]

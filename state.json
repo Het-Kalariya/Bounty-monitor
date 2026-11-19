@@ -173,7 +173,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1285,7 +1285,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4262,7 +4262,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 73,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5139,7 +5139,7 @@
     "github_repos": []
   },
   "hackerone:john-deere": {
-    "hash": "78e9fab5b82b01a4ae249d9e55300778bb9e764e",
+    "hash": "307d7ce7db14940acc369d8e78c3bdf5b358e1c6",
     "bounty": false,
     "source": false,
     "name": "John Deere",
@@ -5226,7 +5226,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 94,
+    "resp_eff": 96,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -6512,7 +6512,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 75,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8575,7 +8575,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 14,
+    "resp_eff": 15,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -20248,6 +20248,57 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "immunefi:audit-comp-base-everest": {
+    "hash": "c5eaba55d889b996713fe10fb907997354b18716",
+    "bounty": true,
+    "source": true,
+    "name": "Audit Comp | Base Everest",
+    "url": "https://immunefi.com/bug-bounty/audit-comp-base-everest",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-base/tree/689054ee14933cb2ee5bd54eadcd8dacbe1cc517",
+        "description": "Offchain components - v1.6.0-rc.9"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-contract-deployments/tree/e6797dfd6ac03b35d0ddd7eb369ab94bbc5fcd31",
+        "description": "Deployment and upgrade scripts for Base Sepolia"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-contracts/tree/b9b76d97dca3c420098f597ebc65bee4f28001b7",
+        "description": "Implementation contracts - v8.5.0-rc.1, including the pause logic moved from SuperchainConfig into SystemConfig (PR #432)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/immunefi-team/audit-comp-base-everest-nitro-validator/tree/0ea0d12366b4fa44f9e07e4755f2ad36561cb674",
+        "description": "TEE attestation contracts: NitroValidator, CertManager and P384Verifier, including the libraries defined in this repository that those contracts use"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/immunefi-team/audit-comp-base-everest-base/tree/689054ee14933cb2ee5bd54eadcd8dacbe1cc517",
+      "https://github.com/immunefi-team/audit-comp-base-everest-contract-deployments/tree/e6797dfd6ac03b35d0ddd7eb369ab94bbc5fcd31",
+      "https://github.com/immunefi-team/audit-comp-base-everest-contracts/tree/b9b76d97dca3c420098f597ebc65bee4f28001b7",
+      "https://github.com/immunefi-team/audit-comp-base-everest-nitro-validator/tree/0ea0d12366b4fa44f9e07e4755f2ad36561cb674"
+    ],
+    "github_repos": [
+      "immunefi-team/audit-comp-base-everest-base",
+      "immunefi-team/audit-comp-base-everest-contract-deployments",
+      "immunefi-team/audit-comp-base-everest-contracts",
+      "immunefi-team/audit-comp-base-everest-nitro-validator"
+    ]
   },
   "immunefi:hedera": {
     "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
@@ -57588,11 +57639,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-19T16:40:00.416995+00:00",
-    "total": 1912,
-    "qualifying": 426,
+    "updated_at": "2026-11-19T17:10:03.629683+00:00",
+    "total": 1913,
+    "qualifying": 427,
     "external": 346,
-    "blockchain": 363,
+    "blockchain": 364,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
