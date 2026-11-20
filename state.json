@@ -173,7 +173,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1608,7 +1608,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 77,
     "bounty_days": 658.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4224,7 +4224,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 89,
+    "resp_eff": 88,
     "bounty_days": 13.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7676,7 +7676,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 17153,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": 2192.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7800,7 +7800,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 78,
     "bounty_days": 403.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8774,6 +8774,35 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackerone:rubygems": {
+    "hash": "329d8c01aa81e7ad0ebceccbd3c5cfab0352dfa3",
+    "bounty": false,
+    "source": true,
+    "name": "RubyGems",
+    "url": "https://hackerone.com/rubygems",
+    "platform": "hackerone",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "bounty_note": "",
+    "domains": 49,
+    "resp_eff": 88,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/rubygems/rubygems",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/rubygems/rubygems"
+    ],
+    "github_repos": [
+      "rubygems/rubygems"
+    ]
   },
   "hackerone:files": {
     "hash": "041e40838af7a3604cb073641059fe3ac76ea98c",
@@ -18107,6 +18136,25 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:postibugbounty": {
+    "hash": "96636b230374b09dbc6266c2c5716f2ecf28f96a",
+    "bounty": true,
+    "source": false,
+    "name": "Posti Bug Bounty ",
+    "url": "https://www.intigriti.com/programs/posti/postibugbounty/detail",
+    "platform": "intigriti",
+    "bounty_min": 100,
+    "bounty_max": 2000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -42563,6 +42611,102 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:redstone-web": {
+    "hash": "60421e8ab273b1b42ce1950e3438fcb5d1b649f5",
+    "bounty": true,
+    "source": false,
+    "name": "RedStone Web",
+    "url": "https://hackenproof.com/programs/redstone-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ternoa-wallet": {
+    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
+    "bounty": true,
+    "source": false,
+    "name": "Ternoa Wallet",
+    "url": "https://hackenproof.com/programs/ternoa-wallet",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
+    "hash": "1088557476b2b831ce4ceab49b1e8bb793f5a8ff",
+    "bounty": true,
+    "source": true,
+    "name": "The Flipcash Reserve Contract Bug Bounty",
+    "url": "https://hackenproof.com/programs/the-flipcash-reserve-contract-bug-bounty",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/code-payments/flipcash-program",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.solana.com/address/9oREdQzzrVH9HPTqKtVMbwP7fFtjrxVAYkMM664CwMGS",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://explorer.solana.com/address/9oredqzzrvh9hptqktvmbwp7fftjrxvaykmm664cwmgs",
+      "https://github.com/code-payments/flipcash-program"
+    ],
+    "github_repos": [
+      "code-payments/flipcash-program"
+    ]
+  },
+  "hackenproof:tokenize-xchange-web-and-mobile": {
+    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
+    "bounty": true,
+    "source": false,
+    "name": "Tokenize Xchange Web & Mobile",
+    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 3000,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:dragon-king": {
     "hash": "55808631b37669697d0fd7f23058b3367fc7f0de",
     "bounty": true,
@@ -46409,26 +46553,6 @@
       "redstone-finance/rust-sdk"
     ]
   },
-  "hackenproof:redstone-web": {
-    "hash": "60421e8ab273b1b42ce1950e3438fcb5d1b649f5",
-    "bounty": true,
-    "source": false,
-    "name": "RedStone Web",
-    "url": "https://hackenproof.com/programs/redstone-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:rhea-finance-smart-contracts": {
     "hash": "1b9eaba7b12a2561cca29da8cec9512ff2e095b3",
     "bounty": true,
@@ -47915,26 +48039,6 @@
       "capsule-corp-ternoa/chainbridge-solidity"
     ]
   },
-  "hackenproof:ternoa-wallet": {
-    "hash": "ccec2f0e0bdc33b3eaac3ac5e738515622ca4b05",
-    "bounty": true,
-    "source": false,
-    "name": "Ternoa Wallet",
-    "url": "https://hackenproof.com/programs/ternoa-wallet",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:ternoa-web-and-apps": {
     "hash": "715cf363d49ba8d1735147868a4d7b0950fee276",
     "bounty": true,
@@ -48060,42 +48164,6 @@
       "tetu-io/tetu-contracts-v2"
     ]
   },
-  "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
-    "hash": "1088557476b2b831ce4ceab49b1e8bb793f5a8ff",
-    "bounty": true,
-    "source": true,
-    "name": "The Flipcash Reserve Contract Bug Bounty",
-    "url": "https://hackenproof.com/programs/the-flipcash-reserve-contract-bug-bounty",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/code-payments/flipcash-program",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.solana.com/address/9oREdQzzrVH9HPTqKtVMbwP7fFtjrxVAYkMM664CwMGS",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://explorer.solana.com/address/9oredqzzrvh9hptqktvmbwp7fftjrxvaykmm664cwmgs",
-      "https://github.com/code-payments/flipcash-program"
-    ],
-    "github_repos": [
-      "code-payments/flipcash-program"
-    ]
-  },
   "hackenproof:tickets-travel-network-slash-mobile": {
     "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
     "bounty": true,
@@ -48145,26 +48213,6 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tokenize-xchange-web-and-mobile": {
-    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
-    "bounty": true,
-    "source": false,
-    "name": "Tokenize Xchange Web & Mobile",
-    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 3000,
-    "bounty_max": 5000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -50666,6 +50714,34 @@
       "rocket-pool/rocketpool"
     ]
   },
+  "sherlock:100": {
+    "hash": "9e46e74633badc7ae381d859acba68abbf22c310",
+    "bounty": true,
+    "source": true,
+    "name": "Sport.Fun",
+    "url": "https://audits.sherlock.xyz/bug-bounties/100",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "sherlock:100",
+        "description": "live contracts \u2014 see program page"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "sherlock:100"
+    ],
+    "github_repos": []
+  },
   "sherlock:102": {
     "hash": "082e644de36fa0c14d5a91248bc804ad2d9099df",
     "bounty": true,
@@ -50723,6 +50799,50 @@
       "sherlock:105"
     ],
     "github_repos": []
+  },
+  "sherlock:11": {
+    "hash": "1686847ec6193ac68d01d9b72e9fbb68159edeeb",
+    "bounty": true,
+    "source": true,
+    "name": "Napier",
+    "url": "https://audits.sherlock.xyz/bug-bounties/11",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Napier-Lab/v1-pool",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/mixbytes/audits_public",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/napierfi/v1-pool",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/mixbytes/audits_public",
+      "https://github.com/napier-lab/v1-pool",
+      "https://github.com/napierfi/v1-pool"
+    ],
+    "github_repos": [
+      "mixbytes/audits_public",
+      "napier-lab/v1-pool",
+      "napierfi/v1-pool"
+    ]
   },
   "sherlock:114": {
     "hash": "06391af9eafc9286d08ce3f2981616b39fc8ce13",
@@ -51611,43 +51731,6 @@
       "golemfactory/yagna"
     ]
   },
-  "sherlock:425": {
-    "hash": "169b39a77b1cda852b8220740ca5d1bae0d2ddb9",
-    "bounty": true,
-    "source": true,
-    "name": "IOTA",
-    "url": "https://audits.sherlock.xyz/bug-bounties/425",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/iotaledger/iota",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/iotaledger/iota-rust-sdk",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/iotaledger/iota",
-      "https://github.com/iotaledger/iota-rust-sdk"
-    ],
-    "github_repos": [
-      "iotaledger/iota",
-      "iotaledger/iota-rust-sdk"
-    ]
-  },
   "sherlock:433": {
     "hash": "b3f23ec9b7dc73528e3a6d39e96747391df24039",
     "bounty": true,
@@ -51983,15 +52066,15 @@
       "seamless-protocol/leverage-tokens"
     ]
   },
-  "sherlock:100": {
-    "hash": "9e46e74633badc7ae381d859acba68abbf22c310",
+  "sherlock:425": {
+    "hash": "169b39a77b1cda852b8220740ca5d1bae0d2ddb9",
     "bounty": true,
     "source": true,
-    "name": "Sport.Fun",
-    "url": "https://audits.sherlock.xyz/bug-bounties/100",
+    "name": "IOTA",
+    "url": "https://audits.sherlock.xyz/bug-bounties/425",
     "platform": "sherlock",
     "bounty_min": 0,
-    "bounty_max": 250000,
+    "bounty_max": 5000,
     "bounty_ccy": "USDC",
     "bounty_note": "",
     "domains": 0,
@@ -52001,58 +52084,23 @@
     "sc_targets": [
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "sherlock:100",
-        "description": "live contracts \u2014 see program page"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "sherlock:100"
-    ],
-    "github_repos": []
-  },
-  "sherlock:11": {
-    "hash": "1686847ec6193ac68d01d9b72e9fbb68159edeeb",
-    "bounty": true,
-    "source": true,
-    "name": "Napier",
-    "url": "https://audits.sherlock.xyz/bug-bounties/11",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Napier-Lab/v1-pool",
+        "identifier": "https://github.com/iotaledger/iota",
         "description": "sherlock scope"
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/mixbytes/audits_public",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/napierfi/v1-pool",
+        "identifier": "https://github.com/iotaledger/iota-rust-sdk",
         "description": "sherlock scope"
       }
     ],
-    "sc_total": 3,
+    "sc_total": 2,
     "sc_ids": [
-      "https://github.com/mixbytes/audits_public",
-      "https://github.com/napier-lab/v1-pool",
-      "https://github.com/napierfi/v1-pool"
+      "https://github.com/iotaledger/iota",
+      "https://github.com/iotaledger/iota-rust-sdk"
     ],
     "github_repos": [
-      "mixbytes/audits_public",
-      "napier-lab/v1-pool",
-      "napierfi/v1-pool"
+      "iotaledger/iota",
+      "iotaledger/iota-rust-sdk"
     ]
   },
   "chaos:1inch": {
@@ -57737,8 +57785,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T18:31:04.937041+00:00",
-    "total": 1919,
+    "updated_at": "2026-11-20T19:01:43.401346+00:00",
+    "total": 1921,
     "qualifying": 427,
     "external": 355,
     "blockchain": 364,
