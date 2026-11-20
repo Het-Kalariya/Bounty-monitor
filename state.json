@@ -3820,7 +3820,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 86,
+    "resp_eff": 85,
     "bounty_days": 545.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6222,7 +6222,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 54,
+    "resp_eff": 57,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9627,7 +9627,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 27670,
-    "resp_eff": 41,
+    "resp_eff": 42,
     "bounty_days": 295.0,
     "sc_targets": [
       {
@@ -10488,6 +10488,39 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "bugcrowd:Aiven Managed Bug Bounty": {
+    "hash": "850970b208c01413ba9adb9597ef94aa7d4fb4ef",
+    "bounty": true,
+    "source": true,
+    "name": "Aiven Managed Bug Bounty",
+    "url": "https://bugcrowd.com/engagements/aiven-mbb-og",
+    "platform": "bugcrowd",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/Aiven-Open",
+        "description": "github.com/Aiven-Open"
+      },
+      {
+        "asset_type": "other",
+        "identifier": "https://github.com/Aiven",
+        "description": "github.com/Aiven"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/aiven",
+      "https://github.com/aiven-open"
+    ],
     "github_repos": []
   },
   "bugcrowd:Akeles Marketplace Bug Bounty": {
@@ -51487,36 +51520,6 @@
       "zellic/publications"
     ]
   },
-  "sherlock:384": {
-    "hash": "c96c8234416196911f5d2a539bfeb0083ddf469f",
-    "bounty": true,
-    "source": true,
-    "name": "Vesu",
-    "url": "https://audits.sherlock.xyz/bug-bounties/384",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/vesuxyz/vesu-v2",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/vesuxyz/vesu-v2"
-    ],
-    "github_repos": [
-      "vesuxyz/vesu-v2"
-    ]
-  },
   "sherlock:400": {
     "hash": "f4c1d7ffdc18793650e5de8d55df28d44cb46f42",
     "bounty": true,
@@ -52054,6 +52057,36 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
+    ]
+  },
+  "sherlock:384": {
+    "hash": "c96c8234416196911f5d2a539bfeb0083ddf469f",
+    "bounty": true,
+    "source": true,
+    "name": "Vesu",
+    "url": "https://audits.sherlock.xyz/bug-bounties/384",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/vesuxyz/vesu-v2",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/vesuxyz/vesu-v2"
+    ],
+    "github_repos": [
+      "vesuxyz/vesu-v2"
     ]
   },
   "chaos:1inch": {
@@ -57738,9 +57771,9 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T05:51:51.411104+00:00",
-    "total": 1920,
-    "qualifying": 426,
+    "updated_at": "2026-11-20T06:22:30.301711+00:00",
+    "total": 1921,
+    "qualifying": 427,
     "external": 355,
     "blockchain": 364,
     "feed_ids": {
