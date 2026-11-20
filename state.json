@@ -3323,7 +3323,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 80,
     "bounty_days": 40.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4181,7 +4181,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 89,
     "bounty_days": 346.0,
     "sc_targets": [
       {
@@ -4789,7 +4789,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19743,
-    "resp_eff": 83,
+    "resp_eff": 84,
     "bounty_days": 629.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4865,7 +4865,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8529,7 +8529,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 29,
+    "resp_eff": 30,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -9219,7 +9219,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 28,
+    "resp_eff": 29,
     "bounty_days": 703.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20186,6 +20186,77 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:ens": {
+    "hash": "bd06067758dbc5619b74035e1677e9257dcbac15",
+    "bounty": true,
+    "source": true,
+    "name": "ENS",
+    "url": "https://immunefi.com/bug-bounty/ens",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/ensdomains-landing",
+        "description": "Ens landing page source code"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/ens-metadata-service",
+        "description": "ENS Metadata service source code"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/apps-monorepo",
+        "description": "Source code for manger and explorer and supporting backend services"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/metadata-service-v2",
+        "description": "Source code for the metadata service"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ensdomains/contracts-v2",
+        "description": "ENSv2 Contracts"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/ensdomains/bigname",
+        "description": "Indexer"
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://github.com/ensdomains/apps-monorepo",
+      "https://github.com/ensdomains/bigname",
+      "https://github.com/ensdomains/contracts-v2",
+      "https://github.com/ensdomains/ens-metadata-service",
+      "https://github.com/ensdomains/ensdomains-landing",
+      "https://github.com/ensdomains/metadata-service-v2",
+      "https://immunefi.com"
+    ],
+    "github_repos": [
+      "ensdomains/apps-monorepo",
+      "ensdomains/bigname",
+      "ensdomains/contracts-v2",
+      "ensdomains/ens-metadata-service",
+      "ensdomains/ensdomains-landing",
+      "ensdomains/metadata-service-v2"
+    ]
+  },
   "immunefi:xoxno": {
     "hash": "9aeaf48fb71a97f27a3be8c6d794a990a92f97d9",
     "bounty": true,
@@ -26460,77 +26531,6 @@
     "github_repos": [
       "enzymefinance/protocol-onyx",
       "enzymefinance/protocol-onyx-dev"
-    ]
-  },
-  "immunefi:ens": {
-    "hash": "bd06067758dbc5619b74035e1677e9257dcbac15",
-    "bounty": true,
-    "source": true,
-    "name": "ENS",
-    "url": "https://immunefi.com/bug-bounty/ens",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/ensdomains-landing",
-        "description": "Ens landing page source code"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/ens-metadata-service",
-        "description": "ENS Metadata service source code"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/apps-monorepo",
-        "description": "Source code for manger and explorer and supporting backend services"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/metadata-service-v2",
-        "description": "Source code for the metadata service"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ensdomains/contracts-v2",
-        "description": "ENSv2 Contracts"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/ensdomains/bigname",
-        "description": "Indexer"
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://github.com/ensdomains/apps-monorepo",
-      "https://github.com/ensdomains/bigname",
-      "https://github.com/ensdomains/contracts-v2",
-      "https://github.com/ensdomains/ens-metadata-service",
-      "https://github.com/ensdomains/ensdomains-landing",
-      "https://github.com/ensdomains/metadata-service-v2",
-      "https://immunefi.com"
-    ],
-    "github_repos": [
-      "ensdomains/apps-monorepo",
-      "ensdomains/bigname",
-      "ensdomains/contracts-v2",
-      "ensdomains/ens-metadata-service",
-      "ensdomains/ensdomains-landing",
-      "ensdomains/metadata-service-v2"
     ]
   },
   "immunefi:dhedge": {
@@ -51305,43 +51305,6 @@
       "yearn/yrobotreasury"
     ]
   },
-  "sherlock:300": {
-    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
-    "bounty": true,
-    "source": true,
-    "name": "Aave V4",
-    "url": "https://audits.sherlock.xyz/bug-bounties/300",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 2500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-address-book",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave/aave-v4",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/aave-dao/aave-address-book",
-      "https://github.com/aave/aave-v4"
-    ],
-    "github_repos": [
-      "aave-dao/aave-address-book",
-      "aave/aave-v4"
-    ]
-  },
   "sherlock:344": {
     "hash": "dcc25d4090da7bbb924fd16594f4e3ff70c4b11f",
     "bounty": true,
@@ -52043,6 +52006,43 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
+    ]
+  },
+  "sherlock:300": {
+    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
+    "bounty": true,
+    "source": true,
+    "name": "Aave V4",
+    "url": "https://audits.sherlock.xyz/bug-bounties/300",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 2500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-address-book",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave/aave-v4",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/aave-dao/aave-address-book",
+      "https://github.com/aave/aave-v4"
+    ],
+    "github_repos": [
+      "aave-dao/aave-address-book",
+      "aave/aave-v4"
     ]
   },
   "chaos:1inch": {
@@ -57727,7 +57727,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T13:30:32.852180+00:00",
+    "updated_at": "2026-11-20T14:00:54.196988+00:00",
     "total": 1919,
     "qualifying": 427,
     "external": 355,
