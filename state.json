@@ -3255,7 +3255,7 @@
     "github_repos": []
   },
   "hackerone:abn_amro_vdp": {
-    "hash": "0f18e26a250c6ab965495994507eea4899541d1a",
+    "hash": "6bd3cd7fc923debf9a4cbe03e83194f1158e29d8",
     "bounty": false,
     "source": false,
     "name": "ABN AMRO Bank VDP",
@@ -6874,7 +6874,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 56,
+    "resp_eff": 57,
     "bounty_days": 278.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7590,7 +7590,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 420,
-    "resp_eff": 18,
+    "resp_eff": 19,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -20186,6 +20186,885 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:xoxno": {
+    "hash": "9aeaf48fb71a97f27a3be8c6d794a990a92f97d9",
+    "bounty": true,
+    "source": true,
+    "name": "XOXNO",
+    "url": "https://immunefi.com/bug-bounty/xoxno",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://xoxno.com",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/XOXNO/rs-lending-xlm",
+        "description": "XOXNO Lending monorepo on Stellar Soroban: controller, pool, governance, position NFT, price aggregator and shared math"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/xoxno/rs-lending-xlm",
+      "https://xoxno.com"
+    ],
+    "github_repos": [
+      "xoxno/rs-lending-xlm"
+    ]
+  },
+  "immunefi:strata": {
+    "hash": "627606f614b86bc94ea0d039159b1ba15a5872ab",
+    "bounty": true,
+    "source": true,
+    "name": "Strata",
+    "url": "https://immunefi.com/bug-bounty/strata",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/tree/tranches/contracts/tranches/oracles",
+        "description": "All current and future Solidity files in this directory are in scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/TwoStepConfigManager.sol",
+        "description": "Manages exit-fee updates through a secure, two-step governance process"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/TrancheDepositor.sol",
+        "description": "A  routing helper that converts any supported token into the right form before depositing it into a tranche vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/governance/",
+        "description": "All current and future Solidity files in this directory are in scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/UnstakeCooldown.sol",
+        "description": "UnstakeCooldown Contract for strategy unstake redeem requests"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/ERC20Cooldown.sol",
+        "description": "Locks ERC-20 tokens for a specified cooldown period before withdrawal finalization."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/CooldownBase.sol",
+        "description": "Base Cooldown contract"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/CDOComponent.sol",
+        "description": "Abstract base contract for CDO components (Tranches, Accounting, Strategy)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/utils/UD60x18Ext.sol",
+        "description": "Extended PRB-Math's UD60x18 with a max(x, y) helper."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/utils/RoundingGuard.sol",
+        "description": "Keeps the original value when a recomputed one differs by \u22641 wei, ignoring harmless rounding dust."
+      }
+    ],
+    "sc_total": 11,
+    "sc_ids": [
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/governance",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cdocomponent.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/cooldownbase.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/erc20cooldown.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/unstakecooldown.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/tranchedepositor.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/twostepconfigmanager.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/accountinglib.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/roundingguard.sol",
+      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/ud60x18ext.sol",
+      "https://github.com/strata-markets/contracts/tree/tranches/contracts/tranches/oracles"
+    ],
+    "github_repos": [
+      "strata-markets/contracts"
+    ]
+  },
+  "immunefi:moneyonchain": {
+    "hash": "d71091e46814da9ffca2d945ba26204129f4f13c",
+    "bounty": true,
+    "source": true,
+    "name": "Money on Chain / RIF on Chain",
+    "url": "https://immunefi.com/bug-bounty/moneyonchain",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "DOC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/money-on-chain/stable-protocol-core-v2",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0xf773B590aF754D597770937Fa8ea7AbDf2668370",
+        "description": "This is MoC proxy contract, it's a contract in the MoC v1 core area, the main entry point for minting, redeeming, and protocol operations in the legacy MoneyOnChain RBTC system."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0xcE2A128cC73e5d98355aAfb2595647F2D3171Faa",
+        "description": "This is MoCConnector contract, it's a contract in the MoC v1 core area, it wires the legacy protocol modules together and stores shared contract references."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0xb9C42EFc8ec54490a37cA91c423F7285Fa01e257",
+        "description": "This is MoCState contract, it's a contract in the MoC v1 core area, it maintains protocol accounting state, coverage, prices, and risk parameters."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0x6aCb83bB0281FB847b43cf7dd5e2766BFDF49038",
+        "description": "This is MoCExchange contract, it's a contract in the MoC v1 core area, it handles token exchange, mint, and redeem execution paths."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0xc0f9B54c41E3d0587Ce0F7540738d8d649b0A3F3",
+        "description": "This is MoCInrate contract, it's a contract in the MoC v1 core area, it calculates interest, commissions, and related protocol rates."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0xe700691dA7b9851F2F35f8b8182c69c53CcaD9Db",
+        "description": "This is DoCToken contract, it's a contract in the MoC v1 token area, it represents the Dollar on Chain stable token used by the protocol."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0x440CD83C160De5C96Ddb20246815eA44C7aBBCa8",
+        "description": "This is BProToken contract, it's a contract in the MoC v1 token area, it represents the BitPro token used for leveraged exposure in the legacy protocol."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://rootstock.blockscout.com/address/0x9AC7fE28967B30E3A4e6e03286d715b42B453D10",
+        "description": "This is MoCToken contract, it's a contract in the MoC governance token area, it represents the MOC token used across governance, incentives, and protocol fee flows."
+      }
+    ],
+    "sc_total": 55,
+    "sc_ids": [
+      "https://github.com/money-on-chain/stable-protocol-core-v2",
+      "https://immunefi.com",
+      "https://rootstock.blockscout.com/address/0x009c51e1f6fedcdb8014ea9ae1e39b6dbf2ac0ec",
+      "https://rootstock.blockscout.com/address/0x0237ad1f0831b479a344e56646bc48b0885cf46f",
+      "https://rootstock.blockscout.com/address/0x09a84d61c1a10f1d5fb3267dfb00d16ca0dacc30",
+      "https://rootstock.blockscout.com/address/0x0e60154be285810dfa1d64fac5acb4804d7a7ba0",
+      "https://rootstock.blockscout.com/address/0x114921bcbd5fc34e103494d338ca492b9400b0fd",
+      "https://rootstock.blockscout.com/address/0x11683439c9509c135ee4f7bb6e23835e1d86ecba",
+      "https://rootstock.blockscout.com/address/0x131564703310a294c1bfdc09d10ec0659f18e253",
+      "https://rootstock.blockscout.com/address/0x2bbcbc2cd2f2655d5a4306637c46bcf2e6d859f6",
+      "https://rootstock.blockscout.com/address/0x323f6117a256e8f697ac8d2816eb71e9b7134809",
+      "https://rootstock.blockscout.com/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37",
+      "https://rootstock.blockscout.com/address/0x3b8853df65afbd94853e6d77ee0ab5590f41bb08",
+      "https://rootstock.blockscout.com/address/0x3eb689a01c4e8ccac7c72097104ff37ccf907bbe",
+      "https://rootstock.blockscout.com/address/0x42e29760d05cfb229d4075c75238ec82fb94fd59",
+      "https://rootstock.blockscout.com/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8",
+      "https://rootstock.blockscout.com/address/0x47f5014115d3bb29b20b5168ee75050d6f8c3bf1",
+      "https://rootstock.blockscout.com/address/0x5646c6988d5d3d7f78f15683ce3aca11699bcdbb",
+      "https://rootstock.blockscout.com/address/0x5ce577f6ec969ce9a282838d350206c52a6f338c",
+      "https://rootstock.blockscout.com/address/0x60ceef03aa1aa96263e297d220ee4ebc3c6b6e47",
+      "https://rootstock.blockscout.com/address/0x64a5634b2d1f17dc7c4765aacd222f8e9eb7712c",
+      "https://rootstock.blockscout.com/address/0x65a5681be95d212f0c90ead40170d8277de81169",
+      "https://rootstock.blockscout.com/address/0x661f7d510cdb40638f5afd9f9df8877398500593",
+      "https://rootstock.blockscout.com/address/0x697535055aa7afd2c280523c7b062b1f05284661",
+      "https://rootstock.blockscout.com/address/0x6a343488338b944c6fcc89906646fac1e8e91ce5",
+      "https://rootstock.blockscout.com/address/0x6a5b2c84e63b5c1330bf4cccff1ad6f23116cc14",
+      "https://rootstock.blockscout.com/address/0x6acb83bb0281fb847b43cf7dd5e2766bfdf49038",
+      "https://rootstock.blockscout.com/address/0x6c22ff31fbdf725d30f206efff9f8a2a11faf948",
+      "https://rootstock.blockscout.com/address/0x6ca9d0e9382f58ac9b109f5f7f3aabc8b86c1a24",
+      "https://rootstock.blockscout.com/address/0x6d46472d6c147970706ea41db9caab79da9262c2",
+      "https://rootstock.blockscout.com/address/0x7002dd3027947ab98ca3ddc28f93f2450281453a",
+      "https://rootstock.blockscout.com/address/0x883e3433c236abd3c301ffc9b59ea478c0c21c9a",
+      "https://rootstock.blockscout.com/address/0x8f288cdee8ecc0afa802306e6457f2060aff7872",
+      "https://rootstock.blockscout.com/address/0x9ac7fe28967b30e3a4e6e03286d715b42b453d10",
+      "https://rootstock.blockscout.com/address/0x9c66296938d849802ffa879a20fdc11b58c55851",
+      "https://rootstock.blockscout.com/address/0x9ea22ca83dd42a4b8e4c797bbcd6dfe4413ee8f8",
+      "https://rootstock.blockscout.com/address/0x9f5ce0a8f023f8096145ce2d792eb66091cb89fe",
+      "https://rootstock.blockscout.com/address/0xa27024ed70035e46dba712609fc2afa1c97aa36a",
+      "https://rootstock.blockscout.com/address/0xa288319ecb63301e21963e21ef3ca8fb720d2672",
+      "https://rootstock.blockscout.com/address/0xb9c42efc8ec54490a37ca91c423f7285fa01e257",
+      "https://rootstock.blockscout.com/address/0xc0f9b54c41e3d0587ce0f7540738d8d649b0a3f3",
+      "https://rootstock.blockscout.com/address/0xcd101a2414256da8f8e25d7b483b3cf639a71683",
+      "https://rootstock.blockscout.com/address/0xcd1d5d171a466a103c3a078c6770deb801011542",
+      "https://rootstock.blockscout.com/address/0xce2a128cc73e5d98355aafb2595647f2d3171faa",
+      "https://rootstock.blockscout.com/address/0xd3d1afc638cef2c55d2ee33e0c355972f11be065",
+      "https://rootstock.blockscout.com/address/0xe2927a0620b82a66d67f678fc9b826b0e01b1bfd",
+      "https://rootstock.blockscout.com/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db",
+      "https://rootstock.blockscout.com/address/0xe95449792f9c15e059b5225e6c9ec9a5aa12a828",
+      "https://rootstock.blockscout.com/address/0xecbe91572f788945afd736a6bd9ddbe885e689d7",
+      "https://rootstock.blockscout.com/address/0xf09006e812be98c7b18c877af5c126629acb6cab",
+      "https://rootstock.blockscout.com/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61",
+      "https://rootstock.blockscout.com/address/0xf5ad1a6f6ba49c507bb24676bbf80b8ed19b694c",
+      "https://rootstock.blockscout.com/address/0xf773b590af754d597770937fa8ea7abdf2668370",
+      "https://rootstock.blockscout.com/address/0xfc5e1b8468327b60ca1c6e32672249de9a10ffdc",
+      "https://rootstock.blockscout.com/address/0xfc7b1f146528abb96a5a16d6c295f4332a0bc0ef"
+    ],
+    "github_repos": [
+      "money-on-chain/stable-protocol-core-v2"
+    ]
+  },
+  "immunefi:intuition": {
+    "hash": "be6bd548905c76fd54404ecd9f6108df827684b1",
+    "bounty": true,
+    "source": true,
+    "name": "Intuition",
+    "url": "https://immunefi.com/bug-bounty/intuition",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x6cd905dF2Ed214b22e0d48FF17CD4200C1C6d8A3",
+        "description": "Trust (TRUST token) - Base Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x7745bDEe668501E5eeF7e9605C746f9cDfb60667",
+        "description": "BaseEmissionsController - Base Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0xb1ce9Ac324B5C3928736Ec33b5Fd741cb04a2F2d",
+        "description": "EmissionsAutomationAdapter - Base Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0xE485D9a5Dc39774b7A80864B625969Cf9d93E5D7",
+        "description": "TrustSwapAndBridgeRouter - Base Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0x81cFb09cb44f7184Ad934C09F82000701A4bF672",
+        "description": "WrappedTrust (WTRUST) - Intuition Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0x6E35cF57A41fA15eA0EaE9C33e751b01A784Fe7e",
+        "description": "MultiVault (proxy) - Intuition Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0x33827373a7D1c7C78a01094071C2f6CE74253B9B",
+        "description": "AtomWalletFactory (proxy) - Intuition Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0xC23cD55CF924b3FE4b97deAA0EAF222a5082A1FF",
+        "description": "AtomWalletBeacon - Intuition Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0xbCb1526A8de4a155e4dE003361b122eDe2f22908",
+        "description": "AtomWallet implementation (logic behind AtomWalletBeacon) - Intuition Mainnet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.intuition.systems/address/0x98C9BCecf318d0D1409Bf81Ea3551b629fAEC165",
+        "description": "AtomWarden (proxy) - Intuition Mainnet"
+      }
+    ],
+    "sc_total": 16,
+    "sc_ids": [
+      "https://basescan.org/address/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+      "https://basescan.org/address/0x7745bdee668501e5eef7e9605c746f9cdfb60667",
+      "https://basescan.org/address/0xb1ce9ac324b5c3928736ec33b5fd741cb04a2f2d",
+      "https://basescan.org/address/0xe485d9a5dc39774b7a80864b625969cf9d93e5d7",
+      "https://explorer.intuition.systems/address/0x23aff95153aa88d28b9b97ba97629e05d5fd335d",
+      "https://explorer.intuition.systems/address/0x33827373a7d1c7c78a01094071c2f6ce74253b9b",
+      "https://explorer.intuition.systems/address/0x635bbd1367b66e7b16a21d6e5a63c812ffc00617",
+      "https://explorer.intuition.systems/address/0x6e35cf57a41fa15ea0eae9c33e751b01a784fe7e",
+      "https://explorer.intuition.systems/address/0x73b8819f9b157be42172e3866fb0ba0d5fa0a5c6",
+      "https://explorer.intuition.systems/address/0x81cfb09cb44f7184ad934c09f82000701a4bf672",
+      "https://explorer.intuition.systems/address/0x98c9bcecf318d0d1409bf81ea3551b629faec165",
+      "https://explorer.intuition.systems/address/0xbcb1526a8de4a155e4de003361b122ede2f22908",
+      "https://explorer.intuition.systems/address/0xc23cd55cf924b3fe4b97deaa0eaf222a5082a1ff",
+      "https://explorer.intuition.systems/address/0xc3efd5471dc63d74639725f381f9686e3f264366",
+      "https://explorer.intuition.systems/address/0xd0e488fb32130232527eedeb72f8ce2bfc0f9930",
+      "https://intuition.systems"
+    ],
+    "github_repos": []
+  },
+  "immunefi:hyperlane": {
+    "hash": "234d3b854cd05f7166e62e0d8e6eff47fd5c1439",
+    "bounty": true,
+    "source": true,
+    "name": "Hyperlane",
+    "url": "https://immunefi.com/bug-bounty/hyperlane",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 2500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x1df063280C4166AF9a725e3828b4dAC6c7113B08",
+        "description": "Arbitrum validatorAnnounce"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x80Cebd56A65e46c474a1A101e89E76C4c51D179c",
+        "description": "Arbitrum proxyAdmin"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x979Ca5202784112f4738403dBec5D0F3B9daabB9",
+        "description": "Arbitrum Mailbox proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x4826ce713944d8b3eb98c73050bfc01e8fb6655a",
+        "description": "Arbitrum Mailbox implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x9e8fFb1c26099e75Dd5D794030e2E9AA51471c25",
+        "description": "Arbitrum FallbackRoutingHook"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x5C17DD50232f330c928ce661116517D20859b08f",
+        "description": "Arbitrum AggregationHook"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x9B5f440bBb64Fee337F37e03362b628711Ea09C7",
+        "description": "Arbitrum staticAggregationHookFactory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x6cA0B6D22da47f091B7613223cD4BB03a2d77918",
+        "description": "Arbitrum interchainGasPaymaster proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x3b6044acd6767f017e99318AA6Ef93b7B06A5a22",
+        "description": "Arbitrum interchainGasPaymaster implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xD3805207b65d99C075ceA938Fa7c0587026a5DF5",
+        "description": "Arbitrum storageGasOracle"
+      }
+    ],
+    "sc_total": 220,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x12df53079d399a47e9e730df095b712b0fdfa791",
+      "https://arbiscan.io/address/0x1df063280c4166af9a725e3828b4dac6c7113b08",
+      "https://arbiscan.io/address/0x1e38556b4fe553e6249448960875883990efcf34",
+      "https://arbiscan.io/address/0x29c02b9ad9483a1711a413d37b8126ec1a5eab0a",
+      "https://arbiscan.io/address/0x3b6044acd6767f017e99318aa6ef93b7b06a5a22",
+      "https://arbiscan.io/address/0x3c330d4a2e2b8443afab8e326e64ab4251b7eae0",
+      "https://arbiscan.io/address/0x4826ce713944d8b3eb98c73050bfc01e8fb6655a",
+      "https://arbiscan.io/address/0x5c17dd50232f330c928ce661116517d20859b08f",
+      "https://arbiscan.io/address/0x5d759b5ceeb1c3b0181bec0f80fb04f820cc35d1",
+      "https://arbiscan.io/address/0x6ca0b6d22da47f091b7613223cd4bb03a2d77918",
+      "https://arbiscan.io/address/0x748040afb89b8fdbb992799808215419d36a0930",
+      "https://arbiscan.io/address/0x80cebd56a65e46c474a1a101e89e76c4c51d179c",
+      "https://arbiscan.io/address/0x979ca5202784112f4738403dbec5d0f3b9daabb9",
+      "https://arbiscan.io/address/0x9b5f440bbb64fee337f37e03362b628711ea09c7",
+      "https://arbiscan.io/address/0x9e8ffb1c26099e75dd5d794030e2e9aa51471c25",
+      "https://arbiscan.io/address/0xa2931c37957f3079d3b21b877d56e1db930e02a5",
+      "https://arbiscan.io/address/0xa7eccdb9be08178f896c26b7bbd8c3d4e844d9ba",
+      "https://arbiscan.io/address/0xcd0cfff6efd943b4b81f2c15847730dbcd30e3ae",
+      "https://arbiscan.io/address/0xd12c017529be32c23150313f1e473b76e6b19773",
+      "https://arbiscan.io/address/0xd3805207b65d99c075cea938fa7c0587026a5df5",
+      "https://arbiscan.io/address/0xd4883084389fc1eeb4dafb2adcfc36b711c310eb",
+      "https://arbiscan.io/address/0xfa8bfce55b3a0631df38257615cef7fcd3523a48",
+      "https://basescan.org/address/0x1052ef3419f26bec74ed7cef4a4fa6812bc09908",
+      "https://basescan.org/address/0x13f3d4b0ee0a713430fded9e18f7fb6c91a6e41f",
+      "https://basescan.org/address/0x182e8d7c5f1b06201b102123fc7df0eaeb445a7b",
+      "https://basescan.org/address/0x19dc38aeae620380430c200a6e990d5af5480117",
+      "https://basescan.org/address/0x2f2afae1139ce54fefc03593fee8ab2adf4a85a7",
+      "https://basescan.org/address/0x46fa3a5780e5b90eaf34bded554d5353b5abe9e7",
+      "https://basescan.org/address/0x47baae89d8727f00d723ca7479acaced0f788c72",
+      "https://basescan.org/address/0x4eb82ee35b0a1c1d776e3a3b547f9a9ba6fcc9f2",
+      "https://basescan.org/address/0x4ed7d626f1e96cd1c0401607bf70d95243e3ded1",
+      "https://basescan.org/address/0x77be0b5ae400675063ce2b2b0d692d9341f4b193",
+      "https://basescan.org/address/0x7e27456a839bff31ca642c060a2b68414cb6e503",
+      "https://basescan.org/address/0x80c8f6394c0fcf7bab16ac08b85484361ece5888",
+      "https://basescan.org/address/0x81e3978b895a85defbf6f4d134a6427c3bee0d8c",
+      "https://basescan.org/address/0x861908e6c8f992537f557da5fb5876836036b347",
+      "https://basescan.org/address/0x8b83fefd896faa52057798f6426e9f0b080fccce",
+      "https://basescan.org/address/0x8f7454ac98228f3504bb91ea3d8adafe6406110a",
+      "https://basescan.org/address/0xa85f9e4fda2fff1c07f2726a630443af3fadf830",
+      "https://basescan.org/address/0xbf12ef4b9f307463d3fb59c3604f294ddce287e2",
+      "https://basescan.org/address/0xc3f23848ed2e04c0c6d41bd7804fa8f89f940b94",
+      "https://basescan.org/address/0xea87ae93fa0019a82a727bfd3ebd1cfca8f64f1d",
+      "https://basescan.org/address/0xeb9fcfdc9efdc17c1ec5e1dc085b98485da213d6",
+      "https://bscscan.com/address/0x226db065586e2ea9be54778d5a5de400e64f3311",
+      "https://bscscan.com/address/0x2971b9aec44be4eb673df1b88cdb57b96eefe8a4",
+      "https://bscscan.com/address/0x38b3878c4fb44d201da924c4a04bae3ee728c065",
+      "https://bscscan.com/address/0x4b1d8352e35e3bde36df5ed2e73c24e35c4a96b7",
+      "https://bscscan.com/address/0x4bbd67dc995572b40dc6b3eb6cde5185a5373868",
+      "https://bscscan.com/address/0x65993af9d0d3a64ec77590db7ba362d6eb78ef70",
+      "https://bscscan.com/address/0x69f2508e7bc89b4ff2da864dedafd560376decc5",
+      "https://bscscan.com/address/0x7024078130d9c2100fea474dad009c2d1703accd",
+      "https://bscscan.com/address/0x78e25e7f84416e69b9339b0a6336eb6efff6b451",
+      "https://bscscan.com/address/0x7dbdad1b4a922b65d37d7258a4227b6658344b7f",
+      "https://bscscan.com/address/0x91d23d603d60445411c06e6443d81395593b7940",
+      "https://bscscan.com/address/0xa888931c61abc5255583bb28847d38eba2e83bd8",
+      "https://bscscan.com/address/0xb274bbbc1df5f1d1763216a93d473fde6f5de043",
+      "https://bscscan.com/address/0xbc3af0d4930502ff0f6a8416a7a184c7bffe19e7",
+      "https://bscscan.com/address/0xbfa300164a04437d64afda390736e6dc45096da1",
+      "https://bscscan.com/address/0xe6af5720d34213c805c08e2470aea979e3f72f75",
+      "https://bscscan.com/address/0xe70e86a7d1e001d419d71f960cb6cad59b6a3db6",
+      "https://bscscan.com/address/0xfa360ff588623a026bf19a1801f2a8f1f045fa33",
+      "https://bscscan.com/address/0xfadbc81ca8a957f1bf7c78bcc575b28dbde042b6",
+      "https://bscscan.com/address/0xfdb9cd5f9daaa2e4474019405a328a88e7484f26",
+      "https://celoscan.io/address/0x04db778f05854f26e67e0a66b740bbbe9070d366",
+      "https://celoscan.io/address/0x0564ecf87c9be194bbcdb8bc606132b163f76ded",
+      "https://celoscan.io/address/0x1722dd970a1f56040712129f5eeb76b003fd7500",
+      "https://celoscan.io/address/0x299a3bfeca0ebecb2114881da39c3c303c318cac",
+      "https://celoscan.io/address/0x2a2c22b0a8615ad24839fa6af302e896af32d1a3",
+      "https://celoscan.io/address/0x30a8dec5318e2aaa9ad5b069fc606c4cff6f5676",
+      "https://celoscan.io/address/0x4c96a1abc44dc846775ce702c9e9be821d3b487c",
+      "https://celoscan.io/address/0x4ed23e3885e1651e62564f78817d91865beba575",
+      "https://celoscan.io/address/0x50da3b3907a08a24fe4999f4dcf337e8dc7954bb",
+      "https://celoscan.io/address/0x571f1435613381208477ac5d6974310d88ac7cb7",
+      "https://celoscan.io/address/0x5a56fa10ce985a53eb831cb69ddc224e433f9a83",
+      "https://celoscan.io/address/0x80672c5d9fd26b235654c24adc1cfcdeb8d15115",
+      "https://celoscan.io/address/0x90f9a2e9ece93516d65fdab726a3c62f5960a1b9",
+      "https://celoscan.io/address/0x99e8e56dce3402d6e09a82718937fc1ca2a9491e",
+      "https://celoscan.io/address/0x9bde63104ee030d9de419eed6ba7d14b86d6fe3f",
+      "https://celoscan.io/address/0xab402f227e892ef37c105bf06619c0fa106a1fb2",
+      "https://celoscan.io/address/0xc3745652efb8555a8b064a0ea78d295133d326d2",
+      "https://celoscan.io/address/0xc65890329066fb20c339bc5c22f1756e9d3a4ff5",
+      "https://celoscan.io/address/0xc97d8e6f57b0d64971453ddc6eb8483fec9d163a",
+      "https://celoscan.io/address/0xcef677b65fdaa6804d4403083bb12b8db3991fe1",
+      "https://celoscan.io/address/0xd9a9966e7da9a7f0032bf449fb12696a638e673c",
+      "https://celoscan.io/address/0xdc98a856fb9112894c2fe32267da8bf35645faf3",
+      "https://celoscan.io/address/0xf18e32428dad0802c5d6f723cb80a6da889777c4",
+      "https://etherscan.io/address/0x1008fabd07abd93a7d9bb81803a89cc3a834e1a9",
+      "https://etherscan.io/address/0x28fa9552f19039b450498b0d8e5deae0d0aac559",
+      "https://etherscan.io/address/0x3a66dc852e56d3748838b3c27cf381105b83705b",
+      "https://etherscan.io/address/0x46fa191ad972d9674ed752b69f9659a0d7b22846",
+      "https://etherscan.io/address/0x47e8af9e30c32ab91060ed587894288786761b45",
+      "https://etherscan.io/address/0x48e6c30b97748d1e2e03bf3e9fbe3890ca5f8cca",
+      "https://etherscan.io/address/0x5447cdc0f4b1afd827bf9d2f6b6ce7668d5dc284",
+      "https://etherscan.io/address/0x571f1435613381208477ac5d6974310d88ac7cb7",
+      "https://etherscan.io/address/0x609707355a53d2aab6366f48e2b607c599d26b29",
+      "https://etherscan.io/address/0x6d2555a8ba483ccf4409c39013f5e9a3285d3c9e",
+      "https://etherscan.io/address/0x75ee15ee1b4a75fa3e2fdf5df3253c25599cc659",
+      "https://etherscan.io/address/0x7b4d881c122a5e61adcffb56a2e3ce9927d53455",
+      "https://etherscan.io/address/0x8dbae9b1616c46a20591fe0006bf015e28ca5cc9",
+      "https://etherscan.io/address/0x9787c612fdd8fc9a16cfb4fd509eb126f1c54809",
+      "https://etherscan.io/address/0x9e6b1022be9bbf5afd152483dad9b88911bc8611",
+      "https://etherscan.io/address/0xb87ac8ea4533ae017604e44470f7c1e550ac6f10",
+      "https://etherscan.io/address/0xba328338044e0c0afd0591fb6e5e2f83c4e8f742",
+      "https://etherscan.io/address/0xc005dc82818d67af737725bd4bf75435d065d239",
+      "https://etherscan.io/address/0xc9a103990a8db11b4f627bc5cd1d0c2685484ec5",
+      "https://etherscan.io/address/0xce74905e51497b4add3639366708b821dcbcff96",
+      "https://etherscan.io/address/0xdab0086ff7dac4aa1262c5a0c71dc8c8ef467ef9",
+      "https://etherscan.io/address/0xdc98a856fb9112894c2fe32267da8bf35645faf3",
+      "https://etherscan.io/address/0xfa21d9628adce86531854c2b7ef00f07394b0b69",
+      "https://gnosisscan.io/address/0x11ef91d17c5ad3330dbca709a8841743d3af6819",
+      "https://gnosisscan.io/address/0x1959e3b0a2d7f87508ae0d3499349cc4130f3995",
+      "https://gnosisscan.io/address/0x2684c6f89e901987e1fdb7649dc5be0c57c61645",
+      "https://gnosisscan.io/address/0x5112d584a1c72fc250176b57aeba5ffbbb287d8f",
+      "https://gnosisscan.io/address/0x53642476e24e28c3218e8da44edebb4adb9de13e",
+      "https://gnosisscan.io/address/0x5a56dff3d92d635372718f86e6df09c1129cff53",
+      "https://gnosisscan.io/address/0x5e01d8f34b629e3f92d69546bbc4142a7adee7e9",
+      "https://gnosisscan.io/address/0x5e59ebaedeb691408ebacf6c37218fa2cfcac9f2",
+      "https://gnosisscan.io/address/0x603f46cc520d2fc22957b81e206408590808f02f",
+      "https://gnosisscan.io/address/0x81a92a1a272cb09d7b4970b07548463dc7ae0cb7",
+      "https://gnosisscan.io/address/0x83873db8b4982091d0781b4edf108dcb98075c39",
+      "https://gnosisscan.io/address/0x87ed6926abc9e38b9c7c19f835b41943b622663c",
+      "https://gnosisscan.io/address/0x8e273260ead8b72a085b19346a676d355740e875",
+      "https://gnosisscan.io/address/0xad09d78f4c6b9da2ae82b1d34107802d380bb74f",
+      "https://gnosisscan.io/address/0xbb5df000113e767de11343a16f83de733e5bcc0f",
+      "https://gnosisscan.io/address/0xbc8aa096dabdf4a0200bb9f8d4cbb644c3d86d7b",
+      "https://gnosisscan.io/address/0xdd1fa1c12496474c1ddc67a658ba81437f818861",
+      "https://gnosisscan.io/address/0xdd260b99d302f0a3ff885728c086f729c06f227",
+      "https://gnosisscan.io/address/0xe640167b9a283c8b4039fa33f3ac7be6e7e788c5",
+      "https://gnosisscan.io/address/0xe7487b4df583c63d6841997ab56324d0a825e7f4",
+      "https://gnosisscan.io/address/0xf728c884de5275a608dec222dacd0f2bf2e23ab6",
+      "https://moonscan.io/address/0x14760e32c0746094cf14d97124865bc7f0f7368f",
+      "https://moonscan.io/address/0x23cca255ae83f57f39eaf9d14fb9fdadf22d5863",
+      "https://moonscan.io/address/0x40c6abcb6a2cdc8882d4becac47927005c7bb8c2",
+      "https://moonscan.io/address/0x59cc3e7a49ddc4893eb8754c7908f96072a7dbe8",
+      "https://moonscan.io/address/0x6a9cda3dd1f593983bfd142eb35e6ce4137bd5ce",
+      "https://moonscan.io/address/0x6b142f596ffc761ac3ffaac1ecade54f4ee09977",
+      "https://moonscan.io/address/0x6c2d6ea0969f7aa0a850cca88c7bfaca563b2361",
+      "https://moonscan.io/address/0x799ea6f430f5ca901b59335ffc2fa10531106009",
+      "https://moonscan.io/address/0x7faa23ceda03364a79e05259e07d5e358e7400f7",
+      "https://moonscan.io/address/0x8061af3a459093540d17823d651bc5e2a92669a7",
+      "https://moonscan.io/address/0x84df48f8f241f11d0fa302d09d73030429bd9c73",
+      "https://moonscan.io/address/0x87403b85f6f316e7ba91ba1fa6c3fb7dd4095547",
+      "https://moonscan.io/address/0x89e8c8735f3c3956168bad6c31e95ece19caf507",
+      "https://moonscan.io/address/0x8c1001ebee6f25b31863a55eadff149af88b356f",
+      "https://moonscan.io/address/0xad582f480d5335418ababf65127ac9d8e044e139",
+      "https://moonscan.io/address/0xca69e5a1542597d979a260db1164c174d83aedf3",
+      "https://moonscan.io/address/0xdaafa04d38d95f5b8418786ae0f7ee5b962ee92b",
+      "https://moonscan.io/address/0xe28f2aeeb42ee83cad068d9a9a449c8b868c137f",
+      "https://moonscan.io/address/0xe2f485bc031feb5a4c41c1967bf028653d75f0c3",
+      "https://moonscan.io/address/0xee064c4dd3d476676a40b7cab94ef651444175c0",
+      "https://optimistic.etherscan.io/address/0x0389facac114023c123e22f3e54394944cabcb48",
+      "https://optimistic.etherscan.io/address/0x15deeab8decde553bb0b1f9c00984cbcae1af3d7",
+      "https://optimistic.etherscan.io/address/0x27e88aeb8ea4b159d81df06355ea3d20beb1de38",
+      "https://optimistic.etherscan.io/address/0x30f5b08e01808643221528bb2f7953bf2830ef38",
+      "https://optimistic.etherscan.io/address/0x33ef006e7083bb38e0afe3c3979f4e9b84415bf1",
+      "https://optimistic.etherscan.io/address/0x34d07bbdd61608e6b62434e433a62c89326ab415",
+      "https://optimistic.etherscan.io/address/0x42ecc38aed2665075907a926320f6b9ee9969df8",
+      "https://optimistic.etherscan.io/address/0x4ccc6d8eb79f2a1ec9bcb0f211fef7907631f91f",
+      "https://optimistic.etherscan.io/address/0x68ee9bec9b4dbb61f69d9d293ae26a5aacb2e28f",
+      "https://optimistic.etherscan.io/address/0x7491843f3a5ba24e0f17a22645bda04a1ae2c584",
+      "https://optimistic.etherscan.io/address/0x9b27988d926673fe99126df4eed42a4aae8bc01f",
+      "https://optimistic.etherscan.io/address/0xaa4be20e9957fe21602c74d7c3cf5cb1112ea9ef",
+      "https://optimistic.etherscan.io/address/0xca6cb9bc3cff9e11003a06617cf934b684bc78bc",
+      "https://optimistic.etherscan.io/address/0xd2e905108c5e44dada680274740f896ea96cf2fb",
+      "https://optimistic.etherscan.io/address/0xd4b132c6d4aa93a4247f1a91e1ed929c0572a43d",
+      "https://optimistic.etherscan.io/address/0xd4c1905bb1d26bc93dac913e13cacc278cdcc80d",
+      "https://optimistic.etherscan.io/address/0xd8a76c4d91fcbb7cc8ea795dfdf870e48368995c",
+      "https://optimistic.etherscan.io/address/0xdf6316df574974110dcc94bb4e520b09fe3cbef9",
+      "https://optimistic.etherscan.io/address/0xdfffca9320e2c7530c61c4946b4c2376a1901df2",
+      "https://optimistic.etherscan.io/address/0xe047cb95fb3b7117989e911c6afb34771183fc35",
+      "https://optimistic.etherscan.io/address/0xf00824861e4bfe5dfc769295a50006ba203bbc29",
+      "https://optimistic.etherscan.io/address/0xf753ca2269c8a7693ce1808b5709fbf36a65d47a",
+      "https://polygonscan.com/address/0x0071740bf129b05c4684abfbbed248d80971cce2",
+      "https://polygonscan.com/address/0x0ba8c268b785f60f8225d68b819b6ce8660373c2",
+      "https://polygonscan.com/address/0x0d0e816ee4557689d34fad5885c53b9393c1d9fa",
+      "https://polygonscan.com/address/0x34dab05650cf590088ba18af9d597f3e081bcc47",
+      "https://polygonscan.com/address/0x3f317fe9d8e3d3b0476be25e4966355218d50a3c",
+      "https://polygonscan.com/address/0x454e1a1e1ca8b51506090f1b5399083658ea4fc5",
+      "https://polygonscan.com/address/0x5d934f4e2f797775e53561bb72aca21ba36b96bb",
+      "https://polygonscan.com/address/0x5e80f3474825b61183c0f0f0726796f589082420",
+      "https://polygonscan.com/address/0x73fbd25c3e817dc4b4cd9d00eff6d83dcde2dff6",
+      "https://polygonscan.com/address/0x748040afb89b8fdbb992799808215419d36a0930",
+      "https://polygonscan.com/address/0x81addd9ca89105063dadebd5b4408551ce850e22",
+      "https://polygonscan.com/address/0x90384bc552e3c48af51ef7d9473a9bf87431f5c7",
+      "https://polygonscan.com/address/0x9a177e4ec3a6de825763c34ff431bd9018d4b4c1",
+      "https://polygonscan.com/address/0xa3a24ec5670f1f416ab9fd554fce2f226ae9d7eb",
+      "https://polygonscan.com/address/0xa3ae1c7dbac1c9658708e6acd271bfb93d87f8a3",
+      "https://polygonscan.com/address/0xa9e0e18e78b098c2de36c42e4ddea13ce214c592",
+      "https://polygonscan.com/address/0xc4f7590c5d30be959225dc75640657954a86b980",
+      "https://polygonscan.com/address/0xca4cce24e7e06241846f5ea0cda9947f0507c40c",
+      "https://polygonscan.com/address/0xe289bd204dbb4f3aafa27dbe5751c71e101cfd80",
+      "https://polygonscan.com/address/0xea5be2ad66bb1ba321b7acf0a079fbe304b09ca0",
+      "https://polygonscan.com/address/0xfeeb86e70e4a640cdd29636cce19bd6fe8628135",
+      "https://snowtrace.io/address/0x0165a22ba489f7da37daf6397781777d9fcb5708",
+      "https://snowtrace.io/address/0x0fe58030a50ef83a02185a1ccc74acfa47e3df1a",
+      "https://snowtrace.io/address/0x175821f30adcaa4bbb72ce98ef76c2e0de2c3f21",
+      "https://snowtrace.io/address/0x2233d1fd7cf0025a1b52923d4d612b297b52b223",
+      "https://snowtrace.io/address/0x239eb860770f1c48abac9be9825d20e3e7c018df",
+      "https://snowtrace.io/address/0x28af28d96786ed4bb13d67bf34d30bc32f749932",
+      "https://snowtrace.io/address/0x28f7907911c7e321c596686ae6d1f20516450037",
+      "https://snowtrace.io/address/0x35231d4c2d8b8adcb5617a638a0c4548684c7c70",
+      "https://snowtrace.io/address/0x3bf6ac986c7af9a9ac356c0e99c0041efd8d96e7",
+      "https://snowtrace.io/address/0x61d15d571d5f7a9ef0d1938f072f430bbf024747",
+      "https://snowtrace.io/address/0x786c26c1857032617c215f265509d6e44e44bfe3",
+      "https://snowtrace.io/address/0x7b16d65b89b62968628547dfdb3c347b7bfdce9d",
+      "https://snowtrace.io/address/0x84eea61d679f42d92145fa052c89900cbacce95a",
+      "https://snowtrace.io/address/0x8819d653df5b1fc0ddb32189a2704e471af8483c",
+      "https://snowtrace.io/address/0x896cf1d1b66cd211633edd589ff158e8cfaf9b54",
+      "https://snowtrace.io/address/0x95519ba800bbd0d34eeae026fec620ad978176c0",
+      "https://snowtrace.io/address/0x9cad0ec82328cee2386ec14a12e81d070a27712f",
+      "https://snowtrace.io/address/0x9f68f961ba2df53b1cb3ebcc0b08e89790c6e2f6",
+      "https://snowtrace.io/address/0xa5e13796eb7d2edcc88012c8cff90d69b51fcf9f",
+      "https://snowtrace.io/address/0xa967a6ce0e73faf672843decaa372511996e8852",
+      "https://snowtrace.io/address/0xd76080269c641e1adb786b72ae60ddac3b6b8ed0",
+      "https://snowtrace.io/address/0xd7cf8c05fd81b8ca7cff8e6c49b08a9d63265c9b",
+      "https://snowtrace.io/address/0xff06afcaabaddd1fb08371f9cca15d73d51febd6"
+    ],
+    "github_repos": []
+  },
+  "immunefi:cowprotocol": {
+    "hash": "6331fb8938dfe2ef7923db72844c5a13428397ee",
+    "bounty": true,
+    "source": true,
+    "name": "CoW Protocol",
+    "url": "https://immunefi.com/bug-bounty/cowprotocol",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
+        "description": "GPv2AllowListAuthentication"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
+        "description": "GPv2EIP1967"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
+        "description": "GPv2Settlement"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
+        "description": "GPv2Signing.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
+        "description": "StorageAccessible.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
+        "description": "GPv2Interaction.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
+        "description": "GPv2Order.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
+        "description": "GPv2Trade.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
+        "description": "GPv2Transfer.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
+        "description": "GPv2SafeERC20.sol"
+      }
+    ],
+    "sc_total": 25,
+    "sc_ids": [
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
+      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol",
+      "https://github.com/cowprotocol/cow-sdk",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cow-fi",
+      "https://github.com/cowprotocol/cowswap/tree/main/apps/cowswap-frontend",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/iframe-transport",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-lib",
+      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-react"
+    ],
+    "github_repos": [
+      "cowprotocol/contracts",
+      "cowprotocol/cow-sdk",
+      "cowprotocol/cowswap"
+    ]
+  },
+  "immunefi:autonolas": {
+    "hash": "c49f611f959e186912dcaa90149ab102ba029c0b",
+    "bounty": true,
+    "source": true,
+    "name": "Autonolas",
+    "url": "https://immunefi.com/bug-bounty/autonolas",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USDC, USDT",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xE6e03DD62D11f88A11D65663B398ED2B3Be2070c#code",
+        "description": "Bridge2BurnerPolygon \u2014 tokenomics. Bridge-then-burn for Polygon. Polygon."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xE3607b00E75f6405248323A9417ff6b39B244b50#code",
+        "description": "ServiceRegistryL2 \u2014 registries. ERC-721 registry of services (L2). Deployed on: Polygon 0xE3607b00E75f6405248323A9417ff6b39B244b50; Gnosis 0x9338b5153AE39BB89f50468E608eD9d764B755fD; Arbitrum 0xE3607b00E75f6405248323A9417ff6b39B244b50; Optimism 0x3d77596beb0f130a4415df3D2D8232B3d3D31e44; Base 0x3C1fF68f5aa342D296d4DEe4Bb1cACCA912D95fE; Celo 0xE3607b00E75f6405248323A9417ff6b39B244b50; Mode 0x3C1fF68f5aa342D296d4DEe4Bb1cACCA912D95fE."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xBcb1BAC84B5BcAb350C89c50ADc9064eD15a4485#code",
+        "description": "PolySafeSameAddressMultisig \u2014 registries. Polygon same-address multisig update helper. Polygon."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xA749f605D93B3efcc207C54270d83C6E8fa70fF8#code",
+        "description": "PolySafeCreatorWithRecoveryModule \u2014 registries. Polygon service multisig creator with recovery module. Polygon."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x9338b5153AE39BB89f50468E608eD9d764B755fD#code",
+        "description": "FxGovernorTunnel \u2014 governance. L2 governance message receiver. Polygon."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x43117542A48588be59018A16443Ae75942ffDe91#code",
+        "description": "BalancerPriceOracle \u2014 tokenomics. On-chain TWAP price oracle for OLAS (Balancer). Deployed on: Polygon 0x43117542A48588be59018A16443Ae75942ffDe91; Gnosis 0x7c2E4027C81ce72E59dFb947Cd45dBF6c2737AeC; Arbitrum 0x93111f6C267068A5d7356114D61d0f09bFD53a54; Optimism 0x887A511e3DfE4dDa77c0b1783c01d9920351A83D; Base 0x36DAD4628D5e406Dc85c4b2261888952aaE254A2."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x17d96ba4532fe91809326092fE4D5606A7B7a0d8#code",
+        "description": "PolygonTargetDispenserL2 \u2014 tokenomics. L2 staking incentive target dispenser. Polygon."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x1262136cac6a06A782DC94eb3a3dF0b4d09FF6A6#code",
+        "description": "BuyBackBurnerBalancer \u2014 tokenomics. Buy-back-and-burn (Balancer variant) implementation. Deployed on: Polygon 0x1262136cac6a06A782DC94eb3a3dF0b4d09FF6A6; Gnosis 0xa343F8956A039beDdEAcBA4B64A7d36d4784648f; Arbitrum 0xE3e5Df46060370af5Fd37B2aA11e7dac3cCB4bd0; Optimism 0x7F69B6783855772d10A4bc2AFAaE650599F040DB; Base 0x7db6bb33bc6E39cCC4E6a213e8D4D953f6aB1E58."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xCf9B4710fe450Dca52374f28e4917FDCd44F9487#code",
+        "description": "LiquidityManagerOptimism \u2014 tokenomics. Protocol-owned-liquidity manager implementation (OP-stack). Deployed on: Optimism 0xCf9B4710fe450Dca52374f28e4917FDCd44F9487; Base 0x1D64516E7654F23dB7cE2ddaD00FFb3E765cf5ce."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0xaea9ef993d8a1A164397642648DF43F053d43D85#code",
+        "description": "OptimismTargetDispenserL2 \u2014 tokenomics. L2 staking incentive target dispenser (OP-stack). Deployed on: Optimism 0xaea9ef993d8a1A164397642648DF43F053d43D85; Base 0x9Ec97Be9FF55ff11606ce7c589956f7Bf3D0b241; Celo 0x4891f5894634DcD6d11644fe8E56756EF2681582; Mode 0xEB5638eefE289691EcE01943f768EDBF96258a80."
+      }
+    ],
+    "sc_total": 80,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x5953f21495bd9af1d78e87bb42accaa55c1e896c#code",
+      "https://arbiscan.io/address/0xa123748ce7609f507060f947b70298d0bde621e6#code",
+      "https://basescan.org/address/0x5b70a66fe68c4c86ffd724b58cc56049c70e9d3d#code",
+      "https://basescan.org/address/0x7bed01f8482ff686f025628e7780ca6c1f0559fc#code",
+      "https://basescan.org/address/0xaafbeef195bdab1bb6f3dc9ceba875cd72499230#code",
+      "https://celoscan.io/address/0x2e008211f34b25a7d7c102403c6c2c3b665a1abe#code",
+      "https://etherscan.io/address/0x0001a500a6b18995b03f44bb040a5ffc28e45cb0#code",
+      "https://etherscan.io/address/0x0171d7178fbf3b48e75675dee2ea3efecef775c1#code",
+      "https://etherscan.io/address/0x0561ce39a1ab785b02de0d9903125702559993a1#code",
+      "https://etherscan.io/address/0x060d0cbddfb0498d610e2ef55c01516b5b1251e6#code",
+      "https://etherscan.io/address/0x0dc23eef3bc64cf3cbd8f9329b57ae4c4f28d5d2#code",
+      "https://etherscan.io/address/0x0f33636698f6607b2fddc1e857788535914c44d4#code",
+      "https://etherscan.io/address/0x133a6d318fa0c9413a70c149e7f630015044dec3#code",
+      "https://etherscan.io/address/0x1521918961bdbc9ed4c67a7103d5999e4130e6cb#code",
+      "https://etherscan.io/address/0x15bd56669f57192a97df41a2aa8f4403e9491776#code",
+      "https://etherscan.io/address/0x15cd7faee048c7673ab818c9e582630f1a924593#code",
+      "https://etherscan.io/address/0x2f1f7d38e4772884b88f3ecd8b6b9facdc319112#code",
+      "https://etherscan.io/address/0x3515a36af270070635fa3e957e006aaf6078e658#code",
+      "https://etherscan.io/address/0x3c1ff68f5aa342d296d4dee4bb1cacca912d95fe#code",
+      "https://etherscan.io/address/0x3d6494ce09a9f40c0b5a92bdbd7c7a9b0e3912b1#code",
+      "https://etherscan.io/address/0x3fb926116d454b95c669b6bf2e7c3bad8d19affa#code",
+      "https://etherscan.io/address/0x4039b809e0c0ad04f6fc880193366b251ddf4b40#code",
+      "https://etherscan.io/address/0x42042799b0de38add2a70dc996f69f98e1a85260#code",
+      "https://etherscan.io/address/0x4443ddd8ec67cbcf7e291ee3198f81dd0326b3a1#code",
+      "https://etherscan.io/address/0x4503b79d468e81ad2d4bd6db991810da269ba777#code",
+      "https://etherscan.io/address/0x461a76074596f080dfba414532ab51280611b8e6#code",
+      "https://etherscan.io/address/0x46c0d07f55d4f9b5eed2fc9680b5953e5fd7b461#code",
+      "https://etherscan.io/address/0x48b6af7b12c71f09e2fc8af4855de4ff54e775ca#code",
+      "https://etherscan.io/address/0x48d4631f24dace505c04d5a39458bed209e80a3c#code",
+      "https://etherscan.io/address/0x4c7e9e711dae61f93846d5cfc64cf0d1bcf78f0f#code",
+      "https://etherscan.io/address/0x51eb65012ca5ceb07320c497f4151ac207fea4e0#code",
+      "https://etherscan.io/address/0x528befb0f8c6a988c9f42345da6d053d66b3b9b6#code",
+      "https://etherscan.io/address/0x5650300fcbab43a0d7d02f8cb5d0f039402593f0#code",
+      "https://etherscan.io/address/0x69d97b5c4f35fd3a72fa83b6b1eb911c6a8a2e3c#code",
+      "https://etherscan.io/address/0x6b149a00e40cc6c148992c6aadd232d958c35fa3#code",
+      "https://etherscan.io/address/0x6bc86c3d44a8b2ef9993e1da53152293fa1ff6ec#code",
+      "https://etherscan.io/address/0x7e01a500805f8a52fad229b3015ad130a332b7b3#code",
+      "https://etherscan.io/address/0x7eb5824bb78e971284e2140059f8755b3d2bb525#code",
+      "https://etherscan.io/address/0x83adc54b2828e99a6da3a11263c75e38e0a1a215#code",
+      "https://etherscan.io/address/0x897aee2e6f3d37740d334c55caea2e0cac82aa14#code",
+      "https://etherscan.io/address/0x8c31cd6d5d90bb536e045a59c71b85154de1c190#code",
+      "https://etherscan.io/address/0x94a1892d91c05d0c61c3f49f42205d2285b914c9#code",
+      "https://etherscan.io/address/0x95418b46d5566d3d1ea62c12aea91227e566c5c1#code",
+      "https://etherscan.io/address/0x990aba4b05adc3761efaf38fb871b93c7b162d03#code",
+      "https://etherscan.io/address/0x9ec9156def5c613b2a7d4c46c383f9b58dfcd6fe#code",
+      "https://etherscan.io/address/0xa0da53447c0f6c4987964d8463da7e6628b30f82#code",
+      "https://etherscan.io/address/0xaeec8bc8e5fe28bc4df2e9586b222924b8a0d5e9#code",
+      "https://etherscan.io/address/0xb01b4154047e51f01b22017079367341ea73d744#code",
+      "https://etherscan.io/address/0xc096362fa6f4a4b1a9ea68b1043416f3381ce300#code",
+      "https://etherscan.io/address/0xc0b146d61e2a2c17e024477e01978d1fcf598c6b#code",
+      "https://etherscan.io/address/0xcb728aefd88fca806d638eaeeeacfc03dd985d70#code",
+      "https://etherscan.io/address/0xcf05126771a21a93da5a596d5cf67d8ed9f5e6e5#code",
+      "https://etherscan.io/address/0xdc871b7833932d45023755c9de3786060a934c48#code",
+      "https://etherscan.io/address/0xdcafcccc7ba0b7185a472d9d068fde0af4313fb5#code",
+      "https://etherscan.io/address/0xe85791b18f5df42163092acc5c9da1c479afea9d#code",
+      "https://etherscan.io/address/0xebdde456ea288b49f7d5975e7659ba1ccf607efc#code",
+      "https://etherscan.io/address/0xf0b1fc3a3d412ea73136925b831d6203de310650#code",
+      "https://etherscan.io/address/0xf95bfbba428dfb454cd59c9c2d309bd6452d12a8#code",
+      "https://etherscan.io/address/0xfa517d01daa100cb1932fa4345f68874f7e7ef46#code",
+      "https://etherscan.io/address/0xfad04813bffd759a308a2beaacef587720ba743f#code",
+      "https://etherscan.io/address/0xfcefb015372e84fc465cf2778889ee231a6e2e67#code",
+      "https://etherscan.io/address/0xff8697d8d2998d6aa2e09b405795c6f4beeb0c81#code",
+      "https://gnosisscan.io/address/0x15bd56669f57192a97df41a2aa8f4403e9491776#code",
+      "https://gnosisscan.io/address/0x5b6c538c7b2e0b44fa8a3b7a0532ef797b07d0e9#code",
+      "https://gnosisscan.io/address/0x65fd74c29463afe08c879a3020323dd7df02da57#code",
+      "https://gnosisscan.io/address/0x7d686bd1fd3cff6e45a40165154d61043af7d67c#code",
+      "https://gnosisscan.io/address/0xd0e5095df49a2c852ffce0ea4d9bbc7d5197fa49#code",
+      "https://immunefi.com",
+      "https://optimistic.etherscan.io/address/0x820ca542d5876fdef240584f6f3924852d527fed#code",
+      "https://optimistic.etherscan.io/address/0x87c511c8ae3faf0063b3f3cf9c6ab96c4aa5c60c#code",
+      "https://optimistic.etherscan.io/address/0xaea9ef993d8a1a164397642648df43f053d43d85#code",
+      "https://optimistic.etherscan.io/address/0xcf9b4710fe450dca52374f28e4917fdcd44f9487#code",
+      "https://polygonscan.com/address/0x1262136cac6a06a782dc94eb3a3df0b4d09ff6a6#code",
+      "https://polygonscan.com/address/0x17d96ba4532fe91809326092fe4d5606a7b7a0d8#code",
+      "https://polygonscan.com/address/0x43117542a48588be59018a16443ae75942ffde91#code",
+      "https://polygonscan.com/address/0x9338b5153ae39bb89f50468e608ed9d764b755fd#code",
+      "https://polygonscan.com/address/0xa749f605d93b3efcc207c54270d83c6e8fa70ff8#code",
+      "https://polygonscan.com/address/0xbcb1bac84b5bcab350c89c50adc9064ed15a4485#code",
+      "https://polygonscan.com/address/0xe3607b00e75f6405248323a9417ff6b39b244b50#code",
+      "https://polygonscan.com/address/0xe6e03dd62d11f88a11d65663b398ed2b3be2070c#code"
+    ],
+    "github_repos": []
+  },
   "immunefi:sky": {
     "hash": "f96df04945b76df52ea58a31e2b5b2bacfea3523",
     "bounty": true,
@@ -27417,107 +28296,6 @@
       "immunefi-team/audit-comp-plether"
     ]
   },
-  "immunefi:cowprotocol": {
-    "hash": "6331fb8938dfe2ef7923db72844c5a13428397ee",
-    "bounty": true,
-    "source": true,
-    "name": "CoW Protocol",
-    "url": "https://immunefi.com/bug-bounty/cowprotocol",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2AllowListAuthentication.sol",
-        "description": "GPv2AllowListAuthentication"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2EIP1967.sol",
-        "description": "GPv2EIP1967"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/GPv2Settlement.sol",
-        "description": "GPv2Settlement"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/GPv2Signing.sol",
-        "description": "GPv2Signing.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/StorageAccessible.sol",
-        "description": "StorageAccessible.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Interaction.sol",
-        "description": "GPv2Interaction.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Order.sol",
-        "description": "GPv2Order.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Trade.sol",
-        "description": "GPv2Trade.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2Transfer.sol",
-        "description": "GPv2Transfer.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/GPv2SafeERC20.sol",
-        "description": "GPv2SafeERC20.sol"
-      }
-    ],
-    "sc_total": 25,
-    "sc_ids": [
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2allowlistauthentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2settlement.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/gpv2vaultrelayer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2authentication.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/gpv2eip1271.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ierc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/interfaces/ivault.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2eip1967.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2interaction.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2order.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2safeerc20.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2trade.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/gpv2transfer.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safecast.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/libraries/safemath.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/gpv2signing.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/initializable.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/reentrancyguard.sol",
-      "https://github.com/cowprotocol/contracts/blob/6ebbd810ff2da635fb6f88e9a15fde196f8c852a/src/contracts/mixins/storageaccessible.sol",
-      "https://github.com/cowprotocol/cow-sdk",
-      "https://github.com/cowprotocol/cowswap/tree/main/apps/cow-fi",
-      "https://github.com/cowprotocol/cowswap/tree/main/apps/cowswap-frontend",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/iframe-transport",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-lib",
-      "https://github.com/cowprotocol/cowswap/tree/main/libs/widget-react"
-    ],
-    "github_repos": [
-      "cowprotocol/contracts",
-      "cowprotocol/cow-sdk",
-      "cowprotocol/cowswap"
-    ]
-  },
   "immunefi:folksfinance": {
     "hash": "ac29a08a9b34e652f9dbff592d046739e0843e2d",
     "bounty": true,
@@ -27611,135 +28389,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:moneyonchain": {
-    "hash": "d71091e46814da9ffca2d945ba26204129f4f13c",
-    "bounty": true,
-    "source": true,
-    "name": "Money on Chain / RIF on Chain",
-    "url": "https://immunefi.com/bug-bounty/moneyonchain",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "DOC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/money-on-chain/stable-protocol-core-v2",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0xf773B590aF754D597770937Fa8ea7AbDf2668370",
-        "description": "This is MoC proxy contract, it's a contract in the MoC v1 core area, the main entry point for minting, redeeming, and protocol operations in the legacy MoneyOnChain RBTC system."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0xcE2A128cC73e5d98355aAfb2595647F2D3171Faa",
-        "description": "This is MoCConnector contract, it's a contract in the MoC v1 core area, it wires the legacy protocol modules together and stores shared contract references."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0xb9C42EFc8ec54490a37cA91c423F7285Fa01e257",
-        "description": "This is MoCState contract, it's a contract in the MoC v1 core area, it maintains protocol accounting state, coverage, prices, and risk parameters."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0x6aCb83bB0281FB847b43cf7dd5e2766BFDF49038",
-        "description": "This is MoCExchange contract, it's a contract in the MoC v1 core area, it handles token exchange, mint, and redeem execution paths."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0xc0f9B54c41E3d0587Ce0F7540738d8d649b0A3F3",
-        "description": "This is MoCInrate contract, it's a contract in the MoC v1 core area, it calculates interest, commissions, and related protocol rates."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0xe700691dA7b9851F2F35f8b8182c69c53CcaD9Db",
-        "description": "This is DoCToken contract, it's a contract in the MoC v1 token area, it represents the Dollar on Chain stable token used by the protocol."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0x440CD83C160De5C96Ddb20246815eA44C7aBBCa8",
-        "description": "This is BProToken contract, it's a contract in the MoC v1 token area, it represents the BitPro token used for leveraged exposure in the legacy protocol."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://rootstock.blockscout.com/address/0x9AC7fE28967B30E3A4e6e03286d715b42B453D10",
-        "description": "This is MoCToken contract, it's a contract in the MoC governance token area, it represents the MOC token used across governance, incentives, and protocol fee flows."
-      }
-    ],
-    "sc_total": 55,
-    "sc_ids": [
-      "https://github.com/money-on-chain/stable-protocol-core-v2",
-      "https://immunefi.com",
-      "https://rootstock.blockscout.com/address/0x009c51e1f6fedcdb8014ea9ae1e39b6dbf2ac0ec",
-      "https://rootstock.blockscout.com/address/0x0237ad1f0831b479a344e56646bc48b0885cf46f",
-      "https://rootstock.blockscout.com/address/0x09a84d61c1a10f1d5fb3267dfb00d16ca0dacc30",
-      "https://rootstock.blockscout.com/address/0x0e60154be285810dfa1d64fac5acb4804d7a7ba0",
-      "https://rootstock.blockscout.com/address/0x114921bcbd5fc34e103494d338ca492b9400b0fd",
-      "https://rootstock.blockscout.com/address/0x11683439c9509c135ee4f7bb6e23835e1d86ecba",
-      "https://rootstock.blockscout.com/address/0x131564703310a294c1bfdc09d10ec0659f18e253",
-      "https://rootstock.blockscout.com/address/0x2bbcbc2cd2f2655d5a4306637c46bcf2e6d859f6",
-      "https://rootstock.blockscout.com/address/0x323f6117a256e8f697ac8d2816eb71e9b7134809",
-      "https://rootstock.blockscout.com/address/0x3a15461d8ae0f0fb5fa2629e9da7d66a794a6e37",
-      "https://rootstock.blockscout.com/address/0x3b8853df65afbd94853e6d77ee0ab5590f41bb08",
-      "https://rootstock.blockscout.com/address/0x3eb689a01c4e8ccac7c72097104ff37ccf907bbe",
-      "https://rootstock.blockscout.com/address/0x42e29760d05cfb229d4075c75238ec82fb94fd59",
-      "https://rootstock.blockscout.com/address/0x440cd83c160de5c96ddb20246815ea44c7abbca8",
-      "https://rootstock.blockscout.com/address/0x47f5014115d3bb29b20b5168ee75050d6f8c3bf1",
-      "https://rootstock.blockscout.com/address/0x5646c6988d5d3d7f78f15683ce3aca11699bcdbb",
-      "https://rootstock.blockscout.com/address/0x5ce577f6ec969ce9a282838d350206c52a6f338c",
-      "https://rootstock.blockscout.com/address/0x60ceef03aa1aa96263e297d220ee4ebc3c6b6e47",
-      "https://rootstock.blockscout.com/address/0x64a5634b2d1f17dc7c4765aacd222f8e9eb7712c",
-      "https://rootstock.blockscout.com/address/0x65a5681be95d212f0c90ead40170d8277de81169",
-      "https://rootstock.blockscout.com/address/0x661f7d510cdb40638f5afd9f9df8877398500593",
-      "https://rootstock.blockscout.com/address/0x697535055aa7afd2c280523c7b062b1f05284661",
-      "https://rootstock.blockscout.com/address/0x6a343488338b944c6fcc89906646fac1e8e91ce5",
-      "https://rootstock.blockscout.com/address/0x6a5b2c84e63b5c1330bf4cccff1ad6f23116cc14",
-      "https://rootstock.blockscout.com/address/0x6acb83bb0281fb847b43cf7dd5e2766bfdf49038",
-      "https://rootstock.blockscout.com/address/0x6c22ff31fbdf725d30f206efff9f8a2a11faf948",
-      "https://rootstock.blockscout.com/address/0x6ca9d0e9382f58ac9b109f5f7f3aabc8b86c1a24",
-      "https://rootstock.blockscout.com/address/0x6d46472d6c147970706ea41db9caab79da9262c2",
-      "https://rootstock.blockscout.com/address/0x7002dd3027947ab98ca3ddc28f93f2450281453a",
-      "https://rootstock.blockscout.com/address/0x883e3433c236abd3c301ffc9b59ea478c0c21c9a",
-      "https://rootstock.blockscout.com/address/0x8f288cdee8ecc0afa802306e6457f2060aff7872",
-      "https://rootstock.blockscout.com/address/0x9ac7fe28967b30e3a4e6e03286d715b42b453d10",
-      "https://rootstock.blockscout.com/address/0x9c66296938d849802ffa879a20fdc11b58c55851",
-      "https://rootstock.blockscout.com/address/0x9ea22ca83dd42a4b8e4c797bbcd6dfe4413ee8f8",
-      "https://rootstock.blockscout.com/address/0x9f5ce0a8f023f8096145ce2d792eb66091cb89fe",
-      "https://rootstock.blockscout.com/address/0xa27024ed70035e46dba712609fc2afa1c97aa36a",
-      "https://rootstock.blockscout.com/address/0xa288319ecb63301e21963e21ef3ca8fb720d2672",
-      "https://rootstock.blockscout.com/address/0xb9c42efc8ec54490a37ca91c423f7285fa01e257",
-      "https://rootstock.blockscout.com/address/0xc0f9b54c41e3d0587ce0f7540738d8d649b0a3f3",
-      "https://rootstock.blockscout.com/address/0xcd101a2414256da8f8e25d7b483b3cf639a71683",
-      "https://rootstock.blockscout.com/address/0xcd1d5d171a466a103c3a078c6770deb801011542",
-      "https://rootstock.blockscout.com/address/0xce2a128cc73e5d98355aafb2595647f2d3171faa",
-      "https://rootstock.blockscout.com/address/0xd3d1afc638cef2c55d2ee33e0c355972f11be065",
-      "https://rootstock.blockscout.com/address/0xe2927a0620b82a66d67f678fc9b826b0e01b1bfd",
-      "https://rootstock.blockscout.com/address/0xe700691da7b9851f2f35f8b8182c69c53ccad9db",
-      "https://rootstock.blockscout.com/address/0xe95449792f9c15e059b5225e6c9ec9a5aa12a828",
-      "https://rootstock.blockscout.com/address/0xecbe91572f788945afd736a6bd9ddbe885e689d7",
-      "https://rootstock.blockscout.com/address/0xf09006e812be98c7b18c877af5c126629acb6cab",
-      "https://rootstock.blockscout.com/address/0xf4d27c56595ed59b66cc7f03cff5193e4bd74a61",
-      "https://rootstock.blockscout.com/address/0xf5ad1a6f6ba49c507bb24676bbf80b8ed19b694c",
-      "https://rootstock.blockscout.com/address/0xf773b590af754d597770937fa8ea7abdf2668370",
-      "https://rootstock.blockscout.com/address/0xfc5e1b8468327b60ca1c6e32672249de9a10ffdc",
-      "https://rootstock.blockscout.com/address/0xfc7b1f146528abb96a5a16d6c295f4332a0bc0ef"
-    ],
-    "github_repos": [
-      "money-on-chain/stable-protocol-core-v2"
-    ]
-  },
   "immunefi:berachain": {
     "hash": "66801d3af7885683786f674bd4d267d1550fa355",
     "bounty": true,
@@ -27816,294 +28465,6 @@
     "sc_total": 1,
     "sc_ids": [
       "https://solscan.io/account/onreughhhgvzmwskj2oqdldtvvgvoepbpkqyaubfcwe"
-    ],
-    "github_repos": []
-  },
-  "immunefi:hyperlane": {
-    "hash": "234d3b854cd05f7166e62e0d8e6eff47fd5c1439",
-    "bounty": true,
-    "source": true,
-    "name": "Hyperlane",
-    "url": "https://immunefi.com/bug-bounty/hyperlane",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 2500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x1df063280C4166AF9a725e3828b4dAC6c7113B08",
-        "description": "Arbitrum validatorAnnounce"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x80Cebd56A65e46c474a1A101e89E76C4c51D179c",
-        "description": "Arbitrum proxyAdmin"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x979Ca5202784112f4738403dBec5D0F3B9daabB9",
-        "description": "Arbitrum Mailbox proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x4826ce713944d8b3eb98c73050bfc01e8fb6655a",
-        "description": "Arbitrum Mailbox implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x9e8fFb1c26099e75Dd5D794030e2E9AA51471c25",
-        "description": "Arbitrum FallbackRoutingHook"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x5C17DD50232f330c928ce661116517D20859b08f",
-        "description": "Arbitrum AggregationHook"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x9B5f440bBb64Fee337F37e03362b628711Ea09C7",
-        "description": "Arbitrum staticAggregationHookFactory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x6cA0B6D22da47f091B7613223cD4BB03a2d77918",
-        "description": "Arbitrum interchainGasPaymaster proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x3b6044acd6767f017e99318AA6Ef93b7B06A5a22",
-        "description": "Arbitrum interchainGasPaymaster implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xD3805207b65d99C075ceA938Fa7c0587026a5DF5",
-        "description": "Arbitrum storageGasOracle"
-      }
-    ],
-    "sc_total": 220,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x12df53079d399a47e9e730df095b712b0fdfa791",
-      "https://arbiscan.io/address/0x1df063280c4166af9a725e3828b4dac6c7113b08",
-      "https://arbiscan.io/address/0x1e38556b4fe553e6249448960875883990efcf34",
-      "https://arbiscan.io/address/0x29c02b9ad9483a1711a413d37b8126ec1a5eab0a",
-      "https://arbiscan.io/address/0x3b6044acd6767f017e99318aa6ef93b7b06a5a22",
-      "https://arbiscan.io/address/0x3c330d4a2e2b8443afab8e326e64ab4251b7eae0",
-      "https://arbiscan.io/address/0x4826ce713944d8b3eb98c73050bfc01e8fb6655a",
-      "https://arbiscan.io/address/0x5c17dd50232f330c928ce661116517d20859b08f",
-      "https://arbiscan.io/address/0x5d759b5ceeb1c3b0181bec0f80fb04f820cc35d1",
-      "https://arbiscan.io/address/0x6ca0b6d22da47f091b7613223cd4bb03a2d77918",
-      "https://arbiscan.io/address/0x748040afb89b8fdbb992799808215419d36a0930",
-      "https://arbiscan.io/address/0x80cebd56a65e46c474a1a101e89e76c4c51d179c",
-      "https://arbiscan.io/address/0x979ca5202784112f4738403dbec5d0f3b9daabb9",
-      "https://arbiscan.io/address/0x9b5f440bbb64fee337f37e03362b628711ea09c7",
-      "https://arbiscan.io/address/0x9e8ffb1c26099e75dd5d794030e2e9aa51471c25",
-      "https://arbiscan.io/address/0xa2931c37957f3079d3b21b877d56e1db930e02a5",
-      "https://arbiscan.io/address/0xa7eccdb9be08178f896c26b7bbd8c3d4e844d9ba",
-      "https://arbiscan.io/address/0xcd0cfff6efd943b4b81f2c15847730dbcd30e3ae",
-      "https://arbiscan.io/address/0xd12c017529be32c23150313f1e473b76e6b19773",
-      "https://arbiscan.io/address/0xd3805207b65d99c075cea938fa7c0587026a5df5",
-      "https://arbiscan.io/address/0xd4883084389fc1eeb4dafb2adcfc36b711c310eb",
-      "https://arbiscan.io/address/0xfa8bfce55b3a0631df38257615cef7fcd3523a48",
-      "https://basescan.org/address/0x1052ef3419f26bec74ed7cef4a4fa6812bc09908",
-      "https://basescan.org/address/0x13f3d4b0ee0a713430fded9e18f7fb6c91a6e41f",
-      "https://basescan.org/address/0x182e8d7c5f1b06201b102123fc7df0eaeb445a7b",
-      "https://basescan.org/address/0x19dc38aeae620380430c200a6e990d5af5480117",
-      "https://basescan.org/address/0x2f2afae1139ce54fefc03593fee8ab2adf4a85a7",
-      "https://basescan.org/address/0x46fa3a5780e5b90eaf34bded554d5353b5abe9e7",
-      "https://basescan.org/address/0x47baae89d8727f00d723ca7479acaced0f788c72",
-      "https://basescan.org/address/0x4eb82ee35b0a1c1d776e3a3b547f9a9ba6fcc9f2",
-      "https://basescan.org/address/0x4ed7d626f1e96cd1c0401607bf70d95243e3ded1",
-      "https://basescan.org/address/0x77be0b5ae400675063ce2b2b0d692d9341f4b193",
-      "https://basescan.org/address/0x7e27456a839bff31ca642c060a2b68414cb6e503",
-      "https://basescan.org/address/0x80c8f6394c0fcf7bab16ac08b85484361ece5888",
-      "https://basescan.org/address/0x81e3978b895a85defbf6f4d134a6427c3bee0d8c",
-      "https://basescan.org/address/0x861908e6c8f992537f557da5fb5876836036b347",
-      "https://basescan.org/address/0x8b83fefd896faa52057798f6426e9f0b080fccce",
-      "https://basescan.org/address/0x8f7454ac98228f3504bb91ea3d8adafe6406110a",
-      "https://basescan.org/address/0xa85f9e4fda2fff1c07f2726a630443af3fadf830",
-      "https://basescan.org/address/0xbf12ef4b9f307463d3fb59c3604f294ddce287e2",
-      "https://basescan.org/address/0xc3f23848ed2e04c0c6d41bd7804fa8f89f940b94",
-      "https://basescan.org/address/0xea87ae93fa0019a82a727bfd3ebd1cfca8f64f1d",
-      "https://basescan.org/address/0xeb9fcfdc9efdc17c1ec5e1dc085b98485da213d6",
-      "https://bscscan.com/address/0x226db065586e2ea9be54778d5a5de400e64f3311",
-      "https://bscscan.com/address/0x2971b9aec44be4eb673df1b88cdb57b96eefe8a4",
-      "https://bscscan.com/address/0x38b3878c4fb44d201da924c4a04bae3ee728c065",
-      "https://bscscan.com/address/0x4b1d8352e35e3bde36df5ed2e73c24e35c4a96b7",
-      "https://bscscan.com/address/0x4bbd67dc995572b40dc6b3eb6cde5185a5373868",
-      "https://bscscan.com/address/0x65993af9d0d3a64ec77590db7ba362d6eb78ef70",
-      "https://bscscan.com/address/0x69f2508e7bc89b4ff2da864dedafd560376decc5",
-      "https://bscscan.com/address/0x7024078130d9c2100fea474dad009c2d1703accd",
-      "https://bscscan.com/address/0x78e25e7f84416e69b9339b0a6336eb6efff6b451",
-      "https://bscscan.com/address/0x7dbdad1b4a922b65d37d7258a4227b6658344b7f",
-      "https://bscscan.com/address/0x91d23d603d60445411c06e6443d81395593b7940",
-      "https://bscscan.com/address/0xa888931c61abc5255583bb28847d38eba2e83bd8",
-      "https://bscscan.com/address/0xb274bbbc1df5f1d1763216a93d473fde6f5de043",
-      "https://bscscan.com/address/0xbc3af0d4930502ff0f6a8416a7a184c7bffe19e7",
-      "https://bscscan.com/address/0xbfa300164a04437d64afda390736e6dc45096da1",
-      "https://bscscan.com/address/0xe6af5720d34213c805c08e2470aea979e3f72f75",
-      "https://bscscan.com/address/0xe70e86a7d1e001d419d71f960cb6cad59b6a3db6",
-      "https://bscscan.com/address/0xfa360ff588623a026bf19a1801f2a8f1f045fa33",
-      "https://bscscan.com/address/0xfadbc81ca8a957f1bf7c78bcc575b28dbde042b6",
-      "https://bscscan.com/address/0xfdb9cd5f9daaa2e4474019405a328a88e7484f26",
-      "https://celoscan.io/address/0x04db778f05854f26e67e0a66b740bbbe9070d366",
-      "https://celoscan.io/address/0x0564ecf87c9be194bbcdb8bc606132b163f76ded",
-      "https://celoscan.io/address/0x1722dd970a1f56040712129f5eeb76b003fd7500",
-      "https://celoscan.io/address/0x299a3bfeca0ebecb2114881da39c3c303c318cac",
-      "https://celoscan.io/address/0x2a2c22b0a8615ad24839fa6af302e896af32d1a3",
-      "https://celoscan.io/address/0x30a8dec5318e2aaa9ad5b069fc606c4cff6f5676",
-      "https://celoscan.io/address/0x4c96a1abc44dc846775ce702c9e9be821d3b487c",
-      "https://celoscan.io/address/0x4ed23e3885e1651e62564f78817d91865beba575",
-      "https://celoscan.io/address/0x50da3b3907a08a24fe4999f4dcf337e8dc7954bb",
-      "https://celoscan.io/address/0x571f1435613381208477ac5d6974310d88ac7cb7",
-      "https://celoscan.io/address/0x5a56fa10ce985a53eb831cb69ddc224e433f9a83",
-      "https://celoscan.io/address/0x80672c5d9fd26b235654c24adc1cfcdeb8d15115",
-      "https://celoscan.io/address/0x90f9a2e9ece93516d65fdab726a3c62f5960a1b9",
-      "https://celoscan.io/address/0x99e8e56dce3402d6e09a82718937fc1ca2a9491e",
-      "https://celoscan.io/address/0x9bde63104ee030d9de419eed6ba7d14b86d6fe3f",
-      "https://celoscan.io/address/0xab402f227e892ef37c105bf06619c0fa106a1fb2",
-      "https://celoscan.io/address/0xc3745652efb8555a8b064a0ea78d295133d326d2",
-      "https://celoscan.io/address/0xc65890329066fb20c339bc5c22f1756e9d3a4ff5",
-      "https://celoscan.io/address/0xc97d8e6f57b0d64971453ddc6eb8483fec9d163a",
-      "https://celoscan.io/address/0xcef677b65fdaa6804d4403083bb12b8db3991fe1",
-      "https://celoscan.io/address/0xd9a9966e7da9a7f0032bf449fb12696a638e673c",
-      "https://celoscan.io/address/0xdc98a856fb9112894c2fe32267da8bf35645faf3",
-      "https://celoscan.io/address/0xf18e32428dad0802c5d6f723cb80a6da889777c4",
-      "https://etherscan.io/address/0x1008fabd07abd93a7d9bb81803a89cc3a834e1a9",
-      "https://etherscan.io/address/0x28fa9552f19039b450498b0d8e5deae0d0aac559",
-      "https://etherscan.io/address/0x3a66dc852e56d3748838b3c27cf381105b83705b",
-      "https://etherscan.io/address/0x46fa191ad972d9674ed752b69f9659a0d7b22846",
-      "https://etherscan.io/address/0x47e8af9e30c32ab91060ed587894288786761b45",
-      "https://etherscan.io/address/0x48e6c30b97748d1e2e03bf3e9fbe3890ca5f8cca",
-      "https://etherscan.io/address/0x5447cdc0f4b1afd827bf9d2f6b6ce7668d5dc284",
-      "https://etherscan.io/address/0x571f1435613381208477ac5d6974310d88ac7cb7",
-      "https://etherscan.io/address/0x609707355a53d2aab6366f48e2b607c599d26b29",
-      "https://etherscan.io/address/0x6d2555a8ba483ccf4409c39013f5e9a3285d3c9e",
-      "https://etherscan.io/address/0x75ee15ee1b4a75fa3e2fdf5df3253c25599cc659",
-      "https://etherscan.io/address/0x7b4d881c122a5e61adcffb56a2e3ce9927d53455",
-      "https://etherscan.io/address/0x8dbae9b1616c46a20591fe0006bf015e28ca5cc9",
-      "https://etherscan.io/address/0x9787c612fdd8fc9a16cfb4fd509eb126f1c54809",
-      "https://etherscan.io/address/0x9e6b1022be9bbf5afd152483dad9b88911bc8611",
-      "https://etherscan.io/address/0xb87ac8ea4533ae017604e44470f7c1e550ac6f10",
-      "https://etherscan.io/address/0xba328338044e0c0afd0591fb6e5e2f83c4e8f742",
-      "https://etherscan.io/address/0xc005dc82818d67af737725bd4bf75435d065d239",
-      "https://etherscan.io/address/0xc9a103990a8db11b4f627bc5cd1d0c2685484ec5",
-      "https://etherscan.io/address/0xce74905e51497b4add3639366708b821dcbcff96",
-      "https://etherscan.io/address/0xdab0086ff7dac4aa1262c5a0c71dc8c8ef467ef9",
-      "https://etherscan.io/address/0xdc98a856fb9112894c2fe32267da8bf35645faf3",
-      "https://etherscan.io/address/0xfa21d9628adce86531854c2b7ef00f07394b0b69",
-      "https://gnosisscan.io/address/0x11ef91d17c5ad3330dbca709a8841743d3af6819",
-      "https://gnosisscan.io/address/0x1959e3b0a2d7f87508ae0d3499349cc4130f3995",
-      "https://gnosisscan.io/address/0x2684c6f89e901987e1fdb7649dc5be0c57c61645",
-      "https://gnosisscan.io/address/0x5112d584a1c72fc250176b57aeba5ffbbb287d8f",
-      "https://gnosisscan.io/address/0x53642476e24e28c3218e8da44edebb4adb9de13e",
-      "https://gnosisscan.io/address/0x5a56dff3d92d635372718f86e6df09c1129cff53",
-      "https://gnosisscan.io/address/0x5e01d8f34b629e3f92d69546bbc4142a7adee7e9",
-      "https://gnosisscan.io/address/0x5e59ebaedeb691408ebacf6c37218fa2cfcac9f2",
-      "https://gnosisscan.io/address/0x603f46cc520d2fc22957b81e206408590808f02f",
-      "https://gnosisscan.io/address/0x81a92a1a272cb09d7b4970b07548463dc7ae0cb7",
-      "https://gnosisscan.io/address/0x83873db8b4982091d0781b4edf108dcb98075c39",
-      "https://gnosisscan.io/address/0x87ed6926abc9e38b9c7c19f835b41943b622663c",
-      "https://gnosisscan.io/address/0x8e273260ead8b72a085b19346a676d355740e875",
-      "https://gnosisscan.io/address/0xad09d78f4c6b9da2ae82b1d34107802d380bb74f",
-      "https://gnosisscan.io/address/0xbb5df000113e767de11343a16f83de733e5bcc0f",
-      "https://gnosisscan.io/address/0xbc8aa096dabdf4a0200bb9f8d4cbb644c3d86d7b",
-      "https://gnosisscan.io/address/0xdd1fa1c12496474c1ddc67a658ba81437f818861",
-      "https://gnosisscan.io/address/0xdd260b99d302f0a3ff885728c086f729c06f227",
-      "https://gnosisscan.io/address/0xe640167b9a283c8b4039fa33f3ac7be6e7e788c5",
-      "https://gnosisscan.io/address/0xe7487b4df583c63d6841997ab56324d0a825e7f4",
-      "https://gnosisscan.io/address/0xf728c884de5275a608dec222dacd0f2bf2e23ab6",
-      "https://moonscan.io/address/0x14760e32c0746094cf14d97124865bc7f0f7368f",
-      "https://moonscan.io/address/0x23cca255ae83f57f39eaf9d14fb9fdadf22d5863",
-      "https://moonscan.io/address/0x40c6abcb6a2cdc8882d4becac47927005c7bb8c2",
-      "https://moonscan.io/address/0x59cc3e7a49ddc4893eb8754c7908f96072a7dbe8",
-      "https://moonscan.io/address/0x6a9cda3dd1f593983bfd142eb35e6ce4137bd5ce",
-      "https://moonscan.io/address/0x6b142f596ffc761ac3ffaac1ecade54f4ee09977",
-      "https://moonscan.io/address/0x6c2d6ea0969f7aa0a850cca88c7bfaca563b2361",
-      "https://moonscan.io/address/0x799ea6f430f5ca901b59335ffc2fa10531106009",
-      "https://moonscan.io/address/0x7faa23ceda03364a79e05259e07d5e358e7400f7",
-      "https://moonscan.io/address/0x8061af3a459093540d17823d651bc5e2a92669a7",
-      "https://moonscan.io/address/0x84df48f8f241f11d0fa302d09d73030429bd9c73",
-      "https://moonscan.io/address/0x87403b85f6f316e7ba91ba1fa6c3fb7dd4095547",
-      "https://moonscan.io/address/0x89e8c8735f3c3956168bad6c31e95ece19caf507",
-      "https://moonscan.io/address/0x8c1001ebee6f25b31863a55eadff149af88b356f",
-      "https://moonscan.io/address/0xad582f480d5335418ababf65127ac9d8e044e139",
-      "https://moonscan.io/address/0xca69e5a1542597d979a260db1164c174d83aedf3",
-      "https://moonscan.io/address/0xdaafa04d38d95f5b8418786ae0f7ee5b962ee92b",
-      "https://moonscan.io/address/0xe28f2aeeb42ee83cad068d9a9a449c8b868c137f",
-      "https://moonscan.io/address/0xe2f485bc031feb5a4c41c1967bf028653d75f0c3",
-      "https://moonscan.io/address/0xee064c4dd3d476676a40b7cab94ef651444175c0",
-      "https://optimistic.etherscan.io/address/0x0389facac114023c123e22f3e54394944cabcb48",
-      "https://optimistic.etherscan.io/address/0x15deeab8decde553bb0b1f9c00984cbcae1af3d7",
-      "https://optimistic.etherscan.io/address/0x27e88aeb8ea4b159d81df06355ea3d20beb1de38",
-      "https://optimistic.etherscan.io/address/0x30f5b08e01808643221528bb2f7953bf2830ef38",
-      "https://optimistic.etherscan.io/address/0x33ef006e7083bb38e0afe3c3979f4e9b84415bf1",
-      "https://optimistic.etherscan.io/address/0x34d07bbdd61608e6b62434e433a62c89326ab415",
-      "https://optimistic.etherscan.io/address/0x42ecc38aed2665075907a926320f6b9ee9969df8",
-      "https://optimistic.etherscan.io/address/0x4ccc6d8eb79f2a1ec9bcb0f211fef7907631f91f",
-      "https://optimistic.etherscan.io/address/0x68ee9bec9b4dbb61f69d9d293ae26a5aacb2e28f",
-      "https://optimistic.etherscan.io/address/0x7491843f3a5ba24e0f17a22645bda04a1ae2c584",
-      "https://optimistic.etherscan.io/address/0x9b27988d926673fe99126df4eed42a4aae8bc01f",
-      "https://optimistic.etherscan.io/address/0xaa4be20e9957fe21602c74d7c3cf5cb1112ea9ef",
-      "https://optimistic.etherscan.io/address/0xca6cb9bc3cff9e11003a06617cf934b684bc78bc",
-      "https://optimistic.etherscan.io/address/0xd2e905108c5e44dada680274740f896ea96cf2fb",
-      "https://optimistic.etherscan.io/address/0xd4b132c6d4aa93a4247f1a91e1ed929c0572a43d",
-      "https://optimistic.etherscan.io/address/0xd4c1905bb1d26bc93dac913e13cacc278cdcc80d",
-      "https://optimistic.etherscan.io/address/0xd8a76c4d91fcbb7cc8ea795dfdf870e48368995c",
-      "https://optimistic.etherscan.io/address/0xdf6316df574974110dcc94bb4e520b09fe3cbef9",
-      "https://optimistic.etherscan.io/address/0xdfffca9320e2c7530c61c4946b4c2376a1901df2",
-      "https://optimistic.etherscan.io/address/0xe047cb95fb3b7117989e911c6afb34771183fc35",
-      "https://optimistic.etherscan.io/address/0xf00824861e4bfe5dfc769295a50006ba203bbc29",
-      "https://optimistic.etherscan.io/address/0xf753ca2269c8a7693ce1808b5709fbf36a65d47a",
-      "https://polygonscan.com/address/0x0071740bf129b05c4684abfbbed248d80971cce2",
-      "https://polygonscan.com/address/0x0ba8c268b785f60f8225d68b819b6ce8660373c2",
-      "https://polygonscan.com/address/0x0d0e816ee4557689d34fad5885c53b9393c1d9fa",
-      "https://polygonscan.com/address/0x34dab05650cf590088ba18af9d597f3e081bcc47",
-      "https://polygonscan.com/address/0x3f317fe9d8e3d3b0476be25e4966355218d50a3c",
-      "https://polygonscan.com/address/0x454e1a1e1ca8b51506090f1b5399083658ea4fc5",
-      "https://polygonscan.com/address/0x5d934f4e2f797775e53561bb72aca21ba36b96bb",
-      "https://polygonscan.com/address/0x5e80f3474825b61183c0f0f0726796f589082420",
-      "https://polygonscan.com/address/0x73fbd25c3e817dc4b4cd9d00eff6d83dcde2dff6",
-      "https://polygonscan.com/address/0x748040afb89b8fdbb992799808215419d36a0930",
-      "https://polygonscan.com/address/0x81addd9ca89105063dadebd5b4408551ce850e22",
-      "https://polygonscan.com/address/0x90384bc552e3c48af51ef7d9473a9bf87431f5c7",
-      "https://polygonscan.com/address/0x9a177e4ec3a6de825763c34ff431bd9018d4b4c1",
-      "https://polygonscan.com/address/0xa3a24ec5670f1f416ab9fd554fce2f226ae9d7eb",
-      "https://polygonscan.com/address/0xa3ae1c7dbac1c9658708e6acd271bfb93d87f8a3",
-      "https://polygonscan.com/address/0xa9e0e18e78b098c2de36c42e4ddea13ce214c592",
-      "https://polygonscan.com/address/0xc4f7590c5d30be959225dc75640657954a86b980",
-      "https://polygonscan.com/address/0xca4cce24e7e06241846f5ea0cda9947f0507c40c",
-      "https://polygonscan.com/address/0xe289bd204dbb4f3aafa27dbe5751c71e101cfd80",
-      "https://polygonscan.com/address/0xea5be2ad66bb1ba321b7acf0a079fbe304b09ca0",
-      "https://polygonscan.com/address/0xfeeb86e70e4a640cdd29636cce19bd6fe8628135",
-      "https://snowtrace.io/address/0x0165a22ba489f7da37daf6397781777d9fcb5708",
-      "https://snowtrace.io/address/0x0fe58030a50ef83a02185a1ccc74acfa47e3df1a",
-      "https://snowtrace.io/address/0x175821f30adcaa4bbb72ce98ef76c2e0de2c3f21",
-      "https://snowtrace.io/address/0x2233d1fd7cf0025a1b52923d4d612b297b52b223",
-      "https://snowtrace.io/address/0x239eb860770f1c48abac9be9825d20e3e7c018df",
-      "https://snowtrace.io/address/0x28af28d96786ed4bb13d67bf34d30bc32f749932",
-      "https://snowtrace.io/address/0x28f7907911c7e321c596686ae6d1f20516450037",
-      "https://snowtrace.io/address/0x35231d4c2d8b8adcb5617a638a0c4548684c7c70",
-      "https://snowtrace.io/address/0x3bf6ac986c7af9a9ac356c0e99c0041efd8d96e7",
-      "https://snowtrace.io/address/0x61d15d571d5f7a9ef0d1938f072f430bbf024747",
-      "https://snowtrace.io/address/0x786c26c1857032617c215f265509d6e44e44bfe3",
-      "https://snowtrace.io/address/0x7b16d65b89b62968628547dfdb3c347b7bfdce9d",
-      "https://snowtrace.io/address/0x84eea61d679f42d92145fa052c89900cbacce95a",
-      "https://snowtrace.io/address/0x8819d653df5b1fc0ddb32189a2704e471af8483c",
-      "https://snowtrace.io/address/0x896cf1d1b66cd211633edd589ff158e8cfaf9b54",
-      "https://snowtrace.io/address/0x95519ba800bbd0d34eeae026fec620ad978176c0",
-      "https://snowtrace.io/address/0x9cad0ec82328cee2386ec14a12e81d070a27712f",
-      "https://snowtrace.io/address/0x9f68f961ba2df53b1cb3ebcc0b08e89790c6e2f6",
-      "https://snowtrace.io/address/0xa5e13796eb7d2edcc88012c8cff90d69b51fcf9f",
-      "https://snowtrace.io/address/0xa967a6ce0e73faf672843decaa372511996e8852",
-      "https://snowtrace.io/address/0xd76080269c641e1adb786b72ae60ddac3b6b8ed0",
-      "https://snowtrace.io/address/0xd7cf8c05fd81b8ca7cff8e6c49b08a9d63265c9b",
-      "https://snowtrace.io/address/0xff06afcaabaddd1fb08371f9cca15d73d51febd6"
     ],
     "github_repos": []
   },
@@ -32194,42 +32555,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:xoxno": {
-    "hash": "9aeaf48fb71a97f27a3be8c6d794a990a92f97d9",
-    "bounty": true,
-    "source": true,
-    "name": "XOXNO",
-    "url": "https://immunefi.com/bug-bounty/xoxno",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://xoxno.com",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/XOXNO/rs-lending-xlm",
-        "description": "XOXNO Lending monorepo on Stellar Soroban: controller, pool, governance, position NFT, price aggregator and shared math"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/xoxno/rs-lending-xlm",
-      "https://xoxno.com"
-    ],
-    "github_repos": [
-      "xoxno/rs-lending-xlm"
-    ]
-  },
   "immunefi:audit-comp-firelight-1": {
     "hash": "d77e818497d6817ad9d0d752c2d2af0f03ebca13",
     "bounty": true,
@@ -32953,91 +33278,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:strata": {
-    "hash": "627606f614b86bc94ea0d039159b1ba15a5872ab",
-    "bounty": true,
-    "source": true,
-    "name": "Strata",
-    "url": "https://immunefi.com/bug-bounty/strata",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/tree/tranches/contracts/tranches/oracles",
-        "description": "All current and future Solidity files in this directory are in scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/TwoStepConfigManager.sol",
-        "description": "Manages exit-fee updates through a secure, two-step governance process"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/TrancheDepositor.sol",
-        "description": "A  routing helper that converts any supported token into the right form before depositing it into a tranche vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/governance/",
-        "description": "All current and future Solidity files in this directory are in scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/UnstakeCooldown.sol",
-        "description": "UnstakeCooldown Contract for strategy unstake redeem requests"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/ERC20Cooldown.sol",
-        "description": "Locks ERC-20 tokens for a specified cooldown period before withdrawal finalization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/cooldown/CooldownBase.sol",
-        "description": "Base Cooldown contract"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/base/CDOComponent.sol",
-        "description": "Abstract base contract for CDO components (Tranches, Accounting, Strategy)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/utils/UD60x18Ext.sol",
-        "description": "Extended PRB-Math's UD60x18 with a max(x, y) helper."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Strata-Markets/contracts/blob/tranches/contracts/tranches/utils/RoundingGuard.sol",
-        "description": "Keeps the original value when a recomputed one differs by \u22641 wei, ignoring harmless rounding dust."
-      }
-    ],
-    "sc_total": 11,
-    "sc_ids": [
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/governance",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cdocomponent.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/cooldownbase.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/erc20cooldown.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/base/cooldown/unstakecooldown.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/tranchedepositor.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/twostepconfigmanager.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/accountinglib.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/roundingguard.sol",
-      "https://github.com/strata-markets/contracts/blob/tranches/contracts/tranches/utils/ud60x18ext.sol",
-      "https://github.com/strata-markets/contracts/tree/tranches/contracts/tranches/oracles"
-    ],
-    "github_repos": [
-      "strata-markets/contracts"
-    ]
-  },
   "immunefi:stackingdao": {
     "hash": "b34c08fed6e2378e64a1484e29ba4475dc096486",
     "bounty": true,
@@ -33282,246 +33522,6 @@
       "https://etherscan.io/address/0xbe5e630383b5baecf0db7b15c50d410edd5a2255",
       "https://etherscan.io/address/0xc944e90c64b2c07662a292be6244bdf05cda44a7",
       "https://etherscan.io/address/0xf55041e37e12cd407ad00ce2910b8269b01263b9"
-    ],
-    "github_repos": []
-  },
-  "immunefi:intuition": {
-    "hash": "be6bd548905c76fd54404ecd9f6108df827684b1",
-    "bounty": true,
-    "source": true,
-    "name": "Intuition",
-    "url": "https://immunefi.com/bug-bounty/intuition",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x6cd905dF2Ed214b22e0d48FF17CD4200C1C6d8A3",
-        "description": "Trust (TRUST token) - Base Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x7745bDEe668501E5eeF7e9605C746f9cDfb60667",
-        "description": "BaseEmissionsController - Base Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0xb1ce9Ac324B5C3928736Ec33b5Fd741cb04a2F2d",
-        "description": "EmissionsAutomationAdapter - Base Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0xE485D9a5Dc39774b7A80864B625969Cf9d93E5D7",
-        "description": "TrustSwapAndBridgeRouter - Base Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0x81cFb09cb44f7184Ad934C09F82000701A4bF672",
-        "description": "WrappedTrust (WTRUST) - Intuition Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0x6E35cF57A41fA15eA0EaE9C33e751b01A784Fe7e",
-        "description": "MultiVault (proxy) - Intuition Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0x33827373a7D1c7C78a01094071C2f6CE74253B9B",
-        "description": "AtomWalletFactory (proxy) - Intuition Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0xC23cD55CF924b3FE4b97deAA0EAF222a5082A1FF",
-        "description": "AtomWalletBeacon - Intuition Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0xbCb1526A8de4a155e4dE003361b122eDe2f22908",
-        "description": "AtomWallet implementation (logic behind AtomWalletBeacon) - Intuition Mainnet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.intuition.systems/address/0x98C9BCecf318d0D1409Bf81Ea3551b629fAEC165",
-        "description": "AtomWarden (proxy) - Intuition Mainnet"
-      }
-    ],
-    "sc_total": 16,
-    "sc_ids": [
-      "https://basescan.org/address/0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
-      "https://basescan.org/address/0x7745bdee668501e5eef7e9605c746f9cdfb60667",
-      "https://basescan.org/address/0xb1ce9ac324b5c3928736ec33b5fd741cb04a2f2d",
-      "https://basescan.org/address/0xe485d9a5dc39774b7a80864b625969cf9d93e5d7",
-      "https://explorer.intuition.systems/address/0x23aff95153aa88d28b9b97ba97629e05d5fd335d",
-      "https://explorer.intuition.systems/address/0x33827373a7d1c7c78a01094071c2f6ce74253b9b",
-      "https://explorer.intuition.systems/address/0x635bbd1367b66e7b16a21d6e5a63c812ffc00617",
-      "https://explorer.intuition.systems/address/0x6e35cf57a41fa15ea0eae9c33e751b01a784fe7e",
-      "https://explorer.intuition.systems/address/0x73b8819f9b157be42172e3866fb0ba0d5fa0a5c6",
-      "https://explorer.intuition.systems/address/0x81cfb09cb44f7184ad934c09f82000701a4bf672",
-      "https://explorer.intuition.systems/address/0x98c9bcecf318d0d1409bf81ea3551b629faec165",
-      "https://explorer.intuition.systems/address/0xbcb1526a8de4a155e4de003361b122ede2f22908",
-      "https://explorer.intuition.systems/address/0xc23cd55cf924b3fe4b97deaa0eaf222a5082a1ff",
-      "https://explorer.intuition.systems/address/0xc3efd5471dc63d74639725f381f9686e3f264366",
-      "https://explorer.intuition.systems/address/0xd0e488fb32130232527eedeb72f8ce2bfc0f9930",
-      "https://intuition.systems"
-    ],
-    "github_repos": []
-  },
-  "immunefi:autonolas": {
-    "hash": "c49f611f959e186912dcaa90149ab102ba029c0b",
-    "bounty": true,
-    "source": true,
-    "name": "Autonolas",
-    "url": "https://immunefi.com/bug-bounty/autonolas",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USDC, USDT",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xE6e03DD62D11f88A11D65663B398ED2B3Be2070c#code",
-        "description": "Bridge2BurnerPolygon \u2014 tokenomics. Bridge-then-burn for Polygon. Polygon."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xE3607b00E75f6405248323A9417ff6b39B244b50#code",
-        "description": "ServiceRegistryL2 \u2014 registries. ERC-721 registry of services (L2). Deployed on: Polygon 0xE3607b00E75f6405248323A9417ff6b39B244b50; Gnosis 0x9338b5153AE39BB89f50468E608eD9d764B755fD; Arbitrum 0xE3607b00E75f6405248323A9417ff6b39B244b50; Optimism 0x3d77596beb0f130a4415df3D2D8232B3d3D31e44; Base 0x3C1fF68f5aa342D296d4DEe4Bb1cACCA912D95fE; Celo 0xE3607b00E75f6405248323A9417ff6b39B244b50; Mode 0x3C1fF68f5aa342D296d4DEe4Bb1cACCA912D95fE."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xBcb1BAC84B5BcAb350C89c50ADc9064eD15a4485#code",
-        "description": "PolySafeSameAddressMultisig \u2014 registries. Polygon same-address multisig update helper. Polygon."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xA749f605D93B3efcc207C54270d83C6E8fa70fF8#code",
-        "description": "PolySafeCreatorWithRecoveryModule \u2014 registries. Polygon service multisig creator with recovery module. Polygon."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x9338b5153AE39BB89f50468E608eD9d764B755fD#code",
-        "description": "FxGovernorTunnel \u2014 governance. L2 governance message receiver. Polygon."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x43117542A48588be59018A16443Ae75942ffDe91#code",
-        "description": "BalancerPriceOracle \u2014 tokenomics. On-chain TWAP price oracle for OLAS (Balancer). Deployed on: Polygon 0x43117542A48588be59018A16443Ae75942ffDe91; Gnosis 0x7c2E4027C81ce72E59dFb947Cd45dBF6c2737AeC; Arbitrum 0x93111f6C267068A5d7356114D61d0f09bFD53a54; Optimism 0x887A511e3DfE4dDa77c0b1783c01d9920351A83D; Base 0x36DAD4628D5e406Dc85c4b2261888952aaE254A2."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x17d96ba4532fe91809326092fE4D5606A7B7a0d8#code",
-        "description": "PolygonTargetDispenserL2 \u2014 tokenomics. L2 staking incentive target dispenser. Polygon."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x1262136cac6a06A782DC94eb3a3dF0b4d09FF6A6#code",
-        "description": "BuyBackBurnerBalancer \u2014 tokenomics. Buy-back-and-burn (Balancer variant) implementation. Deployed on: Polygon 0x1262136cac6a06A782DC94eb3a3dF0b4d09FF6A6; Gnosis 0xa343F8956A039beDdEAcBA4B64A7d36d4784648f; Arbitrum 0xE3e5Df46060370af5Fd37B2aA11e7dac3cCB4bd0; Optimism 0x7F69B6783855772d10A4bc2AFAaE650599F040DB; Base 0x7db6bb33bc6E39cCC4E6a213e8D4D953f6aB1E58."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xCf9B4710fe450Dca52374f28e4917FDCd44F9487#code",
-        "description": "LiquidityManagerOptimism \u2014 tokenomics. Protocol-owned-liquidity manager implementation (OP-stack). Deployed on: Optimism 0xCf9B4710fe450Dca52374f28e4917FDCd44F9487; Base 0x1D64516E7654F23dB7cE2ddaD00FFb3E765cf5ce."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0xaea9ef993d8a1A164397642648DF43F053d43D85#code",
-        "description": "OptimismTargetDispenserL2 \u2014 tokenomics. L2 staking incentive target dispenser (OP-stack). Deployed on: Optimism 0xaea9ef993d8a1A164397642648DF43F053d43D85; Base 0x9Ec97Be9FF55ff11606ce7c589956f7Bf3D0b241; Celo 0x4891f5894634DcD6d11644fe8E56756EF2681582; Mode 0xEB5638eefE289691EcE01943f768EDBF96258a80."
-      }
-    ],
-    "sc_total": 80,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x5953f21495bd9af1d78e87bb42accaa55c1e896c#code",
-      "https://arbiscan.io/address/0xa123748ce7609f507060f947b70298d0bde621e6#code",
-      "https://basescan.org/address/0x5b70a66fe68c4c86ffd724b58cc56049c70e9d3d#code",
-      "https://basescan.org/address/0x7bed01f8482ff686f025628e7780ca6c1f0559fc#code",
-      "https://basescan.org/address/0xaafbeef195bdab1bb6f3dc9ceba875cd72499230#code",
-      "https://celoscan.io/address/0x2e008211f34b25a7d7c102403c6c2c3b665a1abe#code",
-      "https://etherscan.io/address/0x0001a500a6b18995b03f44bb040a5ffc28e45cb0#code",
-      "https://etherscan.io/address/0x0171d7178fbf3b48e75675dee2ea3efecef775c1#code",
-      "https://etherscan.io/address/0x0561ce39a1ab785b02de0d9903125702559993a1#code",
-      "https://etherscan.io/address/0x060d0cbddfb0498d610e2ef55c01516b5b1251e6#code",
-      "https://etherscan.io/address/0x0dc23eef3bc64cf3cbd8f9329b57ae4c4f28d5d2#code",
-      "https://etherscan.io/address/0x0f33636698f6607b2fddc1e857788535914c44d4#code",
-      "https://etherscan.io/address/0x133a6d318fa0c9413a70c149e7f630015044dec3#code",
-      "https://etherscan.io/address/0x1521918961bdbc9ed4c67a7103d5999e4130e6cb#code",
-      "https://etherscan.io/address/0x15bd56669f57192a97df41a2aa8f4403e9491776#code",
-      "https://etherscan.io/address/0x15cd7faee048c7673ab818c9e582630f1a924593#code",
-      "https://etherscan.io/address/0x2f1f7d38e4772884b88f3ecd8b6b9facdc319112#code",
-      "https://etherscan.io/address/0x3515a36af270070635fa3e957e006aaf6078e658#code",
-      "https://etherscan.io/address/0x3c1ff68f5aa342d296d4dee4bb1cacca912d95fe#code",
-      "https://etherscan.io/address/0x3d6494ce09a9f40c0b5a92bdbd7c7a9b0e3912b1#code",
-      "https://etherscan.io/address/0x3fb926116d454b95c669b6bf2e7c3bad8d19affa#code",
-      "https://etherscan.io/address/0x4039b809e0c0ad04f6fc880193366b251ddf4b40#code",
-      "https://etherscan.io/address/0x42042799b0de38add2a70dc996f69f98e1a85260#code",
-      "https://etherscan.io/address/0x4443ddd8ec67cbcf7e291ee3198f81dd0326b3a1#code",
-      "https://etherscan.io/address/0x4503b79d468e81ad2d4bd6db991810da269ba777#code",
-      "https://etherscan.io/address/0x461a76074596f080dfba414532ab51280611b8e6#code",
-      "https://etherscan.io/address/0x46c0d07f55d4f9b5eed2fc9680b5953e5fd7b461#code",
-      "https://etherscan.io/address/0x48b6af7b12c71f09e2fc8af4855de4ff54e775ca#code",
-      "https://etherscan.io/address/0x48d4631f24dace505c04d5a39458bed209e80a3c#code",
-      "https://etherscan.io/address/0x4c7e9e711dae61f93846d5cfc64cf0d1bcf78f0f#code",
-      "https://etherscan.io/address/0x51eb65012ca5ceb07320c497f4151ac207fea4e0#code",
-      "https://etherscan.io/address/0x528befb0f8c6a988c9f42345da6d053d66b3b9b6#code",
-      "https://etherscan.io/address/0x5650300fcbab43a0d7d02f8cb5d0f039402593f0#code",
-      "https://etherscan.io/address/0x69d97b5c4f35fd3a72fa83b6b1eb911c6a8a2e3c#code",
-      "https://etherscan.io/address/0x6b149a00e40cc6c148992c6aadd232d958c35fa3#code",
-      "https://etherscan.io/address/0x6bc86c3d44a8b2ef9993e1da53152293fa1ff6ec#code",
-      "https://etherscan.io/address/0x7e01a500805f8a52fad229b3015ad130a332b7b3#code",
-      "https://etherscan.io/address/0x7eb5824bb78e971284e2140059f8755b3d2bb525#code",
-      "https://etherscan.io/address/0x83adc54b2828e99a6da3a11263c75e38e0a1a215#code",
-      "https://etherscan.io/address/0x897aee2e6f3d37740d334c55caea2e0cac82aa14#code",
-      "https://etherscan.io/address/0x8c31cd6d5d90bb536e045a59c71b85154de1c190#code",
-      "https://etherscan.io/address/0x94a1892d91c05d0c61c3f49f42205d2285b914c9#code",
-      "https://etherscan.io/address/0x95418b46d5566d3d1ea62c12aea91227e566c5c1#code",
-      "https://etherscan.io/address/0x990aba4b05adc3761efaf38fb871b93c7b162d03#code",
-      "https://etherscan.io/address/0x9ec9156def5c613b2a7d4c46c383f9b58dfcd6fe#code",
-      "https://etherscan.io/address/0xa0da53447c0f6c4987964d8463da7e6628b30f82#code",
-      "https://etherscan.io/address/0xaeec8bc8e5fe28bc4df2e9586b222924b8a0d5e9#code",
-      "https://etherscan.io/address/0xb01b4154047e51f01b22017079367341ea73d744#code",
-      "https://etherscan.io/address/0xc096362fa6f4a4b1a9ea68b1043416f3381ce300#code",
-      "https://etherscan.io/address/0xc0b146d61e2a2c17e024477e01978d1fcf598c6b#code",
-      "https://etherscan.io/address/0xcb728aefd88fca806d638eaeeeacfc03dd985d70#code",
-      "https://etherscan.io/address/0xcf05126771a21a93da5a596d5cf67d8ed9f5e6e5#code",
-      "https://etherscan.io/address/0xdc871b7833932d45023755c9de3786060a934c48#code",
-      "https://etherscan.io/address/0xdcafcccc7ba0b7185a472d9d068fde0af4313fb5#code",
-      "https://etherscan.io/address/0xe85791b18f5df42163092acc5c9da1c479afea9d#code",
-      "https://etherscan.io/address/0xebdde456ea288b49f7d5975e7659ba1ccf607efc#code",
-      "https://etherscan.io/address/0xf0b1fc3a3d412ea73136925b831d6203de310650#code",
-      "https://etherscan.io/address/0xf95bfbba428dfb454cd59c9c2d309bd6452d12a8#code",
-      "https://etherscan.io/address/0xfa517d01daa100cb1932fa4345f68874f7e7ef46#code",
-      "https://etherscan.io/address/0xfad04813bffd759a308a2beaacef587720ba743f#code",
-      "https://etherscan.io/address/0xfcefb015372e84fc465cf2778889ee231a6e2e67#code",
-      "https://etherscan.io/address/0xff8697d8d2998d6aa2e09b405795c6f4beeb0c81#code",
-      "https://gnosisscan.io/address/0x15bd56669f57192a97df41a2aa8f4403e9491776#code",
-      "https://gnosisscan.io/address/0x5b6c538c7b2e0b44fa8a3b7a0532ef797b07d0e9#code",
-      "https://gnosisscan.io/address/0x65fd74c29463afe08c879a3020323dd7df02da57#code",
-      "https://gnosisscan.io/address/0x7d686bd1fd3cff6e45a40165154d61043af7d67c#code",
-      "https://gnosisscan.io/address/0xd0e5095df49a2c852ffce0ea4d9bbc7d5197fa49#code",
-      "https://immunefi.com",
-      "https://optimistic.etherscan.io/address/0x820ca542d5876fdef240584f6f3924852d527fed#code",
-      "https://optimistic.etherscan.io/address/0x87c511c8ae3faf0063b3f3cf9c6ab96c4aa5c60c#code",
-      "https://optimistic.etherscan.io/address/0xaea9ef993d8a1a164397642648df43f053d43d85#code",
-      "https://optimistic.etherscan.io/address/0xcf9b4710fe450dca52374f28e4917fdcd44f9487#code",
-      "https://polygonscan.com/address/0x1262136cac6a06a782dc94eb3a3df0b4d09ff6a6#code",
-      "https://polygonscan.com/address/0x17d96ba4532fe91809326092fe4d5606a7b7a0d8#code",
-      "https://polygonscan.com/address/0x43117542a48588be59018a16443ae75942ffde91#code",
-      "https://polygonscan.com/address/0x9338b5153ae39bb89f50468e608ed9d764b755fd#code",
-      "https://polygonscan.com/address/0xa749f605d93b3efcc207c54270d83c6e8fa70ff8#code",
-      "https://polygonscan.com/address/0xbcb1bac84b5bcab350c89c50adc9064ed15a4485#code",
-      "https://polygonscan.com/address/0xe3607b00e75f6405248323a9417ff6b39b244b50#code",
-      "https://polygonscan.com/address/0xe6e03dd62d11f88a11d65663b398ed2b3be2070c#code"
     ],
     "github_repos": []
   },
@@ -57727,7 +57727,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T13:00:38.252496+00:00",
+    "updated_at": "2026-11-20T13:30:32.852180+00:00",
     "total": 1919,
     "qualifying": 427,
     "external": 355,
