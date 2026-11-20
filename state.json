@@ -1879,7 +1879,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 61,
+    "resp_eff": 58,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5120,7 +5120,7 @@
     "github_repos": []
   },
   "hackerone:john-deere": {
-    "hash": "97f2b30854b27b514d95e5a6414453d149c1e68c",
+    "hash": "2bd0227a1d62d05a6f3f98eb4c2b6e988f2cf2a5",
     "bounty": false,
     "source": false,
     "name": "John Deere",
@@ -8739,7 +8739,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 417,
-    "resp_eff": 99,
+    "resp_eff": 100,
     "bounty_days": 84.0,
     "sc_targets": [
       {
@@ -9201,7 +9201,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 56445,
-    "resp_eff": 36,
+    "resp_eff": 35,
     "bounty_days": 1928.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -17571,6 +17571,25 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:website": {
+    "hash": "0452261b3459e340a0b0c85060b962c8c40456e7",
+    "bounty": true,
+    "source": false,
+    "name": "Kinepolis Group",
+    "url": "https://www.intigriti.com/programs/kinepolis/website/detail",
+    "platform": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 5000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -51196,6 +51215,43 @@
       "sherlock-protocol/sherlock-reports"
     ]
   },
+  "sherlock:272": {
+    "hash": "ab41de0630b939cb0baef75b7f92e27df3d9c8c9",
+    "bounty": true,
+    "source": true,
+    "name": "Scroll",
+    "url": "https://audits.sherlock.xyz/bug-bounties/272",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 250000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Zellic/publications",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/trailofbits/publications",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/trailofbits/publications",
+      "https://github.com/zellic/publications"
+    ],
+    "github_repos": [
+      "trailofbits/publications",
+      "zellic/publications"
+    ]
+  },
   "sherlock:273": {
     "hash": "1cb1b19178c4d3e9b382a0ff9e0327cf5012bffc",
     "bounty": true,
@@ -52064,43 +52120,6 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
-    ]
-  },
-  "sherlock:272": {
-    "hash": "ab41de0630b939cb0baef75b7f92e27df3d9c8c9",
-    "bounty": true,
-    "source": true,
-    "name": "Scroll",
-    "url": "https://audits.sherlock.xyz/bug-bounties/272",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 250000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zellic/publications",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/trailofbits/publications",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/trailofbits/publications",
-      "https://github.com/zellic/publications"
-    ],
-    "github_repos": [
-      "trailofbits/publications",
-      "zellic/publications"
     ]
   },
   "chaos:1inch": {
@@ -57785,8 +57804,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T20:32:07.429342+00:00",
-    "total": 1921,
+    "updated_at": "2026-11-20T21:03:45.397544+00:00",
+    "total": 1922,
     "qualifying": 427,
     "external": 355,
     "blockchain": 364,
