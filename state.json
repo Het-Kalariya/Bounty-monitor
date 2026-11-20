@@ -4143,7 +4143,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 66,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4319,7 +4319,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 87,
+    "resp_eff": 88,
     "bounty_days": 343.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4789,7 +4789,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19743,
-    "resp_eff": 84,
+    "resp_eff": 86,
     "bounty_days": 629.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6290,7 +6290,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 36,
+    "resp_eff": 33,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -51305,6 +51305,43 @@
       "yearn/yrobotreasury"
     ]
   },
+  "sherlock:300": {
+    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
+    "bounty": true,
+    "source": true,
+    "name": "Aave V4",
+    "url": "https://audits.sherlock.xyz/bug-bounties/300",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 2500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-address-book",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave/aave-v4",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/aave-dao/aave-address-book",
+      "https://github.com/aave/aave-v4"
+    ],
+    "github_repos": [
+      "aave-dao/aave-address-book",
+      "aave/aave-v4"
+    ]
+  },
   "sherlock:344": {
     "hash": "dcc25d4090da7bbb924fd16594f4e3ff70c4b11f",
     "bounty": true,
@@ -52006,43 +52043,6 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
-    ]
-  },
-  "sherlock:300": {
-    "hash": "02c43e2e254fccf1389b165031268f1ecaa68807",
-    "bounty": true,
-    "source": true,
-    "name": "Aave V4",
-    "url": "https://audits.sherlock.xyz/bug-bounties/300",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 2500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-address-book",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave/aave-v4",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/aave-dao/aave-address-book",
-      "https://github.com/aave/aave-v4"
-    ],
-    "github_repos": [
-      "aave-dao/aave-address-book",
-      "aave/aave-v4"
     ]
   },
   "chaos:1inch": {
@@ -57727,7 +57727,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T14:00:54.196988+00:00",
+    "updated_at": "2026-11-20T14:30:41.613361+00:00",
     "total": 1919,
     "qualifying": 427,
     "external": 355,
