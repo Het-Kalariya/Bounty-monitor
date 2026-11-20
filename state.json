@@ -2610,7 +2610,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 90,
+    "resp_eff": 91,
     "bounty_days": 390.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8529,7 +8529,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 30,
+    "resp_eff": 31,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -10035,7 +10035,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 277,
-    "resp_eff": 68,
+    "resp_eff": 69,
     "bounty_days": 729.0,
     "sc_targets": [
       {
@@ -20165,6 +20165,58 @@
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:bobanetwork": {
+    "hash": "7b2e198744cabbf816e3473101888ebc3f13bc85",
+    "bounty": true,
+    "source": true,
+    "name": "Boba Network",
+    "url": "https://immunefi.com/bug-bounty/bobanetwork",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+        "description": "Proxy_LightBridge"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+        "description": "Proxy__LightBridge (Arb)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://optimistic.etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
+        "description": "Proxy__LightBridge (Op)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bobascan.com/address/0x670b130112C6f03E17192e63c67866e67D77c3ee",
+        "description": "Proxy__LightBridge"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bobascan.com/address/0x0dfFd3Efe9c3237Ad7bf94252296272c96237FF5",
+        "description": "Proxy__LightBridge"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801",
+      "https://bobascan.com/address/0x0dffd3efe9c3237ad7bf94252296272c96237ff5",
+      "https://bobascan.com/address/0x670b130112c6f03e17192e63c67866e67d77c3ee",
+      "https://etherscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801",
+      "https://optimistic.etherscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801"
+    ],
     "github_repos": []
   },
   "immunefi:ens": {
@@ -34474,58 +34526,6 @@
       "immunefi-team/attackathon-xrpl-lending-protocol"
     ]
   },
-  "immunefi:bobanetwork": {
-    "hash": "7b2e198744cabbf816e3473101888ebc3f13bc85",
-    "bounty": true,
-    "source": true,
-    "name": "Boba Network",
-    "url": "https://immunefi.com/bug-bounty/bobanetwork",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
-        "description": "Proxy_LightBridge"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
-        "description": "Proxy__LightBridge (Arb)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://optimistic.etherscan.io/address/0x2dE73Bd1660Fbf4D521a52Ec2a91CCc106113801",
-        "description": "Proxy__LightBridge (Op)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bobascan.com/address/0x670b130112C6f03E17192e63c67866e67D77c3ee",
-        "description": "Proxy__LightBridge"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bobascan.com/address/0x0dfFd3Efe9c3237Ad7bf94252296272c96237FF5",
-        "description": "Proxy__LightBridge"
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801",
-      "https://bobascan.com/address/0x0dffd3efe9c3237ad7bf94252296272c96237ff5",
-      "https://bobascan.com/address/0x670b130112c6f03e17192e63c67866e67d77c3ee",
-      "https://etherscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801",
-      "https://optimistic.etherscan.io/address/0x2de73bd1660fbf4d521a52ec2a91ccc106113801"
-    ],
-    "github_repos": []
-  },
   "immunefi:yo-protocol": {
     "hash": "fcb4e6c25bb9364c33fd002ddfc6749170bc22c6",
     "bounty": true,
@@ -42059,6 +42059,83 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:zo-finance-smart-contracts": {
+    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
+    "bounty": false,
+    "source": true,
+    "name": "ZO Finance Smart Contracts",
+    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/zofinance/zo-contracts-public",
+        "description": ""
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/zofinance/zo-contracts-public",
+      "https://github.com/zofinance/zo-contracts-usdz-public"
+    ],
+    "github_repos": [
+      "zofinance/zo-contracts-public",
+      "zofinance/zo-contracts-usdz-public"
+    ]
+  },
+  "hackenproof:zo-finance-web": {
+    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
+    "bounty": false,
+    "source": false,
+    "name": "ZO Finance Web",
+    "url": "https://hackenproof.com/programs/zo-finance-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:zoomex-web-and-mobile": {
+    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
+    "bounty": true,
+    "source": false,
+    "name": "Zoomex Web & Mobile",
+    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepfi-trade": {
     "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
     "bounty": true,
@@ -49379,83 +49456,6 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zo-finance-smart-contracts": {
-    "hash": "a02ff8b8aaea04da2c0f52615d7fd6186f413466",
-    "bounty": false,
-    "source": true,
-    "name": "ZO Finance Smart Contracts",
-    "url": "https://hackenproof.com/programs/zo-finance-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-usdz-public",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/zofinance/zo-contracts-public",
-        "description": ""
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/zofinance/zo-contracts-public",
-      "https://github.com/zofinance/zo-contracts-usdz-public"
-    ],
-    "github_repos": [
-      "zofinance/zo-contracts-public",
-      "zofinance/zo-contracts-usdz-public"
-    ]
-  },
-  "hackenproof:zo-finance-web": {
-    "hash": "66e5950ac6feef2d2843da9e61bccbd647c427ab",
-    "bounty": false,
-    "source": false,
-    "name": "ZO Finance Web",
-    "url": "https://hackenproof.com/programs/zo-finance-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zoomex-web-and-mobile": {
-    "hash": "ebb4a401c48a2bf287daf1bbbb9d72ba4f35ee59",
-    "bounty": true,
-    "source": false,
-    "name": "Zoomex Web & Mobile",
-    "url": "https://hackenproof.com/programs/zoomex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57708,7 +57708,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T15:00:38.448100+00:00",
+    "updated_at": "2026-11-20T15:31:14.417438+00:00",
     "total": 1918,
     "qualifying": 427,
     "external": 355,
