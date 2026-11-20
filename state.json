@@ -829,7 +829,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 88,
+    "resp_eff": 86,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1684,7 +1684,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 72,
+    "resp_eff": 71,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3323,7 +3323,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 80,
     "bounty_days": 40.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -3668,7 +3668,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 45,
+    "resp_eff": 50,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4789,7 +4789,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 19743,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 629.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8558,7 +8558,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 34,
+    "resp_eff": 35,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -19001,25 +19001,6 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "intigriti:water-link": {
-    "hash": "e243ffac037072f3c206c5824d2810556fcabf79",
-    "bounty": true,
-    "source": false,
-    "name": "Water-Link",
-    "url": "https://www.intigriti.com/programs/waterlink/water-link/detail",
-    "platform": "intigriti",
-    "bounty_min": 25,
-    "bounty_max": 5000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -42135,15 +42116,75 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:raiffeisen-web-and-mobile": {
-    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
+  "hackenproof:dexalot-smart-contracts-archived": {
+    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
+    "bounty": true,
+    "source": true,
+    "name": "Dexalot Smart Contracts (Archived)",
+    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Dexalot/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dexalot/contracts"
+    ],
+    "github_repos": [
+      "dexalot/contracts"
+    ]
+  },
+  "hackenproof:dodolimitorder-smart-contract": {
+    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
+    "bounty": true,
+    "source": true,
+    "name": "DODOLimitOrder Smart Contract",
+    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
+    ],
+    "github_repos": [
+      "dodoex/dodo-limit-order"
+    ]
+  },
+  "hackenproof:dop-protocol": {
+    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
     "bounty": true,
     "source": false,
-    "name": "Raiffeisen Web & Mobile",
-    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
+    "name": "DOP Protocol",
+    "url": "https://hackenproof.com/programs/dop-protocol",
     "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 2000,
+    "bounty_min": 500,
+    "bounty_max": 300000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42315,36 +42356,6 @@
     "sc_ids": [
       "constracts/mainnetrfq.sol",
       "https://github.com/dexalot/contracts/tree/cd/removeauction"
-    ],
-    "github_repos": [
-      "dexalot/contracts"
-    ]
-  },
-  "hackenproof:dexalot-smart-contracts-archived": {
-    "hash": "f78b362b6307a62758c601e413a3f4b246811329",
-    "bounty": true,
-    "source": true,
-    "name": "Dexalot Smart Contracts (Archived)",
-    "url": "https://hackenproof.com/programs/dexalot-smart-contracts-archived",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Dexalot/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dexalot/contracts"
     ],
     "github_repos": [
       "dexalot/contracts"
@@ -42551,56 +42562,6 @@
     "github_repos": [
       "dodoex/dodo-route-contract"
     ]
-  },
-  "hackenproof:dodolimitorder-smart-contract": {
-    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
-    "bounty": true,
-    "source": true,
-    "name": "DODOLimitOrder Smart Contract",
-    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
-    ],
-    "github_repos": [
-      "dodoex/dodo-limit-order"
-    ]
-  },
-  "hackenproof:dop-protocol": {
-    "hash": "2259ff1c95421074c30554ddbfdfcdedf8a9d842",
-    "bounty": true,
-    "source": false,
-    "name": "DOP Protocol",
-    "url": "https://hackenproof.com/programs/dop-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:doubleup-smart-contracts": {
     "hash": "a615d4794b5a4f54cc01c6423acf090de66d8e4a",
@@ -46408,6 +46369,26 @@
       "quantova/quantova-chain",
       "quantova/qvm"
     ]
+  },
+  "hackenproof:raiffeisen-web-and-mobile": {
+    "hash": "80cf0d232bd032f83e1ccb9853f1b7d169834465",
+    "bounty": true,
+    "source": false,
+    "name": "Raiffeisen Web & Mobile",
+    "url": "https://hackenproof.com/programs/raiffeisen-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:redstone-smart-contracts": {
     "hash": "6610d22c37e0bad11870f6965bb591439c7ae526",
@@ -57804,8 +57785,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-20T22:09:42.881766+00:00",
-    "total": 1922,
+    "updated_at": "2026-11-20T22:53:24.802470+00:00",
+    "total": 1921,
     "qualifying": 427,
     "external": 355,
     "blockchain": 364,
