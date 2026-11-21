@@ -1247,7 +1247,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 59,
+    "resp_eff": 60,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1741,7 +1741,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 62,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -6290,7 +6290,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 29,
+    "resp_eff": 27,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -18117,25 +18117,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "intigriti:postibugbounty": {
-    "hash": "96636b230374b09dbc6266c2c5716f2ecf28f96a",
-    "bounty": true,
-    "source": false,
-    "name": "Posti Bug Bounty ",
-    "url": "https://www.intigriti.com/programs/posti/postibugbounty/detail",
-    "platform": "intigriti",
-    "bounty_min": 100,
-    "bounty_max": 2000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "intigriti:proofvdp": {
     "hash": "efa344511f915ad1bc7293068d7793d41021fa9d",
     "bounty": false,
@@ -20191,6 +20172,381 @@
     "domains": 0,
     "resp_eff": null,
     "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:1inch-aqua": {
+    "hash": "f14b1b3eec7ce263bd83d19dfc3c3b648eae2515",
+    "bounty": true,
+    "source": true,
+    "name": "1inch - Aqua",
+    "url": "https://immunefi.com/bug-bounty/1inch-aqua",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/Aqua.sol",
+        "description": "Aqua - src/Aqua.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/AquaRouter.sol",
+        "description": "Aqua - src/AquaRouter.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/Balance.sol",
+        "description": "Aqua - src/libs/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/SwapVM.sol",
+        "description": "Swap VM - src/SwapVM.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Balances.sol",
+        "description": "Swap VM - src/instructions/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Controls.sol",
+        "description": "Swap VM - src/instructions/Controls.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Decay.sol",
+        "description": "Swap VM - src/instructions/Decay.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Extruction.sol",
+        "description": "Swap VM - src/instructions/Extruction.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Fee.sol",
+        "description": "Swap VM - src/instructions/Fee.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/PeggedSwap.sol",
+        "description": "Swap VM - src/instructions/PeggedSwap.sol - new"
+      }
+    ],
+    "sc_total": 32,
+    "sc_ids": [
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/aqua.sol",
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/aquarouter.sol",
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/balance.sol",
+      "https://github.com/1inch/solidity-utils/blob/6.9.16/contracts/libraries/calldata.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/calldataptr.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/ecdsa.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/revertreasonforwarder.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/safeerc20.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/stringutil.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transient.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transientlock.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/unierc20.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/ethreceiver.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/multicall.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/onlywethreceiver.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/rescuable.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/simulator.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/balances.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/controls.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/decay.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/extruction.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/fee.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/peggedswap.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycconcentrate.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycswap.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/makertraits.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/peggedswapmath.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/takertraits.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/vm.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/opcodes/aquaopcodes.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/routers/aquaswapvmrouter.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/swapvm.sol"
+    ],
+    "github_repos": [
+      "1inch/aqua",
+      "1inch/solidity-utils",
+      "1inch/swap-vm"
+    ]
+  },
+  "immunefi:1inch-aqua-improvement": {
+    "hash": "af0585c1a71f4e5373187c48398f9fb53b9ad019",
+    "bounty": true,
+    "source": true,
+    "name": "1inch - Aqua Improvement",
+    "url": "https://immunefi.com/bug-bounty/1inch-aqua-improvement",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 25000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/Aqua.sol",
+        "description": "Aqua - src/Aqua.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/AquaRouter.sol",
+        "description": "Aqua - src/AquaRouter.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/Balance.sol",
+        "description": "Aqua - src/libs/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/SwapVM.sol",
+        "description": "Swap VM - src/SwapVM.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Balances.sol",
+        "description": "Swap VM - src/instructions/Balances.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Controls.sol",
+        "description": "Swap VM - src/instructions/Controls.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Decay.sol",
+        "description": "Swap VM - src/instructions/Decay.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Extruction.sol",
+        "description": "Swap VM - src/instructions/Extruction.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Fee.sol",
+        "description": "Swap VM - src/instructions/Fee.sol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/PeggedSwap.sol",
+        "description": "Swap VM - src/instructions/PeggedSwap.sol - new"
+      }
+    ],
+    "sc_total": 32,
+    "sc_ids": [
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/aqua.sol",
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/aquarouter.sol",
+      "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/balance.sol",
+      "https://github.com/1inch/solidity-utils/blob/6.9.16/contracts/libraries/calldata.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/calldataptr.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/ecdsa.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/revertreasonforwarder.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/safeerc20.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/stringutil.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transient.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transientlock.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/unierc20.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/ethreceiver.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/multicall.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/onlywethreceiver.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/rescuable.sol",
+      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/simulator.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/balances.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/controls.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/decay.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/extruction.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/fee.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/peggedswap.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycconcentrate.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycswap.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/makertraits.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/peggedswapmath.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/takertraits.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/vm.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/opcodes/aquaopcodes.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/routers/aquaswapvmrouter.sol",
+      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/swapvm.sol"
+    ],
+    "github_repos": [
+      "1inch/aqua",
+      "1inch/solidity-utils",
+      "1inch/swap-vm"
+    ]
+  },
+  "immunefi:1inch-SmartContracts": {
+    "hash": "f2e7a61787609966983246561eb5722acebd9411",
+    "bounty": true,
+    "source": true,
+    "name": "1inch - Smart Contracts",
+    "url": "https://immunefi.com/bug-bounty/1inch-SmartContracts",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/limit-order-protocol/tree/4.3.4",
+        "description": "Limit Order Protocol - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/fusion-protocol/tree/3.1.1",
+        "description": "Limit Order Settlement - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/token-plugins/tree/2.0.0",
+        "description": "Token-plugins - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/farming/tree/4.0.0",
+        "description": "Farming Contracts - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/delegating/tree/2.0.0",
+        "description": "Delegating Contracts - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/cross-chain-swap/tree/1.1.0",
+        "description": "Cross-chain Swap - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/solana-crosschain-protocol/tree/1.1.0",
+        "description": "Solana Crosschain - new"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/1inch/solana-fusion/tree/1.0.0-release",
+        "description": "Solana Fusion - new"
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/1inch/cross-chain-swap/tree/1.1.0",
+      "https://github.com/1inch/delegating/tree/2.0.0",
+      "https://github.com/1inch/farming/tree/4.0.0",
+      "https://github.com/1inch/fusion-protocol/tree/3.1.1",
+      "https://github.com/1inch/limit-order-protocol/tree/4.3.4",
+      "https://github.com/1inch/solana-crosschain-protocol/tree/1.1.0",
+      "https://github.com/1inch/solana-fusion/tree/1.0.0-release",
+      "https://github.com/1inch/token-plugins/tree/2.0.0"
+    ],
+    "github_repos": [
+      "1inch/cross-chain-swap",
+      "1inch/delegating",
+      "1inch/farming",
+      "1inch/fusion-protocol",
+      "1inch/limit-order-protocol",
+      "1inch/solana-crosschain-protocol",
+      "1inch/solana-fusion",
+      "1inch/token-plugins"
+    ]
+  },
+  "immunefi:1inch-wallet": {
+    "hash": "cf8bc2b25c88bede5e535f6924ae94aa5f8bb70a",
+    "bounty": true,
+    "source": false,
+    "name": "1inch - Wallet",
+    "url": "https://immunefi.com/bug-bounty/1inch-wallet",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:1inch-infrastructure": {
+    "hash": "3ca40c9479d036a2f96179373e273d9ac882416a",
+    "bounty": true,
+    "source": false,
+    "name": "1inch - Infrastructure",
+    "url": "https://immunefi.com/bug-bounty/1inch-infrastructure",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 20000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:1inch-web": {
+    "hash": "911cc6d9efc14ed56baa93782893ec7a89cf070a",
+    "bounty": true,
+    "source": false,
+    "name": "1inch - Web",
+    "url": "https://immunefi.com/bug-bounty/1inch-web",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:1inch-business": {
+    "hash": "f6585f9ab2039945db747e9b040f39027f73bc9e",
+    "bounty": true,
+    "source": false,
+    "name": "1inch - Business",
+    "url": "https://immunefi.com/bug-bounty/1inch-business",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
     "sc_targets": [],
     "sc_total": 0,
     "sc_ids": [],
@@ -28761,26 +29117,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:1inch-business": {
-    "hash": "f6585f9ab2039945db747e9b040f39027f73bc9e",
-    "bounty": true,
-    "source": false,
-    "name": "1inch - Business",
-    "url": "https://immunefi.com/bug-bounty/1inch-business",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "immunefi:plether": {
     "hash": "cd3a1b3d58a45be4a7f26068af7fcbccbabd3c69",
     "bounty": true,
@@ -29649,361 +29985,6 @@
     "github_repos": [
       "matter-labs/era-contracts",
       "matter-labs/zksync-protocol"
-    ]
-  },
-  "immunefi:1inch-web": {
-    "hash": "911cc6d9efc14ed56baa93782893ec7a89cf070a",
-    "bounty": true,
-    "source": false,
-    "name": "1inch - Web",
-    "url": "https://immunefi.com/bug-bounty/1inch-web",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "immunefi:1inch-infrastructure": {
-    "hash": "3ca40c9479d036a2f96179373e273d9ac882416a",
-    "bounty": true,
-    "source": false,
-    "name": "1inch - Infrastructure",
-    "url": "https://immunefi.com/bug-bounty/1inch-infrastructure",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 20000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "immunefi:1inch-wallet": {
-    "hash": "cf8bc2b25c88bede5e535f6924ae94aa5f8bb70a",
-    "bounty": true,
-    "source": false,
-    "name": "1inch - Wallet",
-    "url": "https://immunefi.com/bug-bounty/1inch-wallet",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "immunefi:1inch-SmartContracts": {
-    "hash": "f2e7a61787609966983246561eb5722acebd9411",
-    "bounty": true,
-    "source": true,
-    "name": "1inch - Smart Contracts",
-    "url": "https://immunefi.com/bug-bounty/1inch-SmartContracts",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/limit-order-protocol/tree/4.3.4",
-        "description": "Limit Order Protocol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/fusion-protocol/tree/3.1.1",
-        "description": "Limit Order Settlement - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/token-plugins/tree/2.0.0",
-        "description": "Token-plugins - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/farming/tree/4.0.0",
-        "description": "Farming Contracts - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/delegating/tree/2.0.0",
-        "description": "Delegating Contracts - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/cross-chain-swap/tree/1.1.0",
-        "description": "Cross-chain Swap - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/solana-crosschain-protocol/tree/1.1.0",
-        "description": "Solana Crosschain - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/solana-fusion/tree/1.0.0-release",
-        "description": "Solana Fusion - new"
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/1inch/cross-chain-swap/tree/1.1.0",
-      "https://github.com/1inch/delegating/tree/2.0.0",
-      "https://github.com/1inch/farming/tree/4.0.0",
-      "https://github.com/1inch/fusion-protocol/tree/3.1.1",
-      "https://github.com/1inch/limit-order-protocol/tree/4.3.4",
-      "https://github.com/1inch/solana-crosschain-protocol/tree/1.1.0",
-      "https://github.com/1inch/solana-fusion/tree/1.0.0-release",
-      "https://github.com/1inch/token-plugins/tree/2.0.0"
-    ],
-    "github_repos": [
-      "1inch/cross-chain-swap",
-      "1inch/delegating",
-      "1inch/farming",
-      "1inch/fusion-protocol",
-      "1inch/limit-order-protocol",
-      "1inch/solana-crosschain-protocol",
-      "1inch/solana-fusion",
-      "1inch/token-plugins"
-    ]
-  },
-  "immunefi:1inch-aqua-improvement": {
-    "hash": "af0585c1a71f4e5373187c48398f9fb53b9ad019",
-    "bounty": true,
-    "source": true,
-    "name": "1inch - Aqua Improvement",
-    "url": "https://immunefi.com/bug-bounty/1inch-aqua-improvement",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 25000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/Aqua.sol",
-        "description": "Aqua - src/Aqua.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/AquaRouter.sol",
-        "description": "Aqua - src/AquaRouter.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/Balance.sol",
-        "description": "Aqua - src/libs/Balances.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/SwapVM.sol",
-        "description": "Swap VM - src/SwapVM.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Balances.sol",
-        "description": "Swap VM - src/instructions/Balances.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Controls.sol",
-        "description": "Swap VM - src/instructions/Controls.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Decay.sol",
-        "description": "Swap VM - src/instructions/Decay.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Extruction.sol",
-        "description": "Swap VM - src/instructions/Extruction.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Fee.sol",
-        "description": "Swap VM - src/instructions/Fee.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/PeggedSwap.sol",
-        "description": "Swap VM - src/instructions/PeggedSwap.sol - new"
-      }
-    ],
-    "sc_total": 32,
-    "sc_ids": [
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/aqua.sol",
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/aquarouter.sol",
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/balance.sol",
-      "https://github.com/1inch/solidity-utils/blob/6.9.16/contracts/libraries/calldata.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/calldataptr.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/ecdsa.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/revertreasonforwarder.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/safeerc20.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/stringutil.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transient.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transientlock.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/unierc20.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/ethreceiver.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/multicall.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/onlywethreceiver.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/rescuable.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/simulator.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/balances.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/controls.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/decay.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/extruction.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/fee.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/peggedswap.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycconcentrate.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycswap.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/makertraits.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/peggedswapmath.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/takertraits.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/vm.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/opcodes/aquaopcodes.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/routers/aquaswapvmrouter.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/swapvm.sol"
-    ],
-    "github_repos": [
-      "1inch/aqua",
-      "1inch/solidity-utils",
-      "1inch/swap-vm"
-    ]
-  },
-  "immunefi:1inch-aqua": {
-    "hash": "f14b1b3eec7ce263bd83d19dfc3c3b648eae2515",
-    "bounty": true,
-    "source": true,
-    "name": "1inch - Aqua",
-    "url": "https://immunefi.com/bug-bounty/1inch-aqua",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/Aqua.sol",
-        "description": "Aqua - src/Aqua.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/AquaRouter.sol",
-        "description": "Aqua - src/AquaRouter.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/Balance.sol",
-        "description": "Aqua - src/libs/Balances.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/SwapVM.sol",
-        "description": "Swap VM - src/SwapVM.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Balances.sol",
-        "description": "Swap VM - src/instructions/Balances.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Controls.sol",
-        "description": "Swap VM - src/instructions/Controls.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Decay.sol",
-        "description": "Swap VM - src/instructions/Decay.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Extruction.sol",
-        "description": "Swap VM - src/instructions/Extruction.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/Fee.sol",
-        "description": "Swap VM - src/instructions/Fee.sol - new"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/PeggedSwap.sol",
-        "description": "Swap VM - src/instructions/PeggedSwap.sol - new"
-      }
-    ],
-    "sc_total": 32,
-    "sc_ids": [
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/aqua.sol",
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/aquarouter.sol",
-      "https://github.com/1inch/aqua/blob/v1.0.0/src/libs/balance.sol",
-      "https://github.com/1inch/solidity-utils/blob/6.9.16/contracts/libraries/calldata.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/calldataptr.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/ecdsa.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/revertreasonforwarder.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/safeerc20.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/stringutil.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transient.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/transientlock.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/libraries/unierc20.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/ethreceiver.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/multicall.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/onlywethreceiver.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/rescuable.sol",
-      "https://github.com/1inch/solidity-utils/blob/7.0.0/contracts/mixins/simulator.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/balances.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/controls.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/decay.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/extruction.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/fee.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/peggedswap.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycconcentrate.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/instructions/xycswap.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/makertraits.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/peggedswapmath.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/takertraits.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/libs/vm.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/opcodes/aquaopcodes.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/routers/aquaswapvmrouter.sol",
-      "https://github.com/1inch/swap-vm/blob/v1.0.2/src/swapvm.sol"
-    ],
-    "github_repos": [
-      "1inch/aqua",
-      "1inch/solidity-utils",
-      "1inch/swap-vm"
     ]
   },
   "immunefi:maple": {
@@ -42047,86 +42028,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:tickets-travel-network-slash-mobile": {
-    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Mobile",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tickets-travel-network-slash-updated-ui": {
-    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Updated UI",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tidex-exchange": {
-    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
-    "bounty": true,
-    "source": false,
-    "name": "Tidex Exchange",
-    "url": "https://hackenproof.com/programs/tidex-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tokenize-xchange-web-and-mobile": {
-    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
-    "bounty": true,
-    "source": false,
-    "name": "Tokenize Xchange Web & Mobile",
-    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 3000,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -48174,6 +48075,86 @@
     "github_repos": [
       "code-payments/flipcash-program"
     ]
+  },
+  "hackenproof:tickets-travel-network-slash-mobile": {
+    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Mobile",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tickets-travel-network-slash-updated-ui": {
+    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Updated UI",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tidex-exchange": {
+    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
+    "bounty": true,
+    "source": false,
+    "name": "Tidex Exchange",
+    "url": "https://hackenproof.com/programs/tidex-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tokenize-xchange-web-and-mobile": {
+    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
+    "bounty": true,
+    "source": false,
+    "name": "Tokenize Xchange Web & Mobile",
+    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 3000,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:ton": {
     "hash": "c00b6e325264799aa406d075f3791fe47e630c7b",
@@ -57784,8 +57765,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-21T08:25:12.359578+00:00",
-    "total": 1922,
+    "updated_at": "2026-11-21T08:55:20.745941+00:00",
+    "total": 1921,
     "qualifying": 426,
     "external": 358,
     "blockchain": 364,
