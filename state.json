@@ -1133,7 +1133,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 75,
     "bounty_days": 314.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1247,7 +1247,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 61,
+    "resp_eff": 59,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4376,7 +4376,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 72,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -9927,7 +9927,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 20,
+    "resp_eff": 33,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -10064,7 +10064,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 277,
-    "resp_eff": 69,
+    "resp_eff": 70,
     "bounty_days": 729.0,
     "sc_targets": [
       {
@@ -20196,6 +20196,978 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:derive": {
+    "hash": "fc246a9e6162f67cd8a516083c0ada36d96777d7",
+    "bounty": false,
+    "source": true,
+    "name": "Derive",
+    "url": "https://immunefi.com/bug-bounty/derive",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC or ETH",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
+        "description": "DepositModule"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD",
+        "description": "Matching"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0xB8D20c2B7a1Ad2EE33Bc50eF10876eD3035b5e7b",
+        "description": "TradeModule"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x01259207A40925b794C8ac320456F7F6c8FE2636",
+        "description": "TransferModule"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
+        "description": "WithdrawalModule"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0xC51E95b72e116020B138cd5D97Ed4A72DE8Dc48B",
+        "description": "DutchAuction"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x57B03E14d409ADC7fAb6CFc44b5886CAD2D5f02b",
+        "description": "CashAsset"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x4e798659b9846F1da7B6D6B5d09d581270aB6FEC",
+        "description": "InterestRateModel"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x8dC92fB0e1C1F1Def6e424E50aaA66dbB124eb54",
+        "description": "SecurityModule"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.lyra.finance/address/0x28c9ddF9A3B29c2E6a561c1BC520954e5A33de5D",
+        "description": "StandardManager"
+      }
+    ],
+    "sc_total": 39,
+    "sc_ids": [
+      "https://explorer.lyra.finance/address/0x01259207a40925b794c8ac320456f7f6c8fe2636",
+      "https://explorer.lyra.finance/address/0x28c9ddf9a3b29c2e6a561c1bc520954e5a33de5d",
+      "https://explorer.lyra.finance/address/0x30a6e6a3851c18aa67429acc8a1dfafe20a29feb",
+      "https://explorer.lyra.finance/address/0x33e18f4f508d7ad3e958aa2dcf4b3ecaec38d7c6",
+      "https://explorer.lyra.finance/address/0x34bc7fe1965b4e9f4071b69f2e60b8dc88f34475",
+      "https://explorer.lyra.finance/address/0x35d4d9bc79b0a543934b1769304b90d752691cad",
+      "https://explorer.lyra.finance/address/0x388341d9e5a7d7d5accd738b2a31b0622e0c1b87",
+      "https://explorer.lyra.finance/address/0x45da02b9ccf384d7dbdd7b2b13e705badb43db0d",
+      "https://explorer.lyra.finance/address/0x4bb4c3cdc7562f08e9910a0c7d8bb7e108861eb4",
+      "https://explorer.lyra.finance/address/0x4d6e33bf88ab44212b10bac4da448e41a191cb4c",
+      "https://explorer.lyra.finance/address/0x4e798659b9846f1da7b6d6b5d09d581270ab6fec",
+      "https://explorer.lyra.finance/address/0x57b03e14d409adc7fab6cfc44b5886cad2d5f02b",
+      "https://explorer.lyra.finance/address/0x5eb59391e7870807ad2c8792e8c5e75838e0fdb0",
+      "https://explorer.lyra.finance/address/0x6fef1bb8ade9a836663d4c15afd5985fb545004f",
+      "https://explorer.lyra.finance/address/0x727ad65db6ae99db5dbee8f202846dd6009bf6d5",
+      "https://explorer.lyra.finance/address/0x791a570f5785fbdb02ea5c7a794c43111ae2f948",
+      "https://explorer.lyra.finance/address/0x7da2d398ddddfc946efd2c758c4688d21887790d",
+      "https://explorer.lyra.finance/address/0x81ed5dc90f708dd908dccffd5128b5c3405f74c5",
+      "https://explorer.lyra.finance/address/0x8dc92fb0e1c1f1def6e424e50aaa66dbb124eb54",
+      "https://explorer.lyra.finance/address/0x958c54bfacc0e2dee586564b31bf3f171f256279",
+      "https://explorer.lyra.finance/address/0x9b3fe5e5a3bcea5df4e08c41ce89c4e3ff01ace3",
+      "https://explorer.lyra.finance/address/0x9c61888497d716f5bbd93d5e13d443cc375f1424",
+      "https://explorer.lyra.finance/address/0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+      "https://explorer.lyra.finance/address/0xa364498b361d563921c9a144264205cdaaf1b5e0",
+      "https://explorer.lyra.finance/address/0xaa8f9d05599f1a5d5929c40342c06a5da063a4de",
+      "https://explorer.lyra.finance/address/0xaf65752c4643e25c02f693f9d4fe19cf23a095e3",
+      "https://explorer.lyra.finance/address/0xb27cb6b08e6c298c8634d73d5f6649665e90d160",
+      "https://explorer.lyra.finance/address/0xb8d20c2b7a1ad2ee33bc50ef10876ed3035b5e7b",
+      "https://explorer.lyra.finance/address/0xbfe7cd69d3983299d3d18d1ae5c411e1ff61a993",
+      "https://explorer.lyra.finance/address/0xc51e95b72e116020b138cd5d97ed4a72de8dc48b",
+      "https://explorer.lyra.finance/address/0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b",
+      "https://explorer.lyra.finance/address/0xd0711b9ebe84b778483709cde62bacfdbae13623",
+      "https://explorer.lyra.finance/address/0xd464170afe0ee2a4865b2ca6dbcc6dfb8f4bf125",
+      "https://explorer.lyra.finance/address/0xdba83c0c654db1cd914fa2710ba743e925b53086",
+      "https://explorer.lyra.finance/address/0xe201fcefd4852f96810c069f66560dc25b2c7a55",
+      "https://explorer.lyra.finance/address/0xe7603df191d699d8bd9891b821347dbab889e5a5",
+      "https://explorer.lyra.finance/address/0xe7cd9370cde6c9b5eabce8f86d01822d3de205a0",
+      "https://explorer.lyra.finance/address/0xeb8d770ec18db98db922e9d83260a585b9f0dead",
+      "https://explorer.lyra.finance/address/0xfa7f1a242b819a8ec97fd92674c3f0868395b0d3"
+    ],
+    "github_repos": []
+  },
+  "immunefi:aera": {
+    "hash": "6bace0bcfd8d11acbb705a3be6c725fb9c6d75e7",
+    "bounty": true,
+    "source": true,
+    "name": "Aera",
+    "url": "https://immunefi.com/bug-bounty/aera",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x6e5430C10fce10e5c6F67dC54506e4564dD7A6E5",
+        "description": "Base - TransferBlacklistHook"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x69dd4d44eed6bbc33b8a0bdfe17897ab9044372e",
+        "description": "gtUSDa (Base) - PriceAndFeeCalculator"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x000000000001CdB57E58Fa75Fe420a0f4D6640D5",
+        "description": "gtUSDa (Base) - MultiDepositorVault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0x18cf8d963e1a727f9bbf3aeffa0bd04fb4dbda07",
+        "description": "gtUSDa (Base) - Provisioner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://basescan.org/address/0xdDfd960a7150520548dD1F6E53CC2f201b364692",
+        "description": "Base - Whitelist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xCe7Ea99545A6d0744a52Da9017729451Ec92A62C",
+        "description": "Arbitrum - TransferBlacklistHook"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x8bFcD1088fFa41B46329567ae5c4Cd872AB38c0f",
+        "description": "Arbitrum - Whitelist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0x000000001DC8bd45d7E7829fb1c969cbe4D0D1eC",
+        "description": "gtUSDa (Arbitrum) - MultiDepositorVault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xDd4a42603E6d8E515C3468789375A98c376821b3",
+        "description": "gtUSDa (Arbitrum) - Provisioner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://arbiscan.io/address/0xD61ecfB5cEd67Ef4F01E0dfae591c838BfA33932",
+        "description": "gtUSDa (Arbitrum) - PriceAndFeeCalculator"
+      }
+    ],
+    "sc_total": 29,
+    "sc_ids": [
+      "https://arbiscan.io/address/0x000000001dc8bd45d7e7829fb1c969cbe4d0d1ec",
+      "https://arbiscan.io/address/0x8bfcd1088ffa41b46329567ae5c4cd872ab38c0f",
+      "https://arbiscan.io/address/0xce7ea99545a6d0744a52da9017729451ec92a62c",
+      "https://arbiscan.io/address/0xd61ecfb5ced67ef4f01e0dfae591c838bfa33932",
+      "https://arbiscan.io/address/0xdd4a42603e6d8e515c3468789375a98c376821b3",
+      "https://basescan.org/address/0x000000000001cdb57e58fa75fe420a0f4d6640d5",
+      "https://basescan.org/address/0x18cf8d963e1a727f9bbf3aeffa0bd04fb4dbda07",
+      "https://basescan.org/address/0x69dd4d44eed6bbc33b8a0bdfe17897ab9044372e",
+      "https://basescan.org/address/0x6e5430c10fce10e5c6f67dc54506e4564dd7a6e5",
+      "https://basescan.org/address/0xddfd960a7150520548dd1f6e53cc2f201b364692",
+      "https://etherscan.io/address/0x00000000d8f3d6c5dfeb2d2b5ed2276095f3af44",
+      "https://etherscan.io/address/0x1703a1b0fee4d507ca8a743f04e168bcd4862d24",
+      "https://etherscan.io/address/0x21994912f1d286995c4d4961303cbb8e44939944",
+      "https://etherscan.io/address/0x3bd9248048df95db4fbd748c6cd99c1baa40bad0",
+      "https://etherscan.io/address/0x74c4a66ce4f4779b11e7c63d42e51eeef3a80d11",
+      "https://etherscan.io/address/0x811c6f0ef2e8f8a409306dae242ba70bd4f2467d",
+      "https://etherscan.io/address/0x8f3ffa11cd5915f0e869192663b905504a2ef4a5",
+      "https://etherscan.io/address/0xd580c26f7bd8a8a66fd32a97df2308c083b65d9c",
+      "https://etherscan.io/address/0xddfd960a7150520548dd1f6e53cc2f201b364692",
+      "https://etherscan.io/address/0xeff0ae5b39271b33f448cd408b51dc8aa72a672b",
+      "https://explorer.morphl2.io/address/0x047623636f1c7997f5b49ecaadb865681734d89a",
+      "https://explorer.morphl2.io/address/0x85a1d961f1d1bbd9b4a6d96106c5bf9ae91f0510",
+      "https://explorer.morphl2.io/address/0x89963ff339c4a6194ea77381c204884e4503f8fb",
+      "https://explorer.morphl2.io/address/0xbcb62b29a1b982c51d57a44745b694caa1ed2bf2",
+      "https://optimistic.etherscan.io/address/0x000000001dc8bd45d7e7829fb1c969cbe4d0d1ec",
+      "https://optimistic.etherscan.io/address/0x8bfcd1088ffa41b46329567ae5c4cd872ab38c0f",
+      "https://optimistic.etherscan.io/address/0xcc923371f0d3a9ca75d98e767df9de1cdf5799ef",
+      "https://optimistic.etherscan.io/address/0xce7ea99545a6d0744a52da9017729451ec92a62c",
+      "https://optimistic.etherscan.io/address/0xfb6de307b11c50d8b8a0790cd5c82c620d574440"
+    ],
+    "github_repos": []
+  },
+  "immunefi:aave": {
+    "hash": "170b9b7a21609eb0ab2186af9097a5652185f449",
+    "bounty": true,
+    "source": true,
+    "name": "AAVE",
+    "url": "https://immunefi.com/bug-bounty/aave",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "AAVE and stablecoins",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/PoolAddressesProvider.sol",
+        "description": "Aave v3 PoolAddressesProvider"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/ACLManager.sol",
+        "description": "Aave v3 ACLManager"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/Pool.sol",
+        "description": "Aave v3 Pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/L2Pool.sol",
+        "description": "Aave v3 L2Pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/PoolConfigurator.sol",
+        "description": "Aave v3 Pool Configurator"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/DefaultReserveInterestRateStrategyV2.sol",
+        "description": "Aave v3 DefaultReserveInterestRateStrategyV2"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
+        "description": "Aave v3 Upgradability - BaseImmutableAdminUpgradeabilityProxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
+        "description": "Aave v3 Upgradability - InitializableImmutableAdminUpgradabilityProxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/VersionedInitializable.sol",
+        "description": "Aave v3 Upgradability - VersionedInitializable"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
+        "description": "Aave v3 Global configurations - Reserve Configuration"
+      }
+    ],
+    "sc_total": 82,
+    "sc_ids": [
+      "https://etherscan.io/address/0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
+      "https://etherscan.io/address/0x8a32f49ffba88aba6eff96f45d8bd1d4b3f35c7d",
+      "https://etherscan.io/address/0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/helpers/l2encoder.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/baseimmutableadminupgradeabilityproxy.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/initializableimmutableadminupgradeabilityproxy.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/versionedinitializable.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aaveoracle.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/defaultreserveinterestratestrategyv2.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/priceoraclesentinel.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/aclmanager.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/pooladdressesprovider.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/reserveconfiguration.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/userconfiguration.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/borrowlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/bridgelogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/calldatalogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/configuratorlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/emodelogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/flashloanlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/genericlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/isolationmodelogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/liquidationlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/poollogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/reservelogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/supplylogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/validationlogic.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/mathutils.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/percentagemath.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/wadraymath.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/l2pool.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/pool.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/poolconfigurator.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/atoken.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/variabledebttoken.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/emissionmanager.sol",
+      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/rewardscontroller.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/aave/oracle/ghooracle.so",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/flashminter/ghoflashminter.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/feestrategy/fixedfeestrategy.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/ghoreserve.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/gsm.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/gsm4626.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/ownablefacilitator.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/pricestrategy/fixedpricestrategy.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/pricestrategy/fixedpricestrategy4626.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/ghotoken.sol",
+      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/upgradeableghotoken.sol",
+      "https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/tokenization/stabledebttoken.sol",
+      "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/gho/upgradeableburnminttokenpool.sol",
+      "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/gho/upgradeablelockreleasetokenpool.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/misc/aaveoracle.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/configuration/lendingpooladdressesprovider.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/defaultreserveinterestratestrategy.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpool.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpoolcollateralmanager.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpoolconfigurator.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/baseimmutableadminupgradeabilityproxy.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/initializableimmutableadminupgradeabilityproxy.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/versionedinitializable.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/reserveconfiguration.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/userconfiguration.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/genericlogic.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/reservelogic.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/validationlogic.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/mathutils.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/percentagemath.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/wadraymath.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/atoken.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/stabledebttoken.sol",
+      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/variabledebttoken.sol",
+      "https://github.com/bgd-labs/aave-collector-unification/blob/main/src/contracts/collector.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/governance.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/governancepowerstrategy.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/executor.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/payloadscontroller.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/datawarehouse.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/votingmachine.sol",
+      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/votingstrategy.sol",
+      "https://github.com/bgd-labs/aave-stk-gov-v3/blob/main/src/contracts/stakedaavev3.sol",
+      "https://github.com/bgd-labs/solidity-utils/blob/7a7548c1d01f011febdb1c0d47e52c7ec6c30f9d/src/contracts/transparent-proxy/transparentupgradeableproxy.sol",
+      "https://github.com/bgd-labs/stake-token/blob/main/src/contracts/staketoken.sol"
+    ],
+    "github_repos": [
+      "aave-dao/aave-v3-origin",
+      "aave-dao/gho-origin",
+      "aave/aave-v3-core",
+      "aave/ccip",
+      "aave/protocol-v2",
+      "bgd-labs/aave-collector-unification",
+      "bgd-labs/aave-governance-v3",
+      "bgd-labs/aave-stk-gov-v3",
+      "bgd-labs/solidity-utils",
+      "bgd-labs/stake-token"
+    ]
+  },
+  "immunefi:blockpinetwork": {
+    "hash": "e485e86045f7ddfe39e6f83ca658b7ac0fff2e0f",
+    "bounty": true,
+    "source": false,
+    "name": "BlockPI Network",
+    "url": "https://immunefi.com/bug-bounty/blockpinetwork",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:twyne": {
+    "hash": "30873a28ffbc3fa1cbffcbb046209c7b5e706171",
+    "bounty": true,
+    "source": true,
+    "name": "Twyne",
+    "url": "https://immunefi.com/bug-bounty/twyne",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x7613D202Af490c3d1cE1873b0a7022a34E89815f",
+        "description": "eWSTETH Intermediate Credit Vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x75029a47f28550C93Ad5A3BbD2d9b5315204B561",
+        "description": "aWSTETH Intermediate Credit Vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x87b8081A3ace680f35125F469526Ac10f5418Ca7",
+        "description": "eWETH Intermediate Credit Vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xB5Eb1d005e389Bef38161691E2083b4d86FF647a",
+        "description": "Intermediate Vault Factory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xb001f039D76bA48E577A17c04b6940DB37aF8648",
+        "description": "Euler Oracle Router"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x0acd3A3c8Ab6a5F7b5A594C88DFa28999dA858aC",
+        "description": "Vault Manager"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xa1517cCe0bE75700A8838EA1cEE0dc383cd3A332",
+        "description": "Collateral Vault Factory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com/",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xFaBA8f777996C0C28fe9e6554D84cB30ca3e1881",
+        "description": "awstETH Wrapper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x868a21426852A775395d4b90De23B3e3E662bd78",
+        "description": "Aave V3 Teleport Operator"
+      }
+    ],
+    "sc_total": 16,
+    "sc_ids": [
+      "https://etherscan.io/address/0x0acd3a3c8ab6a5f7b5a594c88dfa28999da858ac",
+      "https://etherscan.io/address/0x0af56afbddcb140323445bd7211ba90e54e5fd1c",
+      "https://etherscan.io/address/0x229fe10bc00bbe99ac99703647d4f74f31605e91",
+      "https://etherscan.io/address/0x75029a47f28550c93ad5a3bbd2d9b5315204b561",
+      "https://etherscan.io/address/0x7613d202af490c3d1ce1873b0a7022a34e89815f",
+      "https://etherscan.io/address/0x79cf33e623555e899d4ee122b9bfa0214fa5a4a1",
+      "https://etherscan.io/address/0x868a21426852a775395d4b90de23b3e3e662bd78",
+      "https://etherscan.io/address/0x87b8081a3ace680f35125f469526ac10f5418ca7",
+      "https://etherscan.io/address/0xa1517cce0be75700a8838ea1cee0dc383cd3a332",
+      "https://etherscan.io/address/0xb001f039d76ba48e577a17c04b6940db37af8648",
+      "https://etherscan.io/address/0xb5eb1d005e389bef38161691e2083b4d86ff647a",
+      "https://etherscan.io/address/0xb7a7cf5eb16c124562857632f8f86ed627e6cc35",
+      "https://etherscan.io/address/0xd07e1dd26f415fed3e8c490623a80ab55cf7bdbb",
+      "https://etherscan.io/address/0xef39d6493884c4c84d38a4bff879ce16cede702a",
+      "https://etherscan.io/address/0xfaba8f777996c0c28fe9e6554d84cb30ca3e1881",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
+  "immunefi:immutable": {
+    "hash": "6c38d80d1af5de985e6aaae5ba0b889b54b754c4",
+    "bounty": true,
+    "source": true,
+    "name": "Immutable",
+    "url": "https://immunefi.com/bug-bounty/immutable",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
+        "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x177EaFe0f1F3359375B1728dae0530a75C83E154",
+        "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+        "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xE2E91C1Ae2873720C3b975a8034e887A35323345",
+        "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.immutable.com/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
+        "description": "L2 zkEVM Chain ID 13371 - Bridge Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.immutable.com/address/0xb4c3597e6b090A2f6117780cEd103FB16B071A84",
+        "description": "L2 zkEVM Chain ID 13371 - Bridge Implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.immutable.com/address/0x4f49B53928A71E553bB1B0F66a5BcB54Fd4E8932",
+        "description": "L2 zkEVM Chain ID 13371 - Adapter Proxy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.immutable.com/address/0x1d49c44dc4BbDE68D8D51a9C5732f3a24e48EFA6",
+        "description": "L2 zkEVM Chain ID 13371 - Adapter Implementation"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.immutable.com/address/0x8804A8aA1F18f23aE8A456dD73806FdA3219FaD1",
+        "description": "L2 zkEVM Chain ID 13371 - ChildERC20 Token Template"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com/",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 10,
+    "sc_ids": [
+      "https://etherscan.io/address/0x177eafe0f1f3359375b1728dae0530a75c83e154",
+      "https://etherscan.io/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+      "https://etherscan.io/address/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+      "https://etherscan.io/address/0xe2e91c1ae2873720c3b975a8034e887a35323345",
+      "https://explorer.immutable.com/address/0x1d49c44dc4bbde68d8d51a9c5732f3a24e48efa6",
+      "https://explorer.immutable.com/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
+      "https://explorer.immutable.com/address/0x8804a8aa1f18f23ae8a456dd73806fda3219fad1",
+      "https://explorer.immutable.com/address/0xb4c3597e6b090a2f6117780ced103fb16b071a84",
+      "https://explorer.immutable.com/address/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
+  "immunefi:silofinance-v2": {
+    "hash": "c9c19f800ce7267439ec62160ff0bc4e6b979ae4",
+    "bounty": true,
+    "source": true,
+    "name": "Silo Finance (v2 & v3)",
+    "url": "https://immunefi.com/bug-bounty/silofinance-v2",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0xE83fDb15b5efeD3E3D3FD2a086219c33686b7231",
+        "description": "ShareDebtToken.sol - Silo Lending"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0x1a36C81756d09950AcBd1aBDC522C0DD41363353",
+        "description": "ShareProtectedCollateralToken.sol - Silo Lending"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0x435Ab368F5fCCcc71554f4A8ac5F5b922bC4Dc06",
+        "description": "Silo.sol - Silo Lending"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0x4e9dE3a64c911A37f7EB2fCb06D1e68c3cBe9203",
+        "description": "SiloFactory.sol - Silo Lending"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0x1D9289efd4424F50c9155cf8b591944B0fba0fD0",
+        "description": "SiloHookV1.sol - Silo Lending"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0xff1d0359CAd3BC603584A63D852D884BF5b17A67",
+        "description": "SiloRouterV2.sol"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0x4e125E605FDcf3B07BDE441DECf8EDAd423D5DC6",
+        "description": "SiloVaultsFactory.sol - Silo Vaults"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://sonicscan.org/address/0xDED4aC8645619334186f28B8798e07ca354CFa0e",
+        "description": "Example of SiloVault.sol - Silo Vaults"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com/",
+        "description": "Primacy of Impact"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/SiloVaultsFactory.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 29,
+    "sc_ids": [
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv1.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv2.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv3.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/incentives/siloincentivescontrollercompatible.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/incentives/siloincentivescontrollerfactory.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodel.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodelconfig.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodelfactory.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo-router/silorouterv2.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo-router/silorouterv2implementation.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/siloconfig.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silofactory.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/utils/sharedebttoken.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/utils/shareprotectedcollateraltoken.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/idlevault.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/idlevaultsfactory.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/incentives/vaultincentivesmodule.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/silovault.sol",
+      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/silovaultsfactory.sol",
+      "https://immunefi.com",
+      "https://sonicscan.org/address/0x1a36c81756d09950acbd1abdc522c0dd41363353",
+      "https://sonicscan.org/address/0x1d9289efd4424f50c9155cf8b591944b0fba0fd0",
+      "https://sonicscan.org/address/0x435ab368f5fcccc71554f4a8ac5f5b922bc4dc06",
+      "https://sonicscan.org/address/0x4e125e605fdcf3b07bde441decf8edad423d5dc6",
+      "https://sonicscan.org/address/0x4e9de3a64c911a37f7eb2fcb06d1e68c3cbe9203",
+      "https://sonicscan.org/address/0xded4ac8645619334186f28b8798e07ca354cfa0e",
+      "https://sonicscan.org/address/0xe83fdb15b5efed3e3d3fd2a086219c33686b7231",
+      "https://sonicscan.org/address/0xff1d0359cad3bc603584a63d852d884bf5b17a67"
+    ],
+    "github_repos": [
+      "silo-finance/silo-contracts-v3"
+    ]
+  },
+  "immunefi:magpiexyz": {
+    "hash": "2f8b3cbd99c9a02e7785c459011edb494796f7d1",
+    "bounty": false,
+    "source": true,
+    "name": "MagpieXYZ",
+    "url": "https://immunefi.com/bug-bounty/magpiexyz",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USDC and BUSD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0xb68F5247f31fe28FDe0b0F7543F635a4d6EDbD7F",
+        "description": "Main Pool USDC Deposit Helper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://immunefi.com",
+        "description": "Primacy of Impact"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://bscscan.com/address/0xb68f5247f31fe28fde0b0f7543f635a4d6edbd7f",
+      "https://immunefi.com"
+    ],
+    "github_repos": []
+  },
+  "immunefi:charm": {
+    "hash": "bfc82c7c73e371605085217e75bd97dfb7667b62",
+    "bounty": true,
+    "source": true,
+    "name": "Charm",
+    "url": "https://immunefi.com/bug-bounty/charm",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 6000,
+    "bounty_ccy": "USDC, ETH",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/AlphaProVault.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/AlphaProVaultFactory.sol",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/CloneFactory.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/alphaprovault.sol",
+      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/alphaprovaultfactory.sol",
+      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/clonefactory.sol"
+    ],
+    "github_repos": [
+      "charmfinance/alpha-vaults-v2-contracts"
+    ]
+  },
+  "immunefi:acala": {
+    "hash": "77bdfc7b0665029b8922486608ecfc3364c68b9f",
+    "bounty": true,
+    "source": true,
+    "name": "Acala",
+    "url": "https://immunefi.com/bug-bounty/acala",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000,
+    "bounty_ccy": "USDT, USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/AcalaNetwork/Acala",
+        "description": "Main Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/open-web3-stack/open-runtime-module-library",
+        "description": "Open Runtime Module Library"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/acalanetwork/acala",
+      "https://github.com/open-web3-stack/open-runtime-module-library"
+    ],
+    "github_repos": [
+      "acalanetwork/acala",
+      "open-web3-stack/open-runtime-module-library"
+    ]
+  },
+  "immunefi:berachain-webapps": {
+    "hash": "31a75f2252cf2b64c66530ed24c10f964a372d26",
+    "bounty": true,
+    "source": false,
+    "name": "Berachain (Web/Apps)",
+    "url": "https://immunefi.com/bug-bounty/berachain-webapps",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "immunefi:sushiswap": {
+    "hash": "33f468285d2b4e02900bf99d86673fb63628f683",
+    "bounty": true,
+    "source": true,
+    "name": "SushiSwap",
+    "url": "https://immunefi.com/bug-bounty/sushiswap",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 200000,
+    "bounty_ccy": "USDC. SUSHI",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://docs.sushi.com/contracts/red-snwapper#deployments",
+        "description": "Red Snwapper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://docs.sushi.com/contracts/cpamm#deployments",
+        "description": "cpAMM (SuhiSwap V2)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://docs.sushi.com/contracts/clamm#deployments",
+        "description": "clAMM (SuhiSwap V3)"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://docs.sushi.com/contracts/clamm#deployments",
+      "https://docs.sushi.com/contracts/cpamm#deployments",
+      "https://docs.sushi.com/contracts/red-snwapper#deployments"
+    ],
+    "github_repos": []
+  },
+  "immunefi:listadao": {
+    "hash": "3c223f4c2719795076b419304a397749e5d1c83d",
+    "bounty": true,
+    "source": true,
+    "name": "Lista DAO",
+    "url": "https://immunefi.com/bug-bounty/listadao",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USDT, USDC, lisUSD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5",
+        "description": "lisUSD"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x4b30fcAA7945fE9fDEFD2895aae539ba102Ed6F6",
+        "description": "clisBNB"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0xB0b84D294e0C75A6abe60171b70edEb2EFd14A1B",
+        "description": "slisBNB"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x1adB950d8bB3dA4bE104211D5AB038628e477fE6",
+        "description": "ListaStakeManger"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x986b40c2618ff295a49ac442c5ec40febb26cc54#code",
+        "description": "Master Vault"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x00d8697d73216278de8f97bbeae6ca90cf0a5cb0",
+        "description": "CerosYiledConverterStrategy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x98cb81d921b8f5020983a46e96595471ad4e60be",
+        "description": "stkBNBStrategy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x6f28fec449dbd2056b76ac666350af8773e03873",
+        "description": "snBNBStrategy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0x6ae7073d801a74ee753f19323df320c8f5fe2dbc",
+        "description": "bnbYieldConverterStrategy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://bscscan.com/address/0xDF5A8e190CF63D74a4Ec743253fA26D4C7539Be8",
+        "description": "Oracle(STONE)"
+      }
+    ],
+    "sc_total": 57,
+    "sc_ids": [
+      "https://bscscan.com/address/0x00d8697d73216278de8f97bbeae6ca90cf0a5cb0",
+      "https://bscscan.com/address/0x031a6f543449d5fbf9c3e77f907043f7be7c1461",
+      "https://bscscan.com/address/0x03db750d6212c6a0bca9258e8cb7cf46dfd63067",
+      "https://bscscan.com/address/0x0782b6d8c4551b9760e74c0545a9bcd90bdc41e5",
+      "https://bscscan.com/address/0x0ad764098ff68b100d0976a8bcf2294b67669caa",
+      "https://bscscan.com/address/0x157c9a692ee99c39272856055957083a928ce299",
+      "https://bscscan.com/address/0x1adb950d8bb3da4be104211d5ab038628e477fe6",
+      "https://bscscan.com/address/0x2725d7336027773d7a958e10819a923dcd65aa57",
+      "https://bscscan.com/address/0x2ea16e082ca50eb6017bbfcb967cc7c6e2b8fb5a",
+      "https://bscscan.com/address/0x33f7a980a246f9b8fea2254e3065576e127d4d5f",
+      "https://bscscan.com/address/0x367384c54756a25340c63057d87ea22d47fd5701",
+      "https://bscscan.com/address/0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf",
+      "https://bscscan.com/address/0x4192ff5f1fefccbc446702117a48ac25fd1723b3",
+      "https://bscscan.com/address/0x4b30fcaa7945fe9fdefd2895aae539ba102ed6f6",
+      "https://bscscan.com/address/0x501be17cca1d8a009753da271d6714c18c1a35c9",
+      "https://bscscan.com/address/0x53c7024411e5d12c0b17d412943c3dd5939a2fb1",
+      "https://bscscan.com/address/0x5763ddeb60c82684f3d0098aea5076c0da972ec7",
+      "https://bscscan.com/address/0x5f43c6a44e314f09173c2a517bee8db9304c30f1",
+      "https://bscscan.com/address/0x63393e8a6fa3dab6874729ae680b370c0ca96b2b",
+      "https://bscscan.com/address/0x665410ee5ea96aa729589491badc11e0fe163d29",
+      "https://bscscan.com/address/0x66de07893db7492b56ba88503b4cc99bab1796f3",
+      "https://bscscan.com/address/0x68b9a9ea70f4391c016746be240037e5d4f63807",
+      "https://bscscan.com/address/0x6ae7073d801a74ee753f19323df320c8f5fe2dbc",
+      "https://bscscan.com/address/0x6f28fec449dbd2056b76ac666350af8773e03873",
+      "https://bscscan.com/address/0x837cb07f6b8a98731856092457524ff37b25e7b3",
+      "https://bscscan.com/address/0x882475d622c687b079f149b69a15683fcbecc6d9",
+      "https://bscscan.com/address/0x8b35291ecf29fd36ba405a03c9832725f2e9e164",
+      "https://bscscan.com/address/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c",
+      "https://bscscan.com/address/0x982d1db2d643ff4f497d5a4f566a565376ecf70c",
+      "https://bscscan.com/address/0x986b40c2618ff295a49ac442c5ec40febb26cc54#code",
+      "https://bscscan.com/address/0x98cb81d921b8f5020983a46e96595471ad4e60be",
+      "https://bscscan.com/address/0xa3bce2def1823a551a407b14572c54d2adb0fd45",
+      "https://bscscan.com/address/0xa53a9a3e496f00bbe3f1247cac88ea28c2b6b107",
+      "https://bscscan.com/address/0xa94aa72e033b39ad7cd448f38bc1eda5b52f7079",
+      "https://bscscan.com/address/0xaa57f36dd5ef2ac471863ec46277f976f272ec0c",
+      "https://bscscan.com/address/0xb0b84d294e0c75a6abe60171b70edeb2efd14a1b",
+      "https://bscscan.com/address/0xb1da312097c7cbf9b49ef9d29d21a0646d9a5af4",
+      "https://bscscan.com/address/0xb53e69b662a2d10343f857eba9e3b6158acf632f",
+      "https://bscscan.com/address/0xb7a753f3776282976c1f2b0bcb2ff0d13d48af85",
+      "https://bscscan.com/address/0xd111f17ff76015152dc5dd59bec74a70b590e72e",
+      "https://bscscan.com/address/0xd60316c4fab1fb2eb18fc5b72ecf982adb04e579",
+      "https://bscscan.com/address/0xda1e93d58cccc9683f9cb051caec5cf2f01b3253",
+      "https://bscscan.com/address/0xdeb93441fac0737321199e84a5f0420931a6562e",
+      "https://bscscan.com/address/0xdf5a8e190cf63d74a4ec743253fa26d4c7539be8",
+      "https://bscscan.com/address/0xe4153eb04417be05b8d6b2222e4cdd8ae674ee76",
+      "https://bscscan.com/address/0xe61f4386608578199471747e4654ae450adee39a",
+      "https://bscscan.com/address/0xe786ec5b4838410c24e5c1c75633d7c59705d6be",
+      "https://bscscan.com/address/0xe7e8098a724cf4f2f1acf67b06a17710a52011ac",
+      "https://bscscan.com/address/0xeb995ff652da728e7b0ebc31ab543c39e054b1ea",
+      "https://bscscan.com/address/0xf2fa32498305e6595e3d54dc41674d0fca207026",
+      "https://bscscan.com/address/0xf3afd82a4071f272f403dc176916141f44e6c750",
+      "https://bscscan.com/address/0xf53330104b4943bbf6e3f366fe11270183f93a46",
+      "https://bscscan.com/address/0xf76d9cfd08df91491680313b1a5b44307129cda9",
+      "https://bscscan.com/address/0xf8d1d8a862ea77bf4f826bf6612bff0d0883eafa",
+      "https://bscscan.com/address/0xf920018fc69515102b915a543dfefbc837c3f9e6",
+      "https://bscscan.com/address/0xfd31e1c5e5571f8e7fe318f80888c1e6da97819b",
+      "https://etherscan.io/address/0xf9b24c9364457ea85792179d285855753549ebaa"
+    ],
+    "github_repos": []
+  },
   "immunefi:bobanetwork": {
     "hash": "7b2e198744cabbf816e3473101888ebc3f13bc85",
     "bounty": true,
@@ -22047,151 +23019,6 @@
       "sparkdotfi/spark-vaults-v2"
     ]
   },
-  "immunefi:magpiexyz": {
-    "hash": "2f8b3cbd99c9a02e7785c459011edb494796f7d1",
-    "bounty": false,
-    "source": true,
-    "name": "MagpieXYZ",
-    "url": "https://immunefi.com/bug-bounty/magpiexyz",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC and BUSD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0xb68F5247f31fe28FDe0b0F7543F635a4d6EDbD7F",
-        "description": "Main Pool USDC Deposit Helper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://bscscan.com/address/0xb68f5247f31fe28fde0b0f7543f635a4d6edbd7f",
-      "https://immunefi.com"
-    ],
-    "github_repos": []
-  },
-  "immunefi:derive": {
-    "hash": "fc246a9e6162f67cd8a516083c0ada36d96777d7",
-    "bounty": false,
-    "source": true,
-    "name": "Derive",
-    "url": "https://immunefi.com/bug-bounty/derive",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC or ETH",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x9B3FE5E5a3bcEa5df4E08c41Ce89C4e3Ff01Ace3",
-        "description": "DepositModule"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0xeB8d770ec18DB98Db922E9D83260A585b9F0DeAD",
-        "description": "Matching"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0xB8D20c2B7a1Ad2EE33Bc50eF10876eD3035b5e7b",
-        "description": "TradeModule"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x01259207A40925b794C8ac320456F7F6c8FE2636",
-        "description": "TransferModule"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x9d0E8f5b25384C7310CB8C6aE32C8fbeb645d083",
-        "description": "WithdrawalModule"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0xC51E95b72e116020B138cd5D97Ed4A72DE8Dc48B",
-        "description": "DutchAuction"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x57B03E14d409ADC7fAb6CFc44b5886CAD2D5f02b",
-        "description": "CashAsset"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x4e798659b9846F1da7B6D6B5d09d581270aB6FEC",
-        "description": "InterestRateModel"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x8dC92fB0e1C1F1Def6e424E50aaA66dbB124eb54",
-        "description": "SecurityModule"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.lyra.finance/address/0x28c9ddF9A3B29c2E6a561c1BC520954e5A33de5D",
-        "description": "StandardManager"
-      }
-    ],
-    "sc_total": 39,
-    "sc_ids": [
-      "https://explorer.lyra.finance/address/0x01259207a40925b794c8ac320456f7f6c8fe2636",
-      "https://explorer.lyra.finance/address/0x28c9ddf9a3b29c2e6a561c1bc520954e5a33de5d",
-      "https://explorer.lyra.finance/address/0x30a6e6a3851c18aa67429acc8a1dfafe20a29feb",
-      "https://explorer.lyra.finance/address/0x33e18f4f508d7ad3e958aa2dcf4b3ecaec38d7c6",
-      "https://explorer.lyra.finance/address/0x34bc7fe1965b4e9f4071b69f2e60b8dc88f34475",
-      "https://explorer.lyra.finance/address/0x35d4d9bc79b0a543934b1769304b90d752691cad",
-      "https://explorer.lyra.finance/address/0x388341d9e5a7d7d5accd738b2a31b0622e0c1b87",
-      "https://explorer.lyra.finance/address/0x45da02b9ccf384d7dbdd7b2b13e705badb43db0d",
-      "https://explorer.lyra.finance/address/0x4bb4c3cdc7562f08e9910a0c7d8bb7e108861eb4",
-      "https://explorer.lyra.finance/address/0x4d6e33bf88ab44212b10bac4da448e41a191cb4c",
-      "https://explorer.lyra.finance/address/0x4e798659b9846f1da7b6d6b5d09d581270ab6fec",
-      "https://explorer.lyra.finance/address/0x57b03e14d409adc7fab6cfc44b5886cad2d5f02b",
-      "https://explorer.lyra.finance/address/0x5eb59391e7870807ad2c8792e8c5e75838e0fdb0",
-      "https://explorer.lyra.finance/address/0x6fef1bb8ade9a836663d4c15afd5985fb545004f",
-      "https://explorer.lyra.finance/address/0x727ad65db6ae99db5dbee8f202846dd6009bf6d5",
-      "https://explorer.lyra.finance/address/0x791a570f5785fbdb02ea5c7a794c43111ae2f948",
-      "https://explorer.lyra.finance/address/0x7da2d398ddddfc946efd2c758c4688d21887790d",
-      "https://explorer.lyra.finance/address/0x81ed5dc90f708dd908dccffd5128b5c3405f74c5",
-      "https://explorer.lyra.finance/address/0x8dc92fb0e1c1f1def6e424e50aaa66dbb124eb54",
-      "https://explorer.lyra.finance/address/0x958c54bfacc0e2dee586564b31bf3f171f256279",
-      "https://explorer.lyra.finance/address/0x9b3fe5e5a3bcea5df4e08c41ce89c4e3ff01ace3",
-      "https://explorer.lyra.finance/address/0x9c61888497d716f5bbd93d5e13d443cc375f1424",
-      "https://explorer.lyra.finance/address/0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-      "https://explorer.lyra.finance/address/0xa364498b361d563921c9a144264205cdaaf1b5e0",
-      "https://explorer.lyra.finance/address/0xaa8f9d05599f1a5d5929c40342c06a5da063a4de",
-      "https://explorer.lyra.finance/address/0xaf65752c4643e25c02f693f9d4fe19cf23a095e3",
-      "https://explorer.lyra.finance/address/0xb27cb6b08e6c298c8634d73d5f6649665e90d160",
-      "https://explorer.lyra.finance/address/0xb8d20c2b7a1ad2ee33bc50ef10876ed3035b5e7b",
-      "https://explorer.lyra.finance/address/0xbfe7cd69d3983299d3d18d1ae5c411e1ff61a993",
-      "https://explorer.lyra.finance/address/0xc51e95b72e116020b138cd5d97ed4a72de8dc48b",
-      "https://explorer.lyra.finance/address/0xcae44c93f7b3b519fc28f9d4f7ae22de770a907b",
-      "https://explorer.lyra.finance/address/0xd0711b9ebe84b778483709cde62bacfdbae13623",
-      "https://explorer.lyra.finance/address/0xd464170afe0ee2a4865b2ca6dbcc6dfb8f4bf125",
-      "https://explorer.lyra.finance/address/0xdba83c0c654db1cd914fa2710ba743e925b53086",
-      "https://explorer.lyra.finance/address/0xe201fcefd4852f96810c069f66560dc25b2c7a55",
-      "https://explorer.lyra.finance/address/0xe7603df191d699d8bd9891b821347dbab889e5a5",
-      "https://explorer.lyra.finance/address/0xe7cd9370cde6c9b5eabce8f86d01822d3de205a0",
-      "https://explorer.lyra.finance/address/0xeb8d770ec18db98db922e9d83260a585b9f0dead",
-      "https://explorer.lyra.finance/address/0xfa7f1a242b819a8ec97fd92674c3f0868395b0d3"
-    ],
-    "github_repos": []
-  },
   "immunefi:beanstalk": {
     "hash": "1600c6091ad6f5d97105fa0273d6ce9205cf98ea",
     "bounty": false,
@@ -23010,46 +23837,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:sushiswap": {
-    "hash": "33f468285d2b4e02900bf99d86673fb63628f683",
-    "bounty": true,
-    "source": true,
-    "name": "SushiSwap",
-    "url": "https://immunefi.com/bug-bounty/sushiswap",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 200000,
-    "bounty_ccy": "USDC. SUSHI",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://docs.sushi.com/contracts/red-snwapper#deployments",
-        "description": "Red Snwapper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://docs.sushi.com/contracts/cpamm#deployments",
-        "description": "cpAMM (SuhiSwap V2)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://docs.sushi.com/contracts/clamm#deployments",
-        "description": "clAMM (SuhiSwap V3)"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://docs.sushi.com/contracts/clamm#deployments",
-      "https://docs.sushi.com/contracts/cpamm#deployments",
-      "https://docs.sushi.com/contracts/red-snwapper#deployments"
-    ],
-    "github_repos": []
-  },
   "immunefi:pancakeswap": {
     "hash": "d78d041238ab2eb4d4db3e172ccfe2d7efec679a",
     "bounty": true,
@@ -23483,48 +24270,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:charm": {
-    "hash": "bfc82c7c73e371605085217e75bd97dfb7667b62",
-    "bounty": true,
-    "source": true,
-    "name": "Charm",
-    "url": "https://immunefi.com/bug-bounty/charm",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 6000,
-    "bounty_ccy": "USDC, ETH",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/AlphaProVault.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/AlphaProVaultFactory.sol",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/CloneFactory.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/alphaprovault.sol",
-      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/alphaprovaultfactory.sol",
-      "https://github.com/charmfinance/alpha-vaults-v2-contracts/blob/main/contracts/clonefactory.sol"
-    ],
-    "github_repos": [
-      "charmfinance/alpha-vaults-v2-contracts"
-    ]
-  },
   "immunefi:beets": {
     "hash": "7f30ad8db111ae7710feacf63686f0a4979728bc",
     "bounty": true,
@@ -23785,94 +24530,6 @@
       "https://etherscan.io/address/0xf03a919a59f8381be220511ecf788b15fb039e4c",
       "https://etherscan.io/address/0xfcc5c47be19d06bf83eb04298b026f81069ff65b#code",
       "https://yearn.fi/vaults/1/0x696d02db93291651ed510704c9b286841d506987"
-    ],
-    "github_repos": []
-  },
-  "immunefi:twyne": {
-    "hash": "30873a28ffbc3fa1cbffcbb046209c7b5e706171",
-    "bounty": true,
-    "source": true,
-    "name": "Twyne",
-    "url": "https://immunefi.com/bug-bounty/twyne",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x7613D202Af490c3d1cE1873b0a7022a34E89815f",
-        "description": "eWSTETH Intermediate Credit Vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x75029a47f28550C93Ad5A3BbD2d9b5315204B561",
-        "description": "aWSTETH Intermediate Credit Vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x87b8081A3ace680f35125F469526Ac10f5418Ca7",
-        "description": "eWETH Intermediate Credit Vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xB5Eb1d005e389Bef38161691E2083b4d86FF647a",
-        "description": "Intermediate Vault Factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xb001f039D76bA48E577A17c04b6940DB37aF8648",
-        "description": "Euler Oracle Router"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x0acd3A3c8Ab6a5F7b5A594C88DFa28999dA858aC",
-        "description": "Vault Manager"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xa1517cCe0bE75700A8838EA1cEE0dc383cd3A332",
-        "description": "Collateral Vault Factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com/",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xFaBA8f777996C0C28fe9e6554D84cB30ca3e1881",
-        "description": "awstETH Wrapper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x868a21426852A775395d4b90De23B3e3E662bd78",
-        "description": "Aave V3 Teleport Operator"
-      }
-    ],
-    "sc_total": 16,
-    "sc_ids": [
-      "https://etherscan.io/address/0x0acd3a3c8ab6a5f7b5a594c88dfa28999da858ac",
-      "https://etherscan.io/address/0x0af56afbddcb140323445bd7211ba90e54e5fd1c",
-      "https://etherscan.io/address/0x229fe10bc00bbe99ac99703647d4f74f31605e91",
-      "https://etherscan.io/address/0x75029a47f28550c93ad5a3bbd2d9b5315204b561",
-      "https://etherscan.io/address/0x7613d202af490c3d1ce1873b0a7022a34e89815f",
-      "https://etherscan.io/address/0x79cf33e623555e899d4ee122b9bfa0214fa5a4a1",
-      "https://etherscan.io/address/0x868a21426852a775395d4b90de23b3e3e662bd78",
-      "https://etherscan.io/address/0x87b8081a3ace680f35125f469526ac10f5418ca7",
-      "https://etherscan.io/address/0xa1517cce0be75700a8838ea1cee0dc383cd3a332",
-      "https://etherscan.io/address/0xb001f039d76ba48e577a17c04b6940db37af8648",
-      "https://etherscan.io/address/0xb5eb1d005e389bef38161691e2083b4d86ff647a",
-      "https://etherscan.io/address/0xb7a7cf5eb16c124562857632f8f86ed627e6cc35",
-      "https://etherscan.io/address/0xd07e1dd26f415fed3e8c490623a80ab55cf7bdbb",
-      "https://etherscan.io/address/0xef39d6493884c4c84d38a4bff879ce16cede702a",
-      "https://etherscan.io/address/0xfaba8f777996c0c28fe9e6554d84cb30ca3e1881",
-      "https://immunefi.com"
     ],
     "github_repos": []
   },
@@ -25079,135 +25736,6 @@
       "metricxyz/periphery-contracts",
       "metricxyz/pool-contracts"
     ]
-  },
-  "immunefi:listadao": {
-    "hash": "3c223f4c2719795076b419304a397749e5d1c83d",
-    "bounty": true,
-    "source": true,
-    "name": "Lista DAO",
-    "url": "https://immunefi.com/bug-bounty/listadao",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDT, USDC, lisUSD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x0782b6d8c4551B9760e74c0545a9bCD90bdc41E5",
-        "description": "lisUSD"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x4b30fcAA7945fE9fDEFD2895aae539ba102Ed6F6",
-        "description": "clisBNB"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0xB0b84D294e0C75A6abe60171b70edEb2EFd14A1B",
-        "description": "slisBNB"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x1adB950d8bB3dA4bE104211D5AB038628e477fE6",
-        "description": "ListaStakeManger"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x986b40c2618ff295a49ac442c5ec40febb26cc54#code",
-        "description": "Master Vault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x00d8697d73216278de8f97bbeae6ca90cf0a5cb0",
-        "description": "CerosYiledConverterStrategy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x98cb81d921b8f5020983a46e96595471ad4e60be",
-        "description": "stkBNBStrategy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x6f28fec449dbd2056b76ac666350af8773e03873",
-        "description": "snBNBStrategy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x6ae7073d801a74ee753f19323df320c8f5fe2dbc",
-        "description": "bnbYieldConverterStrategy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0xDF5A8e190CF63D74a4Ec743253fA26D4C7539Be8",
-        "description": "Oracle(STONE)"
-      }
-    ],
-    "sc_total": 57,
-    "sc_ids": [
-      "https://bscscan.com/address/0x00d8697d73216278de8f97bbeae6ca90cf0a5cb0",
-      "https://bscscan.com/address/0x031a6f543449d5fbf9c3e77f907043f7be7c1461",
-      "https://bscscan.com/address/0x03db750d6212c6a0bca9258e8cb7cf46dfd63067",
-      "https://bscscan.com/address/0x0782b6d8c4551b9760e74c0545a9bcd90bdc41e5",
-      "https://bscscan.com/address/0x0ad764098ff68b100d0976a8bcf2294b67669caa",
-      "https://bscscan.com/address/0x157c9a692ee99c39272856055957083a928ce299",
-      "https://bscscan.com/address/0x1adb950d8bb3da4be104211d5ab038628e477fe6",
-      "https://bscscan.com/address/0x2725d7336027773d7a958e10819a923dcd65aa57",
-      "https://bscscan.com/address/0x2ea16e082ca50eb6017bbfcb967cc7c6e2b8fb5a",
-      "https://bscscan.com/address/0x33f7a980a246f9b8fea2254e3065576e127d4d5f",
-      "https://bscscan.com/address/0x367384c54756a25340c63057d87ea22d47fd5701",
-      "https://bscscan.com/address/0x37db1ae9b24055d1f9fe973aea40b7eb2995d0bf",
-      "https://bscscan.com/address/0x4192ff5f1fefccbc446702117a48ac25fd1723b3",
-      "https://bscscan.com/address/0x4b30fcaa7945fe9fdefd2895aae539ba102ed6f6",
-      "https://bscscan.com/address/0x501be17cca1d8a009753da271d6714c18c1a35c9",
-      "https://bscscan.com/address/0x53c7024411e5d12c0b17d412943c3dd5939a2fb1",
-      "https://bscscan.com/address/0x5763ddeb60c82684f3d0098aea5076c0da972ec7",
-      "https://bscscan.com/address/0x5f43c6a44e314f09173c2a517bee8db9304c30f1",
-      "https://bscscan.com/address/0x63393e8a6fa3dab6874729ae680b370c0ca96b2b",
-      "https://bscscan.com/address/0x665410ee5ea96aa729589491badc11e0fe163d29",
-      "https://bscscan.com/address/0x66de07893db7492b56ba88503b4cc99bab1796f3",
-      "https://bscscan.com/address/0x68b9a9ea70f4391c016746be240037e5d4f63807",
-      "https://bscscan.com/address/0x6ae7073d801a74ee753f19323df320c8f5fe2dbc",
-      "https://bscscan.com/address/0x6f28fec449dbd2056b76ac666350af8773e03873",
-      "https://bscscan.com/address/0x837cb07f6b8a98731856092457524ff37b25e7b3",
-      "https://bscscan.com/address/0x882475d622c687b079f149b69a15683fcbecc6d9",
-      "https://bscscan.com/address/0x8b35291ecf29fd36ba405a03c9832725f2e9e164",
-      "https://bscscan.com/address/0x8f73b65b4caaf64fba2af91cc5d4a2a1318e5d8c",
-      "https://bscscan.com/address/0x982d1db2d643ff4f497d5a4f566a565376ecf70c",
-      "https://bscscan.com/address/0x986b40c2618ff295a49ac442c5ec40febb26cc54#code",
-      "https://bscscan.com/address/0x98cb81d921b8f5020983a46e96595471ad4e60be",
-      "https://bscscan.com/address/0xa3bce2def1823a551a407b14572c54d2adb0fd45",
-      "https://bscscan.com/address/0xa53a9a3e496f00bbe3f1247cac88ea28c2b6b107",
-      "https://bscscan.com/address/0xa94aa72e033b39ad7cd448f38bc1eda5b52f7079",
-      "https://bscscan.com/address/0xaa57f36dd5ef2ac471863ec46277f976f272ec0c",
-      "https://bscscan.com/address/0xb0b84d294e0c75a6abe60171b70edeb2efd14a1b",
-      "https://bscscan.com/address/0xb1da312097c7cbf9b49ef9d29d21a0646d9a5af4",
-      "https://bscscan.com/address/0xb53e69b662a2d10343f857eba9e3b6158acf632f",
-      "https://bscscan.com/address/0xb7a753f3776282976c1f2b0bcb2ff0d13d48af85",
-      "https://bscscan.com/address/0xd111f17ff76015152dc5dd59bec74a70b590e72e",
-      "https://bscscan.com/address/0xd60316c4fab1fb2eb18fc5b72ecf982adb04e579",
-      "https://bscscan.com/address/0xda1e93d58cccc9683f9cb051caec5cf2f01b3253",
-      "https://bscscan.com/address/0xdeb93441fac0737321199e84a5f0420931a6562e",
-      "https://bscscan.com/address/0xdf5a8e190cf63d74a4ec743253fa26d4c7539be8",
-      "https://bscscan.com/address/0xe4153eb04417be05b8d6b2222e4cdd8ae674ee76",
-      "https://bscscan.com/address/0xe61f4386608578199471747e4654ae450adee39a",
-      "https://bscscan.com/address/0xe786ec5b4838410c24e5c1c75633d7c59705d6be",
-      "https://bscscan.com/address/0xe7e8098a724cf4f2f1acf67b06a17710a52011ac",
-      "https://bscscan.com/address/0xeb995ff652da728e7b0ebc31ab543c39e054b1ea",
-      "https://bscscan.com/address/0xf2fa32498305e6595e3d54dc41674d0fca207026",
-      "https://bscscan.com/address/0xf3afd82a4071f272f403dc176916141f44e6c750",
-      "https://bscscan.com/address/0xf53330104b4943bbf6e3f366fe11270183f93a46",
-      "https://bscscan.com/address/0xf76d9cfd08df91491680313b1a5b44307129cda9",
-      "https://bscscan.com/address/0xf8d1d8a862ea77bf4f826bf6612bff0d0883eafa",
-      "https://bscscan.com/address/0xf920018fc69515102b915a543dfefbc837c3f9e6",
-      "https://bscscan.com/address/0xfd31e1c5e5571f8e7fe318f80888c1e6da97819b",
-      "https://etherscan.io/address/0xf9b24c9364457ea85792179d285855753549ebaa"
-    ],
-    "github_repos": []
   },
   "immunefi:lido": {
     "hash": "40ce1eecf68e0c1197a61172e3aacd9f3b821288",
@@ -26903,26 +27431,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:blockpinetwork": {
-    "hash": "e485e86045f7ddfe39e6f83ca658b7ac0fff2e0f",
-    "bounty": true,
-    "source": false,
-    "name": "BlockPI Network",
-    "url": "https://immunefi.com/bug-bounty/blockpinetwork",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "immunefi:benqi": {
     "hash": "d7d51b6bb7232d1fe289bdcb0e3f2c19987cc00a",
     "bounty": true,
@@ -27158,43 +27666,6 @@
       "https://etherscan.io/address/0x4082c9647c098a6493fb499eae63b5ce3259c574"
     ],
     "github_repos": []
-  },
-  "immunefi:acala": {
-    "hash": "77bdfc7b0665029b8922486608ecfc3364c68b9f",
-    "bounty": true,
-    "source": true,
-    "name": "Acala",
-    "url": "https://immunefi.com/bug-bounty/acala",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000,
-    "bounty_ccy": "USDT, USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/AcalaNetwork/Acala",
-        "description": "Main Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/open-web3-stack/open-runtime-module-library",
-        "description": "Open Runtime Module Library"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/acalanetwork/acala",
-      "https://github.com/open-web3-stack/open-runtime-module-library"
-    ],
-    "github_repos": [
-      "acalanetwork/acala",
-      "open-web3-stack/open-runtime-module-library"
-    ]
   },
   "immunefi:audit-comp-base-everest": {
     "hash": "c5eaba55d889b996713fe10fb907997354b18716",
@@ -30783,109 +31254,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:silofinance-v2": {
-    "hash": "c9c19f800ce7267439ec62160ff0bc4e6b979ae4",
-    "bounty": true,
-    "source": true,
-    "name": "Silo Finance (v2 & v3)",
-    "url": "https://immunefi.com/bug-bounty/silofinance-v2",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0xE83fDb15b5efeD3E3D3FD2a086219c33686b7231",
-        "description": "ShareDebtToken.sol - Silo Lending"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0x1a36C81756d09950AcBd1aBDC522C0DD41363353",
-        "description": "ShareProtectedCollateralToken.sol - Silo Lending"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0x435Ab368F5fCCcc71554f4A8ac5F5b922bC4Dc06",
-        "description": "Silo.sol - Silo Lending"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0x4e9dE3a64c911A37f7EB2fCb06D1e68c3cBe9203",
-        "description": "SiloFactory.sol - Silo Lending"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0x1D9289efd4424F50c9155cf8b591944B0fba0fD0",
-        "description": "SiloHookV1.sol - Silo Lending"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0xff1d0359CAd3BC603584A63D852D884BF5b17A67",
-        "description": "SiloRouterV2.sol"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0x4e125E605FDcf3B07BDE441DECf8EDAd423D5DC6",
-        "description": "SiloVaultsFactory.sol - Silo Vaults"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://sonicscan.org/address/0xDED4aC8645619334186f28B8798e07ca354CFa0e",
-        "description": "Example of SiloVault.sol - Silo Vaults"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com/",
-        "description": "Primacy of Impact"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/SiloVaultsFactory.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 29,
-    "sc_ids": [
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv1.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv2.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/hooks/silohookv3.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/incentives/siloincentivescontrollercompatible.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/incentives/siloincentivescontrollerfactory.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodel.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodelconfig.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/interestratemodel/kink/dynamickinkmodelfactory.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo-router/silorouterv2.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo-router/silorouterv2implementation.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silo.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/siloconfig.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/silofactory.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/utils/sharedebttoken.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-core/contracts/utils/shareprotectedcollateraltoken.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/idlevault.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/idlevaultsfactory.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/incentives/vaultincentivesmodule.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/silovault.sol",
-      "https://github.com/silo-finance/silo-contracts-v3/blob/master/silo-vaults/contracts/silovaultsfactory.sol",
-      "https://immunefi.com",
-      "https://sonicscan.org/address/0x1a36c81756d09950acbd1abdc522c0dd41363353",
-      "https://sonicscan.org/address/0x1d9289efd4424f50c9155cf8b591944b0fba0fd0",
-      "https://sonicscan.org/address/0x435ab368f5fcccc71554f4a8ac5f5b922bc4dc06",
-      "https://sonicscan.org/address/0x4e125e605fdcf3b07bde441decf8edad423d5dc6",
-      "https://sonicscan.org/address/0x4e9de3a64c911a37f7eb2fcb06d1e68c3cbe9203",
-      "https://sonicscan.org/address/0xded4ac8645619334186f28b8798e07ca354cfa0e",
-      "https://sonicscan.org/address/0xe83fdb15b5efed3e3d3fd2a086219c33686b7231",
-      "https://sonicscan.org/address/0xff1d0359cad3bc603584a63d852d884bf5b17a67"
-    ],
-    "github_repos": [
-      "silo-finance/silo-contracts-v3"
-    ]
-  },
   "immunefi:paxos-labs": {
     "hash": "f465fad13aa9d79e98cd980cdc2e1466991a4ef4",
     "bounty": true,
@@ -33089,107 +33457,6 @@
       "immunefi-team/audit-comp-quantus-qp-zk-circuits"
     ]
   },
-  "immunefi:aera": {
-    "hash": "6bace0bcfd8d11acbb705a3be6c725fb9c6d75e7",
-    "bounty": true,
-    "source": true,
-    "name": "Aera",
-    "url": "https://immunefi.com/bug-bounty/aera",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x6e5430C10fce10e5c6F67dC54506e4564dD7A6E5",
-        "description": "Base - TransferBlacklistHook"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x69dd4d44eed6bbc33b8a0bdfe17897ab9044372e",
-        "description": "gtUSDa (Base) - PriceAndFeeCalculator"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x000000000001CdB57E58Fa75Fe420a0f4D6640D5",
-        "description": "gtUSDa (Base) - MultiDepositorVault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0x18cf8d963e1a727f9bbf3aeffa0bd04fb4dbda07",
-        "description": "gtUSDa (Base) - Provisioner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://basescan.org/address/0xdDfd960a7150520548dD1F6E53CC2f201b364692",
-        "description": "Base - Whitelist"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xCe7Ea99545A6d0744a52Da9017729451Ec92A62C",
-        "description": "Arbitrum - TransferBlacklistHook"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x8bFcD1088fFa41B46329567ae5c4Cd872AB38c0f",
-        "description": "Arbitrum - Whitelist"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0x000000001DC8bd45d7E7829fb1c969cbe4D0D1eC",
-        "description": "gtUSDa (Arbitrum) - MultiDepositorVault"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xDd4a42603E6d8E515C3468789375A98c376821b3",
-        "description": "gtUSDa (Arbitrum) - Provisioner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://arbiscan.io/address/0xD61ecfB5cEd67Ef4F01E0dfae591c838BfA33932",
-        "description": "gtUSDa (Arbitrum) - PriceAndFeeCalculator"
-      }
-    ],
-    "sc_total": 29,
-    "sc_ids": [
-      "https://arbiscan.io/address/0x000000001dc8bd45d7e7829fb1c969cbe4d0d1ec",
-      "https://arbiscan.io/address/0x8bfcd1088ffa41b46329567ae5c4cd872ab38c0f",
-      "https://arbiscan.io/address/0xce7ea99545a6d0744a52da9017729451ec92a62c",
-      "https://arbiscan.io/address/0xd61ecfb5ced67ef4f01e0dfae591c838bfa33932",
-      "https://arbiscan.io/address/0xdd4a42603e6d8e515c3468789375a98c376821b3",
-      "https://basescan.org/address/0x000000000001cdb57e58fa75fe420a0f4d6640d5",
-      "https://basescan.org/address/0x18cf8d963e1a727f9bbf3aeffa0bd04fb4dbda07",
-      "https://basescan.org/address/0x69dd4d44eed6bbc33b8a0bdfe17897ab9044372e",
-      "https://basescan.org/address/0x6e5430c10fce10e5c6f67dc54506e4564dd7a6e5",
-      "https://basescan.org/address/0xddfd960a7150520548dd1f6e53cc2f201b364692",
-      "https://etherscan.io/address/0x00000000d8f3d6c5dfeb2d2b5ed2276095f3af44",
-      "https://etherscan.io/address/0x1703a1b0fee4d507ca8a743f04e168bcd4862d24",
-      "https://etherscan.io/address/0x21994912f1d286995c4d4961303cbb8e44939944",
-      "https://etherscan.io/address/0x3bd9248048df95db4fbd748c6cd99c1baa40bad0",
-      "https://etherscan.io/address/0x74c4a66ce4f4779b11e7c63d42e51eeef3a80d11",
-      "https://etherscan.io/address/0x811c6f0ef2e8f8a409306dae242ba70bd4f2467d",
-      "https://etherscan.io/address/0x8f3ffa11cd5915f0e869192663b905504a2ef4a5",
-      "https://etherscan.io/address/0xd580c26f7bd8a8a66fd32a97df2308c083b65d9c",
-      "https://etherscan.io/address/0xddfd960a7150520548dd1f6e53cc2f201b364692",
-      "https://etherscan.io/address/0xeff0ae5b39271b33f448cd408b51dc8aa72a672b",
-      "https://explorer.morphl2.io/address/0x047623636f1c7997f5b49ecaadb865681734d89a",
-      "https://explorer.morphl2.io/address/0x85a1d961f1d1bbd9b4a6d96106c5bf9ae91f0510",
-      "https://explorer.morphl2.io/address/0x89963ff339c4a6194ea77381c204884e4503f8fb",
-      "https://explorer.morphl2.io/address/0xbcb62b29a1b982c51d57a44745b694caa1ed2bf2",
-      "https://optimistic.etherscan.io/address/0x000000001dc8bd45d7e7829fb1c969cbe4d0d1ec",
-      "https://optimistic.etherscan.io/address/0x8bfcd1088ffa41b46329567ae5c4cd872ab38c0f",
-      "https://optimistic.etherscan.io/address/0xcc923371f0d3a9ca75d98e767df9de1cdf5799ef",
-      "https://optimistic.etherscan.io/address/0xce7ea99545a6d0744a52da9017729451ec92a62c",
-      "https://optimistic.etherscan.io/address/0xfb6de307b11c50d8b8a0790cd5c82c620d574440"
-    ],
-    "github_repos": []
-  },
   "immunefi:capyfi": {
     "hash": "caba8b8c6d02af5feba4391c3ad489a0370bc2b7",
     "bounty": true,
@@ -33847,26 +34114,6 @@
     ],
     "github_repos": []
   },
-  "immunefi:berachain-webapps": {
-    "hash": "31a75f2252cf2b64c66530ed24c10f964a372d26",
-    "bounty": true,
-    "source": false,
-    "name": "Berachain (Web/Apps)",
-    "url": "https://immunefi.com/bug-bounty/berachain-webapps",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "immunefi:firedancer-v1-audit-comp": {
     "hash": "9d1fc27cb4456324657a331c1dc7ecb208ad5f5e",
     "bounty": true,
@@ -34227,172 +34474,6 @@
       "folks-finance/folks-staking-contracts"
     ]
   },
-  "immunefi:aave": {
-    "hash": "3194ba3d5fbc6f6fad21778b8f5396f3f80651eb",
-    "bounty": true,
-    "source": true,
-    "name": "AAVE",
-    "url": "https://immunefi.com/bug-bounty/aave",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "AAVE and stablecoins",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/PoolAddressesProvider.sol",
-        "description": "Aave v3 PoolAddressesProvider"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/ACLManager.sol",
-        "description": "Aave v3 ACLManager"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/Pool.sol",
-        "description": "Aave v3 Pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/L2Pool.sol",
-        "description": "Aave v3 L2Pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/PoolConfigurator.sol",
-        "description": "Aave v3 Pool Configurator"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/DefaultReserveInterestRateStrategyV2.sol",
-        "description": "Aave v3 DefaultReserveInterestRateStrategyV2"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/BaseImmutableAdminUpgradeabilityProxy.sol",
-        "description": "Aave v3 Upgradability - BaseImmutableAdminUpgradeabilityProxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/InitializableImmutableAdminUpgradeabilityProxy.sol",
-        "description": "Aave v3 Upgradability - InitializableImmutableAdminUpgradabilityProxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/VersionedInitializable.sol",
-        "description": "Aave v3 Upgradability - VersionedInitializable"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/ReserveConfiguration.sol",
-        "description": "Aave v3 Global configurations - Reserve Configuration"
-      }
-    ],
-    "sc_total": 83,
-    "sc_ids": [
-      "https://etherscan.io/address/0x464c71f6c2f760dda6093dcb91c24c39e5d6e18c",
-      "https://etherscan.io/address/0x8a32f49ffba88aba6eff96f45d8bd1d4b3f35c7d",
-      "https://etherscan.io/address/0xeffc18fc3b7eb8e676dac549e0c693ad50d1ce31",
-      "https://github.com/aave",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/helpers/l2encoder.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/baseimmutableadminupgradeabilityproxy.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/initializableimmutableadminupgradeabilityproxy.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aave-upgradeability/versionedinitializable.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/aaveoracle.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/defaultreserveinterestratestrategyv2.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/misc/priceoraclesentinel.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/aclmanager.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/configuration/pooladdressesprovider.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/reserveconfiguration.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/configuration/userconfiguration.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/borrowlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/bridgelogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/calldatalogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/configuratorlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/emodelogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/flashloanlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/genericlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/isolationmodelogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/liquidationlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/poollogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/reservelogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/supplylogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/logic/validationlogic.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/mathutils.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/percentagemath.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/libraries/math/wadraymath.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/l2pool.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/pool.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/pool/poolconfigurator.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/atoken.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/protocol/tokenization/variabledebttoken.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/emissionmanager.sol",
-      "https://github.com/aave-dao/aave-v3-origin/blob/main/src/contracts/rewards/rewardscontroller.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/aave/oracle/ghooracle.so",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/flashminter/ghoflashminter.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/feestrategy/fixedfeestrategy.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/ghoreserve.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/gsm.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/gsm4626.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/ownablefacilitator.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/pricestrategy/fixedpricestrategy.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/facilitators/gsm/pricestrategy/fixedpricestrategy4626.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/ghotoken.sol",
-      "https://github.com/aave-dao/gho-origin/blob/main/src/contracts/gho/upgradeableghotoken.sol",
-      "https://github.com/aave/aave-v3-core/blob/master/contracts/protocol/tokenization/stabledebttoken.sol",
-      "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/gho/upgradeableburnminttokenpool.sol",
-      "https://github.com/aave/ccip/blob/d5c6cedde6fbca9890a92a55f2db80e94793d0ec/contracts/src/v0.8/ccip/pools/gho/upgradeablelockreleasetokenpool.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/misc/aaveoracle.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/configuration/lendingpooladdressesprovider.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/defaultreserveinterestratestrategy.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpool.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpoolcollateralmanager.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/lendingpool/lendingpoolconfigurator.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/baseimmutableadminupgradeabilityproxy.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/initializableimmutableadminupgradeabilityproxy.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/aave-upgradeability/versionedinitializable.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/reserveconfiguration.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/configuration/userconfiguration.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/genericlogic.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/reservelogic.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/logic/validationlogic.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/mathutils.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/percentagemath.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/libraries/math/wadraymath.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/atoken.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/stabledebttoken.sol",
-      "https://github.com/aave/protocol-v2/blob/master/contracts/protocol/tokenization/variabledebttoken.sol",
-      "https://github.com/bgd-labs/aave-collector-unification/blob/main/src/contracts/collector.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/governance.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/governancepowerstrategy.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/executor.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/payloads/payloadscontroller.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/datawarehouse.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/votingmachine.sol",
-      "https://github.com/bgd-labs/aave-governance-v3/blob/main/src/contracts/voting/votingstrategy.sol",
-      "https://github.com/bgd-labs/aave-stk-gov-v3/blob/main/src/contracts/stakedaavev3.sol",
-      "https://github.com/bgd-labs/solidity-utils/blob/7a7548c1d01f011febdb1c0d47e52c7ec6c30f9d/src/contracts/transparent-proxy/transparentupgradeableproxy.sol",
-      "https://github.com/bgd-labs/stake-token/blob/main/src/contracts/staketoken.sol"
-    ],
-    "github_repos": [
-      "aave-dao/aave-v3-origin",
-      "aave-dao/gho-origin",
-      "aave/aave-v3-core",
-      "aave/ccip",
-      "aave/protocol-v2",
-      "bgd-labs/aave-collector-unification",
-      "bgd-labs/aave-governance-v3",
-      "bgd-labs/aave-stk-gov-v3",
-      "bgd-labs/solidity-utils",
-      "bgd-labs/stake-token"
-    ]
-  },
   "immunefi:edgex": {
     "hash": "31c3685305ff54762a0aaa97d5dadaeaf3e35aa9",
     "bounty": true,
@@ -34740,88 +34821,6 @@
     "github_repos": [
       "swaylend/swaylend-monorepo"
     ]
-  },
-  "immunefi:immutable": {
-    "hash": "6c38d80d1af5de985e6aaae5ba0b889b54b754c4",
-    "bounty": true,
-    "source": true,
-    "name": "Immutable",
-    "url": "https://immunefi.com/bug-bounty/immutable",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
-        "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x177EaFe0f1F3359375B1728dae0530a75C83E154",
-        "description": "L1 Ethereum Mainnet Chain ID 1 - Bridge Implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
-        "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xE2E91C1Ae2873720C3b975a8034e887A35323345",
-        "description": "L1 Ethereum Mainnet Chain ID 1 - Adapter Implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.immutable.com/address/0xBa5E35E26Ae59c7aea6F029B68c6460De2d13eB6",
-        "description": "L2 zkEVM Chain ID 13371 - Bridge Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.immutable.com/address/0xb4c3597e6b090A2f6117780cEd103FB16B071A84",
-        "description": "L2 zkEVM Chain ID 13371 - Bridge Implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.immutable.com/address/0x4f49B53928A71E553bB1B0F66a5BcB54Fd4E8932",
-        "description": "L2 zkEVM Chain ID 13371 - Adapter Proxy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.immutable.com/address/0x1d49c44dc4BbDE68D8D51a9C5732f3a24e48EFA6",
-        "description": "L2 zkEVM Chain ID 13371 - Adapter Implementation"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.immutable.com/address/0x8804A8aA1F18f23aE8A456dD73806FdA3219FaD1",
-        "description": "L2 zkEVM Chain ID 13371 - ChildERC20 Token Template"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://immunefi.com/",
-        "description": "Primacy of Impact"
-      }
-    ],
-    "sc_total": 10,
-    "sc_ids": [
-      "https://etherscan.io/address/0x177eafe0f1f3359375b1728dae0530a75c83e154",
-      "https://etherscan.io/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
-      "https://etherscan.io/address/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
-      "https://etherscan.io/address/0xe2e91c1ae2873720c3b975a8034e887a35323345",
-      "https://explorer.immutable.com/address/0x1d49c44dc4bbde68d8d51a9c5732f3a24e48efa6",
-      "https://explorer.immutable.com/address/0x4f49b53928a71e553bb1b0f66a5bcb54fd4e8932",
-      "https://explorer.immutable.com/address/0x8804a8aa1f18f23ae8a456dd73806fda3219fad1",
-      "https://explorer.immutable.com/address/0xb4c3597e6b090a2f6117780ced103fb16b071a84",
-      "https://explorer.immutable.com/address/0xba5e35e26ae59c7aea6f029b68c6460de2d13eb6",
-      "https://immunefi.com"
-    ],
-    "github_repos": []
   },
   "immunefi:alchemix-v3-audit-competition": {
     "hash": "9a8efa0b2bebd0395611471cd55d2f9199c7d475",
@@ -42048,6 +42047,86 @@
     ],
     "github_repos": []
   },
+  "hackenproof:tickets-travel-network-slash-mobile": {
+    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Mobile",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tickets-travel-network-slash-updated-ui": {
+    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
+    "bounty": true,
+    "source": false,
+    "name": "Tickets Travel Network / Updated UI",
+    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tidex-exchange": {
+    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
+    "bounty": true,
+    "source": false,
+    "name": "Tidex Exchange",
+    "url": "https://hackenproof.com/programs/tidex-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:tokenize-xchange-web-and-mobile": {
+    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
+    "bounty": true,
+    "source": false,
+    "name": "Tokenize Xchange Web & Mobile",
+    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 3000,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -48095,86 +48174,6 @@
     "github_repos": [
       "code-payments/flipcash-program"
     ]
-  },
-  "hackenproof:tickets-travel-network-slash-mobile": {
-    "hash": "b2a1ec0d6f19065a089a64b8f4d226d9d0c0e554",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Mobile",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tickets-travel-network-slash-updated-ui": {
-    "hash": "27915301e451da6c58ad8da1aa1e5f105cd1d16b",
-    "bounty": true,
-    "source": false,
-    "name": "Tickets Travel Network / Updated UI",
-    "url": "https://hackenproof.com/programs/tickets-travel-network-slash-updated-ui",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tidex-exchange": {
-    "hash": "7f00ad37b9b600881f6a7a58a1643bdc9ea9ad39",
-    "bounty": true,
-    "source": false,
-    "name": "Tidex Exchange",
-    "url": "https://hackenproof.com/programs/tidex-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:tokenize-xchange-web-and-mobile": {
-    "hash": "b2d2cfa0d484c0cfb9f0e6f5c9bb1af51cb607f9",
-    "bounty": true,
-    "source": false,
-    "name": "Tokenize Xchange Web & Mobile",
-    "url": "https://hackenproof.com/programs/tokenize-xchange-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 3000,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:ton": {
     "hash": "c00b6e325264799aa406d075f3791fe47e630c7b",
@@ -57785,7 +57784,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-21T07:54:39.773953+00:00",
+    "updated_at": "2026-11-21T08:25:12.359578+00:00",
     "total": 1922,
     "qualifying": 426,
     "external": 358,
