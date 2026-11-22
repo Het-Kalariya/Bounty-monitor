@@ -3820,7 +3820,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 69,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -8406,7 +8406,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 92,
+    "resp_eff": 93,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -42118,34 +42118,14 @@
       "deltaprimelabs/deltaprime-contracts-v2"
     ]
   },
-  "hackenproof:dex-trade": {
-    "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
+  "hackenproof:navi-protocol-web": {
+    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
     "bounty": true,
     "source": false,
-    "name": "Dex-Trade",
-    "url": "https://hackenproof.com/programs/dex-trade",
+    "name": "NAVI Protocol Web",
+    "url": "https://hackenproof.com/programs/navi-protocol-web",
     "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:nimbus": {
-    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
-    "bounty": true,
-    "source": false,
-    "name": "Nimbus",
-    "url": "https://hackenproof.com/programs/nimbus",
-    "platform": "hackenproof",
-    "bounty_min": 50,
+    "bounty_min": 100,
     "bounty_max": 10000,
     "bounty_ccy": "USD",
     "bounty_note": "",
@@ -42158,65 +42138,15 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:noirwallet": {
-    "hash": "895d72d9c5e25cecbf5cf64d3d957a900dc6cac8",
-    "bounty": true,
-    "source": true,
-    "name": "NoirWallet",
-    "url": "https://hackenproof.com/programs/noirwallet",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "WEB",
-        "identifier": "https://github.com/NoirWallet/noir-wallet",
-        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
-        "description": "Zcash accounts, key operations, transaction construction, signing, and synchronization"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/zcash-wallet-adapter",
-        "description": "Wallet connectivity, messaging, and permission management"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/NoirWallet/noir-wallet/tree/main/packages/sdk",
-        "description": "SDK"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/noirwallet/noir-wallet",
-      "https://github.com/noirwallet/noir-wallet/tree/main/packages/sdk",
-      "https://github.com/noirwallet/zcash-wallet-adapter",
-      "https://github.com/noirwallet/zcash-wallet-wasm"
-    ],
-    "github_repos": [
-      "noirwallet/noir-wallet",
-      "noirwallet/zcash-wallet-adapter",
-      "noirwallet/zcash-wallet-wasm"
-    ]
-  },
-  "hackenproof:nonkyc-dot-io": {
-    "hash": "a3889d9d708db64da619435ccfad9d0067590e79",
+  "hackenproof:near-foundation-web-low": {
+    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
     "bounty": true,
     "source": false,
-    "name": "NonKyc.io",
-    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "name": "NEAR Foundation Web (Low)",
+    "url": "https://hackenproof.com/programs/near-foundation-web-low",
     "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
+    "bounty_min": 100,
+    "bounty_max": 2500,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -42228,6 +42158,57 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:near-intents-bridges": {
+    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Intents: Bridges",
+    "url": "https://hackenproof.com/programs/near-intents-bridges",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/near/mpc",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/omni-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-bridge",
+        "description": ""
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Near-One/btc-light-client-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/near-one/btc-bridge",
+      "https://github.com/near-one/btc-light-client-contract",
+      "https://github.com/near-one/omni-bridge",
+      "https://github.com/near/mpc"
+    ],
+    "github_repos": [
+      "near-one/btc-bridge",
+      "near-one/btc-light-client-contract",
+      "near-one/omni-bridge",
+      "near/mpc"
+    ]
+  },
   "hackenproof:detee-hackers-challenge": {
     "hash": "14afa53aa2c51bd35a55a55ae55296c5f77834ae",
     "bounty": true,
@@ -42237,6 +42218,26 @@
     "platform": "hackenproof",
     "bounty_min": 0,
     "bounty_max": 14380,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:dex-trade": {
+    "hash": "3fb79196c0cf5a0a89c705c3d2c2e587adc92000",
+    "bounty": true,
+    "source": false,
+    "name": "Dex-Trade",
+    "url": "https://hackenproof.com/programs/dex-trade",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 3000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -45263,97 +45264,6 @@
       "naviprotocol/navi-smart-contracts"
     ]
   },
-  "hackenproof:navi-protocol-web": {
-    "hash": "25d68960b51c7afd242d92582c7018851d714a7b",
-    "bounty": true,
-    "source": false,
-    "name": "NAVI Protocol Web",
-    "url": "https://hackenproof.com/programs/navi-protocol-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-foundation-web-low": {
-    "hash": "a6b0996b029187e79779be7d5751cb99be6f4cf6",
-    "bounty": true,
-    "source": false,
-    "name": "NEAR Foundation Web (Low)",
-    "url": "https://hackenproof.com/programs/near-foundation-web-low",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 2500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-intents-bridges": {
-    "hash": "a42ad85ce0cbbac151c631be196df6ea4684ef68",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Intents: Bridges",
-    "url": "https://hackenproof.com/programs/near-intents-bridges",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/near/mpc",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/omni-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-bridge",
-        "description": ""
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Near-One/btc-light-client-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/near-one/btc-bridge",
-      "https://github.com/near-one/btc-light-client-contract",
-      "https://github.com/near-one/omni-bridge",
-      "https://github.com/near/mpc"
-    ],
-    "github_repos": [
-      "near-one/btc-bridge",
-      "near-one/btc-light-client-contract",
-      "near-one/omni-bridge",
-      "near/mpc"
-    ]
-  },
   "hackenproof:near-intents-sdk": {
     "hash": "95218ac06c9bc1a3417a72ad2b34f7c15c5f608d",
     "bounty": true,
@@ -45614,6 +45524,96 @@
       "nicehash/nicehashminer",
       "nicehash/nicehashquickminer"
     ]
+  },
+  "hackenproof:nimbus": {
+    "hash": "909f65e7b934b0821c6c07860b94349c12018c7a",
+    "bounty": true,
+    "source": false,
+    "name": "Nimbus",
+    "url": "https://hackenproof.com/programs/nimbus",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:noirwallet": {
+    "hash": "895d72d9c5e25cecbf5cf64d3d957a900dc6cac8",
+    "bounty": true,
+    "source": true,
+    "name": "NoirWallet",
+    "url": "https://hackenproof.com/programs/noirwallet",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "WEB",
+        "identifier": "https://github.com/NoirWallet/noir-wallet",
+        "description": "Wallet frontend, Background, Offscreen, storage, and authorization logic"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-wasm",
+        "description": "Zcash accounts, key operations, transaction construction, signing, and synchronization"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/zcash-wallet-adapter",
+        "description": "Wallet connectivity, messaging, and permission management"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/NoirWallet/noir-wallet/tree/main/packages/sdk",
+        "description": "SDK"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/noirwallet/noir-wallet",
+      "https://github.com/noirwallet/noir-wallet/tree/main/packages/sdk",
+      "https://github.com/noirwallet/zcash-wallet-adapter",
+      "https://github.com/noirwallet/zcash-wallet-wasm"
+    ],
+    "github_repos": [
+      "noirwallet/noir-wallet",
+      "noirwallet/zcash-wallet-adapter",
+      "noirwallet/zcash-wallet-wasm"
+    ]
+  },
+  "hackenproof:nonkyc-dot-io": {
+    "hash": "a3889d9d708db64da619435ccfad9d0067590e79",
+    "bounty": true,
+    "source": false,
+    "name": "NonKyc.io",
+    "url": "https://hackenproof.com/programs/nonkyc-dot-io",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:noones-web-and-mobile": {
     "hash": "e67a097d74f1bfe98a7b55f719fb441f672f25ab",
@@ -57474,7 +57474,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-22T02:30:19.251043+00:00",
+    "updated_at": "2026-11-22T03:00:18.094205+00:00",
     "total": 1903,
     "qualifying": 426,
     "external": 341,
