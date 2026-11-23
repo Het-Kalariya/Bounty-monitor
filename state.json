@@ -1570,7 +1570,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 71,
+    "resp_eff": 70,
     "bounty_days": 467.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -38976,7 +38976,7 @@
     "github_repos": []
   },
   "hackenproof:1inch-smart-contract": {
-    "hash": "6e55fc500ddb39ddc3c40687f6bd4f6ae846a0bf",
+    "hash": "104af1c940eac0e34766d33cbc6454d05e06bf81",
     "bounty": true,
     "source": true,
     "name": "1inch Smart Contract",
@@ -39008,11 +39008,6 @@
       },
       {
         "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/1inch/farming/tree/4.0.0",
-        "description": "Farming contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
         "identifier": "https://github.com/1inch/delegating/tree/2.0.0",
         "description": "Delegating contracts"
       },
@@ -39032,10 +39027,9 @@
         "description": ""
       }
     ],
-    "sc_total": 8,
+    "sc_total": 7,
     "sc_ids": [
       "https://github.com/1inch/delegating/tree/2.0.0",
-      "https://github.com/1inch/farming/tree/4.0.0",
       "https://github.com/1inch/fusion-protocol/tree/3.1.1",
       "https://github.com/1inch/limit-order-protocol/tree/4.3.4",
       "https://github.com/1inch/solana-crosschain-protocol",
@@ -39045,7 +39039,6 @@
     ],
     "github_repos": [
       "1inch/delegating",
-      "1inch/farming",
       "1inch/fusion-protocol",
       "1inch/limit-order-protocol",
       "1inch/solana-crosschain-protocol",
@@ -41964,238 +41957,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:init-capital-web": {
-    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
-    "bounty": true,
-    "source": false,
-    "name": "INIT Capital Web",
-    "url": "https://hackenproof.com/programs/init-capital-web",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:swap-dot-io-smart-contracts": {
-    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
-    "bounty": true,
-    "source": true,
-    "name": "Swap.io Smart Contracts",
-    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-        "description": "collect fund fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-        "description": "collect protocol fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-        "description": "create operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-        "description": "admin mod"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-        "description": "transfer reward owner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-        "description": "update amm config"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-        "description": "update operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-        "description": "update pool status"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-        "description": "close position"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-        "description": "collect remaining rewards"
-      }
-    ],
-    "sc_total": 43,
-    "sc_ids": [
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
-    ],
-    "github_repos": [
-      "swap-dot-io/swap-io-clmm"
-    ]
-  },
-  "hackenproof:tetu-smart-contracts": {
-    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
-    "bounty": true,
-    "source": true,
-    "name": "TETU Smart Contracts",
-    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 25000,
-    "bounty_max": 1000000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-        "description": "Smart Contract - TETU Token"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
-        "description": "Smart Contract - Controller"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
-        "description": "Smart Contract - Announcer"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
-        "description": "Smart Contract - ForwarderV2"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
-        "description": "Smart Contract - Bookkeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
-        "description": "Smart Contract - MintHelper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-        "description": "Smart Contract - FundKeeper"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-        "description": "Smart Contract - tetuBAL(poly)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
-        "description": "Smart Contract - tetuBAL(eth)"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-        "description": "Smart Contract - BalLocker(eth)"
-      }
-    ],
-    "sc_total": 21,
-    "sc_ids": [
-      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
-      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
-      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
-      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
-      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
-      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
-      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
-      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
-      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
-      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
-      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
-      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
-      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
-    ],
-    "github_repos": [
-      "tetu-io/tetu-contracts-v2"
-    ]
-  },
   "hackenproof:current-smart-contracts": {
     "hash": "77e7ef4fa4376f5b2fe279fd3ba9f90af06ddd71",
     "bounty": true,
@@ -44288,6 +44049,26 @@
       "https://explorer.mantle.xyz/address/0xf525f9a23db5fa9bea0f64e5427a103752977a0c?tab=contract",
       "https://explorer.mantle.xyz/address/0xf8b8552d52986f06ffaf14bc88bfcf6dcbdba05d?tab=contract"
     ],
+    "github_repos": []
+  },
+  "hackenproof:init-capital-web": {
+    "hash": "09219c83aab5cdbb65e763eed184b7d37519e0f0",
+    "bounty": true,
+    "source": false,
+    "name": "INIT Capital Web",
+    "url": "https://hackenproof.com/programs/init-capital-web",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
     "github_repos": []
   },
   "hackenproof:internet-computer-protocol-icp": {
@@ -47792,6 +47573,123 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:swap-dot-io-smart-contracts": {
+    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
+    "bounty": true,
+    "source": true,
+    "name": "Swap.io Smart Contracts",
+    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+        "description": "collect fund fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+        "description": "collect protocol fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+        "description": "create operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+        "description": "admin mod"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+        "description": "transfer reward owner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+        "description": "update amm config"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+        "description": "update operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+        "description": "update pool status"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+        "description": "close position"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+        "description": "collect remaining rewards"
+      }
+    ],
+    "sc_total": 43,
+    "sc_ids": [
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
+    ],
+    "github_repos": [
+      "swap-dot-io/swap-io-clmm"
+    ]
+  },
   "hackenproof:sweed-web": {
     "hash": "f3da50aea348858ccfd295381e8fbb86866e9387",
     "bounty": true,
@@ -48020,6 +47918,101 @@
     ],
     "github_repos": [
       "capsule-corp-ternoa/ternoa-js"
+    ]
+  },
+  "hackenproof:tetu-smart-contracts": {
+    "hash": "be9c51ffcb57e1e3c1e5d88d38f4ef9452e9b53c",
+    "bounty": true,
+    "source": true,
+    "name": "TETU Smart Contracts",
+    "url": "https://hackenproof.com/programs/tetu-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 25000,
+    "bounty_max": 1000000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+        "description": "Smart Contract - TETU Token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x6678814c273d5088114B6E40cC49C8DB04F9bC29",
+        "description": "Smart Contract - Controller"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x286c02C93f3CF48BB759A93756779A1C78bCF833",
+        "description": "Smart Contract - Announcer"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0xD3a69BfaC779AE0D97ae7c4f1Bb77d2Be6C2B943",
+        "description": "Smart Contract - ForwarderV2"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x0A0846c978a56D6ea9D2602eeb8f977B21F3207F",
+        "description": "Smart Contract - Bookkeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x81367059892aa1D8503a79a0Af9254DD0a09afBF",
+        "description": "Smart Contract - MintHelper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+        "description": "Smart Contract - FundKeeper"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+        "description": "Smart Contract - tetuBAL(poly)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0xFE700D523094Cc6C673d78F1446AE0743C89586E",
+        "description": "Smart Contract - tetuBAL(eth)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+        "description": "Smart Contract - BalLocker(eth)"
+      }
+    ],
+    "sc_total": 21,
+    "sc_ids": [
+      "https://etherscan.io/address/0x9cc56fa7734da21ac88f6a816af10c5b898596ce",
+      "https://etherscan.io/address/0xbb84098e47d217f51cb014f692eada1f2280a179",
+      "https://etherscan.io/address/0xfe700d523094cc6c673d78f1446ae0743c89586e",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/proxycontrolled.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/proxy/upgradeableproxy.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategybasev2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/strategy/strategylib.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/erc4626upgradeable.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/strategysplitterv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/tetuvaultv2.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/vault/vaultinsurance.sol",
+      "https://github.com/tetu-io/tetu-contracts-v2/blob/master/contracts/ve/vetetu.sol",
+      "https://polygonscan.com/address/0x0a0846c978a56d6ea9d2602eeb8f977b21f3207f",
+      "https://polygonscan.com/address/0x255707b70bf90aa112006e1b07b9aea6de021424",
+      "https://polygonscan.com/address/0x286c02c93f3cf48bb759a93756779a1c78bcf833",
+      "https://polygonscan.com/address/0x6678814c273d5088114b6e40cc49c8db04f9bc29",
+      "https://polygonscan.com/address/0x6fb29dd17fa6e27bd112bc3a2d0b8dae597aeda4",
+      "https://polygonscan.com/address/0x7ad5935ea295c4e743e4f2f5b4cda951f41223c2",
+      "https://polygonscan.com/address/0x7fc9e0aa043787bfad28e29632ada302c790ce33",
+      "https://polygonscan.com/address/0x81367059892aa1d8503a79a0af9254dd0a09afbf",
+      "https://polygonscan.com/address/0xd3a69bfac779ae0d97ae7c4f1bb77d2be6c2b943"
+    ],
+    "github_repos": [
+      "tetu-io/tetu-contracts-v2"
     ]
   },
   "hackenproof:the-flipcash-reserve-contract-bug-bounty": {
@@ -51073,43 +51066,6 @@
       "flyingtulipdotcom/security"
     ]
   },
-  "sherlock:27": {
-    "hash": "ece1b8a3f4f10908a77971b6c517c12d60d7cd26",
-    "bounty": true,
-    "source": true,
-    "name": "Exactly",
-    "url": "https://audits.sherlock.xyz/bug-bounties/27",
-    "platform": "sherlock",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/exactly/audits",
-        "description": "sherlock scope"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/sherlock-protocol/sherlock-reports",
-        "description": "sherlock scope"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://github.com/exactly/audits",
-      "https://github.com/sherlock-protocol/sherlock-reports"
-    ],
-    "github_repos": [
-      "exactly/audits",
-      "sherlock-protocol/sherlock-reports"
-    ]
-  },
   "sherlock:272": {
     "hash": "ab41de0630b939cb0baef75b7f92e27df3d9c8c9",
     "bounty": true,
@@ -52015,6 +51971,43 @@
     ],
     "github_repos": [
       "seamless-protocol/leverage-tokens"
+    ]
+  },
+  "sherlock:27": {
+    "hash": "ece1b8a3f4f10908a77971b6c517c12d60d7cd26",
+    "bounty": true,
+    "source": true,
+    "name": "Exactly",
+    "url": "https://audits.sherlock.xyz/bug-bounties/27",
+    "platform": "sherlock",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/exactly/audits",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/sherlock-protocol/sherlock-reports",
+        "description": "sherlock scope"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://github.com/exactly/audits",
+      "https://github.com/sherlock-protocol/sherlock-reports"
+    ],
+    "github_repos": [
+      "exactly/audits",
+      "sherlock-protocol/sherlock-reports"
     ]
   },
   "chaos:1inch": {
@@ -57555,7 +57548,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-23T15:54:46.883367+00:00",
+    "updated_at": "2026-11-23T16:25:04.660958+00:00",
     "total": 1911,
     "qualifying": 425,
     "external": 346,
