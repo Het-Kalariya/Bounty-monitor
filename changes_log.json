@@ -1,67 +1,5 @@
 [
   {
-    "timestamp": "2026-09-24T05:33:21.806565+00:00",
-    "event": "scope_updated",
-    "platform": "hackerone",
-    "handle": "wordpress",
-    "name": "WordPress",
-    "url": "https://hackerone.com/wordpress",
-    "sc_targets": [
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org",
-        "description": "**Do _not_ pentest Trac instances**, it's very annoying to clean up after. Setup a local environment instead; the custom source code is available via the Git command below, in the `trac.wordpress.org` subfolder. **If you ignore this you'll forfeit any bounty.**\n\nThe projects here are kept mostly for archival purposes and non-critical information disclosure will generally not be eligible for a bounty.\n\nOnly report vulnerabilities in our custom code, don't report vulnerabilities that only exist upstream in Trac itself. Report those directly to info@edgewall.com.\n\nAll source code that isn't behind authentication is intended to be public. The source code itself has `High` CVSS impact scores. The applications that manage the code (Trac, Git, SVN, etc) have `Low` scores, except for vulnerabilities that allow modifications to the source code.\n\nMost of the source code in these domains is contained in the \"meta\" repository: `git clone git://meta.git.wordpress.org/`"
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "BuddyPress Core",
-        "description": "Download source code from: https://buddypress.org/download/\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "Create Block Theme",
-        "description": "The Create Block Theme plugin at https://github.com/WordPress/create-block-theme.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "GlotPress",
-        "description": "All code located under [the GlotPress organization](https://github.com/GlotPress/) on GitHub.\n\nThe most important target is the `glotpress-wp` repository. Other repositories are in scope, but may have a lower importance.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "Gutenberg",
-        "description": "Download source code from https://github.com/WordPress/gutenberg"
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "Official WordPress plugins",
-        "description": "Only plugins that are officially maintained by WordPress.org are in scope. Most plugins have their own asset, use this asset only for those that don't.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution.\n\nNote that some third-party plugins incorrectly list `wordpressdotorg` as a contributor or developer. These are not in scope."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "Playground",
-        "description": "Covers https://playground.wordpress.net and https://github.com/WordPress/wordpress-playground .\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
-      },
-      {
-        "asset_type": "SOURCE_CODE",
-        "identifier": "SQLite Database Integration",
-        "description": "The SQLite Database Integration plugin at https://github.com/WordPress/sqlite-database-integration.\n\nIssues are in scope only if they can be exploited without an authenticated user account. Issues that require authenticated roles like Contributor+ or those that can only be granted by an admin are ineligible unless you can demonstrate a significant and high impact escalation, like a clear path to admin escalation or remote code execution."
-      }
-    ],
-    "added": [
-      "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org",
-      "create block theme",
-      "github.com/wordpress",
-      "playground",
-      "secure custom fields",
-      "sqlite database integration"
-    ],
-    "removed": [
-      "*.trac.wordpress.org, *.svn.wordpress.org, *.git.wordpress.org, github.com/wordpress"
-    ],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-24T05:33:23.438846+00:00",
     "event": "scope_updated",
     "platform": "intigriti",
@@ -7166,6 +7104,66 @@
     ],
     "added": [],
     "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-23T14:24:12.109760+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "hermetica",
+    "name": "Hermetica",
+    "url": "https://immunefi.com/bug-bounty/hermetica",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x834662426960938e9d483ebfb7ecae90a6c5c0d4327e2cb4011700387d2167bf?chain=mainnet",
+        "description": "HQ"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x0f1ad52bafc2099b9b75ecff15933546dc09a4c60ed93f902998c7eb570563e9?chain=mainnet",
+        "description": "Blacklist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x99e0e204634af511074897cae5d7b79602a808b1b4569a7f900fedb0ec2af245?chain=mainnet",
+        "description": "Token"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x49512dd2cf400a9b1ace64687d386b3d3d1ad40444de83f6dda1c29cebe01919?chain=mainnet",
+        "description": "State"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0xdd73e479841dbedba4fa6eee29be9dcef5d64e6093b905016ec1ba74dabba2ba?chain=mainnet",
+        "description": "Reserve Fund"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0xb8ce9c1fb139bc4338ae3b6d6c5fa4525fafb87ed9f9ce515b213a0cc0022449?chain=mainnet",
+        "description": "Reserve"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x8a6cfafb63b1fb9549d42789cf2b9a160bcf5859257f4c578451d77dafd0a2e0?chain=mainnet",
+        "description": "Controller"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.hiro.so/txid/0x87f8c3bc9625579280050678cdddf46b00f678009be32aab76e5d9beca4e7056?chain=mainnet",
+        "description": "Fee Collector"
+      }
+    ],
+    "added": [
+      "https://explorer.hiro.so/txid/0x2e143b49461ce9185de3f91d8f62f27af8720babaeffa44ee360c7b321793904?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x86e9d5f969014176df6a82b1ec4e8a25e28da6288cfd2c5aeaf17f17f648eff3?chain=mainnet",
+      "https://explorer.hiro.so/txid/0xeb54424610e109cfb89b3f065d92cdabc104f1c13455158b27205695c892451e?chain=mainnet"
+    ],
+    "removed": [
+      "https://explorer.hiro.so/txid/0x570b90c20a3b63e431a387a50ee3c9f6a3a709527731a8cbde75b731e9c7369a?chain=mainnet",
+      "https://explorer.hiro.so/txid/0x9e2cd7bdd7cc29cf30750835155060a42ebd26943c1f35d2a83b8e6e81f90a35?chain=mainnet"
+    ],
     "github_repos": []
   }
 ]
