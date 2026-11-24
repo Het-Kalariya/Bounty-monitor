@@ -6874,7 +6874,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 56,
+    "resp_eff": 57,
     "bounty_days": 278.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20206,6 +20206,84 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:hedera": {
+    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
+    "bounty": true,
+    "source": true,
+    "name": "Hedera",
+    "url": "https://immunefi.com/bug-bounty/hedera",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 30000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
+        "description": "Hedera Services Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
+        "description": "Hedera Mirror Node Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+        "description": "JSON RPC Relay"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
+        "description": "Hedera Cryptography Codebase"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/has...edera-transaction-tool",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
+        "description": ""
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/has...edera-transaction-tool",
+      "https://github.com/hiero-ledger/hiero-consensus-node",
+      "https://github.com/hiero-ledger/hiero-cryptography",
+      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
+      "https://github.com/hiero-ledger/hiero-mirror-node",
+      "https://github.com/hiero-ledger/hiero-sdk-go",
+      "https://github.com/hiero-ledger/hiero-sdk-java",
+      "https://github.com/hiero-ledger/hiero-sdk-js"
+    ],
+    "github_repos": [
+      "hiero-ledger/hiero-consensus-node",
+      "hiero-ledger/hiero-cryptography",
+      "hiero-ledger/hiero-json-rpc-relay",
+      "hiero-ledger/hiero-mirror-node",
+      "hiero-ledger/hiero-sdk-go",
+      "hiero-ledger/hiero-sdk-java",
+      "hiero-ledger/hiero-sdk-js"
+    ]
+  },
   "immunefi:alchemix-1": {
     "hash": "faa4f4ed9a44ef9f50693df1c904c050f11f655c",
     "bounty": true,
@@ -28475,84 +28553,6 @@
       "immunefi-team/audit-comp-base-everest-contract-deployments",
       "immunefi-team/audit-comp-base-everest-contracts",
       "immunefi-team/audit-comp-base-everest-nitro-validator"
-    ]
-  },
-  "immunefi:hedera": {
-    "hash": "ad2ddfa877bf48c712d07d4abbbfd57c722f454e",
-    "bounty": true,
-    "source": true,
-    "name": "Hedera",
-    "url": "https://immunefi.com/bug-bounty/hedera",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 30000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-consensus-node",
-        "description": "Hedera Services Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-mirror-node",
-        "description": "Hedera Mirror Node Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-        "description": "JSON RPC Relay"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-cryptography",
-        "description": "Hedera Cryptography Codebase"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/has...edera-transaction-tool",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-go",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-js",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/hiero-ledger/hiero-sdk-java",
-        "description": ""
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/has...edera-transaction-tool",
-      "https://github.com/hiero-ledger/hiero-consensus-node",
-      "https://github.com/hiero-ledger/hiero-cryptography",
-      "https://github.com/hiero-ledger/hiero-json-rpc-relay",
-      "https://github.com/hiero-ledger/hiero-mirror-node",
-      "https://github.com/hiero-ledger/hiero-sdk-go",
-      "https://github.com/hiero-ledger/hiero-sdk-java",
-      "https://github.com/hiero-ledger/hiero-sdk-js"
-    ],
-    "github_repos": [
-      "hiero-ledger/hiero-consensus-node",
-      "hiero-ledger/hiero-cryptography",
-      "hiero-ledger/hiero-json-rpc-relay",
-      "hiero-ledger/hiero-mirror-node",
-      "hiero-ledger/hiero-sdk-go",
-      "hiero-ledger/hiero-sdk-java",
-      "hiero-ledger/hiero-sdk-js"
     ]
   },
   "immunefi:gmx": {
@@ -41968,6 +41968,56 @@
     ],
     "github_repos": []
   },
+  "hackenproof:noya-dot-ai-smart-contracts": {
+    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
+    "bounty": true,
+    "source": true,
+    "name": "NOYA.ai Smart Contracts",
+    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
+        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
+    ],
+    "github_repos": [
+      "noya-ai/noya-jul-2025-audit-scope"
+    ]
+  },
+  "hackenproof:zmo-exchange": {
+    "hash": "ae8b819b70fab88e901fa0e2109395f2e7ecaea5",
+    "bounty": true,
+    "source": false,
+    "name": "ZMO Exchange",
+    "url": "https://hackenproof.com/programs/zmo-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -45593,36 +45643,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:noya-dot-ai-smart-contracts": {
-    "hash": "6e39482b998cb6f2fe8163fb38428fce57376554",
-    "bounty": true,
-    "source": true,
-    "name": "NOYA.ai Smart Contracts",
-    "url": "https://hackenproof.com/programs/noya-dot-ai-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Noya-ai/noya-JUL-2025-audit-scope",
-        "description": "Folders (externals/mock/interfaces) and contracts  (LifiImplementation.sol, UniswapValueOracle.sol) are out of scope!"
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/noya-ai/noya-jul-2025-audit-scope"
-    ],
-    "github_repos": [
-      "noya-ai/noya-jul-2025-audit-scope"
-    ]
   },
   "hackenproof:nxt-permission-smart-contract": {
     "hash": "090daa340d2b9850aaf5349c4f7b3d2802cdc0b3",
@@ -49308,26 +49328,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zmo-exchange": {
-    "hash": "ae8b819b70fab88e901fa0e2109395f2e7ecaea5",
-    "bounty": true,
-    "source": false,
-    "name": "ZMO Exchange",
-    "url": "https://hackenproof.com/programs/zmo-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57545,7 +57545,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-24T10:36:21.980491+00:00",
+    "updated_at": "2026-11-24T11:10:42.535635+00:00",
     "total": 1911,
     "qualifying": 425,
     "external": 348,
