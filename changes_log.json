@@ -1,17 +1,5 @@
 [
   {
-    "timestamp": "2026-09-26T02:45:48.735913+00:00",
-    "event": "new_external",
-    "platform": "chaos",
-    "handle": "zerodha",
-    "name": "Zerodha",
-    "url": "https://zerodha.com/bug-bounty/",
-    "sc_targets": [],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-26T02:45:50.266850+00:00",
     "event": "new_external",
     "platform": "chaos",
@@ -7165,6 +7153,39 @@
         "asset_type": "SOURCE_CODE",
         "identifier": "https://github.com/brave/*, https://github.com/brave-intl/*",
         "description": "In general we're interested in vulnerabilities in all GitHub repos under brave/ and brave-intl/, barring explicit exclusions. Also exclude forks and archived repos."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-24T12:45:30.287378+00:00",
+    "event": "new_program",
+    "platform": "sherlock",
+    "handle": "148",
+    "name": "Beanstalk",
+    "url": "https://audits.sherlock.xyz/bug-bounties/148",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/BeanstalkFarms/Basin",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/BeanstalkFarms/Beanstalk",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/BeanstalkFarms/Beanstalk-Audits",
+        "description": "sherlock scope"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/BeanstalkFarms/Pipeline",
+        "description": "sherlock scope"
       }
     ],
     "added": [],
