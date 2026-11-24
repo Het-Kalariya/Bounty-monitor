@@ -339,7 +339,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 76,
+    "resp_eff": 77,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1494,7 +1494,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 67,
+    "resp_eff": 66,
     "bounty_days": 167.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -1936,7 +1936,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 75,
+    "resp_eff": 74,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -2545,7 +2545,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 237124,
-    "resp_eff": 89,
+    "resp_eff": 90,
     "bounty_days": 147.0,
     "sc_targets": [
       {
@@ -6195,7 +6195,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 80,
+    "resp_eff": 81,
     "bounty_days": 475.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7565,7 +7565,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 2286,
-    "resp_eff": 37,
+    "resp_eff": 36,
     "bounty_days": 1956.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8546,7 +8546,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 100,
+    "resp_eff": 99,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -18760,35 +18760,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "intigriti:upholdcom": {
-    "hash": "03ace0a5e28ade3cc55f28957c922a352e5e3319",
-    "bounty": true,
-    "source": true,
-    "name": "Uphold",
-    "url": "https://www.intigriti.com/programs/Uphold/upholdcom/detail",
-    "platform": "intigriti",
-    "bounty_min": 0,
-    "bounty_max": 6000,
-    "bounty_ccy": "EUR",
-    "bounty_note": "",
-    "domains": 98,
-    "resp_eff": null,
-    "bounty_days": null,
-    "sc_targets": [
-      {
-        "asset_type": "wildcard",
-        "identifier": "github.com/uphold/*",
-        "description": "The wildcard scope github.com/uphold/* covers any public repositories made available by Uphold on GitHub. These repositories may include SDKs, developer tools, open-source projects, documentation, and other publicly accessible codebases that support Uphold\u2019s ecosystem.\n\nSecurity testing should focus on identifying misconfigurations, exposed sensitive information, or vulnerabilities that could impact Uphold\u2019s security posture.\n\nWe are willing to give bonuses for any impactful issues found across our repositories, provided we agree on their severity and relevance. Please note that third-party dependencies are out of scope unless the issue is caused by a misconfiguration or security oversight by Uphold."
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "github.com/uphold/*"
-    ],
-    "github_repos": [
-      "uphold/*"
-    ]
   },
   "intigriti:vrtnv": {
     "hash": "aaae61181f7f9141f4eb6aa68340af405b3cd444",
@@ -57114,6 +57085,22 @@
     "bounty_days": null,
     "sc_targets": []
   },
+  "chaos:uphold": {
+    "hash": "",
+    "bounty": true,
+    "source": false,
+    "name": "Uphold",
+    "url": "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+    "platform": "chaos",
+    "origin": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 0,
+    "bounty_ccy": "",
+    "domains": 98,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": []
+  },
   "chaos:united-airlines": {
     "hash": "",
     "bounty": true,
@@ -57532,10 +57519,10 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-24T22:36:30.326601+00:00",
+    "updated_at": "2026-11-24T23:08:01.186217+00:00",
     "total": 1912,
-    "qualifying": 426,
-    "external": 347,
+    "qualifying": 425,
+    "external": 348,
     "blockchain": 363,
     "feed_ids": {
       "immunefi": [],
