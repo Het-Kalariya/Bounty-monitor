@@ -1,93 +1,5 @@
 [
   {
-    "timestamp": "2026-09-28T09:01:22.316619+00:00",
-    "event": "bounty_enabled",
-    "platform": "immunefi",
-    "handle": "dawn",
-    "name": "DAWN USD.infra Vault",
-    "url": "https://immunefi.com/bug-bounty/dawn",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://bscscan.com/address/0x15a6f1f2705b3916b5b1d2b19b10f320778744c1",
-        "description": "InfraFi's on-chain contract on BNB Chain that receives, validates and stores the vault exchange rate published by infrafi-api, implements additional sanity checks and is used for downstream oracle consumption. In scope: rate-publishing authorization, staleness/validation, and any path to posting a manipulated or ripcord-blocked rate."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/token/dawn7ZUF7h7anFuEsDdAU1Y3HYwikwqNMAENZsQJdNL",
-        "description": "USD.tel stablecoin \u2014 M0 wrapped-M issued on Solana's Token-2022 program with the Pausable extension. In scope: InfraFi's mint configuration and pause-authority operation."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/account/EZ8sq2FNnmqQo254irAMGNp7c6B7DPuKh22SyXAwuXSn",
-        "description": "Loopscale credit vault holding InfraFi capital - loan book, NAV and share price computed on-chain by Loopscale; DAWN is the sole whitelisted borrower via a Squads V4 multisig. On-chain Anchor IDL fetchable. In scope: InfraFi's vault configuration and integration \u2014 deposit/withdraw, borrow/repay, and deal-valuation integration; borrower authorization; and the exchange-rate/share-price semantics DAWN reads and publishes. Loopscale protocol and program internals are out of scope (see below)."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://solscan.io/account/4rXteUmbxiXvgLqP14eQwtqkLyVNXVCBHnXyLQ9vZkSh",
-        "description": "Loopscale credit vault holding InfraFi capital - loan book, NAV and share price computed on-chain by Loopscale; DAWN is the sole whitelisted borrower via a Squads V4 multisig. On-chain Anchor IDL fetchable. In scope: InfraFi's vault configuration and integration \u2014 deposit/withdraw, borrow/repay, and deal-valuation integration; borrower authorization; and the exchange-rate/share-price semantics DAWN reads and publishes. Loopscale protocol and program internals are out of scope (see below)."
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
-    "timestamp": "2026-09-28T18:41:13.876788+00:00",
-    "event": "scope_updated",
-    "platform": "hackenproof",
-    "handle": "aurora-smart-contract",
-    "name": "Aurora Smart Contract",
-    "url": "https://hackenproof.com/programs/aurora-smart-contract",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/engine",
-        "description": "Engine Master"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine",
-        "description": "Engine Dev"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/engine-precompiles",
-        "description": "Engine Master Precompiles"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-precompiles",
-        "description": "EngineDevPrecompiles"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/engine-sdk",
-        "description": "Engine Master SDK"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-sdk",
-        "description": "Engine Dev SDK"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/master/engine-transactions",
-        "description": "Engine Master Transactions"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-transactions",
-        "description": "Engine Dev Transactions"
-      }
-    ],
-    "added": [
-      "https://github.com/aurora-is-near/aurora-engine/tree/develop/engine-transactions"
-    ],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-09-29T10:30:08.896285+00:00",
     "event": "bounty_enabled",
     "platform": "hackenproof",
@@ -7277,6 +7189,97 @@
     "url": "https://bugcrowd.com/westernunion",
     "sc_targets": [],
     "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-25T13:50:31.413267+00:00",
+    "event": "new_program",
+    "platform": "hackerone",
+    "handle": "northerntechhq",
+    "name": "Northern.tech",
+    "url": "https://hackerone.com/northerntechhq",
+    "sc_targets": [
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "\t https://github.com/cfengine/core",
+        "description": "This is the source code for CFEngine community. Please note that it includes an old protocol (classic), which is known to be insecure and disabled by default."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/mendersoftware/mender",
+        "description": "This is the source code repo of our Mender Client for over-the-air (OTA) software updates."
+      },
+      {
+        "asset_type": "SOURCE_CODE",
+        "identifier": "https://github.com/mendersoftware/mender-server",
+        "description": "This is the source code repo for the open source version of Mender Server. Our hosted Mender Saas service runs this backend with additional proprietary code for Enterprise and Saas-specific features."
+      }
+    ],
+    "added": [],
+    "removed": [],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-25T13:50:33.008516+00:00",
+    "event": "scope_updated",
+    "platform": "immunefi",
+    "handle": "instadapp",
+    "name": "Instadapp",
+    "url": "https://immunefi.com/bug-bounty/instadapp",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Instadapp/dsa-contracts",
+        "description": "Instadapp Pro"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Instadapp/avocado-contracts-public",
+        "description": "Avocado (excluding the helper folder within avo-contracts)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Instadapp/fluid-contracts-public",
+        "description": "Fluid Liquidity Layer, Fluid Lending protocol, Fluid Vault protocol. Fluid Contracts (excluding periphery folder)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Instadapp/inst-governance",
+        "description": "Governance"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.moveregistry.com/package/@0xfluid/library",
+        "description": "Fluid Sui \u2013 Library (@0xfluid/library)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.moveregistry.com/package/@0xfluid/liquidity",
+        "description": "Fluid Sui \u2013 Liquidity (@0xfluid/liquidity)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.moveregistry.com/package/@0xfluid/lending",
+        "description": "Fluid Sui \u2013 Lending (@0xfluid/lending)"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://www.moveregistry.com/package/@0xfluid/lending-rewards",
+        "description": "Fluid Sui \u2013 Lending Rewards (@0xfluid/lending-rewards)"
+      }
+    ],
+    "added": [
+      "https://etherscan.io/address/0x273da948aca9261043fbdb2a857bc255ecc29012",
+      "https://etherscan.io/address/0xa0d3707c569ff8c87fa923d3823ec5d81c98be78",
+      "https://www.moveregistry.com/package/@0xfluid/lending",
+      "https://www.moveregistry.com/package/@0xfluid/lending-rewards",
+      "https://www.moveregistry.com/package/@0xfluid/library",
+      "https://www.moveregistry.com/package/@0xfluid/liquidity",
+      "https://www.moveregistry.com/package/@0xfluid/oracle",
+      "https://www.moveregistry.com/package/@0xfluid/timelock",
+      "https://www.moveregistry.com/package/@0xfluid/vaults"
+    ],
     "removed": [],
     "github_repos": []
   }
