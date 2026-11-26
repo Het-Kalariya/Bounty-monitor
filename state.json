@@ -605,7 +605,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 81,
+    "resp_eff": 83,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -1941,7 +1941,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 63,
+    "resp_eff": 64,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -3175,7 +3175,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 84,
+    "resp_eff": 85,
     "bounty_days": 26.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4381,7 +4381,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 54,
-    "resp_eff": 62,
+    "resp_eff": 60,
     "bounty_days": 1287.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4577,7 +4577,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 68,
+    "resp_eff": 67,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -4624,25 +4624,6 @@
     "bounty_note": "",
     "domains": 0,
     "resp_eff": 72,
-    "bounty_days": null,
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackerone:mondelez": {
-    "hash": "9bb8e75049cfc0585b978f230b1540cd8f025523",
-    "bounty": false,
-    "source": false,
-    "name": "Mondel\u0113z International",
-    "url": "https://hackerone.com/mondelez",
-    "platform": "hackerone",
-    "bounty_min": 0,
-    "bounty_max": 0,
-    "bounty_ccy": "",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": 68,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -5431,7 +5412,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 64,
+    "resp_eff": 65,
     "bounty_days": 37.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -5744,7 +5725,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 93,
+    "resp_eff": 92,
     "bounty_days": 294.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -6920,7 +6901,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 52,
+    "resp_eff": 55,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -8551,7 +8532,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 78,
+    "resp_eff": 79,
     "bounty_days": 1187.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -41833,15 +41814,128 @@
     ],
     "github_repos": []
   },
-  "hackenproof:deepfi-trade": {
-    "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
+  "hackenproof:internet-computer-protocol-icp": {
+    "hash": "79c1190475b55eb453b7f91666ddc7b806021e2f",
+    "bounty": true,
+    "source": true,
+    "name": "Internet Computer Protocol (ICP)",
+    "url": "https://hackenproof.com/programs/internet-computer-protocol-icp",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 50000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic",
+        "description": "The core Internet Computer Protocol stack."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/nns",
+        "description": "Network Nervous System (NNS) canisters"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
+        "description": "Rosetta API provides applications that third parties (e.g. exchanges) can run to obtain ICP price data."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/nns-dapp",
+        "description": "Front-end and back-end components of the Network Nervous System (NNS) canisters."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/internet-identity",
+        "description": "Internet identity is an anonymous blockchain authentication framework on ICP and supports passkey authentication"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/ic/tree/master/rs/sns",
+        "description": "ICP offers a framework to launch decentralized autonomous organizations (DAOs), called the Service Nervous System (SNS)"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/caffeinelabs/motoko-core",
+        "description": "The standard library for Motoko."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/caffeinelabs/motoko",
+        "description": "Motoko is a safe, simple, actor-based programming language for building Internet Computer (ICP) canister smart contracts."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend",
+        "description": "IC software development kit"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/dfinity/cdk-rs",
+        "description": "Rust Canister Development Kit allows rust developers to build ICP canisters in Rust."
+      }
+    ],
+    "sc_total": 22,
+    "sc_ids": [
+      "https://github.com/caffeinelabs/motoko",
+      "https://github.com/caffeinelabs/motoko-core",
+      "https://github.com/dfinity/agent-rs",
+      "https://github.com/dfinity/candid",
+      "https://github.com/dfinity/cdk-rs",
+      "https://github.com/dfinity/chain-fusion-signer",
+      "https://github.com/dfinity/exchange-rate-canister",
+      "https://github.com/dfinity/ic",
+      "https://github.com/dfinity/ic/tree/master/rs/boundary_node",
+      "https://github.com/dfinity/ic/tree/master/rs/nns",
+      "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
+      "https://github.com/dfinity/ic/tree/master/rs/sns",
+      "https://github.com/dfinity/icp-cli",
+      "https://github.com/dfinity/icp-js-core",
+      "https://github.com/dfinity/imcp2",
+      "https://github.com/dfinity/internet-identity",
+      "https://github.com/dfinity/nns-dapp",
+      "https://github.com/dfinity/oisy-trade",
+      "https://github.com/dfinity/oisy-wallet",
+      "https://github.com/dfinity/orbit",
+      "https://github.com/dfinity/quill",
+      "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend"
+    ],
+    "github_repos": [
+      "caffeinelabs/motoko",
+      "caffeinelabs/motoko-core",
+      "dfinity/agent-rs",
+      "dfinity/candid",
+      "dfinity/cdk-rs",
+      "dfinity/chain-fusion-signer",
+      "dfinity/exchange-rate-canister",
+      "dfinity/ic",
+      "dfinity/icp-cli",
+      "dfinity/icp-js-core",
+      "dfinity/imcp2",
+      "dfinity/internet-identity",
+      "dfinity/nns-dapp",
+      "dfinity/oisy-trade",
+      "dfinity/oisy-wallet",
+      "dfinity/orbit",
+      "dfinity/quill",
+      "dfinity/sdk"
+    ]
+  },
+  "hackenproof:zmo-exchange": {
+    "hash": "ae8b819b70fab88e901fa0e2109395f2e7ecaea5",
     "bounty": true,
     "source": false,
-    "name": "DeepFi Trade",
-    "url": "https://hackenproof.com/programs/deepfi-trade",
+    "name": "ZMO Exchange",
+    "url": "https://hackenproof.com/programs/zmo-exchange",
     "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 3000,
+    "bounty_min": 50,
+    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -41852,36 +41946,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:dodolimitorder-smart-contract": {
-    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
-    "bounty": true,
-    "source": true,
-    "name": "DODOLimitOrder Smart Contract",
-    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
-    ],
-    "github_repos": [
-      "dodoex/dodo-limit-order"
-    ]
   },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
@@ -41909,6 +41973,26 @@
     "source": false,
     "name": "DeepFi Games",
     "url": "https://hackenproof.com/programs/deepfi-games",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:deepfi-trade": {
+    "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
+    "bounty": true,
+    "source": false,
+    "name": "DeepFi Trade",
+    "url": "https://hackenproof.com/programs/deepfi-trade",
     "platform": "hackenproof",
     "bounty_min": 200,
     "bounty_max": 3000,
@@ -42278,6 +42362,36 @@
     ],
     "github_repos": [
       "dodoex/dodo-route-contract"
+    ]
+  },
+  "hackenproof:dodolimitorder-smart-contract": {
+    "hash": "c9a20c960857386e672a0ef0b3e2440100eeb1f6",
+    "bounty": true,
+    "source": true,
+    "name": "DODOLimitOrder Smart Contract",
+    "url": "https://hackenproof.com/programs/dodolimitorder-smart-contract",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/DODOEX/dodo-limit-order/blob/main/src/DODOLimitOrder.sol",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/dodoex/dodo-limit-order/blob/main/src/dodolimitorder.sol"
+    ],
+    "github_repos": [
+      "dodoex/dodo-limit-order"
     ]
   },
   "hackenproof:dop-protocol": {
@@ -43900,119 +44014,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:internet-computer-protocol-icp": {
-    "hash": "79c1190475b55eb453b7f91666ddc7b806021e2f",
-    "bounty": true,
-    "source": true,
-    "name": "Internet Computer Protocol (ICP)",
-    "url": "https://hackenproof.com/programs/internet-computer-protocol-icp",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 50000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic",
-        "description": "The core Internet Computer Protocol stack."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/nns",
-        "description": "Network Nervous System (NNS) canisters"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
-        "description": "Rosetta API provides applications that third parties (e.g. exchanges) can run to obtain ICP price data."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/nns-dapp",
-        "description": "Front-end and back-end components of the Network Nervous System (NNS) canisters."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/internet-identity",
-        "description": "Internet identity is an anonymous blockchain authentication framework on ICP and supports passkey authentication"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/ic/tree/master/rs/sns",
-        "description": "ICP offers a framework to launch decentralized autonomous organizations (DAOs), called the Service Nervous System (SNS)"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/caffeinelabs/motoko-core",
-        "description": "The standard library for Motoko."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/caffeinelabs/motoko",
-        "description": "Motoko is a safe, simple, actor-based programming language for building Internet Computer (ICP) canister smart contracts."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend",
-        "description": "IC software development kit"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/dfinity/cdk-rs",
-        "description": "Rust Canister Development Kit allows rust developers to build ICP canisters in Rust."
-      }
-    ],
-    "sc_total": 22,
-    "sc_ids": [
-      "https://github.com/caffeinelabs/motoko",
-      "https://github.com/caffeinelabs/motoko-core",
-      "https://github.com/dfinity/agent-rs",
-      "https://github.com/dfinity/candid",
-      "https://github.com/dfinity/cdk-rs",
-      "https://github.com/dfinity/chain-fusion-signer",
-      "https://github.com/dfinity/exchange-rate-canister",
-      "https://github.com/dfinity/ic",
-      "https://github.com/dfinity/ic/tree/master/rs/boundary_node",
-      "https://github.com/dfinity/ic/tree/master/rs/nns",
-      "https://github.com/dfinity/ic/tree/master/rs/rosetta-api",
-      "https://github.com/dfinity/ic/tree/master/rs/sns",
-      "https://github.com/dfinity/icp-cli",
-      "https://github.com/dfinity/icp-js-core",
-      "https://github.com/dfinity/imcp2",
-      "https://github.com/dfinity/internet-identity",
-      "https://github.com/dfinity/nns-dapp",
-      "https://github.com/dfinity/oisy-trade",
-      "https://github.com/dfinity/oisy-wallet",
-      "https://github.com/dfinity/orbit",
-      "https://github.com/dfinity/quill",
-      "https://github.com/dfinity/sdk/tree/master/src/canisters/frontend"
-    ],
-    "github_repos": [
-      "caffeinelabs/motoko",
-      "caffeinelabs/motoko-core",
-      "dfinity/agent-rs",
-      "dfinity/candid",
-      "dfinity/cdk-rs",
-      "dfinity/chain-fusion-signer",
-      "dfinity/exchange-rate-canister",
-      "dfinity/ic",
-      "dfinity/icp-cli",
-      "dfinity/icp-js-core",
-      "dfinity/imcp2",
-      "dfinity/internet-identity",
-      "dfinity/nns-dapp",
-      "dfinity/oisy-trade",
-      "dfinity/oisy-wallet",
-      "dfinity/orbit",
-      "dfinity/quill",
-      "dfinity/sdk"
-    ]
   },
   "hackenproof:jojo-smart-contracts": {
     "hash": "5aa125faec6dbc02f7f94be85e152074eaab1498",
@@ -49173,26 +49174,6 @@
     "platform": "hackenproof",
     "bounty_min": 100,
     "bounty_max": 500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zmo-exchange": {
-    "hash": "ae8b819b70fab88e901fa0e2109395f2e7ecaea5",
-    "bounty": true,
-    "source": false,
-    "name": "ZMO Exchange",
-    "url": "https://hackenproof.com/programs/zmo-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 2000,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57621,8 +57602,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-26T15:37:35.043330+00:00",
-    "total": 1919,
+    "updated_at": "2026-11-26T16:07:58.485000+00:00",
+    "total": 1918,
     "qualifying": 426,
     "external": 358,
     "blockchain": 363,
