@@ -6219,7 +6219,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 95,
+    "resp_eff": 94,
     "bounty_days": 621.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8235,7 +8235,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": 247.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9739,7 +9739,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 33384,
-    "resp_eff": 53,
+    "resp_eff": 55,
     "bounty_days": 667.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -17411,6 +17411,25 @@
     "platform": "intigriti",
     "bounty_min": 0,
     "bounty_max": 0,
+    "bounty_ccy": "EUR",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "intigriti:website": {
+    "hash": "0452261b3459e340a0b0c85060b962c8c40456e7",
+    "bounty": true,
+    "source": false,
+    "name": "Kinepolis Group",
+    "url": "https://www.intigriti.com/programs/kinepolis/website/detail",
+    "platform": "intigriti",
+    "bounty_min": 0,
+    "bounty_max": 5000,
     "bounty_ccy": "EUR",
     "bounty_note": "",
     "domains": 0,
@@ -41776,6 +41795,116 @@
     ],
     "github_repos": []
   },
+  "hackenproof:hacken-web-and-apps": {
+    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
+    "bounty": false,
+    "source": false,
+    "name": "Hacken Web & Apps",
+    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 2000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:latoken-exchange": {
+    "hash": "88f9271460754dd494ee2b27fa844e341aef7fa2",
+    "bounty": true,
+    "source": false,
+    "name": "Latoken Exchange",
+    "url": "https://hackenproof.com/programs/latoken-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:polkadot-bridge": {
+    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
+    "bounty": false,
+    "source": true,
+    "name": "Polkadot Bridge",
+    "url": "https://hackenproof.com/programs/polkadot-bridge",
+    "platform": "hackenproof",
+    "bounty_min": 1000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/parity-bridges-common",
+        "description": "Parity Bridges Common"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+        "description": "Polkadot SDK: Bridges"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+        "description": "Polkadot SDK: Bridge hub parachains"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
+        "description": "Runtimes: Bridge hub"
+      }
+    ],
+    "sc_total": 4,
+    "sc_ids": [
+      "https://github.com/paritytech/parity-bridges-common",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
+      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
+      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
+    ],
+    "github_repos": [
+      "paritytech/parity-bridges-common",
+      "paritytech/polkadot-sdk",
+      "polkadot-fellows/runtimes"
+    ]
+  },
+  "hackenproof:whitebit-blog": {
+    "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
+    "bounty": true,
+    "source": false,
+    "name": "WhiteBIT Blog",
+    "url": "https://hackenproof.com/programs/whitebit-blog",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -43220,26 +43349,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:hacken-web-and-apps": {
-    "hash": "e5b016f84bd9c694510cd5286ddbcf1c6bdfacbd",
-    "bounty": false,
-    "source": false,
-    "name": "Hacken Web & Apps",
-    "url": "https://hackenproof.com/programs/hacken-web-and-apps",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 2000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:hackenproof": {
     "hash": "e5f39bdab7b783f2ed0114d5eae7621a386c2a1d",
     "bounty": true,
@@ -44290,26 +44399,6 @@
     "github_repos": [
       "latoken/lachain"
     ]
-  },
-  "hackenproof:latoken-exchange": {
-    "hash": "88f9271460754dd494ee2b27fa844e341aef7fa2",
-    "bounty": true,
-    "source": false,
-    "name": "Latoken Exchange",
-    "url": "https://hackenproof.com/programs/latoken-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
   },
   "hackenproof:layer3-smart-contracts": {
     "hash": "4c71f4f0bab2621cc11ecb051ac8225b4c30f412",
@@ -45769,56 +45858,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:polkadot-bridge": {
-    "hash": "60b5698b8b6dd0cae0a43d09b7a798ae358fafae",
-    "bounty": false,
-    "source": true,
-    "name": "Polkadot Bridge",
-    "url": "https://hackenproof.com/programs/polkadot-bridge",
-    "platform": "hackenproof",
-    "bounty_min": 1000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/parity-bridges-common",
-        "description": "Parity Bridges Common"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-        "description": "Polkadot SDK: Bridges"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-        "description": "Polkadot SDK: Bridge hub parachains"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs",
-        "description": "Runtimes: Bridge hub"
-      }
-    ],
-    "sc_total": 4,
-    "sc_ids": [
-      "https://github.com/paritytech/parity-bridges-common",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/bridges",
-      "https://github.com/paritytech/polkadot-sdk/tree/master/cumulus/parachains/runtimes/bridge-hubs",
-      "https://github.com/polkadot-fellows/runtimes/tree/main/system-parachains/bridge-hubs"
-    ],
-    "github_repos": [
-      "paritytech/parity-bridges-common",
-      "paritytech/polkadot-sdk",
-      "polkadot-fellows/runtimes"
-    ]
   },
   "hackenproof:polkadot-sdk-runtime-by-parity": {
     "hash": "ffc8d8f1f64c206e690fa05ba63cd4a04a1dce29",
@@ -48676,26 +48715,6 @@
     "platform": "hackenproof",
     "bounty_min": 50,
     "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:whitebit-blog": {
-    "hash": "8d7fecfe73fcffd6d593649e5f43ea0737785820",
-    "bounty": true,
-    "source": false,
-    "name": "WhiteBIT Blog",
-    "url": "https://hackenproof.com/programs/whitebit-blog",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 1500,
     "bounty_ccy": "USD",
     "bounty_note": "",
     "domains": 0,
@@ -57564,8 +57583,8 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-26T20:06:57.091704+00:00",
-    "total": 1916,
+    "updated_at": "2026-11-26T20:36:59.032151+00:00",
+    "total": 1917,
     "qualifying": 426,
     "external": 358,
     "blockchain": 363,
