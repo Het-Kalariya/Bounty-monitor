@@ -5355,7 +5355,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1494,
-    "resp_eff": 75,
+    "resp_eff": 76,
     "bounty_days": 294.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7608,7 +7608,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 420,
-    "resp_eff": 20,
+    "resp_eff": 19,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -7703,7 +7703,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 117017,
-    "resp_eff": 84,
+    "resp_eff": 83,
     "bounty_days": 156.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8273,7 +8273,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 29209,
-    "resp_eff": 74,
+    "resp_eff": 73,
     "bounty_days": 1556.0,
     "sc_targets": [
       {
@@ -9079,7 +9079,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 497,
-    "resp_eff": 81,
+    "resp_eff": 82,
     "bounty_days": 4.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -20132,6 +20132,79 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:pythnetwork": {
+    "hash": "2f2377cadd2855442d8d70fb46825cd9105b1320",
+    "bounty": true,
+    "source": true,
+    "name": "Pyth Network",
+    "url": "https://immunefi.com/bug-bounty/pythnetwork",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 125000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/pyth",
+        "description": "Pyth Crosschain: Ethereum"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/solana",
+        "description": "Pyth Crosschain: Solana"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/sui/contracts",
+        "description": "Pyth Crosschain: Sui"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/governance/tree/main/staking/programs/staking",
+        "description": "Pyth Governance"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/entropy",
+        "description": "Pyth Entropy"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/evm",
+        "description": "Pyth Lazer: EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/sui",
+        "description": "Pyth Lazer: Sui"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/cardano",
+        "description": "Pyth Lazer: Cardano"
+      }
+    ],
+    "sc_total": 8,
+    "sc_ids": [
+      "https://github.com/pyth-network/governance/tree/main/staking/programs/staking",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/cardano",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/evm",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/sui",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/entropy",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/pyth",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/solana",
+      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/sui/contracts"
+    ],
+    "github_repos": [
+      "pyth-network/governance",
+      "pyth-network/pyth-crosschain"
+    ]
+  },
   "immunefi:thegraph": {
     "hash": "a3234edb1278355bf66e86af15bc954a0a4c04c3",
     "bounty": true,
@@ -23157,79 +23230,6 @@
       "0xpolygon/cosmos-sdk",
       "0xpolygon/heimdall-v2",
       "0xpolygon/security"
-    ]
-  },
-  "immunefi:pythnetwork": {
-    "hash": "2f2377cadd2855442d8d70fb46825cd9105b1320",
-    "bounty": true,
-    "source": true,
-    "name": "Pyth Network",
-    "url": "https://immunefi.com/bug-bounty/pythnetwork",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 125000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/pyth",
-        "description": "Pyth Crosschain: Ethereum"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/solana",
-        "description": "Pyth Crosschain: Solana"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/sui/contracts",
-        "description": "Pyth Crosschain: Sui"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/governance/tree/main/staking/programs/staking",
-        "description": "Pyth Governance"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/entropy",
-        "description": "Pyth Entropy"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/evm",
-        "description": "Pyth Lazer: EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/sui",
-        "description": "Pyth Lazer: Sui"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/cardano",
-        "description": "Pyth Lazer: Cardano"
-      }
-    ],
-    "sc_total": 8,
-    "sc_ids": [
-      "https://github.com/pyth-network/governance/tree/main/staking/programs/staking",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/cardano",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/evm",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/lazer/contracts/sui",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/entropy",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/ethereum/contracts/contracts/pyth",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/solana",
-      "https://github.com/pyth-network/pyth-crosschain/tree/main/target_chains/sui/contracts"
-    ],
-    "github_repos": [
-      "pyth-network/governance",
-      "pyth-network/pyth-crosschain"
     ]
   },
   "immunefi:rocketpool": {
@@ -57631,7 +57631,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-26T06:23:01.025540+00:00",
+    "updated_at": "2026-11-26T06:53:10.413172+00:00",
     "total": 1920,
     "qualifying": 426,
     "external": 358,
