@@ -4436,7 +4436,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 40,
+    "resp_eff": 50,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9079,7 +9079,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 56451,
-    "resp_eff": 40,
+    "resp_eff": 41,
     "bounty_days": 1898.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -9655,7 +9655,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 82,
+    "resp_eff": 83,
     "bounty_days": 998.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -41817,76 +41817,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:grovex-web-and-mobile": {
-    "hash": "c30f54ef7af27983a71718800e2b13b763365b66",
-    "bounty": false,
-    "source": false,
-    "name": "GroveX Web & Mobile",
-    "url": "https://hackenproof.com/programs/grovex-web-and-mobile",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 1500,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "PAUSED",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:horizon-protocol-smart-contracts": {
-    "hash": "88897828255ea8bef71e1e898c40fced9ae7d336",
-    "bounty": true,
-    "source": true,
-    "name": "Horizon Protocol Smart Contracts",
-    "url": "https://hackenproof.com/programs/horizon-protocol-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 20000,
-    "bounty_max": 60000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Horizon-Protocol/Horizon-Smart-Contract/tree/develop/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/horizon-protocol/horizon-smart-contract/tree/develop/contracts"
-    ],
-    "github_repos": [
-      "horizon-protocol/horizon-smart-contract"
-    ]
-  },
-  "hackenproof:weex-web-and-app": {
-    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
-    "bounty": true,
-    "source": false,
-    "name": "WEEX Web & App",
-    "url": "https://hackenproof.com/programs/weex-web-and-app",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
   "hackenproof:deepcoin-web-and-mobile": {
     "hash": "97d1d3a67b41c345b85fb327e257354cbe91ad75",
     "bounty": false,
@@ -42171,6 +42101,72 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:kaia-protocol": {
+    "hash": "1674073df40ca8779059a29b2d5c234ff783bea8",
+    "bounty": true,
+    "source": true,
+    "name": "Kaia Protocol",
+    "url": "https://hackenproof.com/programs/kaia-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 10,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/kaiachain/kaia",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/kaiachain/kaia"
+    ],
+    "github_repos": [
+      "kaiachain/kaia"
+    ]
+  },
+  "hackenproof:layer3-smart-contracts": {
+    "hash": "4c71f4f0bab2621cc11ecb051ac8225b4c30f412",
+    "bounty": true,
+    "source": true,
+    "name": "Layer3 Smart Contracts",
+    "url": "https://hackenproof.com/programs/layer3-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 500000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
+        "description": "**Staking (Proxy)**\r\n- Contract is deployed with proxy. The current **implementation** of the contract is in scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/layer3xyz/cubes/blob/main/src/escrow/Factory.sol",
+        "description": "https://etherscan.io/address/0x5e2b297016d41055876ff1078100c548adc3a498"
+      }
+    ],
+    "sc_total": 2,
+    "sc_ids": [
+      "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
+      "https://github.com/layer3xyz/cubes/blob/main/src/escrow/factory.sol"
+    ],
+    "github_repos": [
+      "layer3xyz/cubes"
+    ]
   },
   "hackenproof:dione-protocol": {
     "hash": "b6cdb409069a12f9d3ff5ec4238c2cc6ee656f9c",
@@ -43291,6 +43287,26 @@
     ],
     "github_repos": []
   },
+  "hackenproof:grovex-web-and-mobile": {
+    "hash": "c30f54ef7af27983a71718800e2b13b763365b66",
+    "bounty": false,
+    "source": false,
+    "name": "GroveX Web & Mobile",
+    "url": "https://hackenproof.com/programs/grovex-web-and-mobile",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 1500,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "PAUSED",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:hack-to-the-future-2024-icp-dot-hub-ae-hackathon": {
     "hash": "eea7847f309d2987999424a518d9f3c3f9008255",
     "bounty": false,
@@ -43416,6 +43432,36 @@
     ],
     "github_repos": [
       "hinkal-protocol/hinkal-contracts-circuits"
+    ]
+  },
+  "hackenproof:horizon-protocol-smart-contracts": {
+    "hash": "88897828255ea8bef71e1e898c40fced9ae7d336",
+    "bounty": true,
+    "source": true,
+    "name": "Horizon Protocol Smart Contracts",
+    "url": "https://hackenproof.com/programs/horizon-protocol-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 20000,
+    "bounty_max": 60000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/Horizon-Protocol/Horizon-Smart-Contract/tree/develop/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/horizon-protocol/horizon-smart-contract/tree/develop/contracts"
+    ],
+    "github_repos": [
+      "horizon-protocol/horizon-smart-contract"
     ]
   },
   "hackenproof:hotbit": {
@@ -44104,36 +44150,6 @@
       "kunalabs-io/sui-smart-contracts"
     ]
   },
-  "hackenproof:kaia-protocol": {
-    "hash": "1674073df40ca8779059a29b2d5c234ff783bea8",
-    "bounty": true,
-    "source": true,
-    "name": "Kaia Protocol",
-    "url": "https://hackenproof.com/programs/kaia-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 10,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/kaiachain/kaia",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/kaiachain/kaia"
-    ],
-    "github_repos": [
-      "kaiachain/kaia"
-    ]
-  },
   "hackenproof:kaia-web": {
     "hash": "3dc8f7d7ad104d9f3d01905d90d287770c9d6eae",
     "bounty": true,
@@ -44371,42 +44387,6 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
-  },
-  "hackenproof:layer3-smart-contracts": {
-    "hash": "4c71f4f0bab2621cc11ecb051ac8225b4c30f412",
-    "bounty": true,
-    "source": true,
-    "name": "Layer3 Smart Contracts",
-    "url": "https://hackenproof.com/programs/layer3-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 500000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
-        "description": "**Staking (Proxy)**\r\n- Contract is deployed with proxy. The current **implementation** of the contract is in scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/layer3xyz/cubes/blob/main/src/escrow/Factory.sol",
-        "description": "https://etherscan.io/address/0x5e2b297016d41055876ff1078100c548adc3a498"
-      }
-    ],
-    "sc_total": 2,
-    "sc_ids": [
-      "https://etherscan.io/address/0x8e02d37b6cad86039bdd11095b8c879b907f7d10#code",
-      "https://github.com/layer3xyz/cubes/blob/main/src/escrow/factory.sol"
-    ],
-    "github_repos": [
-      "layer3xyz/cubes"
-    ]
   },
   "hackenproof:layer3-web": {
     "hash": "fc48191a41c77410ce46c36dff1fcae99326c1dc",
@@ -48707,6 +48687,26 @@
     "github_repos": [
       "mystenlabs/walrus"
     ]
+  },
+  "hackenproof:weex-web-and-app": {
+    "hash": "531e270cfffdb7a01366201ba68d0241ba4030ed",
+    "bounty": true,
+    "source": false,
+    "name": "WEEX Web & App",
+    "url": "https://hackenproof.com/programs/weex-web-and-app",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
   },
   "hackenproof:whitebit": {
     "hash": "0c83870020f46b70d51f3558c99e41ad0b2fc194",
@@ -57541,7 +57541,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-27T16:19:08.204458+00:00",
+    "updated_at": "2026-11-27T16:49:24.797049+00:00",
     "total": 1913,
     "qualifying": 427,
     "external": 354,
