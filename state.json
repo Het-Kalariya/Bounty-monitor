@@ -1499,7 +1499,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 69,
+    "resp_eff": 67,
     "bounty_days": 88.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -4596,7 +4596,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 79,
+    "resp_eff": 80,
     "bounty_days": null,
     "sc_targets": [
       {
@@ -5117,7 +5117,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 85,
+    "resp_eff": 86,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -9517,7 +9517,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 27670,
-    "resp_eff": 41,
+    "resp_eff": 40,
     "bounty_days": 288.0,
     "sc_targets": [
       {
@@ -20056,6 +20056,156 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "immunefi:raydium": {
+    "hash": "881b23aa8bc2544da7578f30a7715194809948b1",
+    "bounty": true,
+    "source": true,
+    "name": "Raydium",
+    "url": "https://immunefi.com/bug-bounty/raydium",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 505000,
+    "bounty_ccy": "RAY, SOL, USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+        "description": "collect_fund_fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+        "description": "collect_protocol_fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/create_operation_account.rs",
+        "description": "create_operation_account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/mod.rs",
+        "description": "admin/mod"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+        "description": "transfer_reward_owner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_amm_config.rs",
+        "description": "update_amm_config"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_operation_account.rs",
+        "description": "update_operation_account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_pool_status.rs",
+        "description": "update_pool_status"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/close_position.rs",
+        "description": "close_position"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/collect_remaining_rewards.rs",
+        "description": "collect_remaining_rewards"
+      }
+    ],
+    "sc_total": 74,
+    "sc_ids": [
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/error.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/create_operation_account.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/mod.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_amm_config.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_operation_account.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_pool_status.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/close_position.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/collect_remaining_rewards.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/create_pool.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/decrease_liquidity.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/increase_liquidity.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/initialize_reward.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/mod.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/open_position.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/set_reward_params.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/swap.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/swap_router_base_in.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/update_reward_info.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/lib.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/big_num.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/fixed_point_64.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/full_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/liquidity_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/mod.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/sqrt_price_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/swap_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/tick_array_bit_map.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/tick_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/unsafe_math.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/config.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/mod.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/operation_account.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/oracle.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/personal_position.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/pool.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/protocol_position.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/tick_array.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/access_control.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/mod.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/system.rs",
+      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/token.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/entrypoint.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/error.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/instruction.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/invokers.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/lib.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/log.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/math.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/processor.rs",
+      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/state.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/error.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/collect_fund_fee.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/collect_protocol_fee.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/create_config.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/mod.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/update_config.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/update_pool_status.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/deposit.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/initialize.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/mod.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/swap_base_input.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/swap_base_output.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/withdraw.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/lib.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/config.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/events.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/mod.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/pool.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/math.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/mod.rs",
+      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/token.rs"
+    ],
+    "github_repos": [
+      "raydium-io/raydium-amm",
+      "raydium-io/raydium-amm-v3",
+      "raydium-io/raydium-cp-swap"
+    ]
+  },
   "immunefi:alchemix-1": {
     "hash": "faa4f4ed9a44ef9f50693df1c904c050f11f655c",
     "bounty": true,
@@ -29412,156 +29562,6 @@
       "https://tonscan.org/address/eqaesrvqpywnqv9_1g8czmhmyts7_3j1jsp1nnn0yudbzreh"
     ],
     "github_repos": []
-  },
-  "immunefi:raydium": {
-    "hash": "881b23aa8bc2544da7578f30a7715194809948b1",
-    "bounty": true,
-    "source": true,
-    "name": "Raydium",
-    "url": "https://immunefi.com/bug-bounty/raydium",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 505000,
-    "bounty_ccy": "RAY, SOL, USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-        "description": "collect_fund_fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-        "description": "collect_protocol_fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/create_operation_account.rs",
-        "description": "create_operation_account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/mod.rs",
-        "description": "admin/mod"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-        "description": "transfer_reward_owner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_amm_config.rs",
-        "description": "update_amm_config"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_operation_account.rs",
-        "description": "update_operation_account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_pool_status.rs",
-        "description": "update_pool_status"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/close_position.rs",
-        "description": "close_position"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/collect_remaining_rewards.rs",
-        "description": "collect_remaining_rewards"
-      }
-    ],
-    "sc_total": 74,
-    "sc_ids": [
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/error.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/create_operation_account.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/mod.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_amm_config.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_operation_account.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/admin/update_pool_status.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/close_position.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/collect_remaining_rewards.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/create_pool.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/decrease_liquidity.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/increase_liquidity.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/initialize_reward.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/mod.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/open_position.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/set_reward_params.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/swap.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/swap_router_base_in.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/instructions/update_reward_info.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/lib.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/big_num.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/fixed_point_64.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/full_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/liquidity_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/mod.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/sqrt_price_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/swap_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/tick_array_bit_map.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/tick_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/libraries/unsafe_math.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/config.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/mod.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/operation_account.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/oracle.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/personal_position.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/pool.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/protocol_position.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/states/tick_array.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/access_control.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/mod.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/system.rs",
-      "https://github.com/raydium-io/raydium-amm-v3/blob/master/programs/amm/src/util/token.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/entrypoint.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/error.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/instruction.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/invokers.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/lib.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/log.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/math.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/processor.rs",
-      "https://github.com/raydium-io/raydium-amm/blob/master/program/src/state.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/error.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/collect_fund_fee.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/collect_protocol_fee.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/create_config.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/mod.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/update_config.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/admin/update_pool_status.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/deposit.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/initialize.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/mod.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/swap_base_input.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/swap_base_output.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/instructions/withdraw.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/lib.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/config.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/events.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/mod.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/states/pool.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/math.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/mod.rs",
-      "https://github.com/raydium-io/raydium-cp-swap/blob/master/programs/cp-swap/src/utils/token.rs"
-    ],
-    "github_repos": [
-      "raydium-io/raydium-amm",
-      "raydium-io/raydium-amm-v3",
-      "raydium-io/raydium-cp-swap"
-    ]
   },
   "immunefi:1inch-aqua": {
     "hash": "f14b1b3eec7ce263bd83d19dfc3c3b648eae2515",
@@ -41857,365 +41857,6 @@
     "sc_ids": [],
     "github_repos": []
   },
-  "hackenproof:kuna-crypto-exchange": {
-    "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
-    "bounty": true,
-    "source": false,
-    "name": "Kuna Crypto Exchange",
-    "url": "https://hackenproof.com/programs/kuna-crypto-exchange",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:near-smart-contracts-1": {
-    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
-    "bounty": true,
-    "source": true,
-    "name": "NEAR Smart Contracts",
-    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
-    "platform": "hackenproof",
-    "bounty_min": 100,
-    "bounty_max": 300000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
-        "description": "lockup"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
-        "description": "staking pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-        "description": "staking pool factory"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
-        "description": "whitelist"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
-        "description": "multisig"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
-        "description": ""
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://github.com/near-daos/sputnik-dao-contract",
-      "https://github.com/near/core-contracts/tree/master/lockup",
-      "https://github.com/near/core-contracts/tree/master/multisig",
-      "https://github.com/near/core-contracts/tree/master/staking-pool",
-      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
-      "https://github.com/near/core-contracts/tree/master/whitelist"
-    ],
-    "github_repos": [
-      "near-daos/sputnik-dao-contract",
-      "near/core-contracts"
-    ]
-  },
-  "hackenproof:redstone-smart-contracts": {
-    "hash": "6610d22c37e0bad11870f6965bb591439c7ae526",
-    "bounty": true,
-    "source": true,
-    "name": "RedStone Smart Contracts",
-    "url": "https://hackenproof.com/programs/redstone-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/evm-connector/contracts",
-        "description": "EVM\nPull model contracts"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/rust-sdk/tree/main/crates/redstone",
-        "description": "Non-EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/stellar-connector",
-        "description": "Non-EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/sui-connector",
-        "description": "Non-EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/solana-connector",
-        "description": "Non-EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/radix-connector",
-        "description": "Non-EVM"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://app.redstone.finance/app/feeds",
-        "description": "All deployed contracts (on all supported chains) listed here"
-      }
-    ],
-    "sc_total": 7,
-    "sc_ids": [
-      "https://app.redstone.finance/app/feeds",
-      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/evm-connector/contracts",
-      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/radix-connector",
-      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/solana-connector",
-      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/stellar-connector",
-      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/sui-connector",
-      "https://github.com/redstone-finance/rust-sdk/tree/main/crates/redstone"
-    ],
-    "github_repos": [
-      "redstone-finance/redstone-oracles-monorepo",
-      "redstone-finance/rust-sdk"
-    ]
-  },
-  "hackenproof:swap-dot-io-smart-contracts": {
-    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
-    "bounty": true,
-    "source": true,
-    "name": "Swap.io Smart Contracts",
-    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 0,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-        "description": "collect fund fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-        "description": "collect protocol fee"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-        "description": "create operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-        "description": "admin mod"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-        "description": "transfer reward owner"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-        "description": "update amm config"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-        "description": "update operation account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-        "description": "update pool status"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-        "description": "close position"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-        "description": "collect remaining rewards"
-      }
-    ],
-    "sc_total": 43,
-    "sc_ids": [
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
-      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
-    ],
-    "github_repos": [
-      "swap-dot-io/swap-io-clmm"
-    ]
-  },
-  "hackenproof:ternoa-smart-contracts": {
-    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
-    "bounty": true,
-    "source": true,
-    "name": "Ternoa Smart Contracts",
-    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
-    "platform": "hackenproof",
-    "bounty_min": 50,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
-        "description": ""
-      }
-    ],
-    "sc_total": 1,
-    "sc_ids": [
-      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
-    ],
-    "github_repos": [
-      "capsule-corp-ternoa/chainbridge-solidity"
-    ]
-  },
-  "hackenproof:ttc-sdk": {
-    "hash": "762ca6c5483497555e9be0bd10560ed1b7b0e601",
-    "bounty": true,
-    "source": false,
-    "name": "TTC | SDK",
-    "url": "https://hackenproof.com/programs/ttc-sdk",
-    "platform": "hackenproof",
-    "bounty_min": 600,
-    "bounty_max": 5000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:zeko-protocol": {
-    "hash": "45c79a86ae8c7af156f117162c30784b24c9d098",
-    "bounty": true,
-    "source": true,
-    "name": "Zeko Protocol",
-    "url": "https://hackenproof.com/programs/zeko-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 300,
-    "bounty_max": 3000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/zeko",
-        "description": ""
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
-        "description": "SantaClawz Github repo"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/zeko-labs/x402-zeko",
-        "description": "x402 Github repo"
-      }
-    ],
-    "sc_total": 3,
-    "sc_ids": [
-      "https://github.com/zeko-labs/santa_clawz-private_agents",
-      "https://github.com/zeko-labs/x402-zeko",
-      "https://github.com/zeko-labs/zeko"
-    ],
-    "github_repos": [
-      "zeko-labs/santa_clawz-private_agents",
-      "zeko-labs/x402-zeko",
-      "zeko-labs/zeko"
-    ]
-  },
   "hackenproof:deepfi-trade": {
     "hash": "d5a559a6a65151fa4c615246d6de864300eaa6e6",
     "bounty": true,
@@ -42324,6 +41965,172 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:stbl-web": {
+    "hash": "59ac672ef65bb6aa27a5312237e1548ce6847d3c",
+    "bounty": true,
+    "source": false,
+    "name": "STBL Web",
+    "url": "https://hackenproof.com/programs/stbl-web",
+    "platform": "hackenproof",
+    "bounty_min": 200,
+    "bounty_max": 10000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ston-dot-fi-dex-smart-contracts-v2": {
+    "hash": "4e4d2ac112cb9a972a90635646a2b6ae9e6ba20d",
+    "bounty": true,
+    "source": true,
+    "name": "STON.fi DEX Smart Contracts v2",
+    "url": "https://hackenproof.com/programs/ston-dot-fi-dex-smart-contracts-v2",
+    "platform": "hackenproof",
+    "bounty_min": 5000,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
+        "description": "LP Account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
+        "description": "LP Wallet"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
+        "description": "Pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
+        "description": "Router"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc",
+        "description": "Vault"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
+      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc"
+    ],
+    "github_repos": [
+      "ston-fi/dex-core-v2"
+    ]
+  },
+  "hackenproof:sui-protocol": {
+    "hash": "368d9f6790aedea1fd796f15d53a2dbd800ef11e",
+    "bounty": true,
+    "source": true,
+    "name": "Sui Protocol",
+    "url": "https://hackenproof.com/programs/sui-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 500,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-node",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-core",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-types",
+        "description": "Blockchain/DLT - Sui Network"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/external-crates/move",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-adapter",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-verifier",
+        "description": "Blockchain/DLT - Sui Move"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-framework",
+        "description": "Blockchain/DLT - Sui Framework"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-bridge",
+        "description": "Only issues affecting funds. Governance not in scope."
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/MystenLabs/sui/tree/main/bridge",
+        "description": "Only issues affecting funds. Governance not in scope."
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/MystenLabs/deepbookv3",
+        "description": "Specifically:\nDeepBook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/deepbook\nDeepBook Margin - https://github.com/MystenLabs/deepbookv3/tree/main/packages/\nAccount - https://github.com/MystenLabs/deepbookv3/tree/main/packages/account\nPredict - https://github.com/MystenLabs/deepbookv3/tree/main/packages/predict\nPropbook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/propbook\nSessions - https://github.com/MystenLabs/deepbookv3/tree/main/packages/sessions"
+      }
+    ],
+    "sc_total": 15,
+    "sc_ids": [
+      "github.com/mystenlabs/hashi",
+      "https://github.com/mystenlabs/deepbookv3",
+      "https://github.com/mystenlabs/seal/tree/main/crates/key-server",
+      "https://github.com/mystenlabs/seal/tree/main/move/seal/sources ",
+      "https://github.com/mystenlabs/sui/tree/main/bridge",
+      "https://github.com/mystenlabs/sui/tree/main/crates/sui-bridge",
+      "https://github.com/mystenlabs/sui/tree/main/crates/sui-framework",
+      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-adapter",
+      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-verifier",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc-types",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-core",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-node",
+      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-types",
+      "https://github.com/mystenlabs/sui/tree/testnet/external-crates/move"
+    ],
+    "github_repos": [
+      "mystenlabs/deepbookv3",
+      "mystenlabs/hashi",
+      "mystenlabs/seal",
+      "mystenlabs/sui"
+    ]
   },
   "hackenproof:dexalot-smart-contracts-2": {
     "hash": "46b0e6171d3a04734b97e87c214ed0cd1436534a",
@@ -44635,6 +44442,26 @@
     "sc_ids": [],
     "github_repos": []
   },
+  "hackenproof:kuna-crypto-exchange": {
+    "hash": "9a7b46ad9d6c828e15a49f825f3d91c5a9419a9c",
+    "bounty": true,
+    "source": false,
+    "name": "Kuna Crypto Exchange",
+    "url": "https://hackenproof.com/programs/kuna-crypto-exchange",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
   "hackenproof:lachain-dot-io": {
     "hash": "bf1f904ee69b4b6e9b3f18d0a4389ad6e77203f3",
     "bounty": true,
@@ -45505,6 +45332,67 @@
     ],
     "github_repos": [
       "near/nearcore"
+    ]
+  },
+  "hackenproof:near-smart-contracts-1": {
+    "hash": "08dd9d0403afe4371c539539902fec05253d9b24",
+    "bounty": true,
+    "source": true,
+    "name": "NEAR Smart Contracts",
+    "url": "https://hackenproof.com/programs/near-smart-contracts-1",
+    "platform": "hackenproof",
+    "bounty_min": 100,
+    "bounty_max": 300000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/lockup",
+        "description": "lockup"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool",
+        "description": "staking pool"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+        "description": "staking pool factory"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/whitelist",
+        "description": "whitelist"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near/core-contracts/tree/master/multisig",
+        "description": "multisig"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/near-daos/sputnik-dao-contract",
+        "description": ""
+      }
+    ],
+    "sc_total": 6,
+    "sc_ids": [
+      "https://github.com/near-daos/sputnik-dao-contract",
+      "https://github.com/near/core-contracts/tree/master/lockup",
+      "https://github.com/near/core-contracts/tree/master/multisig",
+      "https://github.com/near/core-contracts/tree/master/staking-pool",
+      "https://github.com/near/core-contracts/tree/master/staking-pool-factory",
+      "https://github.com/near/core-contracts/tree/master/whitelist"
+    ],
+    "github_repos": [
+      "near-daos/sputnik-dao-contract",
+      "near/core-contracts"
     ]
   },
   "hackenproof:near-web": {
@@ -46388,6 +46276,73 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:redstone-smart-contracts": {
+    "hash": "6610d22c37e0bad11870f6965bb591439c7ae526",
+    "bounty": true,
+    "source": true,
+    "name": "RedStone Smart Contracts",
+    "url": "https://hackenproof.com/programs/redstone-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 250000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/evm-connector/contracts",
+        "description": "EVM\nPull model contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/rust-sdk/tree/main/crates/redstone",
+        "description": "Non-EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/stellar-connector",
+        "description": "Non-EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/sui-connector",
+        "description": "Non-EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/solana-connector",
+        "description": "Non-EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/radix-connector",
+        "description": "Non-EVM"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://app.redstone.finance/app/feeds",
+        "description": "All deployed contracts (on all supported chains) listed here"
+      }
+    ],
+    "sc_total": 7,
+    "sc_ids": [
+      "https://app.redstone.finance/app/feeds",
+      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/evm-connector/contracts",
+      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/radix-connector",
+      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/solana-connector",
+      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/stellar-connector",
+      "https://github.com/redstone-finance/redstone-oracles-monorepo/tree/main/packages/sui-connector",
+      "https://github.com/redstone-finance/rust-sdk/tree/main/crates/redstone"
+    ],
+    "github_repos": [
+      "redstone-finance/redstone-oracles-monorepo",
+      "redstone-finance/rust-sdk"
+    ]
   },
   "hackenproof:redstone-web": {
     "hash": "60421e8ab273b1b42ce1950e3438fcb5d1b649f5",
@@ -47382,172 +47337,6 @@
     ],
     "github_repos": []
   },
-  "hackenproof:stbl-web": {
-    "hash": "59ac672ef65bb6aa27a5312237e1548ce6847d3c",
-    "bounty": true,
-    "source": false,
-    "name": "STBL Web",
-    "url": "https://hackenproof.com/programs/stbl-web",
-    "platform": "hackenproof",
-    "bounty_min": 200,
-    "bounty_max": 10000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [],
-    "sc_total": 0,
-    "sc_ids": [],
-    "github_repos": []
-  },
-  "hackenproof:ston-dot-fi-dex-smart-contracts-v2": {
-    "hash": "4e4d2ac112cb9a972a90635646a2b6ae9e6ba20d",
-    "bounty": true,
-    "source": true,
-    "name": "STON.fi DEX Smart Contracts v2",
-    "url": "https://hackenproof.com/programs/ston-dot-fi-dex-smart-contracts-v2",
-    "platform": "hackenproof",
-    "bounty_min": 5000,
-    "bounty_max": 100000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
-        "description": "LP Account"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
-        "description": "LP Wallet"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
-        "description": "Pool"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
-        "description": "Router"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc",
-        "description": "Vault"
-      }
-    ],
-    "sc_total": 5,
-    "sc_ids": [
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_account.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/lp_wallet.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/pool.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/router.fc",
-      "https://github.com/ston-fi/dex-core-v2/blob/main/contracts/vault.fc"
-    ],
-    "github_repos": [
-      "ston-fi/dex-core-v2"
-    ]
-  },
-  "hackenproof:sui-protocol": {
-    "hash": "368d9f6790aedea1fd796f15d53a2dbd800ef11e",
-    "bounty": true,
-    "source": true,
-    "name": "Sui Protocol",
-    "url": "https://hackenproof.com/programs/sui-protocol",
-    "platform": "hackenproof",
-    "bounty_min": 500,
-    "bounty_max": 250000,
-    "bounty_ccy": "USD",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-node",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-core",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/crates/sui-types",
-        "description": "Blockchain/DLT - Sui Network"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/testnet/external-crates/move",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-adapter",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/sui-execution/latest/sui-verifier",
-        "description": "Blockchain/DLT - Sui Move"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-framework",
-        "description": "Blockchain/DLT - Sui Framework"
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/crates/sui-bridge",
-        "description": "Only issues affecting funds. Governance not in scope."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/MystenLabs/sui/tree/main/bridge",
-        "description": "Only issues affecting funds. Governance not in scope."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/MystenLabs/deepbookv3",
-        "description": "Specifically:\nDeepBook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/deepbook\nDeepBook Margin - https://github.com/MystenLabs/deepbookv3/tree/main/packages/\nAccount - https://github.com/MystenLabs/deepbookv3/tree/main/packages/account\nPredict - https://github.com/MystenLabs/deepbookv3/tree/main/packages/predict\nPropbook - https://github.com/MystenLabs/deepbookv3/tree/main/packages/propbook\nSessions - https://github.com/MystenLabs/deepbookv3/tree/main/packages/sessions"
-      }
-    ],
-    "sc_total": 15,
-    "sc_ids": [
-      "github.com/mystenlabs/hashi",
-      "https://github.com/mystenlabs/deepbookv3",
-      "https://github.com/mystenlabs/seal/tree/main/crates/key-server",
-      "https://github.com/mystenlabs/seal/tree/main/move/seal/sources ",
-      "https://github.com/mystenlabs/sui/tree/main/bridge",
-      "https://github.com/mystenlabs/sui/tree/main/crates/sui-bridge",
-      "https://github.com/mystenlabs/sui/tree/main/crates/sui-framework",
-      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-adapter",
-      "https://github.com/mystenlabs/sui/tree/main/sui-execution/latest/sui-verifier",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/json-rpc-types",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-core",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-node",
-      "https://github.com/mystenlabs/sui/tree/testnet/crates/sui-types",
-      "https://github.com/mystenlabs/sui/tree/testnet/external-crates/move"
-    ],
-    "github_repos": [
-      "mystenlabs/deepbookv3",
-      "mystenlabs/hashi",
-      "mystenlabs/seal",
-      "mystenlabs/sui"
-    ]
-  },
   "hackenproof:superearn-web-and-smart-contracts": {
     "hash": "5bf449fe90a7f05bd91b093dad4fb096c51ee0e7",
     "bounty": false,
@@ -47597,6 +47386,123 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:swap-dot-io-smart-contracts": {
+    "hash": "1b0048a7eb9ab1d7f09013b53fa4aa9bb84e1cd0",
+    "bounty": true,
+    "source": true,
+    "name": "Swap.io Smart Contracts",
+    "url": "https://hackenproof.com/programs/swap-dot-io-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 0,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+        "description": "collect fund fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+        "description": "collect protocol fee"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+        "description": "create operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+        "description": "admin mod"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+        "description": "transfer reward owner"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+        "description": "update amm config"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+        "description": "update operation account"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+        "description": "update pool status"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+        "description": "close position"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+        "description": "collect remaining rewards"
+      }
+    ],
+    "sc_total": 43,
+    "sc_ids": [
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/error.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_fund_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/collect_protocol_fee.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/create_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/transfer_reward_owner.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_amm_config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/admin/update_pool_status.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/close_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/collect_remaining_rewards.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/create_pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/decrease_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/increase_liquidity.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/initialize_reward.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/open_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/set_reward_params.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/swap_router_base_in.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/instructions/update_reward_info.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/lib.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/big_num.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/fixed_point_64.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/full_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/liquidity_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/sqrt_price_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/swap_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_array_bit_map.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/tick_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/libraries/unsafe_math.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/config.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/operation_account.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/oracle.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/personal_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/pool.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/protocol_position.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/states/tick_array.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/mod.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/system.rs",
+      "https://github.com/swap-dot-io/swap-io-clmm/blob/586ca2beb81721b33ae1f2975b8f016cf242c492/programs/amm/src/util/token.rs"
+    ],
+    "github_repos": [
+      "swap-dot-io/swap-io-clmm"
+    ]
   },
   "hackenproof:sweed-web": {
     "hash": "f3da50aea348858ccfd295381e8fbb86866e9387",
@@ -47746,6 +47652,36 @@
     ],
     "github_repos": [
       "capsule-corp-ternoa/ternoa-enclaves"
+    ]
+  },
+  "hackenproof:ternoa-smart-contracts": {
+    "hash": "ec0268b67e72ae1a46d7e682e929225de9ac9137",
+    "bounty": true,
+    "source": true,
+    "name": "Ternoa Smart Contracts",
+    "url": "https://hackenproof.com/programs/ternoa-smart-contracts",
+    "platform": "hackenproof",
+    "bounty_min": 50,
+    "bounty_max": 100000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts",
+        "description": ""
+      }
+    ],
+    "sc_total": 1,
+    "sc_ids": [
+      "https://github.com/capsule-corp-ternoa/chainbridge-solidity/tree/master/contracts"
+    ],
+    "github_repos": [
+      "capsule-corp-ternoa/chainbridge-solidity"
     ]
   },
   "hackenproof:ternoa-wallet": {
@@ -48294,6 +48230,26 @@
     "source": false,
     "name": "TTC | Protocol",
     "url": "https://hackenproof.com/programs/ttc-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 600,
+    "bounty_max": 5000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [],
+    "sc_total": 0,
+    "sc_ids": [],
+    "github_repos": []
+  },
+  "hackenproof:ttc-sdk": {
+    "hash": "762ca6c5483497555e9be0bd10560ed1b7b0e601",
+    "bounty": true,
+    "source": false,
+    "name": "TTC | SDK",
+    "url": "https://hackenproof.com/programs/ttc-sdk",
     "platform": "hackenproof",
     "bounty_min": 600,
     "bounty_max": 5000,
@@ -48927,6 +48883,50 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "hackenproof:zeko-protocol": {
+    "hash": "45c79a86ae8c7af156f117162c30784b24c9d098",
+    "bounty": true,
+    "source": true,
+    "name": "Zeko Protocol",
+    "url": "https://hackenproof.com/programs/zeko-protocol",
+    "platform": "hackenproof",
+    "bounty_min": 300,
+    "bounty_max": 3000,
+    "bounty_ccy": "USD",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/zeko",
+        "description": ""
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/santa_clawz-private_agents",
+        "description": "SantaClawz Github repo"
+      },
+      {
+        "asset_type": "OTHER",
+        "identifier": "https://github.com/zeko-labs/x402-zeko",
+        "description": "x402 Github repo"
+      }
+    ],
+    "sc_total": 3,
+    "sc_ids": [
+      "https://github.com/zeko-labs/santa_clawz-private_agents",
+      "https://github.com/zeko-labs/x402-zeko",
+      "https://github.com/zeko-labs/zeko"
+    ],
+    "github_repos": [
+      "zeko-labs/santa_clawz-private_agents",
+      "zeko-labs/x402-zeko",
+      "zeko-labs/zeko"
+    ]
   },
   "hackenproof:zest-protocol-smart-contracts": {
     "hash": "fc7a2402d8561160a086ce7ad9cb910649a526df",
@@ -57541,7 +57541,7 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-27T18:20:25.448430+00:00",
+    "updated_at": "2026-11-27T18:49:21.908296+00:00",
     "total": 1913,
     "qualifying": 427,
     "external": 354,
@@ -57790,6 +57790,7 @@
         "pumb-web",
         "quantova",
         "raiffeisen-web-and-mobile",
+        "redstone-settle-smart-contracts-api-webapp",
         "redstone-smart-contracts",
         "redstone-web",
         "rhea-finance-smart-contracts",
