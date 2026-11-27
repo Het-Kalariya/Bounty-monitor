@@ -1,33 +1,5 @@
 [
   {
-    "timestamp": "2026-10-05T07:45:35.100626+00:00",
-    "event": "bounty_enabled",
-    "platform": "hackenproof",
-    "handle": "zynk-protocol",
-    "name": "Zynk Protocol",
-    "url": "https://hackenproof.com/programs/zynk-protocol",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-core",
-        "description": "The **Zynk Core** Solana Program is the primary on-chain component responsible for liquidity deployment, settlement, and governance within the Zynk Protocol.\n\nThe program manages:\n\n- Beneficiary and assets whitelisting\n- Liquidity deployment to beneficiaries\n- Partner settlement flows\n- Order lifecycle tracking\n- Governance and administrative actions\n- Protocol safety mechanisms\n\nAll operational logic is enforced through deterministic account constraints, cryptographic signature verification, and strict role-based authorization."
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/Zynklabs/zynk-protocol-solana-programs.public/tree/main/programs/zynk-orbit",
-        "description": "**Zynk Orbit** is a Solana program responsible for managing liquidity provider (LP) fund flows within the Zynk Protocol. Its primary function is to securely move liquidity in and out of the Zynk ecosystem, bridging LP wallets and the ICV vaults or Zynk Operational Vault (ZOV) (and further whitelisted beneficiaries) in a controlled and auditable manner.\n\nThe yield computation logic resides off-chain (out-of-scope) and hence, there's no on-chain counterpart to it."
-      },
-      {
-        "asset_type": "OTHER",
-        "identifier": "https://github.com/Zynklabs/audit-reports",
-        "description": "- Any and all issues already disclosed in the previous audit reports won't be considered."
-      }
-    ],
-    "added": [],
-    "removed": [],
-    "github_repos": []
-  },
-  {
     "timestamp": "2026-10-05T10:57:44.155473+00:00",
     "event": "scope_updated",
     "platform": "hackenproof",
@@ -7152,6 +7124,44 @@
       "https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1",
       "https://suiscan.xyz/mainnet/coin/0x77045f1b9f811a7a8fb9ebd085b5b0c55c5cb0d1520ff55f7037f89b5da9f5f1::tbtc::tbtc/txs"
     ],
+    "github_repos": []
+  },
+  {
+    "timestamp": "2026-11-27T13:48:43.168245+00:00",
+    "event": "new_program",
+    "platform": "immunefi",
+    "handle": "lido-lend",
+    "name": "Lido Lend",
+    "url": "https://immunefi.com/bug-bounty/lido-lend",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://docs.lido.fi/lend/deployed-contracts/",
+        "description": "Deployed contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend",
+        "description": "Core"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-irm",
+        "description": "Interest rate models"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-markets",
+        "description": "Markets"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-guardian-daemon",
+        "description": "Guardian daemon"
+      }
+    ],
+    "added": [],
+    "removed": [],
     "github_repos": []
   }
 ]

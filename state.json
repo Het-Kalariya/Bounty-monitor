@@ -3825,7 +3825,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 0,
-    "resp_eff": 83,
+    "resp_eff": 84,
     "bounty_days": 557.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -7856,7 +7856,7 @@
     "bounty_ccy": "",
     "bounty_note": "amount not in upstream feed",
     "domains": 1669,
-    "resp_eff": 74,
+    "resp_eff": 75,
     "bounty_days": 111.0,
     "sc_targets": [],
     "sc_total": 0,
@@ -8332,7 +8332,7 @@
     "bounty_ccy": "",
     "bounty_note": "",
     "domains": 0,
-    "resp_eff": 93,
+    "resp_eff": 94,
     "bounty_days": null,
     "sc_targets": [],
     "sc_total": 0,
@@ -14317,7 +14317,7 @@
     "github_repos": []
   },
   "bugcrowd:The Plugin People": {
-    "hash": "53a59369489f08d2fafeec5813dc2824c7d1001c",
+    "hash": "ea663a2f864b463f2dad2734860bab53166a5939",
     "bounty": true,
     "source": false,
     "name": "The Plugin People",
@@ -20093,6 +20093,123 @@
     "sc_total": 0,
     "sc_ids": [],
     "github_repos": []
+  },
+  "immunefi:gmtrade": {
+    "hash": "3425d2d7b005ec177deeb656620d5dd2956437d9",
+    "bounty": true,
+    "source": true,
+    "name": "GMTrade",
+    "url": "https://immunefi.com/bug-bounty/gmtrade",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 100000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/store",
+        "description": "Store"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/treasury",
+        "description": "Treasury"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/liquidity-provider",
+        "description": "Liquidity-provider"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.solana.com/address/Gmso1uvJnLbawvw7yezdfCDcPydwW2s2iqG3w6MDucLo/verified-build",
+        "description": "Store"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.solana.com/address/LPMWczEVgXyQ3979XaqqEttanCXmYGvtJqPVtw1PvC8/verified-build",
+        "description": "Liquidity Provider"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://explorer.solana.com/address/GTuvYD5SxkTq4FLG6JV1FQ5dkczr1AfgDcBHaFsBdtBg/verified-build",
+        "description": "Treasury"
+      }
+    ],
+    "sc_total": 6,
+    "sc_ids": [
+      "https://explorer.solana.com/address/gmso1uvjnlbawvw7yezdfcdcpydww2s2iqg3w6mduclo/verified-build",
+      "https://explorer.solana.com/address/gtuvyd5sxktq4flg6jv1fq5dkczr1afgdcbhafsbdtbg/verified-build",
+      "https://explorer.solana.com/address/lpmwczevgxyq3979xaqqettancxmygvtjqpvtw1pvc8/verified-build",
+      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/liquidity-provider",
+      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/store",
+      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/treasury"
+    ],
+    "github_repos": [
+      "gmsol-labs/gmx-solana"
+    ]
+  },
+  "immunefi:lido-lend": {
+    "hash": "2400e3a2b4592df40d0a2b58a791ecfc66085636",
+    "bounty": true,
+    "source": true,
+    "name": "Lido Lend",
+    "url": "https://immunefi.com/bug-bounty/lido-lend",
+    "platform": "immunefi",
+    "bounty_min": 0,
+    "bounty_max": 2000000,
+    "bounty_ccy": "USDC",
+    "bounty_note": "",
+    "domains": 0,
+    "resp_eff": null,
+    "bounty_days": null,
+    "live_status": "LIVE",
+    "sc_targets": [
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://docs.lido.fi/lend/deployed-contracts/",
+        "description": "Deployed contracts"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend",
+        "description": "Core"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-irm",
+        "description": "Interest rate models"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-markets",
+        "description": "Markets"
+      },
+      {
+        "asset_type": "SMART_CONTRACT",
+        "identifier": "https://github.com/lidofinance/lend-guardian-daemon",
+        "description": "Guardian daemon"
+      }
+    ],
+    "sc_total": 5,
+    "sc_ids": [
+      "https://docs.lido.fi/lend/deployed-contracts",
+      "https://github.com/lidofinance/lend",
+      "https://github.com/lidofinance/lend-guardian-daemon",
+      "https://github.com/lidofinance/lend-irm",
+      "https://github.com/lidofinance/lend-markets"
+    ],
+    "github_repos": [
+      "lidofinance/lend",
+      "lidofinance/lend-guardian-daemon",
+      "lidofinance/lend-irm",
+      "lidofinance/lend-markets"
+    ]
   },
   "immunefi:compoundfinance": {
     "hash": "1fdc9155ba8884500828c5eb5433b1f8c392b53a",
@@ -32806,66 +32923,6 @@
       "https://etherscan.io/address/0x88ad09518695c6c3712ac10a214be5109a655671"
     ],
     "github_repos": []
-  },
-  "immunefi:gmtrade": {
-    "hash": "3425d2d7b005ec177deeb656620d5dd2956437d9",
-    "bounty": true,
-    "source": true,
-    "name": "GMTrade",
-    "url": "https://immunefi.com/bug-bounty/gmtrade",
-    "platform": "immunefi",
-    "bounty_min": 0,
-    "bounty_max": 100000,
-    "bounty_ccy": "USDC",
-    "bounty_note": "",
-    "domains": 0,
-    "resp_eff": null,
-    "bounty_days": null,
-    "live_status": "LIVE",
-    "sc_targets": [
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/store",
-        "description": "Store"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/treasury",
-        "description": "Treasury"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/liquidity-provider",
-        "description": "Liquidity-provider"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.solana.com/address/Gmso1uvJnLbawvw7yezdfCDcPydwW2s2iqG3w6MDucLo/verified-build",
-        "description": "Store"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.solana.com/address/LPMWczEVgXyQ3979XaqqEttanCXmYGvtJqPVtw1PvC8/verified-build",
-        "description": "Liquidity Provider"
-      },
-      {
-        "asset_type": "SMART_CONTRACT",
-        "identifier": "https://explorer.solana.com/address/GTuvYD5SxkTq4FLG6JV1FQ5dkczr1AfgDcBHaFsBdtBg/verified-build",
-        "description": "Treasury"
-      }
-    ],
-    "sc_total": 6,
-    "sc_ids": [
-      "https://explorer.solana.com/address/gmso1uvjnlbawvw7yezdfcdcpydww2s2iqg3w6mduclo/verified-build",
-      "https://explorer.solana.com/address/gtuvyd5sxktq4flg6jv1fq5dkczr1afgdcbhafsbdtbg/verified-build",
-      "https://explorer.solana.com/address/lpmwczevgxyq3979xaqqettancxmygvtjqpvtw1pvc8/verified-build",
-      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/liquidity-provider",
-      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/store",
-      "https://github.com/gmsol-labs/gmx-solana/tree/main/programs/treasury"
-    ],
-    "github_repos": [
-      "gmsol-labs/gmx-solana"
-    ]
   },
   "immunefi:extrafinance": {
     "hash": "627efaf83f049730c10d1193446609a61ef3c260",
@@ -57522,11 +57579,11 @@
   },
   "_meta": {
     "schema": 8,
-    "updated_at": "2026-11-27T12:53:35.540635+00:00",
-    "total": 1914,
-    "qualifying": 426,
+    "updated_at": "2026-11-27T13:48:43.123443+00:00",
+    "total": 1915,
+    "qualifying": 427,
     "external": 354,
-    "blockchain": 363,
+    "blockchain": 364,
     "feed_ids": {
       "immunefi": [],
       "hackenproof": [
